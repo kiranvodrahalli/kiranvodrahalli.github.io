@@ -1,0 +1,38 @@
+// Masthead
+//
+// Super small header above the content for site name and short description.
+
+.masthead {
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  
+}
+
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color:#131212;  //#505050;
+
+  a {
+    color:#131212; // #505050;
+		font-weight: lighter;
+		text-decoration: none;
+		font-size: -webkit-xxx-large;
+		font-family: "EB Garamond", "Georgia", "Times New Roman", serif;
+		font-style: italic;
+    // `:focus` is linked to `:hover` for basic accessibility
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  small {
+    font-size: 80%;
+    font-weight: lighter;
+		font-family: "EB Garamond", "Georgia", "Times New Roman", serif;
+    color: #A02828; //#c0c0c0;
+    letter-spacing: 0;
+  }
+}

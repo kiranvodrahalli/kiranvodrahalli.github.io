@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+   
+   <!--
+     redirect users to the https version of the website.
+     but: only check when on the production domain, as set in _config.yml.
+    -->
+   <script type="text/javascript">
+     var enforce = "kiranvodrahalli.github.io";
+     if ((enforce == window.location.host) && (window.location.protocol != "https:"))
+       window.location = window.location.toString().replace(/^http:/, "https:");
+   </script>
+   
+
+  <!-- EB Garamond Font --> 
+  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      placeholder || kiran's theoryblog
+    
+  </title>
+
+  <!-- MathJax -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ 
+      TeX: { 
+        extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "bbox.js", "color.js", "enclose.js"] 
+      },
+      unicode: {
+        fonts: "STIXGeneral, 'Arial Unicode MS'"
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/public/favicomatic/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicomatic/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicomatic/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicomatic/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/public/favicomatic/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicomatic/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/public/favicomatic/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicomatic/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-128.png" sizes="128x128" />
+  <link rel="shortcut icon" type="image/png" href="/public/favicomatic/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="placeholder" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">||placeholder||</a>
+          <small>[kiran's theoryblog]</small>
+        </h3>
+        <a href="/about" title="about">{about}</a>
+        <a href="/projects" title="projects">{projects}</a>
+        <a href="/notes" title="notes">{notes}</a>
+        <a href="/contact" title="contact">{contact}</a>
+      </header>
+
+      <main>
+        <div class="posts">
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/06/21/intro/">
+        MathJax Tests
+      </a>
+    </h1>
+
+    <time datetime="2015-06-21T00:00:00-07:00" class="post-date">21 Jun 2015</time>
+
+    <p><a href="/2015/06/21/intro/">First post</a>, woo hoo! This blog will be roughly about my thoughts about research and maybe other things, I haven&#39;t really decided yet. Probably some notes and projects. </p>
+
+<p>In the meantime, here are some tests to ensure MathJax is working. </p>
+
+<p>\begin{equation}
+    x_{t+1} = \prod_{\mathcal{K}} \left(x_{t} - \eta \nabla_t\right) \tag{1} \label{eq:OGD}
+\end{equation}</p>
+
+<p>Equation \eqref{eq:OGD} is the online gradient descent update. See \eqref{eq:vandermonde} for a matrix. Consider \(x, y \in \mathbb{R}\): Then, \(x + y \in \mathbb{R}\) as well (this math is inline).</p>
+
+<!-- comment \\\ is necessary for new lines in math code or \\( if you want to do inline math-->
+
+<p>Here&#39;s the <a href="https://en.wikipedia.org/wiki/Vandermonde_matrix">Vandermonde matrix</a>:</p>
+
+<p>\begin{pmatrix}
+    1 &amp; a_1 &amp; {a_1}^2 &amp; \cdots &amp; {a_1}^n \\
+    1 &amp; a_2 &amp; {a_2}^2 &amp; \cdots &amp; {a_2}^n \\   \tag{2.1} \label{eq:vandermonde}
+    \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+    1 &amp; a_m &amp; {a_m}^2 &amp; \cdots &amp; {a_m}^n \\
+\end{pmatrix}</p>
+
+<p>Here&#39;s some matrix multiplication: </p>
+
+<!-- use align environments to get matrices to line up -->
+
+<!-- you can insert text here, but it will be the same color as the math -->
+
+<!-- can add extra \\\ to get more space in align envs -->
+
+<p>\begin{align}
+    \begin{pmatrix} 
+        1 &amp; 0 \\ 
+        0 &amp; e^{i\pi} \\ \tag{2.2}
+    \end{pmatrix}
+    \begin{pmatrix}
+      u \\ v
+    \end{pmatrix}
+    &amp;=
+    \begin{pmatrix}
+      u \\ -v
+    \end{pmatrix} \\ 
+    \large\equiv \\<br>
+    \begin{bmatrix}
+        1 &amp; 0 \\
+        0 &amp; -1 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        x \\ y
+    \end{bmatrix}
+    &amp;= 
+    \begin{bmatrix}
+        x \\ -y
+    \end{bmatrix}
+\end{align}</p>
+
+<p>And finally, we have the <a href="https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality">Cauchy-Schwarz inequality</a>: </p>
+
+<p>$$
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) \tag{3}
+$$</p>
+
+<p>Here&#39;s a useful <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">link</a> to some MathJax tricks. </p>
+
+<!-- Some old equations that look ugly but explain how to use certain features which I probably won't use like bbox. The better aligned example is above. -->
+
+<!-- \\(\href{http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference}{\text{link}}\\) -->
+
+<!-- Here's an aligned equation: 
+
+\begin{align}
+    a & =b+c-d \\\  
+    & \quad +e-f \\\ \tag{3} \label{test2}
+    & =g+h \\\ 
+    & =i
+\end{align}
+
+
+
+$$ \bbox[maroon]{x^2 + y^2} \tag{4} \label{test3}$$
+
+$$ \enclose{box}[mathcolor="blue"]{x^2 + y^2} \tag{5} \label{test4} $$
+
+-->
+
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <span class="pagination-item older">\(\Huge\leftarrow\)</span>
+  
+  
+    <span class="pagination-item newer">\(\Huge\rightarrow\)</span>
+  
+</div>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2015-09-05T01:53:17-07:00">2015</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>
+

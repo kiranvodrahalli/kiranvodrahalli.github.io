@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>placeholder</title>
+ <link href="https://kiranvodrahalli.github.io/atom.xml" rel="self"/>
+ <link href="https://kiranvodrahalli.github.io/"/>
+ <updated>2015-09-05T01:53:17-07:00</updated>
+ <id>https://kiranvodrahalli.github.io</id>
+ <author>
+   <name>Kiran Vodrahalli</name>
+   <email>knv@princeton.edu</email>
+ </author>
+
+ 
+ <entry>
+   <title>MathJax Tests</title>
+   <link href="https://kiranvodrahalli.github.io/2015/06/21/intro/"/>
+   <updated>2015-06-21T00:00:00-07:00</updated>
+   <id>https://kiranvodrahalli.github.io/2015/06/21/intro</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;/2015/06/21/intro/&quot;&gt;First post&lt;/a&gt;, woo hoo! This blog will be roughly about my thoughts about research and maybe other things, I haven&amp;#39;t really decided yet. Probably some notes and projects. &lt;/p&gt;
+
+&lt;p&gt;In the meantime, here are some tests to ensure MathJax is working. &lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+    x_{t+1} = \prod_{\mathcal{K}} \left(x_{t} - \eta \nabla_t\right) \tag{1} \label{eq:OGD}
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;Equation \eqref{eq:OGD} is the online gradient descent update. See \eqref{eq:vandermonde} for a matrix. Consider \(x, y \in \mathbb{R}\): Then, \(x + y \in \mathbb{R}\) as well (this math is inline).&lt;/p&gt;
+
+&lt;!-- comment \\\ is necessary for new lines in math code or \\( if you want to do inline math--&gt;
+
+&lt;p&gt;Here&amp;#39;s the &lt;a href=&quot;https://en.wikipedia.org/wiki/Vandermonde_matrix&quot;&gt;Vandermonde matrix&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;\begin{pmatrix}
+    1 &amp;amp; a_1 &amp;amp; {a_1}^2 &amp;amp; \cdots &amp;amp; {a_1}^n \\
+    1 &amp;amp; a_2 &amp;amp; {a_2}^2 &amp;amp; \cdots &amp;amp; {a_2}^n \\   \tag{2.1} \label{eq:vandermonde}
+    \vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\
+    1 &amp;amp; a_m &amp;amp; {a_m}^2 &amp;amp; \cdots &amp;amp; {a_m}^n \\
+\end{pmatrix}&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s some matrix multiplication: &lt;/p&gt;
+
+&lt;!-- use align environments to get matrices to line up --&gt;
+
+&lt;!-- you can insert text here, but it will be the same color as the math --&gt;
+
+&lt;!-- can add extra \\\ to get more space in align envs --&gt;
+
+&lt;p&gt;\begin{align}
+    \begin{pmatrix} 
+        1 &amp;amp; 0 \\ 
+        0 &amp;amp; e^{i\pi} \\ \tag{2.2}
+    \end{pmatrix}
+    \begin{pmatrix}
+      u \\ v
+    \end{pmatrix}
+    &amp;amp;=
+    \begin{pmatrix}
+      u \\ -v
+    \end{pmatrix} \\ 
+    \large\equiv \\&lt;br&gt;
+    \begin{bmatrix}
+        1 &amp;amp; 0 \\
+        0 &amp;amp; -1 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        x \\ y
+    \end{bmatrix}
+    &amp;amp;= 
+    \begin{bmatrix}
+        x \\ -y
+    \end{bmatrix}
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;And finally, we have the &lt;a href=&quot;https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality&quot;&gt;Cauchy-Schwarz inequality&lt;/a&gt;: &lt;/p&gt;
+
+&lt;p&gt;$$
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) \tag{3}
+$$&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s a useful &lt;a href=&quot;http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&quot;&gt;link&lt;/a&gt; to some MathJax tricks. &lt;/p&gt;
+
+&lt;!-- Some old equations that look ugly but explain how to use certain features which I probably won&#39;t use like bbox. The better aligned example is above. --&gt;
+
+&lt;!-- \\(\href{http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference}{\text{link}}\\) --&gt;
+
+&lt;!-- Here&#39;s an aligned equation: 
+
+\begin{align}
+    a &amp; =b+c-d \\\  
+    &amp; \quad +e-f \\\ \tag{3} \label{test2}
+    &amp; =g+h \\\ 
+    &amp; =i
+\end{align}
+
+
+
+$$ \bbox[maroon]{x^2 + y^2} \tag{4} \label{test3}$$
+
+$$ \enclose{box}[mathcolor=&quot;blue&quot;]{x^2 + y^2} \tag{5} \label{test4} $$
+
+--&gt;
+</content>
+ </entry>
+ 
+
+</feed>

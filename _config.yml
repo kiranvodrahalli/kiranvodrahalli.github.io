@@ -1,0 +1,36 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               placeholder
+tagline:             kiran's theoryblog
+url:                 https://kiranvodrahalli.github.io
+paginate:            5
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Kiran Vodrahalli
+  url:               https://kiranvodrahalli.github.io
+  email:             knv@princeton.edu
+
+#markdown
+markdown: redcarpet
+
+# enforce https
+enforce_ssl: kiranvodrahalli.github.io
+
+# Custom vars
+version:             2.0.0
+github:				 
+  repo:              https://github.com/kiranvodrahalli/kiranvodrahalli.github.io/
