@@ -3,4 +3,4 @@ layout: page
 title: contact
 ---
 
-This is my [email](mailto:knv@princeton.edu).
+Please email me at [knv@princeton.edu](mailto:knv@princeton.edu).
