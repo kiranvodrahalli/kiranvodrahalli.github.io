@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>placeholder</title>
+ <title>representing things</title>
  <link href="https://kiranvodrahalli.github.io/atom.xml" rel="self"/>
  <link href="https://kiranvodrahalli.github.io/"/>
- <updated>2015-09-28T20:47:05-04:00</updated>
+ <updated>2015-09-29T17:51:05-04:00</updated>
  <id>https://kiranvodrahalli.github.io</id>
  <author>
    <name>Kiran Vodrahalli</name>
