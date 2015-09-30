@@ -131,21 +131,28 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 <h4>Exploratory Analysis of the EEG Data</h4>
 
-<p><img src="/projects/cos513/eeg-raw.jpg" /></p>
+<p>Below is the raw EEG data from the experiment, where each horizontal time series is an EEG-source with a few exceptions. The first 43 channels are EEG electrodes, channel 44 and 45 are EOG (eye movement), channel 46 and 47 is ECG (heart), and channel 48 and 49 are the stimulus and the behavioral response event markers, respectively. 
+<img src="/projects/cos513/eeg-raw.jpg" /></p>
 
-<p><img src="/projects/cos513/eeg-ica.jpg" /></p>
+<p>We plot the same data after performing Independent Components Analysis (ICA) along the time series. We can see that the first few channels of EEG explain a lot of the variance. 
+<img src="/projects/cos513/eeg-ica.jpg" /></p>
 
-<p><img src="/projects/cos513/EEGcorr.png" /></p>
+<p>Here we examine the first component after ICA is performed on the EEG data. The first plot is of the variation in EEG response values. We see that for the first component, the response is roughly Gaussian.
+This approximation roughly holds across the other components, though the kurtosis varies. 
+<img src="/projects/cos513/eegICAcompstats.png" /></p>
 
-<p><img src="/projects/cos513/EEGcrossCov.png" /></p>
+<p>Here we plot a correlation matrix of the EEG channels for the auditory task. The value of entry (i, j) is the covariance between two EEG channels summed over time. There appears to be an interesting block structure, suggesting that some channels are highly correlated with each other, while others are not. This correlation matrix allows us to check how we might reduce dimension later on.
+<img src="/projects/cos513/EEGcorr.png" /></p>
 
-<p><img src="/projects/cos513/eegICAcompstats.png" /></p>
-
-<p><img src="/projects/cos513/EEGica_compActivity.png" /></p>
+<p>Here, we plot a correlation matrix of the EEG channels across both the auditory and visual tasks for the first run in both tasks. We take covariances by summing over time for each channel pair, where one channel is the EEG response over auditory and the other channel is the EEG response over visual. This correlation matrix allows us to notice that across experiments, most of the EEG channels are not correlated with each other. Perhaps the channels that remain correlated signify more information about responses to stimuli (of various types) than the others. 
+<img src="/projects/cos513/EEGcrossCov.png" /></p>
 
 <h4>Exploratory Analysis of the fMRI Data</h4>
 
-<p><img src="/projects/cos513/fmri-brain-vis.jpg" /></p>
+<p>Here we have a nice visualization of the fMRI data. Notice that it looks like a brain!
+<img src="/projects/cos513/fmri-brain-vis.jpg" /></p>
+
+<p><img src="/projects/cos513/BOLD_hist_s2t1r2.png" /></p>
 
 <p><img src="/projects/cos513/fmriCorr_time.png" /></p>
 
@@ -153,7 +160,7 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 <p><img src="/projects/cos513/meanvoxBOLDovertime.png" /></p>
 
-<p><img src="/projects/cos513/BOLD_hist_s2t1r2.png" /></p>
+<p><img src="/projects/cos513/1st_2_PC.png" /></p>
 
 <h4>Future Directions</h4>
 
@@ -171,7 +178,7 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-09-30T12:45:19-04:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-09-30T13:13:41-04:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>
