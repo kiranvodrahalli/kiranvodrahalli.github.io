@@ -29,7 +29,7 @@ My first presentation for the Spring 2015 offering of <a href = "http://vision.p
 My second presentation for <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a> focused on the image captioning problem, and deep learning approaches to solving it.
 
 ### Estimating Trending Twitter Topics With Count-Min Sketch <a href= "{{ site.baseurl }}/projects/cos521paper.pdf" title= "cos521"> [pdf] </a>
-My final project for <a href= "http://www.cs.princeton.edu/courses/archive/fall14/cos521/" title= "cos521"> COS 521: Advanced Algorithms</a> attempted to solve the following problem: Given a time series of Twitter data, can we infer current trending topics on Twitter while appropriately discounting past tweets using a sketch-based approach? We tweaked the Hokusai data structure <a href= "http://www.auai.org/uai2012/papers/231.pdf" title= "Hokusai"> [Matusevych et al 2012]</a> and implemented it, then ran it on experimental Twitter data. 
+My final project for <a href= "http://www.cs.princeton.edu/courses/archive/fall14/cos521/" title= "cos521"> COS 521: Advanced Algorithms</a> (joing with Evan Miller (Princeton COS '16) and Albert Lee (Princeton COS '16) attempted to solve the following problem: Given a time series of Twitter data, can we infer current trending topics on Twitter while appropriately discounting past tweets using a sketch-based approach? We tweaked the Hokusai data structure <a href= "http://www.auai.org/uai2012/papers/231.pdf" title= "Hokusai"> [Matusevych et al 2012]</a> and implemented it, then ran it on experimental Twitter data. 
 
 ## Independent Work 
 
