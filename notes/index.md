@@ -24,7 +24,7 @@ I will post my scribe notes for this course as Fall 2015 progresses.
 
 ### COS 511: Theoretical Machine Learning
 
-I took <a href= "http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title= "cos511"> scribe notes</a> for this class in its Spring 2015 iteration.  
+I took <a href= "http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title= "cos511"> scribe notes</a> for most lectures of this class in its Spring 2015 iteration.  
 
 ## Talks
 
