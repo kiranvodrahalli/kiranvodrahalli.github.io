@@ -3,7 +3,7 @@ layout: page
 title: COS 513 Project
 ---
 
-
+Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 <!-- example of the message class
 <p class="message">
   My name is Kiran Vodrahalli. 
