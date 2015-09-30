@@ -78,6 +78,8 @@ We are currently using the Auditory and Visual Oddball EEG-fMRI dataset, availab
 
 <img src="{{ site.baseurl }}/projects/cos513/meanvoxBOLDovertime.png" />
 
+<img src="{{ site.baseurl }}/projects/cos513/BOLD_hist_s2t1r2.png" />
+
 #### Future Directions
 
 - Investigate cross-correlation of the EEG and fMRI data at full scale. We did not implement this cross-modality analysis since we felt it would be less meaningful if we only sampled a small portion of the fMRI voxels while comparing to EEG sources, as running covariance calculations for large number of voxels crashed the software we were using to generate them (which is why we display a correlation matrix with only a small number of voxels on each axis). We will use a cluster to investigate the full correlation matrix of the fMRI voxel data, as well as the correlation between the EEG and fMRI data. 
