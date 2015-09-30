@@ -77,15 +77,16 @@ Here, we plot a correlation matrix of the EEG channels across both the auditory 
 Here we have a nice visualization of the fMRI data. Notice that it looks like a brain!
 <img src="{{ site.baseurl }}/projects/cos513/fmri-brain-vis.jpg" />
 
+Then we simply binned the values of the fMRI data to get a general idea of what responses looked like. Note that a lot of the fMRI values are 0. When subsampling to plot covariances and so on, we drew voxels from the non-zero space.  
 <img src="{{ site.baseurl }}/projects/cos513/BOLD_hist_s2t1r2.png" />
+
+Here we display the mean BOLD response and the first two principal components.
+We performed PCA to reduce the voxel space dimension on a single subject’s fMRI data for task 1, run 2. The resulting components are therefore time vectors. The color scheme is as follows: blue is the mean, red is the first principal component and green is the second principal component. The first PC appears very close to the mean and it appears to explain 99% of the variance. This result is not what we expected, and possibly suggests that applying PCA directly may not be the best way to reduce the dimension of the data, due to the highly non-linear variation of the BOLD values of fMRI voxels. Thus we may explore nonlinear dimension reduction approaches like Local Linear Embedding or Isomap. Since we may be looking for signal in a very small percentage of the voxels, another interpretation of the result may be that our confusing results are due to the strong effect of noise (i.e. the voxels we are not interested in) on the results of PCA in high dimension. Thus, the 99% explained by the first principal component may only be explaining variance in voxels we are not interested in (also recall that from the histogram, most of the voxels are 0).
+<img src="{{ site.baseurl }}/projects/cos513/Mean_bold_and_pcs.png" />
 
 <img src="{{ site.baseurl }}/projects/cos513/fmriCorr_time.png" />
 
 <img src="{{ site.baseurl }}/projects/cos513/corr_BOLD_subset_of_voxels.png" />
-
-<img src="{{ site.baseurl }}/projects/cos513/meanvoxBOLDovertime.png" />
-
-<img src="{{ site.baseurl }}/projects/cos513/1st_2_PC.png" />
 
 
 
