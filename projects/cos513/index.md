@@ -28,10 +28,9 @@ We are using the Auditory and Visual Oddball EEG-fMRI dataset, available for dow
 
 - The Oddball paradigm: There were 3 runs each of separate auditory (``task 1") and visual (``task 2") tasks. Each run consisted of 125 total stimuli (each 200 ms): 20\% target stimuli (requiring button response), 80\% standard stimuli (to be ignored). First 2 stimuli constrained to be standards. Intertrial interval is 2-3 sec, uniformly distributed. 
 
--- Task 1: The target stimulus was a broadband “laser gun” sound, and the standard stimulus was a 390 Hz tone.
+	- Task 1: The target stimulus was a broadband “laser gun” sound, and the standard stimulus was a 390 Hz tone.
 
--- Task 2: The target stimulus was large red circle on isoluminant grey background at a 3.45 degree visual angle,
-and the standard stimulus was a small green circle on isoluminant grey background at a 1.15 degree visual angle.
+	- Task 2: The target stimulus was large red circle on isoluminant grey background at a 3.45 degree visual angle, and the standard stimulus was a small green circle on isoluminant grey background at a 1.15 degree visual angle.
 
 - The EEG data was collected at a 1000 Hz sampling rate across 49 channels. The start of the scanning was triggered by the fMRI scan start. The EEG clock was synced with the scanner clock on each TR (repetition time).
 
