@@ -24,17 +24,17 @@ We would also like to validate our multimodal representation with results on tas
 
 We are using the Auditory and Visual Oddball EEG-fMRI dataset, available for download at the following <a href= "https://openfmri.org/dataset/ds000116" title= "https://openfmri.org/dataset/ds000116"> link </a>. The complete description of the data is available at the provided link. We summarize the main points here: 
 
-- 17 healthy subjects performed separate but analogous auditory and visual oddball tasks (interleaved), while simultaneous EEG-fMRI was recorded.  
+- 17 healthy subjects performed separate but analogous auditory and visual oddball tasks (interleaved) while simultaneous EEG-fMRI was recorded.  
 
-- The Oddball paradigm: There were 3 runs each of separate auditory (``task 1") and visual (``task 2") tasks. Each run consisted of 125 total stimuli (each 200 ms): 20\% target stimuli (requiring button response), 80\% standard stimuli (to be ignored). First 2 stimuli constrained to be standards. Intertrial interval is 2-3 sec, uniformly distributed. 
+- The Oddball experiment paradigm: There were 3 runs each of separate auditory and visual tasks. Each run consisted of 125 total stimuli (each 200 ms): 20% were target stimuli (requiring a button response) and 80% were standard stimuli (to be ignored). The first two stimuli in the time course are constrained to be standard stimuli. The inter-trial interval is assumed to be uniformly distributed over 2-3 seconds.
 
-	- Task 1: The target stimulus was a broadband “laser gun” sound, and the standard stimulus was a 390 Hz tone.
+	- Task 1 (*Auditory*): The target stimulus was a broadband “laser gun” sound, and the standard stimulus was a 390 Hz tone.
 
-	- Task 2: The target stimulus was large red circle on isoluminant grey background at a 3.45 degree visual angle, and the standard stimulus was a small green circle on isoluminant grey background at a 1.15 degree visual angle.
+	- Task 2 (*Visual*): The target stimulus was large red circle on isoluminant grey background at a 3.45 degree visual angle, and the standard stimulus was a small green circle on isoluminant grey background at a 1.15 degree visual angle.
 
 - The EEG data was collected at a 1000 Hz sampling rate across 49 channels. The start of the scanning was triggered by the fMRI scan start. The EEG clock was synced with the scanner clock on each TR (repetition time).
 
-- The BOLD fMRI Data was an EPI sequence with 170 TRs per run, with 2 sec TR and 25 ms TE (echo time). There are 32 slices, and no slice gap. The spatial resolution  is 3mm x 3mm x 4mm with AC-PC alignment.
+- The BOLD fMRI Data was an EPI sequence with 170 TRs per run, with 2 sec TR and 25 ms TE (echo time). There are 32 slices, and no slice gap. The spatial resolution is 3mm x 3mm x 4mm with AC-PC alignment.
 
 
 ### Related Papers
