@@ -129,7 +129,7 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 <h3>Preliminary Analysis</h3>
 
-<h4>EEG Data</h4>
+<h4>Exploratory Analysis of the EEG Data</h4>
 
 <p><img src="/projects/cos513/eeg-raw.jpg" /></p>
 
@@ -143,7 +143,7 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 <p><img src="/projects/cos513/EEGica_compActivity.png" /></p>
 
-<h4>fMRI Data</h4>
+<h4>Exploratory Analysis of the fMRI Data</h4>
 
 <p><img src="/projects/cos513/fmri-brain-vis.jpg" /></p>
 
@@ -153,6 +153,14 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 <p><img src="/projects/cos513/meanvoxBOLDovertime.png" /></p>
 
+<h4>Future Directions</h4>
+
+<ul>
+<li><p>Investigate cross-correlation of the EEG and fMRI data at full scale. We did not implement this cross-modality analysis since we felt it would be less meaningful if we only sampled a small portion of the fMRI voxels while comparing to EEG sources, as running covariance calculations for large number of voxels crashed the software we were using to generate them (which is why we display a correlation matrix with only a small number of voxels on each axis). We will use a cluster to investigate the full correlation matrix of the fMRI voxel data, as well as the correlation between the EEG and fMRI data. </p></li>
+<li><p>Apply more dimension reduction methods and plot time courses in two dimensions to see if any patterns arise. </p></li>
+<li><p>Apply community detection analysis to the fMRI data. </p></li>
+</ul>
+
 </article> 
 
 
@@ -161,7 +169,7 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-09-30T01:12:36-04:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-09-30T01:18:45-04:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>

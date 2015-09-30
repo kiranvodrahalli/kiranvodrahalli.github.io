@@ -54,7 +54,7 @@ We are currently using the Auditory and Visual Oddball EEG-fMRI dataset, availab
 
 ### Preliminary Analysis
 
-#### EEG Data
+#### Exploratory Analysis of the EEG Data
 
 <img src="{{ site.baseurl }}/projects/cos513/eeg-raw.jpg" />
 
@@ -68,7 +68,7 @@ We are currently using the Auditory and Visual Oddball EEG-fMRI dataset, availab
 
 <img src="{{ site.baseurl }}/projects/cos513/EEGica_compActivity.png" />
 
-#### fMRI Data
+#### Exploratory Analysis of the fMRI Data
 
 <img src="{{ site.baseurl }}/projects/cos513/fmri-brain-vis.jpg" />
 
@@ -77,6 +77,14 @@ We are currently using the Auditory and Visual Oddball EEG-fMRI dataset, availab
 <img src="{{ site.baseurl }}/projects/cos513/corr_BOLD_subset_of_voxels.png" />
 
 <img src="{{ site.baseurl }}/projects/cos513/meanvoxBOLDovertime.png" />
+
+#### Future Directions
+
+- Investigate cross-correlation of the EEG and fMRI data at full scale. We did not implement this cross-modality analysis since we felt it would be less meaningful if we only sampled a small portion of the fMRI voxels while comparing to EEG sources, as running covariance calculations for large number of voxels crashed the software we were using to generate them (which is why we display a correlation matrix with only a small number of voxels on each axis). We will use a cluster to investigate the full correlation matrix of the fMRI voxel data, as well as the correlation between the EEG and fMRI data. 
+
+- Apply more dimension reduction methods and plot time courses in two dimensions to see if any patterns arise. 
+
+- Apply community detection analysis to the fMRI data. 
 
 
 
