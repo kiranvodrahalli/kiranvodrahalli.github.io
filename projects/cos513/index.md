@@ -54,4 +54,5 @@ We are currently using the Auditory and Visual Oddball EEG-fMRI dataset, availab
 
 ### Preliminary Analysis
 
+<img src="{{ site.baseurl }}/projects/cos513/EEGcorr.png" />
 
