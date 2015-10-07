@@ -139,7 +139,8 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 	- Sparsity in the components (namely, that the thought signal lives in a much lower dimension, particularly true for the oddball task) 
 
 - What will you do if those violated assumptions hurt performance?
-	- 
+	- Add regularization
+	- Change model assumptions
 - How will you fit the model to the data? Will this be computationally tractable?
 	- CCA with regularization to induce sparsity in components.
 	- Variational inference (for fitting generative model)
