@@ -95,7 +95,7 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 	- Apply sparse-CCA with randomized Lasso to fMRI-connectome and EEG-connectome for resting-state data (i.e., no supervised task) to identify the connections which provide most signal
 	- Analyze the distance between precision matrices of the Hilbert envelopes (for fMRI and EEG)
 		- Assuming brain activity patterns are described by a Gaussian multidimensional stationary process,  the covariance matrix fully characterizes the statistical dependencies among the underlying signals
-	- They estimate prediction error via cross-validation for a function \\( f(\Omega_F) \approx \Omega_E \\)
+	- They estimate prediction error via cross-validation for a function $$ f(\Omega_F) \approx \Omega_E $$
 
 
 ### Our Points of Novelty
