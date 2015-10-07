@@ -80,14 +80,13 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 		- Generally, look at covariance plots and describe statistics for the time-points which are neuroscientifically known to be relevant for the neural visual processing pipeline
 
 - mCCA vs jICA (2008)
-	- <img src="{{ site.baseurl }}/projects/cos513/mCCA-vs-jICA.png" />
-	
 	- Canonical Correlation Analysis for Feature-Based Fusion of Biomedical Imaging Modalities and Its Application to Detection of Associative Networks in Schizophrenia - Correa et al
 	- Uses CCA to make inferences about brain activity in schizophrenia (found patients with schizophrenia showing more functional activity in motor areas and less activity in temporal areas associated with less gray matter as compared to healthy controls), general brain function (fMRI and EEG data collected for an auditory oddball task reveal associations of the temporal and motor areas with the N2 and P3 peaks)
 	- The multimodal CCA (mCCA) method, we introduce is based on a linear mixing model in which each feature dataset is decomposed into a set of components (such as spatial areas for fMRI/sMRI or temporal segments for EEG), which have varying levels of activations for different subjects. A pair of components, one from each modality, are linked if they modulate similarly across subjects.
 	- How did they validate their performance? 
 		- Generated a simulated fMRI like set of components and an ERP-like set of components and mix each set with a different set of modulation profiles to obtain two sets of mixtures. The modulation profiles are chosen from a random normal distribution. The profiles are kept orthogonal within each set. Connections between the two modalities are simulated by generating correlation between profile pairs formed across modalities
 	- Compares mCCA with jICA:
+		- <img src="{{ site.baseurl }}/projects/cos513/mCCA-vs-jICA.png" />
 		- jICA examines the common connection between independent networks in both modalities while mCCA allows for common as well as distinct components and describes the level of connection between the two modalities
 		- jICA model requires the two datasets to be normalized before being entered into a joint analysis underlying assumption of made in jICA is more reasonable when fusing information from two datasets that originate from the same modality
 		- independence assumption in jICA; but utilizes higher order statistical information
