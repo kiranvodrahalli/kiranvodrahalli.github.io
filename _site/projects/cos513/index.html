@@ -192,7 +192,7 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 <ul>
 <li>Generated a simulated fMRI like set of components and an ERP-like set of components and mix each set with a different set of modulation profiles to obtain two sets of mixtures. The modulation profiles are chosen from a random normal distribution. The profiles are kept orthogonal within each set. Connections between the two modalities are simulated by generating correlation between profile pairs formed across modalities</li>
 </ul></li>
-<li>Compares mCCA with jICA:
+<li><p>Compares mCCA with jICA:</p>
 
 <ul>
 <li>jICA examines the common connection between independent networks in both modalities while mCCA allows for common as well as distinct components and describes the level of connection between the two modalities</li>
@@ -200,14 +200,10 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 <li>independence assumption in jICA; but utilizes higher order statistical information</li>
 <li>mCCA jointly analyzes the two modalities to fuse information without giving preference to either modality; does not assume a common mixing matrix and does not require the data to be preprocessed to ensure equal contribution from both modalities</li>
 <li>mCCA assumes that the components are linearly mixed across subjects</li>
+<li><img src="/projects/cos513/mCCA-vs-jICA.png" /></li>
 </ul></li>
 </ul></li>
-</ul>
-
-<p><img src="/projects/cos513/mCCA-vs-jICA.png" /></p>
-
-<ul>
-<li>Deligianni et. al (2014): Relating resting-state fMRI and EEG whole-brain connectomes across frequency bands
+<li><p>Deligianni et. al (2014): Relating resting-state fMRI and EEG whole-brain connectomes across frequency bands</p>
 
 <ul>
 <li>Apply sparse-CCA with randomized Lasso to fMRI-connectome and EEG-connectome for resting-state data (i.e., no supervised task) to identify the connections which provide most signal</li>
@@ -432,7 +428,7 @@ We performed PCA to reduce the voxel space dimension on a single subject’s fMR
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-10-07T13:40:44-04:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-10-07T13:41:44-04:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>
