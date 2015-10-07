@@ -92,25 +92,37 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 <h2>Background Survey</h2>
 
-<h3>Our goals (X = EEG, Y = fMRI)</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">- find f(X) = Y
-- find f(Y) = X
-- find a low-dimensional mapping f(X, Y) -&gt; X&#39; where X&#39; is low-dim EEG
-- find a low-dimensional mapping f(X, Y) -&gt; Y&#39; where Y&#39; is low-dim fMRI
-- have a probabilistic generative model for X&#39; and Y&#39; (perhaps used in f)
-</code></pre></div>
-<h3>Assessing the quality of X&#39;, Y&#39;</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">- Supervised (predictive) tests
-    - predict EEG signal from fMRI (accuracy)
-    - predict fMRI signal from EEG (accuracy)
-    - predict modality of signal type (auditory or visual) from oddball data
-    - predict oddball signal on both auditory and visual data
-    - how well does generative model do for covarying with X&#39; and Y&#39;?
-- Unsupervised tests
-    - analyze covariation of low-dimensional signal with high-dimensional signals
-    - comment on correlations
-    - goodness of generative model: compare with actual data (standard statistics) 
-</code></pre></div>
+<h3>Our goals (\(X\) = EEG, \(Y\) = fMRI)</h3>
+
+<ul>
+<li>find \(f(X) = Y\)</li>
+<li>find \(f(Y) = X\)</li>
+<li>find a low-dimensional mapping \(f(X, Y) \to X&#39;\) where \(X&#39;\) is low-dim EEG</li>
+<li>find a low-dimensional mapping \(f(X, Y) \to Y&#39;\) where \(Y&#39;\) is low-dim fMRI</li>
+<li>have a probabilistic generative model for \(X&#39;\) and \(Y&#39;\) (perhaps used in \(f\))</li>
+</ul>
+
+<h3>Assessing the quality of \(X&#39;, Y&#39;\)</h3>
+
+<ul>
+<li>Supervised (predictive) tests
+
+<ul>
+<li>predict EEG signal from fMRI (accuracy)</li>
+<li>predict fMRI signal from EEG (accuracy)</li>
+<li>predict modality of signal type (auditory or visual) from oddball data</li>
+<li>predict oddball signal on both auditory and visual data</li>
+<li>how well does generative model do for covarying with \(X&#39;\) and \(Y&#39;\)?</li>
+</ul></li>
+<li>Unsupervised tests
+
+<ul>
+<li>analyze covariation of low-dimensional signal with high-dimensional signals</li>
+<li>comment on correlations</li>
+<li>goodness of generative model: compare with actual data (standard statistics) </li>
+</ul></li>
+</ul>
+
 <h3>Prior Methods and Approaches</h3>
 
 <p>Generally, prior approaches either use both fMRI and EEG in conjunction as separate information sources to verify neuroscientific claims, or map them into the same space with joint-ICA or CCA, potentially fitting a basic linear model with features from EEG to fMRI. </p>
@@ -118,20 +130,23 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 <h3>Our Points of Novelty</h3>
 
 <p>Here are the points which we can complicate:
-    - people don&#39;t think the fMRI and EEG data is low-dimensional, and thus don&#39;t use powerful techniques and approaches to find structure 
-    - we can take advantage of the structure over time and space in fMRI and EEG data to reduce dimension and induce sparsity 
-    - most people do not focus on coming up with generative models for fMRI / EEG data (except for 4 people Barbara mentioned: John Cunningham, Jonathan Pillow, </p>
+- people don&#39;t think the fMRI and EEG data is low-dimensional, and thus don&#39;t use powerful techniques and approaches to find structure 
+- we can take advantage of the structure over time and space in fMRI and EEG data to reduce dimension and induce sparsity 
+- most people do not focus on coming up with generative models for fMRI / EEG data (except for 4 groups or so: John Cunningham, Jonathan Pillow and two others).</p>
 
 <h3>Links</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> - &lt;a href=  &quot;http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=7182735&quot; title= &quot;http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=7182735&quot;&gt; Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data [Dähne et. al., 2015] &lt;/a&gt;
- - &lt;a href= &quot;http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4740317&quot; title=&quot;http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4740317&quot;&gt; Canonical Correlation Analysis for Feature-Based Fusion of Biomedical Imaging Modalities and Its Application to Detection of Associative Networks in Schizophrenia [Correa et. al., 2008]&lt;/a&gt; 
- - &lt;a href= &quot;http://www.ncbi.nlm.nih.gov/pubmed/25221467&quot; title=&quot;http://www.ncbi.nlm.nih.gov/pubmed/25221467&quot;&gt; Relating resting-state fMRI and EEG whole-brain connectomes across frequency bands [Deligianni et. al, 2014] &lt;/a&gt;
- - &lt;a href= &quot;http://www.ncbi.nlm.nih.gov/pubmed/24305817&quot; title= &quot;http://www.ncbi.nlm.nih.gov/pubmed/24305817&quot;&gt; Simultaneous EEG-fMRI reveals temporal evolution of coupling between supramodal cortical attention networks and the brainstem [Walz et. al., 2013]&lt;/a&gt;
- - &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/16246587&quot; title=&quot;http://www.ncbi.nlm.nih.gov/pubmed/16246587&quot; &gt; Neuronal chronometry of target detection: fusion of hemodynamic and event-related potential data [Calhoun et. al., 2006] &lt;/a&gt;
- - &lt;a href= &quot;http://www.nature.com/neuro/journal/v17/n3/full/nn.3635.html&quot; title=&quot;cichy&quot;&gt; Resolving human object recognition in space and time [Cichy et. al., 2014] &lt;/a&gt;
- - &lt;a href= &quot;http://www.ncbi.nlm.nih.gov/pubmed/22553012&quot; title= &quot;huster&quot;&gt; Methods for simultaneous EEG-fMRI: an introductory review [Huster. et. al, 2012] &lt;/a&gt; 
- - &lt;a href=&quot;http://www.mitpressjournals.org/doi/pdf/10.1162/NECO_a_00695&quot; title=&quot;info-theory&quot;&gt; Reliability of Information-Based Integration of EEG and fMRI Data: A Simulation Study [Assecondi et. al., 2015] &lt;/a&gt; 
-</code></pre></div>
+
+<ul>
+<li><a href=  "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7182735" title= "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7182735"> Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data [Dähne et. al., 2015] </a></li>
+<li><a href= "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4740317" title="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4740317"> Canonical Correlation Analysis for Feature-Based Fusion of Biomedical Imaging Modalities and Its Application to Detection of Associative Networks in Schizophrenia [Correa et. al., 2008]</a> </li>
+<li><a href= "http://www.ncbi.nlm.nih.gov/pubmed/25221467" title="http://www.ncbi.nlm.nih.gov/pubmed/25221467"> Relating resting-state fMRI and EEG whole-brain connectomes across frequency bands [Deligianni et. al, 2014] </a></li>
+<li><a href= "http://www.ncbi.nlm.nih.gov/pubmed/24305817" title= "http://www.ncbi.nlm.nih.gov/pubmed/24305817"> Simultaneous EEG-fMRI reveals temporal evolution of coupling between supramodal cortical attention networks and the brainstem [Walz et. al., 2013]</a></li>
+<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/16246587" title="http://www.ncbi.nlm.nih.gov/pubmed/16246587" > Neuronal chronometry of target detection: fusion of hemodynamic and event-related potential data [Calhoun et. al., 2006] </a></li>
+<li><a href= "http://www.nature.com/neuro/journal/v17/n3/full/nn.3635.html" title="cichy"> Resolving human object recognition in space and time [Cichy et. al., 2014] </a></li>
+<li><a href= "http://www.ncbi.nlm.nih.gov/pubmed/22553012" title= "huster"> Methods for simultaneous EEG-fMRI: an introductory review [Huster. et. al, 2012] </a> </li>
+<li><a href="http://www.mitpressjournals.org/doi/pdf/10.1162/NECO_a_00695" title="info-theory"> Reliability of Information-Based Integration of EEG and fMRI Data: A Simulation Study [Assecondi et. al., 2015] </a> </li>
+</ul>
+
 <h2>Overview</h2>
 
 <h3>Goals</h3>
@@ -234,7 +249,7 @@ We performed PCA to reduce the voxel space dimension on a single subject’s fMR
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-10-07T11:28:14-04:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-10-07T11:33:24-04:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>
