@@ -98,7 +98,6 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 	- They estimate prediction error via cross-validation for a function \\(f(\Omega_F) \approx \Omega_E\\) 
 
 
-
 ### Our Points of Novelty
 
 - Most people don't think the fMRI and EEG data is low-dimensional, and thus don't go beyond vanilla approaches to find structure, with the exception of the Deligianni paper
@@ -119,7 +118,7 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 			- vector in space varying over time (fMRI representations are sparse)
 			- vector in time varying over space (EEG representations are sparse)
 		- we can leverage a variety of dimension reduction approaches (both linear and non-linear)
-		- use mutual information \\(\mc{I}\\) between points as a feature
+		- use mutual information \\(\mathcal{I}\\) between points as a feature
 		- use entropy \\(H\\) as a feature
 	- What probabilistic models can we use to capture important signal in these data?
 		- GLM (what everyone uses) with sparse features (after dimension reduction - sparse PCA?)
