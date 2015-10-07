@@ -32,15 +32,80 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 ### Prior Methods and Approaches
 
-
 Generally, prior approaches either use both fMRI and EEG in conjunction as separate information sources to verify neuroscientific claims, or map them into the same space with joint-ICA or CCA, potentially fitting a basic linear model with features from EEG to fMRI. 
+
+#### Data Analysis Approaches
+
+- General Overview of Approaches
+	- fMRI-informed EEG aims to localize the source of the EEG data by using fMRI to construct brain model
+EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over time covaries 
+
+	- Neurogenerative modeling: similar to EEG-source modeling; inverse modeling based on the simulation of biophysical processes (known from neuroscience) involved in generating EEG and fMRI signals.
+
+	- Data fusion [What we are most interested in]: Using supervised or unsupervised machine learning algorithms to combine multimodal datasets
+
+- Early fusion methods [Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data - Biessmann et al]: First forming a feature set from each dataset followed by exploration of connections among the features.
+
+	- *Multimodal ICA*: joint ICA (features from multiple modalities simply concatenated); parallel ICA (a user specified similarity relation between components from the different modalities is optimised simultaneously with modality-specific un-mixing matrices); linked ICA (Bayesian)
+
+	- *CCA* and *PLS*: find the transformations for each modality that maximise the correlation between the time courses of the extracted components. Partial least squares aims to find maximally covarying components, CCA finds maximally correlating components. Relaxes independent component assumption of jICA, does not constrain component activation patterns to be the same for both modalities.
+
+	- *mSPoC*: co-modulation between component power and a scalar target variable z can be modeled using the SPoC objective function;  in multimodal case, assume the target function z is the time-course of a component that is to be extracted from the other modality
+
+- Late fusion methods [Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data - Biessmann et al]
+
+	- Supervised methods (either using an external target signal or asymmetric fusion where features from one modality are used as labels/regressors to extract factors from another modality) vs unsupervised (relying on data stats)
+
+	- Unsupervised: PCA (maximal variance, decorrelated components), ICA (statistically independent components; temporal ICA for EEG, spatial for fMRI) Studies have found PCA works as well as ICA, with less to tune.
+
+	- Supervised: regression and classification using external target signal (e.g stimulus type/intensity/latency, response time, artifactual information - linear regression, LDA) or using band-power features.
+
+
+#### Previous Results (Successes and Failures)
+
+- EEG + fMRI (Walz et. al., 2013) on the Oddball dataset (our dataset)
+	- EEG data \\(\to\\) training linear classifier to maximally discriminate standard and target trials \\(\to\\) create an EEG regressor out of demeaned classifier output (convolved with HRF) \\(\to\\) use the EEG regressor (and other event or response time related regressors) to fit a linear model to fMRI data \\(\to\\) comment on the correlation based on the coefficients (positive or negative, p-values). Also, they manually looked at fMRI images at TRs with high degree of correlation with the regressors.
+
+	- How did they validate their performance?
+		- They use the p-values of the coefficients to filter out correlates that are insignificant
+		- Qualitative images and 'eyeballing it'-based analyses; comparing to previous known work to demonstrate that the data validates a neuroscientific model
+		- P1 response, P300 response, etc (Calhoun paper)
+
+- MEG + fMRI (Cichy et. al., 2014)
+	- Used MEG and fMRI data to analyze the hierarchy of the visual pathway in the brain applied to object recognition (i.e., At what stage of visual processing does the brain disambiguate between human and non-human faces? How about man-made versus natural objects?)
+	- How did they validate their performance?
+		- Made plots of predictive power based on (MEG signal at each time point) over time, notice (with eyes) that peaks correspond to neuroscientifically-known time points in the visual process
+		- Correlate the human fMRI with a monkey fMRI and report correlations for the same task
+		- Generally, look at covariance plots and describe statistics for the time-points which are neuroscientifically known to be relevant for the neural visual processing pipeline
+
+- mCCA vs jICA (2008)
+	- Canonical Correlation Analysis for Feature-Based Fusion of Biomedical Imaging Modalities and Its Application to Detection of Associative Networks in Schizophrenia - Correa et al
+	- Uses CCA to make inferences about brain activity in schizophrenia (found patients with schizophrenia showing more functional activity in motor areas and less activity in temporal areas associated with less gray matter as compared to healthy controls), general brain function (fMRI and EEG data collected for an auditory oddball task reveal associations of the temporal and motor areas with the N2 and P3 peaks)
+	- The multimodal CCA (mCCA) method, we introduce is based on a linear mixing model in which each feature dataset is decomposed into a set of components (such as spatial areas for fMRI/sMRI or temporal segments for EEG), which have varying levels of activations for different subjects. A pair of components, one from each modality, are linked if they modulate similarly across subjects.
+	- How did they validate their performance? 
+		- Generated a simulated fMRI like set of components and an ERP-like set of components and mix each set with a different set of modulation profiles to obtain two sets of mixtures. The modulation profiles are chosen from a random normal distribution. The profiles are kept orthogonal within each set. Connections between the two modalities are simulated by generating correlation between profile pairs formed across modalities
+	- Compares mCCA with jICA:
+		- jICA examines the common connection between independent networks in both modalities while mCCA allows for common as well as distinct components and describes the level of connection between the two modalities
+		- jICA model requires the two datasets to be normalized before being entered into a joint analysis underlying assumption of made in jICA is more reasonable when fusing information from two datasets that originate from the same modality
+		- independence assumption in jICA; but utilizes higher order statistical information
+		- mCCA jointly analyzes the two modalities to fuse information without giving preference to either modality; does not assume a common mixing matrix and does not require the data to be preprocessed to ensure equal contribution from both modalities
+		- mCCA assumes that the components are linearly mixed across subjects
+- Deligianni et. al (2014): Relating resting-state fMRI and EEG whole-brain connectomes across frequency bands
+	- Apply sparse-CCA with randomized Lasso to fMRI-connectome and EEG-connectome for resting-state data (i.e., no supervised task) to identify the connections which provide most signal
+	- Analyze the distance between precision matrices of the Hilbert envelopes (for fMRI and EEG)
+		- Assuming brain activity patterns are described by a Gaussian multidimensional stationary process,  the covariance matrix fully characterizes the statistical dependencies among the underlying signals
+	- Come up with a function \\(f(\Omega_{F}) \to \Omega_{E}\\) with an estimate for prediction error via cross-validation
+
+
 
 ### Our Points of Novelty
 
 Here are the points which we can complicate:
-- people don't think the fMRI and EEG data is low-dimensional, and thus don't use powerful techniques and approaches to find structure 
-- we can take advantage of the structure over time and space in fMRI and EEG data to reduce dimension and induce sparsity 
-- most people do not focus on coming up with generative models for fMRI / EEG data (except for 4 groups or so: John Cunningham, Jonathan Pillow and two others).
+- Most people don't think the fMRI and EEG data is low-dimensional, and thus don't go beyond vanilla approaches to find structure, with the exception of the Deligianni paper
+- We can take advantage of the structure over time and space in fMRI and EEG data to reduce dimension and induce sparsity 
+- Most people do not focus on coming up with generative models for fMRI / EEG data (except for 4 groups or so: John Cunningham, Jonathan Pillow and two others).
+- We can go beyond Gaussian process assumptions to potentially create a more realistic view of the signals
+- Use information-theoretic features in addition to typical neuroscientific features; validate results of the Assecondi paper
 
 
 ### Links 
