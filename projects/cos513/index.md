@@ -44,6 +44,14 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 
 	- Data fusion [What we are most interested in]: Using supervised or unsupervised machine learning algorithms to combine multimodal datasets
 
+- Late fusion methods [Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data - Biessmann et al]
+
+	- Supervised methods (either using an external target signal or asymmetric fusion where features from one modality are used as labels/regressors to extract factors from another modality) vs unsupervised (relying on data stats)
+
+	- Unsupervised: PCA (maximal variance, decorrelated components), ICA (statistically independent components; temporal ICA for EEG, spatial for fMRI) Studies have found PCA works as well as ICA, with less to tune.
+
+	- Supervised: regression and classification using external target signal (e.g stimulus type/intensity/latency, response time, artifactual information - linear regression, LDA) or using band-power features.
+
 - Early fusion methods [Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data - Biessmann et al]: First forming a feature set from each dataset followed by exploration of connections among the features.
 
 	- *Multimodal ICA*: joint ICA (features from multiple modalities simply concatenated); parallel ICA (a user specified similarity relation between components from the different modalities is optimised simultaneously with modality-specific un-mixing matrices); linked ICA (Bayesian)
@@ -52,13 +60,6 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 
 	- *mSPoC*: co-modulation between component power and a scalar target variable z can be modeled using the SPoC objective function;  in multimodal case, assume the target function z is the time-course of a component that is to be extracted from the other modality
 
-- Late fusion methods [Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data - Biessmann et al]
-
-	- Supervised methods (either using an external target signal or asymmetric fusion where features from one modality are used as labels/regressors to extract factors from another modality) vs unsupervised (relying on data stats)
-
-	- Unsupervised: PCA (maximal variance, decorrelated components), ICA (statistically independent components; temporal ICA for EEG, spatial for fMRI) Studies have found PCA works as well as ICA, with less to tune.
-
-	- Supervised: regression and classification using external target signal (e.g stimulus type/intensity/latency, response time, artifactual information - linear regression, LDA) or using band-power features.
 
 
 #### Previous Results (Successes and Failures)
@@ -94,18 +95,66 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 	- Apply sparse-CCA with randomized Lasso to fMRI-connectome and EEG-connectome for resting-state data (i.e., no supervised task) to identify the connections which provide most signal
 	- Analyze the distance between precision matrices of the Hilbert envelopes (for fMRI and EEG)
 		- Assuming brain activity patterns are described by a Gaussian multidimensional stationary process,  the covariance matrix fully characterizes the statistical dependencies among the underlying signals
-	- Come up with a function \\(f(\Omega_{F}) \to \Omega_{E}\\) with an estimate for prediction error via cross-validation
+	- They estimate prediction error via cross-validation for a function \\(f(\Omega_F) \approx \Omega_E\\) 
 
 
 
 ### Our Points of Novelty
 
-Here are the points which we can complicate:
 - Most people don't think the fMRI and EEG data is low-dimensional, and thus don't go beyond vanilla approaches to find structure, with the exception of the Deligianni paper
+
 - We can take advantage of the structure over time and space in fMRI and EEG data to reduce dimension and induce sparsity 
+
 - Most people do not focus on coming up with generative models for fMRI / EEG data (except for 4 groups or so: John Cunningham, Jonathan Pillow and two others).
+
 - We can go beyond Gaussian process assumptions to potentially create a more realistic view of the signals
+
 - Use information-theoretic features in addition to typical neuroscientific features; validate results of the Assecondi paper
+
+### Details of Our Approach
+
+- What methods will you use to analyze these data?
+	- How will features be represented?
+		- as vectors in space and time 
+			- vector in space varying over time (fMRI representations are sparse)
+			- vector in time varying over space (EEG representations are sparse)
+		- we can leverage a variety of dimension reduction approaches (both linear and non-linear)
+		- use mutual information \\(\mc{I}\\) between points as a feature
+		- use entropy \\(H\\) as a feature
+	- What probabilistic models can we use to capture important signal in these data?
+		- GLM (what everyone uses) with sparse features (after dimension reduction - sparse PCA?)
+		- sparse CCA (following Deligianni et. al. but applied to predictive models)
+		- Generative model with general non-gaussian distributions (for instance, fourth moment not \\(3\\))
+			- Common underlying sources generate EEG and fMRI by mixing with EEG-specific noise sources and fMRI-specific noise sources
+		- Can apply similar approach from Cichy et. al (2014)
+			- Use machine learning classifier as a proxy for the predictive power of EEG signal at a given state
+	- Information-theoretic models 
+		- Most people using simultaneous EEG-fMRI rely on fitting a general linear model (in most cases, this is just a plain linear model with a linear mixing matrix etc) to describe the correlation between EEG and fMRI data. 
+		- Thus most people only focus on linear correlation
+		- Our alternative: Use mutual information and entropy to measure correlation, since these incorporate higher order correlations present in the data
+		- Potential drawback: need high quality estimate of underlying probability distribution EEG/fMRI features are usually modeled as Gaussian - this assumption is way too broad
+		- We can use different bias correction techniques based on number of samples, amount of correlation, and binning strategy.
+
+- What assumptions are made about the data in the model (explicit and implicit)?
+	- There is a high degree of correlation between EEG and fMRI data
+	- Sparsity in the components (namely, that the thought signal lives in a much lower dimension, particularly true for the oddball task) 
+
+- What will you do if those violated assumptions hurt performance?
+	- 
+- How will you fit the model to the data? Will this be computationally tractable?
+	- CCA with regularization to induce sparsity in components.
+	- Variational inference (for fitting generative model)
+- How will you validate performance?
+	 - We have some supervised tasks (as mentioned before); here, we can just assess predictive error
+	 - We can also plot the data in interesting formats (over time, in low dimension, etc.) to assess qualitatively if the results are meaningful 
+	 - We can compare our results to neuroscientific literature to see if our models hold up to previously known results 
+- Is it feasible to compare our methods against other methods and to compare models? 
+	- Yes, it is very feasible; we can compare with normal joint-ICA and non-sparse CCA
+
+- Do reasonable implementations of the methods exist?
+	- sparse-CCA has a reasonable implementation
+	- variational inference fitting will depend on the specific assumptions we make about the priors
+		- David Blei's group at Columbia is working on message-passing algorithms for plug-and-chug variational inference
 
 
 ### Links 

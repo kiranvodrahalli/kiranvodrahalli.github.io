@@ -138,19 +138,19 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 <li>Neurogenerative modeling: similar to EEG-source modeling; inverse modeling based on the simulation of biophysical processes (known from neuroscience) involved in generating EEG and fMRI signals.</li>
 <li>Data fusion [What we are most interested in]: Using supervised or unsupervised machine learning algorithms to combine multimodal datasets</li>
 </ul></li>
-<li><p>Early fusion methods [Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data - Biessmann et al]: First forming a feature set from each dataset followed by exploration of connections among the features.</p>
-
-<ul>
-<li><em>Multimodal ICA</em>: joint ICA (features from multiple modalities simply concatenated); parallel ICA (a user specified similarity relation between components from the different modalities is optimised simultaneously with modality-specific un-mixing matrices); linked ICA (Bayesian)</li>
-<li><em>CCA</em> and <em>PLS</em>: find the transformations for each modality that maximise the correlation between the time courses of the extracted components. Partial least squares aims to find maximally covarying components, CCA finds maximally correlating components. Relaxes independent component assumption of jICA, does not constrain component activation patterns to be the same for both modalities.</li>
-<li><em>mSPoC</em>: co-modulation between component power and a scalar target variable z can be modeled using the SPoC objective function;  in multimodal case, assume the target function z is the time-course of a component that is to be extracted from the other modality</li>
-</ul></li>
 <li><p>Late fusion methods [Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data - Biessmann et al]</p>
 
 <ul>
 <li>Supervised methods (either using an external target signal or asymmetric fusion where features from one modality are used as labels/regressors to extract factors from another modality) vs unsupervised (relying on data stats)</li>
 <li>Unsupervised: PCA (maximal variance, decorrelated components), ICA (statistically independent components; temporal ICA for EEG, spatial for fMRI) Studies have found PCA works as well as ICA, with less to tune.</li>
 <li>Supervised: regression and classification using external target signal (e.g stimulus type/intensity/latency, response time, artifactual information - linear regression, LDA) or using band-power features.</li>
+</ul></li>
+<li><p>Early fusion methods [Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data - Biessmann et al]: First forming a feature set from each dataset followed by exploration of connections among the features.</p>
+
+<ul>
+<li><em>Multimodal ICA</em>: joint ICA (features from multiple modalities simply concatenated); parallel ICA (a user specified similarity relation between components from the different modalities is optimised simultaneously with modality-specific un-mixing matrices); linked ICA (Bayesian)</li>
+<li><em>CCA</em> and <em>PLS</em>: find the transformations for each modality that maximise the correlation between the time courses of the extracted components. Partial least squares aims to find maximally covarying components, CCA finds maximally correlating components. Relaxes independent component assumption of jICA, does not constrain component activation patterns to be the same for both modalities.</li>
+<li><em>mSPoC</em>: co-modulation between component power and a scalar target variable z can be modeled using the SPoC objective function;  in multimodal case, assume the target function z is the time-course of a component that is to be extracted from the other modality</li>
 </ul></li>
 </ul>
 
@@ -211,18 +211,105 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 <ul>
 <li>Assuming brain activity patterns are described by a Gaussian multidimensional stationary process,  the covariance matrix fully characterizes the statistical dependencies among the underlying signals</li>
 </ul></li>
-<li>Come up with a function \(f(\Omega<em>{F}) \to \Omega</em>{E}\) with an estimate for prediction error via cross-validation</li>
+<li>They estimate prediction error via cross-validation for a function \(f(\Omega<em>F) \approx \Omega</em>E\) </li>
 </ul></li>
 </ul>
 
 <h3>Our Points of Novelty</h3>
 
-<p>Here are the points which we can complicate:
-- Most people don&#39;t think the fMRI and EEG data is low-dimensional, and thus don&#39;t go beyond vanilla approaches to find structure, with the exception of the Deligianni paper
-- We can take advantage of the structure over time and space in fMRI and EEG data to reduce dimension and induce sparsity 
-- Most people do not focus on coming up with generative models for fMRI / EEG data (except for 4 groups or so: John Cunningham, Jonathan Pillow and two others).
-- We can go beyond Gaussian process assumptions to potentially create a more realistic view of the signals
-- Use information-theoretic features in addition to typical neuroscientific features; validate results of the Assecondi paper</p>
+<ul>
+<li><p>Most people don&#39;t think the fMRI and EEG data is low-dimensional, and thus don&#39;t go beyond vanilla approaches to find structure, with the exception of the Deligianni paper</p></li>
+<li><p>We can take advantage of the structure over time and space in fMRI and EEG data to reduce dimension and induce sparsity </p></li>
+<li><p>Most people do not focus on coming up with generative models for fMRI / EEG data (except for 4 groups or so: John Cunningham, Jonathan Pillow and two others).</p></li>
+<li><p>We can go beyond Gaussian process assumptions to potentially create a more realistic view of the signals</p></li>
+<li><p>Use information-theoretic features in addition to typical neuroscientific features; validate results of the Assecondi paper</p></li>
+</ul>
+
+<h3>Details of Our Approach</h3>
+
+<ul>
+<li><p>What methods will you use to analyze these data?</p>
+
+<ul>
+<li>How will features be represented?
+
+<ul>
+<li>as vectors in space and time 
+
+<ul>
+<li>vector in space varying over time (fMRI representations are sparse)</li>
+<li>vector in time varying over space (EEG representations are sparse)</li>
+</ul></li>
+<li>we can leverage a variety of dimension reduction approaches (both linear and non-linear)</li>
+<li>use mutual information \(\mc{I}\) between points as a feature</li>
+<li>use entropy \(H\) as a feature</li>
+</ul></li>
+<li>What probabilistic models can we use to capture important signal in these data?
+
+<ul>
+<li>GLM (what everyone uses) with sparse features (after dimension reduction - sparse PCA?)</li>
+<li>sparse CCA (following Deligianni et. al. but applied to predictive models)</li>
+<li>Generative model with general non-gaussian distributions (for instance, fourth moment not \(3\))
+
+<ul>
+<li>Common underlying sources generate EEG and fMRI by mixing with EEG-specific noise sources and fMRI-specific noise sources</li>
+</ul></li>
+<li>Can apply similar approach from Cichy et. al (2014)
+
+<ul>
+<li>Use machine learning classifier as a proxy for the predictive power of EEG signal at a given state</li>
+</ul></li>
+</ul></li>
+<li>Information-theoretic models 
+
+<ul>
+<li>Most people using simultaneous EEG-fMRI rely on fitting a general linear model (in most cases, this is just a plain linear model with a linear mixing matrix etc) to describe the correlation between EEG and fMRI data. </li>
+<li>Thus most people only focus on linear correlation</li>
+<li>Our alternative: Use mutual information and entropy to measure correlation, since these incorporate higher order correlations present in the data</li>
+<li>Potential drawback: need high quality estimate of underlying probability distribution EEG/fMRI features are usually modeled as Gaussian - this assumption is way too broad</li>
+<li>We can use different bias correction techniques based on number of samples, amount of correlation, and binning strategy.</li>
+</ul></li>
+</ul></li>
+<li><p>What assumptions are made about the data in the model (explicit and implicit)?</p>
+
+<ul>
+<li>There is a high degree of correlation between EEG and fMRI data</li>
+<li>Sparsity in the components (namely, that the thought signal lives in a much lower dimension, particularly true for the oddball task) </li>
+</ul></li>
+<li><p>What will you do if those violated assumptions hurt performance?</p>
+
+<ul>
+<li></li>
+</ul></li>
+<li><p>How will you fit the model to the data? Will this be computationally tractable?</p>
+
+<ul>
+<li>CCA with regularization to induce sparsity in components.</li>
+<li>Variational inference (for fitting generative model)</li>
+</ul></li>
+<li><p>How will you validate performance?</p>
+
+<ul>
+<li>We have some supervised tasks (as mentioned before); here, we can just assess predictive error</li>
+<li>We can also plot the data in interesting formats (over time, in low dimension, etc.) to assess qualitatively if the results are meaningful </li>
+<li>We can compare our results to neuroscientific literature to see if our models hold up to previously known results </li>
+</ul></li>
+<li><p>Is it feasible to compare our methods against other methods and to compare models? </p>
+
+<ul>
+<li>Yes, it is very feasible; we can compare with normal joint-ICA and non-sparse CCA</li>
+</ul></li>
+<li><p>Do reasonable implementations of the methods exist?</p>
+
+<ul>
+<li>sparse-CCA has a reasonable implementation</li>
+<li>variational inference fitting will depend on the specific assumptions we make about the priors
+
+<ul>
+<li>David Blei&#39;s group at Columbia is working on message-passing algorithms for plug-and-chug variational inference</li>
+</ul></li>
+</ul></li>
+</ul>
 
 <h3>Links</h3>
 
@@ -339,7 +426,7 @@ We performed PCA to reduce the voxel space dimension on a single subject’s fMR
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-10-07T13:06:35-04:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-10-07T13:21:50-04:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>
