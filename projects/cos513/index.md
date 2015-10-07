@@ -7,6 +7,55 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 </p>
 
 
+
+
+## Background Survey
+
+### Our goals (X = EEG, Y = fMRI)
+	- find f(X) = Y
+	- find f(Y) = X
+	- find a low-dimensional mapping f(X, Y) -> X' where X' is low-dim EEG
+	- find a low-dimensional mapping f(X, Y) -> Y' where Y' is low-dim fMRI
+	- have a probabilistic generative model for X' and Y' (perhaps used in f)
+
+### Assessing the quality of X', Y'
+	- Supervised (predictive) tests
+		- predict EEG signal from fMRI (accuracy)
+		- predict fMRI signal from EEG (accuracy)
+		- predict modality of signal type (auditory or visual) from oddball data
+		- predict oddball signal on both auditory and visual data
+		- how well does generative model do for covarying with X' and Y'?
+	- Unsupervised tests
+		- analyze covariation of low-dimensional signal with high-dimensional signals
+		- comment on correlations
+		- goodness of generative model: compare with actual data (standard statistics) 
+
+### Prior Methods and Approaches
+
+
+Generally, prior approaches either use both fMRI and EEG in conjunction as separate information sources to verify neuroscientific claims, or map them into the same space with joint-ICA or CCA, potentially fitting a basic linear model with features from EEG to fMRI. 
+
+### Our Points of Novelty
+
+Here are the points which we can complicate:
+	- people don't think the fMRI and EEG data is low-dimensional, and thus don't use powerful techniques and approaches to find structure 
+	- we can take advantage of the structure over time and space in fMRI and EEG data to reduce dimension and induce sparsity 
+	- most people do not focus on coming up with generative models for fMRI / EEG data (except for 4 people Barbara mentioned: John Cunningham, Jonathan Pillow, 
+
+
+### Links 
+
+	 - <a href=  "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7182735" title= "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7182735"> Multivariate Machine Learning Methods for Fusing Multimodal Functional Neuroimaging Data [Dähne et. al., 2015] </a>
+	 - <a href= "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4740317" title="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4740317"> Canonical Correlation Analysis for Feature-Based Fusion of Biomedical Imaging Modalities and Its Application to Detection of Associative Networks in Schizophrenia [Correa et. al., 2008]</a> 
+	 - <a href= "http://www.ncbi.nlm.nih.gov/pubmed/25221467" title="http://www.ncbi.nlm.nih.gov/pubmed/25221467"> Relating resting-state fMRI and EEG whole-brain connectomes across frequency bands [Deligianni et. al, 2014] </a>
+	 - <a href= "http://www.ncbi.nlm.nih.gov/pubmed/24305817" title= "http://www.ncbi.nlm.nih.gov/pubmed/24305817"> Simultaneous EEG-fMRI reveals temporal evolution of coupling between supramodal cortical attention networks and the brainstem [Walz et. al., 2013]</a>
+	 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/16246587" title="http://www.ncbi.nlm.nih.gov/pubmed/16246587" > Neuronal chronometry of target detection: fusion of hemodynamic and event-related potential data [Calhoun et. al., 2006] </a>
+	 - <a href= "http://www.nature.com/neuro/journal/v17/n3/full/nn.3635.html" title="cichy"> Resolving human object recognition in space and time [Cichy et. al., 2014] </a>
+	 - <a href= "http://www.ncbi.nlm.nih.gov/pubmed/22553012" title= "huster"> Methods for simultaneous EEG-fMRI: an introductory review [Huster. et. al, 2012] </a> 
+	 - <a href="http://www.mitpressjournals.org/doi/pdf/10.1162/NECO_a_00695" title="info-theory"> Reliability of Information-Based Integration of EEG and fMRI Data: A Simulation Study [Assecondi et. al., 2015] </a> 
+
+
+
 ## Overview
 
 
