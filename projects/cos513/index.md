@@ -91,6 +91,9 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 		- independence assumption in jICA; but utilizes higher order statistical information
 		- mCCA jointly analyzes the two modalities to fuse information without giving preference to either modality; does not assume a common mixing matrix and does not require the data to be preprocessed to ensure equal contribution from both modalities
 		- mCCA assumes that the components are linearly mixed across subjects
+
+<img src="{{ site.baseurl }}/projects/cos513/mCCA-vs-jICA.png" />
+
 - Deligianni et. al (2014): Relating resting-state fMRI and EEG whole-brain connectomes across frequency bands
 	- Apply sparse-CCA with randomized Lasso to fMRI-connectome and EEG-connectome for resting-state data (i.e., no supervised task) to identify the connections which provide most signal
 	- Analyze the distance between precision matrices of the Hilbert envelopes (for fMRI and EEG)
