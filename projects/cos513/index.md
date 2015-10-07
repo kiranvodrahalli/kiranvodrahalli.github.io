@@ -80,6 +80,8 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 		- Generally, look at covariance plots and describe statistics for the time-points which are neuroscientifically known to be relevant for the neural visual processing pipeline
 
 - mCCA vs jICA (2008)
+	- <img src="{{ site.baseurl }}/projects/cos513/mCCA-vs-jICA.png" />
+	
 	- Canonical Correlation Analysis for Feature-Based Fusion of Biomedical Imaging Modalities and Its Application to Detection of Associative Networks in Schizophrenia - Correa et al
 	- Uses CCA to make inferences about brain activity in schizophrenia (found patients with schizophrenia showing more functional activity in motor areas and less activity in temporal areas associated with less gray matter as compared to healthy controls), general brain function (fMRI and EEG data collected for an auditory oddball task reveal associations of the temporal and motor areas with the N2 and P3 peaks)
 	- The multimodal CCA (mCCA) method, we introduce is based on a linear mixing model in which each feature dataset is decomposed into a set of components (such as spatial areas for fMRI/sMRI or temporal segments for EEG), which have varying levels of activations for different subjects. A pair of components, one from each modality, are linked if they modulate similarly across subjects.
@@ -91,8 +93,6 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 		- independence assumption in jICA; but utilizes higher order statistical information
 		- mCCA jointly analyzes the two modalities to fuse information without giving preference to either modality; does not assume a common mixing matrix and does not require the data to be preprocessed to ensure equal contribution from both modalities
 		- mCCA assumes that the components are linearly mixed across subjects
-
-		- <img src="{{ site.baseurl }}/projects/cos513/mCCA-vs-jICA.png" />
 
 - Deligianni et. al (2014): Relating resting-state fMRI and EEG whole-brain connectomes across frequency bands
 	- Apply sparse-CCA with randomized Lasso to fMRI-connectome and EEG-connectome for resting-state data (i.e., no supervised task) to identify the connections which provide most signal
