@@ -94,7 +94,7 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 
 	- We did \\(\left[U^{fmri} S^{fmri} V^{fmri}\right] = \\)SVD(\\(X\\)) and used the matrix \\(U^{fmri}\\) which is \\(170\times 170\\) which is full rank as a representation. 
 
-	- We also did \\(\left[U^{eeg} S^{eeg} V^{eeg}\right] = \\)SVD(\\(Y\\)) and used the matrix \\(U^{eeg}\\)  which is \((170 \times 170\)), full rank, as a representation
+	- We also did \\(\left[U^{eeg} S^{eeg} V^{eeg}\right] = \\)SVD(\\(Y\\)) and used the matrix \\(U^{eeg}\\)  which is \\((170 \times 170\\)), full rank, as a representation
 
 	- What these representations mean is simply an orthogonal basis for the space of times (\\(170\\) different times at which we measure EEG and fMRI)
 
