@@ -96,15 +96,15 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 <li><p>We have some representation of EEG data and fMRI data, such that representations can be paired</p>
 
 <ul>
-<li>We pair over time: \( (x(t), y(t)) \) where \(x(t)\) is a \(34 \times 2000\) block of EEG data, where \(43\) is a spatial axis and \(2000\) is a time axis; \(y(t)\) is a \(64\times 64\times 32)\) block of fMRI voxels at one TR; (T = 170\)</li>
-<li>\(37\) re-referenced EEG channels with \(2000\) EEG readings per TR ( \(2\) secs) gives \(32\) slices \(\times 64 \times 64\) voxels</li>
-<li>pair over time, but modify EEG \(x(t)\) to be \(34\times 4000\) block and \(y(t)\) is a \(64\times 64\times 32)\times 2\) block of voxels with two TRs, thus \(T = 85\)</li>
+<li>We pair over time: \( (x(t), y(t)) \) where \(x(t)\) is a \(34 \times 2000\) block of EEG data, where \(43\) is a spatial axis and \(2000\) is a time axis; \(y(t)\) is a \(64\times 64\times 32)\) block of fMRI voxels at one TR; \(T = 170\)</li>
+<li>\(37\) re-referenced EEG channels with \(2000\) EEG readings per TR ( \(2\) secs) gives \(32\) slices \(\times 64\times 64\) voxels</li>
+<li>pair over time, but modify EEG \(x(t)\) to be \(34\times 4000\) block and \(y(t)\) is a \(64\times 64\times 32)\times 2\) block of voxels with two TRs, thus \(T = 85\).</li>
 <li>follow similar pairing schemes except do feature extraction on the \(43\times 2000\) and \(64\times 64\times 32\) (i.e. convert the data into large centroids or something), do smoothing, averaging, etc.</li>
 </ul></li>
 <li><p>run sparse CCA on the pairs \((x(t), y(t))\) and NOT joint ICA since we do not want an independence assumption imposed on the time (though we should do joint ICA as a test)</p>
 
 <ul>
-<li>linear sparse CCA gives us a mapping Ax = By between the two spaces. to run sparse CCA, we use the UCL code.</li>
+<li>linear sparse CCA gives us a mapping \(Ax = By\) between the two spaces. to run sparse CCA, we use the UCL code.</li>
 <li>kernelized sparse CCA allows us to model nonlinear correlation between x and y</li>
 <li><p>Bayesian CCA</p>
 
@@ -156,7 +156,7 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 <li>then we can modify our representation of the signal to some form beyond covariance matrix that perhaps takes into account the generative model we propose.</li>
 <li>then we have a (potentially new? need to look into more detail) paradigm: Namely, two signals in time each with a generative model on response; these are paired upon, sparse CCA is performed on them to learn a map from one signal to the other</li>
 <li>or perhaps we only provide a generative model on one of the signals, and try to induce the transformation of the generative model on the other signal.</li>
-<li>Here is a <a href ="http://www.ncbi.nlm.nih.gov/pubmed/25221467" title="paper"> key paper </a>.</li>
+<li>Here is a <a href ="http://www.ncbi.nlm.nih.gov/pubmed/25221467" title="paper"> key paper </a> by Deligianni on using sparse CCA to map precision matrices across connectomes.</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -164,14 +164,15 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 <h2>First Analyses and Basic Models</h2>
 
 <ul>
-<li><p>We ran matlab&#39;s version of CCA on fmri \((131072 \times 170)\) and eeg \((74000 \times 170)\) data; got correlation \(1\) between elements</p></li>
-<li><p>This gives us \(M = (X - \bar{X})<em>A\), \(N = (Y - \bar{Y})</em>B\) such that \(M \approx N\). Here, \(X\) is the fMRI matrix and \(Y\) is the EEG matrix. Thus we are effectively mapping into a \(170\times 170\) matrix to compare \(X\) and \(Y\) (these are \(M, N\). We have \( |M - N| \approx 0\).</p></li>
+<li><p>We ran Matlab&#39;s version of CCA on the fMRI data matrix \((131072 \times 170)\) and the EEG data matrix \((74000 \times 170)\) and got correlation \(1\) between elements.</p></li>
+<li><p>Here we let \(X\) be the data matrix for EEG data and \(Y\) be the data matrix for fMRI data. </p></li>
+<li><p>This gives us \( M = (X - \overline{X})A \), \( N = (Y - \overline{Y})*B \) for linear transforms \(A, B\) such that \(M \approx N\). Here, \(X\) is the EEG matrix and \(Y\) is the fMRI matrix. Thus we are effectively mapping into a \( (170\times  170)\) matrix to compare \(X\) and \(Y\) (these are \(M, N\). We have \( |M - N| \approx 0\).</p></li>
 <li><p>Correlation \(1\) is bad and indicates overfitting. Thus we try reducing dimensions.</p>
 
 <ul>
-<li>We did \(\left[U^{fmri} S^{fmri} V^{fmri}\right] = \)svd(\(fmri\)) and used the matrix \(U^{fmri}\) which is \(170\times 170\) which is full rank as a representation. </li>
-<li>We also did \(\left[U^{eeg} S^{eeg} V^{eeg}\right] = \)svd(\(eeg\)) and used the matrix \(U^{eeg}\)  which is ((170 \times 170)), full rank, as a representation</li>
-<li>What these representations mean is simply an orthogonal basis for the space of times ( \(170\) different times at which we measure EEG and fMRI)</li>
+<li>We did \(\left[U^{fmri} S^{fmri} V^{fmri}\right] = \)SVD(\(X\)) and used the matrix \(U^{fmri}\) which is \(170\times 170\) which is full rank as a representation. </li>
+<li>We also did \(\left[U^{eeg} S^{eeg} V^{eeg}\right] = \)SVD(\(Y\)) and used the matrix \(U^{eeg}\)  which is ((170 \times 170)), full rank, as a representation</li>
+<li>What these representations mean is simply an orthogonal basis for the space of times (\(170\) different times at which we measure EEG and fMRI)</li>
 <li>Then we ran CCA( \(U^{fmri}, U^{eeg}\)) to get the components of maximum correlation - we still get a correlation of \(1\). there&#39;s no regularization here!</li>
 </ul></li>
 <li><p>Why did we get perfect correlation? </p>
@@ -543,7 +544,7 @@ We performed PCA to reduce the voxel space dimension on a single subject’s fMR
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-10-14T03:35:57-04:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-10-14T03:55:10-04:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>
