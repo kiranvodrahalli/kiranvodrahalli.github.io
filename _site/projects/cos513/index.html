@@ -166,7 +166,7 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 <ul>
 <li><p>We ran Matlab&#39;s version of CCA on the fMRI data matrix \((131072 \times 170)\) and the EEG data matrix \((74000 \times 170)\) and got correlation \(1\) between elements.</p></li>
 <li><p>Here we let \(X\) be the data matrix for EEG data and \(Y\) be the data matrix for fMRI data. </p></li>
-<li><p>This gives us \( M = (X - \overline{X})A \), \( N = (Y - \overline{Y})*B \) for linear transforms \(A, B\) such that \(M \approx N\). Here, \(X\) is the EEG matrix and \(Y\) is the fMRI matrix. Thus we are effectively mapping into a \( (170\times  170)\) matrix to compare \(X\) and \(Y\) (these are \(M, N\). We have \( |M - N| \approx 0\).</p></li>
+<li><p>This gives us \( M = (X - \overline{X})A \), \( N = (Y - \overline{Y})B \) for linear transforms \(A, B\) such that \(M \approx N\). Here, \(X\) is the EEG matrix and \(Y\) is the fMRI matrix. Thus we are effectively mapping into a \( (170\times  170)\) matrix to compare \(X\) and \(Y\) (these are \(M, N\). We have \( |M - N| \approx 0\).</p></li>
 <li><p>Correlation \(1\) is bad and indicates overfitting. Thus we try reducing dimensions.</p>
 
 <ul>
@@ -544,7 +544,7 @@ We performed PCA to reduce the voxel space dimension on a single subject’s fMR
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-10-14T03:55:10-04:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-10-14T03:57:19-04:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>

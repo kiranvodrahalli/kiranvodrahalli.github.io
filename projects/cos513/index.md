@@ -88,7 +88,7 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 
 - Here we let \\(X\\) be the data matrix for EEG data and \\(Y\\) be the data matrix for fMRI data. 
 
-- This gives us \\( M = (X - \overline{X})A \\), \\( N = (Y - \overline{Y})*B \\) for linear transforms \\(A, B\\) such that \\(M \approx N\\). Here, \\(X\\) is the EEG matrix and \\(Y\\) is the fMRI matrix. Thus we are effectively mapping into a \\( (170\times  170)\\) matrix to compare \\(X\\) and \\(Y\\) (these are \\(M, N\\). We have \\( \|M - N\| \approx 0\\).
+- This gives us \\( M = (X - \overline{X})A \\), \\( N = (Y - \overline{Y})B \\) for linear transforms \\(A, B\\) such that \\(M \approx N\\). Here, \\(X\\) is the EEG matrix and \\(Y\\) is the fMRI matrix. Thus we are effectively mapping into a \\( (170\times  170)\\) matrix to compare \\(X\\) and \\(Y\\) (these are \\(M, N\\). We have \\( \|M - N\| \approx 0\\).
 
 - Correlation \\(1\\) is bad and indicates overfitting. Thus we try reducing dimensions.
 
