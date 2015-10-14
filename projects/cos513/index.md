@@ -8,136 +8,129 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 ## A Plan for Our Contribution
 
-### We have some representation of EEG data and fMRI data, such that representations can be paired
+- We have some representation of EEG data and fMRI data, such that representations can be paired
 
-#### We pair over time: \\( (x_t, y_t) \\) where \\(x_t\\) is a \\(34 \times 2000\\) block of EEG data, where \\(43\\) is a spatial axis and \\(2000\\) is a time axis; \\(y_t\\) is a \\\(64\times64\times32)\\) block of fMRI voxels at one TR; \(T = 170\\)
-\\(34\\) re-referenced EEG channels. \\(2000\\) EEG readings per TR ( \\(2\\) secs)
-\\(32\\) slices \\(\times 64 \times 64\\) voxels
+	- We pair over time: \\( (x(t), y(t)) \\) where \\(x(t)\\) is a \\(34 \times 2000\\) block of EEG data, where \\(43\\) is a spatial axis and \\(2000\\) is a time axis; \\(y(t)\\) is a \\\(64\times 64\times 32)\\) block of fMRI voxels at one TR; \(T = 170\\)
+	- \\(37\\) re-referenced EEG channels with \\(2000\\) EEG readings per TR ( \\(2\\) secs) gives \\(32\\) slices \\(\times 64 \times 64\\) voxels
 
-#### pair over time, but modify EEG \\(x_t\\) to be \\(34\times 4000\\) block and \\(y_t\\) is a \\\(64\times 64\times 32)\times 2\\) block of voxels with two TRs, thus \\(T = 85\\)
+	- pair over time, but modify EEG \\(x(t)\\) to be \\(34\times 4000\\) block and \\(y(t)\\) is a \\\(64\times 64\times 32)\times 2\\) block of voxels with two TRs, thus \\(T = 85\\)
 
-#### follow similar pairing schemes except do feature extraction on the \\(43\times 2000\\) and \\(64\times 64\times 32\\) (i.e. convert the data into large centroids or something), do smoothing, averaging, etc.
+	- follow similar pairing schemes except do feature extraction on the \\(43\times 2000\\) and \\(64\times 64\times 32\\) (i.e. convert the data into large centroids or something), do smoothing, averaging, etc.
 
-### run sparse CCA on the pairs \\\((x_t, y_t)\\) and NOT joint ICA since we do not want an independence assumption imposed on the time (though we should do joint ICA as a test)
+- run sparse CCA on the pairs \\\((x(t), y(t))\\) and NOT joint ICA since we do not want an independence assumption imposed on the time (though we should do joint ICA as a test)
 
-#### linear sparse CCA gives us a mapping Ax = By between the two spaces. to run sparse CCA, we use the UCL code.
+	- linear sparse CCA gives us a mapping Ax = By between the two spaces. to run sparse CCA, we use the UCL code.
 
-#### kernelized sparse CCA allows us to model nonlinear correlation between x and y
+	- kernelized sparse CCA allows us to model nonlinear correlation between x and y
 
-#### Bayesian CCA
+	- Bayesian CCA
 
-##### https://cran.r-project.org/web/packages/CCAGFA/CCAGFA.pdf
+		- <a href="https://cran.r-project.org/web/packages/CCAGFA/CCAGFA.pdf" title="bayesCCA"> CCAGFA package link </a>
 
-##### http://machinelearning.wustl.edu/mlpapers/paper_files/ICML2011Virtanen_318.pdf
+		- <a href="http://machinelearning.wustl.edu/mlpapers/paper_files/ICML2011Virtanen_318.pdf" title="Bayesian CCA paper ICML 2011"> Bayesian CCA paper from ICML \\(2011\\)</a>
 
-##### latent parameters \\(Z\\) are modeled by Gaussian, then for each the feature sets (EEG and fMRI), we model as a Gaussian. Each feature set has a mean which is a different linear transformation of the latent parameter. We are trying to infer the linear transformation \\(A\\) and \\(B\\) (\\(AZ\\) and \\(BZ\\) are our means) and also the respective covariance matrices.
+	- latent parameters \\(Z\\) are modeled by Gaussian, then for each the feature sets (EEG and fMRI), we model as a Gaussian. Each feature set has a mean which is a different linear transformation of the latent parameter. We are trying to infer the linear transformation \\(A\\) and \\(B\\) (\\(AZ\\) and \\(BZ\\) are our means) and also the respective covariance matrices.
 
-##### in future we can do nonparametric estimation instead of assuming Gaussian.
+		- in future we can do nonparametric estimation instead of assuming Gaussian.
 
-##### NOTE: if we use Bayesian CCA, we already will have a generative model with shared latent parameter for both EEG and fMRI. The later steps we describe are irrelevant in this case since we will already have a generative model (no need for bootstrapping).
+		- NOTE: if we use Bayesian CCA, we already will have a generative model with shared latent parameter for both EEG and fMRI. The later steps we describe are irrelevant in this case since we will already have a generative model (no need for bootstrapping).
 
-### generative model for EEG data. look into the literature and find any given models for EEG data. Then use the map obtained from sparseCCA to induce a generative model onto the fMRI data (with the mapping learned).
+- generative model for EEG data. look into the literature and find any given models for EEG data. Then use the map obtained from sparseCCA to induce a generative model onto the fMRI data (with the mapping learned).
 we do generative model for EEG data since that one is probably more accurate to fit
 
-### generative model that we come up with must be a model generating x_t's in the representation we prescribe. thus if we change the representative model, we also need to modify the generative model and the sparse CCA mapping
+- generative model that we come up with must be a model generating x(t)'s in the representation we prescribe. thus if we change the representative model, we also need to modify the generative model and the sparse CCA mapping
 
-### various representations we come up with can include the vector-over-time ones we came up with before and the pre-processed clustering over space
+- various representations we come up with can include the vector-over-time ones we came up with before and the pre-processed clustering over space
 
-### additional representations:
+- Additional representations:
 
-#### covariance matrix of some sort (corresponding with the connectome paper)
+	- covariance matrix of some sort (corresponding with the connectome paper)
 
-#### predictive power (predict oddball response (over both modalities) )
-(inspired by radoslaw cichy's paper)
-can run variants of sparse CCA (kernel etc) over all of these input representations
+	- predictive power (predict oddball response (over both modalities)) (inspired by Radoslaw Cichy's paper)
+	- can run variants of sparse CCA (kernel etc.) over all of these input representations
 
-### now, NOTE that everything we have discussed so far is solving the following task
+- Now note that everything we have discussed so far is solving the following tasks:
 
-#### building a generative model for EEG
+	- building a generative model for EEG
 
-#### bootstrapping off the EEG generative model (with the assumption that EEG time-based models are easier to find a time-based generative model \\(p(x_t | x_1...x_{t-1}))\\) and utilizing the given \\((x_t y_t)\\) pairs to learn a sparse CCA mapping between time series to generate a generative model for fMRI
+	- bootstrapping off the EEG generative model (with the assumption that EEG time-based models are easier to find a time-based generative model \\(\mathbb{P}(x(t) | x(1)...x(t-1)))\\) and utilizing the given \\((x(t), y(t))\\) pairs to learn a sparse CCA mapping between time series to generate a generative model for fMRI
 
-#### generative models should have skill in predicting audio/visual; oddball/non-oddball
+	- generative models should have skill in predicting audio/visual; oddball/non-oddball
 
-### currently the problem we are tackling is refinement over time (boostrap EEG to get better temporal fMRI)
+- Currently the problem we are tackling is refinement over time (boostrap EEG to get better temporal fMRI)
 the other problem is refinement over space: (boostrap fMRI to get better spatial EEG)
 
-#### in this setting, we would need to come up with a spatial source generative model for fMRI and boostrap on that to derive a spatial source model for EEG (see <a href= "http://link.springer.com/chapter/10.1007/978-3-319-14947-9_6/fulltext.html" title = "spatial generative models"> this paper </a>). 
+	- in this setting, we would need to come up with a spatial source generative model for fMRI and boostrap on that to derive a spatial source model for EEG (see <a href= "http://link.springer.com/chapter/10.1007/978-3-319-14947-9_6/fulltext.html" title = "spatial generative models"> this paper </a>). 
 
-### Justification of Novelty of Approach
+- Justification of Novelty of Approach
 
-#### sparse-CCA-connectome paper applies sCCA to covariance matrices of EEG / fMRI for resting state data
+	- Sparse-CCA-connectome paper applies sCCA to covariance matrices of EEG / fMRI for resting state data
 
-#### they use the covariance matrix in sCCA since they make the assumption of Gaussinity (is that a word)
-and thus a function relating the precision matrices to each other completely specifies the model
-first of all, we don't have resting state data: we have data with an impulse, oddball response
-first point of distinguishing
+	- They use the covariance matrix in sCCA since they make the Gaussian assumption and thus a function relating the precision matrices to each other completely specifies the model 
 
-#### second, we therefore do not want to make a Gaussian assumption: we want a generative model for the  oddball response in both modalities, auditory and visual
+	- We don't have resting state data: we have data with an impulse, oddball response distinguishes the setting of our problem
 
-#### thus, applying sCCA to covariance matrix does not give us everything we want.
-however, it is a starting point.
+	- Due to oddball response, we do not want to make a Gaussian assumption: we want a generative model for the  oddball response in both modalities, auditory and visual
 
-##### then we can modify our representation of the signal to some form beyond covariance matrix that perhaps takes into account the generative model we propose.
-then we have a (potentially new? need to look this up, it's probably not new) paradigm: namely, two signals in time each with a generative model on response; these are paired upon, sparse CCA is performed on them to learn a map from one signal to the other
+	- thus, applying sCCA to covariance matrix does not give us everything we want. However, it is a starting point.
 
-##### or perhaps we only provide a generative model on one of the signals, and try to induce the transformation of the generative model on the other signal.
+		- then we can modify our representation of the signal to some form beyond covariance matrix that perhaps takes into account the generative model we propose.
 
-##### here is a <a href ="http://www.ncbi.nlm.nih.gov/pubmed/25221467" title="paper"> key paper </a>
+		- then we have a (potentially new? need to look into more detail) paradigm: Namely, two signals in time each with a generative model on response; these are paired upon, sparse CCA is performed on them to learn a map from one signal to the other
+
+		- or perhaps we only provide a generative model on one of the signals, and try to induce the transformation of the generative model on the other signal.
+
+		- Here is a <a href ="http://www.ncbi.nlm.nih.gov/pubmed/25221467" title="paper"> key paper </a>.
 
 ## First Analyses and Basic Models
 
-### we ran matlab's version of CCA on fmri \\((131072 \times 170)\\) and eeg \\((74000 \times 170)\\) data; got correlation \\(1\\) between elements
+- We ran matlab's version of CCA on fmri \\((131072 \times 170)\\) and eeg \\((74000 \times 170)\\) data; got correlation \\(1\\) between elements
 
-### this gives us \\(M = (X - \bar{X})*A\\), \\(N = (Y - \bar{Y})*B\\) such that \\(M \approx N\\). Here, \\(X\\) is the fMRI matrix and \\(Y\\) is the EEG matrix. Thus we are effectively mapping into a \\(170\times 170\\) matrix to compare \\(X\\) and \\(Y\\) (these are \\(M, N\\). We have \\( \|M - N\|_F^2 \approx 0\\).
+- This gives us \\(M = (X - \bar{X})*A\\), \\(N = (Y - \bar{Y})*B\\) such that \\(M \approx N\\). Here, \\(X\\) is the fMRI matrix and \\(Y\\) is the EEG matrix. Thus we are effectively mapping into a \\(170\times 170\\) matrix to compare \\(X\\) and \\(Y\\) (these are \\(M, N\\). We have \\( \|M - N\| \approx 0\\).
 
-### Correlation \\(1\\) is bad and indicates overfitting. Thus we try reducing dimensions.
+- Correlation \\(1\\) is bad and indicates overfitting. Thus we try reducing dimensions.
 
-#### We did \\(\left[U_{fmri} S_{fmri} V_{fmri}\right] = \\)svd(\\(fmri\\)) and used the matrix \\(U_{fmri}\\) which is \\(170\times 170\\) which is full rank as a representation. 
+	- We did \\(\left[U^{fmri} S^{fmri} V^{fmri}\right] = \\)svd(\\(fmri\\)) and used the matrix \\(U^{fmri}\\) which is \\(170\times 170\\) which is full rank as a representation. 
 
-#### We did \\(\left[U_{eeg} S_{eeg} V_{eeg}\right] = \\)svd(\\(eeg\\)) and used the matrix \\(U_{eeg}\\)  which is \((170 \times 170\)), full rank, as a representation
+	- We also did \\(\left[U^{eeg} S^{eeg} V^{eeg}\right] = \\)svd(\\(eeg\\)) and used the matrix \\(U^{eeg}\\)  which is \((170 \times 170\)), full rank, as a representation
 
-#### What these representations mean is simply an orthogonal basis for the space of times ( \\(170\\) different times at which we measure EEG and fMRI)
+	- What these representations mean is simply an orthogonal basis for the space of times ( \\(170\\) different times at which we measure EEG and fMRI)
 
-#### Then we ran CCA( \\(U_{fmri}, U_{eeg}\\)) to get the components of maximum correlation - we still get a correlation of \\(1\\). there's no regularization here!
+	- Then we ran CCA( \\(U^{fmri}, U^{eeg}\\)) to get the components of maximum correlation - we still get a correlation of \\(1\\). there's no regularization here!
 
-### Why did we get perfect correlation? 
+- Why did we get perfect correlation? 
 
-#### (see <a href="http://www.davidroihardoon.com/Professional/Code_files/ML09.pdf" title="hardoon kernel CCA"> the following paper </a>).
+	- See <a href="http://www.davidroihardoon.com/Professional/Code_files/ML09.pdf" title="hardoon kernel CCA"> the following paper </a>.
 
-#### Previous work (Hardoon et al. \\(2004\))) shows that using kernel CCA with no regularization will be likely to produce perfect correlations between the two views. These correlations can therefore fail to distinguish between spurious features and those that capture the underlying semantics.
-Thus it is important to use regularization to come up with correlation between meaningful features.
+	- Previous work (Hardoon et al. \\(2004\))) shows that using kernel CCA with no regularization will be likely to produce perfect correlations between the two views. These correlations can therefore fail to distinguish between spurious features and those that capture the underlying semantics. Thus it is important to use regularization to come up with correlation between meaningful features.
 
-### Then we found a different package implementing CCA which allowed us to use regularization on regular CCA, since Matlab did not have regularization parameters
+- Then we found a different package implementing CCA which allowed us to use regularization on regular CCA, since Matlab did not have regularization parameters
 
-#### Here we avoided running on the SVD version of fMRI and EEG, and just ran on the full matrices. 
-We got much better looking results here since we did not overfit as much with correlation, and got correlation \\(0.9448\\). We also plotted the covariance for one of the dimensions. 
+	- Here we avoided running on the SVD version of fMRI and EEG, and just ran on the full matrices. We got much better looking results here since we did not overfit as much with correlation, and got correlation \\(0.9448\\). We also plotted the covariance for one of the dimensions. 
 
-### Bayesian CCA Model 
+- Bayesian CCA Model 
 
-#### Input for fitting: EEG and fMRI
+	- Input for fitting: EEG and fMRI
 
-#### We had a Gaussian latent variable \\(z\\) (chose dimension \\(100\\)), where we assumed that the mean of each EEG value \\((2000\times 37)\times 1\\) vector is a linear projection \\(A\\) of \\(z\\), and the mean of each fMRI value \\((32\times 64\times 64)\times 1\\) vector is a linear projection \\(B\\) of \\(z\\). We also predicted covariance matrices for the values of EEG and fMRI time steps. Then, have trained the generative model with Bayesian CCA, we predicted the whole EEG time series \\((2000\times 37)\times 170\\). (which was an input). 
+	- We had a Gaussian latent variable \\(z\\) (chose dimension \\(100\\)), where we assumed that the mean of each EEG value \\((2000\times 37)\times 1\\) vector is a linear projection \\(A\\) of \\(z\\), and the mean of each fMRI value \\((32\times 64\times 64)\times 1\\) vector is a linear projection \\(B\\) of \\(z\\). We also predicted covariance matrices for the values of EEG and fMRI time steps. Then, have trained the generative model with Bayesian CCA, we predicted the whole EEG time series \\((2000\times 37)\times 170\\). (which was an input). 
 
-#### This EEG prediction is nearly identical to the EEG input, so this makes sense!  (average correlation of prediction vs. true EEG is \\(0.97\\)). 
+	- This EEG prediction is nearly identical to the EEG input, so this makes sense!  (average correlation of prediction vs. true EEG is \\(0.97\\)). 
 
-#### Then we used our trained EEG model and used it to predict the EEG for another task run (same task). (given fMRI for the other task run, we predict EEG). We also visualize it.
+	- Then we used our trained EEG model and used it to predict the EEG for another task run (same task). (given fMRI for the other task run, we predict EEG). We also visualize it.
 
-#### On the different task, the predicted EEG and the true EEG has roughly \\(0\\) correlation! This is terrible and thus the approach seems flawed. 
+	- On the different task, the predicted EEG and the true EEG has roughly \\(0\\) correlation! This is terrible and thus the approach seems flawed. 
 
-#### However, note that the correlation of the prediction of the test set EEG (subject \\(1\\) task \\(1\\) run \\(2\\)) and the prediction of the training set EEG (subject \\(1\\) task \\(1\\) run \\(1\\)) had correlation of \\(0.42\\), meaning that the algorithm did not merely memorize the data from the test set.
+	- However, note that the correlation of the prediction of the test set EEG (subject \\(1\\) task \\(1\\) run \\(2\\)) and the prediction of the training set EEG (subject \\(1\\) task \\(1\\) run \\(1\\)) had correlation of \\(0.42\\), meaning that the algorithm did not merely memorize the data from the test set.
 
-#### One thing we could do is improve our training procedure (we only trained for \\(10\\) iterations in interest of time) - we can train for more iterations and see how well it does. 
+	- One thing we could do is improve our training procedure (we only trained for \\(10\\) iterations in interest of time) - we can train for more iterations and see how well it does. 
 
-### Next steps: Use Sparse CCA 
+- Next steps: Use Sparse CCA 
 
-#### <a href="http://www.davidroihardoon.com/Professional/Code_files/SCCATechnicalReport.pdf" title="sCCA"> The Sparse CCA paper </a>
+	- <a href="http://www.davidroihardoon.com/Professional/Code_files/SCCATechnicalReport.pdf" title="sCCA"> The Sparse CCA paper </a>
 
-#### <a href="http://www.davidroihardoon.com/Professional/Code_files/SCCA2.m" title="sCCA2.m"> Sparse CCA code </a> 
+	- <a href="http://www.davidroihardoon.com/Professional/Code_files/SCCA2.m" title="sCCA2.m"> Sparse CCA code </a> 
 
-#### We tried running sparse CCA with some preliminal results, but we will go into more detail later!
-
-
+	- We tried running sparse CCA with some preliminal results, but we will go into more detail later!
 
 
 ## Background Survey
