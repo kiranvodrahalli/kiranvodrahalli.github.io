@@ -19,9 +19,9 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 - run sparse CCA on the pairs \\\((x(t), y(t))\\) and NOT joint ICA since we do not want an independence assumption imposed on the time (though we should do joint ICA as a test)
 
-	- linear sparse CCA gives us a mapping \\(Ax = By\\) between the two spaces. to run sparse CCA, we use the UCL code.
+	- linear sparse CCA gives us a mapping \\(Ax = By\\) between the two spaces. to run sparse CCA, we use the David Hardoon's code.
 
-	- kernelized sparse CCA allows us to model nonlinear correlation between x and y
+	- kernelized sparse CCA allows us to model nonlinear correlation between \\(x\\) and \\(y\\)
 
 	- Bayesian CCA
 
@@ -29,22 +29,21 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 		- <a href="http://machinelearning.wustl.edu/mlpapers/paper_files/ICML2011Virtanen_318.pdf" title="Bayesian CCA paper ICML 2011"> Bayesian CCA paper from ICML \\(2011\\)</a>
 
-	- latent parameters \\(Z\\) are modeled by Gaussian, then for each the feature sets (EEG and fMRI), we model as a Gaussian. Each feature set has a mean which is a different linear transformation of the latent parameter. We are trying to infer the linear transformation \\(A\\) and \\(B\\) (\\(AZ\\) and \\(BZ\\) are our means) and also the respective covariance matrices.
+		- latent parameters \\(Z\\) are modeled by Gaussian, then for each the feature sets (EEG and fMRI), we model as a Gaussian. Each feature set has a mean which is a different linear transformation of the latent parameter. We are trying to infer the linear transformation \\(A\\) and \\(B\\) (\\(AZ\\) and \\(BZ\\) are our means) and also the respective covariance matrices.
 
-		- in future we can do nonparametric estimation instead of assuming Gaussian.
+			- in future we can do nonparametric estimation instead of assuming Gaussian.
 
 		- NOTE: if we use Bayesian CCA, we already will have a generative model with shared latent parameter for both EEG and fMRI. The later steps we describe are irrelevant in this case since we will already have a generative model (no need for bootstrapping).
 
-- generative model for EEG data. look into the literature and find any given models for EEG data. Then use the map obtained from sparseCCA to induce a generative model onto the fMRI data (with the mapping learned).
-we do generative model for EEG data since that one is probably more accurate to fit
+- Generative model for EEG data. We are looking into the literature and find any given models for EEG data. Then use the map obtained from sparseCCA to induce a generative model onto the fMRI data (with the mapping learned). We do generative model for EEG data since that one is probably more accurate to fit. Interestingly, so far there is a dearth of EEG time-series generative models. Most generative models with respect to EEG data focus on source localization (spatial source of EEG) instead (and they do not tend to work that well).
 
-- generative model that we come up with must be a model generating x(t)'s in the representation we prescribe. thus if we change the representative model, we also need to modify the generative model and the sparse CCA mapping
+- Generative model that we come up with must be a model generating \\(x(t)\\) in the representation we prescribe. Thus if we change the representative model, we also need to modify the generative model and the sparse CCA mapping.
 
-- various representations we come up with can include the vector-over-time ones we came up with before and the pre-processed clustering over space
+- Various other representations we come up with can include the vector-over-time ones we came up with before and the pre-processed clustering over space
 
 - Additional representations:
 
-	- covariance matrix of some sort (corresponding with the connectome paper)
+	- covariance matrix of some sort (corresponding with the connectome paper by Deligianni et. al from \\(2014\\))
 
 	- predictive power (predict oddball response (over both modalities)) (inspired by Radoslaw Cichy's paper)
 	- can run variants of sparse CCA (kernel etc.) over all of these input representations
@@ -55,12 +54,13 @@ we do generative model for EEG data since that one is probably more accurate to 
 
 	- bootstrapping off the EEG generative model (with the assumption that EEG time-based models are easier to find a time-based generative model \\(\mathbb{P}(x(t) | x(1)...x(t-1)))\\) and utilizing the given \\((x(t), y(t))\\) pairs to learn a sparse CCA mapping between time series to generate a generative model for fMRI
 
-	- generative models should have skill in predicting audio/visual; oddball/non-oddball
+	- generative models should have skill in differentiating between audio/visual and predicting oddball/non-oddball
 
-- Currently the problem we are tackling is refinement over time (boostrap EEG to get better temporal fMRI)
-the other problem is refinement over space: (boostrap fMRI to get better spatial EEG)
+	- This problem is refinement over time (boostrap EEG to get better temporal fMRI)
 
-	- in this setting, we would need to come up with a spatial source generative model for fMRI and boostrap on that to derive a spatial source model for EEG (see <a href= "http://link.springer.com/chapter/10.1007/978-3-319-14947-9_6/fulltext.html" title = "spatial generative models"> this paper </a>). 
+- The other problem is refinement over space: (boostrap fMRI to get better spatial EEG)
+
+	- In this setting, we would need to come up with a spatial source generative model for fMRI and boostrap on that to derive a spatial source model for EEG (see <a href= "http://link.springer.com/chapter/10.1007/978-3-319-14947-9_6/fulltext.html" title = "spatial generative models"> this paper </a>). 
 
 - Justification of Novelty of Approach
 
@@ -144,6 +144,8 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 
 	- We tried running sparse CCA with some preliminal results, but we will go into more detail later!
 
+- MEG Data
+	- We received the fMRI-MEG data for the object detection task this morning! We plan to analyze this data in a similar fashion and see if we can come up with a similar model structure here. 
 
 ## Background Survey
 

@@ -104,29 +104,28 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 <li><p>run sparse CCA on the pairs \((x(t), y(t))\) and NOT joint ICA since we do not want an independence assumption imposed on the time (though we should do joint ICA as a test)</p>
 
 <ul>
-<li>linear sparse CCA gives us a mapping \(Ax = By\) between the two spaces. to run sparse CCA, we use the UCL code.</li>
-<li>kernelized sparse CCA allows us to model nonlinear correlation between x and y</li>
+<li>linear sparse CCA gives us a mapping \(Ax = By\) between the two spaces. to run sparse CCA, we use the David Hardoon&#39;s code.</li>
+<li>kernelized sparse CCA allows us to model nonlinear correlation between \(x\) and \(y\)</li>
 <li><p>Bayesian CCA</p>
 
 <ul>
 <li><a href="https://cran.r-project.org/web/packages/CCAGFA/CCAGFA.pdf" title="bayesCCA"> CCAGFA package link </a></li>
 <li><a href="http://machinelearning.wustl.edu/mlpapers/paper_files/ICML2011Virtanen_318.pdf" title="Bayesian CCA paper ICML 2011"> Bayesian CCA paper from ICML \(2011\)</a></li>
-</ul></li>
 <li><p>latent parameters \(Z\) are modeled by Gaussian, then for each the feature sets (EEG and fMRI), we model as a Gaussian. Each feature set has a mean which is a different linear transformation of the latent parameter. We are trying to infer the linear transformation \(A\) and \(B\) (\(AZ\) and \(BZ\) are our means) and also the respective covariance matrices.</p>
 
 <ul>
 <li>in future we can do nonparametric estimation instead of assuming Gaussian.</li>
-<li>NOTE: if we use Bayesian CCA, we already will have a generative model with shared latent parameter for both EEG and fMRI. The later steps we describe are irrelevant in this case since we will already have a generative model (no need for bootstrapping).</li>
+</ul></li>
+<li><p>NOTE: if we use Bayesian CCA, we already will have a generative model with shared latent parameter for both EEG and fMRI. The later steps we describe are irrelevant in this case since we will already have a generative model (no need for bootstrapping).</p></li>
 </ul></li>
 </ul></li>
-<li><p>generative model for EEG data. look into the literature and find any given models for EEG data. Then use the map obtained from sparseCCA to induce a generative model onto the fMRI data (with the mapping learned).
-we do generative model for EEG data since that one is probably more accurate to fit</p></li>
-<li><p>generative model that we come up with must be a model generating x(t)&#39;s in the representation we prescribe. thus if we change the representative model, we also need to modify the generative model and the sparse CCA mapping</p></li>
-<li><p>various representations we come up with can include the vector-over-time ones we came up with before and the pre-processed clustering over space</p></li>
+<li><p>Generative model for EEG data. We are looking into the literature and find any given models for EEG data. Then use the map obtained from sparseCCA to induce a generative model onto the fMRI data (with the mapping learned). We do generative model for EEG data since that one is probably more accurate to fit. Interestingly, so far there is a dearth of EEG time-series generative models. Most generative models with respect to EEG data focus on source localization (spatial source of EEG) instead (and they do not tend to work that well).</p></li>
+<li><p>Generative model that we come up with must be a model generating \(x(t)\) in the representation we prescribe. Thus if we change the representative model, we also need to modify the generative model and the sparse CCA mapping.</p></li>
+<li><p>Various other representations we come up with can include the vector-over-time ones we came up with before and the pre-processed clustering over space</p></li>
 <li><p>Additional representations:</p>
 
 <ul>
-<li>covariance matrix of some sort (corresponding with the connectome paper)</li>
+<li>covariance matrix of some sort (corresponding with the connectome paper by Deligianni et. al from \(2014\))</li>
 <li>predictive power (predict oddball response (over both modalities)) (inspired by Radoslaw Cichy&#39;s paper)</li>
 <li>can run variants of sparse CCA (kernel etc.) over all of these input representations</li>
 </ul></li>
@@ -135,13 +134,13 @@ we do generative model for EEG data since that one is probably more accurate to 
 <ul>
 <li>building a generative model for EEG</li>
 <li>bootstrapping off the EEG generative model (with the assumption that EEG time-based models are easier to find a time-based generative model \(\mathbb{P}(x(t) | x(1)...x(t-1)))\) and utilizing the given \((x(t), y(t))\) pairs to learn a sparse CCA mapping between time series to generate a generative model for fMRI</li>
-<li>generative models should have skill in predicting audio/visual; oddball/non-oddball</li>
+<li>generative models should have skill in differentiating between audio/visual and predicting oddball/non-oddball</li>
+<li>This problem is refinement over time (boostrap EEG to get better temporal fMRI)</li>
 </ul></li>
-<li><p>Currently the problem we are tackling is refinement over time (boostrap EEG to get better temporal fMRI)
-the other problem is refinement over space: (boostrap fMRI to get better spatial EEG)</p>
+<li><p>The other problem is refinement over space: (boostrap fMRI to get better spatial EEG)</p>
 
 <ul>
-<li>in this setting, we would need to come up with a spatial source generative model for fMRI and boostrap on that to derive a spatial source model for EEG (see <a href= "http://link.springer.com/chapter/10.1007/978-3-319-14947-9_6/fulltext.html" title = "spatial generative models"> this paper </a>). </li>
+<li>In this setting, we would need to come up with a spatial source generative model for fMRI and boostrap on that to derive a spatial source model for EEG (see <a href= "http://link.springer.com/chapter/10.1007/978-3-319-14947-9_6/fulltext.html" title = "spatial generative models"> this paper </a>). </li>
 </ul></li>
 <li><p>Justification of Novelty of Approach</p>
 
@@ -208,6 +207,11 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 <li><a href="http://www.davidroihardoon.com/Professional/Code_files/SCCATechnicalReport.pdf" title="sCCA"> The Sparse CCA paper </a></li>
 <li><a href="http://www.davidroihardoon.com/Professional/Code_files/SCCA2.m" title="sCCA2.m"> Sparse CCA code </a> </li>
 <li>We tried running sparse CCA with some preliminal results, but we will go into more detail later!</li>
+</ul></li>
+<li><p>MEG Data</p>
+
+<ul>
+<li>We received the fMRI-MEG data for the object detection task this morning! We plan to analyze this data in a similar fashion and see if we can come up with a similar model structure here. </li>
 </ul></li>
 </ul>
 
@@ -549,7 +553,7 @@ We performed PCA to reduce the voxel space dimension on a single subject’s fMR
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-10-14T11:36:19-04:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-10-14T13:22:48-04:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>
