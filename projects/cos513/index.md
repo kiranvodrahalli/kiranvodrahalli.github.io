@@ -100,6 +100,8 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 
 	- Then we ran CCA( \\(U^{fmri}, U^{eeg}\\)) to get the components of maximum correlation - we still get a correlation of \\(1\\). there's no regularization here!
 
+	- We plot the values in the transformed space \\(M, N\\) for one dimension: <img src="{{ site.baseurl }}/projects/cos513/canonCorr-labelled.png" />
+
 - Why did we get perfect correlation? 
 
 	- See <a href="http://www.davidroihardoon.com/Professional/Code_files/ML09.pdf" title="hardoon kernel CCA"> the following paper </a>.
@@ -108,7 +110,11 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 
 - Then we found a different package implementing CCA which allowed us to use regularization on regular CCA, since Matlab did not have regularization parameters
 
-	- Here we avoided running on the SVD version of fMRI and EEG, and just ran on the full matrices. We got much better looking results here since we did not overfit as much with correlation, and got correlation \\(0.9448\\). We also plotted the covariance for one of the dimensions. 
+	- Here we avoided running on the SVD version of fMRI and EEG, and just ran on the full matrices. We got much better looking results here since we did not overfit as much with correlation, and got correlation \\(0.9448\\). 
+
+	- We also plotted the covariance for one of the dimensions (\\(M, N\\) for one dimension): <img src="{{ site.baseurl }}/projects/cos513/KCCAcomp11.png" />
+
+	- This package took as input the kernel matrices, so in the future we can explore using kernel CCA with regularization for non-linear kernels. 
 
 - Bayesian CCA Model 
 
@@ -116,9 +122,13 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 
 	- We had a Gaussian latent variable \\(z\\) (chose dimension \\(100\\)), where we assumed that the mean of each EEG value \\((2000\times 37)\times 1\\) vector is a linear projection \\(A\\) of \\(z\\), and the mean of each fMRI value \\((32\times 64\times 64)\times 1\\) vector is a linear projection \\(B\\) of \\(z\\). We also predicted covariance matrices for the values of EEG and fMRI time steps. Then, have trained the generative model with Bayesian CCA, we predicted the whole EEG time series \\((2000\times 37)\times 170\\). (which was an input). 
 
+	- <img src="{{ site.baseurl }}/projects/cos513/bcca_train_plot.png" />
+
 	- This EEG prediction is nearly identical to the EEG input, so this makes sense!  (average correlation of prediction vs. true EEG is \\(0.97\\)). 
 
 	- Then we used our trained EEG model and used it to predict the EEG for another task run (same task). (given fMRI for the other task run, we predict EEG). We also visualize it.
+
+	- <img src="{{ site.baseurl }}/projects/cos513/bcca_test_plot.png" />
 
 	- On the different task, the predicted EEG and the true EEG has roughly \\(0\\) correlation! This is terrible and thus the approach seems flawed. 
 
