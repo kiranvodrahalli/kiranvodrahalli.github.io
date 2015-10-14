@@ -104,7 +104,7 @@ the other problem is refinement over space: (boostrap fMRI to get better spatial
 
 	- See <a href="http://www.davidroihardoon.com/Professional/Code_files/ML09.pdf" title="hardoon kernel CCA"> the following paper </a>.
 
-	- Previous work (Hardoon et al. \\(2004\))) shows that using kernel CCA with no regularization will be likely to produce perfect correlations between the two views. These correlations can therefore fail to distinguish between spurious features and those that capture the underlying semantics. Thus it is important to use regularization to come up with correlation between meaningful features.
+	- Previous work (Hardoon et al. \\(2004\\)) shows that using kernel CCA with no regularization will be likely to produce perfect correlations between the two views. These correlations can therefore fail to distinguish between spurious features and those that capture the underlying semantics. Thus it is important to use regularization to come up with correlation between meaningful features.
 
 - Then we found a different package implementing CCA which allowed us to use regularization on regular CCA, since Matlab did not have regularization parameters
 
