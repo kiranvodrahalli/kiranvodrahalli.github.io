@@ -6,6 +6,58 @@ title: COS 513 Project
 Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 </p>
 
+
+## Preliminary Results from Sparse CCA
+
+First of all, we did some more pre-processing steps and changed the format of the fMRI data to both account for potential lag in correlation between the EEG and fMRI as well as to introduce a time component into our representation of fMRI. We stacked three fMRI TRs together in a sliding window fashion. Thus, our pairs for sCCA are now (\\(2000 \times 34\\) EEG, \\(3\\) TRs of smoothed and downsampled fMRI). 
+
+Here we plot the vector pair (EEG, fMRI) of highest correlation. The correlation of the top vector is around \\(0.83\\). This is for the case where we ask for \\(K = 20\\) features from sCCA.
+<img src="{{ site.baseurl }}/projects/cos513/HighestCorrCanonVect.png" />
+
+When we set \\(K = 40\\), this is what the highest correlation canonical vector plot looks like. The correlation was \\(0.98\\).
+<img src="{{ site.baseurl }}/projects/cos513/highestcorrK40_31.png" />
+
+Here we display a canonical vector for EEG plotted again a canonical vector for fMRI. The red data points come from subject one task one run one, and the blue points come from subject two task two run two. 
+<img src="{{ site.baseurl }}/projects/cos513/1stCanonVect.png" />
+
+Here we give a histogram showing the number of vectors for each correlation level for \\(K = 20\\)
+<img src="{{ site.baseurl }}/projects/cos513/correlationhistogram.png" />
+
+When we set \\(K = 40\\) features, these are what the correlation histogram looks like.
+<img src="{{ site.baseurl }}/projects/cos513/highestcorrK40.png" />
+
+Here we plot for a single representation of fMRI (which consists of three TRs) what the canonical vector values look like. 
+<img src="{{ site.baseurl }}/projects/cos513/entries_canoncomp.png" />
+
+Here we plot the sparsity of the fMRI representation. 
+<img src="{{ site.baseurl }}/projects/cos513/K40_sparseV.png" />
+
+We can see that the EEG representation is a bit less sparse, due to the settings of the LASSO parameter.
+<img src="{{ site.baseurl }}/projects/cos513/k40sparseU.png" />
+
+
+## Preliminary Analyses of the MEG-fMRI Dataset
+
+Here we visualize the \\(t\\)-map values from the MEG-fMRI dataset. The \\(t\\)-map was calculated by using a GLM to predict images based on the input of fMRI data. The GLM learned a weight for each voxel: Here we have displayed that weighting for one subject and one image class. 
+<img src="{{ site.baseurl }}/projects/cos513/tmap1.png" />
+
+Then we decided to run sparseCCA on the MEG-fMRI data as well with \\(K = 20\\).
+
+Here we plot the projections onto the highest correlation canonical vectors for MEG and fMRI-t-values. The correlation was \\(0.84\\).  
+<img src="{{ site.baseurl }}/projects/cos513/meg_fmri_scca.png" />
+
+Here we visualize the values of the highest correlation canonical vector for the fMRI-t-values.
+<img src="{{ site.baseurl }}/projects/cos513/entries_MEG.png" />
+
+## Ideas about Generative Models
+
+For a naive approach to start out with, we were considering simply fitting a hidden markov model to the EEG data. While this is a discrete model to begin with, when we train with sCCA, we are effectively discretizing
+the EEG data into chunks of length \\(2000\\) milliseconds. Thus, if we block our data in this fashion, it can make sense to train an HMM. The HMM also allows us to encode dependencies of the past, so it is at the very least worth using as a ground measure. 
+
+A more complicated model might be to use SN\\(\Gamma\\)Ps, but we need to do more literature search to see if this is feasible. SN\\(\Gamma\\)Ps have the desirable property that they can encode dependency across time fairly easily, which is what we would like to do. It remains to be seen whether a Dirichlet process model suits EEG however. 
+
+
+
 ## A Plan for Our Contribution
 
 - We have some representation of EEG data and fMRI data, such that representations can be paired
