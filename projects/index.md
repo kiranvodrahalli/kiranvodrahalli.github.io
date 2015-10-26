@@ -34,6 +34,9 @@ My final project for <a href= "http://www.cs.princeton.edu/courses/archive/fall1
 
 ## Independent Work 
 
+### The Representation of Language in the Brain <a href="{{ site.baseurl }}/projects/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a>
+I gave a presentation to the Alg-ML reading group on set of papers primarily by Tom Mitchell's group at CMU on the brain's representation of the features of natural language. 
+
 ### A Presentation on Expander Graphs <a href="{{ site.baseurl }}/projects/jsem2015paper.pdf" title="jsem"> [pdf] </a>
 My junior seminar, taught by Professor Zeev Dvir in the spring of 2015, was on Point-Line Incidence Theorems. My presentation focused on a tangent subject, expander graphs. 
 
