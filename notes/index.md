@@ -43,7 +43,7 @@ I will post my scribe notes on the Curry-Howard equivalence of programs and proo
 
 ### APC 486: Transmission and Compression of Information
 
-I will post my scribe notes on probabilistic source models here. 
+Here are <a href= "{{ site.baseurl }}/notes/apc486_kiran_scribe_notes.pdf" title="apc486notes">my scribe notes</a> on probabilistic source models.
 
 
 
