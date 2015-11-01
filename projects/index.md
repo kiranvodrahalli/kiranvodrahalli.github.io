@@ -43,13 +43,15 @@ In fall 2013, I began working with Professor Sam Wang of Princeton Neuroscience 
 ### The Representation of Language in the Brain <a href="{{ site.baseurl }}/projects/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a>
 I gave a presentation to the Alg-ML reading group on set of papers primarily by Tom Mitchell's group at CMU on the brain's representation of the features of natural language. 
 
-### A Presentation on Expander Graphs <a href="{{ site.baseurl }}/projects/jsem2015paper.pdf" title="jsem"> [pdf] </a>
+### A Brief Survey on Expander Graphs <a href="{{ site.baseurl }}/projects/jsem2015paper.pdf" title="jsem"> [pdf] </a>
 My junior seminar, taught by Professor Zeev Dvir in the spring of 2015, was on Point-Line Incidence Theorems. My presentation focused on a tangent subject, expander graphs.
 
-### A Presentation on Deep Learning for Natural Language Processing <a href="{{ site.baseurl }}/projects/598b_nlp_deep_learning.pdf" title="598c_nlp"> [slides] </a>
+### A Survey on Image Captioning with Deep Learning<a href="{{ site.baseurl }}/projects/598b_img_captions.pdf" title="598c_img_cap"> [slides] </a>
+My second presentation for <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a> focused on the image captioning problem, and deep learning approaches to solving it.
+
+### A Survey on Deep Learning for Natural Language Processing <a href="{{ site.baseurl }}/projects/598b_nlp_deep_learning.pdf" title="598c_nlp"> [slides] </a>
 My first presentation for the Spring 2015 offering of <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a>, an advanced topics class on deep learning taught by Professor Jianxiong Xiao. I overviewed various approaches to solving NLP problems with deep learning approaches, with a stronger focus on language models and word vector embeddings. 
 
-### A Presentation on Image Captioning <a href="{{ site.baseurl }}/projects/598b_img_captions.pdf" title="598c_img_cap"> [slides] </a>
-My second presentation for <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a> focused on the image captioning problem, and deep learning approaches to solving it.
+
 
 <!-- # Coding Projects -->
