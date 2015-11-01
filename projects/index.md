@@ -50,8 +50,9 @@ My junior seminar, taught by Professor Zeev Dvir in the spring of 2015, was on P
 My second presentation for <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a> focused on the image captioning problem, and deep learning approaches to solving it.
 
 ### A Survey on Deep Learning for Natural Language Processing <a href="{{ site.baseurl }}/projects/598b_nlp_deep_learning.pdf" title="598c_nlp"> [slides] </a>
-My first presentation for the Spring 2015 offering of <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a>, an advanced topics class on deep learning taught by Professor Jianxiong Xiao. I overviewed various approaches to solving NLP problems with deep learning approaches, with a stronger focus on language models and word vector embeddings. 
+My first presentation for the Spring 2015 offering of <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a>, an advanced topics class on deep learning taught by Professor Jianxiong Xiao. I overviewed various approaches to solving NLP problems with deep learning approaches, with a stronger focus on language models and word vector embeddings.
 
+## Coding Projects
 
+My Github repository is located at <a href = "https://github.com/kiranvodrahalli" title="github"> https://github.com/kiranvodrahalli </a>. Code for various projects listed above can be found on my Github, as well as some random for-fun projects. 
 
-<!-- # Coding Projects -->
