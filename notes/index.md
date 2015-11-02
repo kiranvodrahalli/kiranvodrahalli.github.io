@@ -47,7 +47,11 @@ Professor Tom Griffiths from Berkeley discussed a notion of rationality which ta
 
 ### Anna Choromanska on Optimization for Large-Scale Machine Learning <a href= "{{ site.baseurl }}/notes/choromanska_deeplearning.pdf" title="choromanskanotes">[pdf]</a>
 
-Dr. Choromanska from the Courant Institute talks about new learning algorithms for decision trees and spin-glass interpretations of deep learning. 
+Dr. Anna Choromanska from the Courant Institute talks about new learning algorithms for decision trees and spin-glass interpretations of deep learning. 
+
+### Richard Socher on Dynamic Memory Networks <a href= "{{ site.baseurl }}/notes/socher_last_lec_224d.pdf" title="socherdmnnotes">[pdf]</a>
+
+Dr. Richard Socher's last lecture for the Stanford class 224d (Deep Learning for NLP) was on a recent paper by his startup, Metamind. He spoke about using a novel deep learning architecture to solve question-and-answer problems, and also about how to generalize all of NLP to a question-and-answer framework with this kind of model. 
 
 ## Classes
 
