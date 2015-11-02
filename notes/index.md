@@ -14,7 +14,7 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 ## Talks
 
-I attend various talks at Princeton and sometimes scribe them.
+I attend various academic talks and seminars and sometimes scribe them.
 
 ### Barbara Engelhardt on Bayesian Structured Sparsity Using Gaussian Fields <a href= "{{ site.baseurl }}/notes/engelhardt_pni.pdf" title="engelhardt-pni-notes">[pdf]</a>
 
