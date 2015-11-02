@@ -16,6 +16,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various talks at Princeton and sometimes scribe them.
 
+### Barbara Engelhardt on Bayesian Structured Sparsity Using Gaussian Fields <a href= "{{ site.baseurl }}/notes/engelhardt_pni.pdf" title="engelhardt-pni-notes">[pdf]</a>
+
+Professor Barbara Engelhardt gave a talk on her work on identifying associations between SNPs and phenotypes with sparse machine learning methods. She also spoke on how these methods can be translated to brain studies.
+
 ### Dimitris Bertsimas on Statistics and Machine Learning from a Modern Optimization Lens <a href= "{{ site.baseurl }}/notes/SML_modern_optimization.pdf" title="MIOnotes">[pdf]</a>
 
 Professor Dimitris Bertsimas from MIT gave a talk on using the mixed integer-programming (MIO) framework as a new lens through which to view machine learning, statistics, and optimization problems. 
