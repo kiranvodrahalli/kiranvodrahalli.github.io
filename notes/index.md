@@ -16,6 +16,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Dana Lahat on Joint Independent Subspace Analysis and Blind Source Separation <a href= "{{ site.baseurl }}/notes/joint-ISA.pdf" title="joint-ISA">[pdf]</a>
+
+This talk gives an overview of blind source separation with various statistical independence assumptions, generalizing ICA to learning subspaces of low-rank instead of just rank \\(1\\) subspaces.
+
 ### Barbara Engelhardt on Bayesian Structured Sparsity Using Gaussian Fields <a href= "{{ site.baseurl }}/notes/engelhardt_pni.pdf" title="engelhardt-pni-notes">[pdf]</a>
 
 Professor Barbara Engelhardt gave a talk on her work on identifying associations between SNPs and phenotypes with sparse machine learning methods. She also spoke on how these methods can be translated to brain studies.
