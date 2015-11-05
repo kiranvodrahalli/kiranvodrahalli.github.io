@@ -16,6 +16,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Elad Hazan on Simulated Annealing and Interior Point Methods <a href= "{{ site.baseurl }}/notes/hazan-annealing.pdf" title="hazan-annealing">[pdf]</a>
+
+Professor Elad Hazan gave a talk to Princeton's Algorithm-ML reading group on a result demonstrating the existence of a universal barrier function for interior point methods in the membership oracle model of convex optimization. This barrier is related to the heuristic simulated annealing approach often taken in non-convex optimization. 
+
 ### Dana Lahat on Joint Independent Subspace Analysis and Blind Source Separation <a href= "{{ site.baseurl }}/notes/joint-ISA.pdf" title="joint-ISA">[pdf]</a>
 
 This talk gives an overview of blind source separation with various statistical independence assumptions, generalizing ICA to learning subspaces of low-rank instead of just rank \\(1\\) subspaces.
