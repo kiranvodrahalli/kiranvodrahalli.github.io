@@ -16,6 +16,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Francisco Pereira on Decoding Generic Representations of fMRI <a href= "{{ site.baseurl }}/notes/pereira-words.pdf" title="pereira-words">[pdf]</a>
+
+Dr. Francisco Pereira from Siemens talked about his work using sentences and pictures to localize fMRI voxels for representing semantic content in brains.
+
 ### Elad Hazan on Simulated Annealing and Interior Point Methods <a href= "{{ site.baseurl }}/notes/hazan-annealing.pdf" title="hazan-annealing">[pdf]</a>
 
 Professor Elad Hazan gave a talk to Princeton's Algorithm-ML reading group on a result demonstrating the existence of a universal barrier function for interior point methods in the membership oracle model of convex optimization. This barrier is related to the heuristic simulated annealing approach often taken in non-convex optimization. 
