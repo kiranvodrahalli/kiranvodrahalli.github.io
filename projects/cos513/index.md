@@ -23,7 +23,7 @@ Then, putting all \\(306\\) channels together, we get a tensor \((T\)) which is 
 We get frequency vectors by taking FFT of each of the MEG time series and using \\(k\\) of the resulting coefficients. For each individual, we have \\(42\\) examples of the individual looking at the same picture, and we have \\(15-20\\) individuals. We average separately for each channel to get the \\(306\\) frequency vectors for a given image.
 
 Now we present in more detail how to get the image representations. In the naive case, we just use the grayscale image in \\((175 * 175) \times 1\\) vector format. In the case of using convolutional neural networks, we use a known convolution net that works well (GoogLeNet), and run each of the \\(92\\) object images through the convolutional net to produce the outputs at each layer. From here, we vectorize each of the layer outputs and stack each layer on top of the others (making sure that the layer entries are adjacent) so that we have a long thin vector. We can choose to use only features from a single layer of the net, or we can use multiple layers to build our vector. 
-Then, note that the \\(k \times m\\) matrix that we learn will have a \\(k \times l^{(i)}\\) matrix for each layer feature \\(i\\), where \\(l^{(i)})\\ is the number of pixels in feature layer \\(i\\).
+Then, note that the \\(k \times m\\) matrix that we learn will have a \\(k \times l^{(i)}\\) matrix for each layer feature \\(i\\), where \\(l^{(i)}\\) is the number of pixels in feature layer \\(i\\).
 
 The overall outline is summarized in the following diagram:
 <img src="{{ site.baseurl }}/projects/cos513/framework.jpg" />
