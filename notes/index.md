@@ -16,6 +16,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Amir Ali Ahmadi on Optimizing over Nonnegative Polynomials <a href= "{{ site.baseurl }}/notes/ahmadi.pdf" title="ahmadi">[pdf]</a>
+
+Professor Amir Ali Ahmadi spoke about formulating convex optimization problems in terms of finding nonnegative polynomials to provably optimize various problems in controls, dynamical systems, and machine learning, improving upon the time complexity of previous sum-of-squares SDP relaxations. He also describes robust dynamics optimization (RDO), a framework for solving optimization problems over a set of points defined by a dynamical system.
+
 ### Francisco Pereira on Decoding Generic Representations of fMRI <a href= "{{ site.baseurl }}/notes/pereira-words.pdf" title="pereira-words">[pdf]</a>
 
 Dr. Francisco Pereira from Siemens talked about his work using sentences and pictures to localize fMRI voxels for representing semantic content in brains.
