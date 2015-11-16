@@ -16,7 +16,7 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
-### Santosh Vempala on the Complexity of Detecting Planted Solutions <a href = "{{ site.baseurl }}/notes/planted-clique-vempala.pdf" title="vempala">[pdf]</a>
+### Santosh Vempala on the Complexity of Detecting Planted Solutions <a href = "{{ site.baseurl }}/notes/planted-graph-vempala.pdf" title="vempala">[pdf]</a>
 
 Professor Santosh Vempala of Georgia Tech gave a talk on showing that for statistical algorithms (e.g. PCA, EM, and so on), solving planted clique and planted \\(k\\)-SAT is at least exponential time in the size of the input.
 
