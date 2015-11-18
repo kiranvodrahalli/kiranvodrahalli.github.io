@@ -7,6 +7,16 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 </p>
 
 
+## More Results on EEG-fMRI
+
+First of all, we decided to tackle the EEG-fMRI problem again. However, one main difficulty with the dataset is shown in the following picture: 
+<img src="{{ site.baseurl }}/projects/cos513/lydia-variance-eeg.jpg" />
+
+Across trials, the data seems to behave very differently.
+
+Here is a <a href= "{{ site.baseurl }}/projects/cos513/post7.pdf" title= "summary-7"> summary </a> of the results. 
+
+
 ## Change of Direction: Predicting MEG response from an image
 
 To summarize the new learning problem, we have \\(92\\) pairs of MEG-image data. The
