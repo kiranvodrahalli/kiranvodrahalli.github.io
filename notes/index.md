@@ -16,6 +16,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Sanjeev Arora on Reversible Deep Nets <a href = "{{ site.baseurl }}/notes/deepnets-reversible-arora.pdf" title="deepnets-reversible-arora">[pdf]</a>
+
+Professor Arora, Tengyu Ma, and Yingyu Liang discuss their results on giving a generative model for reversible deep nets. They also give a better training method that improves upon Dropout. 
+
 ### Santosh Vempala on the Complexity of Detecting Planted Solutions <a href = "{{ site.baseurl }}/notes/planted-graph-vempala.pdf" title="vempala">[pdf]</a>
 
 Professor Santosh Vempala of Georgia Tech gave a talk on showing that for statistical algorithms (e.g. PCA, EM, and so on), solving planted clique and planted \\(k\\)-SAT is at least exponential time in the size of the input.
