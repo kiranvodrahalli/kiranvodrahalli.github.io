@@ -16,6 +16,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Gillat Kol on Interactive Information Theory <a href = "{{ site.baseurl }}/notes/interactive_info_theory_gillat_kol.pdf">[pdf]</a>
+
+Dr. Gillat Kol from IAS gives a talk on information theoretic measures and bounds on the compression of information transmission in the setting of interactive information theory, where no player knows the whole message being compressed. 
+
 ### Sanjeev Arora on Reversible Deep Nets <a href = "{{ site.baseurl }}/notes/deepnets-reversible-arora.pdf" title="deepnets-reversible-arora">[pdf]</a>
 
 Professor Arora, Tengyu Ma, and Yingyu Liang discuss their results on giving a generative model for reversible deep nets. They also give a better training method that improves upon Dropout. 
