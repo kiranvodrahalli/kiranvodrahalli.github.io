@@ -105,7 +105,7 @@ I took <a href= "http://www.cs.princeton.edu/courses/archive/spring15/cos511/" t
 
 ### COS 510: Programming Languages
 
-I will post my scribe notes on the Curry-Howard equivalence of programs and proofs here. 
+Here are <a href= "{{ site.baseurl }}/notes/curry_howard_cos510notes.pdf" title="cos510notes"> my scribe notes</a> on the Curry-Howard Isomorphism. 
 
 ### APC 486: Transmission and Compression of Information
 
