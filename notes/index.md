@@ -111,7 +111,9 @@ Here are <a href= "{{ site.baseurl }}/notes/curry_howard_cos510notes.pdf" title=
 
 Here are <a href= "{{ site.baseurl }}/notes/apc486_kiran_scribe_notes.pdf" title="apc486notes">my scribe notes</a> on probabilistic source models.
 
+## Useful Links
 
+To be populated. I will add some links to other notes and class webpages I have found helpful. 
 
 
 
