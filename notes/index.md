@@ -89,11 +89,15 @@ Dr. Richard Socher's last lecture for the Stanford class 224d (Deep Learning for
 
 ### APC 529: Coding Theory and Random Graphs
 
-I will post my revised scribe notes for this course at the end of January 2016.
+I will post my scribe notes on random graphs for this course at the end of January 2016.
 
 ### ELE 535: Pattern Recognition and Machine Learning
 
-I will post my scribe notes for this course at the end of January 2016. 
+I will post my scribe notes for this course at the end of January 2016.
+
+### MAT 340: Applied Algebra
+
+I will post my scribe notes for this course very soon.  
 
 ### COS 511: Theoretical Machine Learning
 
