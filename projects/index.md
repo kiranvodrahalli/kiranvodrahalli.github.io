@@ -13,7 +13,7 @@ title: projects
 
 ## Class Projects
 
-### Analyzing Paired EEG-MEG-fMRI Data <a href= "{{ site.baseurl }}/projects/cos513/" title= "cos513"> [COS 513 Blog] </a>
+### Analyzing Paired EEG-MEG-fMRI Data <a href= "{{ site.baseurl }}/projects/cos513/" title= "cos513"> [COS 513 Blog] </a> <a href= "{{ site.baseurl }}/projects/cos513pre-final-paper_draft.pdf" title="cos513paper"> [pdf] </a>
 This work is in progress, joint with Lydia Liu (Princeton ORFE '17) and Niranjani Prasad (Grad Student, Princeton CS Department). We are analyzing paired EEG-fMRI time series oddball response dataset as a project for <a href= "http://www.cs.princeton.edu/~bee/courses/cos513.html" title= "cos513web"> COS 513: Foundations of Probabilistic Modeling</a>, taught by Professor Barbara Engelhardt. In addition to the oddball data, we are analyzing paired MEG-fMRI time series data of subjects looking at various types of objects. Our dataset comes from the prior work <a href = "http://people.csail.mit.edu/rmcichy/publication_pdfs/Cichy_et_al_NN_2014.pdf" title="cichy2014"> Resolving human object recognition in space and time (Cichy et. al, 2014) </a> with thanks to Dr. Cichy.
 
 ### Solving Word Analogies With Convex Optimization
