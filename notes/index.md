@@ -16,6 +16,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Zaid Harchaoui on Convolutional Kernel Neural Networks <a href = "{{ site.baseurl }}/notes/convolutional_kernel_nns.pdf">[pdf]</a>
+
+Professor Zaid Harchaoui from NYU's Courant Institute discuss Convolutional Kernel Neural Nets, which can be trained in an unsupervised manner and manage to outperform well-known CNN architectures with a fraction of the data. The formalism takes advantage of kernels to define an approximate minimization problem, adding more insight into how to tackle the problem of explaining convolutional networks theoretically.
+
 ### Lester Mackey on Divide-and-Conquer Matrix Completion <a href = "{{ site.baseurl }}/notes/lester_mackey_matrix_completion_concentration.pdf">[pdf]</a>
 
 Professor Lester Mackey from Stanford talks on his recent work for the fast-parallelization of matrix completion under a novel divide and conquer framework.
@@ -93,7 +97,7 @@ Dr. Richard Socher's last lecture for the Stanford class 224d (Deep Learning for
 
 ### APC 529: Coding Theory and Random Graphs
 
-I will post my scribe notes on random graphs for this course at the end of January 2016.
+<a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[Here]</a> are my notes on the random graphs portion of APC 529, taught by Professor Emmanuel Abbe of Princeton. The topics include an introduction to random graphs, the Erdos-Renyi model, graph properties and phase transition phenomena (for giant component and connectivity), some spectral graph theory, and finally an introduction to recent work on the Stochastic Block Model (SBM). 
 
 ### ELE 535: Pattern Recognition and Machine Learning
 
@@ -101,11 +105,11 @@ I will post my scribe notes for this course at the end of January 2016.
 
 ### MAT 340: Applied Algebra
 
-I will post my scribe notes for this course very soon.  
+I will post my scribe notes for this course very soon.
 
 ### COS 511: Theoretical Machine Learning
 
-I took <a href= "http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title= "cos511"> scribe notes</a> for most lectures of this class in its Spring 2015 iteration.  
+I took <a href= "http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title= "cos511"> scribe notes</a> for most lectures of this class in its Spring 2015 iteration. Topics in the notes consist of an introduction to statistical learning theory, the Online Convex Optimization (OCO) framework, regularization, Bandit Convex Optimization (BCO), boosting, some game theory all from the point of view of OCO, and finally, an explicit connection between OCO and statistical learning theory in the form of theorems which convert regret analysis into ERM guarantees. There are also two guest lectures, one by Professor Jake Abernethy of University of Michigan, and one by Professor Sanjeev Arora of Princeton.
 
 ### COS 510: Programming Languages
 
@@ -117,7 +121,7 @@ Here are <a href= "{{ site.baseurl }}/notes/apc486_kiran_scribe_notes.pdf" title
 
 ## Useful Links
 
-To be populated. I will add some links to other notes and class webpages I have found helpful. 
+To be populated. I will add some links to other notes, class webpages, and other people's webpages which I have found interesting and helpful. 
 
 
 
