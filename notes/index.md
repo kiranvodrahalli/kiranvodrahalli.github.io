@@ -95,6 +95,26 @@ Dr. Richard Socher's last lecture for the Stanford class 224d (Deep Learning for
 
 ## Classes
 
+### MAT 560: Algebraic Topology
+
+Coming Spring 2016. 
+
+### MAT 529: Metric Embeddings
+
+Coming Spring 2016. 
+
+### MAT 346: Galois Theory
+
+Coming Spring 2016. 
+
+### ORF 523: Convex Optimization
+
+Coming Spring 2016. 
+
+### PHY 521: Mathematical Physics
+
+Coming Spring 2016. 
+
 ### APC 529: Coding Theory and Random Graphs
 
 <a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[Here]</a> are my notes on the random graphs portion of APC 529, taught by Professor Emmanuel Abbe of Princeton. The topics include an introduction to random graphs, the Erdos-Renyi model, graph properties and phase transition phenomena (for giant component and connectivity), some spectral graph theory, and finally an introduction to recent work on the Stochastic Block Model (SBM). 
