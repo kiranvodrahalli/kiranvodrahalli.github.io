@@ -105,7 +105,7 @@ I will post my scribe notes for this course at the end of January 2016.
 
 ### MAT 340: Applied Algebra
 
-I will post my scribe notes for this course very soon.
+I will post my scribe notes for this course very very soon.
 
 ### COS 511: Theoretical Machine Learning
 
