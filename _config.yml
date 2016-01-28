@@ -2,7 +2,7 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+#relative_permalinks: true
 
 # Setup
 title:               representing things
@@ -24,6 +24,7 @@ author:
   url:               https://kiranvodrahalli.github.io
   email:             knv@princeton.edu
 
+gems: [jekyll-paginate]
 #markdown
 markdown: redcarpet
 
