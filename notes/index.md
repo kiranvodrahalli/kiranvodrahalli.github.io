@@ -109,23 +109,24 @@ Coming Spring 2016.
 
 ### ORF 523: Convex Optimization
 
+Coming Spring 2016.
+
+### ORF 525: Statistical Learning and Nonparametric Estimation
+
 Coming Spring 2016. 
 
 ### PHY 521: Mathematical Physics
 
 Coming Spring 2016. 
 
-### APC 529: Coding Theory and Random Graphs
+### APC 529: Coding Theory and Random Graphs <a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[pdf]</a>
 
-<a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[Here]</a> are my notes on the random graphs portion of APC 529, taught by Professor Emmanuel Abbe of Princeton. The topics include an introduction to random graphs, the Erdos-Renyi model, graph properties and phase transition phenomena (for giant component and connectivity), some spectral graph theory, and finally an introduction to recent work on the Stochastic Block Model (SBM). 
+These are my notes on the random graphs portion of APC 529, taught by Professor Emmanuel Abbe of Princeton. The topics include an introduction to random graphs, the Erdos-Renyi model, graph properties and phase transition phenomena (for giant component and connectivity), some spectral graph theory, and finally an introduction to recent work on the Stochastic Block Model (SBM). 
 
-### ELE 535: Pattern Recognition and Machine Learning
 
-I will post my scribe notes for this course at the end of January 2016.
+### MAT 340: Applied Algebra <a href= "{{ site.baseurl }}/notes/340_notes.pdf" title="340alg">[pdf]</a>
 
-### MAT 340: Applied Algebra
-
-I will post my scribe notes for this course very very soon.
+Applied algebra covered the basic theorems of group theory with a section on representation theory at the end. These notes will be updated in the future with coverage of the Sylow theorems and finite simple groups. 
 
 ### COS 511: Theoretical Machine Learning
 
