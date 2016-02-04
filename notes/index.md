@@ -101,11 +101,7 @@ Coming Spring 2016.
 
 ### MAT 529: Metric Embeddings
 
-Coming Spring 2016. 
-
-### MAT 346: Galois Theory
-
-Coming Spring 2016. 
+Coming Spring 2016.  (joint with Holden Lee)
 
 ### ORF 523: Convex Optimization
 
@@ -117,7 +113,7 @@ Coming Spring 2016.
 
 ### PHY 521: Mathematical Physics
 
-Coming Spring 2016. 
+Coming Spring 2016. (joint with Holden Lee)
 
 ### APC 529: Coding Theory and Random Graphs <a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[pdf]</a>
 
