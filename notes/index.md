@@ -103,14 +103,6 @@ Coming Spring 2016.
 
 Coming Spring 2016.  (joint with Holden Lee)
 
-### ORF 523: Convex Optimization
-
-Coming Spring 2016.
-
-### ORF 525: Statistical Learning and Nonparametric Estimation
-
-Coming Spring 2016. 
-
 ### PHY 521: Mathematical Physics
 
 Coming Spring 2016. (joint with Holden Lee)
