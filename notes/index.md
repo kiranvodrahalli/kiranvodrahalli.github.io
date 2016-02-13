@@ -12,9 +12,16 @@ title: notes
 
 As a general note, please contact me if you find errors in my notes so that I may fix them.
 
+* TOC
+{:toc}
+
 ## Talks
 
 I attend various academic talks and seminars and sometimes scribe them.
+
+### Samy Bengio on Neural Image Captioning <a href = "{{ site.baseurl }}/notes/neural_image_captioning.pdf">[pdf]</a>
+
+Dr. Samy Bengio from Google Brain discusses Google's Show-and-Tell paper on captioning images using a sequence-to-sequence deep learning approach. 
 
 ### Zaid Harchaoui on Convolutional Kernel Neural Networks <a href = "{{ site.baseurl }}/notes/convolutional_kernel_nns.pdf">[pdf]</a>
 

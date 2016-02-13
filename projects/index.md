@@ -10,6 +10,8 @@ title: projects
 </p>
 -->
 
+* TOC
+{:toc}
 
 ## Class Projects
 
