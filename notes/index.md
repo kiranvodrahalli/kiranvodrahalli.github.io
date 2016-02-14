@@ -116,7 +116,7 @@ After the notes are complete, I will post a final pdf on this website as well. I
 
 ### MAT 560: Algebraic Topology
 
-I will soon add notes for Peter Ozsv{'a}th's <a href="https://web.math.princeton.edu/~petero/syllabus.html" title="mat560syll"> MAT 560 </a>. This project has less priority since for most everything, see the traditional <a href="https://www.math.cornell.edu/~hatcher/AT/AT.pdf" title="hatcher"> Hatcher treatise </a>. These notes will try to augment Hatcher with more geometric intuition and additional diagrams.
+I will soon add notes for Peter Ozsváth's <a href="https://web.math.princeton.edu/~petero/syllabus.html" title="mat560syll"> MAT 560 </a>. This project has less priority since for most everything, see the traditional <a href="https://www.math.cornell.edu/~hatcher/AT/AT.pdf" title="hatcher"> Hatcher treatise </a>. These notes will try to augment Hatcher with more geometric intuition and additional diagrams.
 
 ### APC 529: Coding Theory and Random Graphs <a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[pdf]</a>
 
