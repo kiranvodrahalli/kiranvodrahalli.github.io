@@ -140,7 +140,7 @@ Here are <a href= "{{ site.baseurl }}/notes/apc486_kiran_scribe_notes.pdf" title
 
 ## Useful Links
 
-This section holds links to other notes, class webpages, and other people's webpages which I have found interesting and helpful. 
+This section holds links to other notes, class webpages, research groups, and other people's webpages which I have found interesting and helpful. 
 
 ### <a href="http://holdenlee.github.io/blog/" title="holden"> Holden Lee's blog </a>
 
