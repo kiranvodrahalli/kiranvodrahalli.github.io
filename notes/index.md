@@ -144,7 +144,11 @@ This section holds links to other notes, class webpages, research groups, and ot
 
 ### <a href="http://holdenlee.github.io/blog/" title="holden"> Holden Lee's blog </a>
 
-### <a href="http://www.stat.berkeley.edu/~blfang/papers/" title="billy"> Billy Fang's notes and papers </a>
+I collaborate with Holden on a few sets of notes, and he has a lot more interesting material about math and machine learning on his website. 
+
+### <a href="http://www.stat.berkeley.edu/~blfang/" title="billy"> Billy Fang's website </a>
+
+In particular, his blog and notes are interesting and useful respectively.
 
 ### <a href="http://angelamzhou.github.io/" title="angela"> Angela Zhou's website </a> 
 
