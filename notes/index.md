@@ -128,7 +128,7 @@ Applied algebra covered the basic theorems of group theory with a section on rep
 
 ### COS 511: Theoretical Machine Learning
 
-I took <a href= "http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title= "cos511"> scribe notes</a> for most lectures of this class in its Spring 2015 iteration. Topics in the notes consist of an introduction to statistical learning theory, the Online Convex Optimization (OCO) framework, regularization, Bandit Convex Optimization (BCO), boosting, some game theory all from the point of view of OCO, and finally, an explicit connection between OCO and statistical learning theory in the form of theorems which convert regret analysis into ERM guarantees. There are also two guest lectures, one by Professor Jake Abernethy of University of Michigan, and one by Professor Sanjeev Arora of Princeton.
+I took <a href= "http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title= "cos511"> scribe notes</a> for most lectures of this class in its Spring 2015 iteration. Topics in the notes consist of an introduction to statistical learning theory, the Online Convex Optimization (OCO) framework, regularization, Bandit Convex Optimization (BCO), boosting, some game theory all from the point of view of OCO, and finally, an explicit connection between OCO and statistical learning theory in the form of theorems which convert regret analysis into ERM guarantees. There are also two guest lectures, one by Professor Jake Abernethy of University of Michigan, and one by Professor Sanjeev Arora of Princeton. A lot of the notes follow the < href="http://ocobook.cs.princeton.edu/OCObook.pdf" title="OCObook"> excellent book </a> by Professor Elad Hazan. 
 
 ### COS 510: Programming Languages
 
@@ -140,7 +140,20 @@ Here are <a href= "{{ site.baseurl }}/notes/apc486_kiran_scribe_notes.pdf" title
 
 ## Useful Links
 
-To be populated. I will add some links to other notes, class webpages, and other people's webpages which I have found interesting and helpful. 
+This section holds links to other notes, class webpages, and other people's webpages which I have found interesting and helpful. 
+
+### <a href="http://holdenlee.github.io/blog/" title="holden"> Holden Lee's blog </a>
+
+### <a href="http://www.stat.berkeley.edu/~blfang/papers/" title="billy"> Billy Fang's notes and papers </a>
+
+### <a href="http://angelamzhou.github.io/" title="angela"> Angela Zhou's website </a> 
+
+### <a href="http://unsupervised.cs.princeton.edu/index.html" title="arora_research"> Sanjeev Arora's Research Group </a> 
+
+### <a href="http://www.offconvex.org/" title="offconvex"> Off-Convex Blog </a>
+
+### <a href="https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf" title="matrixcookbook"> Matrix Cookbook </a> 
+
 
 
 
