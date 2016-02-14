@@ -102,22 +102,25 @@ Dr. Richard Socher's last lecture for the Stanford class 224d (Deep Learning for
 
 ## Classes
 
+For now, I have individual class notes for some classes I've taken. Usually, I prioritize scribing classes for which there is no good book already existing. At some point in the future, I plan to put together big documents of notes parametrized by subject in one big document.  
+
+### MAT 529: Metric Embeddings  <a href= "https://dl.dropboxusercontent.com/u/27883775/wiki/math/pdfs/mat529.pdf" title= "mat529"> [pdf]</a> 
+
+Holden Lee (see links at the bottom of the page) and I are collaborating on notes for this class. As Spring 2016 continues, they will continue to be updated and hosted at Holden's website. The source is available on <a href= "https://github.com/holdenlee/mat529" title="github_mat529"> github </a>. 
+After the notes are complete, I will post a final pdf on this website as well. 
+
+### PHY 521: Mathematical Physics <a href= "https://dl.dropboxusercontent.com/u/27883775/wiki/math/pdfs/mat597.pdf" title= "phy521"> [pdf]</a>
+
+Holden Lee (see links at the bottom of the page) and I are collaborating on notes for this class. As Spring 2016 continues, they will continue to be updated and hosted at Holden's website. The source is available on <a href= "https://github.com/holdenlee/mat597" title="github_phy521"> github </a>.
+After the notes are complete, I will post a final pdf on this website as well. In the future, Professor Aizenman may release a book based on our notes with additions. When this tentative book is published, I will post a link to it here as well. 
+
 ### MAT 560: Algebraic Topology
 
-Coming Spring 2016. 
-
-### MAT 529: Metric Embeddings
-
-Coming Spring 2016.  (joint with Holden Lee)
-
-### PHY 521: Mathematical Physics
-
-Coming Spring 2016. (joint with Holden Lee)
+I will soon add notes for Peter Ozsv{'a}th's <a href="https://web.math.princeton.edu/~petero/syllabus.html" title="mat560syll"> MAT 560 </a>. This project has less priority since for most everything, see the traditional <a href="https://www.math.cornell.edu/~hatcher/AT/AT.pdf" title="hatcher"> Hatcher treatise </a>. These notes will try to augment Hatcher with more geometric intuition and additional diagrams.
 
 ### APC 529: Coding Theory and Random Graphs <a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[pdf]</a>
 
 These are my notes on the random graphs portion of APC 529, taught by Professor Emmanuel Abbe of Princeton. The topics include an introduction to random graphs, the Erdos-Renyi model, graph properties and phase transition phenomena (for giant component and connectivity), some spectral graph theory, and finally an introduction to recent work on the Stochastic Block Model (SBM). 
-
 
 ### MAT 340: Applied Algebra <a href= "{{ site.baseurl }}/notes/340_notes.pdf" title="340alg">[pdf]</a>
 
