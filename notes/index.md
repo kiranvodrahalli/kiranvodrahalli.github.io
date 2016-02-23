@@ -19,6 +19,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Naman Agarwal and Brian Bullins on LiSSA: A Linear Time Second-Order Stochastic Algorithm <a href = "{{ site.baseurl }}/notes/linear_stoc_opt.pdf">[pdf]</a>
+
+In this result, joint with Professor Elad Hazan at Princeton, the authors come up with a new algorithm based on a novel estimator of the inverse Hessian which allows for a theoretical linear time convergence rate for an algorithm which uses full second-order information. Empirically, the algorithm (called LiSSA) also performs well with respect to its competition. 
+
 ### Andrew Barron on Computationally Feasible Greedy Algorithms for Neural Networks <a href = "{{ site.baseurl }}/notes/barron_nns.pdf">[pdf]</a>
 
 Professor Andrew Barron from Yale discussed ways approaches from the greedy algorithms literature with accompanying statistical risk bounds can be applied to bounding the expected error of single-layer neural networks. 
