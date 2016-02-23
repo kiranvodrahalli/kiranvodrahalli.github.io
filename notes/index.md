@@ -19,6 +19,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Andrew Barron on Computationally Feasible Greedy Algorithms for Neural Networks <a href = "{{ site.baseurl }}/notes/barron_nns.pdf">[pdf]</a>
+
+Professor Andrew Barron from Yale discussed ways approaches from the greedy algorithms literature with accompanying statistical risk bounds can be applied to bounding the expected error of single-layer neural networks. 
+
 ### Samy Bengio on Neural Image Captioning <a href = "{{ site.baseurl }}/notes/neural_image_captioning.pdf">[pdf]</a>
 
 Dr. Samy Bengio from Google Brain discusses Google's Show-and-Tell paper on captioning images using a sequence-to-sequence deep learning approach. 
