@@ -47,6 +47,9 @@ In fall 2013, I began working with Professor Sam Wang of Princeton Neuroscience 
 
 ## Presentations
 
+### The Structure Theorem for Finitely-Generated Modules over PIDs
+I gave a presentation for a Galois Theory (MAT 346 at Princeton) on the torsion decomposition, primary decomposition, and cyclic decomposition for classifying finitely-generated R-modules over principal ideal domains. I also spoke about Smith Normal Form and some applications of the theorem. 
+
 ### The Representation of Language in the Brain <a href="{{ site.baseurl }}/projects/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a>
 I gave a presentation to the Alg-ML reading group on a set of papers primarily by Tom Mitchell's group at CMU on the brain's representation of the features of natural language. 
 
