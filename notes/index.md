@@ -19,6 +19,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Zeyuan Allen Zhu on Linear Coupling Framework of Gradient and Mirror Descent <a href = "{{ site.baseurl }}/notes/zeyuan_opt_talk.pdf">[pdf]</a>
+
+Dr. Zeyuan Allen Zhu explains Nesterov's accelerated gradient descent with a nice framework involving analysis of alternating gradient and mirror descent, and also shows that strong linear coupling approaches can also be applied to the analysis of other settings (for instance, coordinate gradient descent and even some nonconvex cases) to get robust improved convergence rates, in addition to intuitively explaining the opaque Nesterov acceleration. 
+
 ### Naman Agarwal and Brian Bullins on LiSSA: A Linear Time Second-Order Stochastic Algorithm <a href = "{{ site.baseurl }}/notes/linear_stoc_opt.pdf">[pdf]</a>
 
 In this result, joint with Professor Elad Hazan at Princeton, the authors come up with a new algorithm based on a novel estimator of the inverse Hessian which allows for a theoretical linear time convergence rate for an algorithm which uses full second-order information. Empirically, the algorithm (called LiSSA) also performs well with respect to its competition. 
