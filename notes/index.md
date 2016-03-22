@@ -19,6 +19,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Jacob Steinhardt on Unsupervised Risk Estimation with Only Structural Assumptions <a href = "{{ site.baseurl }}/notes/steinhardt.pdf">[pdf]</a>
+
+Jacob Steinhardt gives a talk on his recent work on provable methods for estimating the risk of unlabeled data using multiple views of the data.
+
 ### Yuanzhi Li on Weighted Low-Rank Matrix Approximation <a href = "{{ site.baseurl }}/notes/yuanzhi_weighted_svd.pdf">[pdf]</a>
 
 Yuanzhi Li gives a background review on various approaches towards weighted low-rank approximations. 
