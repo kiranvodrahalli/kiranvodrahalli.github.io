@@ -19,6 +19,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Michael Jordan on Nonparametric Bayesian and Combinatorial Stochastic Processes <a href = "{{ site.baseurl }}/notes/michael_jordan_bayes.pdf">[pdf]</a>
+
+Professor Michael Jordan gave a talk on applications and theory of nonparametric Bayesian statistics.
+
 ### Jacob Steinhardt on Unsupervised Risk Estimation with Only Structural Assumptions <a href = "{{ site.baseurl }}/notes/steinhardt.pdf">[pdf]</a>
 
 Jacob Steinhardt gives a talk on his recent work on provable methods for estimating the risk of unlabeled data using multiple views of the data.
