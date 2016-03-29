@@ -19,6 +19,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Joel Tropp on Universality Laws for Randomized Dimension Reduction <a href = "{{ site.baseurl }}/notes/tropp_algml.pdf">[pdf]</a>
+
+Professor Joel Tropp from CalTech CMS gave a talk at Alg-ML on the quality of random matrices from fairly arbitrary distributions such that the image of the random projection matrix does not intersect the origin (nothing in the original dataset gets collapsed to zero). It turns out that computationally efficient random matrix distributions, like sparse Rademacher matrices, provably obey the same phase transition laws as Gaussian random matrices for the condition that the image does not intersect the nullspace, which allows for considerable computational speedups. Additionally, there are also provable bounds on the stability of such random matrix projections.
+
 ### Joel Tropp on Finding Structure With Randomness <a href = "{{ site.baseurl }}/notes/tropp_structure_rand.pdf">[pdf]</a>
 
 Professor Joel Tropp from CalTech CMS gave a talk on another approach to approximating low-rank SVD in a manner appropriate for very large matrices.
