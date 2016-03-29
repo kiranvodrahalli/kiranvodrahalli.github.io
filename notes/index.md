@@ -19,6 +19,10 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Joel Tropp on Finding Structure With Randomness <a href = "{{ site.baseurl }}/notes/tropp_structure_rand.pdf">[pdf]</a>
+
+Professor Joel Tropp from CalTech CMS gave a talk on another approach to approximating low-rank SVD in a manner appropriate for very large matrices.
+
 ### Michael Jordan on Nonparametric Bayesian and Combinatorial Stochastic Processes <a href = "{{ site.baseurl }}/notes/michael_jordan_bayes.pdf">[pdf]</a>
 
 Professor Michael Jordan gave a talk on applications and theory of nonparametric Bayesian statistics.
