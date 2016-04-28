@@ -47,6 +47,9 @@ In fall 2013, I began working with Professor Sam Wang of Princeton Neuroscience 
 
 ## Presentations
 
+### On Lipschitz Extensions from Finite Sets <a href="{{ site.baseurl }}/projects/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a>
+With Misha Khodak, I gave a presentation for MAT 529 (Metric Embeddings and Geometric Inequalities) on a \\(\mc{O}\left(\sqrt{\log n}\right)\\) lower bound of the absolute extendability of 1-Lipschitz functions from a finite metric space into a Banach space due to Professor <a href = "http://web.math.princeton.edu/~naor/" title = "Assaf Naor">Assaf Naor</a>.
+
 ### The Structure Theorem for Finitely-Generated Modules over PIDs <a href="{{ site.baseurl }}/projects/346_modules_over_PIDs.pdf" title="modules_PIDS"> [pdf] </a>
 I gave a presentation for a Galois Theory (MAT 346 at Princeton) on the torsion decomposition, primary decomposition, and cyclic decomposition for classifying finitely-generated R-modules over principal ideal domains. I also spoke about Smith Normal Form and some applications of the theorem. 
 
