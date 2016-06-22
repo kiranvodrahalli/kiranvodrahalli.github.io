@@ -4,13 +4,55 @@
  <title>representing things</title>
  <link href="https://kiranvodrahalli.github.io/atom.xml" rel="self"/>
  <link href="https://kiranvodrahalli.github.io/"/>
- <updated>2016-04-27T23:54:58-04:00</updated>
+ <updated>2016-06-21T22:46:09-04:00</updated>
  <id>https://kiranvodrahalli.github.io</id>
  <author>
    <name>Kiran Vodrahalli</name>
    <email>knv@princeton.edu</email>
  </author>
 
+ 
+ <entry>
+   <title>Presentations at ICML 2016</title>
+   <link href="https://kiranvodrahalli.github.io/2016/06/21/icml16/"/>
+   <updated>2016-06-21T00:00:00-04:00</updated>
+   <id>https://kiranvodrahalli.github.io/2016/06/21/icml16</id>
+   <content type="html">&lt;p&gt;Well it’s been a year since my &lt;a href=&quot;/2015/06/21/intro/&quot;&gt;first post&lt;/a&gt;, so let’s do another post today in the hopes that I’ll actually start writing things this summer!&lt;/p&gt;
+
+&lt;p&gt;Over the past few days I’ve been attending &lt;a href=&quot;http://icml.cc/2016/&quot;&gt;ICML 2016&lt;/a&gt;, and it’s been pretty interesting so far. I’m presenting a poster and a talk for the &lt;a href=&quot;http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/&quot;&gt;Multi-View Representation Learning Workshop&lt;/a&gt; on Thursday, so I’ve pretty much been preparing for that (poster, presentation and revisions) and attending sessions. I’ve kind of neglected the poster sessions, so I’ll probably spend more time wandering around the posters and engaging people tomorrow.&lt;/p&gt;
+
+&lt;p&gt;There were some really crystal clear presentations in the Learning Theory and Continuous Optimization sessions today which I quite enjoyed. On the other side of things, I felt most of the Deep Learning sessions fell kind of flat, with a few exceptions. Perhaps one of the issues with Deep Learning papers is that they’re not really suitable for presentation format unless there’s something truly novel going on in the architecture. Too often the punchline of a deep learning paper seems to be that some slightly modified technique was tried and it improved upon the baseline of some typical dataset/ task by a small portion. This fact isn’t necessarily a bad thing, but it does make for difficult talks since there’s no real concrete punchline you can get at without getting dirty with the details - and talks are not typically the place to get dirty with the details. Of course, there are some exceptions to this rule in my mind. For instance, &lt;a href=&quot;https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf&quot;&gt;sequence-to-sequence learning&lt;/a&gt; felt like a genuinely new innovation in comparison to previous work in the area.&lt;/p&gt;
+
+&lt;p&gt;Anyways, it’s been pretty interesting attending as this conference is my first machine learning conference. I also really liked Fei-Fei Li and Dan Spielman’s talks today. Both were particularly good presenters in terms of clarity and command. I guess one advantage of attending most of the talks is you start to see how you should go about improving your own delivery of talks, which is an important skill to have pretty much anywhere, though particularly in academia. One thing my advisor has reminded me of is the importance of avoiding too many words in presentations/posters, which is something I’m trying to work on. Coming up with the right figures that clearly deliver a point is pretty challenging at first!&lt;/p&gt;
+
+&lt;p&gt;So, now to talk about the future. I’ve been sitting on several ideas for blog posts for the past several months (probably more like 9 months). I plan to get to them sometime soon, after organizing all my computer/internet clutter so that I can be more productive. Here’s a list of potential topics:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;What is meant by ``Machine Learning’’? An overview of all the relevant fields I think which overlap it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Machine Learning courses in colleges.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A list of reading I’m doing this summer.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Machine Learning as Science++: Various positions on what constitutes truth.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Discussion of the current state of NLP/NLU: What I believe and what I’m skeptical of, and what I plan to test and implement with my friend &lt;a href=&quot;http://holdenlee.github.io/blog/&quot;&gt;Holden Lee&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Discussion of my current research and perhaps some fun visualizations.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Some technical exercise? I need to practice technical writing skills… This is supposed to be my theory blog after all.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>MathJax Tests</title>

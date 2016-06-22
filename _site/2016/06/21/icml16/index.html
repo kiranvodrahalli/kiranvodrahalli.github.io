@@ -25,7 +25,7 @@
 
   <title>
     
-      representing things || kiran's theoryblog
+      Presentations at ICML 2016 || representing things
     
   </title>
 
@@ -84,18 +84,10 @@
       </header>
 
       <main>
-        <div class="posts">
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2016/06/21/icml16/">
-        Presentations at ICML 2016
-      </a>
-    </h1>
-
-    <time datetime="2016-06-21T00:00:00-04:00" class="post-date">21 Jun 2016</time>
-
-    <p>Well it’s been a year since my <a href="/2015/06/21/intro/">first post</a>, so let’s do another post today in the hopes that I’ll actually start writing things this summer!</p>
+        <article class="post">
+  <h1 class="post-title">Presentations at ICML 2016</h1>
+  <time datetime="2016-06-21T00:00:00-04:00" class="post-date">21 Jun 2016</time>
+  <p>Well it’s been a year since my <a href="/2015/06/21/intro/">first post</a>, so let’s do another post today in the hopes that I’ll actually start writing things this summer!</p>
 
 <p>Over the past few days I’ve been attending <a href="http://icml.cc/2016/">ICML 2016</a>, and it’s been pretty interesting so far. I’m presenting a poster and a talk for the <a href="http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/">Multi-View Representation Learning Workshop</a> on Thursday, so I’ve pretty much been preparing for that (poster, presentation and revisions) and attending sessions. I’ve kind of neglected the poster sessions, so I’ll probably spend more time wandering around the posters and engaging people tomorrow.</p>
 
@@ -130,108 +122,27 @@
 </ul>
 
 
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/21/intro/">
-        MathJax Tests
-      </a>
-    </h1>
+</article>
 
-    <time datetime="2015-06-21T00:00:00-04:00" class="post-date">21 Jun 2015</time>
 
-    <p><a href="/2015/06/21/intro/">First post</a>, woo hoo! This blog will be roughly about my thoughts about research and maybe other things, I haven’t really decided yet. Probably some notes and projects.</p>
-
-<p>In the meantime, here are some tests to ensure MathJax is working.</p>
-
-<p>\begin{equation}
-	x_{t+1} = \prod_{\mathcal{K}} \left(x_{t} - \eta \nabla_t\right) \tag{1} \label{eq:OGD}
-\end{equation}</p>
-
-<p>Equation \eqref{eq:OGD} is the online gradient descent update. See \eqref{eq:vandermonde} for a matrix. Consider \(x, y \in \mathbb{R}\): Then, \(x + y \in \mathbb{R}\) as well (this math is inline).</p>
-
-<!-- comment \\\ is necessary for new lines in math code or \\( if you want to do inline math-->
-
-<p>Here’s the <a href="https://en.wikipedia.org/wiki/Vandermonde_matrix">Vandermonde matrix</a>:</p>
-
-<p>\begin{pmatrix}
- 	1 &amp; a_1 &amp; {a_1}^2 &amp; \cdots &amp; {a_1}^n \\
- 	1 &amp; a_2 &amp; {a_2}^2 &amp; \cdots &amp; {a_2}^n \\   \tag{2.1} \label{eq:vandermonde}
- 	\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
- 	1 &amp; a_m &amp; {a_m}^2 &amp; \cdots &amp; {a_m}^n \\
-\end{pmatrix}</p>
-
-<p>Here’s some matrix multiplication:</p>
-
-<!-- use align environments to get matrices to line up -->
-<!-- you can insert text here, but it will be the same color as the math -->
-<!-- can add extra \\\ to get more space in align envs -->
-
-<p>\begin{align}
-	\begin{pmatrix} 
-		1 &amp; 0 \\ 
-		0 &amp; e^{i\pi} \\ \tag{2.2}
-	\end{pmatrix}
-	\begin{pmatrix}
-	  u \\ v
-	\end{pmatrix}
-	&amp;=
-	\begin{pmatrix}
-	  u \\ -v
-	\end{pmatrix} \\ 
-	\large\equiv \\ <br />
-	\begin{bmatrix}
-		1 &amp; 0 \\
-		0 &amp; -1 \\
-	\end{bmatrix}
-	\begin{bmatrix}
-		x \\ y
-	\end{bmatrix}
-	&amp;= 
-	\begin{bmatrix}
-		x \\ -y
-	\end{bmatrix}
-\end{align}</p>
-
-<p>And finally, we have the <a href="https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality">Cauchy-Schwarz inequality</a>:</p>
-
-<script type="math/tex; mode=display">\left( \sum\_{k=1}^n a\_k b\_k \right)^2 \leq \left( \sum\_{k=1}^n a\_k^2 \right) \left( \sum\_{k=1}^n b\_k^2 \right) \tag{3}</script>
-
-<p>Here’s a useful <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">link</a> to some MathJax tricks.</p>
-
-<!-- Some old equations that look ugly but explain how to use certain features which I probably won't use like bbox. The better aligned example is above. -->
-<!-- \\(\href{http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference}{\text{link}}\\) -->
-
-<!-- Here's an aligned equation: 
-
-\begin{align}
-	a & =b+c-d \\\  
-	& \quad +e-f \\\ \tag{3} \label{test2}
-	& =g+h \\\ 
-	& =i
-\end{align}
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2015/06/21/intro/">
+            MathJax Tests
+            <small><time datetime="2015-06-21T00:00:00-04:00">21 Jun 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
 
 
 
-$$ \bbox[maroon]{x^2 + y^2} \tag{4} \label{test3}$$
-
-$$ \enclose{box}[mathcolor="blue"]{x^2 + y^2} \tag{5} \label{test4} $$
-
--->
-
-  </article>
-  
-</div>
-
-<div class="pagination">
-  
-    <span class="pagination-item older">\(\Huge\leftarrow\)</span>
-  
-  
-    <span class="pagination-item newer">\(\Huge\rightarrow\)</span>
-  
-</div>
 
       </main>
 
