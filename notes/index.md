@@ -19,6 +19,14 @@ As a general note, please contact me if you find errors in my notes so that I ma
 
 I attend various academic talks and seminars and sometimes scribe them.
 
+### Ravi Kannan on Linear Algebra in Machine Learning <a href = "{{ site.baseurl }}/notes/ravi_kannan.pdf">[pdf]</a>
+
+Ravi Kannan from Microsoft Research gave a talk at COLT 2016 on the role of linear algebra in machine learning over the years, taking a historical perspective and covering the main highlights as well as some more recent results. 
+
+### Nicholas Boumal on ManOpt: Manifold Optimization <a href = "{{ site.baseurl }}/notes/boumal_manopt.pdf">[pdf]</a>
+
+Nicholas Boumal from Princeton gave a talk at the Alg-ML Reading Group on manifold optimization and ManOpt, his tool for solving optimization problems. 
+
 ### Michael Jordan on Computational Thinking, Inferential Thinking, and Data Science <a href = "{{ site.baseurl }}/notes/mike_jordan_general.pdf">[pdf]</a>
 
 Professor Michael Jordan from Berkeley gave a general talk on the trends towards intersecting the statistical, computer science, and optimization communities. The discussion includes inferential differential privacy, inferential communication theory, inferential computation theory, and finally, an aside on a general framework for accelerated Nesterov methods. 
