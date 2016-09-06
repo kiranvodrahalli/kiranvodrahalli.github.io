@@ -4,13 +4,60 @@
  <title>representing things</title>
  <link href="https://kiranvodrahalli.github.io/atom.xml" rel="self"/>
  <link href="https://kiranvodrahalli.github.io/"/>
- <updated>2016-06-26T14:48:17-04:00</updated>
+ <updated>2016-09-06T09:17:21-04:00</updated>
  <id>https://kiranvodrahalli.github.io</id>
  <author>
    <name>Kiran Vodrahalli</name>
    <email>knv@princeton.edu</email>
  </author>
 
+ 
+ <entry>
+   <title>Presentations at ICML 2016</title>
+   <link href="https://kiranvodrahalli.github.io/2016/07/07/otherblogposts/"/>
+   <updated>2016-07-07T00:00:00-04:00</updated>
+   <id>https://kiranvodrahalli.github.io/2016/07/07/otherblogposts</id>
+   <content type="html">Well it&#39;s been a year since my [first post](/2015/06/21/intro/), so let&#39;s do another post today in the hopes that I&#39;ll actually start writing things this summer!
+
+Over the past few days I&#39;ve been attending [ICML 2016](http://icml.cc/2016/), and it&#39;s been pretty interesting so far. I&#39;m presenting a poster and a talk for the [Multi-View Representation Learning Workshop](http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/) on Thursday, so I&#39;ve pretty much been preparing for that (poster, presentation and revisions) and attending sessions. I&#39;ve kind of neglected the poster sessions, so I&#39;ll probably spend more time wandering around the posters and engaging people tomorrow. 
+
+There were some really crystal clear presentations in the Learning Theory and Continuous Optimization sessions today which I quite enjoyed. On the other side of things, I felt most of the Deep Learning sessions fell kind of flat, with a few exceptions. Perhaps one of the issues with Deep Learning papers is that they&#39;re not really suitable for presentation format unless there&#39;s something truly novel going on in the architecture. Too often the punchline of a deep learning paper seems to be that some slightly modified technique was tried and it improved upon the baseline of some typical dataset/ task by a small portion. This fact isn&#39;t necessarily a bad thing, but it does make for difficult talks since there&#39;s no real concrete punchline you can get at without getting dirty with the details - and talks are not typically the place to get dirty with the details. Of course, there are some exceptions to this rule in my mind. For instance, [sequence-to-sequence learning](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf) felt like a genuinely new innovation in comparison to previous work in the area.
+
+Anyways, it&#39;s been pretty interesting attending as this conference is my first machine learning conference. I also really liked Fei-Fei Li and Dan Spielman&#39;s talks today. Both were particularly good presenters in terms of clarity and command. I guess one advantage of attending most of the talks is you start to see how you should go about improving your own delivery of talks, which is an important skill to have pretty much anywhere, though particularly in academia. One thing my advisor has reminded me of is the importance of avoiding too many words in presentations/posters, which is something I&#39;m trying to work on. Coming up with the right figures that clearly deliver a point is pretty challenging at first!
+
+So, now to talk about the future. I&#39;ve been sitting on several ideas for blog posts for the past several months (probably more like 9 months). I plan to get to them sometime soon, after organizing all my computer/internet clutter so that I can be more productive. Here&#39;s a list of potential topics:
+
+* What is meant by ``Machine Learning&#39;&#39;? An overview of all the relevant fields I think which overlap it.
+
+* Machine Learning courses in colleges. 
+
+* A list of reading I&#39;m doing this summer. 
+
+* Machine Learning as Science++: Various positions on what constitutes truth.
+
+* Discussion of the current state of NLP/NLU: What I believe and what I&#39;m skeptical of, and what I plan to test and implement with my friend [Holden Lee](http://holdenlee.github.io/blog/)
+
+* Discussion of my current research and perhaps some fun visualizations. 
+
+* Some technical exercise? I need to practice technical writing skills... This is supposed to be my theory blog after all.
+
+NEW IDEAS
+
+* Blog post about using linear algebra methods to assess the quality of neuroscience data? 
+
+* blog post about looking at time-time correlation matrices for word vectors
+
+* blog post summary review paper thing of all the RNN stuff, all the context vector stuff
+
+* post on how to spend my time, efficiency, context switching
+
+* post on different pulls
+
+* post describing my research interests
+
+* do more blog posts
+</content>
+ </entry>
  
  <entry>
    <title>Presentations at ICML 2016</title>

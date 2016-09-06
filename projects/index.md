@@ -47,6 +47,14 @@ In fall 2013, I began working with Professor Sam Wang of Princeton Neuroscience 
 
 ## Presentations
 
+
+### A Semantic Shared Response Model <a href="{{site.baseurl }}/projects/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [pdf] </a>
+
+UPDATE: Newer version of the talk is <a href="{{site.baseurl }}/projects/Update_SSRM.pdf" title="update"> posted </a>.
+
+I presented my thesis work and some extensions as a poster and talk at ICML 2016 Multi-View Representation Conference (see <a href = "http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/" title = "MVRL"> ICML MVRL 2016 </a>).
+Given fMRI data of several people watching a movie and semantic annotations of the movie, the goal of this work is to decode both directions: from fMRI to text, and from text to fMRI. We use the Shared Response Model (<a href = "http://papers.nips.cc/paper/5855-a-reduced-dimension-fmri-shared-response-model" title = 'SRM'> Chen et al 2015 </a>) and linear models to achieve this task reasonably well. We also introduce a new method for creating sentence representations of words, using dictionary learning on word vectors to approximate word sense disambiguation <a href = "https://arxiv.org/pdf/1601.03764.pdf" title = "Aroraetal2016"> Arora et al 2016 </a> and demonstrate its effectiveness.
+
 ### On Lipschitz Extensions from Finite Sets <a href="{{ site.baseurl }}/projects/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a>
 With Misha Khodak, I gave a presentation for MAT 529 (Metric Embeddings and Geometric Inequalities) on a \\(\mathcal{O}\left(\sqrt{\log n}\right)\\) lower bound of the absolute extendability of 1-Lipschitz functions from a finite metric space into a Banach space due to Professor <a href = "http://web.math.princeton.edu/~naor/" title = "Assaf Naor">Assaf Naor</a>.
 
