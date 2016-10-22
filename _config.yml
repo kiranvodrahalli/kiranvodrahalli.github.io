@@ -6,7 +6,7 @@ permalink:           pretty
 
 # Setup
 title:               exponentially surprised
-tagline:             2<sup>H</sup> theoryblog
+tagline:             ""
 url:                 https://kiranvodrahalli.github.io
 paginate:            5
 baseurl:             ""
