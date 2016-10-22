@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>representing things</title>
+ <title>exponentially surprised (2^H)</title>
  <link href="https://kiranvodrahalli.github.io/atom.xml" rel="self"/>
  <link href="https://kiranvodrahalli.github.io/"/>
- <updated>2016-10-08T23:25:56-04:00</updated>
+ <updated>2016-10-21T20:00:01-04:00</updated>
  <id>https://kiranvodrahalli.github.io</id>
  <author>
    <name>Kiran Vodrahalli</name>
    <email>knv@princeton.edu</email>
  </author>
 
+ 
+ <entry>
+   <title>First ArXiv Paper and a New Title!</title>
+   <link href="https://kiranvodrahalli.github.io/2016/10/21/arxivpaper-titleupdate/"/>
+   <updated>2016-10-21T00:00:00-04:00</updated>
+   <id>https://kiranvodrahalli.github.io/2016/10/21/arxivpaper-titleupdate</id>
+   <content type="html">&lt;p&gt;Hey everyone! Check out my first arXiv paper &lt;a href=&quot;https://arxiv.org/abs/1610.03914&quot;&gt; Mapping Between Natural Movie fMRI Responses and Word-Sequence Representations&lt;/a&gt;, to be presented at &lt;a href=&quot;https://sites.google.com/site/mlini2016nips/&quot;&gt; NIPS 2016 Workshop on Representation Learning in Artificial and Biological Neural Networks &lt;/a&gt;. This work is the culmination of my senior thesis work and summer research at Princeton CS and Neuroscience. I will be making some updates soon (more results and experiments) so stay tuned.&lt;/p&gt;
+
+&lt;p&gt;Secondly, I’ve finally removed my placeholder title for this website. I really like the phrase “exponentially suprised” - it’s a reference to an intuitive way for thinking about the information theoretic quantity of entropy, “surprise”. The more entropy a system has, the less sure you are about what it will output next; thus, the more surprised you are. Uniform distributions are very surprising, while having all the probability mass at a point is very unsurprising. You know exactly what will happen.&lt;/p&gt;
+
+&lt;p&gt;Now what is “exponentially surprised”? Well, it’s being perplexed! I find myself constantly perplexed by strange things (like the concentration of maximum eigenvalues of a random matrix is ridiculously tight), so it seems like a good fit. It’s also a common measure for the performance of langauge models in natural language understanding. If a model is constantly perplexed (in terms of its probability model) at the occurrences of words in language, it’s clearly not a good model. The more the language model understands about the conditional distributions of words in language and context, the less perplexed it will be, and thus the better the model will be.&lt;/p&gt;
+
+&lt;p&gt;This setup is not quite true for the case where you want to build a generative language model though, since you don’t want to generate incredibly predictable things all the time (i.e. let’s NOT output the maximum likelihood at every time step, since the models we train are too weak for the maximum likelihood to actually be the right thing). For instance, in dialogue generation models (see the amusing examples in this &lt;a href=&quot;https://arxiv.org/pdf/1606.01541v4.pdf&quot;&gt; paper &lt;/a&gt;), we want to avoid getting stuck in boring optima where two chatbots tell each other that the other does not know what they are talking about. You in fact want to be a little perplexed by what someone says to you; you hope for new information in any exchange of information. So there is some tradeoff here which is not completely clear.&lt;/p&gt;
+
+&lt;p&gt;The original title of this website was “Representing Things”, not just language. Perplexity can be considered a measure for a generative unsupervised model of any sort - the goal is in some sense to represent a summarization which contains all necessary information to either reproduce (autoencoders) or generate from something close to the true distribution (generative setting) the thing we were trying to represent in the first place. I suppose you could think of the probabilistic generative model setting as “autoencoders for probability distributions”. Surprise and perplexity therefore measure the analogue to a minimum description length (compare with coding theory) or low rank (compare with linear algebraic approaches) for this setting.&lt;/p&gt;
+
+&lt;p&gt;Anyways, that’s the explanation for the new title as well as some ideas I’ve been thinking about recently in terms of creating a framework for unsupervised learning (some potentially interesting theory in terms of “linear autoencoders” is in this &lt;a href=&quot;https://arxiv.org/abs/1610.01132&quot;&gt; NIPS 2016 paper &lt;/a&gt; by Elad Hazan and Tengyu Ma at Princeton). It would be particularly interesting to extend some kind of framework to the generative setting: log linear models (as in the &lt;a href=&quot;https://transacl.org/ojs/index.php/tacl/article/viewFile/742/204&quot;&gt; word vector paper &lt;/a&gt; by Sanjeev Arora et al at Princeton), energy based models, generative adversarial networks all have common notions in an autoencoder-like reconstruction of a true probability density function with a self-conflicting objective in the case where generation is also desirable. It would be great to formalize this notion in a contained framework which handles both representation and generation: Minimize surprise, yet be consistently perplexed.&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Presentations at ICML 2016</title>
