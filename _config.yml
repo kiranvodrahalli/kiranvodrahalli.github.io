@@ -5,8 +5,8 @@ permalink:           pretty
 #relative_permalinks: true
 
 # Setup
-title:               exponentially surprised (2^H)
-tagline:             kiran's theoryblog
+title:               exponentially surprised
+tagline:             \\(2^H\\) theoryblog
 url:                 https://kiranvodrahalli.github.io
 paginate:            5
 baseurl:             ""
