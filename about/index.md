@@ -12,7 +12,7 @@ title: about
 
 I am currently a Ph.D. student at Columbia University, focusing on theoretical computer science, with particular interest in machine learning, algorithms, and statistics. I am extremely fortunate to be advised by [Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Alex Andoni](http://www.mit.edu/~andoni/). I am affiliated with the [Computer Science department](http://www.cs.columbia.edu/), particularly the [Theory group](http://www.cs.columbia.edu/theory/) and the [Machine learning group](http://www.cs.columbia.edu/areas/machine/), as well as the [Data Science Institute](http://datascience.columbia.edu/).
 
-My primary area of theoretical research is provable algorithms and models for computational inference and optimization. A lot of my interests can be summarized by the phrase ``Non-worst-case analysis for machine learning algorithms''. I tend to prefer using conditions that constrain the problem space that are easy to check. I am also fan of the notion that theory informs practice, and practice informs theory. I am particularly interested in the following broad areas: 
+My primary area of research is provable algorithms and models for computational inference and optimization. A lot of my interests can be summarized by the phrase ``Non-worst-case analysis for machine learning algorithms''. I tend to prefer using conditions that constrain the problem space that are easy to check. I am also a fan of the notion that theory informs practice, and practice informs theory. I am particularly interested in the following broad areas: 
 
 * Theoretical frameworks for unsupervised learning which allow one to give guarantees on performance
 
