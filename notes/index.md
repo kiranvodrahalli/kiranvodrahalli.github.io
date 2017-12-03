@@ -15,7 +15,35 @@ As a general note, please contact me if you find errors in my notes so that I ma
 * TOC
 {:toc}
 
-## Talks
+## My Talks
+
+### A Semantic Shared Response Model <a href="{{site.baseurl }}/projects/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [pdf] </a>
+
+UPDATE: Newer version of the talk is <a href="{{site.baseurl }}/projects/Update_SSRM.pdf" title="update"> posted </a>.
+
+I presented my thesis work and some extensions as a poster and talk at ICML 2016 Multi-View Representation Conference (see <a href = "http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/" title = "MVRL"> ICML MVRL 2016 </a>).
+Given fMRI data of several people watching a movie and semantic annotations of the movie, the goal of this work is to decode both directions: from fMRI to text, and from text to fMRI. We use the Shared Response Model (<a href = "http://papers.nips.cc/paper/5855-a-reduced-dimension-fmri-shared-response-model" title = 'SRM'> Chen et al 2015 </a>) and linear models to achieve this task reasonably well. We also introduce a new method for creating sentence representations of words, using dictionary learning on word vectors to approximate word sense disambiguation <a href = "https://arxiv.org/pdf/1601.03764.pdf" title = "Aroraetal2016"> Arora et al 2016 </a> and demonstrate its effectiveness.
+
+### On Lipschitz Extensions from Finite Sets <a href="{{ site.baseurl }}/projects/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a>
+With Misha Khodak, I gave a presentation for MAT 529 (Metric Embeddings and Geometric Inequalities) on a \\(\mathcal{O}\left(\sqrt{\log n}\right)\\) lower bound of the absolute extendability of 1-Lipschitz functions from a finite metric space into a Banach space due to Professor <a href = "http://web.math.princeton.edu/~naor/" title = "Assaf Naor">Assaf Naor</a>.
+
+### The Structure Theorem for Finitely-Generated Modules over PIDs <a href="{{ site.baseurl }}/projects/346_modules_over_PIDs.pdf" title="modules_PIDS"> [pdf] </a>
+I gave a presentation for a Galois Theory (MAT 346 at Princeton) on the torsion decomposition, primary decomposition, and cyclic decomposition for classifying finitely-generated R-modules over principal ideal domains. I also spoke about Smith Normal Form and some applications of the theorem. 
+
+### The Representation of Language in the Brain <a href="{{ site.baseurl }}/projects/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a>
+I gave a presentation to the Alg-ML reading group on a set of papers primarily by Tom Mitchell's group at CMU on the brain's representation of the features of natural language. 
+
+### A Brief Survey on Expander Graphs <a href="{{ site.baseurl }}/projects/jsem2015paper.pdf" title="jsem"> [pdf] </a>
+My junior seminar, taught by Professor Zeev Dvir in the spring of 2015, was on Point-Line Incidence Theorems. My presentation focused on a tangent subject, expander graphs.
+
+### A Survey on Image Captioning with Deep Learning<a href="{{ site.baseurl }}/projects/598b_img_captions.pdf" title="598c_img_cap"> [slides] </a>
+My second presentation for <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a> focused on the image captioning problem, and deep learning approaches to solving it.
+
+### A Survey on Deep Learning for Natural Language Processing <a href="{{ site.baseurl }}/projects/598b_nlp_deep_learning.pdf" title="598c_nlp"> [slides] </a>
+My first presentation for the Spring 2015 offering of <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a>, an advanced topics class on deep learning taught by Professor Jianxiong Xiao. I overviewed various approaches to solving NLP problems with deep learning approaches, with a stronger focus on language models and word vector embeddings.
+
+
+## Other People's Talks
 
 I attend various academic talks and seminars and sometimes scribe them.
 
@@ -144,14 +172,17 @@ Dr. Anna Choromanska from the Courant Institute talks about new learning algorit
 
 Dr. Richard Socher's last lecture for the Stanford class 224d (Deep Learning for NLP) was on a recent paper by his startup, Metamind. He spoke about using a novel deep learning architecture to solve question-and-answer problems, and also about how to generalize all of NLP to a question-and-answer framework with this kind of model. 
 
-## Classes
+## Lecture Notes
 
 For now, I have individual class notes for some classes I've taken. Usually, I prioritize scribing classes for which there is no good book already existing. At some point in the future, I plan to put together big documents of notes parametrized by subject in one big document.  
 
-### MAT 529: Metric Embeddings  <a href= "https://dl.dropboxusercontent.com/u/27883775/wiki/math/pdfs/mat529.pdf" title= "mat529"> [pdf]</a> 
+### MAT 529: Metric Embeddings  <a href= "https://www.dropbox.com/s/s6kh92p8pas6941/mat529.pdf?dl=0" title= "mat529"> [pdf]</a> 
 
-Holden Lee (see links at the bottom of the page) and I are collaborating on notes for this class. As Spring 2016 continues, they will continue to be updated and hosted at Holden's website. The source is available on <a href= "https://github.com/holdenlee/mat529" title="github_mat529"> github </a>. 
-After the notes are complete, I will post a final pdf on this website as well. 
+Holden Lee (see links at the bottom of the page) and I are collaborated on notes for this class. The source is available on <a href= "https://github.com/holdenlee/mat529" title="github_mat529"> github </a>. 
+
+### MAT 597/PHY521: Mathematical Physics <a href= "https://www.dropbox.com/s/11mg27mbdke3m9c/mat597.pdf?dl=0" title= "mat597"> [pdf]</a>
+
+Holden Lee and I collaborated on notes for this class as well, but it should be noted that I only helped for roughly the first two months of the class. The source is available on <a href= "https://github.com/holdenlee/mat597" title="github_mat597"> github </a>. 
 
 ### APC 529: Coding Theory and Random Graphs <a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[pdf]</a>
 
@@ -190,9 +221,6 @@ In particular, his blog and notes are interesting and useful respectively.
 ### <a href="http://unsupervised.cs.princeton.edu/index.html" title="arora_research"> Sanjeev Arora's Research Group </a> 
 
 ### <a href="http://www.offconvex.org/" title="offconvex"> Off-Convex Blog </a>
-
-### <a href="https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf" title="matrixcookbook"> Matrix Cookbook </a> 
-
 
 
 
