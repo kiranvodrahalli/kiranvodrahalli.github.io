@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+   
+   <!--
+     redirect users to the https version of the website.
+     but: only check when on the production domain, as set in _config.yml.
+    -->
+   <script type="text/javascript">
+     var enforce = "kiranvodrahalli.github.io";
+     if ((enforce == window.location.host) && (window.location.protocol != "https:"))
+       window.location = window.location.toString().replace(/^http:/, "https:");
+   </script>
+   
+
+  <!-- EB Garamond Font --> 
+  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      research || exponentially surprised
+    
+  </title>
+
+  <!-- MathJax -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ 
+      TeX: { 
+        extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "bbox.js", "color.js", "enclose.js"] 
+      },
+      unicode: {
+        fonts: "STIXGeneral, 'Arial Unicode MS'"
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/public/favicomatic/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicomatic/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicomatic/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicomatic/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/public/favicomatic/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicomatic/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/public/favicomatic/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicomatic/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-128.png" sizes="128x128" />
+  <link rel="shortcut icon" type="image/png" href="/public/favicomatic/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="exponentially surprised" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">||exponentially surprised||</a>
+          <small>[2<sup>H</sup> theoryblog]</small> 
+        </h3>
+        <a href="/about" title="about">{about}</a>
+        <a href="/research" title="research">{research}</a>
+        <a href="/notes" title="talks and notes">{talks and notes}</a>
+        <a href="/contact" title="contact">{contact}</a>
+        <div align="left">
+          <img src="/professional_headshot.jpg" alt="kiran_pic" height="400">
+        </div>
+      </header>
+
+      <main>
+        <article class="page">
+  <h1 class="page-title">research</h1>
+  <!-- example of the message class
+<p class="message">
+  My name is Kiran Vodrahalli. 
+</p>
+-->
+
+<ul id="markdown-toc">
+  <li><a href="#publications" id="markdown-toc-publications">Publications</a></li>
+  <li><a href="#undergraduate-work" id="markdown-toc-undergraduate-work">Undergraduate Work</a>    <ul>
+      <li><a href="#low-dimensional-representations-of-semantic-drift-in-thought-space" id="markdown-toc-low-dimensional-representations-of-semantic-drift-in-thought-space">Low-dimensional Representations of Semantic Drift in Thought-Space</a></li>
+      <li><a href="#estimating-trending-twitter-topics-with-count-min-sketch-a-href-projectscos521paperpdf-title-cos521-pdf-a" id="markdown-toc-estimating-trending-twitter-topics-with-count-min-sketch-a-href-projectscos521paperpdf-title-cos521-pdf-a">Estimating Trending Twitter Topics With Count-Min Sketch <a href="/projects/cos521paper.pdf" title="cos521"> [pdf] </a></a></li>
+      <li><a href="#comparing-hebbian-semantic-vectors-across-language-a-href-projectsneu330paperpdf-title-neu330-pdf-a" id="markdown-toc-comparing-hebbian-semantic-vectors-across-language-a-href-projectsneu330paperpdf-title-neu330-pdf-a">Comparing Hebbian Semantic Vectors Across Language <a href="/projects/neu330paper.pdf" title="neu330"> [pdf] </a></a></li>
+      <li><a href="#sparse-low-dimensional-and-multimodal-representations-of-time-series-for-mind-reading-a-href-projectscos513-title-cos513-cos-513-blog-a" id="markdown-toc-sparse-low-dimensional-and-multimodal-representations-of-time-series-for-mind-reading-a-href-projectscos513-title-cos513-cos-513-blog-a">Sparse, Low-dimensional and Multimodal Representations of Time Series for Mind-Reading <a href="/projects/cos513/" title="cos513"> [COS 513 Blog] </a></a></li>
+      <li><a href="#learning-shifting-communities-online-in-the-adversarial-block-model" id="markdown-toc-learning-shifting-communities-online-in-the-adversarial-block-model">Learning Shifting Communities Online in the Adversarial Block Model</a></li>
+      <li><a href="#solving-word-analogies-with-convex-optimization" id="markdown-toc-solving-word-analogies-with-convex-optimization">Solving Word Analogies With Convex Optimization</a></li>
+      <li><a href="#noun-compounds-in-semantic-quad-space-a-hrefprojectsiw2014paperpdf-title-iw2014-pdf-a" id="markdown-toc-noun-compounds-in-semantic-quad-space-a-hrefprojectsiw2014paperpdf-title-iw2014-pdf-a">Noun Compounds in Semantic Quad-Space <a href="/projects/iw2014paper.pdf" title="iw2014"> [pdf] </a></a></li>
+      <li><a href="#characterizing-intellectual-interests-with-svm" id="markdown-toc-characterizing-intellectual-interests-with-svm">Characterizing Intellectual Interests with SVM</a></li>
+    </ul>
+  </li>
+  <li><a href="#coding-projects" id="markdown-toc-coding-projects">Coding Projects</a></li>
+</ul>
+
+<h2 id="publications">Publications</h2>
+
+<h2 id="undergraduate-work">Undergraduate Work</h2>
+
+<h3 id="low-dimensional-representations-of-semantic-drift-in-thought-space">Low-dimensional Representations of Semantic Drift in Thought-Space</h3>
+<p>My senior thesis, advised by Prof. Arora and Prof. Norman (from Princeton Neuroscience Institute), aims to build a model for extracting low-dimensional representations of the semantic content of an fMRI signal recorded during the presentation of stories in various formats. I am developed novel models to represent the context of a story as it \(\textbf{changes over time}\), and verifying my representations with predictive zero-shot brain decoding tasks.</p>
+
+<h3 id="estimating-trending-twitter-topics-with-count-min-sketch-a-href-projectscos521paperpdf-title-cos521-pdf-a">Estimating Trending Twitter Topics With Count-Min Sketch <a href="/projects/cos521paper.pdf" title="cos521"> [pdf] </a></h3>
+<p>My final project for <a href="http://www.cs.princeton.edu/courses/archive/fall14/cos521/" title="cos521"> COS 521: Advanced Algorithms</a> was joint with Evan Miller (Princeton COS ‘16) and Albert Lee (Princeton COS ‘16). We attempted to solve the following problem: Given a time series of Twitter data, can we infer current trending topics on Twitter while appropriately discounting past tweets using a sketch-based approach? We tweaked the Hokusai data structure <a href="http://www.auai.org/uai2012/papers/231.pdf" title="Hokusai"> [Matusevych et al 2012]</a> and implemented it, then ran experiments on Twitter data.</p>
+
+<h3 id="comparing-hebbian-semantic-vectors-across-language-a-href-projectsneu330paperpdf-title-neu330-pdf-a">Comparing Hebbian Semantic Vectors Across Language <a href="/projects/neu330paper.pdf" title="neu330"> [pdf] </a></h3>
+<p>My final project for NEU 330, Connectionist Models, focused on building Hebbian neural network word vector models for parallel corpora, with the purpose of evaluating the word vectors based on how similarly the word vectors for translation pairs behaved in their respective corpora. The principle I held throughout the project was simply that changing language should essentially not effect the representation of a word/concept in a high-dimensional vector space. I both proposed methods of evaluation and made use of previously used metrics to evaluate the 9 models considered. The texts used to form the word vectors were Harry Potter and The Philosopher’s Stone and its French counterpart.</p>
+
+<h3 id="sparse-low-dimensional-and-multimodal-representations-of-time-series-for-mind-reading-a-href-projectscos513-title-cos513-cos-513-blog-a">Sparse, Low-dimensional and Multimodal Representations of Time Series for Mind-Reading <a href="/projects/cos513/" title="cos513"> [COS 513 Blog] </a></h3>
+
+<p>This work is joint with Lydia Liu (Princeton ORFE ‘17) and Niranjani Prasad (Grad Student, Princeton CS Department). We investigated the application of sparse canonical correlation analysis (sCCA) as a tool for creating low-dimensional combined representations of EEG/MEG and fMRI brain data. We used two experiments to demonstrate that our low-dimensional representation retained useful information by testing on two datasets: One was a paired EEG-fMRI time series oddball response dataset and the other was a paired MEG-fMRI time series dataset of subjects looking at various types of objects (<a href="http://people.csail.mit.edu/rmcichy/publication_pdfs/Cichy_et_al_NN_2014.pdf" title="cichy2014"> Resolving human object recognition in space and time (Cichy et. al, 2014) </a>). In both instances we outperformed other traditional methods of low-dimensional representation, including PCA and ICA. We submitted our work as a project for <a href="http://www.cs.princeton.edu/~bee/courses/cos513.html" title="cos513web"> COS 513: Foundations of Probabilistic Modeling</a>, taught by Prof. Barbara Engelhardt.</p>
+
+<h3 id="learning-shifting-communities-online-in-the-adversarial-block-model">Learning Shifting Communities Online in the Adversarial Block Model</h3>
+
+<p>For the final project in APC 529: Coding Theory and Random Graphs, taught by Professor Emmanuel Abbé, I analyzed the Stochastic Block Model (SBM) from the perpsective of online optimization, making use of recent results in the online learning of eigenvectors and the exact recovery setting of the SBM to build a framework for learning communities as they change over time with guaranteed regret bounds.</p>
+
+<h3 id="solving-word-analogies-with-convex-optimization">Solving Word Analogies With Convex Optimization</h3>
+<p>My final project for <a href="http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title="cos511"> COS 511: Theoretical Machine Learning</a> investigated convex loss functions for learning word vectors to solve word analogy problems. Word analogies are of the form king:man :: queen:woman. Given three of the four words, the task is to correctly identify the fourth. Traditionally, this problem is approached in the unsupervised setting and texts are used to learn which words are most relevant. Word vectors, word representations in high-dimensional real space, are often used (particularly in the past few years) as a solution to the analogy problem via dot-product queries, an approach which has recently been validated by <a href="http://arxiv.org/abs/1502.03520" title="random_walks_semantic_space"> [Arora et al (2015)]</a>. I formulated a convex loss with which to train word vectors that in principle keeps the spirit of the dot product query intuition, implemented AdaGrad <a href="http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf" title="AdaGrad"> [Duchi et al (2011)]</a>, and trained on word pairs.</p>
+
+<h3 id="noun-compounds-in-semantic-quad-space-a-hrefprojectsiw2014paperpdf-title-iw2014-pdf-a">Noun Compounds in Semantic Quad-Space <a href="/projects/iw2014paper.pdf" title="iw2014"> [pdf] </a></h3>
+<p>My junior independent work with Dr. Christiane Fellbaum aimed to build a model for analyzing the similarity between noun compounds, which consist of a modifier noun and a head noun, like “life force.” Accurate parsing can greatly improve question answering systems for various knowledge bases. For example, medical QA systems must correctly parse noun compounds like “human colon cancer line” to answer questions accurately. I looked at several approaches to analyzing the similarity of noun compounds and built a vector space model of noun compounds, inspired by the papers of Turney <a href="http://arxiv.org/abs/1309.4035" title="Domain_and_function"> [Turney 2013]</a> and Fyshe <a href="http://www.aclweb.org/anthology/W13-3510" title="fyshe_paper"> [Fyshe et al 2013] </a>. I extended Turney’s dual-space model to a quad space model and ran it on two large corpora, <a href="http://corpus.byu.edu/coca/" title="coca"> COCA </a>  and <a href="http://corpus.byu.edu/glowbe/" title="glowbe"> GloWbE </a>. I then evaluated the results by comparing to a ground truth provided by Mechanical Turk workers.</p>
+
+<h3 id="characterizing-intellectual-interests-with-svm">Characterizing Intellectual Interests with SVM</h3>
+<p>In fall 2013, I began working with Professor Sam Wang of Princeton Neuroscience Institute (PNI) on applying machine learning to an intellectual interest survey, which attempts to identify the discipline and intensity of academic interest in survey respondents. The goal of the project was to investigate intellectual interest as a potential phenotypic marker for autism. In order to study whether this hypothesis was plausible, we had survey responses from two groups of people. The Simons Simplex Collection (SSC) dataset is a repository of genetic samples from families where one child is affected with an autism spectrum disorder. We had survey responses from simplex members, the parents of autistic children. The other responses were obtained by polling readers of Professor Wang’s political blog. My role in this project was to create a classifier which given a survey response could output a score indicating certainty that the survey respondent had a particular intellectual interest; for instance, the humanities. This project was my first exposure to the difficulty of munging through data and the application of machine learning to problems in cognitive science. The classifier I eventually trained had \(94\)% accuracy for determining intellectual interest, making the survey-classifier pair potentially useful as a tool.</p>
+
+<h2 id="coding-projects">Coding Projects</h2>
+
+<p>My Github repository is located at <a href="https://github.com/kiranvodrahalli" title="github"> https://github.com/kiranvodrahalli </a>. Code for various projects listed above can be found on my Github, as well as some random for-fun projects.</p>
+
+<p>I plan to re-add the code for several of the above projects to my Github soon, as well as clean up some of the code from COS 598C: Neural Networks as taught by Sebastian Seung in Spring 2015, including my ImageNet deep CNN classifier written in \(\texttt{theano}\) and \(\texttt{lasagne}\).</p>
+
+
+</article> 
+
+
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-12-03T05:56:50-05:00">2017</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>
+
