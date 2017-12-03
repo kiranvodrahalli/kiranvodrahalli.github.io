@@ -39,4 +39,4 @@ In applications, I am particularly interested in natural language understanding 
 Previously, I graduated from [Princeton](https://www.princeton.edu) with an A.B. Mathematics degree with honors in 2016 and an M.S.E. in Computer Science in 2017. I was a member of Sanjeev Arora's [Unsupervised Learning Group](http://unsupervised.cs.princeton.edu/members.html), where I studied provable methods for machine learning. One applications of particular interest was natural language understanding. I was also a member of Ken Norman's [Computational Memory Lab](http://compmem.princeton.edu/lab-people/) at the [Princeton Neuroscience Institute](http://pni.princeton.edu), where I applied machine learning to fMRI analysis methods. 
 
 
-For more details, either check out this website or see the essentials summarized in my <a href="{{ site.baseurl }}/about/cv.pdf" title="cv"> curriculum vitae </a>.
+For more details, either check out this website or see my out-of-date <a href="{{ site.baseurl }}/about/cv.pdf" title="cv"> curriculum vitae </a>.
