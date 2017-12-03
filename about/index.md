@@ -28,7 +28,7 @@ My primary area of theoretical research is provable algorithms and models for co
 
 * Understanding sequence models: Bridging the gap between HMMs and RNNs. 
 
-* Identifying and learning over low-dimensional structures (of all sorts, but recently I have focused on various notions of sparsity).
+* Identifying and learning over low-dimensional structures (of all sorts, but recently I have focused on various notions of sparsity). In particular, the goal is to give algorithms which achieve sample complexities and computational complexities which depend on the ``low-dimensional'' part of the structure, rather than the (potentially high-dimensional) ambient space.
 
 * Identifying failure modes of learning algorithms and models
 
