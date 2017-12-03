@@ -16,8 +16,6 @@ title: projects
 ## Publications 
 
 
-
-
 ## Undergraduate Work 
 
 ### Low-dimensional Representations of Semantic Drift in Thought-Space
@@ -46,32 +44,6 @@ My junior independent work with Dr. Christiane Fellbaum aimed to build a model f
 ### Characterizing Intellectual Interests with SVM
 In fall 2013, I began working with Professor Sam Wang of Princeton Neuroscience Institute (PNI) on applying machine learning to an intellectual interest survey, which attempts to identify the discipline and intensity of academic interest in survey respondents. The goal of the project was to investigate intellectual interest as a potential phenotypic marker for autism. In order to study whether this hypothesis was plausible, we had survey responses from two groups of people. The Simons Simplex Collection (SSC) dataset is a repository of genetic samples from families where one child is affected with an autism spectrum disorder. We had survey responses from simplex members, the parents of autistic children. The other responses were obtained by polling readers of Professor Wang's political blog. My role in this project was to create a classifier which given a survey response could output a score indicating certainty that the survey respondent had a particular intellectual interest; for instance, the humanities. This project was my first exposure to the difficulty of munging through data and the application of machine learning to problems in cognitive science. The classifier I eventually trained had \\(94\\)% accuracy for determining intellectual interest, making the survey-classifier pair potentially useful as a tool.
 
-## Presentations
-
-### A Semantic Shared Response Model <a href="{{site.baseurl }}/projects/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [pdf] </a>
-
-UPDATE: Newer version of the talk is <a href="{{site.baseurl }}/projects/Update_SSRM.pdf" title="update"> posted </a>.
-
-I presented my thesis work and some extensions as a poster and talk at ICML 2016 Multi-View Representation Conference (see <a href = "http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/" title = "MVRL"> ICML MVRL 2016 </a>).
-Given fMRI data of several people watching a movie and semantic annotations of the movie, the goal of this work is to decode both directions: from fMRI to text, and from text to fMRI. We use the Shared Response Model (<a href = "http://papers.nips.cc/paper/5855-a-reduced-dimension-fmri-shared-response-model" title = 'SRM'> Chen et al 2015 </a>) and linear models to achieve this task reasonably well. We also introduce a new method for creating sentence representations of words, using dictionary learning on word vectors to approximate word sense disambiguation <a href = "https://arxiv.org/pdf/1601.03764.pdf" title = "Aroraetal2016"> Arora et al 2016 </a> and demonstrate its effectiveness.
-
-### On Lipschitz Extensions from Finite Sets <a href="{{ site.baseurl }}/projects/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a>
-With Misha Khodak, I gave a presentation for MAT 529 (Metric Embeddings and Geometric Inequalities) on a \\(\mathcal{O}\left(\sqrt{\log n}\right)\\) lower bound of the absolute extendability of 1-Lipschitz functions from a finite metric space into a Banach space due to Professor <a href = "http://web.math.princeton.edu/~naor/" title = "Assaf Naor">Assaf Naor</a>.
-
-### The Structure Theorem for Finitely-Generated Modules over PIDs <a href="{{ site.baseurl }}/projects/346_modules_over_PIDs.pdf" title="modules_PIDS"> [pdf] </a>
-I gave a presentation for a Galois Theory (MAT 346 at Princeton) on the torsion decomposition, primary decomposition, and cyclic decomposition for classifying finitely-generated R-modules over principal ideal domains. I also spoke about Smith Normal Form and some applications of the theorem. 
-
-### The Representation of Language in the Brain <a href="{{ site.baseurl }}/projects/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a>
-I gave a presentation to the Alg-ML reading group on a set of papers primarily by Tom Mitchell's group at CMU on the brain's representation of the features of natural language. 
-
-### A Brief Survey on Expander Graphs <a href="{{ site.baseurl }}/projects/jsem2015paper.pdf" title="jsem"> [pdf] </a>
-My junior seminar, taught by Professor Zeev Dvir in the spring of 2015, was on Point-Line Incidence Theorems. My presentation focused on a tangent subject, expander graphs.
-
-### A Survey on Image Captioning with Deep Learning<a href="{{ site.baseurl }}/projects/598b_img_captions.pdf" title="598c_img_cap"> [slides] </a>
-My second presentation for <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a> focused on the image captioning problem, and deep learning approaches to solving it.
-
-### A Survey on Deep Learning for Natural Language Processing <a href="{{ site.baseurl }}/projects/598b_nlp_deep_learning.pdf" title="598c_nlp"> [slides] </a>
-My first presentation for the Spring 2015 offering of <a href = "http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a>, an advanced topics class on deep learning taught by Professor Jianxiong Xiao. I overviewed various approaches to solving NLP problems with deep learning approaches, with a stronger focus on language models and word vector embeddings.
 
 ## Coding Projects
 
