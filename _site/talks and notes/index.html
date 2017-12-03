@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+   
+   <!--
+     redirect users to the https version of the website.
+     but: only check when on the production domain, as set in _config.yml.
+    -->
+   <script type="text/javascript">
+     var enforce = "kiranvodrahalli.github.io";
+     if ((enforce == window.location.host) && (window.location.protocol != "https:"))
+       window.location = window.location.toString().replace(/^http:/, "https:");
+   </script>
+   
+
+  <!-- EB Garamond Font --> 
+  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      talks and notes || exponentially surprised
+    
+  </title>
+
+  <!-- MathJax -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ 
+      TeX: { 
+        extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "bbox.js", "color.js", "enclose.js"] 
+      },
+      unicode: {
+        fonts: "STIXGeneral, 'Arial Unicode MS'"
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/public/favicomatic/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicomatic/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicomatic/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicomatic/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/public/favicomatic/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicomatic/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/public/favicomatic/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicomatic/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-128.png" sizes="128x128" />
+  <link rel="shortcut icon" type="image/png" href="/public/favicomatic/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="exponentially surprised" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">||exponentially surprised||</a>
+          <small>[2<sup>H</sup> theoryblog]</small> 
+        </h3>
+        <a href="/about" title="about">{about}</a>
+        <a href="/projects" title="projects">{projects}</a>
+        <a href="/notes" title="notes">{notes}</a>
+        <a href="/contact" title="contact">{contact}</a>
+        <div align="left">
+          <img src="/professional_headshot.jpg" alt="kiran_pic" height="400">
+        </div>
+      </header>
+
+      <main>
+        <article class="page">
+  <h1 class="page-title">talks and notes</h1>
+  <!-- example of the message class
+<p class="message">
+  My name is Kiran Vodrahalli. 
+</p>
+-->
+
+<p>As a general note, please contact me if you find errors in my notes so that I may fix them.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#my-talks" id="markdown-toc-my-talks">My Talks</a>    <ul>
+      <li><a href="#a-semantic-shared-response-model-a-hrefprojectsasemanticsharedresponsemodelpdf-titlesrmicml16-pdf-a" id="markdown-toc-a-semantic-shared-response-model-a-hrefprojectsasemanticsharedresponsemodelpdf-titlesrmicml16-pdf-a">A Semantic Shared Response Model <a href="/projects/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [pdf] </a></a></li>
+      <li><a href="#on-lipschitz-extensions-from-finite-sets-a-hrefprojectslipschitzfinitesetspdf-titlenaorlipschitz-pdf-a" id="markdown-toc-on-lipschitz-extensions-from-finite-sets-a-hrefprojectslipschitzfinitesetspdf-titlenaorlipschitz-pdf-a">On Lipschitz Extensions from Finite Sets <a href="/projects/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a></a></li>
+      <li><a href="#the-structure-theorem-for-finitely-generated-modules-over-pids-a-hrefprojects346modulesoverpidspdf-titlemodulespids-pdf-a" id="markdown-toc-the-structure-theorem-for-finitely-generated-modules-over-pids-a-hrefprojects346modulesoverpidspdf-titlemodulespids-pdf-a">The Structure Theorem for Finitely-Generated Modules over PIDs <a href="/projects/346_modules_over_PIDs.pdf" title="modules_PIDS"> [pdf] </a></a></li>
+      <li><a href="#the-representation-of-language-in-the-brain-a-hrefprojectsalg-ml-mitchell-talkpdf-titlealg-ml1-pdf-a" id="markdown-toc-the-representation-of-language-in-the-brain-a-hrefprojectsalg-ml-mitchell-talkpdf-titlealg-ml1-pdf-a">The Representation of Language in the Brain <a href="/projects/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a></a></li>
+      <li><a href="#a-brief-survey-on-expander-graphs-a-hrefprojectsjsem2015paperpdf-titlejsem-pdf-a" id="markdown-toc-a-brief-survey-on-expander-graphs-a-hrefprojectsjsem2015paperpdf-titlejsem-pdf-a">A Brief Survey on Expander Graphs <a href="/projects/jsem2015paper.pdf" title="jsem"> [pdf] </a></a></li>
+      <li><a href="#a-survey-on-image-captioning-with-deep-learninga-hrefprojects598bimgcaptionspdf-title598cimgcap-slides-a" id="markdown-toc-a-survey-on-image-captioning-with-deep-learninga-hrefprojects598bimgcaptionspdf-title598cimgcap-slides-a">A Survey on Image Captioning with Deep Learning<a href="/projects/598b_img_captions.pdf" title="598c_img_cap"> [slides] </a></a></li>
+      <li><a href="#a-survey-on-deep-learning-for-natural-language-processing-a-hrefprojects598bnlpdeeplearningpdf-title598cnlp-slides-a" id="markdown-toc-a-survey-on-deep-learning-for-natural-language-processing-a-hrefprojects598bnlpdeeplearningpdf-title598cnlp-slides-a">A Survey on Deep Learning for Natural Language Processing <a href="/projects/598b_nlp_deep_learning.pdf" title="598c_nlp"> [slides] </a></a></li>
+    </ul>
+  </li>
+  <li><a href="#other-peoples-talks" id="markdown-toc-other-peoples-talks">Other People’s Talks</a>    <ul>
+      <li><a href="#ravi-kannan-on-linear-algebra-in-machine-learning-a-href--notesravikannanpdfpdfa" id="markdown-toc-ravi-kannan-on-linear-algebra-in-machine-learning-a-href--notesravikannanpdfpdfa">Ravi Kannan on Linear Algebra in Machine Learning <a href="/notes/ravi_kannan.pdf">[pdf]</a></a></li>
+      <li><a href="#nicholas-boumal-on-manopt-manifold-optimization-a-href--notesboumalmanoptpdfpdfa" id="markdown-toc-nicholas-boumal-on-manopt-manifold-optimization-a-href--notesboumalmanoptpdfpdfa">Nicholas Boumal on ManOpt: Manifold Optimization <a href="/notes/boumal_manopt.pdf">[pdf]</a></a></li>
+      <li><a href="#michael-jordan-on-computational-thinking-inferential-thinking-and-data-science-a-href--notesmikejordangeneralpdfpdfa" id="markdown-toc-michael-jordan-on-computational-thinking-inferential-thinking-and-data-science-a-href--notesmikejordangeneralpdfpdfa">Michael Jordan on Computational Thinking, Inferential Thinking, and Data Science <a href="/notes/mike_jordan_general.pdf">[pdf]</a></a></li>
+      <li><a href="#joel-tropp-on-universality-laws-for-randomized-dimension-reduction-a-href--notestroppalgmlpdfpdfa" id="markdown-toc-joel-tropp-on-universality-laws-for-randomized-dimension-reduction-a-href--notestroppalgmlpdfpdfa">Joel Tropp on Universality Laws for Randomized Dimension Reduction <a href="/notes/tropp_algml.pdf">[pdf]</a></a></li>
+      <li><a href="#joel-tropp-on-finding-structure-with-randomness-a-href--notestroppstructurerandpdfpdfa" id="markdown-toc-joel-tropp-on-finding-structure-with-randomness-a-href--notestroppstructurerandpdfpdfa">Joel Tropp on Finding Structure With Randomness <a href="/notes/tropp_structure_rand.pdf">[pdf]</a></a></li>
+      <li><a href="#michael-jordan-on-nonparametric-bayesian-and-combinatorial-stochastic-processes-a-href--notesmichaeljordanbayespdfpdfa" id="markdown-toc-michael-jordan-on-nonparametric-bayesian-and-combinatorial-stochastic-processes-a-href--notesmichaeljordanbayespdfpdfa">Michael Jordan on Nonparametric Bayesian and Combinatorial Stochastic Processes <a href="/notes/michael_jordan_bayes.pdf">[pdf]</a></a></li>
+      <li><a href="#jacob-steinhardt-on-unsupervised-risk-estimation-with-only-structural-assumptions-a-href--notessteinhardtpdfpdfa" id="markdown-toc-jacob-steinhardt-on-unsupervised-risk-estimation-with-only-structural-assumptions-a-href--notessteinhardtpdfpdfa">Jacob Steinhardt on Unsupervised Risk Estimation with Only Structural Assumptions <a href="/notes/steinhardt.pdf">[pdf]</a></a></li>
+      <li><a href="#yuanzhi-li-on-weighted-low-rank-matrix-approximation-a-href--notesyuanzhiweightedsvdpdfpdfa" id="markdown-toc-yuanzhi-li-on-weighted-low-rank-matrix-approximation-a-href--notesyuanzhiweightedsvdpdfpdfa">Yuanzhi Li on Weighted Low-Rank Matrix Approximation <a href="/notes/yuanzhi_weighted_svd.pdf">[pdf]</a></a></li>
+      <li><a href="#zeyuan-allen-zhu-on-linear-coupling-framework-of-gradient-and-mirror-descent-a-href--noteszeyuanopttalkpdfpdfa" id="markdown-toc-zeyuan-allen-zhu-on-linear-coupling-framework-of-gradient-and-mirror-descent-a-href--noteszeyuanopttalkpdfpdfa">Zeyuan Allen Zhu on Linear Coupling Framework of Gradient and Mirror Descent <a href="/notes/zeyuan_opt_talk.pdf">[pdf]</a></a></li>
+      <li><a href="#naman-agarwal-and-brian-bullins-on-lissa-a-linear-time-second-order-stochastic-algorithm-a-href--noteslinearstocoptpdfpdfa" id="markdown-toc-naman-agarwal-and-brian-bullins-on-lissa-a-linear-time-second-order-stochastic-algorithm-a-href--noteslinearstocoptpdfpdfa">Naman Agarwal and Brian Bullins on LiSSA: A Linear Time Second-Order Stochastic Algorithm <a href="/notes/linear_stoc_opt.pdf">[pdf]</a></a></li>
+      <li><a href="#andrew-barron-on-computationally-feasible-greedy-algorithms-for-neural-networks-a-href--notesbarronnnspdfpdfa" id="markdown-toc-andrew-barron-on-computationally-feasible-greedy-algorithms-for-neural-networks-a-href--notesbarronnnspdfpdfa">Andrew Barron on Computationally Feasible Greedy Algorithms for Neural Networks <a href="/notes/barron_nns.pdf">[pdf]</a></a></li>
+      <li><a href="#samy-bengio-on-neural-image-captioning-a-href--notesneuralimagecaptioningpdfpdfa" id="markdown-toc-samy-bengio-on-neural-image-captioning-a-href--notesneuralimagecaptioningpdfpdfa">Samy Bengio on Neural Image Captioning <a href="/notes/neural_image_captioning.pdf">[pdf]</a></a></li>
+      <li><a href="#zaid-harchaoui-on-convolutional-kernel-neural-networks-a-href--notesconvolutionalkernelnnspdfpdfa" id="markdown-toc-zaid-harchaoui-on-convolutional-kernel-neural-networks-a-href--notesconvolutionalkernelnnspdfpdfa">Zaid Harchaoui on Convolutional Kernel Neural Networks <a href="/notes/convolutional_kernel_nns.pdf">[pdf]</a></a></li>
+      <li><a href="#lester-mackey-on-divide-and-conquer-matrix-completion-a-href--noteslestermackeymatrixcompletionconcentrationpdfpdfa" id="markdown-toc-lester-mackey-on-divide-and-conquer-matrix-completion-a-href--noteslestermackeymatrixcompletionconcentrationpdfpdfa">Lester Mackey on Divide-and-Conquer Matrix Completion <a href="/notes/lester_mackey_matrix_completion_concentration.pdf">[pdf]</a></a></li>
+      <li><a href="#gillat-kol-on-interactive-information-theory-a-href--notesinteractiveinfotheorygillatkolpdfpdfa" id="markdown-toc-gillat-kol-on-interactive-information-theory-a-href--notesinteractiveinfotheorygillatkolpdfpdfa">Gillat Kol on Interactive Information Theory <a href="/notes/interactive_info_theory_gillat_kol.pdf">[pdf]</a></a></li>
+      <li><a href="#sanjeev-arora-on-reversible-deep-nets-a-href--notesdeepnets-reversible-arorapdf-titledeepnets-reversible-arorapdfa" id="markdown-toc-sanjeev-arora-on-reversible-deep-nets-a-href--notesdeepnets-reversible-arorapdf-titledeepnets-reversible-arorapdfa">Sanjeev Arora on Reversible Deep Nets <a href="/notes/deepnets-reversible-arora.pdf" title="deepnets-reversible-arora">[pdf]</a></a></li>
+      <li><a href="#santosh-vempala-on-the-complexity-of-detecting-planted-solutions-a-href--notesplanted-graph-vempalapdf-titlevempalapdfa" id="markdown-toc-santosh-vempala-on-the-complexity-of-detecting-planted-solutions-a-href--notesplanted-graph-vempalapdf-titlevempalapdfa">Santosh Vempala on the Complexity of Detecting Planted Solutions <a href="/notes/planted-graph-vempala.pdf" title="vempala">[pdf]</a></a></li>
+      <li><a href="#amir-ali-ahmadi-on-optimizing-over-nonnegative-polynomials-a-href-notesahmadipdf-titleahmadipdfa" id="markdown-toc-amir-ali-ahmadi-on-optimizing-over-nonnegative-polynomials-a-href-notesahmadipdf-titleahmadipdfa">Amir Ali Ahmadi on Optimizing over Nonnegative Polynomials <a href="/notes/ahmadi.pdf" title="ahmadi">[pdf]</a></a></li>
+      <li><a href="#francisco-pereira-on-decoding-generic-representations-of-fmri-a-href-notespereira-wordspdf-titlepereira-wordspdfa" id="markdown-toc-francisco-pereira-on-decoding-generic-representations-of-fmri-a-href-notespereira-wordspdf-titlepereira-wordspdfa">Francisco Pereira on Decoding Generic Representations of fMRI <a href="/notes/pereira-words.pdf" title="pereira-words">[pdf]</a></a></li>
+      <li><a href="#elad-hazan-on-simulated-annealing-and-interior-point-methods-a-href-noteshazan-annealingpdf-titlehazan-annealingpdfa" id="markdown-toc-elad-hazan-on-simulated-annealing-and-interior-point-methods-a-href-noteshazan-annealingpdf-titlehazan-annealingpdfa">Elad Hazan on Simulated Annealing and Interior Point Methods <a href="/notes/hazan-annealing.pdf" title="hazan-annealing">[pdf]</a></a></li>
+      <li><a href="#dana-lahat-on-joint-independent-subspace-analysis-and-blind-source-separation-a-href-notesjoint-isapdf-titlejoint-isapdfa" id="markdown-toc-dana-lahat-on-joint-independent-subspace-analysis-and-blind-source-separation-a-href-notesjoint-isapdf-titlejoint-isapdfa">Dana Lahat on Joint Independent Subspace Analysis and Blind Source Separation <a href="/notes/joint-ISA.pdf" title="joint-ISA">[pdf]</a></a></li>
+      <li><a href="#barbara-engelhardt-on-bayesian-structured-sparsity-using-gaussian-fields-a-href-notesengelhardtpnipdf-titleengelhardt-pni-notespdfa" id="markdown-toc-barbara-engelhardt-on-bayesian-structured-sparsity-using-gaussian-fields-a-href-notesengelhardtpnipdf-titleengelhardt-pni-notespdfa">Barbara Engelhardt on Bayesian Structured Sparsity Using Gaussian Fields <a href="/notes/engelhardt_pni.pdf" title="engelhardt-pni-notes">[pdf]</a></a></li>
+      <li><a href="#dimitris-bertsimas-on-statistics-and-machine-learning-from-a-modern-optimization-lens-a-href-notessmlmodernoptimizationpdf-titlemionotespdfa" id="markdown-toc-dimitris-bertsimas-on-statistics-and-machine-learning-from-a-modern-optimization-lens-a-href-notessmlmodernoptimizationpdf-titlemionotespdfa">Dimitris Bertsimas on Statistics and Machine Learning from a Modern Optimization Lens <a href="/notes/SML_modern_optimization.pdf" title="MIOnotes">[pdf]</a></a></li>
+      <li><a href="#sbastien-bubeck-on-optimal-regret-bounds-for-the-general-convex-multi-armed-bandit-setting-a-href-notesbubecktalkpdf-titlebubecknotespdfa" id="markdown-toc-sbastien-bubeck-on-optimal-regret-bounds-for-the-general-convex-multi-armed-bandit-setting-a-href-notesbubecktalkpdf-titlebubecknotespdfa">Sébastien Bubeck on Optimal Regret Bounds for the General Convex Multi-Armed Bandit Setting <a href="/notes/bubeck_talk.pdf" title="bubecknotes">[pdf]</a></a></li>
+      <li><a href="#han-liu-on-nonparametric-graphical-models-a-href-noteshanliupnipdf-titlehanliunotespdfa" id="markdown-toc-han-liu-on-nonparametric-graphical-models-a-href-noteshanliupnipdf-titlehanliunotespdfa">Han Liu on Nonparametric Graphical Models <a href="/notes/han_liu_pni.pdf" title="hanliunotes">[pdf]</a></a></li>
+      <li><a href="#mehryar-mohri-on-deep-boosting-a-href-notesdeepboostingpdf-titlemohrinotespdfa" id="markdown-toc-mehryar-mohri-on-deep-boosting-a-href-notesdeepboostingpdf-titlemohrinotespdfa">Mehryar Mohri on Deep Boosting <a href="/notes/deep_boosting.pdf" title="mohrinotes">[pdf]</a></a></li>
+      <li><a href="#percy-liang-on-learning-hidden-computational-processes-a-href-notespercyliangtalkpdf-titlepercyliangnotespdfa" id="markdown-toc-percy-liang-on-learning-hidden-computational-processes-a-href-notespercyliangtalkpdf-titlepercyliangnotespdfa">Percy Liang on Learning Hidden Computational Processes <a href="/notes/percy_liang_talk.pdf" title="percyliangnotes">[pdf]</a></a></li>
+      <li><a href="#young-kun-ko-on-the-hardness-of-sparse-pca--a-href-notesbravermansparsepcapdf-titlesparsepcanotespdfa" id="markdown-toc-young-kun-ko-on-the-hardness-of-sparse-pca--a-href-notesbravermansparsepcapdf-titlesparsepcanotespdfa">Young Kun Ko on the Hardness of Sparse PCA  <a href="/notes/braverman_sparse_PCA.pdf" title="sparsepcanotes">[pdf]</a></a></li>
+      <li><a href="#ben-recht-on-perceptron-learning-and-stability" id="markdown-toc-ben-recht-on-perceptron-learning-and-stability">Ben Recht on Perceptron Learning and Stability</a></li>
+      <li><a href="#tom-griffiths-on-rationality-heuristics-and-the-cost-of-computation-a-href-notesgriffithsrationalityheuristicscomputationcostberkeleypdf-titlegriffithsnotespdfa" id="markdown-toc-tom-griffiths-on-rationality-heuristics-and-the-cost-of-computation-a-href-notesgriffithsrationalityheuristicscomputationcostberkeleypdf-titlegriffithsnotespdfa">Tom Griffiths on Rationality, Heuristics, and the Cost of Computation <a href="/notes/griffiths_rationality_heuristics_computationcost_berkeley.pdf" title="griffithsnotes">[pdf]</a></a></li>
+      <li><a href="#anna-choromanska-on-optimization-for-large-scale-machine-learning-a-href-noteschoromanskadeeplearningpdf-titlechoromanskanotespdfa" id="markdown-toc-anna-choromanska-on-optimization-for-large-scale-machine-learning-a-href-noteschoromanskadeeplearningpdf-titlechoromanskanotespdfa">Anna Choromanska on Optimization for Large-Scale Machine Learning <a href="/notes/choromanska_deeplearning.pdf" title="choromanskanotes">[pdf]</a></a></li>
+      <li><a href="#richard-socher-on-dynamic-memory-networks-a-href-notessocherlastlec224dpdf-titlesocherdmnnotespdfa" id="markdown-toc-richard-socher-on-dynamic-memory-networks-a-href-notessocherlastlec224dpdf-titlesocherdmnnotespdfa">Richard Socher on Dynamic Memory Networks <a href="/notes/socher_last_lec_224d.pdf" title="socherdmnnotes">[pdf]</a></a></li>
+    </ul>
+  </li>
+  <li><a href="#lecture-notes" id="markdown-toc-lecture-notes">Lecture Notes</a>    <ul>
+      <li><a href="#mat-529-metric-embeddings--a-href-httpswwwdropboxcomss6kh92p8pas6941mat529pdfdl0-title-mat529-pdfa" id="markdown-toc-mat-529-metric-embeddings--a-href-httpswwwdropboxcomss6kh92p8pas6941mat529pdfdl0-title-mat529-pdfa">MAT 529: Metric Embeddings  <a href="https://www.dropbox.com/s/s6kh92p8pas6941/mat529.pdf?dl=0" title="mat529"> [pdf]</a></a></li>
+      <li><a href="#mat-597phy521-mathematical-physics-a-href-httpswwwdropboxcoms11mg27mbdke3m9cmat597pdfdl0-title-mat597-pdfa" id="markdown-toc-mat-597phy521-mathematical-physics-a-href-httpswwwdropboxcoms11mg27mbdke3m9cmat597pdfdl0-title-mat597-pdfa">MAT 597/PHY521: Mathematical Physics <a href="https://www.dropbox.com/s/11mg27mbdke3m9c/mat597.pdf?dl=0" title="mat597"> [pdf]</a></a></li>
+      <li><a href="#apc-529-coding-theory-and-random-graphs-a-href-notes529random-graphspdf-title529randomgraphspdfa" id="markdown-toc-apc-529-coding-theory-and-random-graphs-a-href-notes529random-graphspdf-title529randomgraphspdfa">APC 529: Coding Theory and Random Graphs <a href="/notes/529_random-graphs.pdf" title="529randomgraphs">[pdf]</a></a></li>
+      <li><a href="#mat-340-applied-algebra-a-href-notes340notespdf-title340algpdfa" id="markdown-toc-mat-340-applied-algebra-a-href-notes340notespdf-title340algpdfa">MAT 340: Applied Algebra <a href="/notes/340_notes.pdf" title="340alg">[pdf]</a></a></li>
+      <li><a href="#cos-511-theoretical-machine-learning" id="markdown-toc-cos-511-theoretical-machine-learning">COS 511: Theoretical Machine Learning</a></li>
+      <li><a href="#cos-510-programming-languages" id="markdown-toc-cos-510-programming-languages">COS 510: Programming Languages</a></li>
+      <li><a href="#apc-486-transmission-and-compression-of-information" id="markdown-toc-apc-486-transmission-and-compression-of-information">APC 486: Transmission and Compression of Information</a></li>
+    </ul>
+  </li>
+  <li><a href="#useful-links" id="markdown-toc-useful-links">Useful Links</a>    <ul>
+      <li><a href="#a-hrefhttpholdenleegithubioblog-titleholden-holden-lees-blog-a" id="markdown-toc-a-hrefhttpholdenleegithubioblog-titleholden-holden-lees-blog-a"><a href="http://holdenlee.github.io/blog/" title="holden"> Holden Lee’s blog </a></a></li>
+      <li><a href="#a-hrefhttpwwwstatberkeleyedublfang-titlebilly-billy-fangs-website-a" id="markdown-toc-a-hrefhttpwwwstatberkeleyedublfang-titlebilly-billy-fangs-website-a"><a href="http://www.stat.berkeley.edu/~blfang/" title="billy"> Billy Fang’s website </a></a></li>
+      <li><a href="#a-hrefhttpangelamzhougithubio-titleangela-angela-zhous-website-a" id="markdown-toc-a-hrefhttpangelamzhougithubio-titleangela-angela-zhous-website-a"><a href="http://angelamzhou.github.io/" title="angela"> Angela Zhou’s website </a></a></li>
+      <li><a href="#a-hrefhttpunsupervisedcsprincetoneduindexhtml-titlearoraresearch-sanjeev-aroras-research-group-a" id="markdown-toc-a-hrefhttpunsupervisedcsprincetoneduindexhtml-titlearoraresearch-sanjeev-aroras-research-group-a"><a href="http://unsupervised.cs.princeton.edu/index.html" title="arora_research"> Sanjeev Arora’s Research Group </a></a></li>
+      <li><a href="#a-hrefhttpwwwoffconvexorg-titleoffconvex-off-convex-blog-a" id="markdown-toc-a-hrefhttpwwwoffconvexorg-titleoffconvex-off-convex-blog-a"><a href="http://www.offconvex.org/" title="offconvex"> Off-Convex Blog </a></a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="my-talks">My Talks</h2>
+
+<h3 id="a-semantic-shared-response-model-a-hrefprojectsasemanticsharedresponsemodelpdf-titlesrmicml16-pdf-a">A Semantic Shared Response Model <a href="/projects/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [pdf] </a></h3>
+
+<p>UPDATE: Newer version of the talk is <a href="/projects/Update_SSRM.pdf" title="update"> posted </a>.</p>
+
+<p>I presented my thesis work and some extensions as a poster and talk at ICML 2016 Multi-View Representation Conference (see <a href="http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/" title="MVRL"> ICML MVRL 2016 </a>).
+Given fMRI data of several people watching a movie and semantic annotations of the movie, the goal of this work is to decode both directions: from fMRI to text, and from text to fMRI. We use the Shared Response Model (<a href="http://papers.nips.cc/paper/5855-a-reduced-dimension-fmri-shared-response-model" title="SRM"> Chen et al 2015 </a>) and linear models to achieve this task reasonably well. We also introduce a new method for creating sentence representations of words, using dictionary learning on word vectors to approximate word sense disambiguation <a href="https://arxiv.org/pdf/1601.03764.pdf" title="Aroraetal2016"> Arora et al 2016 </a> and demonstrate its effectiveness.</p>
+
+<h3 id="on-lipschitz-extensions-from-finite-sets-a-hrefprojectslipschitzfinitesetspdf-titlenaorlipschitz-pdf-a">On Lipschitz Extensions from Finite Sets <a href="/projects/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a></h3>
+<p>With Misha Khodak, I gave a presentation for MAT 529 (Metric Embeddings and Geometric Inequalities) on a \(\mathcal{O}\left(\sqrt{\log n}\right)\) lower bound of the absolute extendability of 1-Lipschitz functions from a finite metric space into a Banach space due to Professor <a href="http://web.math.princeton.edu/~naor/" title="Assaf Naor">Assaf Naor</a>.</p>
+
+<h3 id="the-structure-theorem-for-finitely-generated-modules-over-pids-a-hrefprojects346modulesoverpidspdf-titlemodulespids-pdf-a">The Structure Theorem for Finitely-Generated Modules over PIDs <a href="/projects/346_modules_over_PIDs.pdf" title="modules_PIDS"> [pdf] </a></h3>
+<p>I gave a presentation for a Galois Theory (MAT 346 at Princeton) on the torsion decomposition, primary decomposition, and cyclic decomposition for classifying finitely-generated R-modules over principal ideal domains. I also spoke about Smith Normal Form and some applications of the theorem.</p>
+
+<h3 id="the-representation-of-language-in-the-brain-a-hrefprojectsalg-ml-mitchell-talkpdf-titlealg-ml1-pdf-a">The Representation of Language in the Brain <a href="/projects/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a></h3>
+<p>I gave a presentation to the Alg-ML reading group on a set of papers primarily by Tom Mitchell’s group at CMU on the brain’s representation of the features of natural language.</p>
+
+<h3 id="a-brief-survey-on-expander-graphs-a-hrefprojectsjsem2015paperpdf-titlejsem-pdf-a">A Brief Survey on Expander Graphs <a href="/projects/jsem2015paper.pdf" title="jsem"> [pdf] </a></h3>
+<p>My junior seminar, taught by Professor Zeev Dvir in the spring of 2015, was on Point-Line Incidence Theorems. My presentation focused on a tangent subject, expander graphs.</p>
+
+<h3 id="a-survey-on-image-captioning-with-deep-learninga-hrefprojects598bimgcaptionspdf-title598cimgcap-slides-a">A Survey on Image Captioning with Deep Learning<a href="/projects/598b_img_captions.pdf" title="598c_img_cap"> [slides] </a></h3>
+<p>My second presentation for <a href="http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a> focused on the image captioning problem, and deep learning approaches to solving it.</p>
+
+<h3 id="a-survey-on-deep-learning-for-natural-language-processing-a-hrefprojects598bnlpdeeplearningpdf-title598cnlp-slides-a">A Survey on Deep Learning for Natural Language Processing <a href="/projects/598b_nlp_deep_learning.pdf" title="598c_nlp"> [slides] </a></h3>
+<p>My first presentation for the Spring 2015 offering of <a href="http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a>, an advanced topics class on deep learning taught by Professor Jianxiong Xiao. I overviewed various approaches to solving NLP problems with deep learning approaches, with a stronger focus on language models and word vector embeddings.</p>
+
+<h2 id="other-peoples-talks">Other People’s Talks</h2>
+
+<p>I attend various academic talks and seminars and sometimes scribe them.</p>
+
+<h3 id="ravi-kannan-on-linear-algebra-in-machine-learning-a-href--notesravikannanpdfpdfa">Ravi Kannan on Linear Algebra in Machine Learning <a href="/notes/ravi_kannan.pdf">[pdf]</a></h3>
+
+<p>Ravi Kannan from Microsoft Research gave a talk at COLT 2016 on the role of linear algebra in machine learning over the years, taking a historical perspective and covering the main highlights as well as some more recent results.</p>
+
+<h3 id="nicholas-boumal-on-manopt-manifold-optimization-a-href--notesboumalmanoptpdfpdfa">Nicholas Boumal on ManOpt: Manifold Optimization <a href="/notes/boumal_manopt.pdf">[pdf]</a></h3>
+
+<p>Nicholas Boumal from Princeton gave a talk at the Alg-ML Reading Group on manifold optimization and ManOpt, his tool for solving optimization problems.</p>
+
+<h3 id="michael-jordan-on-computational-thinking-inferential-thinking-and-data-science-a-href--notesmikejordangeneralpdfpdfa">Michael Jordan on Computational Thinking, Inferential Thinking, and Data Science <a href="/notes/mike_jordan_general.pdf">[pdf]</a></h3>
+
+<p>Professor Michael Jordan from Berkeley gave a general talk on the trends towards intersecting the statistical, computer science, and optimization communities. The discussion includes inferential differential privacy, inferential communication theory, inferential computation theory, and finally, an aside on a general framework for accelerated Nesterov methods.</p>
+
+<h3 id="joel-tropp-on-universality-laws-for-randomized-dimension-reduction-a-href--notestroppalgmlpdfpdfa">Joel Tropp on Universality Laws for Randomized Dimension Reduction <a href="/notes/tropp_algml.pdf">[pdf]</a></h3>
+
+<p>Professor Joel Tropp from CalTech CMS gave a talk at Alg-ML on the quality of random matrices from fairly arbitrary distributions such that the image of the random projection matrix does not intersect the origin (nothing in the original dataset gets collapsed to zero). It turns out that computationally efficient random matrix distributions, like sparse Rademacher matrices, provably obey the same phase transition laws as Gaussian random matrices for the condition that the image does not intersect the nullspace, which allows for considerable computational speedups. Additionally, there are also provable bounds on the stability of such random matrix projections.</p>
+
+<h3 id="joel-tropp-on-finding-structure-with-randomness-a-href--notestroppstructurerandpdfpdfa">Joel Tropp on Finding Structure With Randomness <a href="/notes/tropp_structure_rand.pdf">[pdf]</a></h3>
+
+<p>Professor Joel Tropp from CalTech CMS gave a talk on another approach to approximating low-rank SVD in a manner appropriate for very large matrices.</p>
+
+<h3 id="michael-jordan-on-nonparametric-bayesian-and-combinatorial-stochastic-processes-a-href--notesmichaeljordanbayespdfpdfa">Michael Jordan on Nonparametric Bayesian and Combinatorial Stochastic Processes <a href="/notes/michael_jordan_bayes.pdf">[pdf]</a></h3>
+
+<p>Professor Michael Jordan gave a talk on applications and theory of nonparametric Bayesian statistics.</p>
+
+<h3 id="jacob-steinhardt-on-unsupervised-risk-estimation-with-only-structural-assumptions-a-href--notessteinhardtpdfpdfa">Jacob Steinhardt on Unsupervised Risk Estimation with Only Structural Assumptions <a href="/notes/steinhardt.pdf">[pdf]</a></h3>
+
+<p>Jacob Steinhardt gives a talk on his recent work on provable methods for estimating the risk of unlabeled data using multiple views of the data.</p>
+
+<h3 id="yuanzhi-li-on-weighted-low-rank-matrix-approximation-a-href--notesyuanzhiweightedsvdpdfpdfa">Yuanzhi Li on Weighted Low-Rank Matrix Approximation <a href="/notes/yuanzhi_weighted_svd.pdf">[pdf]</a></h3>
+
+<p>Yuanzhi Li gives a background review on various approaches towards weighted low-rank approximations.</p>
+
+<h3 id="zeyuan-allen-zhu-on-linear-coupling-framework-of-gradient-and-mirror-descent-a-href--noteszeyuanopttalkpdfpdfa">Zeyuan Allen Zhu on Linear Coupling Framework of Gradient and Mirror Descent <a href="/notes/zeyuan_opt_talk.pdf">[pdf]</a></h3>
+
+<p>Dr. Zeyuan Allen Zhu explains Nesterov’s accelerated gradient descent with a nice framework involving analysis of alternating gradient and mirror descent, and also shows that strong linear coupling approaches can also be applied to the analysis of other settings (for instance, coordinate gradient descent and even some nonconvex cases) to get robust improved convergence rates, in addition to intuitively explaining the opaque Nesterov acceleration.</p>
+
+<h3 id="naman-agarwal-and-brian-bullins-on-lissa-a-linear-time-second-order-stochastic-algorithm-a-href--noteslinearstocoptpdfpdfa">Naman Agarwal and Brian Bullins on LiSSA: A Linear Time Second-Order Stochastic Algorithm <a href="/notes/linear_stoc_opt.pdf">[pdf]</a></h3>
+
+<p>In this result, joint with Professor Elad Hazan at Princeton, the authors come up with a new algorithm based on a novel estimator of the inverse Hessian which allows for a theoretical linear time convergence rate for an algorithm which uses full second-order information. Empirically, the algorithm (called LiSSA) also performs well with respect to its competition.</p>
+
+<h3 id="andrew-barron-on-computationally-feasible-greedy-algorithms-for-neural-networks-a-href--notesbarronnnspdfpdfa">Andrew Barron on Computationally Feasible Greedy Algorithms for Neural Networks <a href="/notes/barron_nns.pdf">[pdf]</a></h3>
+
+<p>Professor Andrew Barron from Yale discussed ways approaches from the greedy algorithms literature with accompanying statistical risk bounds can be applied to bounding the expected error of single-layer neural networks.</p>
+
+<h3 id="samy-bengio-on-neural-image-captioning-a-href--notesneuralimagecaptioningpdfpdfa">Samy Bengio on Neural Image Captioning <a href="/notes/neural_image_captioning.pdf">[pdf]</a></h3>
+
+<p>Dr. Samy Bengio from Google Brain discusses Google’s Show-and-Tell paper on captioning images using a sequence-to-sequence deep learning approach.</p>
+
+<h3 id="zaid-harchaoui-on-convolutional-kernel-neural-networks-a-href--notesconvolutionalkernelnnspdfpdfa">Zaid Harchaoui on Convolutional Kernel Neural Networks <a href="/notes/convolutional_kernel_nns.pdf">[pdf]</a></h3>
+
+<p>Professor Zaid Harchaoui from NYU’s Courant Institute discuss Convolutional Kernel Neural Nets, which can be trained in an unsupervised manner and manage to outperform well-known CNN architectures with a fraction of the data. The formalism takes advantage of kernels to define an approximate minimization problem, adding more insight into how to tackle the problem of explaining convolutional networks theoretically.</p>
+
+<h3 id="lester-mackey-on-divide-and-conquer-matrix-completion-a-href--noteslestermackeymatrixcompletionconcentrationpdfpdfa">Lester Mackey on Divide-and-Conquer Matrix Completion <a href="/notes/lester_mackey_matrix_completion_concentration.pdf">[pdf]</a></h3>
+
+<p>Professor Lester Mackey from Stanford talks on his recent work for the fast-parallelization of matrix completion under a novel divide and conquer framework.</p>
+
+<h3 id="gillat-kol-on-interactive-information-theory-a-href--notesinteractiveinfotheorygillatkolpdfpdfa">Gillat Kol on Interactive Information Theory <a href="/notes/interactive_info_theory_gillat_kol.pdf">[pdf]</a></h3>
+
+<p>Dr. Gillat Kol from IAS gives a talk on information theoretic measures and bounds on the compression of information transmission in the setting of interactive information theory, where no player knows the whole message being compressed.</p>
+
+<h3 id="sanjeev-arora-on-reversible-deep-nets-a-href--notesdeepnets-reversible-arorapdf-titledeepnets-reversible-arorapdfa">Sanjeev Arora on Reversible Deep Nets <a href="/notes/deepnets-reversible-arora.pdf" title="deepnets-reversible-arora">[pdf]</a></h3>
+
+<p>Professor Arora, Tengyu Ma, and Yingyu Liang discuss their results on giving a generative model for reversible deep nets. They also give a better training method that improves upon Dropout.</p>
+
+<h3 id="santosh-vempala-on-the-complexity-of-detecting-planted-solutions-a-href--notesplanted-graph-vempalapdf-titlevempalapdfa">Santosh Vempala on the Complexity of Detecting Planted Solutions <a href="/notes/planted-graph-vempala.pdf" title="vempala">[pdf]</a></h3>
+
+<p>Professor Santosh Vempala of Georgia Tech gave a talk on showing that for statistical algorithms (e.g. PCA, EM, and so on), solving planted clique and planted \(k\)-SAT is at least exponential time in the size of the input.</p>
+
+<h3 id="amir-ali-ahmadi-on-optimizing-over-nonnegative-polynomials-a-href-notesahmadipdf-titleahmadipdfa">Amir Ali Ahmadi on Optimizing over Nonnegative Polynomials <a href="/notes/ahmadi.pdf" title="ahmadi">[pdf]</a></h3>
+
+<p>Professor Amir Ali Ahmadi from Princeton spoke about formulating convex optimization problems in terms of finding nonnegative polynomials to provably optimize various problems in controls, dynamical systems, and machine learning, improving upon the time complexity of previous sum-of-squares SDP relaxations. He also describes robust dynamics optimization (RDO), a framework for solving optimization problems over a set of points defined by a dynamical system.</p>
+
+<h3 id="francisco-pereira-on-decoding-generic-representations-of-fmri-a-href-notespereira-wordspdf-titlepereira-wordspdfa">Francisco Pereira on Decoding Generic Representations of fMRI <a href="/notes/pereira-words.pdf" title="pereira-words">[pdf]</a></h3>
+
+<p>Dr. Francisco Pereira from Siemens talked about his work using sentences and pictures to localize fMRI voxels for representing semantic content in brains.</p>
+
+<h3 id="elad-hazan-on-simulated-annealing-and-interior-point-methods-a-href-noteshazan-annealingpdf-titlehazan-annealingpdfa">Elad Hazan on Simulated Annealing and Interior Point Methods <a href="/notes/hazan-annealing.pdf" title="hazan-annealing">[pdf]</a></h3>
+
+<p>Professor Elad Hazan gave a talk to Princeton’s Algorithm-ML reading group on a result demonstrating the existence of a universal barrier function for interior point methods in the membership oracle model of convex optimization. This barrier is related to the heuristic simulated annealing approach often taken in non-convex optimization.</p>
+
+<h3 id="dana-lahat-on-joint-independent-subspace-analysis-and-blind-source-separation-a-href-notesjoint-isapdf-titlejoint-isapdfa">Dana Lahat on Joint Independent Subspace Analysis and Blind Source Separation <a href="/notes/joint-ISA.pdf" title="joint-ISA">[pdf]</a></h3>
+
+<p>This talk gives an overview of blind source separation with various statistical independence assumptions, generalizing ICA to learning subspaces of low-rank instead of just rank \(1\) subspaces.</p>
+
+<h3 id="barbara-engelhardt-on-bayesian-structured-sparsity-using-gaussian-fields-a-href-notesengelhardtpnipdf-titleengelhardt-pni-notespdfa">Barbara Engelhardt on Bayesian Structured Sparsity Using Gaussian Fields <a href="/notes/engelhardt_pni.pdf" title="engelhardt-pni-notes">[pdf]</a></h3>
+
+<p>Professor Barbara Engelhardt gave a talk on her work on identifying associations between SNPs and phenotypes with sparse machine learning methods. She also spoke on how these methods can be translated to brain studies.</p>
+
+<h3 id="dimitris-bertsimas-on-statistics-and-machine-learning-from-a-modern-optimization-lens-a-href-notessmlmodernoptimizationpdf-titlemionotespdfa">Dimitris Bertsimas on Statistics and Machine Learning from a Modern Optimization Lens <a href="/notes/SML_modern_optimization.pdf" title="MIOnotes">[pdf]</a></h3>
+
+<p>Professor Dimitris Bertsimas from MIT gave a talk on using the mixed integer-programming (MIO) framework as a new lens through which to view machine learning, statistics, and optimization problems.</p>
+
+<h3 id="sbastien-bubeck-on-optimal-regret-bounds-for-the-general-convex-multi-armed-bandit-setting-a-href-notesbubecktalkpdf-titlebubecknotespdfa">Sébastien Bubeck on Optimal Regret Bounds for the General Convex Multi-Armed Bandit Setting <a href="/notes/bubeck_talk.pdf" title="bubecknotes">[pdf]</a></h3>
+
+<p>Dr. Sébastien Bubeck from Microsoft Research gave a talk to the Alg-ML reading group on his \(2015\) result on a tight minimax regret bound for the setting of general convex bandit optimization in dimensions greater than one.</p>
+
+<h3 id="han-liu-on-nonparametric-graphical-models-a-href-noteshanliupnipdf-titlehanliunotespdfa">Han Liu on Nonparametric Graphical Models <a href="/notes/han_liu_pni.pdf" title="hanliunotes">[pdf]</a></h3>
+
+<p>Professor Han Liu from Princeton gave an overview of his recent research and theoretical results on nonparametric graphical models.</p>
+
+<h3 id="mehryar-mohri-on-deep-boosting-a-href-notesdeepboostingpdf-titlemohrinotespdfa">Mehryar Mohri on Deep Boosting <a href="/notes/deep_boosting.pdf" title="mohrinotes">[pdf]</a></h3>
+<p>Professor Mehryar Mohri from the Courant Institute speaks about ensemble boosting methods that take advantage of complex hypothesis classes along with the use of standard simple weak learners. He also presents an interpretation of boosting as truly being about model selection.</p>
+
+<h3 id="percy-liang-on-learning-hidden-computational-processes-a-href-notespercyliangtalkpdf-titlepercyliangnotespdfa">Percy Liang on Learning Hidden Computational Processes <a href="/notes/percy_liang_talk.pdf" title="percyliangnotes">[pdf]</a></h3>
+<p>Professor Percy Liang from Stanford discussed approaches to solving question-answering tasks on a new hand-built dataset.</p>
+
+<h3 id="young-kun-ko-on-the-hardness-of-sparse-pca--a-href-notesbravermansparsepcapdf-titlesparsepcanotespdfa">Young Kun Ko on the Hardness of Sparse PCA  <a href="/notes/braverman_sparse_PCA.pdf" title="sparsepcanotes">[pdf]</a></h3>
+
+<p>This talk summarizing two results on sparse principal components analysis was given to the Braverman Reading Group at Princeton.</p>
+
+<h3 id="ben-recht-on-perceptron-learning-and-stability">Ben Recht on Perceptron Learning and Stability</h3>
+<p>Professor Ben Recht from Berkeley discussed a notion of stability applied to stochastic gradient descent to explain why it reaches the same local optima in the nonconvex setting. Notes still to be added.</p>
+
+<h3 id="tom-griffiths-on-rationality-heuristics-and-the-cost-of-computation-a-href-notesgriffithsrationalityheuristicscomputationcostberkeleypdf-titlegriffithsnotespdfa">Tom Griffiths on Rationality, Heuristics, and the Cost of Computation <a href="/notes/griffiths_rationality_heuristics_computationcost_berkeley.pdf" title="griffithsnotes">[pdf]</a></h3>
+
+<p>Professor Tom Griffiths from Berkeley discussed a notion of rationality which takes into account computation time as a resource. From his perspective, we can explain why some decision-making procedures which appear to be suboptimal are actually optimal from a sparse-resource respective.</p>
+
+<h3 id="anna-choromanska-on-optimization-for-large-scale-machine-learning-a-href-noteschoromanskadeeplearningpdf-titlechoromanskanotespdfa">Anna Choromanska on Optimization for Large-Scale Machine Learning <a href="/notes/choromanska_deeplearning.pdf" title="choromanskanotes">[pdf]</a></h3>
+
+<p>Dr. Anna Choromanska from the Courant Institute talks about new learning algorithms for decision trees and spin-glass interpretations of deep learning.</p>
+
+<h3 id="richard-socher-on-dynamic-memory-networks-a-href-notessocherlastlec224dpdf-titlesocherdmnnotespdfa">Richard Socher on Dynamic Memory Networks <a href="/notes/socher_last_lec_224d.pdf" title="socherdmnnotes">[pdf]</a></h3>
+
+<p>Dr. Richard Socher’s last lecture for the Stanford class 224d (Deep Learning for NLP) was on a recent paper by his startup, Metamind. He spoke about using a novel deep learning architecture to solve question-and-answer problems, and also about how to generalize all of NLP to a question-and-answer framework with this kind of model.</p>
+
+<h2 id="lecture-notes">Lecture Notes</h2>
+
+<p>For now, I have individual class notes for some classes I’ve taken. Usually, I prioritize scribing classes for which there is no good book already existing. At some point in the future, I plan to put together big documents of notes parametrized by subject in one big document.</p>
+
+<h3 id="mat-529-metric-embeddings--a-href-httpswwwdropboxcomss6kh92p8pas6941mat529pdfdl0-title-mat529-pdfa">MAT 529: Metric Embeddings  <a href="https://www.dropbox.com/s/s6kh92p8pas6941/mat529.pdf?dl=0" title="mat529"> [pdf]</a></h3>
+
+<p>Holden Lee (see links at the bottom of the page) and I are collaborated on notes for this class. The source is available on <a href="https://github.com/holdenlee/mat529" title="github_mat529"> github </a>.</p>
+
+<h3 id="mat-597phy521-mathematical-physics-a-href-httpswwwdropboxcoms11mg27mbdke3m9cmat597pdfdl0-title-mat597-pdfa">MAT 597/PHY521: Mathematical Physics <a href="https://www.dropbox.com/s/11mg27mbdke3m9c/mat597.pdf?dl=0" title="mat597"> [pdf]</a></h3>
+
+<p>Holden Lee and I collaborated on notes for this class as well, but it should be noted that I only helped for roughly the first two months of the class. The source is available on <a href="https://github.com/holdenlee/mat597" title="github_mat597"> github </a>.</p>
+
+<h3 id="apc-529-coding-theory-and-random-graphs-a-href-notes529random-graphspdf-title529randomgraphspdfa">APC 529: Coding Theory and Random Graphs <a href="/notes/529_random-graphs.pdf" title="529randomgraphs">[pdf]</a></h3>
+
+<p>These are my notes on the random graphs portion of APC 529, taught by Professor Emmanuel Abbe of Princeton. The topics include an introduction to random graphs, the Erdos-Renyi model, graph properties and phase transition phenomena (for giant component and connectivity), some spectral graph theory, and finally an introduction to recent work on the Stochastic Block Model (SBM).</p>
+
+<h3 id="mat-340-applied-algebra-a-href-notes340notespdf-title340algpdfa">MAT 340: Applied Algebra <a href="/notes/340_notes.pdf" title="340alg">[pdf]</a></h3>
+
+<p>Applied algebra covered the basic theorems of group theory with a section on representation theory at the end. These notes will be updated in the future with coverage of the Sylow theorems and finite simple groups.</p>
+
+<h3 id="cos-511-theoretical-machine-learning">COS 511: Theoretical Machine Learning</h3>
+
+<p>I took <a href="http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title="cos511"> scribe notes</a> for most lectures of this class in its Spring 2015 iteration. Topics in the notes consist of an introduction to statistical learning theory, the Online Convex Optimization (OCO) framework, regularization, Bandit Convex Optimization (BCO), boosting, some game theory all from the point of view of OCO, and finally, an explicit connection between OCO and statistical learning theory in the form of theorems which convert regret analysis into ERM guarantees. There are also two guest lectures, one by Professor Jake Abernethy of University of Michigan, and one by Professor Sanjeev Arora of Princeton. A lot of the notes follow the <a href="http://ocobook.cs.princeton.edu/OCObook.pdf" title="OCObook"> excellent book </a> by Professor Elad Hazan.</p>
+
+<h3 id="cos-510-programming-languages">COS 510: Programming Languages</h3>
+
+<p>Here are <a href="/notes/curry_howard_cos510notes.pdf" title="cos510notes"> my scribe notes</a> on the Curry-Howard Isomorphism.</p>
+
+<h3 id="apc-486-transmission-and-compression-of-information">APC 486: Transmission and Compression of Information</h3>
+
+<p>Here are <a href="/notes/apc486_kiran_scribe_notes.pdf" title="apc486notes">my scribe notes</a> on probabilistic source models.</p>
+
+<h2 id="useful-links">Useful Links</h2>
+
+<p>This section holds links to other notes, class webpages, research groups, and other people’s webpages which I have found interesting and helpful.</p>
+
+<h3 id="a-hrefhttpholdenleegithubioblog-titleholden-holden-lees-blog-a"><a href="http://holdenlee.github.io/blog/" title="holden"> Holden Lee’s blog </a></h3>
+
+<p>I collaborate with Holden on some notes, and he has a lot more interesting material about math and machine learning on his website.</p>
+
+<h3 id="a-hrefhttpwwwstatberkeleyedublfang-titlebilly-billy-fangs-website-a"><a href="http://www.stat.berkeley.edu/~blfang/" title="billy"> Billy Fang’s website </a></h3>
+
+<p>In particular, his blog and notes are interesting and useful respectively.</p>
+
+<h3 id="a-hrefhttpangelamzhougithubio-titleangela-angela-zhous-website-a"><a href="http://angelamzhou.github.io/" title="angela"> Angela Zhou’s website </a></h3>
+
+<h3 id="a-hrefhttpunsupervisedcsprincetoneduindexhtml-titlearoraresearch-sanjeev-aroras-research-group-a"><a href="http://unsupervised.cs.princeton.edu/index.html" title="arora_research"> Sanjeev Arora’s Research Group </a></h3>
+
+<h3 id="a-hrefhttpwwwoffconvexorg-titleoffconvex-off-convex-blog-a"><a href="http://www.offconvex.org/" title="offconvex"> Off-Convex Blog </a></h3>
+
+
+</article> 
+
+
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-12-03T05:47:49-05:00">2017</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>
+

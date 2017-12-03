@@ -1,6 +1,6 @@
 ---
 layout: page
-title: notes
+title: talks and notes
 ---
 
 
