@@ -10,23 +10,38 @@ title: talks and notes
 </p>
 -->
 
-As a general note, please contact me if you find errors in my notes so that I may fix them.
+As a general note, please contact me if you find errors so that I may fix them.
 
 * TOC
 {:toc}
 
-## My Talks
+## My Talks, Posters, and Talk Notes
 
 ### Optimization Landscape for Tensor Decompositions <a href="{{site.baseurl }}/talks/TensorDecompositionsELE538B_knv.pdf" title="landscape_tensor_decomp"> [pdf] </a>
 
+Also see my summary of tensor decompositions <a href="{{site.baseurl }}/talks/tensor_writeup.pdf" title="tensor_decomp"> [pdf] </a>.
+
 ### Rate Distortion and Unsupervised Learning <a href="{{site.baseurl }}/talks/rate_distortion_presentation.pdf" title="rate_distortion"> [pdf] </a>
 
-### A Semantic Shared Response Model <a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [pdf] </a>
+### Matrix Concentration <a href="{{site.baseurl }}/talks/final_project_matrix_concentration.pdf" title="matrix_concentration"> [pdf] </a>
 
-UPDATE: Newer version of the talk is <a href="{{site.baseurl }}/talks/Update_SSRM.pdf" title="update"> posted </a>.
+### Mappings Between fMRI Responses and Natural Language Descriptions of Natural Stimuli (see <a href="http://www.sciencedirect.com/science/article/pii/S1053811917305128" title="neuroimage"> [NeuroImage paper] </a>)
+
+Also see <a href="https://arxiv.org/abs/1610.03914" title="neuroimage_arxiv"> arXiv prepub </a>. These talks/posters are all in relation to this paper. Given fMRI data of several people watching a movie and semantic annotations of the movie, the goal of this work is to decode both directions: from fMRI to text, and from text to fMRI. We use the Shared Response Model (<a href = "http://papers.nips.cc/paper/5855-a-reduced-dimension-fmri-shared-response-model" title = 'SRM'> Chen et al 2015 </a>) and linear models to achieve this task with state-of-the-art performance.
+
+UPDATE: (Invited Talk at Princeton PNI) <a href="{{site.baseurl }}/talks/PNI_Sept17.pdf" title="PNI_sept17"> [pdf] </a>
+
+UPDATE: (Master's Thesis Presentation) <a href="{{site.baseurl }}/talks/MSE_presentation_may10.pdf" title="masters_thesis"> [pdf] </a>
+
+UPDATE: (NIPS 2016 MLINI Workshop Presentation) <a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_nips16"> [pdf] </a>
+
+Also see the <a href="{{site.baseurl }}/talks/nips16_MLINI_poster.pdf" title="ssrm_nips16"> poster </a>.
+
+UPDATE: (Invited Talk at Intel-PNI Collaboration) <a href="{{site.baseurl }}/talks/Update_SSRM.pdf" title="SSRMupdate1"> posted </a>.
+
+OLDEST: (ICML 2016 Workshop Oral Presentation) <a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [pdf] </a>
 
 I presented my thesis work and some extensions as a poster and talk at ICML 2016 Multi-View Representation Conference (see <a href = "http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/" title = "MVRL"> ICML MVRL 2016 </a>).
-Given fMRI data of several people watching a movie and semantic annotations of the movie, the goal of this work is to decode both directions: from fMRI to text, and from text to fMRI. We use the Shared Response Model (<a href = "http://papers.nips.cc/paper/5855-a-reduced-dimension-fmri-shared-response-model" title = 'SRM'> Chen et al 2015 </a>) and linear models to achieve this task reasonably well. We also introduce a new method for creating sentence representations of words, using dictionary learning on word vectors to approximate word sense disambiguation <a href = "https://arxiv.org/pdf/1601.03764.pdf" title = "Aroraetal2016"> Arora et al 2016 </a> and demonstrate its effectiveness.
 
 ### On Lipschitz Extensions from Finite Sets <a href="{{ site.baseurl }}/talks/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a>
 With Misha Khodak, I gave a presentation for MAT 529 (Metric Embeddings and Geometric Inequalities) on a \\(\mathcal{O}\left(\sqrt{\log n}\right)\\) lower bound of the absolute extendability of 1-Lipschitz functions from a finite metric space into a Banach space due to Professor <a href = "http://web.math.princeton.edu/~naor/" title = "Assaf Naor">Assaf Naor</a>.
