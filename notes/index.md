@@ -21,7 +21,7 @@ As a general note, please contact me if you find errors so that I may fix them.
 
 Also see my summary of tensor decompositions <a href="{{site.baseurl }}/talks/tensor_writeup.pdf" title="tensor_decomp"> [pdf] </a>.
 
-### Rate Distortion and Unsupervised Learning <a href="{{site.baseurl }}/talks/rate_distortion_presentation.pdf" title="rate_distortion"> [pdf] </a>
+### Rate Distortion and Unsupervised Learning <a href="{{site.baseurl }}/talks/rate-distortion_presentation.pdf" title="rate_distortion"> [pdf] </a>
 
 ### Matrix Concentration <a href="{{site.baseurl }}/talks/final_project_matrix_concentration.pdf" title="matrix_concentration"> [pdf] </a>
 

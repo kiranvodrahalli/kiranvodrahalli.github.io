@@ -18,6 +18,8 @@ My primary area of research is provable algorithms and models for computational 
 
 * Interactive learning applied to evaluation methodology and learning problem formulation
 
+* Going beyond i.i.d. assumptions: Learning over non-product distributions, etc. I've also recently gotten interested in adaptive data analysis and other settings where the training data distribution and the testing data distribution do not satisfy simple properties (like i.i.d.). 
+
 * Generalization bounds for models which do not currently have completely satisfactory guarantees (read my lips d-e-e-p l-e-a-r-n-i-n-g). In particular, I am interested in data-dependent bounds on the sample complexity.
 
 * Non-convex optimization with guarantees
