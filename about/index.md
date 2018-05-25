@@ -16,6 +16,10 @@ My primary area of research is provable algorithms and models for computational 
 
 * Theoretical frameworks for unsupervised learning which allow one to give guarantees on performance
 
+* Identifying general, favorable properties of unsupervised feature representations
+
+* Dimension reduction
+
 * Interactive learning applied to evaluation methodology and learning problem formulation
 
 * Going beyond i.i.d. assumptions: Learning over non-product distributions, etc. I've also recently gotten interested in adaptive data analysis and other settings where the training data distribution and the testing data distribution do not satisfy simple properties (like i.i.d.). 
@@ -27,6 +31,10 @@ My primary area of research is provable algorithms and models for computational 
 * Better characterization of easy-to-check data properties which ensure good statistical/computational efficiency. Also, developing data collection methods to ensure such properties exist in datasets. 
 
 * Highly-structured learning: learning rules and logic in reinforcement learning settings. I am also interested in models which blend rigid structure (like logic) with statistical models. 
+
+* Randomized and approximation algorithms
+
+* Sublinear algorithms (sketching and streaming settings)
 
 * Understanding sequence models: Bridging the gap between HMMs and RNNs. 
 
@@ -41,4 +49,4 @@ In applications, I am particularly interested in natural language understanding 
 Previously, I graduated from [Princeton](https://www.princeton.edu) with an A.B. Mathematics degree with honors in 2016 and an M.S.E. in Computer Science in 2017, where I was lucky to have [Professor Sanjeev Arora](http://www.cs.princeton.edu/~arora/) and [Professor Ken Norman](https://psych.princeton.edu/person/kenneth-norman) as thesis advisors. I was a member of Sanjeev Arora's [Unsupervised Learning Group](http://unsupervised.cs.princeton.edu/members.html), where I studied provable methods for machine learning, in particular focusing on natural language understanding. I was also a member of Ken Norman's [Computational Memory Lab](http://compmem.princeton.edu/lab-people/) at the [Princeton Neuroscience Institute](http://pni.princeton.edu), where I applied machine learning to fMRI analysis methods. 
 
 
-For more details, either check out this website or see my out-of-date <a href="{{ site.baseurl }}/about/cv.pdf" title="cv"> curriculum vitae </a>.
+For more details, either check out this website or see my <a href="{{ site.baseurl }}/about/cv.pdf" title="cv"> [CV] </a>.
