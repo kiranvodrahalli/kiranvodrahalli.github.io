@@ -13,10 +13,32 @@ title: research
 * TOC
 {:toc}
 
-## Publications 
 
+## Preprints
 
-## Undergraduate Work 
+## Conference and Journal Publications 
+
+### Mappings Between fMRI Responses and Natural Language Descriptions of Natural Stimuli (see <a href="http://www.sciencedirect.com/science/article/pii/S1053811917305128" title="neuroimage"> [NeuroImage paper] </a>)
+
+Also see <a href="https://arxiv.org/abs/1610.03914" title="neuroimage_arxiv"> arXiv prepub </a>. These talks/posters are all in relation to this paper. Given fMRI data of several people watching a movie and semantic annotations of the movie, the goal of this work is to decode both directions: from fMRI to text, and from text to fMRI. We use the Shared Response Model (<a href = "http://papers.nips.cc/paper/5855-a-reduced-dimension-fmri-shared-response-model" title = 'SRM'> Chen et al 2015 </a>) and linear models to achieve this task with state-of-the-art performance.
+
+UPDATE: (Invited Talk at Princeton PNI) <a href="{{site.baseurl }}/talks/PNI_Sept17.pdf" title="PNI_sept17"> [pdf] </a>
+
+UPDATE: (Master's Thesis Presentation) <a href="{{site.baseurl }}/talks/MSE_presentation_may10.pdf" title="masters_thesis"> [pdf] </a>
+
+UPDATE: (NIPS 2016 MLINI Workshop Presentation) <a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_nips16"> [pdf] </a>
+
+Also see the <a href="{{site.baseurl }}/talks/nips16_MLINI_poster.pdf" title="ssrm_nips16"> poster </a>.
+
+UPDATE: (Invited Talk at Intel-PNI Collaboration) <a href="{{site.baseurl }}/talks/Update_SSRM.pdf" title="SSRMupdate1"> posted </a>.
+
+OLDEST: (ICML 2016 Workshop Oral Presentation) <a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [pdf] </a>
+
+I presented my thesis work and some extensions as a poster and talk at ICML 2016 Multi-View Representation Conference (see <a href = "http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/" title = "MVRL"> ICML MVRL 2016 </a>).
+
+## Workshop Publications
+
+## Technical Reports and Theses (pre-Ph.D.) 
 
 ### Low-dimensional Representations of Semantic Drift in Thought-Space
 My senior thesis, advised by Prof. Arora and Prof. Norman (from Princeton Neuroscience Institute), aims to build a model for extracting low-dimensional representations of the semantic content of an fMRI signal recorded during the presentation of stories in various formats. I am developed novel models to represent the context of a story as it \\(\textbf{changes over time}\\), and verifying my representations with predictive zero-shot brain decoding tasks. 
@@ -45,7 +67,7 @@ My junior independent work with Dr. Christiane Fellbaum aimed to build a model f
 In fall 2013, I began working with Professor Sam Wang of Princeton Neuroscience Institute (PNI) on applying machine learning to an intellectual interest survey, which attempts to identify the discipline and intensity of academic interest in survey respondents. The goal of the project was to investigate intellectual interest as a potential phenotypic marker for autism. In order to study whether this hypothesis was plausible, we had survey responses from two groups of people. The Simons Simplex Collection (SSC) dataset is a repository of genetic samples from families where one child is affected with an autism spectrum disorder. We had survey responses from simplex members, the parents of autistic children. The other responses were obtained by polling readers of Professor Wang's political blog. My role in this project was to create a classifier which given a survey response could output a score indicating certainty that the survey respondent had a particular intellectual interest; for instance, the humanities. This project was my first exposure to the difficulty of munging through data and the application of machine learning to problems in cognitive science. The classifier I eventually trained had \\(94\\)% accuracy for determining intellectual interest, making the survey-classifier pair potentially useful as a tool.
 
 
-## Coding research
+## Code
 
 My Github repository is located at <a href = "https://github.com/kiranvodrahalli" title="github"> https://github.com/kiranvodrahalli </a>. Code for various research listed above can be found on my Github, as well as some random for-fun research. 
 
