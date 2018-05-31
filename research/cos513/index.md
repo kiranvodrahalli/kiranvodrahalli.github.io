@@ -10,11 +10,11 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 ## More Results on EEG-fMRI
 
 First of all, we decided to tackle the EEG-fMRI problem again. However, one main difficulty with the dataset is shown in the following picture: 
-<img src="{{ site.baseurl }}/projects/cos513/lydia-variance-eeg.jpg" />
+<img src="{{ site.baseurl }}/research/cos513/lydia-variance-eeg.jpg" />
 
 Across trials, the data seems to behave very differently.
 
-Here is a <a href= "{{ site.baseurl }}/projects/cos513/post7.pdf" title= "summary-7"> summary </a> of the results. 
+Here is a <a href= "{{ site.baseurl }}/research/cos513/post7.pdf" title= "summary-7"> summary </a> of the results. 
 
 
 ## Change of Direction: Predicting MEG response from an image
@@ -36,17 +36,17 @@ Now we present in more detail how to get the image representations. In the naive
 Then, note that the \\(k \times m\\) matrix that we learn will have a \\(k \times l^{(i)}\\) matrix for each layer feature \\(i\\), where \\(l^{(i)}\\) is the number of pixels in feature layer \\(i\\).
 
 The overall outline is summarized in the following diagram:
-<img src="{{ site.baseurl }}/projects/cos513/framework.jpg" />
+<img src="{{ site.baseurl }}/research/cos513/framework.jpg" />
 
 We can also potentially featurize our image with a probability vector, where probability is taken over feature layers. Then if we have a generative model for feature layers of our convolutional net, we get a generative model for MEG data. Moreover, given any MEG data, we can solve a simple convex optimization problem to get the probability vector, which we can then apply to generate an image representing a given MEG input. This would give us a generative model for MEG with an image prior!
 
 ### Visualization
 
 Here we plot the \\(4^{th}, 9^{th}, 14^{th}\\) channel MEG responses of the first individual, first trial for the first image:
-<img src="{{ site.baseurl }}/projects/cos513/5fftcoefs.jpg" />
+<img src="{{ site.baseurl }}/research/cos513/5fftcoefs.jpg" />
 
 For \\(3\\) of the \\(92\\) image-MEG pairs, we plot the sum of the Fourier coefficients for each of the \\(306\\) channels of the MEG in order to get a rough idea of the activity associated with each MEG channel in response to the first three images. The MEG data is from one trial of the same person. 
-<img src="{{ site.baseurl }}/projects/cos513/306energies_c1-3.jpg" />
+<img src="{{ site.baseurl }}/research/cos513/306energies_c1-3.jpg" />
 
 ### Naive Result
 Ridge and LASSO regression using the basic image as input to predict the frequencies do not work well. We will try the convolutional network implementation next.  
@@ -56,42 +56,42 @@ Ridge and LASSO regression using the basic image as input to predict the frequen
 First of all, we did some more pre-processing steps and changed the format of the fMRI data to both account for potential lag in correlation between the EEG and fMRI as well as to introduce a time component into our representation of fMRI. We stacked three fMRI TRs together in a sliding window fashion. Thus, our pairs for sCCA are now (\\(2000 \times 34\\) EEG, \\(3\\) TRs of smoothed and downsampled fMRI). 
 
 Here we plot the vector pair (EEG, fMRI) of highest correlation. The correlation of the top vector is around \\(0.83\\). This is for the case where we ask for \\(K = 20\\) features from sCCA.
-<img src="{{ site.baseurl }}/projects/cos513/HighestCorrCanonVect.png" />
+<img src="{{ site.baseurl }}/research/cos513/HighestCorrCanonVect.png" />
 
 When we set \\(K = 40\\), this is what the highest correlation canonical vector plot looks like. The correlation was \\(0.98\\).
-<img src="{{ site.baseurl }}/projects/cos513/highestcorrK40_31.png" />
+<img src="{{ site.baseurl }}/research/cos513/highestcorrK40_31.png" />
 
 Here we display a canonical vector for EEG plotted again a canonical vector for fMRI. The red data points come from subject one task one run one, and the blue points come from subject two task two run two. 
-<img src="{{ site.baseurl }}/projects/cos513/1stCanonVect.png" />
+<img src="{{ site.baseurl }}/research/cos513/1stCanonVect.png" />
 
 Here we give a histogram showing the number of vectors for each correlation level for \\(K = 20\\)
-<img src="{{ site.baseurl }}/projects/cos513/correlationhistogram.png" />
+<img src="{{ site.baseurl }}/research/cos513/correlationhistogram.png" />
 
 When we set \\(K = 40\\) features, these are what the correlation histogram looks like.
-<img src="{{ site.baseurl }}/projects/cos513/highestcorrK40.png" />
+<img src="{{ site.baseurl }}/research/cos513/highestcorrK40.png" />
 
 Here we plot for a single representation of fMRI (which consists of three TRs) what the canonical vector values look like. 
-<img src="{{ site.baseurl }}/projects/cos513/entries_canoncomp.png" />
+<img src="{{ site.baseurl }}/research/cos513/entries_canoncomp.png" />
 
 Here we plot the sparsity of the fMRI representation. 
-<img src="{{ site.baseurl }}/projects/cos513/K40_sparseV.png" />
+<img src="{{ site.baseurl }}/research/cos513/K40_sparseV.png" />
 
 We can see that the EEG representation is a bit less sparse, due to the settings of the LASSO parameter.
-<img src="{{ site.baseurl }}/projects/cos513/k40sparseU.png" />
+<img src="{{ site.baseurl }}/research/cos513/k40sparseU.png" />
 
 
 ## Preliminary Analyses of the MEG-fMRI Dataset
 
 Here we visualize the \\(t\\)-map values from the MEG-fMRI dataset. The \\(t\\)-map was calculated by using a GLM to predict images based on the input of fMRI data. The GLM learned a weight for each voxel: Here we have displayed that weighting for one subject and one image class. 
-<img src="{{ site.baseurl }}/projects/cos513/tmap1.png" />
+<img src="{{ site.baseurl }}/research/cos513/tmap1.png" />
 
 Then we decided to run sparseCCA on the MEG-fMRI data as well with \\(K = 20\\).
 
 Here we plot the projections onto the highest correlation canonical vectors for MEG and fMRI-t-values. The correlation was \\(0.84\\).  
-<img src="{{ site.baseurl }}/projects/cos513/meg_fmri_scca.png" />
+<img src="{{ site.baseurl }}/research/cos513/meg_fmri_scca.png" />
 
 Here we visualize the values of the highest correlation canonical vector for the fMRI-t-values.
-<img src="{{ site.baseurl }}/projects/cos513/entries_MEG.png" />
+<img src="{{ site.baseurl }}/research/cos513/entries_MEG.png" />
 
 ## Ideas about Generative Models
 
@@ -196,7 +196,7 @@ A more complicated model might be to use SN\\(\Gamma\\)Ps, but we need to do mor
 
 	- Then we ran CCA( \\(U^{fmri}, U^{eeg}\\)) to get the components of maximum correlation - we still get a correlation of \\(1\\). there's no regularization here!
 
-	- We plot the values in the transformed space \\(M, N\\) for one dimension: <img src="{{ site.baseurl }}/projects/cos513/canonCorr-labelled.png" />
+	- We plot the values in the transformed space \\(M, N\\) for one dimension: <img src="{{ site.baseurl }}/research/cos513/canonCorr-labelled.png" />
 
 - Why did we get perfect correlation? 
 
@@ -208,7 +208,7 @@ A more complicated model might be to use SN\\(\Gamma\\)Ps, but we need to do mor
 
 	- Here we avoided running on the SVD version of fMRI and EEG, and just ran on the full matrices. We got much better looking results here since we did not overfit as much with correlation, and got correlation \\(0.9448\\). 
 
-	- We also plotted the covariance for one of the dimensions (\\(M, N\\) for one dimension): <img src="{{ site.baseurl }}/projects/cos513/KCCAcomp11.png" />
+	- We also plotted the covariance for one of the dimensions (\\(M, N\\) for one dimension): <img src="{{ site.baseurl }}/research/cos513/KCCAcomp11.png" />
 
 	- This package took as input the kernel matrices, so in the future we can explore using kernel CCA with regularization for non-linear kernels. 
 
@@ -218,13 +218,13 @@ A more complicated model might be to use SN\\(\Gamma\\)Ps, but we need to do mor
 
 	- We had a Gaussian latent variable \\(z\\) (chose dimension \\(100\\)), where we assumed that the mean of each EEG value \\((2000\times 37)\times 1\\) vector is a linear projection \\(A\\) of \\(z\\), and the mean of each fMRI value \\((32\times 64\times 64)\times 1\\) vector is a linear projection \\(B\\) of \\(z\\). We also predicted covariance matrices for the values of EEG and fMRI time steps. Then, have trained the generative model with Bayesian CCA, we predicted the whole EEG time series \\((2000\times 37)\times 170\\). (which was an input). 
 
-	- <img src="{{ site.baseurl }}/projects/cos513/bcca_train_plot.png" />
+	- <img src="{{ site.baseurl }}/research/cos513/bcca_train_plot.png" />
 
 	- This EEG prediction is nearly identical to the EEG input, so this makes sense!  (average correlation of prediction vs. true EEG is \\(0.97\\)). 
 
 	- Then we used our trained EEG model and used it to predict the EEG for another task run (same task). (given fMRI for the other task run, we predict EEG). We also visualize it.
 
-	- <img src="{{ site.baseurl }}/projects/cos513/bcca_test_plot.png" />
+	- <img src="{{ site.baseurl }}/research/cos513/bcca_test_plot.png" />
 
 	- On the different task, the predicted EEG and the true EEG has roughly \\(0\\) correlation! This is terrible and thus the approach seems flawed. 
 
@@ -320,7 +320,7 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 	- How did they validate their performance? 
 		- Generated a simulated fMRI like set of components and an ERP-like set of components and mix each set with a different set of modulation profiles to obtain two sets of mixtures. The modulation profiles are chosen from a random normal distribution. The profiles are kept orthogonal within each set. Connections between the two modalities are simulated by generating correlation between profile pairs formed across modalities
 	- Compares mCCA with jICA:
-		- <img src="{{ site.baseurl }}/projects/cos513/mCCA-vs-jICA.png" />
+		- <img src="{{ site.baseurl }}/research/cos513/mCCA-vs-jICA.png" />
 		- jICA examines the common connection between independent networks in both modalities while mCCA allows for common as well as distinct components and describes the level of connection between the two modalities
 		- jICA model requires the two datasets to be normalized before being entered into a joint analysis underlying assumption of made in jICA is more reasonable when fusing information from two datasets that originate from the same modality
 		- independence assumption in jICA; but utilizes higher order statistical information
@@ -467,38 +467,38 @@ We are currently using the Auditory and Visual Oddball EEG-fMRI dataset, availab
 #### Exploratory Analysis of the EEG Data
 
 Below is the raw EEG data from the experiment, where each horizontal time series is an EEG-source with a few exceptions. The first 43 channels are EEG electrodes, channel 44 and 45 are EOG (eye movement), channel 46 and 47 is ECG (heart), and channel 48 and 49 are the stimulus and the behavioral response event markers, respectively. 
-<img src="{{ site.baseurl }}/projects/cos513/eeg-raw.jpg" />
+<img src="{{ site.baseurl }}/research/cos513/eeg-raw.jpg" />
 
 We plot the same data after performing Independent Components Analysis (ICA) along the time series. We can see that the first few channels of EEG explain a lot of the variance. 
-<img src="{{ site.baseurl }}/projects/cos513/eeg-ica.jpg" />
+<img src="{{ site.baseurl }}/research/cos513/eeg-ica.jpg" />
 
 Here we examine the first component after ICA is performed on the EEG data. The first plot is of the variation in EEG response values. We see that for the first component, the response is roughly Gaussian.
 This approximation roughly holds across the other components, though the kurtosis varies. 
-<img src="{{ site.baseurl }}/projects/cos513/eegICAcompstats.png" />
+<img src="{{ site.baseurl }}/research/cos513/eegICAcompstats.png" />
 
 Here we plot a correlation matrix of the EEG channels for the auditory task. The value of entry (i, j) is the covariance between two EEG channels summed over time. There appears to be an interesting block structure, suggesting that some channels are highly correlated with each other, while others are not. This correlation matrix allows us to check how we might reduce dimension later on.
-<img src="{{ site.baseurl }}/projects/cos513/EEGcorr.png" />
+<img src="{{ site.baseurl }}/research/cos513/EEGcorr.png" />
 
 Here, we plot a correlation matrix of the EEG channels across both the auditory and visual tasks for the first run in both tasks. We take covariances by summing over time for each channel pair, where one channel is the EEG response over auditory and the other channel is the EEG response over visual. This correlation matrix allows us to notice that across experiments, most of the EEG channels are not correlated with each other. Perhaps the channels that remain correlated signify more information about responses to stimuli (of various types) than the others. 
-<img src="{{ site.baseurl }}/projects/cos513/EEGcrossCov.png" />
+<img src="{{ site.baseurl }}/research/cos513/EEGcrossCov.png" />
 
 #### Exploratory Analysis of the fMRI Data
 
 Here we have a nice visualization of the fMRI data. Notice that it looks like a brain!
-<img src="{{ site.baseurl }}/projects/cos513/fmri-brain-vis.jpg" />
+<img src="{{ site.baseurl }}/research/cos513/fmri-brain-vis.jpg" />
 
 Then we simply binned the values of the fMRI data to get a general idea of what responses looked like. Note that a lot of the fMRI values are 0. When subsampling to plot covariances and so on, we drew voxels from the non-zero space.  
-<img src="{{ site.baseurl }}/projects/cos513/BOLD_hist_s2t1r2.png" />
+<img src="{{ site.baseurl }}/research/cos513/BOLD_hist_s2t1r2.png" />
 
 Here we plotted the mean BOLD response and the first two principal components. 
 We performed PCA to reduce the voxel space dimension on a single subject’s fMRI data for task 1, run 2. The resulting components are therefore time vectors: The horizontal axis of the plot is time, and the vertical axis is response. The color scheme is as follows: blue is the mean, red is the first principal component and green is the second principal component. The first PC appears very close to the mean and it appears to explain 99% of the variance. This result is not what we expected, and possibly suggests that applying PCA directly may not be the best way to reduce the dimension of the data, due to the highly non-linear variation of the BOLD values of fMRI voxels. Thus we may explore nonlinear dimension reduction approaches like Local Linear Embedding or Isomap. Since we may be looking for signal in a very small percentage of the voxels, another interpretation of the result may be that our confusing results are due to the strong effect of noise (i.e. the voxels we are not interested in) on the results of PCA in high dimension. Thus, the 99% explained by the first principal component may only be explaining variance in voxels we are not interested in (also recall that from the histogram, most of the voxels are 0).
-<img src="{{ site.baseurl }}/projects/cos513/Mean_bold_and_pcs.png" />
+<img src="{{ site.baseurl }}/research/cos513/Mean_bold_and_pcs.png" />
 
 Here we plot a correlation matrix for each TR: At each time step, we calculate covariance by summing over voxels. 
-<img src="{{ site.baseurl }}/projects/cos513/fmriCorr_time.png" />
+<img src="{{ site.baseurl }}/research/cos513/fmriCorr_time.png" />
 
 Here we plot a correlation matrix for a subset of the voxels from the center of brain. Here, for each voxel pair, we calculate covariance by summing over time. 
-<img src="{{ site.baseurl }}/projects/cos513/corr_BOLD_subset_of_voxels.png" />
+<img src="{{ site.baseurl }}/research/cos513/corr_BOLD_subset_of_voxels.png" />
 
 
 
