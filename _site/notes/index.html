@@ -79,11 +79,14 @@
         </h3>
         <a href="/about" title="about">{about}</a>
         <a href="/research" title="research">{research}</a>
-        <a href="/notes" title="talks and notes">{talks and notes}</a>
-        <a href="/contact" title="contact">{contact}</a>
-        <div align="left">
+        <a href="/talks" title="talks">{talks}</a>
+        <a href="/notes" title="notes">{notes}</a>
+        <a href="/liveTeX" title="liveTeX">{liveTeX}</a>
+        <a href="/links" title="links">{links}</a>
+        <!-- <a href="/contact" title="contact">{contact}</a> -->
+        <!-- <div align="left">
           <img src="/professional_headshot.jpg" alt="kiran_pic" height="400">
-        </div>
+        </div> -->
       </header>
 
       <main>
@@ -95,84 +98,16 @@
 </p>
 -->
 
-<p>As a general note, please contact me if you find errors so that I may fix them.</p>
-
 <ul id="markdown-toc">
-  <li><a href="#expository-presentation-notes-and-slides" id="markdown-toc-expository-presentation-notes-and-slides">Expository Presentation Notes and Slides</a></li>
-  <li><a href="#scribe-notes-for-academic-talks-at-seminars-symposia-and-conferences" id="markdown-toc-scribe-notes-for-academic-talks-at-seminars-symposia-and-conferences">Scribe Notes for Academic Talks at Seminars, Symposia, and Conferences</a></li>
   <li><a href="#lecture-notes" id="markdown-toc-lecture-notes">Lecture Notes</a></li>
-  <li><a href="#useful-links" id="markdown-toc-useful-links">Useful Links</a>    <ul>
-      <li><a href="#people-and-research-groups" id="markdown-toc-people-and-research-groups">People and Research Groups</a></li>
-      <li><a href="#classes" id="markdown-toc-classes">Classes</a></li>
-      <li><a href="#online-notes" id="markdown-toc-online-notes">Online Notes</a></li>
-      <li><a href="#favorite-papers" id="markdown-toc-favorite-papers">Favorite Papers</a></li>
-    </ul>
-  </li>
+  <li><a href="#technical-reviews" id="markdown-toc-technical-reviews">Technical Reviews</a></li>
 </ul>
 
-<h2 id="expository-presentation-notes-and-slides">Expository Presentation Notes and Slides</h2>
+<hr />
 
-<ul>
-  <li>Optimization Landscape for Tensor Decompositions <a href="/talks/TensorDecompositionsELE538B_knv.pdf" title="landscape_tensor_decomp"> [pdf] </a></li>
-  <li>Tensor Decompositions <a href="/talks/tensor_writeup.pdf" title="tensor_decomp"> [pdf] </a>.</li>
-  <li>Rate Distortion and Unsupervised Learning <a href="/talks/rate-distortion_presentation.pdf" title="rate_distortion"> [pdf] </a></li>
-  <li>Matrix Concentration <a href="/talks/final_project_matrix_concentration.pdf" title="matrix_concentration"> [pdf] </a></li>
-  <li>On Lipschitz Extensions from Finite Sets <a href="/talks/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a>
-With Misha Khodak, I gave a presentation for MAT 529 (Metric Embeddings and Geometric Inequalities) on a \(\mathcal{O}\left(\sqrt{\log n}\right)\) lower bound of the absolute extendability of 1-Lipschitz functions from a finite metric space into a Banach space due to Professor <a href="http://web.math.princeton.edu/~naor/" title="Assaf Naor">Assaf Naor</a>.</li>
-  <li>The Structure Theorem for Finitely-Generated Modules over PIDs <a href="/talks/346_modules_over_PIDs.pdf" title="modules_PIDS"> [pdf] </a>
-I gave a presentation for a Galois Theory (MAT 346 at Princeton) on the torsion decomposition, primary decomposition, and cyclic decomposition for classifying finitely-generated R-modules over principal ideal domains. I also spoke about Smith Normal Form and some applications of the theorem.</li>
-  <li>The Representation of Language in the Brain <a href="/talks/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a>
-I gave a presentation to the Alg-ML reading group on a set of papers primarily by Tom Mitchell’s group at CMU on the brain’s representation of the features of natural language.</li>
-  <li>A Brief Survey on Expander Graphs <a href="/talks/jsem2015paper.pdf" title="jsem"> [pdf] </a>
-My junior seminar, taught by Professor Zeev Dvir in the spring of 2015, was on Point-Line Incidence Theorems. My presentation focused on a tangent subject, expander graphs.</li>
-  <li>A Survey on Image Captioning with Deep Learning<a href="/talks/598b_img_captions.pdf" title="598c_img_cap"> [slides] </a>
-My second presentation for <a href="http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a> focused on the image captioning problem, and deep learning approaches to solving it.</li>
-  <li>A Survey on Deep Learning for Natural Language Processing <a href="/talks/598b_nlp_deep_learning.pdf" title="598c_nlp"> [slides] </a>
-My first presentation for the Spring 2015 offering of <a href="http://vision.princeton.edu/courses/COS598/2015sp/" title="COS 598B website"> COS 598B </a>, an advanced topics class on deep learning. I overviewed various approaches to solving NLP problems with deep learning approaches, with a stronger focus on language models and word vector embeddings.</li>
-</ul>
+<h1 id="lecture-notes">Lecture Notes</h1>
 
-<h2 id="scribe-notes-for-academic-talks-at-seminars-symposia-and-conferences">Scribe Notes for Academic Talks at Seminars, Symposia, and Conferences</h2>
-
-<p>I attend various academic talks and seminars and sometimes scribe them.</p>
-
-<ul>
-  <li>Linear Algebra in Machine Learning <a href="/notes/ravi_kannan.pdf">[pdf]</a>: Ravi Kannan from Microsoft Research gave a talk at COLT 2016 on the role of linear algebra in machine learning over the years, taking a historical perspective and covering the main highlights as well as some more recent results.</li>
-  <li>ManOpt: Manifold Optimization <a href="/notes/boumal_manopt.pdf">[pdf]</a>: Nicholas Boumal from Princeton gave a talk at the Alg-ML Reading Group on manifold optimization and ManOpt, his tool for solving optimization problems.</li>
-  <li>Computational Thinking, Inferential Thinking, and Data Science <a href="/notes/mike_jordan_general.pdf">[pdf]</a>: Professor Michael Jordan from Berkeley gave a general talk on the trends towards intersecting the statistical, computer science, and optimization communities. The discussion includes inferential differential privacy, inferential communication theory, inferential computation theory, and finally, an aside on a general framework for accelerated Nesterov methods.</li>
-  <li>Universality Laws for Randomized Dimension Reduction <a href="/notes/tropp_algml.pdf">[pdf]</a>: Professor Joel Tropp from CalTech CMS gave a talk at Alg-ML on the quality of random matrices from fairly arbitrary distributions such that the image of the random projection matrix does not intersect the origin (nothing in the original dataset gets collapsed to zero). It turns out that computationally efficient random matrix distributions, like sparse Rademacher matrices, provably obey the same phase transition laws as Gaussian random matrices for the condition that the image does not intersect the nullspace, which allows for considerable computational speedups. Additionally, there are also provable bounds on the stability of such random matrix projections.</li>
-  <li>Finding Structure With Randomness <a href="/notes/tropp_structure_rand.pdf">[pdf]</a>: Professor Joel Tropp from CalTech CMS gave a talk on another approach to approximating low-rank SVD in a manner appropriate for very large matrices.</li>
-  <li>Nonparametric Bayesian and Combinatorial Stochastic Processes <a href="/notes/michael_jordan_bayes.pdf">[pdf]</a>: Professor Michael Jordan gave a talk on applications and theory of nonparametric Bayesian statistics.</li>
-  <li>Unsupervised Risk Estimation with Only Structural Assumptions <a href="/notes/steinhardt.pdf">[pdf]</a>: Jacob Steinhardt gives a talk on his recent work on provable methods for estimating the risk of unlabeled data using multiple views of the data.</li>
-  <li>Weighted Low-Rank Matrix Approximation <a href="/notes/yuanzhi_weighted_svd.pdf">[pdf]</a>: Yuanzhi Li gives a background review on various approaches towards weighted low-rank approximations.</li>
-  <li>Linear Coupling Framework of Gradient and Mirror Descent <a href="/notes/zeyuan_opt_talk.pdf">[pdf]</a>: Dr. Zeyuan Allen-Zhu explains Nesterov’s accelerated gradient descent with a nice framework involving analysis of alternating gradient and mirror descent, and also shows that strong linear coupling approaches can also be applied to the analysis of other settings (for instance, coordinate gradient descent and even some nonconvex cases) to get robust improved convergence rates, in addition to intuitively explaining the opaque Nesterov acceleration.</li>
-  <li>LiSSA: A Linear Time Second-Order Stochastic Algorithm <a href="/notes/linear_stoc_opt.pdf">[pdf]</a>: In this result, joint with Professor Elad Hazan at Princeton, Naman Agarwal and Brian Bullins come up with a new algorithm based on a novel estimator of the inverse Hessian which allows for a theoretical linear time convergence rate for an algorithm which uses full second-order information. Empirically, the algorithm (called LiSSA) also performs well with respect to its competition.</li>
-  <li>Computationally Feasible Greedy Algorithms for Neural Networks <a href="/notes/barron_nns.pdf">[pdf]</a>: Professor Andrew Barron from Yale discussed ways approaches from the greedy algorithms literature with accompanying statistical risk bounds can be applied to bounding the expected error of single-layer neural networks.</li>
-  <li>Neural Image Captioning <a href="/notes/neural_image_captioning.pdf">[pdf]</a>: Dr. Samy Bengio from Google Brain discusses Google’s Show-and-Tell paper on captioning images using a sequence-to-sequence deep learning approach.</li>
-  <li>Convolutional Kernel Neural Networks <a href="/notes/convolutional_kernel_nns.pdf">[pdf]</a>: Professor Zaid Harchaoui from NYU’s Courant Institute discuss Convolutional Kernel Neural Nets, which can be trained in an unsupervised manner and manage to outperform well-known CNN architectures with a fraction of the data. The formalism takes advantage of kernels to define an approximate minimization problem, adding more insight into how to tackle the problem of explaining convolutional networks theoretically.</li>
-  <li>Divide-and-Conquer Matrix Completion <a href="/notes/lester_mackey_matrix_completion_concentration.pdf">[pdf]</a>: Professor Lester Mackey from Stanford talks on his recent work for the fast-parallelization of matrix completion under a novel divide and conquer framework.</li>
-  <li>Interactive Information Theory <a href="/notes/interactive_info_theory_gillat_kol.pdf">[pdf]</a>: Professor Gillat Kol from IAS gives a talk on information theoretic measures and bounds on the compression of information transmission in the setting of interactive information theory, where no player knows the whole message being compressed.</li>
-  <li>Reversible Deep Nets <a href="/notes/deepnets-reversible-arora.pdf" title="deepnets-reversible-arora">[pdf]</a>: Professor Sanjeev Arora, Tengyu Ma, and Yingyu Liang discuss their results on giving a generative model for reversible deep nets. They also give a better training method that improves upon Dropout.</li>
-  <li>The Complexity of Detecting Planted Solutions <a href="/notes/planted-graph-vempala.pdf" title="vempala">[pdf]</a>: Professor Santosh Vempala of Georgia Tech gave a talk on showing that for statistical algorithms (e.g. PCA, EM, and so on), solving planted clique and planted \(k\)-SAT is at least exponential time in the size of the input.</li>
-  <li>Optimizing over Nonnegative Polynomials <a href="/notes/ahmadi.pdf" title="ahmadi">[pdf]</a>: Professor Amir Ali Ahmadi from Princeton spoke about formulating convex optimization problems in terms of finding nonnegative polynomials to provably optimize various problems in controls, dynamical systems, and machine learning, improving upon the time complexity of previous sum-of-squares SDP relaxations. He also describes robust dynamics optimization (RDO), a framework for solving optimization problems over a set of points defined by a dynamical system.</li>
-  <li>Decoding Generic Representations of fMRI <a href="/notes/pereira-words.pdf" title="pereira-words">[pdf]</a>: Dr. Francisco Pereira from Siemens talked about his work using sentences and pictures to localize fMRI voxels for representing semantic content in brains.</li>
-  <li>Simulated Annealing and Interior Point Methods <a href="/notes/hazan-annealing.pdf" title="hazan-annealing">[pdf]</a>: Professor Elad Hazan gave a talk to Princeton’s Algorithm-ML reading group on a result demonstrating the existence of a universal barrier function for interior point methods in the membership oracle model of convex optimization. This barrier is related to the heuristic simulated annealing approach often taken in non-convex optimization.</li>
-  <li>Joint Independent Subspace Analysis and Blind Source Separation <a href="/notes/joint-ISA.pdf" title="joint-ISA">[pdf]</a>: Dana Lahat gives an overview of blind source separation with various statistical independence assumptions, generalizing ICA to learning subspaces of low-rank instead of just rank \(1\) subspaces.</li>
-  <li>Bayesian Structured Sparsity Using Gaussian Fields <a href="/notes/engelhardt_pni.pdf" title="engelhardt-pni-notes">[pdf]</a>: Professor Barbara Engelhardt gave a talk on her work on identifying associations between SNPs and phenotypes with sparse machine learning methods. She also spoke on how these methods can be translated to brain studies.</li>
-  <li>Statistics and Machine Learning from a Modern Optimization Lens <a href="/notes/SML_modern_optimization.pdf" title="MIOnotes">[pdf]</a>: Professor Dimitris Bertsimas from MIT gave a talk on using the mixed integer-programming (MIO) framework as a new lens through which to view machine learning, statistics, and optimization problems.</li>
-  <li>Optimal Regret Bounds for the General Convex Multi-Armed Bandit Setting <a href="/notes/bubeck_talk.pdf" title="bubecknotes">[pdf]</a>: Dr. Sébastien Bubeck from Microsoft Research gave a talk to the Alg-ML reading group on his \(2015\) result on a tight minimax regret bound for the setting of general convex bandit optimization in dimensions greater than one.</li>
-  <li>Nonparametric Graphical Models <a href="/notes/han_liu_pni.pdf" title="hanliunotes">[pdf]</a>: Professor Han Liu from Princeton gave an overview of his recent research and theoretical results on nonparametric graphical models.</li>
-  <li>Deep Boosting <a href="/notes/deep_boosting.pdf" title="mohrinotes">[pdf]</a>: Professor Mehryar Mohri from the Courant Institute speaks about ensemble boosting methods that take advantage of complex hypothesis classes along with the use of standard simple weak learners. He also presents an interpretation of boosting as truly being about model selection.</li>
-  <li>Learning Hidden Computational Processes <a href="/notes/percy_liang_talk.pdf" title="percyliangnotes">[pdf]</a>: Professor Percy Liang from Stanford discussed approaches to solving question-answering tasks on a new hand-built dataset.</li>
-  <li>On the Hardness of Sparse PCA  <a href="/notes/braverman_sparse_PCA.pdf" title="sparsepcanotes">[pdf]</a>: Young Kun Ko summarized two results on sparse principal components analysis was given to the Braverman Reading Group at Princeton.</li>
-  <li>Perceptron Learning and Stability: Professor Ben Recht from Berkeley discussed a notion of stability applied to stochastic gradient descent to explain why it reaches the same local optima in the nonconvex setting. Notes still to be added.</li>
-  <li>Rationality, Heuristics, and the Cost of Computation <a href="/notes/griffiths_rationality_heuristics_computationcost_berkeley.pdf" title="griffithsnotes">[pdf]</a>: Professor Tom Griffiths from Berkeley discussed a notion of rationality which takes into account computation time as a resource. From his perspective, we can explain why some decision-making procedures which appear to be suboptimal are actually optimal from a sparse-resource respective.</li>
-  <li>Optimization for Large-Scale Machine Learning <a href="/notes/choromanska_deeplearning.pdf" title="choromanskanotes">[pdf]</a>: Dr. Anna Choromanska from the Courant Institute talks about new learning algorithms for decision trees and spin-glass interpretations of deep learning.</li>
-  <li>Dynamic Memory Networks <a href="/notes/socher_last_lec_224d.pdf" title="socherdmnnotes">[pdf]</a>: Dr. Richard Socher’s last lecture for the Stanford class 224d (Deep Learning for NLP) was on a recent paper by his startup, Metamind. He spoke about using a novel deep learning architecture to solve question-and-answer problems, and also about how to generalize all of NLP to a question-and-answer framework with this kind of model.</li>
-</ul>
-
-<h2 id="lecture-notes">Lecture Notes</h2>
-
-<p>For now, I have individual class notes for some classes I’ve taken. Usually, I prioritize scribing classes for which there is no good book already existing. At some point in the future, I plan to put together big documents of notes parametrized by subject in one big document.</p>
+<p>For now, I have individual class notes for some classes I’ve taken. Usually, I prioritize scribing classes for which there is no good book already existing. At some point in the future, I plan to put together big documents of notes organized by subject in one big document.</p>
 
 <ul>
   <li>MAT 529: Metric Embeddings  <a href="https://www.dropbox.com/s/s6kh92p8pas6941/mat529.pdf?dl=0" title="mat529"> [pdf]</a>: Holden Lee (see links at the bottom of the page) and I are collaborated on notes for this class. The source is available on <a href="https://github.com/holdenlee/mat529" title="github_mat529"> github </a>.</li>
@@ -184,40 +119,23 @@ My first presentation for the Spring 2015 offering of <a href="http://vision.pri
   <li>APC 486: Transmission and Compression of Information: Here are <a href="/notes/apc486_kiran_scribe_notes.pdf" title="apc486notes">my scribe notes</a> on probabilistic source models.</li>
 </ul>
 
-<h2 id="useful-links">Useful Links</h2>
+<hr />
 
-<p>This section holds links to other notes, class webpages, research groups, and other people’s webpages which I have found interesting and helpful.</p>
-
-<h3 id="people-and-research-groups">People and Research Groups</h3>
+<h1 id="technical-reviews">Technical Reviews</h1>
 
 <ul>
-  <li><a href="http://holdenlee.github.io/blog/" title="holden"> Holden Lee’s blog </a></li>
-  <li><a href="http://cs.columbia.edu/~djhsu" title="daniel_site"> Daniel Hsu’s website </a></li>
-  <li><a href="http://www.mit.edu/~andoni/" title="alex_site"> Alex Andoni’s website </a></li>
-  <li><a href="http://unsupervised.cs.princeton.edu/index.html" title="arora_research"> Sanjeev Arora’s Research Group </a></li>
-  <li><a href="https://compmem.princeton.edu/" title="compmem"> Computational Memory Lab @Princeton </a></li>
-  <li><a href="http://www.dpmlab.org/" title="DPML"> Dynamic Perception and Memory Lab @Columbia </a></li>
-  <li><a href="http://www.offconvex.org/" title="offconvex"> Off-Convex Blog </a></li>
-  <li><a href="http://www.argmin.net/" title="argmin"> Arg Min Blog </a></li>
-  <li><a href="https://blogs.princeton.edu/imabandit/" title="imabandit"> I’m a Bandit Blog </a></li>
+  <li>Tensor Decompositions <a href="/notes/tensor_writeup.pdf" title="tensor_decomp"> [pdf] </a>.</li>
+  <li>Rate Distortion and Unsupervised Learning <a href="/notes/rate-distortion_presentation.pdf" title="rate_distortion"> [pdf] </a></li>
+  <li>Matrix Concentration <a href="/notes/final_project_matrix_concentration.pdf" title="matrix_concentration"> [pdf] </a></li>
+  <li>On Lipschitz Extensions from Finite Sets <a href="/notes/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a>
+With Misha Khodak, I gave a presentation for MAT 529 (Metric Embeddings and Geometric Inequalities) on a \(\mathcal{O}\left(\sqrt{\log n}\right)\) lower bound of the absolute extendability of 1-Lipschitz functions from a finite metric space into a Banach space due to Professor <a href="http://web.math.princeton.edu/~naor/" title="Assaf Naor">Assaf Naor</a>.</li>
+  <li>The Structure Theorem for Finitely-Generated Modules over PIDs <a href="/notes/346_modules_over_PIDs.pdf" title="modules_PIDS"> [pdf] </a>
+I gave a presentation for a Galois Theory (MAT 346 at Princeton) on the torsion decomposition, primary decomposition, and cyclic decomposition for classifying finitely-generated R-modules over principal ideal domains. I also spoke about Smith Normal Form and some applications of the theorem.</li>
+  <li>The Representation of Language in the Brain <a href="/notes/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a>
+I gave a presentation to the Alg-ML reading group on a set of papers primarily by Tom Mitchell’s group at CMU on the brain’s representation of the features of natural language.</li>
+  <li>A Brief Survey on Expander Graphs <a href="/notes/jsem2015paper.pdf" title="jsem"> [pdf] </a>
+My junior seminar, taught by Professor Zeev Dvir in the spring of 2015, was on Point-Line Incidence Theorems. My presentation focused on a tangent subject, expander graphs.</li>
 </ul>
-
-<h3 id="classes">Classes</h3>
-
-<!-- all the statistical learning classes -->
-
-<!-- advanced alg esque classes -->
-
-<!-- probability theory and stats classes -->
-
-<!-- high dim geo classes -->
-
-<!-- stuff where i'm mentioned on the webpage -->
-
-<h3 id="online-notes">Online Notes</h3>
-
-<h3 id="favorite-papers">Favorite Papers</h3>
-
 
 </article> 
 
@@ -227,7 +145,7 @@ My first presentation for the Spring 2015 offering of <a href="http://vision.pri
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2018-05-31T02:08:19-04:00">2018</time>. All rights reserved.
+          &copy; <time datetime="2018-05-31T03:51:45-04:00">2018</time>. All rights reserved.
         </small>
       </footer>
     </div>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+   
+   <!--
+     redirect users to the https version of the website.
+     but: only check when on the production domain, as set in _config.yml.
+    -->
+   <script type="text/javascript">
+     var enforce = "kiranvodrahalli.github.io";
+     if ((enforce == window.location.host) && (window.location.protocol != "https:"))
+       window.location = window.location.toString().replace(/^http:/, "https:");
+   </script>
+   
+
+  <!-- EB Garamond Font --> 
+  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      liveTeX || exponentially surprised
+    
+  </title>
+
+  <!-- MathJax -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ 
+      TeX: { 
+        extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "bbox.js", "color.js", "enclose.js"] 
+      },
+      unicode: {
+        fonts: "STIXGeneral, 'Arial Unicode MS'"
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/public/favicomatic/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicomatic/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicomatic/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicomatic/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/public/favicomatic/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicomatic/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/public/favicomatic/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicomatic/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-128.png" sizes="128x128" />
+  <link rel="shortcut icon" type="image/png" href="/public/favicomatic/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="exponentially surprised" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">||exponentially surprised||</a>
+          <small>[2<sup>H</sup> theoryblog]</small> 
+        </h3>
+        <a href="/about" title="about">{about}</a>
+        <a href="/research" title="research">{research}</a>
+        <a href="/talks" title="talks">{talks}</a>
+        <a href="/notes" title="notes">{notes}</a>
+        <a href="/liveTeX" title="liveTeX">{liveTeX}</a>
+        <a href="/links" title="links">{links}</a>
+        <!-- <a href="/contact" title="contact">{contact}</a> -->
+        <!-- <div align="left">
+          <img src="/professional_headshot.jpg" alt="kiran_pic" height="400">
+        </div> -->
+      </header>
+
+      <main>
+        <article class="page">
+  <h1 class="page-title">liveTeX</h1>
+  <ul id="markdown-toc">
+  <li><a href="#seminars" id="markdown-toc-seminars">Seminars</a></li>
+  <li><a href="#symposia" id="markdown-toc-symposia">Symposia</a></li>
+  <li><a href="#conferences" id="markdown-toc-conferences">Conferences</a></li>
+  <li><a href="#classes" id="markdown-toc-classes">Classes</a></li>
+</ul>
+
+<p>I attend various academic talks at seminars, symposia, and conferences and sometimes scribe them (liveTeXing). The notes for the talks on this page correspond to individual talks rather than a lecture series or a full set of notes for a class.
+___</p>
+
+<h1 id="seminars">Seminars</h1>
+
+<!-- add seminar names and organize by them (e.g., Princeton Alg-ML; Columbia CS) -->
+
+<ul>
+  <li>ManOpt: Manifold Optimization <a href="/liveTeX/boumal_manopt.pdf">[pdf]</a>: Nicholas Boumal from Princeton gave a talk at the Alg-ML Reading Group on manifold optimization and ManOpt, his tool for solving optimization problems.</li>
+  <li>Computational Thinking, Inferential Thinking, and Data Science <a href="/liveTeX/mike_jordan_general.pdf">[pdf]</a>: Professor Michael Jordan from Berkeley gave a general talk on the trends towards intersecting the statistical, computer science, and optimization communities. The discussion includes inferential differential privacy, inferential communication theory, inferential computation theory, and finally, an aside on a general framework for accelerated Nesterov methods.</li>
+  <li>Universality Laws for Randomized Dimension Reduction <a href="/liveTeX/tropp_algml.pdf">[pdf]</a>: Professor Joel Tropp from CalTech CMS gave a talk at Alg-ML on the quality of random matrices from fairly arbitrary distributions such that the image of the random projection matrix does not intersect the origin (nothing in the original dataset gets collapsed to zero). It turns out that computationally efficient random matrix distributions, like sparse Rademacher matrices, provably obey the same phase transition laws as Gaussian random matrices for the condition that the image does not intersect the nullspace, which allows for considerable computational speedups. Additionally, there are also provable bounds on the stability of such random matrix projections.</li>
+  <li>Finding Structure With Randomness <a href="/liveTeX/tropp_structure_rand.pdf">[pdf]</a>: Professor Joel Tropp from CalTech CMS gave a talk on another approach to approximating low-rank SVD in a manner appropriate for very large matrices.</li>
+  <li>Nonparametric Bayesian and Combinatorial Stochastic Processes <a href="/liveTeX/michael_jordan_bayes.pdf">[pdf]</a>: Professor Michael Jordan gave a talk on applications and theory of nonparametric Bayesian statistics.</li>
+  <li>Unsupervised Risk Estimation with Only Structural Assumptions <a href="/liveTeX/steinhardt.pdf">[pdf]</a>: Jacob Steinhardt gives a talk on his recent work on provable methods for estimating the risk of unlabeled data using multiple views of the data.</li>
+  <li>Weighted Low-Rank Matrix Approximation <a href="/liveTeX/yuanzhi_weighted_svd.pdf">[pdf]</a>: Yuanzhi Li gives a background review on various approaches towards weighted low-rank approximations.</li>
+  <li>Linear Coupling Framework of Gradient and Mirror Descent <a href="/liveTeX/zeyuan_opt_talk.pdf">[pdf]</a>: Dr. Zeyuan Allen-Zhu explains Nesterov’s accelerated gradient descent with a nice framework involving analysis of alternating gradient and mirror descent, and also shows that strong linear coupling approaches can also be applied to the analysis of other settings (for instance, coordinate gradient descent and even some nonconvex cases) to get robust improved convergence rates, in addition to intuitively explaining the opaque Nesterov acceleration.</li>
+  <li>LiSSA: A Linear Time Second-Order Stochastic Algorithm <a href="/liveTeX/linear_stoc_opt.pdf">[pdf]</a>: In this result, joint with Professor Elad Hazan at Princeton, Naman Agarwal and Brian Bullins come up with a new algorithm based on a novel estimator of the inverse Hessian which allows for a theoretical linear time convergence rate for an algorithm which uses full second-order information. Empirically, the algorithm (called LiSSA) also performs well with respect to its competition.</li>
+  <li>Computationally Feasible Greedy Algorithms for Neural Networks <a href="/liveTeX/barron_nns.pdf">[pdf]</a>: Professor Andrew Barron from Yale discussed ways approaches from the greedy algorithms literature with accompanying statistical risk bounds can be applied to bounding the expected error of single-layer neural networks.</li>
+  <li>Neural Image Captioning <a href="/liveTeX/neural_image_captioning.pdf">[pdf]</a>: Dr. Samy Bengio from Google Brain discusses Google’s Show-and-Tell paper on captioning images using a sequence-to-sequence deep learning approach.</li>
+  <li>Convolutional Kernel Neural Networks <a href="/liveTeX/convolutional_kernel_nns.pdf">[pdf]</a>: Professor Zaid Harchaoui from NYU’s Courant Institute discuss Convolutional Kernel Neural Nets, which can be trained in an unsupervised manner and manage to outperform well-known CNN architectures with a fraction of the data. The formalism takes advantage of kernels to define an approximate minimization problem, adding more insight into how to tackle the problem of explaining convolutional networks theoretically.</li>
+  <li>Divide-and-Conquer Matrix Completion <a href="/liveTeX/lester_mackey_matrix_completion_concentration.pdf">[pdf]</a>: Professor Lester Mackey from Stanford talks on his recent work for the fast-parallelization of matrix completion under a novel divide and conquer framework.</li>
+  <li>Interactive Information Theory <a href="/liveTeX/interactive_info_theory_gillat_kol.pdf">[pdf]</a>: Professor Gillat Kol from IAS gives a talk on information theoretic measures and bounds on the compression of information transmission in the setting of interactive information theory, where no player knows the whole message being compressed.</li>
+  <li>Reversible Deep Nets <a href="/liveTeX/deepnets-reversible-arora.pdf" title="deepnets-reversible-arora">[pdf]</a>: Professor Sanjeev Arora, Tengyu Ma, and Yingyu Liang discuss their results on giving a generative model for reversible deep nets. They also give a better training method that improves upon Dropout.</li>
+  <li>The Complexity of Detecting Planted Solutions <a href="/liveTeX/planted-graph-vempala.pdf" title="vempala">[pdf]</a>: Professor Santosh Vempala of Georgia Tech gave a talk on showing that for statistical algorithms (e.g. PCA, EM, and so on), solving planted clique and planted \(k\)-SAT is at least exponential time in the size of the input.</li>
+  <li>Optimizing over Nonnegative Polynomials <a href="/liveTeX/ahmadi.pdf" title="ahmadi">[pdf]</a>: Professor Amir Ali Ahmadi from Princeton spoke about formulating convex optimization problems in terms of finding nonnegative polynomials to provably optimize various problems in controls, dynamical systems, and machine learning, improving upon the time complexity of previous sum-of-squares SDP relaxations. He also describes robust dynamics optimization (RDO), a framework for solving optimization problems over a set of points defined by a dynamical system.</li>
+  <li>Decoding Generic Representations of fMRI <a href="/liveTeX/pereira-words.pdf" title="pereira-words">[pdf]</a>: Dr. Francisco Pereira from Siemens talked about his work using sentences and pictures to localize fMRI voxels for representing semantic content in brains.</li>
+  <li>Simulated Annealing and Interior Point Methods <a href="/liveTeX/hazan-annealing.pdf" title="hazan-annealing">[pdf]</a>: Professor Elad Hazan gave a talk to Princeton’s Algorithm-ML reading group on a result demonstrating the existence of a universal barrier function for interior point methods in the membership oracle model of convex optimization. This barrier is related to the heuristic simulated annealing approach often taken in non-convex optimization.</li>
+  <li>Joint Independent Subspace Analysis and Blind Source Separation <a href="/liveTeX/joint-ISA.pdf" title="joint-ISA">[pdf]</a>: Dana Lahat gives an overview of blind source separation with various statistical independence assumptions, generalizing ICA to learning subspaces of low-rank instead of just rank \(1\) subspaces.</li>
+  <li>Bayesian Structured Sparsity Using Gaussian Fields <a href="/liveTeX/engelhardt_pni.pdf" title="engelhardt-pni-liveTeX">[pdf]</a>: Professor Barbara Engelhardt gave a talk on her work on identifying associations between SNPs and phenotypes with sparse machine learning methods. She also spoke on how these methods can be translated to brain studies.</li>
+  <li>Statistics and Machine Learning from a Modern Optimization Lens <a href="/liveTeX/SML_modern_optimization.pdf" title="MIOliveTeX">[pdf]</a>: Professor Dimitris Bertsimas from MIT gave a talk on using the mixed integer-programming (MIO) framework as a new lens through which to view machine learning, statistics, and optimization problems.</li>
+  <li>Optimal Regret Bounds for the General Convex Multi-Armed Bandit Setting <a href="/liveTeX/bubeck_talk.pdf" title="bubeckliveTeX">[pdf]</a>: Dr. Sébastien Bubeck from Microsoft Research gave a talk to the Alg-ML reading group on his \(2015\) result on a tight minimax regret bound for the setting of general convex bandit optimization in dimensions greater than one.</li>
+  <li>Nonparametric Graphical Models <a href="/liveTeX/han_liu_pni.pdf" title="hanliuliveTeX">[pdf]</a>: Professor Han Liu from Princeton gave an overview of his recent research and theoretical results on nonparametric graphical models.</li>
+  <li>Deep Boosting <a href="/liveTeX/deep_boosting.pdf" title="mohriliveTeX">[pdf]</a>: Professor Mehryar Mohri from the Courant Institute speaks about ensemble boosting methods that take advantage of complex hypothesis classes along with the use of standard simple weak learners. He also presents an interpretation of boosting as truly being about model selection.</li>
+  <li>Learning Hidden Computational Processes <a href="/liveTeX/percy_liang_talk.pdf" title="percyliangliveTeX">[pdf]</a>: Professor Percy Liang from Stanford discussed approaches to solving question-answering tasks on a new hand-built dataset.</li>
+  <li>On the Hardness of Sparse PCA  <a href="/liveTeX/braverman_sparse_PCA.pdf" title="sparsepcaliveTeX">[pdf]</a>: Young Kun Ko summarized two results on sparse principal components analysis was given to the Braverman Reading Group at Princeton.</li>
+  <li>Perceptron Learning and Stability: Professor Ben Recht from Berkeley discussed a notion of stability applied to stochastic gradient descent to explain why it reaches the same local optima in the nonconvex setting. liveTeX still to be added.</li>
+  <li>Rationality, Heuristics, and the Cost of Computation <a href="/liveTeX/griffiths_rationality_heuristics_computationcost_berkeley.pdf" title="griffithsliveTeX">[pdf]</a>: Professor Tom Griffiths from Berkeley discussed a notion of rationality which takes into account computation time as a resource. From his perspective, we can explain why some decision-making procedures which appear to be suboptimal are actually optimal from a sparse-resource respective.</li>
+  <li>Optimization for Large-Scale Machine Learning <a href="/liveTeX/choromanska_deeplearning.pdf" title="choromanskaliveTeX">[pdf]</a>: Dr. Anna Choromanska from the Courant Institute talks about new learning algorithms for decision trees and spin-glass interpretations of deep learning.</li>
+</ul>
+
+<h1 id="symposia">Symposia</h1>
+
+<h1 id="conferences">Conferences</h1>
+
+<ul>
+  <li>Linear Algebra in Machine Learning <a href="/liveTeX/ravi_kannan.pdf">[pdf]</a>: Ravi Kannan from Microsoft Research gave a talk at COLT 2016 on the role of linear algebra in machine learning over the years, taking a historical perspective and covering the main highlights as well as some more recent results.</li>
+</ul>
+
+<h1 id="classes">Classes</h1>
+
+<ul>
+  <li>Dynamic Memory Networks <a href="/liveTeX/socher_last_lec_224d.pdf" title="socherdmnliveTeX">[pdf]</a>: Dr. Richard Socher’s last lecture for the Stanford class 224d (Deep Learning for NLP) was on a recent paper by his startup, Metamind. He spoke about using a novel deep learning architecture to solve question-and-answer problems, and also about how to generalize all of NLP to a question-and-answer framework with this kind of model.</li>
+</ul>
+
+</article> 
+
+
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2018-05-31T03:51:45-04:00">2018</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>
+
