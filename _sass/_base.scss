@@ -46,6 +46,26 @@ body {
 		}
 }
 
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.grey { 
+  color: grey;
+}
+.purple {
+  color: purple
+}
+
+.bold {
+  font-weight: bold;
+}
+
 // No `:visited` state is required by default (browsers will use `a`)
 a {
   color: #05127a; //#0F0FAE;
