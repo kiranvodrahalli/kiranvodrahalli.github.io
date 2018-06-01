@@ -10,9 +10,19 @@ ___
 
 # Research Talks
 
+Invited talk at Princeton Neuroscience Institute (Sept. 2017). *Mapping between fMRI responses to movies and their natural language annotations*. <a href="{{site.baseurl }}/talks/PNI_Sept17.pdf" title="PNI_sept17"> [slides] </a>.
+
+Princeton COS Master's Thesis Presentation (May 2017). *Temporally Dependent Mappings between fMRI Responses and Natural Language Descriptions of Natural Stimuli*. <a href="{{site.baseurl }}/talks/MSE_presentation_may10.pdf" title="masters_thesis"> [slides] </a>. 
+
+NIPS 2016 MLINI Workshop (Dec. 2016). *Mapping between Natural Movie fMRI Responses and Word-Sequence Representations*. <a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_nips16"> [slides] </a>.
+
+ICML 2016 MVRL Workshop (Jun. 2016). *A Semantic Shared Response Model*. <a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [slides] </a>.
+
 ---
 
 # Expository Presentations
+
+There are several talks I've given in seminars and other settings which do not have slides --- either they can be found on the [notes]({{site.baseurl }}/notes) page or I have not transcribed my handwritten notes into LaTeX yet. 
 
 * Optimization Landscape for Tensor Decompositions <a href="{{site.baseurl }}/talks/TensorDecompositionsELE538B_knv.pdf" title="landscape_tensor_decomp"> [slides] </a>
  

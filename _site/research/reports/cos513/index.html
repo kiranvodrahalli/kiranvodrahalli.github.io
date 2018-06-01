@@ -79,7 +79,10 @@
         </h3>
         <a href="/about" title="about">{about}</a>
         <a href="/research" title="research">{research}</a>
+        <a href="/blog" title="blog">{blog}</a>
+        <a href="/archive" title="archive">{archive}</a>
         <a href="/talks" title="talks">{talks}</a>
+        <a href="/teaching" title="teaching">{teaching}</a>
         <a href="/notes" title="notes">{notes}</a>
         <a href="/liveTeX" title="liveTeX">{liveTeX}</a>
         <a href="/links" title="links">{links}</a>
@@ -109,9 +112,11 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 <p>To summarize the new learning problem, we have \(92\) pairs of MEG-image data. The
 MEG has \(306\) channels; each channel has a \(k\)-dim frequency vector which has as entries the coefficients of FFT on the time series data for the channel. We select \(k\).
-We will represent the image in two ways:
-- Naive version: grayscale image vector
-- Convolutional neural network layer features stacked on top of each other in a vector format. We get the CNN as a pre-trained model on the large ImageNet dataset (using Caffe from Berkeley Vision).</p>
+We will represent the image in two ways:</p>
+<ul>
+  <li>Naive version: grayscale image vector</li>
+  <li>Convolutional neural network layer features stacked on top of each other in a vector format. We get the CNN as a pre-trained model on the large ImageNet dataset (using Caffe from Berkeley Vision).</li>
+</ul>
 
 <p>For each of the \(306\) channels we learn a matrix:
 <script type="math/tex">F = AL</script>
@@ -844,7 +849,7 @@ We performed PCA to reduce the voxel space dimension on a single subject’s fMR
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2018-05-31T03:51:45-04:00">2018</time>. All rights reserved.
+          &copy; <time datetime="2018-06-01T02:47:55-04:00">2018</time>. All rights reserved.
         </small>
       </footer>
     </div>

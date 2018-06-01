@@ -9,6 +9,7 @@ title:               exponentially surprised
 tagline:             theoryblog
 url:                 https://kiranvodrahalli.github.io
 paginate:            5
+paginate_path:       "/blog/page:num/"
 baseurl:             ""
 
 # Assets
@@ -22,9 +23,9 @@ sass:
 author:
   name:              Kiran Vodrahalli
   url:               https://kiranvodrahalli.github.io
-  email:             knv@princeton.edu
+  email:             kiran.vodrahalli@columbia.edu
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-redirect-from]
 #markdown
 markdown: kramdown
 
