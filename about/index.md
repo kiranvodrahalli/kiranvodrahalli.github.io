@@ -16,7 +16,7 @@ I am currently a Ph.D. student at Columbia University, focusing on theoretical c
 
 ---
 
-My primary area of research is provable algorithms and models for computational inference and optimization. Many of my interests can be summarized by the phrase ''non-worst-case analysis for machine learning algorithms''. I like conditions that constrain the problem space that are easy to check. I believe theory informs practice, and practice informs theory. I am particularly interested in the following broad areas: 
+My primary area of research is provable algorithms and models for computational inference and optimization. Many of my interests can be summarized by the phrase ''non-worst-case analysis for machine learning algorithms.'' I like conditions that constrain the problem space that are easy to check. I believe theory informs practice, and practice informs theory. I am particularly interested in the following broad areas: 
 
 * Theoretical frameworks for unsupervised learning which allow one to give guarantees on performance
 * Identifying general, favorable properties of unsupervised feature representations
