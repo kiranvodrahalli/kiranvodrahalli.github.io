@@ -26,12 +26,16 @@ June 2016: ICML 2016 MVRL Workshop. *A Semantic Shared Response Model*. <a href=
 
 ---
 
-## Expository Presentations
+## Slides for Expository Presentations
 
 There are several talks I've given in seminars and other settings which do not have slides --- either they can be found on the [notes]({{site.baseurl }}/notes) page or I have not transcribed my handwritten notes into LaTeX yet. The following are the non-research presentations I've given with slides. 
 
-* Optimization Landscape for Tensor Decompositions <a href="{{site.baseurl }}/talks/TensorDecompositionsELE538B_knv.pdf" title="landscape_tensor_decomp"> [slides] </a>
- 
-* A Survey on Image Captioning with Deep Learning<a href="{{ site.baseurl }}/talks/598b_img_captions.pdf" title="598c_img_cap"> [slides] </a>
+* Describing Value Iteration Networks <a href="{{site.baseurl }}/talks/VIN_presentation_RL_class.pdf" title="VIN_rl"> [slides] </a> [[course website]](https://ieor8100.github.io/rl/)
 
-* A Survey on Deep Learning for Natural Language Processing <a href="{{ site.baseurl }}/talks/598b_nlp_deep_learning.pdf" title="598c_nlp"> [slides] </a>
+* Learning Sparse Polynomials over Product Measures <a href="{{site.baseurl }}/talks/learning-sparse-polynomials-presentation.pdf" title="andoni14"> [slides] </a> [[course website]](https://ilyaraz.org/static/class/)
+
+* Optimization Landscape for Tensor Decompositions <a href="{{site.baseurl }}/talks/TensorDecompositionsELE538B_knv.pdf" title="landscape_tensor_decomp"> [slides] </a> [[course website]](http://www.princeton.edu/~yc5/ele538b_sparsity/)
+
+* A Survey on Image Captioning with Deep Learning<a href="{{ site.baseurl }}/talks/598b_img_captions.pdf" title="598c_img_cap"> [slides] </a> [[course website]](http://3dvision.princeton.edu/courses/COS598/2015sp/)
+
+* A Survey on Deep Learning for Natural Language Processing <a href="{{ site.baseurl }}/talks/598b_nlp_deep_learning.pdf" title="598c_nlp"> [slides] </a> [[course website]](http://3dvision.princeton.edu/courses/COS598/2015sp/)

@@ -15,30 +15,39 @@ title: notes
 
 ___
 
-# Lecture Notes
+## Technical Reviews
 
-For now, I have individual class notes for some classes I've taken. Usually, I prioritize scribing classes for which there is no good book already existing. At some point in the future, I plan to put together big documents of notes organized by subject in one big document.  
-
-* MAT 529: Metric Embeddings  <a href= "https://www.dropbox.com/s/s6kh92p8pas6941/mat529.pdf?dl=0" title= "mat529"> [pdf]</a>: Holden Lee and I collaborated on notes for this class. The source is available on <a href= "https://github.com/holdenlee/mat529" title="github_mat529"> github </a>. 
-* MAT 597/PHY521: Mathematical Physics <a href= "https://www.dropbox.com/s/11mg27mbdke3m9c/mat597.pdf?dl=0" title= "mat597"> [pdf]</a>: Holden Lee and I collaborated on notes for this class as well, but it should be noted that I only helped for roughly the first two months of the class. The source is available on <a href= "https://github.com/holdenlee/mat597" title="github_mat597"> github </a>. 
-* APC 529: Coding Theory and Random Graphs <a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[pdf]</a>: These are my notes on the random graphs portion of APC 529, taught by Professor Emmanuel Abbe of Princeton. The topics include an introduction to random graphs, the Erdos-Renyi model, graph properties and phase transition phenomena (for giant component and connectivity), some spectral graph theory, and finally an introduction to recent work on the Stochastic Block Model (SBM). 
-* MAT 340: Applied Algebra <a href= "{{ site.baseurl }}/notes/340_notes.pdf" title="340alg">[pdf]</a>: Applied algebra covered the basic theorems of group theory with a section on representation theory at the end. These notes will be updated in the future with coverage of the Sylow theorems and finite simple groups. 
-* COS 511: Theoretical Machine Learning: I took <a href= "http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title= "cos511"> scribe notes</a> for most lectures of this class in its Spring 2015 iteration. Topics in the notes consist of an introduction to statistical learning theory, the Online Convex Optimization (OCO) framework, regularization, Bandit Convex Optimization (BCO), boosting, some game theory all from the point of view of OCO, and finally, an explicit connection between OCO and statistical learning theory in the form of theorems which convert regret analysis into ERM guarantees. There are also two guest lectures, one by Professor Jake Abernethy of University of Michigan, and one by Professor Sanjeev Arora of Princeton. A lot of the notes follow the <a href="http://ocobook.cs.princeton.edu/OCObook.pdf" title="OCObook"> excellent book </a> by Professor Elad Hazan. 
-* COS 510: Programming Languages: Here are <a href= "{{ site.baseurl }}/notes/curry_howard_cos510notes.pdf" title="cos510notes"> my scribe notes</a> on the Curry-Howard Isomorphism. 
-* APC 486: Transmission and Compression of Information: Here are <a href= "{{ site.baseurl }}/notes/apc486_kiran_scribe_notes.pdf" title="apc486notes">my scribe notes</a> on probabilistic source models.
+* Learning to Plan and Hierarchical, Multi-Task Reinforcement Learning [[pdf]](ieor8100_project.pdf) (for [IEOR 8100](https://ieor8100.github.io/rl/))
+* Generalization from Margins: Connecting Boosting Theory to Neural Nets [[pdf]--in progress!](margins_generalization_boosting_nn.pdf) (at Columbia DSI Seminar)
+* Learning Sparse Polynomials [[pdf]](alggeo_project.pdf) (for [COMS 6998-5](https://ilyaraz.org/static/class/))
+* Interactive Clustering [[pdf]](interactive_clustering.pdf) (for [COMS 6998-4](http://www.cs.columbia.edu/~djhsu/coms6998-f17/))
+* Convex Optimization and Randomness [[pdf]](convex_opt_bubeck_ch6.pdf) (for [Dave Blei's Reading Group](https://groups.google.com/forum/#!forum/columbia-ml-reading))
+* Tensor Decompositions <a href="{{site.baseurl }}/notes/tensor_writeup.pdf" title="tensor_decomp"> [pdf] </a> (for [ELE 538B](http://www.princeton.edu/~yc5/ele538b_sparsity/))
+* Rate Distortion and Unsupervised Learning <a href="{{site.baseurl }}/notes/rate-distortion_presentation.pdf" title="rate_distortion"> [pdf] </a> (for [COS 598E](http://www.cs.princeton.edu/courses/archive/spring17/cos598E/))
+* Matrix Concentration and Applications <a href="{{site.baseurl }}/notes/final_project_matrix_concentration.pdf" title="matrix_concentration"> [pdf] </a> (for [ORF 550](http://www.princeton.edu/~rvan/syllabus570.pdf))
+* On Lipschitz Extensions from Finite Sets <a href="{{ site.baseurl }}/notes/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a> (with Mikhail Khodak, for [MAT 529](http://web.math.princeton.edu/~naor/))
+* The Structure Theorem for Finitely-Generated Modules over PIDs <a href="{{ site.baseurl }}/notes/346_modules_over_PIDs.pdf" title="modules_PIDS"> [pdf] </a> (for MAT 346: Algebra II)
+* The Representation of Language in the Brain <a href="{{ site.baseurl }}/notes/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a> (at [Algorithms-Machine Learning Reading Group](http://theory.cs.princeton.edu/algmlreadinggroup.html))
+* A Brief Survey on Expander Graphs <a href="{{ site.baseurl }}/notes/jsem2015paper.pdf" title="jsem"> [pdf] </a> (for Junior Seminar with [Zeev Dvir](http://www.cs.princeton.edu/~zdvir/))
 
 ---
 
-# Technical Reviews
+## Class Notes
 
-* Tensor Decompositions <a href="{{site.baseurl }}/notes/tensor_writeup.pdf" title="tensor_decomp"> [pdf] </a>.
-* Rate Distortion and Unsupervised Learning <a href="{{site.baseurl }}/notes/rate-distortion_presentation.pdf" title="rate_distortion"> [pdf] </a>
-* Matrix Concentration <a href="{{site.baseurl }}/notes/final_project_matrix_concentration.pdf" title="matrix_concentration"> [pdf] </a>
-* On Lipschitz Extensions from Finite Sets <a href="{{ site.baseurl }}/notes/lipschitz_finite_sets.pdf" title="naor_lipschitz"> [pdf] </a>
-With Misha Khodak, I gave a presentation for MAT 529 (Metric Embeddings and Geometric Inequalities) on a \\(\mathcal{O}\left(\sqrt{\log n}\right)\\) lower bound of the absolute extendability of 1-Lipschitz functions from a finite metric space into a Banach space due to Professor <a href = "http://web.math.princeton.edu/~naor/" title = "Assaf Naor">Assaf Naor</a>.
-* The Structure Theorem for Finitely-Generated Modules over PIDs <a href="{{ site.baseurl }}/notes/346_modules_over_PIDs.pdf" title="modules_PIDS"> [pdf] </a>
-I gave a presentation for a Galois Theory (MAT 346 at Princeton) on the torsion decomposition, primary decomposition, and cyclic decomposition for classifying finitely-generated R-modules over principal ideal domains. I also spoke about Smith Normal Form and some applications of the theorem.
-* The Representation of Language in the Brain <a href="{{ site.baseurl }}/notes/alg-ml-mitchell-talk.pdf" title="alg-ml1"> [pdf] </a>
-I gave a presentation to the Alg-ML reading group on a set of papers primarily by Tom Mitchell's group at CMU on the brain's representation of the features of natural language.
-* A Brief Survey on Expander Graphs <a href="{{ site.baseurl }}/notes/jsem2015paper.pdf" title="jsem"> [pdf] </a>
-My junior seminar, taught by Professor Zeev Dvir in the spring of 2015, was on Point-Line Incidence Theorems. My presentation focused on a tangent subject, expander graphs.
+For now, I have individual class notes for some classes I've taken. Sometimes, lectures are missing or the rest of the notes have been taken by other people --- in these events, I direct you to the website of the course, if it exists. If not, take a look at my [links]({{site.baseurl}}/links) page for a list of other resources. At some point in the future, I plan to put together a big document of notes organized by subject. 
+
+* STAT 8301: Topics in Probability Theory (taught by [Roman Vershynin](https://www.math.uci.edu/~rvershyn/)) [[pdf]--in progress!](vershynin_HDP.pdf)
+* IEOR 8100: Reinforcement Learning <a href= "{{ site.baseurl }}/notes/rl-notes.pdf" title="RL">[pdf]</a> [[course website]](https://ieor8100.github.io/rl/)
+* STAT 8101: High-dimensional Statistical Inference <a href= "{{ site.baseurl }}/notes/high-dim-stat-inference-notes.pdf" title="high-dim-stats">[pdf--in progress!]</a> [[course website]](http://www.columbia.edu/~my2550/HDSI-2018/HDSI.html)
+* COMS 6998-5: Algorithms with a Geometric Lens <a href= "{{ site.baseurl }}/notes/alggeo_scribe_9_25_17.pdf" title="alg-geo">[scribe notes]</a> [[course website]](https://ilyaraz.org/static/class/)
+* COMS 6998-4: Interactive Learning <a href= "{{ site.baseurl }}/notes/imitation_learning_notes.pdf" title="imitation">[scribe notes]</a> [[course website]](http://www.cs.columbia.edu/~djhsu/coms6998-f17/)
+* COS 598E: Unsupervised Learning <a href= "{{ site.baseurl }}/notes/COS598E_lec2.pdf" title="cos598E">[scribe notes]</a> [[course website]](http://www.cs.princeton.edu/courses/archive/spring17/cos598E/)
+* ORF 550: Probability in High Dimension <a href= "{{ site.baseurl }}/notes/ORF550_scribe_dec2.pdf" title="orf550">[scribe notes]</a> [[syllabus]](http://www.princeton.edu/~rvan/syllabus570.pdf) [[all notes]](http://www.princeton.edu/~rvan/APC550.pdf) (with Xinyi Chen)
+* ORF 524: Statistical Theory and Methods <a href= "{{ site.baseurl }}/notes/orf524_scribe.pdf" title="orf524">[scribe notes]</a> [[syllabus]](http://www.princeton.edu/~samory/Courses/Syllabus524.pdf)
+* MAT 529: Metric Embeddings and Geometric Inequalities <a href= "{{ site.baseurl }}/notes/mat529_notes.pdf" title="529metric">[pdf]</a> (with Holden Lee)
+* MAT 597/PHY521: Mathematical Physics <a href= "{{ site.baseurl }}/notes/mat597_notes.pdf" title="529randomgraphs">[pdf]</a> (with Holden Lee)
+* APC 529: Coding Theory and Random Graphs <a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[pdf]</a>
+* MAT 340: Applied Algebra <a href= "{{ site.baseurl }}/notes/340_notes.pdf" title="340alg">[pdf]</a> 
+* COS 511: Theoretical Machine Learning <a href= "http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title= "cos511"> [scribe notes]</a> (with others)
+* COS 510: Programming Languages <a href= "{{ site.baseurl }}/notes/curry_howard_cos510notes.pdf" title="cos510notes"> [scribe notes] </a> 
+* APC 486: Transmission and Compression of Information <a href= "{{ site.baseurl }}/notes/apc486_kiran_scribe_notes.pdf" title="apc486notes"> [scribe notes] </a>
