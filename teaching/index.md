@@ -17,7 +17,7 @@ ___
 * Spring 2017: helped with COS 495 --- Neural Networks (designed [homework assignment](https://cos495.github.io/2017/04/10/pset7.html))
 * Fall 2016: TA for COS 397 --- Independent Work Seminars in Natural Language Processing, Information Retrieval, and Entrepreneurships
 * Spring 2014: Grader for COS 226 --- Intro Algorithms
-Fall 2013 --- Fall 2014: COS Lab TA for COS 126, 226, 217 --- Intro Algorithms and Systems
+* Fall 2013 --- Fall 2014: COS Lab TA for COS 126, 226, 217 --- Intro Algorithms and Systems
 
 ### Mentorship
 
@@ -27,4 +27,4 @@ Fall 2013 --- Fall 2014: COS Lab TA for COS 126, 226, 217 --- Intro Algorithms a
 
 ### Tutoring
 
-* August 2011--- May 2012: Tutored students at Mountain View library in math [[flyer]](https://www.mountainview.gov/civicax/filebank/blobdload.aspx?blobid=9021)
+* October 2011--- May 2012: Tutored students at Mountain View library in math [[flyer]](https://www.mountainview.gov/civicax/filebank/blobdload.aspx?blobid=9021)
