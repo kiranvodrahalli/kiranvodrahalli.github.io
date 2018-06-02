@@ -4,11 +4,11 @@
  <title>exponentially surprised</title>
  <link href="https://kiranvodrahalli.github.io/atom.xml" rel="self"/>
  <link href="https://kiranvodrahalli.github.io/"/>
- <updated>2018-06-02T18:16:30-04:00</updated>
+ <updated>2018-06-02T18:19:10-04:00</updated>
  <id>https://kiranvodrahalli.github.io</id>
  <author>
    <name>Kiran Vodrahalli</name>
-   <email>knv@princeton.edu</email>
+   <email>kiran.vodrahalli@columbia.edu</email>
  </author>
 
  
@@ -140,10 +140,10 @@
 
 &lt;p&gt;Here’s a useful &lt;a href=&quot;http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&quot;&gt;link&lt;/a&gt; to some MathJax tricks.&lt;/p&gt;
 
-&lt;!-- Some old equations that look ugly but explain how to use certain features which I probably won&#39;t use like bbox. The better aligned example is above. --&gt;
+&lt;!-- Some old equations that look ugly but explain how to use certain features which I probably won't use like bbox. The better aligned example is above. --&gt;
 &lt;!-- \\(\href{http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference}{\text{link}}\\) --&gt;
 
-&lt;!-- Here&#39;s an aligned equation: 
+&lt;!-- Here's an aligned equation: 
 
 \begin{align}
 	a &amp; =b+c-d \\\  

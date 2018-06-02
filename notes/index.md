@@ -48,6 +48,7 @@ For now, I have individual class notes for some classes I've taken. Sometimes, l
 * MAT 597/PHY521: Mathematical Physics <a href= "{{ site.baseurl }}/notes/mat597_notes.pdf" title="529randomgraphs">[pdf]</a> (with Holden Lee)
 * APC 529: Coding Theory and Random Graphs <a href= "{{ site.baseurl }}/notes/529_random-graphs.pdf" title="529randomgraphs">[pdf]</a>
 * MAT 340: Applied Algebra <a href= "{{ site.baseurl }}/notes/340_notes.pdf" title="340alg">[pdf]</a> 
+* CS 224d: Deep Learning for Natural Language Processing [[scribe notes]](liveTeX/socher_last_lec_224d.pdf) 
 * COS 511: Theoretical Machine Learning <a href= "http://www.cs.princeton.edu/courses/archive/spring15/cos511/" title= "cos511"> [scribe notes]</a> (with others)
 * COS 510: Programming Languages <a href= "{{ site.baseurl }}/notes/curry_howard_cos510notes.pdf" title="cos510notes"> [scribe notes] </a> 
 * APC 486: Transmission and Compression of Information <a href= "{{ site.baseurl }}/notes/apc486_kiran_scribe_notes.pdf" title="apc486notes"> [scribe notes] </a>
@@ -94,7 +95,3 @@ For now, I have individual class notes for some classes I've taken. Sometimes, l
 ### Conference Notes
 
 * Linear Algebra in Machine Learning <a href = "{{ site.baseurl }}/notes/liveTeX/ravi_kannan.pdf">[pdf]</a>: Ravi Kannan from Microsoft Research gave a talk at COLT 2016 on the role of linear algebra in machine learning over the years, taking a historical perspective and covering the main highlights as well as some more recent results. 
-
-### Misc. Notes
-
-* Dynamic Memory Networks <a href= "{{ site.baseurl }}/notes/liveTeX/socher_last_lec_224d.pdf" title="socherdmnliveTeX">[pdf]</a>: Dr. Richard Socher's last lecture for the Stanford class 224d (Deep Learning for NLP) was on a recent paper by his startup, Metamind. He spoke about using a novel deep learning architecture to solve question-and-answer problems, and also about how to generalize all of NLP to a question-and-answer framework with this kind of model. 
