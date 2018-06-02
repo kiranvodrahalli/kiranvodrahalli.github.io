@@ -10,7 +10,7 @@ I attend various academic talks at seminars, symposia, and conferences and somet
 ___
 
 
-# Seminars
+### Seminars
 
 <!-- add seminar names and organize by them (e.g., Princeton Alg-ML; Columbia CS) --> 
 
@@ -45,12 +45,12 @@ ___
 * Rationality, Heuristics, and the Cost of Computation <a href= "{{ site.baseurl }}/liveTeX/griffiths_rationality_heuristics_computationcost_berkeley.pdf" title="griffithsliveTeX">[pdf]</a>: Professor Tom Griffiths from Berkeley discussed a notion of rationality which takes into account computation time as a resource. From his perspective, we can explain why some decision-making procedures which appear to be suboptimal are actually optimal from a sparse-resource respective. 
 * Optimization for Large-Scale Machine Learning <a href= "{{ site.baseurl }}/liveTeX/choromanska_deeplearning.pdf" title="choromanskaliveTeX">[pdf]</a>: Dr. Anna Choromanska from the Courant Institute talks about new learning algorithms for decision trees and spin-glass interpretations of deep learning. 
 
-# Symposia
+### Symposia
 
-# Conferences
+### Conferences
 
 * Linear Algebra in Machine Learning <a href = "{{ site.baseurl }}/liveTeX/ravi_kannan.pdf">[pdf]</a>: Ravi Kannan from Microsoft Research gave a talk at COLT 2016 on the role of linear algebra in machine learning over the years, taking a historical perspective and covering the main highlights as well as some more recent results. 
 
-# Classes
+### Classes
 
 * Dynamic Memory Networks <a href= "{{ site.baseurl }}/liveTeX/socher_last_lec_224d.pdf" title="socherdmnliveTeX">[pdf]</a>: Dr. Richard Socher's last lecture for the Stanford class 224d (Deep Learning for NLP) was on a recent paper by his startup, Metamind. He spoke about using a novel deep learning architecture to solve question-and-answer problems, and also about how to generalize all of NLP to a question-and-answer framework with this kind of model. 

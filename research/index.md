@@ -19,7 +19,7 @@ Some of my papers have authors listed in alphabetical order (standard for theory
 
 ___
 
-## Preprints
+### Preprints
 
 <span>[P2]</span>{: .red .bold} *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. Alex Andoni\*, Rishabh Dudeja\*, Daniel Hsu\*, **Kiran Vodrahalli**\*. In submission. [arXiv soon!]
 
@@ -27,7 +27,7 @@ ___
 
 ---
 
-## Conference and Journal Publications 
+### Conference and Journal Publications 
 
 <span>[C3]</span>{: .blue .bold} *A Large Self-Annotated Corpus for Sarcasm*. Mikhail Khodak, Nikunj Saunshi, **Kiran Vodrahalli**. Poster. Language Resources and Evaluation, May 2018. <a href= "{{ site.baseurl }}/research/publications/lrec18.pdf" title= "lrec18"> [pdf] </a> <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/160.pdf" title="lrec18"> [conference] </a> <a href="https://arxiv.org/abs/1704.05579" title="lrec18_arxiv"> [arXiv] </a> [[dataset]](http://nlp.cs.princeton.edu/SARC/) [[code]](https://github.com/NLPrinceton/SARC)
 
@@ -39,7 +39,7 @@ ___
 
 ---
 
-## Workshop Publications
+### Workshop Publications
 
 <span>[W2]</span>{: .green .bold} *Mapping between Natural Movie fMRI Responses and Word-Sequence Representations*. **Kiran Vodrahalli**, Po-Hsuan Chen, Yingyu Liang, Janice Chen, Esther Yong, Christopher
 Honey, Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora. Oral Presentation and Poster. [NIPS Workshop on Representation Learning in Artificial and Biological Neural Networks](https://arxiv.org/abs/1701.01437), Dec 2016. <a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_nips16"> [slides] </a> <a href="{{site.baseurl }}/posters/nips16_MLINI_poster.pdf" title="ssrm_nips16"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
@@ -48,7 +48,7 @@ Honey, Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora. Oral Presentation and
 
 ---
 
-## Technical Reports and Theses  
+### Technical Reports and Theses  
 
 <span>[T8]</span>{: .grey .bold} *Temporally Dependent Mappings Between fMRI Responses and Natural Language Descriptions of Natural Stimuli*. COS MSE Thesis (May 2017). Advised by Sanjeev Arora and Ken Norman. <a href= "{{ site.baseurl }}/research/theses/MSE_COS_thesis.pdf" title= "mse_thesis"> [pdf] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
 
@@ -86,7 +86,7 @@ In fall 2013, I began working with Professor Sam Wang of Princeton Neuroscience 
 
 ---
 
-## Code
+### Code
 
 For the code accompanying my research projects, see the links next to each paper or my [github](https://github.com/kiranvodrahalli). 
 

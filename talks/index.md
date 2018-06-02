@@ -8,7 +8,7 @@ title: talks
 
 ___
 
-## Research Talks
+### Research Talks
 
 May 2018: Master's Thesis presentation by Mikhail Khodak and Nikunj Saunshi. *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. <a href="{{site.baseurl }}/talks/iclr18_slides.pdf" title="iclr18_masters"> [slides] </a>.
 
@@ -26,7 +26,7 @@ June 2016: ICML 2016 MVRL Workshop. *A Semantic Shared Response Model*. <a href=
 
 ---
 
-## Slides for Expository Presentations
+### Slides for Expository Presentations
 
 There are several talks I've given in seminars and other settings which do not have slides --- either they can be found on the [notes]({{site.baseurl }}/notes) page or I have not transcribed my handwritten notes into LaTeX yet. The following are the non-research presentations I've given with slides. 
 

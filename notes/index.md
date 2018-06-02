@@ -15,7 +15,7 @@ title: notes
 
 ___
 
-## Technical Reviews
+### Technical Reviews
 
 * Learning to Plan and Hierarchical, Multi-Task Reinforcement Learning [[pdf]](ieor8100_project.pdf) (for [IEOR 8100](https://ieor8100.github.io/rl/))
 * Generalization from Margins: Connecting Boosting Theory to Neural Nets [[pdf--in progress!]](margins_generalization_boosting_nn.pdf) (at Columbia DSI Seminar)
@@ -32,7 +32,7 @@ ___
 
 ---
 
-## Class Notes
+### Class Notes
 
 For now, I have individual class notes for some classes I've taken. Sometimes, lectures are missing or the rest of the notes have been taken by other people --- in these events, I direct you to the website of the course, if it exists. If not, take a look at my [links]({{site.baseurl}}/links) page for a list of other resources. At some point in the future, I plan to put together a big document of notes organized by subject. 
 
