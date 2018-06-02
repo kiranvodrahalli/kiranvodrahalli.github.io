@@ -20,6 +20,8 @@ May 2017: Princeton COS Master's Thesis Presentation. *Temporally Dependent Mapp
 
 December 2016: NIPS 2016 MLINI Workshop. *Mapping between Natural Movie fMRI Responses and Word-Sequence Representations*. <a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_nips16"> [slides] </a>.
 
+July 2016: Invited Talk at Intel-Princeton Neuroscience Collaboration Meeting. *Decoding fMRI to Text with Context*.  <a href="{{site.baseurl }}/talks/intel-pni_sherlock_july16.pdf" title="intel-pni"> [slides] </a>. 
+
 June 2016: ICML 2016 MVRL Workshop. *A Semantic Shared Response Model*. <a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [slides] </a>.
 
 ---
