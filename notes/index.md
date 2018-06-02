@@ -18,7 +18,7 @@ ___
 ## Technical Reviews
 
 * Learning to Plan and Hierarchical, Multi-Task Reinforcement Learning [[pdf]](ieor8100_project.pdf) (for [IEOR 8100](https://ieor8100.github.io/rl/))
-* Generalization from Margins: Connecting Boosting Theory to Neural Nets [[pdf]--in progress!](margins_generalization_boosting_nn.pdf) (at Columbia DSI Seminar)
+* Generalization from Margins: Connecting Boosting Theory to Neural Nets [[pdf--in progress!](margins_generalization_boosting_nn.pdf) (at Columbia DSI Seminar)
 * Learning Sparse Polynomials [[pdf]](alggeo_project.pdf) (for [COMS 6998-5](https://ilyaraz.org/static/class/))
 * Interactive Clustering [[pdf]](interactive_clustering.pdf) (for [COMS 6998-4](http://www.cs.columbia.edu/~djhsu/coms6998-f17/))
 * Convex Optimization and Randomness [[pdf]](convex_opt_bubeck_ch6.pdf) (for [Dave Blei's Reading Group](https://groups.google.com/forum/#!forum/columbia-ml-reading))
@@ -36,7 +36,7 @@ ___
 
 For now, I have individual class notes for some classes I've taken. Sometimes, lectures are missing or the rest of the notes have been taken by other people --- in these events, I direct you to the website of the course, if it exists. If not, take a look at my [links]({{site.baseurl}}/links) page for a list of other resources. At some point in the future, I plan to put together a big document of notes organized by subject. 
 
-* STAT 8301: Topics in Probability Theory (taught by [Roman Vershynin](https://www.math.uci.edu/~rvershyn/)) [[pdf]--in progress!](vershynin_HDP.pdf) [[all notes]](https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf)
+* STAT 8301: Topics in Probability Theory (taught by [Roman Vershynin](https://www.math.uci.edu/~rvershyn/)) [[pdf--in progress!]](vershynin_HDP.pdf) [[all notes]](https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf)
 * IEOR 8100: Reinforcement Learning <a href= "{{ site.baseurl }}/notes/rl-notes.pdf" title="RL">[pdf]</a> [[course website]](https://ieor8100.github.io/rl/)
 * STAT 8101: High-dimensional Statistical Inference <a href= "{{ site.baseurl }}/notes/high-dim-stat-inference-notes.pdf" title="high-dim-stats">[pdf--in progress!]</a> [[course website]](http://www.columbia.edu/~my2550/HDSI-2018/HDSI.html)
 * COMS 6998-5: Algorithms with a Geometric Lens <a href= "{{ site.baseurl }}/notes/alggeo_scribe_9_25_17.pdf" title="alg-geo">[scribe notes]</a> [[course website]](https://ilyaraz.org/static/class/)
