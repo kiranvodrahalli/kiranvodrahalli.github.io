@@ -18,7 +18,7 @@ ___
 ## Technical Reviews
 
 * Learning to Plan and Hierarchical, Multi-Task Reinforcement Learning [[pdf]](ieor8100_project.pdf) (for [IEOR 8100](https://ieor8100.github.io/rl/))
-* Generalization from Margins: Connecting Boosting Theory to Neural Nets [[pdf--in progress!](margins_generalization_boosting_nn.pdf) (at Columbia DSI Seminar)
+* Generalization from Margins: Connecting Boosting Theory to Neural Nets [[pdf--in progress!]](margins_generalization_boosting_nn.pdf) (at Columbia DSI Seminar)
 * Learning Sparse Polynomials [[pdf]](alggeo_project.pdf) (for [COMS 6998-5](https://ilyaraz.org/static/class/))
 * Interactive Clustering [[pdf]](interactive_clustering.pdf) (for [COMS 6998-4](http://www.cs.columbia.edu/~djhsu/coms6998-f17/))
 * Convex Optimization and Randomness [[pdf]](convex_opt_bubeck_ch6.pdf) (for [Dave Blei's Reading Group](https://groups.google.com/forum/#!forum/columbia-ml-reading))
