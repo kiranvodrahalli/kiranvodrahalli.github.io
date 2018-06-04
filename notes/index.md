@@ -59,6 +59,11 @@ For now, I have individual class notes for some classes I've taken. Sometimes, l
 
 <!-- add seminar names and organize by them (e.g., Princeton Alg-ML; Columbia CS) --> 
 
+* The Power and Limits of Deep Learning and AI [[pdf]](liveTeX/yann_lecun_nov20.pdf): Professor Yann LeCun discussed deep learning. 
+* New Frontiers in Imitation Learning [[pdf]](liveTeX/yisong_yue_imitation_nov_03.pdf): Professor Yisong Yue discussed some recent work on imitation learning.
+* How does Computer Science Inform Modern Auction Theory [[pdf]](liveTeX/roughgarden_nov_01.pdf): Professor Tim Roughgarden discussed recent applications of auction design. 
+* Two Approaches to Non-Convex Machine Learning [[pdf]](liveTeX/yuchen_zhang_9_22_17.pdf): Yuchen Zhang discussed some recent work. 
+* What can Deep Learning learn from Linear Regression [[pdf]](liveTeX/ben_recht_9_22_17.pdf): Professor Ben Recht talked about generalization theory for deep nets. 
 * ManOpt: Manifold Optimization <a href = "{{ site.baseurl }}/notes/liveTeX/boumal_manopt.pdf">[pdf]</a>: Nicholas Boumal from Princeton gave a talk at the Alg-ML Reading Group on manifold optimization and ManOpt, his tool for solving optimization problems. 
 * Computational Thinking, Inferential Thinking, and Data Science <a href = "{{ site.baseurl }}/notes/liveTeX/mike_jordan_general.pdf">[pdf]</a>: Professor Michael Jordan from Berkeley gave a general talk on the trends towards intersecting the statistical, computer science, and optimization communities. The discussion includes inferential differential privacy, inferential communication theory, inferential computation theory, and finally, an aside on a general framework for accelerated Nesterov methods. 
 * Universality Laws for Randomized Dimension Reduction <a href = "{{ site.baseurl }}/notes/liveTeX/tropp_algml.pdf">[pdf]</a>: Professor Joel Tropp from CalTech CMS gave a talk at Alg-ML on the quality of random matrices from fairly arbitrary distributions such that the image of the random projection matrix does not intersect the origin (nothing in the original dataset gets collapsed to zero). It turns out that computationally efficient random matrix distributions, like sparse Rademacher matrices, provably obey the same phase transition laws as Gaussian random matrices for the condition that the image does not intersect the nullspace, which allows for considerable computational speedups. Additionally, there are also provable bounds on the stability of such random matrix projections.
@@ -92,6 +97,11 @@ For now, I have individual class notes for some classes I've taken. Sometimes, l
 
 ### Symposia Notes
 
+* Bridging Optimization Theory, Information Theory, and Data Science at Princeton (May. 2018) [[pdf]](liveTeX/bridging_opt_info_theory_data_sci.pdf)
+* Mathematics of Deep Learning at Princeton (Mar. 2018) [[pdf]](liveTeX/mathematics_of_deep_learning_pton.pdf)
+* NYU Mini-Theory Symposium (Feb. 2018) [[pdf]](liveTeX/nyu_theory_symp_02_02_18.pdf)
+
 ### Conference Notes
 
-* Linear Algebra in Machine Learning <a href = "{{ site.baseurl }}/notes/liveTeX/ravi_kannan.pdf">[pdf]</a>: Ravi Kannan from Microsoft Research gave a talk at COLT 2016 on the role of linear algebra in machine learning over the years, taking a historical perspective and covering the main highlights as well as some more recent results. 
+* NIPS 2017 Workshop: Deep Learning Theory [[pdf]](liveTeX/nips17_workshop_talk.pdf)
+* COLT 2016 keynote: Linear Algebra in Machine Learning <a href = "{{ site.baseurl }}/notes/liveTeX/ravi_kannan.pdf">[pdf]</a>: Ravi Kannan from Microsoft Research gave a talk at COLT 2016 on the role of linear algebra in machine learning over the years, taking a historical perspective and covering the main highlights as well as some more recent results. 
