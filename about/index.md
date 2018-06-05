@@ -25,7 +25,7 @@ My primary area of research is provable algorithms and models for computational 
 * Theoretical frameworks for unsupervised learning which allow one to give guarantees on performance
 * Identifying general, favorable properties of unsupervised feature representations
 * Compressed sensing and recovery properties of representations
-* Identifying and learning over low-dimensional structures (of all sorts, but recently I have focused on various notions of sparsity). In particular, the goal is to give algorithms which achieve sample complexities and computational complexities which depend on the ``low-dimensional'' part of the structure, rather than the (potentially high-dimensional) ambient space.
+* Identifying and learning over low-dimensional structures (of all sorts, but recently I have focused on various notions of sparsity). In particular, the goal is to give algorithms which achieve sample complexities and computational complexities which depend on the ''low-dimensional'' part of the structure, rather than the (potentially high-dimensional) ambient space.
 * Interactive learning applied to evaluation methodology and learning problem formulation
 * Differentially private systems
 * Going beyond i.i.d. assumptions: Learning over non-product distributions, etc. I've also recently gotten interested in adaptive data analysis and other settings where the training data distribution and the testing data distribution do not satisfy simple properties (like i.i.d.). 

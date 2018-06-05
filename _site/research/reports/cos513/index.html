@@ -112,11 +112,9 @@ Team: Lydia Liu, Niranjani Prasad, Kiran Vodrahalli
 
 <p>To summarize the new learning problem, we have \(92\) pairs of MEG-image data. The
 MEG has \(306\) channels; each channel has a \(k\)-dim frequency vector which has as entries the coefficients of FFT on the time series data for the channel. We select \(k\).
-We will represent the image in two ways:</p>
-<ul>
-  <li>Naive version: grayscale image vector</li>
-  <li>Convolutional neural network layer features stacked on top of each other in a vector format. We get the CNN as a pre-trained model on the large ImageNet dataset (using Caffe from Berkeley Vision).</li>
-</ul>
+We will represent the image in two ways:
+- Naive version: grayscale image vector
+- Convolutional neural network layer features stacked on top of each other in a vector format. We get the CNN as a pre-trained model on the large ImageNet dataset (using Caffe from Berkeley Vision).</p>
 
 <p>For each of the \(306\) channels we learn a matrix:
 <script type="math/tex">F = AL</script>
@@ -849,7 +847,7 @@ We performed PCA to reduce the voxel space dimension on a single subject’s fMR
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2018-06-04T21:20:57-04:00">2018</time>. All rights reserved.
+          &copy; <time datetime="2018-06-05T00:07:17-04:00">2018</time>. All rights reserved.
         </small>
       </footer>
     </div>
