@@ -105,4 +105,4 @@ For now, I have individual class notes for some classes I've taken. Sometimes, l
 ### Conference Notes
 
 * NIPS 2017 Workshop: Deep Learning Theory [[pdf]](liveTeX/nips17_workshop_talk.pdf)
-* COLT 2016 keynote: Linear Algebra in Machine Learning <a href = "{{ site.baseurl }}/notes/liveTeX/ravi_kannan.pdf">[pdf]</a>: Ravi Kannan from Microsoft Research gave a talk at COLT 2016 on the role of linear algebra in machine learning over the years, taking a historical perspective and covering the main highlights as well as some more recent results. 
+* COLT 2016 Keynote by Ravi Kannan: Linear Algebra in Machine Learning <a href = "{{ site.baseurl }}/notes/liveTeX/ravi_kannan.pdf">[pdf]</a>
