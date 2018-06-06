@@ -103,12 +103,17 @@ ___
 * [Theory of Classification (Boucheron, Bousquet, Lugosi)](https://www.esaim-ps.org/articles/ps/pdf/2005/01/ps0420.pdf)
 * [Understanding Machine Learning (Shai [Shalev-Shwartz, Ben-David])](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf)
 * [Foundations of Machine Learning (Mohri, Rostamizadeh, and Talwalkar)](https://cs.nyu.edu/~mohri/mlbook/)
+* [CS 229 (Stanford Machine Learning)](http://cs229.stanford.edu/)
+* [Statistical Learning Theory (Percy Liang)](https://web.stanford.edu/class/cs229t/Lectures/percy-notes.pdf)
+* [A Course in Machine Learning (Hal Daumé III)](ciml.info)
 * [Statistical Learning Theory (Sham Kakade)](http://stat.wharton.upenn.edu/~skakade/courses/stat928/)
 * [Computational and Statistical Learning Theory (Nati Srebro)](http://ttic.uchicago.edu/~nati/Teaching/TTIC31120/2016/)
 * [Boosting: Foundations and Algorithms (Robert Schapire and Yoav Freund)](https://mitpress.mit.edu/books/boosting)
 * [High Dimensional Stats (Phillipe Rigollet)](http://www-math.mit.edu/~rigollet/PDFs/RigNotes17.pdf)
 * [The Elements of Statistical Learning (HTF)](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 * [Statistical Learning with Sparsity (HTW)](https://web.stanford.edu/~hastie/StatLearnSparsity_files/SLS_corrected_1.4.16.pdf)
+* [Theory of Statistics (John Duchi)](https://web.stanford.edu/class/stats300b/)
+* [Information Theory and Statistics (John Duchi)](https://web.stanford.edu/class/stats311/)
 * [Sparsity, Structure, and Inference (Yuxin Chen)](http://www.princeton.edu/~yc5/ele538b_sparsity/)
 
 #### Optimal Transport
@@ -118,6 +123,7 @@ ___
 #### Interactive Learning
 * [Interactive Learning (Daniel Hsu)](http://www.cs.columbia.edu/~djhsu/coms6998-f17/index.html)
 * [The Algorithmic Foundations of Differential Privacy (Cynthia Dwork and Aaron Roth)](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf)
+* [The Algorithmic Foundations of Adaptive Data Analysis (Aaron Roth)](https://adaptivedataanalysis.com/about/)
 * [Reinforcement Learning (Shipra Agrawal)](https://ieor8100.github.io/rl/)
 * [Dynamic Programming and Reinforcement Learning (Daniel Russo)](https://djrusso.github.io/RLCourse/)
 * [Learning and Optimization for Sequential Decision Making (Shipra Agrawal)](https://agrawal.wikischolars.columbia.edu/Lecture+Notes+and+references)
@@ -134,6 +140,7 @@ ___
 * [Non-Convex Optimization for Machine Learning: Design, Analysis, and Understanding (Tengyu Ma)](https://dataspace.princeton.edu/jspui/bitstream/88435/dsp01th83m199d/1/Ma_princeton_0181D_12361.pdf)
 * [Algorithmic Aspects of ML (Rong Ge)](https://www2.cs.duke.edu/courses/fall16/compsci590.2/)
 * [New Directions in Theoretical ML (Sanjeev Arora)](https://www.cs.princeton.edu/courses/archive/fall17/cos597A/)
+* [Ten Lectures and Forty-Two Open Problems in the Mathematics of Data Science (Afonso Bandeira)](https://cims.nyu.edu/~bandeira/TenLecturesFortyTwoProblems.pdf)
 * [Advanced Machine Learning (Daniel Hsu)](http://www.cs.columbia.edu/~djhsu/coms4772-f16/)
 * [Unsupervised Learning: Theory and Practice (Elad Hazan)](http://www.cs.princeton.edu/courses/archive/spring17/cos598E/)
 * [Community Detection Survey (Emmanuel Abbe)](http://www.princeton.edu/~eabbe/publications/abbe_FNT_2.pdf)
@@ -154,6 +161,7 @@ ___
 * [Algorithmic Convex Geometry (Santosh Vempala)](https://www.cc.gatech.edu/~vempala/papers/acg.pdf)
 * [Approximation Algorithms (David Williamson)](http://inst.eecs.berkeley.edu/~cs294-145/sp18/)
 * [The Design of Approximation Algorithms (Williamson and Shmoys)](http://www.designofapproxalgs.com/index.php)
+* [Integer Programming and Combinatorial Optimization (Dorit Hochbaum)](http://www.ieor.berkeley.edu/~hochbaum/files/ieor269-2010.pdf)
 * [Geometric Random Walks: A Survey (Santosh Vempala)](https://www.cc.gatech.edu/~vempala/papers/survey.pdf)
 * [Randomness and Computation (Alistair Sinclair)](https://people.eecs.berkeley.edu/~sinclair/cs271/s18.html)
 * [Randomized Algorithms and Probabilistic Analysis (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cse525au16/index.html)
@@ -173,6 +181,7 @@ ___
 * [Introduction to Online Convex Optimization (Elad Hazan)](http://ocobook.cs.princeton.edu/OCObook.pdf)
 * [Interplay between Convex Optimization and Geometry (Yin Tat Lee)](http://yintat.com/cse599_winter2018/)
 * [Convex Optimization and Approximation (Moritz Hardt)](https://ee227c.github.io/)
+* [Convex Optimization II (John Duchi)](http://web.stanford.edu/class/ee364b/index.html)
 * [Large Scale Optimization for Data Science (Yuxin Chen)](http://www.princeton.edu/~yc5/ele538_optimization/)
 * [Competitive Analysis via Convex Optimization (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cse599I-spring-2018/)
 * [Proximal Algorithms (Parikh and Boyd)](http://web.stanford.edu/~boyd/papers/pdf/prox_algs.pdf)
@@ -192,6 +201,9 @@ ___
 * [Neural Networks: Theory and Applications (Sebastian Seung)](https://cos485.github.io/)
 * [Convolutional Networks for Visual Recognition (Fei-Fei Li)](http://cs231n.stanford.edu/)
 * [Deep Learning (Goodfellow, Bengio, Courville)](http://www.deeplearningbook.org/)
+* [Mathematics of Deep Learning (Joan Bruna)](https://joanbruna.github.io/MathsDL-spring18/)
+* [Inference and Representation (Joan Bruna)](https://github.com/joanbruna/ir17)
+* [Topics in Deep Learning (Joan Bruna)](http://joanbruna.github.io/stat212b/)
 
 ---
 
@@ -217,3 +229,6 @@ ___
 
 * [Princeton NLP Codebase](https://github.com/NLPrinceton)
 * [Harvard NLP Codebase](http://nlp.seas.harvard.edu/code/)
+* [BrainIAK](brainiak.org)
+
+
