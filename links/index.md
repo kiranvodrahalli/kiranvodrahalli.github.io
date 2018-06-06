@@ -166,6 +166,7 @@ ___
 * [Algorithmic Game Theory (NRTV)](http://www.cs.cmu.edu/~sandholm/cs15-892F13/algorithmic-game-theory.pdf)
 
 #### Convex Optimization
+* [Introductory Lectures on Convex Optimization (Yurii Nesterov)](https://www.springer.com/us/book/9781402075537)
 * [Convex Optimization: Algorithms and Complexity (Sébastian Bubeck)](http://sbubeck.com/Bubeck15.pdf)
 * [Linear and Semidefinite Programming (Ryan O'Donnell)](http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f11/www/)
 * [Convex Optimization (Boyd and Vandenberghe)](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)

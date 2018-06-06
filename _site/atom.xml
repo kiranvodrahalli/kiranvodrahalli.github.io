@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>exponentially surprised</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2018-06-06T07:13:11-04:00</updated>
- <id>http://localhost:4000</id>
+ <link href="https://kiranvodrahalli.github.io/atom.xml" rel="self"/>
+ <link href="https://kiranvodrahalli.github.io/"/>
+ <updated>2018-06-06T07:16:54-04:00</updated>
+ <id>https://kiranvodrahalli.github.io</id>
  <author>
    <name>Kiran Vodrahalli</name>
    <email>kiran.vodrahalli@columbia.edu</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>First ArXiv Paper and a New Title!</title>
-   <link href="http://localhost:4000/2016/10/21/arxivpaper-titleupdate/"/>
+   <link href="https://kiranvodrahalli.github.io/2016/10/21/arxivpaper-titleupdate/"/>
    <updated>2016-10-21T00:00:00-04:00</updated>
-   <id>http://localhost:4000/2016/10/21/arxivpaper-titleupdate</id>
+   <id>https://kiranvodrahalli.github.io/2016/10/21/arxivpaper-titleupdate</id>
    <content type="html">&lt;p&gt;Hey everyone! Check out my first arXiv paper &lt;a href=&quot;https://arxiv.org/abs/1610.03914&quot;&gt; Mapping Between Natural Movie fMRI Responses and Word-Sequence Representations&lt;/a&gt;, to be presented at &lt;a href=&quot;https://sites.google.com/site/mlini2016nips/&quot;&gt; NIPS 2016 Workshop on Representation Learning in Artificial and Biological Neural Networks &lt;/a&gt;. This work is the culmination of my senior thesis work and summer research at Princeton CS and Neuroscience. I will be making some updates soon (more results and experiments) so stay tuned.&lt;/p&gt;
 
 &lt;p&gt;Secondly, I’ve finally removed my placeholder title for this website. I really like the phrase “exponentially suprised” - it’s a reference to an intuitive way for thinking about the information theoretic quantity of entropy, “surprise”. The more entropy a system has, the less sure you are about what it will output next; thus, the more surprised you are. Uniform distributions are very surprising, while having all the probability mass at a point is very unsurprising. You know exactly what will happen.&lt;/p&gt;
@@ -34,9 +34,9 @@
  
  <entry>
    <title>Presentations at ICML 2016</title>
-   <link href="http://localhost:4000/2016/06/21/icml16/"/>
+   <link href="https://kiranvodrahalli.github.io/2016/06/21/icml16/"/>
    <updated>2016-06-21T00:00:00-04:00</updated>
-   <id>http://localhost:4000/2016/06/21/icml16</id>
+   <id>https://kiranvodrahalli.github.io/2016/06/21/icml16</id>
    <content type="html">&lt;p&gt;Update: Check out the presentation I gave in the &lt;a href=&quot;https://kiranvodrahalli.github.io/projects/#presentations&quot;&gt;projects section&lt;/a&gt; of my website!&lt;/p&gt;
 
 &lt;p&gt;Well it’s been a year since my &lt;a href=&quot;/2015/06/21/intro/&quot;&gt;first post&lt;/a&gt;, so let’s do another post today in the hopes that I’ll actually start writing things this summer!&lt;/p&gt;
@@ -78,9 +78,9 @@
  
  <entry>
    <title>MathJax Tests</title>
-   <link href="http://localhost:4000/2015/06/21/intro/"/>
+   <link href="https://kiranvodrahalli.github.io/2015/06/21/intro/"/>
    <updated>2015-06-21T00:00:00-04:00</updated>
-   <id>http://localhost:4000/2015/06/21/intro</id>
+   <id>https://kiranvodrahalli.github.io/2015/06/21/intro</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;/2015/06/21/intro/&quot;&gt;First post&lt;/a&gt;, woo hoo! This blog will be roughly about my thoughts about research and maybe other things, I haven’t really decided yet. Probably some notes and projects.&lt;/p&gt;
 
 &lt;p&gt;In the meantime, here are some tests to ensure MathJax is working.&lt;/p&gt;
