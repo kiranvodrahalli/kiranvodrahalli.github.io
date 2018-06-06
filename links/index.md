@@ -175,7 +175,7 @@ ___
 * [Convex Optimization and Approximation (Moritz Hardt)](https://ee227c.github.io/)
 * [Large Scale Optimization for Data Science (Yuxin Chen)](http://www.princeton.edu/~yc5/ele538_optimization/)
 * [Competitive Analysis via Convex Optimization (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cse599I-spring-2018/)
-* [Proximal Algorithms(Parikh and Boyd)](http://web.stanford.edu/~boyd/papers/pdf/prox_algs.pdf)
+* [Proximal Algorithms (Parikh and Boyd)](http://web.stanford.edu/~boyd/papers/pdf/prox_algs.pdf)
 * [ADMM Survey (BPCPE)](https://web.stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf)
 
 
