@@ -205,7 +205,7 @@ ___
 * [The Multiplicative Weights Update Method: A Meta-Algorithm and Applications (Arora, Hazan, Kale)](https://www.cs.princeton.edu/~arora/pubs/MWsurvey.pdf)
 * [The Convex Geometry of Linear Inverse Problems (CRPW)](https://arxiv.org/abs/1012.0621)
 * [Simultaneous Analysis of Lasso and Dantzig Selector (Bickel, Ritov, and Tsybakov)](https://projecteuclid.org/euclid.aos/1245332830;)
-* [On the Complexity of Linear Prediction: Risk Bounds, Margin Bounds, and Regularization](https://www.cs.cornell.edu/~sridharan/rad-paper.pdf)
+* [On the Complexity of Linear Prediction: Risk Bounds, Margin Bounds, and Regularization (Sham Kakade, Karthik Sridharan, and Ambuj Tewari)](https://www.cs.cornell.edu/~sridharan/rad-paper.pdf)
 * [The Fast Johnson-Lindenstrauss Algorithm and Approximate Nearest Neighbors (Ailon and Chazelle)](https://www.cs.princeton.edu/~chazelle/pubs/FJLT-sicomp09.pdf)
 * [PAC-Bayes and Margins (John Langford and John Shawe-Taylor)](https://papers.nips.cc/paper/2317-pac-bayes-margins.pdf)
 * [A Decision-Theoretic Generalization of Online Learning and an Application to Boosting (Freund and Schapire)](http://cseweb.ucsd.edu/~yfreund/papers/adaboost.pdf)
