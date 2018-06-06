@@ -65,6 +65,7 @@ ___
 * [Approximately Correct](http://approximatelycorrect.com/)
 * [Math \\(\cap\\) Programming](https://jeremykun.com/)
 * [Matt.Might.net](http://matt.might.net/articles/)
+* [PG Bovine](http://pgbovine.net/writings.htm)
 * [inFERENce](http://www.inference.vc/)
 * [Seita's Place](https://danieltakeshi.github.io/)
 * [One Weird Kernel Trick](http://oneweirdkerneltrick.com/) (See also the [SIGBOVIK conference](http://sigbovik.org/))
@@ -129,6 +130,7 @@ ___
 * [Learning and Optimization for Sequential Decision Making (Shipra Agrawal)](https://agrawal.wikischolars.columbia.edu/Lecture+Notes+and+references)
 * [Bandits and RL (Alex Slivkins and Alekh Agarwal)](http://alekhagarwal.net/bandits_and_rl/)
 * [Multi-Arm Bandit Survey (Bubeck and Cesa-Bianchi)](http://sbubeck.com/SurveyBCB12.pdf)
+* [Sébastien Bubeck's YouTube Channel](https://www.youtube.com/channel/UC-UC-nE8B33UGnC-NRaSfug)
 * [Reinforcement Learning (Sutton and Barto, 2018 edition)](https://drive.google.com/file/d/1xeUDVGWGUUv1-ccUMAZHJLej2C7aAFWY/view)
 * [Algorithms for Reinforcement Learning (Csaba Szepesvári)](https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf)
 * [Deep Reinforcement Learning (Sergey Levine)](http://rail.eecs.berkeley.edu/deeprlcourse/)
@@ -148,6 +150,7 @@ ___
 #### Theoretical Computer Science
 * [Advanced Algorithms (Sanjeev Arora)](https://www.cs.princeton.edu/courses/archive/fall14/cos521/)
 * [Algorithms through Geometric Lens (Alex Andoni and Ilya Razenshteyn)](https://ilyaraz.org/static/class/materials.html)
+* [Simons Institute Video Lectures](https://www.youtube.com/user/SimonsInstitute)
 * [Mathematics and Computation (Avi Widgerson)](https://www.math.ias.edu/files/mathandcomp.pdf)
 * [Spectral Graph Theory (Dan Spielman)](http://www.cs.yale.edu/homes/spielman/561/)
 * [A Theorist's Toolkit (Jon Kelner)](https://learning-modules.mit.edu/materials/index.html?uuid=/course/18/sp18/18.408#materials)
