@@ -54,6 +54,7 @@ ___
 * [My Biased Coin](http://mybiasedcoin.blogspot.com/)
 * [In Theory](https://lucatrevisan.wordpress.com/)
 * [TCS math](https://tcsmath.github.io/)
+* [What's New](https://terrytao.wordpress.com/)
 * [GeomBlog](http://blog.geomblog.org/)
 * [TheoryDish](https://theorydish.blog/)
 * [Minimizing Regret](http://www.minimizingregret.com/)
@@ -91,14 +92,15 @@ ___
 <!-- moitra, rigollet, rong ge, costis, madry, ... ? -->
 
 #### High-Dimensional Probability, Geometry, and Functional Analysis
-* [Probability with Martingales (David Williams)](https://www.cambridge.org/core/books/probability-with-martingales/B4CFCE0D08930FB46C6E93E775503926)
-* [Probability and Stochastics (Erhan Çinlar)](https://www.springer.com/us/book/9780387878584)
 * [Probability in High Dimension (Ramon van Handel)](http://www.princeton.edu/~rvan/APC550.pdf)
 * [High Dimensional Probability (Roman Vershynin)](https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf)
 * [High Dimensional Probability (Phillipe Rigollet)](https://learning-modules.mit.edu/materials/index.html?uuid=/course/18/sp18/18.657#materials)
 * [Concentration Inequalities: A Nonasymptotic Theory of Independence (Boucheron, Lugosi, Massart)](https://www.hse.ru/data/2016/11/24/1113029206/Concentration%20inequalities.pdf)
 * [An Introduction to Matrix Concentration Inequalities (Joel Tropp)](http://users.cms.caltech.edu/~jtropp/books/Tro14-Introduction-Matrix-FnTML-rev.pdf)
 * [Markov Chains and Mixing Times (Levin, Peres, Wilmer)](http://pages.uoregon.edu/dlevin/MARKOV/markovmixing.pdf)
+* [Stochastic Processes on Graphs (Allan Sly)](https://web.math.princeton.edu/~asly/CSP2018/GradCSP.html)
+* [Modern Discrete Probability (Allan Sly)](https://web.math.princeton.edu/~asly/GradProb.html)
+* [Modern Discrete Probability: An Essential Toolkit (Roch)](http://www.math.wisc.edu/~roch/mdp/index.html)
 * [A Mathematical Introduction to Compressive Sensing (Foucart and Rauhut)](https://www.springer.com/us/book/9780817649470)
 * [Elements of Information Theory (Cover and Thomas)](https://www.wiley.com/en-us/Elements+of+Information+Theory%2C+2nd+Edition-p-9780471241959)
 * [Analysis of Boolean Functions (Ryan O'Donnell)](http://www.cs.tau.ac.il/~amnon/Classes/2016-PRG/Analysis-Of-Boolean-Functions.pdf)
@@ -229,7 +231,19 @@ ___
 * [Inference and Representation (Joan Bruna)](https://github.com/joanbruna/ir17)
 * [Topics in Deep Learning (Joan Bruna)](http://joanbruna.github.io/stat212b/)
 
+#### Linear Algebra and Matrix Analysis
+* [Introduction to Linear Algebra (Strang)](http://math.mit.edu/~gs/linearalgebra/)
+* [Linear Algebra Done Right (Axler)](http://linear.axler.net/)
+* [Matrix Computations (Golub and Van Loan)](http://web.mit.edu/ehliu/Public/sclark/Golub%20G.H.,%20Van%20Loan%20C.F.-%20Matrix%20Computations.pdf)
+* [Matrix Analysis (Horn and Johnson)](http://www.cambridge.org/us/academic/subjects/mathematics/algebra/matrix-analysis-2nd-edition?format=PB&isbn=9780521839402#IIBBbEAyHTdq2c6M.97)
+
 #### Analysis
+* [Principles of Mathematical Analysis (Rudin)](https://www.amazon.com/Principles-Mathematical-Analysis-International-Mathematics/dp/007054235X)
+* [An Introduction to Measure Theory (Terry Tao)](https://terrytao.files.wordpress.com/2011/01/measure-book1.pdf)
+* [Probability Theory (Allan Sly)](https://web.math.princeton.edu/~asly/MAT385.html)
+* [Probability: Theory and Examples (Durrett)](https://services.math.duke.edu/~rtd/PTE/PTE4_1.pdf)
+* [Probability with Martingales (David Williams)](https://www.cambridge.org/core/books/probability-with-martingales/B4CFCE0D08930FB46C6E93E775503926)
+* [Probability and Stochastics (Erhan Çinlar)](https://www.springer.com/us/book/9780387878584)
 * [Fourier Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7562.html)
 * [Complex Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7563.html)
 * [Real Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/8008.html)
@@ -240,6 +254,18 @@ ___
 * [Topology 2nd Ed. (Munkres)](https://www.amazon.com/Topology-2nd-James-Munkres/dp/0131816292)
 * [Elements of Algebraic Topology (Munkres)](https://www.amazon.com/Elements-Algebraic-Topology-James-Munkres/dp/0201627280)
 * [Algebraic Topology (Hatcher)](http://pi.math.cornell.edu/~hatcher/AT/ATpage.html)
+
+#### Tools
+* [Handbook of Mathematical Functions (Abramowitz and Stegun)](http://people.math.sfu.ca/~cbm/aands/abramowitz_and_stegun.pdf)
+* [Online Encyclopedia of Integer Sequences (OEIS)](https://oeis.org/)
+* [Wolfram Alpha](http://www.wolframalpha.com/)
+* [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf) 
+
+#### Other Compilations
+* [Holden Lee's notes](https://holdenlee.github.io/blog/notes.html) (there are a lot!!!)
+* [Arun Debray's notes](https://www.ma.utexas.edu/users/a.debray/lecture_notes/) (there are also a lot!!)
+* [Billy Fang's notes](https://www.stat.berkeley.edu/~blfang/#notes)
+
 
 ---
 
@@ -267,5 +293,10 @@ ___
 * [Princeton NLP Codebase](https://github.com/NLPrinceton)
 * [Harvard NLP Codebase](http://nlp.seas.harvard.edu/code/)
 * [BrainIAK](brainiak.org)
+
+
+### Fun Links
+
+* [Princeton Math Ph.D. General Exams](http://web.math.princeton.edu/generals/)
 
 
