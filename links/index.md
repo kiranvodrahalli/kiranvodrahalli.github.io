@@ -106,6 +106,7 @@ ___
 * [Analysis of Boolean Functions (Ryan O'Donnell)](http://www.cs.tau.ac.il/~amnon/Classes/2016-PRG/Analysis-Of-Boolean-Functions.pdf)
 * [Metric Embeddings and Geometric Inequalities (Assaf Naor)](/notes/mat529_notes.pdf)
 * [Random Fields and Geometry (Adler and Taylor)](https://www.springer.com/us/book/9780387481128)
+* [Information Geometry and its Applications (Shun-ichi Amari)](https://www.springer.com/us/book/9784431559771)
 
 #### Learning Theory and Statistics
 * [Theory of Classification (Boucheron, Bousquet, Lugosi)](https://www.esaim-ps.org/articles/ps/pdf/2005/01/ps0420.pdf)
@@ -232,12 +233,14 @@ ___
 * [Topics in Deep Learning (Joan Bruna)](http://joanbruna.github.io/stat212b/)
 
 #### Linear Algebra and Matrix Analysis
+* [Linear Algebra (Michael Damron and Tasho Kaletha)](http://people.math.gatech.edu/~mdamron6/MAT217_all_lectures.pdf)
 * [Introduction to Linear Algebra (Strang)](http://math.mit.edu/~gs/linearalgebra/)
 * [Linear Algebra Done Right (Axler)](http://linear.axler.net/)
 * [Matrix Computations (Golub and Van Loan)](http://web.mit.edu/ehliu/Public/sclark/Golub%20G.H.,%20Van%20Loan%20C.F.-%20Matrix%20Computations.pdf)
 * [Matrix Analysis (Horn and Johnson)](http://www.cambridge.org/us/academic/subjects/mathematics/algebra/matrix-analysis-2nd-edition?format=PB&isbn=9780521839402#IIBBbEAyHTdq2c6M.97)
 
 #### Analysis
+* [Analysis in a Single Variable (Michael Damron and Mark McConnell)](http://people.math.gatech.edu/~mdamron6/MAT_215_all_lectures.pdf)
 * [Principles of Mathematical Analysis (Rudin)](https://www.amazon.com/Principles-Mathematical-Analysis-International-Mathematics/dp/007054235X)
 * [An Introduction to Measure Theory (Terry Tao)](https://terrytao.files.wordpress.com/2011/01/measure-book1.pdf)
 * [Probability Theory (Allan Sly)](https://web.math.princeton.edu/~asly/MAT385.html)
@@ -249,11 +252,29 @@ ___
 * [Real Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/8008.html)
 * [Functional Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/9627.html)
 
-#### Topology
+#### Combinatorics and Discrete Math
+* [Combinatorial Mathematics (van Zwam)](https://www.math.lsu.edu/~svanzwam/pdf/notes.pdf)
+* [Generatingfunctionology (Wilf)](https://www.math.upenn.edu/~wilf/gfology2.pdf)
+* [Introduction to Graph Theory (West)](https://faculty.math.illinois.edu/~west/igt/)
+* [Topics in Combinatorics: The Probabilistic Method (Noga Alon)](https://web.math.princeton.edu/~nalon/prob.html)
+* [The Probabilistic Method (Alon and Spencer)](https://www.wiley.com/en-us/The+Probabilistic+Method%2C+3rd+Edition-p-9780470170205)
+* [Modern Graph Theory (Bela Bollobas)](https://www.springer.com/us/book/9780387984889)
+* [Introduction to Random Graphs (Frieze and Karonski)](https://www.math.cmu.edu/~af1p/BOOK.pdf)
 
+#### Topology
 * [Topology 2nd Ed. (Munkres)](https://www.amazon.com/Topology-2nd-James-Munkres/dp/0131816292)
 * [Elements of Algebraic Topology (Munkres)](https://www.amazon.com/Elements-Algebraic-Topology-James-Munkres/dp/0201627280)
 * [Algebraic Topology (Hatcher)](http://pi.math.cornell.edu/~hatcher/AT/ATpage.html)
+
+#### Algebra 
+* [Group Theory]()
+* [Representation Theory]()
+* [Galois Theory]()
+
+#### Functional Programming and Programming Languages
+* [Types and Programming Languages (Pierce)](https://www.asc.ohio-state.edu/pollard.4/type/books/pierce-tpl.pdf)
+* [Functional Programming (David Walker)](http://www.cs.princeton.edu/courses/archive/fall13/cos326/)
+* [Programming Languages (David Walker)](http://www.cs.princeton.edu/~dpw/cos441-11/schedule.htm)
 
 #### Tools
 * [Handbook of Mathematical Functions (Abramowitz and Stegun)](http://people.math.sfu.ca/~cbm/aands/abramowitz_and_stegun.pdf)
@@ -282,6 +303,7 @@ ___
 * [On the Complexity of Linear Prediction: Risk Bounds, Margin Bounds, and Regularization (Sham Kakade, Karthik Sridharan, and Ambuj Tewari)](https://www.cs.cornell.edu/~sridharan/rad-paper.pdf)
 * [The Fast Johnson-Lindenstrauss Algorithm and Approximate Nearest Neighbors (Ailon and Chazelle)](https://www.cs.princeton.edu/~chazelle/pubs/FJLT-sicomp09.pdf)
 * [PAC-Bayes and Margins (John Langford and John Shawe-Taylor)](https://papers.nips.cc/paper/2317-pac-bayes-margins.pdf)
+* [Approximate Graph Coloring by Semidefinite Programming (Karger, Motwani, Sudan)](https://dl.acm.org/citation.cfm?id=274791)
 * [A Decision-Theoretic Generalization of Online Learning and an Application to Boosting (Freund and Schapire)](http://cseweb.ucsd.edu/~yfreund/papers/adaboost.pdf)
 * [Online Algorithms in Machine Learning (Avrim Blum)](http://www.cs.cmu.edu/~avrim/Papers/survey.pdf)
 
