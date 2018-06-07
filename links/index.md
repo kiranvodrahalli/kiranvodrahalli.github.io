@@ -229,6 +229,18 @@ ___
 * [Inference and Representation (Joan Bruna)](https://github.com/joanbruna/ir17)
 * [Topics in Deep Learning (Joan Bruna)](http://joanbruna.github.io/stat212b/)
 
+#### Analysis
+* [Fourier Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7562.html)
+* [Complex Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7563.html)
+* [Real Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/8008.html)
+* [Functional Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/9627.html)
+
+#### Topology
+
+* [Topology 2nd Ed. (Munkres)](https://www.amazon.com/Topology-2nd-James-Munkres/dp/0131816292)
+* [Elements of Algebraic Topology (Munkres)](https://www.amazon.com/Elements-Algebraic-Topology-James-Munkres/dp/0201627280)
+* [Algebraic Topology (Hatcher)](http://pi.math.cornell.edu/~hatcher/AT/ATpage.html)
+
 ---
 
 ### Favorite Papers
@@ -247,17 +259,7 @@ ___
 * [A Decision-Theoretic Generalization of Online Learning and an Application to Boosting (Freund and Schapire)](http://cseweb.ucsd.edu/~yfreund/papers/adaboost.pdf)
 * [Online Algorithms in Machine Learning (Avrim Blum)](http://www.cs.cmu.edu/~avrim/Papers/survey.pdf)
 
-#### Analysis
-* [Fourier Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7562.html)
-* [Complex Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7563.html)
-* [Real Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/8008.html)
-* [Functional Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/9627.html)
 
-#### Topology
-
-* [Topology 2nd Ed. (Munkres)](https://www.amazon.com/Topology-2nd-James-Munkres/dp/0131816292)
-* [Elements of Algebraic Topology (Munkres)](https://www.amazon.com/Elements-Algebraic-Topology-James-Munkres/dp/0201627280)
-* [Algebraic Topology (Hatcher)](http://pi.math.cornell.edu/~hatcher/AT/ATpage.html)
 ---
 
 ### Code 
