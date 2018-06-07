@@ -267,9 +267,10 @@ ___
 * [Algebraic Topology (Hatcher)](http://pi.math.cornell.edu/~hatcher/AT/ATpage.html)
 
 #### Algebra 
-* [Group Theory]()
-* [Representation Theory]()
-* [Galois Theory]()
+* [Group Theory (Mark McConnell)](/notes/340_notes.pdf)
+* [Linear Representations of Finite Groups (Serre)](https://link.springer.com/book/10.1007%2F978-1-4684-9458-7)
+* [Galois Theory (Xiaoheng Jerry Wang)](/notes/346LectureNotes_jerry_wang.pdf)
+* [Basic Algebraic Geometry](https://www.math.purdue.edu/~dvb/preprints/algeom.pdf)
 
 #### Functional Programming and Programming Languages
 * [Types and Programming Languages (Pierce)](https://www.asc.ohio-state.edu/pollard.4/type/books/pierce-tpl.pdf)
