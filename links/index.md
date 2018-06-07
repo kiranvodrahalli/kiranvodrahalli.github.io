@@ -123,13 +123,16 @@ ___
 * [The Elements of Statistical Learning (HTF)](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 * [All of Statistics (Larry Wasserman)](http://www.stat.cmu.edu/~larry/all-of-statistics/)
 * [All of Nonparametric Statistics (Larry Wasserman)](http://www.stat.cmu.edu/~larry/all-of-nonpar/index.html)
+* [Introduction to Nonparametric Estimation (Tsybakov)](https://link.springer.com/book/10.1007%2Fb13794)
 * [Mathematical Statistics (Jun Shao)](https://www.springer.com/us/book/9780387953823)
+* [Asymptotic Statistics (van der Vaart)](https://www.cambridge.org/core/books/asymptotic-statistics/A3C7DAD3F7E66A1FA60E9C8FE132EE1D)
 * [Statistical Learning with Sparsity (HTW)](https://web.stanford.edu/~hastie/StatLearnSparsity_files/SLS_corrected_1.4.16.pdf)
 * [Theory of Statistics (John Duchi)](https://web.stanford.edu/class/stats300b/)
 * [Information Theory and Statistics (John Duchi)](https://web.stanford.edu/class/stats311/)
 * [Theoretical Statistics I (Berkeley Stat 210a)](https://www.stat.berkeley.edu/~wfithian/courses/stat210a/)
 * [Theoretical Statistics II (Berkeley Stat 210b)](https://www.stat.berkeley.edu/~mjwain/stat210b/)
 * [Sparsity, Structure, and Inference (Yuxin Chen)](http://www.princeton.edu/~yc5/ele538b_sparsity/)
+* [Large Scale Inference: Empirical Bayes for Estimation, Testing, and Prediction (Efron)](https://statweb.stanford.edu/~ckirby/brad/LSI/monograph_CUP.pdf)
 
 #### Optimal Transport
 * [Computational Optimal Transport (Gabriel Peyré and Marco Cuturi)](https://arxiv.org/abs/1803.00567)
@@ -158,6 +161,7 @@ ___
 * [New Directions in Theoretical ML (Sanjeev Arora)](https://www.cs.princeton.edu/courses/archive/fall17/cos597A/)
 * [Ten Lectures and Forty-Two Open Problems in the Mathematics of Data Science (Afonso Bandeira)](https://cims.nyu.edu/~bandeira/TenLecturesFortyTwoProblems.pdf)
 * [Advanced Machine Learning (Daniel Hsu)](http://www.cs.columbia.edu/~djhsu/coms4772-f16/)
+* [Linear Dimensionality Reduction: Survey, Insights, Generalizations (Cunningham and Ghahramani)](http://jmlr.org/papers/v16/cunningham15a.html)
 * [Unsupervised Learning: Theory and Practice (Elad Hazan)](http://www.cs.princeton.edu/courses/archive/spring17/cos598E/)
 * [Community Detection Survey (Emmanuel Abbe)](http://www.princeton.edu/~eabbe/publications/abbe_FNT_2.pdf)
 
@@ -208,6 +212,8 @@ ___
 * [Introduction to Online Convex Optimization (Elad Hazan)](http://ocobook.cs.princeton.edu/OCObook.pdf)
 * [Interplay between Convex Optimization and Geometry (Yin Tat Lee)](http://yintat.com/cse599_winter2018/)
 * [Convex Optimization and Approximation (Moritz Hardt)](https://ee227c.github.io/)
+* [Lectures on Modern Convex Optimization (Tal and Nemirovski)](https://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf)
+* [Semidefinite Optimization (Laurent and Vallentin)](http://www.mi.uni-koeln.de/opt/wp-content/uploads/2015/10/laurent_vallentin_sdo_2012_05.pdf)
 * [Convex Optimization II (John Duchi)](http://web.stanford.edu/class/ee364b/index.html)
 * [Large Scale Optimization for Data Science (Yuxin Chen)](http://www.princeton.edu/~yc5/ele538_optimization/)
 * [Competitive Analysis via Convex Optimization (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cse599I-spring-2018/)
@@ -215,14 +221,21 @@ ___
 * [Convex and Conic Optimization (Amir Ali Ahmadi)](http://aaa.princeton.edu/orf523)
 * [ADMM Survey (BPCPE)](https://web.stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf)
 
-#### Graphical Models
+#### Graphical Models and Bayesian Inference
+* [Probabilistic Graphical Models (Koller and Friedman)](https://mitpress.mit.edu/books/probabilistic-graphical-models)
 * [Elements of Causal Inference](https://mitpress.mit.edu/books/elements-causal-inference) (note, open access!)
 * [Graphical Models, Exponential Families, and Variational Inference (Martin Wainwright and Michael Jordan)](https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf)
+* [Machine Learning: A Probabilistic Perspective (Kevin Murphy)](https://www.cs.ubc.ca/~murphyk/MLbook/)
+* [Gaussian Processes for Machine Learning (Rasmussen and Williams)](http://www.gaussianprocess.org/gpml/)
+* [Bayesian Nonparametrics and the Probabilistic Approach to Modeling (Zoubin Ghahramani)](http://mlg.eng.cam.ac.uk/pub/pdf/Gha12.pdf)
+* [An Introduction to Hidden Markov Models and Bayesian Networks (Zoubin Ghahramani)](http://mlg.eng.cam.ac.uk/zoubin/papers/ijprai.pdf)
+* [Fundamentals of Exponential Families (Brown)](https://www.jstor.org/stable/4355554?seq=1#page_scan_tab_contents)
 
 #### Natural Language Processing
 * [Natural Language Processing (Michael Collins)](http://www.cs.columbia.edu/~mcollins/cs4705-fall2017/)
 * [Deep Learning for Natural Language Processing (Richard Socher)](http://cs224d.stanford.edu/)
 * [Natural Language Processing (Sida Wang)](https://www.cs.princeton.edu/courses/archive/spring18/cos495/schedule/)
+* [Natural Language Processing (Jacob Eisenstein)](https://github.com/jacobeisenstein/gt-nlp-class)
 
 #### Deep Learning
 * [Neural Networks: Theory and Applications (Sebastian Seung)](https://cos485.github.io/)
@@ -236,6 +249,7 @@ ___
 * [Linear Algebra (Michael Damron and Tasho Kaletha)](http://people.math.gatech.edu/~mdamron6/MAT217_all_lectures.pdf)
 * [Introduction to Linear Algebra (Strang)](http://math.mit.edu/~gs/linearalgebra/)
 * [Linear Algebra Done Right (Axler)](http://linear.axler.net/)
+* [Advanced Linear Algebra (Roman)](https://www.springer.com/us/book/9780387728285)
 * [Matrix Computations (Golub and Van Loan)](http://web.mit.edu/ehliu/Public/sclark/Golub%20G.H.,%20Van%20Loan%20C.F.-%20Matrix%20Computations.pdf)
 * [Matrix Analysis (Horn and Johnson)](http://www.cambridge.org/us/academic/subjects/mathematics/algebra/matrix-analysis-2nd-edition?format=PB&isbn=9780521839402#IIBBbEAyHTdq2c6M.97)
 
@@ -302,6 +316,7 @@ ___
 * [The Convex Geometry of Linear Inverse Problems (CRPW)](https://arxiv.org/abs/1012.0621)
 * [Simultaneous Analysis of Lasso and Dantzig Selector (Bickel, Ritov, and Tsybakov)](https://projecteuclid.org/euclid.aos/1245332830;)
 * [On the Complexity of Linear Prediction: Risk Bounds, Margin Bounds, and Regularization (Sham Kakade, Karthik Sridharan, and Ambuj Tewari)](https://www.cs.cornell.edu/~sridharan/rad-paper.pdf)
+* [Variational Inference for Dirichlet Process Mixtures (Blei and Jordan)](http://www.cs.columbia.edu/~blei/papers/BleiJordan2004.pdf)
 * [The Fast Johnson-Lindenstrauss Algorithm and Approximate Nearest Neighbors (Ailon and Chazelle)](https://www.cs.princeton.edu/~chazelle/pubs/FJLT-sicomp09.pdf)
 * [PAC-Bayes and Margins (John Langford and John Shawe-Taylor)](https://papers.nips.cc/paper/2317-pac-bayes-margins.pdf)
 * [Approximate Graph Coloring by Semidefinite Programming (Karger, Motwani, Sudan)](https://dl.acm.org/citation.cfm?id=274791)
