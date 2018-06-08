@@ -372,6 +372,7 @@ ___
 * [Arun Debray's notes](https://www.ma.utexas.edu/users/a.debray/lecture_notes/) (there are also a lot!!)
 * [Evan Chen's notes](http://web.evanchen.cc/coursework.html)
 * [An Infinitely Large Napkin (Evan Chen)](http://web.evanchen.cc/napkin.html)
+* [Irene Chen's notes on papers](https://github.com/irenetrampoline/papers)
 * [Billy Fang's notes](https://www.stat.berkeley.edu/~blfang/#notes)
 
 
