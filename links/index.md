@@ -70,6 +70,7 @@ ___
 * [Jean Yang's blog](https://www.cs.cmu.edu/~jyang2/writing.html)
 * [inFERENce](http://www.inference.vc/)
 * [Seita's Place](https://danieltakeshi.github.io/)
+* [Power Overwhelming](https://usamo.wordpress.com/)
 * [One Weird Kernel Trick](http://oneweirdkerneltrick.com/) (See also the [SIGBOVIK conference](http://sigbovik.org/))
 
 ---
@@ -109,7 +110,8 @@ ___
 * [Information Geometry and its Applications (Shun-ichi Amari)](https://www.springer.com/us/book/9784431559771)
 * [An Elementary Introduction to Modern Convex Geometry (Keith Ball)](http://library.msri.org/books/Book31/files/ball.pdf)
 * [Lectures on Discrete Geometry (Matousek)](https://link.springer.com/book/10.1007%2F978-1-4613-0039-7)
-* [Information, Physics, and Computation (Mézard and Montanari)](https://web.stanford.edu/~montanar/RESEARCH/book.html)
+* [Information, Physics, and Computation (Mézard and Montanari)](https://web.stanford.edu/~montanar/RESEARCH/book.html)  
+* [The Cauchy-Schwarz Master Class (Steele)](https://www.cambridge.org/core/books/cauchyschwarz-master-class/A444E291C6E5928ADB2DD9F37C4C6EB8)
 
 
 #### Learning Theory and Statistics
@@ -287,6 +289,7 @@ ___
 * [Complex Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7563.html)
 * [Real Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/8008.html)
 * [Functional Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/9627.html)
+* [Manifolds and Differential Forms (Sjamaar)](http://pi.math.cornell.edu/~sjamaar/manifolds/manifold.pdf)
 
 #### Combinatorics and Discrete Math
 * [Combinatorial Mathematics (van Zwam)](https://www.math.lsu.edu/~svanzwam/pdf/notes.pdf)
@@ -308,6 +311,8 @@ ___
 * [Linear Representations of Finite Groups (Serre)](https://link.springer.com/book/10.1007%2F978-1-4684-9458-7)
 * [Galois Theory (Xiaoheng Jerry Wang)](/notes/346LectureNotes_jerry_wang.pdf)
 * [Basic Algebraic Geometry](https://www.math.purdue.edu/~dvb/preprints/algeom.pdf)
+* [Algebraic Geometry (Gathmann)](http://www.mathematik.uni-kl.de/agag/mitglieder/professoren/gathmann/notes/alggeom/)
+* [Basic Category Theory (Leinster)](https://arxiv.org/abs/1612.09375)
 
 #### Functional Programming and Programming Languages
 * [Types and Programming Languages (Pierce)](https://www.asc.ohio-state.edu/pollard.4/type/books/pierce-tpl.pdf)
@@ -315,9 +320,17 @@ ___
 * [Programming Languages (David Walker)](http://www.cs.princeton.edu/~dpw/cos441-11/schedule.htm)
 * [Learn You a Haskell](http://learnyouahaskell.com/chapters)
 
-#### Problem Solving
+<!-- to add: physics? -->
+
+<!-- to add: econ (e.g. game theory and econometrics) --> 
+
+#### Problem Solving and Olympiad Math
 * [Problem-Solving Strategies](https://link.springer.com/book/10.1007%2Fb97682)
 * [How To Solve It (Polya)](https://www.amazon.com/dp/4871878309/?tag=stackoverflow17-20)
+* [Putnam Seminar (Po-Shen Loh)](http://math.cmu.edu/~ploh/2017-putnam.shtml)
+* [Olympiad Notes (Po-Shen Loh)](http://math.cmu.edu/~ploh/olympiad.shtml)
+* [Contest Math (Evan Chen)](http://web.evanchen.cc/olympiad.html)
+* [Contest Math (and more) (Holden Lee)](https://holdenlee.github.io/Math%20notes.html)
 
 #### Writing 
 * [Mathematical Writing (Knuth, Larabee, Roberts)](http://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf)
@@ -356,6 +369,8 @@ ___
 #### Other Compilations
 * [Holden Lee's notes](https://holdenlee.github.io/blog/notes.html) (there are a lot!!!)
 * [Arun Debray's notes](https://www.ma.utexas.edu/users/a.debray/lecture_notes/) (there are also a lot!!)
+* [Evan Chen's notes](http://web.evanchen.cc/coursework.html)
+* [An Infinitely Large Napkin (Evan Chen)](http://web.evanchen.cc/napkin.html)
 * [Billy Fang's notes](https://www.stat.berkeley.edu/~blfang/#notes)
 
 
