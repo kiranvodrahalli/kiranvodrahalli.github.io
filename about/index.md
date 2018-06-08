@@ -27,6 +27,7 @@ My primary area of research is provable algorithms and models for computational 
 
 * Theoretical frameworks for unsupervised learning which allow one to give guarantees on performance
 * Identifying general, favorable properties of unsupervised feature representations
+* Theoretically justifying generation models
 * Compressed sensing and recovery properties of representations
 * Identifying and learning over low-dimensional structures (of all sorts, but recently I have focused on various notions of sparsity). In particular, the goal is to give algorithms which achieve sample complexities and computational complexities which depend on the ''low-dimensional'' part of the structure, rather than the (potentially high-dimensional) ambient space.
 * Interactive learning applied to evaluation methodology and learning problem formulation
@@ -34,15 +35,17 @@ My primary area of research is provable algorithms and models for computational 
 * Going beyond i.i.d. assumptions: Learning over non-product distributions, etc. I've also recently gotten interested in adaptive data analysis and other settings where the training data distribution and the testing data distribution do not satisfy simple properties (like i.i.d.). 
 * Generalization bounds for models which do not currently have completely satisfactory guarantees (read my lips d-e-e-p l-e-a-r-n-i-n-g). In particular, I am interested in data-dependent bounds on the sample complexity.
 * Non-convex optimization with guarantees
-* Better characterization of easy-to-check data properties which ensure good statistical/computational efficiency. Also, developing data collection methods to ensure such properties exist in datasets. 
+* Better characterization of easy-to-check data properties which ensure good statistical/computational efficiency. Also, developing data collection methods to ensure such properties exist in datasets.
+* Interactive, game theoretic approaches to data collection 
 * Alternative algorithms to the scientific method
+* Developing better tools for analyzing experiments and performing feature selection
 * Highly-structured learning: learning rules and logic in reinforcement learning settings. I am also interested in models which blend rigid structure (like logic) with statistical models. 
 * Multi-task and meta-learning
 * Randomized and approximation algorithms
 * Sublinear algorithms (sketching and streaming settings)
 * Understanding sequence models: Bridging the gap between HMMs and RNNs. 
-* Identifying failure modes of learning algorithms and models
-* Theoretically justifying generation models
+* Identifying failure modes of learning algorithms and models (e.g., adversarial examples)
+
 
 In applications, I am particularly interested in natural language understanding and neuroscience. 
 
