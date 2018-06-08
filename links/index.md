@@ -71,7 +71,6 @@ ___
 * [inFERENce](http://www.inference.vc/)
 * [Seita's Place](https://danieltakeshi.github.io/)
 * [Power Overwhelming](https://usamo.wordpress.com/)
-* [One Weird Kernel Trick](http://oneweirdkerneltrick.com/) (See also the [SIGBOVIK conference](http://sigbovik.org/))
 
 ---
 
@@ -412,4 +411,4 @@ ___
 * [Princeton Math Ph.D. General Exams](http://web.math.princeton.edu/generals/)
 * [The Illustrated Guide to a Ph.D. (Matt Might)](http://matt.might.net/articles/phd-school-in-pictures/)
 * [PhD Comics](http://phdcomics.com/)
-
+* [One Weird Kernel Trick](http://oneweirdkerneltrick.com/) (See also the [SIGBOVIK conference](http://sigbovik.org/))
