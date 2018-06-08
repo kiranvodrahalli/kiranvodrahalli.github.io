@@ -35,6 +35,7 @@ My primary area of research is provable algorithms and models for computational 
 * Generalization bounds for models which do not currently have completely satisfactory guarantees (read my lips d-e-e-p l-e-a-r-n-i-n-g). In particular, I am interested in data-dependent bounds on the sample complexity.
 * Non-convex optimization with guarantees
 * Better characterization of easy-to-check data properties which ensure good statistical/computational efficiency. Also, developing data collection methods to ensure such properties exist in datasets. 
+* Alternative algorithms to the scientific method
 * Highly-structured learning: learning rules and logic in reinforcement learning settings. I am also interested in models which blend rigid structure (like logic) with statistical models. 
 * Multi-task and meta-learning
 * Randomized and approximation algorithms
