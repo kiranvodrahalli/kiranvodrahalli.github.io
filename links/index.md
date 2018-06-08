@@ -119,6 +119,7 @@ ___
 * [Statistical Learning Theory (Sham Kakade)](http://stat.wharton.upenn.edu/~skakade/courses/stat928/)
 * [Computational and Statistical Learning Theory (Nati Srebro)](http://ttic.uchicago.edu/~nati/Teaching/TTIC31120/2016/)
 * [Boosting: Foundations and Algorithms (Robert Schapire and Yoav Freund)](https://mitpress.mit.edu/books/boosting)
+* [Learning with Kernels (Schölkopf and Smola)](https://mitpress.mit.edu/books/learning-kernels)
 * [High Dimensional Stats (Phillipe Rigollet)](http://www-math.mit.edu/~rigollet/PDFs/RigNotes17.pdf)
 * [The Elements of Statistical Learning (HTF)](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 * [All of Statistics (Larry Wasserman)](http://www.stat.cmu.edu/~larry/all-of-statistics/)
@@ -222,9 +223,13 @@ ___
 * [ADMM Survey (BPCPE)](https://web.stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf)
 
 #### Graphical Models and Bayesian Inference
+* [Bayesian Models for Machine Learning (John Paisley)](http://www.columbia.edu/~jwp2128/Teaching/E6720/BayesianModelsMachineLearning2016.pdf)
 * [Probabilistic Graphical Models (Koller and Friedman)](https://mitpress.mit.edu/books/probabilistic-graphical-models)
 * [Elements of Causal Inference](https://mitpress.mit.edu/books/elements-causal-inference) (note, open access!)
 * [Graphical Models, Exponential Families, and Variational Inference (Martin Wainwright and Michael Jordan)](https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf)
+* [Lecture Notes on Bayesian Nonparametrics (Peter Orbanz)](http://stat.columbia.edu/~porbanz/papers/porbanz_BNP_draft.pdf)
+* [Sampling Algorithms (Peter Orbanz)](http://stat.columbia.edu/~porbanz/teaching/GR8201S17/slides_sampling.pdf)
+* [Advanced Machine Learning (Peter Orbanz and John Cunningham)](https://wendazhou.com/teaching/AdvancedMLFall17/)
 * [Machine Learning: A Probabilistic Perspective (Kevin Murphy)](https://www.cs.ubc.ca/~murphyk/MLbook/)
 * [Gaussian Processes for Machine Learning (Rasmussen and Williams)](http://www.gaussianprocess.org/gpml/)
 * [Bayesian Nonparametrics and the Probabilistic Approach to Modeling (Zoubin Ghahramani)](http://mlg.eng.cam.ac.uk/pub/pdf/Gha12.pdf)
