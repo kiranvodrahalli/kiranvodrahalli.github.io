@@ -230,6 +230,7 @@ ___
 * [Bayesian Nonparametrics and the Probabilistic Approach to Modeling (Zoubin Ghahramani)](http://mlg.eng.cam.ac.uk/pub/pdf/Gha12.pdf)
 * [An Introduction to Hidden Markov Models and Bayesian Networks (Zoubin Ghahramani)](http://mlg.eng.cam.ac.uk/zoubin/papers/ijprai.pdf)
 * [Fundamentals of Exponential Families (Brown)](https://www.jstor.org/stable/4355554?seq=1#page_scan_tab_contents)
+* [A Unifying Review of Gaussian Linear Models (Roweis and Ghahramani)](https://cs.nyu.edu/~roweis/papers/NC110201.pdf)
 
 #### Natural Language Processing
 * [Natural Language Processing (Michael Collins)](http://www.cs.columbia.edu/~mcollins/cs4705-fall2017/)
