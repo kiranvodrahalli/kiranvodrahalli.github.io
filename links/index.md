@@ -353,7 +353,7 @@ ___
 * [How to Email (Matt Might)](http://matt.might.net/articles/how-to-email/)
 * [Grad Student Resolutions (Matt Might)](http://matt.might.net/articles/grad-student-resolutions/)
 * [Set Up Homebrew on Mac (Belyamini)](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/)
-* [Set Up Python on Mac](https://conda.io/docs/)
+* [Set Up Python](https://conda.io/docs/)
 * [Bash by Example (Matt Might)](http://matt.might.net/articles/bash-by-example/)
 
 #### Tools
@@ -362,6 +362,7 @@ ___
 * [Online Encyclopedia of Integer Sequences (OEIS)](https://oeis.org/)
 * [Wolfram Alpha](http://www.wolframalpha.com/)
 * [DeTeXify](http://detexify.kirelabs.org/classify.html)
+* [CombinePDF](http://combinepdf.com/)
 * [Bash Cheatsheet](https://ss64.com/bash/)
 * [Vim Cheatsheet](https://vim.rtorr.com/)
 
