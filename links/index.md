@@ -107,6 +107,10 @@ ___
 * [Metric Embeddings and Geometric Inequalities (Assaf Naor)](/notes/mat529_notes.pdf)
 * [Random Fields and Geometry (Adler and Taylor)](https://www.springer.com/us/book/9780387481128)
 * [Information Geometry and its Applications (Shun-ichi Amari)](https://www.springer.com/us/book/9784431559771)
+* [An Elementary Introduction to Modern Convex Geometry (Keith Ball)](http://library.msri.org/books/Book31/files/ball.pdf)
+* [Lectures on Discrete Geometry (Matousek)](https://link.springer.com/book/10.1007%2F978-1-4613-0039-7)
+* [Information, Physics, and Computation (Mézard and Montanari)](https://web.stanford.edu/~montanar/RESEARCH/book.html)
+
 
 #### Learning Theory and Statistics
 * [Theory of Classification (Boucheron, Bousquet, Lugosi)](https://www.esaim-ps.org/articles/ps/pdf/2005/01/ps0420.pdf)
@@ -167,6 +171,8 @@ ___
 * [Community Detection Survey (Emmanuel Abbe)](http://www.princeton.edu/~eabbe/publications/abbe_FNT_2.pdf)
 
 #### Theoretical Computer Science
+* [Introduction to Algorithms (CLRS)](https://mitpress.mit.edu/books/introduction-algorithms)
+* [Algorithm Design (Kleinberg and Tardos)](https://www.amazon.com/Algorithm-Design-Jon-Kleinberg/dp/0321295358)
 * [Advanced Algorithms (Sanjeev Arora)](https://www.cs.princeton.edu/courses/archive/fall14/cos521/)
 * [Algorithms through Geometric Lens (Alex Andoni and Ilya Razenshteyn)](https://ilyaraz.org/static/class/materials.html)
 * [Advanced Algorithms (Ankur Moitra)](http://people.csail.mit.edu/moitra/854.html)
@@ -184,12 +190,17 @@ ___
 * [Sketching as a Tool for Numerical Linear Algebra (David Woodruff)](http://www.cs.cmu.edu/afs/cs/user/dwoodruf/www/wNow3.pdf)
 * [Sketching Algorithms for Big Data (Jelani Nelson)](https://www.sketchingbigdata.org/fall17/)
 * [Algorithms for Big Data (David Woodruff)](http://www.cs.cmu.edu/~dwoodruf/teaching/15859-fall17/index.html)
+* [The Discrepancy Method: Randomness and Complexity (Bernard Chazelle)](https://www.cs.princeton.edu/~chazelle/pubs/book.pdf)
+* [Geometric Discrepancy (Matousek)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.357.4531&rep=rep1&type=pdf)
 * [Randomized Linear Algebra (Michael Mahoney)](https://arxiv.org/pdf/1608.04481.pdf)
 * [Randomized Algorithms in Numerical Linear Algebra (Ravi Kannan and Santosh Vempala)](https://www.cc.gatech.edu/~vempala/papers/acta_survey.pdf)
 * [Algorithmic Convex Geometry (Santosh Vempala)](https://www.cc.gatech.edu/~vempala/papers/acg.pdf)
 * [Approximation Algorithms (David Williamson)](http://inst.eecs.berkeley.edu/~cs294-145/sp18/)
 * [The Design of Approximation Algorithms (Williamson and Shmoys)](http://www.designofapproxalgs.com/index.php)
+* [Approximate Algorithms and Semidefinite Programming (Gärtner and Matousek)](https://link.springer.com/book/10.1007%2F978-3-642-22015-9)
 * [Integer Programming and Combinatorial Optimization (Dorit Hochbaum)](http://www.ieor.berkeley.edu/~hochbaum/files/ieor269-2010.pdf)
+* [Discrete Optimization (Gärtner)](https://people.inf.ethz.ch/gaertner/subdir/teaching/lecture_notes/do.pdf)
+* [Geometry: Combinatorics and Algorithms (GHW)](https://people.inf.ethz.ch/gaertner/subdir/teaching/lecture_notes/gca14-full.pdf)
 * [Geometric Random Walks: A Survey (Santosh Vempala)](https://www.cc.gatech.edu/~vempala/papers/survey.pdf)
 * [Randomness and Computation (Alistair Sinclair)](https://people.eecs.berkeley.edu/~sinclair/cs271/s18.html)
 * [Randomized Algorithms and Probabilistic Analysis (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cse525au16/index.html)
@@ -253,10 +264,12 @@ ___
 * [Mathematics of Deep Learning (Joan Bruna)](https://joanbruna.github.io/MathsDL-spring18/)
 * [Inference and Representation (Joan Bruna)](https://github.com/joanbruna/ir17)
 * [Topics in Deep Learning (Joan Bruna)](http://joanbruna.github.io/stat212b/)
+* [Mathematical Aspects of Deep Learning (Elchanan Mossel)](http://elmos.scripts.mit.edu/mathofdeeplearning/mathematical-aspects-of-deep-learning-intro/)
 
 #### Linear Algebra and Matrix Analysis
 * [Linear Algebra (Michael Damron and Tasho Kaletha)](http://people.math.gatech.edu/~mdamron6/MAT217_all_lectures.pdf)
 * [Introduction to Linear Algebra (Strang)](http://math.mit.edu/~gs/linearalgebra/)
+* [Thirty-three Miniatures: Mathematical and Algorithmic Applications of Linear Algebra (Matousek)](https://kam.mff.cuni.cz/~matousek/stml-53-matousek-1.pdf)
 * [Linear Algebra Done Right (Axler)](http://linear.axler.net/)
 * [Advanced Linear Algebra (Roman)](https://www.springer.com/us/book/9780387728285)
 * [Matrix Computations (Golub and Van Loan)](http://web.mit.edu/ehliu/Public/sclark/Golub%20G.H.,%20Van%20Loan%20C.F.-%20Matrix%20Computations.pdf)
@@ -288,6 +301,7 @@ ___
 * [Topology 2nd Ed. (Munkres)](https://www.amazon.com/Topology-2nd-James-Munkres/dp/0131816292)
 * [Elements of Algebraic Topology (Munkres)](https://www.amazon.com/Elements-Algebraic-Topology-James-Munkres/dp/0201627280)
 * [Algebraic Topology (Hatcher)](http://pi.math.cornell.edu/~hatcher/AT/ATpage.html)
+* [Using the Borsuk-Ulam Theorem (Matousek)](https://link.springer.com/book/10.1007%2F978-3-540-76649-0)
 
 #### Algebra 
 * [Group Theory (Mark McConnell)](/notes/340_notes.pdf)
@@ -299,12 +313,45 @@ ___
 * [Types and Programming Languages (Pierce)](https://www.asc.ohio-state.edu/pollard.4/type/books/pierce-tpl.pdf)
 * [Functional Programming (David Walker)](http://www.cs.princeton.edu/courses/archive/fall13/cos326/)
 * [Programming Languages (David Walker)](http://www.cs.princeton.edu/~dpw/cos441-11/schedule.htm)
+* [Learn You a Haskell](http://learnyouahaskell.com/chapters)
+
+#### Problem Solving
+* [Problem-Solving Strategies](https://link.springer.com/book/10.1007%2Fb97682)
+* [How To Solve It (Polya)](https://www.amazon.com/dp/4871878309/?tag=stackoverflow17-20)
+
+#### Writing 
+* [Mathematical Writing (Knuth, Larabee, Roberts)](http://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf)
+* [How to Write a Great Research Paper (Simon Peyton Jones)](https://www.cis.upenn.edu/~sweirich/icfp-plmw15/slides/peyton-jones.pdf)
+* [3 Shell Scripts to Improve Your Writing (Matt Might)](http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/)
+* [Style: Lessons in Clarity and Grace (Williams and Bizup)](https://www.amazon.com/Style-Lessons-Clarity-Grace-11th/dp/0321898680)
+* [The Science of Scientific Writing (Gopen and Swan)](https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing)
+* [Creative Writing (Brandon Sanderson)](https://brandonsanderson.com/2016-sanderson-lectures/)
+
+#### Advice (on academia, productivity tips, how to's, coding tutorials, etc...)
+* [You and Your Research (Hamming)](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+* [How to be a Mathematician (or Theoretical Computer Scientist) (O'Donnell)](http://www.cs.cmu.edu/~odonnell/toolkit13/how-to-do-math-and-tcs.pdf)
+* [Theory Life Hacks (Boaz Barak)](https://windowsontheory.org/2018/06/06/theory-life-hacks-ii/)
+* [The Ph.D. Grind (Phillip Guo)](http://pgbovine.net/PhD-memoir/pguo-PhD-grind.pdf)
+* [A Ph.D. is NOT Enough! (Feibelman)](https://www.amazon.com/gp/product/0465022227?ie=UTF8&tag=ucmbread-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0465022227)
+* [How to Give Good Academic Talks (Matt Might)](http://matt.might.net/articles/academic-presentation-tips/)
+* [How to Give a Great Research Talk (Simon Peyton Jones)](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/How-to-give-a-great-research-talk.pdf)
+* [How to get Tenure (Matt Might)](http://matt.might.net/articles/tenure/)
+* [Parsing BibTeX (Matt Might)](http://matt.might.net/articles/parsing-bibtex/)
+* [Successful PhD Students (Matt Might)](http://matt.might.net/articles/successful-phd-students/)
+* [How to Email (Matt Might)](http://matt.might.net/articles/how-to-email/)
+* [Grad Student Resolutions (Matt Might)](http://matt.might.net/articles/grad-student-resolutions/)
+* [Set Up Homebrew on Mac (Belyamini)](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/)
+* [Set Up Python on Mac](https://conda.io/docs/)
+* [Bash by Example (Matt Might)](http://matt.might.net/articles/bash-by-example/)
 
 #### Tools
 * [Handbook of Mathematical Functions (Abramowitz and Stegun)](http://people.math.sfu.ca/~cbm/aands/abramowitz_and_stegun.pdf)
+* [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf) 
 * [Online Encyclopedia of Integer Sequences (OEIS)](https://oeis.org/)
 * [Wolfram Alpha](http://www.wolframalpha.com/)
-* [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf) 
+* [DeTeXify](http://detexify.kirelabs.org/classify.html)
+* [Bash Cheatsheet](https://ss64.com/bash/)
+* [Vim Cheatsheet](https://vim.rtorr.com/)
 
 #### Other Compilations
 * [Holden Lee's notes](https://holdenlee.github.io/blog/notes.html) (there are a lot!!!)
@@ -340,10 +387,14 @@ ___
 * [Princeton NLP Codebase](https://github.com/NLPrinceton)
 * [Harvard NLP Codebase](http://nlp.seas.harvard.edu/code/)
 * [BrainIAK](brainiak.org)
+* [OpenAI Gym](https://gym.openai.com/)
+* [PyTorch](https://pytorch.org/)
+* [scikit-learn](http://scikit-learn.org/stable/index.html)
 
 
 ### Fun Links
 
 * [Princeton Math Ph.D. General Exams](http://web.math.princeton.edu/generals/)
-
+* [The Illustrated Guide to a Ph.D. (Matt Might)](http://matt.might.net/articles/phd-school-in-pictures/)
+* [PhD Comics](http://phdcomics.com/)
 
