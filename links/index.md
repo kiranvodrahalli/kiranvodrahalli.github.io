@@ -211,7 +211,7 @@ ___
 * [Spectral Algorithms (Ravi Kannan and Santosh Vempala)](https://www.cc.gatech.edu/~vempala/spectralbook.pdf)
 * [Advanced Approximation Algorithms (Anupam Gupta and Ryan O'Donnell)](https://www.cs.cmu.edu/~anupamg/adv-approx/)
 * [Proofs, Beliefs and Algorithms through the lens of Sum-of-Squares (Boaz Barak and David Steuer)](http://www.sumofsquares.org/public/index.html)
-* [Information Theory in Theoretical Computer Science](http://infotheorytcs.wikischolars.columbia.edu/)
+* [Information Theory in Theoretical Computer Science (Omri Weinstein)](http://infotheorytcs.wikischolars.columbia.edu/)
 * [Information Theory in Computer Science (Madhu Sudan)](http://people.seas.harvard.edu/~madhusudan/courses/Spring2016/)
 * [Essential Coding Theory (Madhu Sudan)](http://people.seas.harvard.edu/~madhusudan/courses/Spring2017/)
 * [Game Theory, Alive (Anna Karlin and Yuval Peres)](https://homes.cs.washington.edu/~karlin/GameTheoryBook.pdf)
@@ -237,7 +237,7 @@ ___
 #### Graphical Models and Bayesian Inference
 * [Bayesian Models for Machine Learning (John Paisley)](http://www.columbia.edu/~jwp2128/Teaching/E6720/BayesianModelsMachineLearning2016.pdf)
 * [Probabilistic Graphical Models (Koller and Friedman)](https://mitpress.mit.edu/books/probabilistic-graphical-models)
-* [Elements of Causal Inference](https://mitpress.mit.edu/books/elements-causal-inference) (note, open access!)
+* [Elements of Causal Inference (Peters, Janzing, and Schölkopf)](https://mitpress.mit.edu/books/elements-causal-inference) (note, open access!)
 * [Graphical Models, Exponential Families, and Variational Inference (Martin Wainwright and Michael Jordan)](https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf)
 * [Lecture Notes on Bayesian Nonparametrics (Peter Orbanz)](http://stat.columbia.edu/~porbanz/papers/porbanz_BNP_draft.pdf)
 * [Sampling Algorithms (Peter Orbanz)](http://stat.columbia.edu/~porbanz/teaching/GR8201S17/slides_sampling.pdf)
@@ -309,7 +309,7 @@ ___
 * [Group Theory (Mark McConnell)](/notes/340_notes.pdf)
 * [Linear Representations of Finite Groups (Serre)](https://link.springer.com/book/10.1007%2F978-1-4684-9458-7)
 * [Galois Theory (Xiaoheng Jerry Wang)](/notes/346LectureNotes_jerry_wang.pdf)
-* [Basic Algebraic Geometry](https://www.math.purdue.edu/~dvb/preprints/algeom.pdf)
+* [Basic Algebraic Geometry (Arapura)](https://www.math.purdue.edu/~dvb/preprints/algeom.pdf)
 * [Algebraic Geometry (Gathmann)](http://www.mathematik.uni-kl.de/agag/mitglieder/professoren/gathmann/notes/alggeom/)
 * [Basic Category Theory (Leinster)](https://arxiv.org/abs/1612.09375)
 
@@ -324,7 +324,7 @@ ___
 <!-- to add: econ (e.g. game theory and econometrics) --> 
 
 #### Problem Solving and Olympiad Math
-* [Problem-Solving Strategies](https://link.springer.com/book/10.1007%2Fb97682)
+* [Problem-Solving Strategies (Engel)](https://link.springer.com/book/10.1007%2Fb97682)
 * [How To Solve It (Polya)](https://www.amazon.com/dp/4871878309/?tag=stackoverflow17-20)
 * [Putnam Seminar (Po-Shen Loh)](http://math.cmu.edu/~ploh/2017-putnam.shtml)
 * [Olympiad Notes (Po-Shen Loh)](http://math.cmu.edu/~ploh/olympiad.shtml)
@@ -358,7 +358,7 @@ ___
 
 #### Tools
 * [Handbook of Mathematical Functions (Abramowitz and Stegun)](http://people.math.sfu.ca/~cbm/aands/abramowitz_and_stegun.pdf)
-* [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf) 
+* [Matrix Cookbook (Petersen and Pedersen)](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf) 
 * [Online Encyclopedia of Integer Sequences (OEIS)](https://oeis.org/)
 * [Wolfram Alpha](http://www.wolframalpha.com/)
 * [DeTeXify](http://detexify.kirelabs.org/classify.html)
