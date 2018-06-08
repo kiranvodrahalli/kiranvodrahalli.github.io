@@ -362,6 +362,7 @@ ___
 * [Online Encyclopedia of Integer Sequences (OEIS)](https://oeis.org/)
 * [Wolfram Alpha](http://www.wolframalpha.com/)
 * [DeTeXify](http://detexify.kirelabs.org/classify.html)
+* [MathJax tricks](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
 * [CombinePDF](http://combinepdf.com/)
 * [Bash Cheatsheet](https://ss64.com/bash/)
 * [Vim Cheatsheet](https://vim.rtorr.com/)
