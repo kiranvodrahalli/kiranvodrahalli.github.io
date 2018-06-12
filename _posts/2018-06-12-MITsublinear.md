@@ -3,8 +3,91 @@ layout: post
 title: Notes from MIT Sublinear Workshop (June 10---13)
 ---
 
+See [website](http://mifods.mit.edu/sublinear.php) and [schedule](http://people.csail.mit.edu/joanne/SUBLINEAR.html). 
+
 I'm trying something new out today and taking notes directly in Markdown and posting directly to my website instead of compiling a pdf with LaTeX. Let's see how it goes! Something I'm already missing is my macros in LaTeX... need to see how to add that to Markdown. Also things like writing definitions etc. I'm sure there are ways to add TeX style files to Markdown/MathJaX. 
 
+### Panel (moderated by Madhu Sudan)
+
+Madhu Sudan: A few things struck me --- we do have a mix of disciplines sitting around here. I wanted to quiz our organizers: What led to this particular choice? In terms of what you'd like to learn, and in terms of what we have learned already from interacting with each other, maybe some technical results. I would also love to hear how are we different in terms of philosophies. We all define things very differently and that's one thing we can learn from each other. We can also gripe a bit and see how our communities' results are badly misunderstood by everyone else. 
+
+I'll start with Phillipe: Why do you think we are sitting together as a group? 
+
+Phillipe Rigollet: As a disclaimer, I have an answer to all your questions except it might be yes or no. I will start by saying I'm a staticistian, I'm an interloper in TCS. I think there are truly interesting ideas come out of TCS. I've had several of you ask me how to get statisticians to understand that what I'm doing is new and interesting. I think I have more acknowledgements in the Annals of Statistics than actual papers. There are some philosophy differences. My impression is that computer scientists are excellent problem solvers --- you'll solve the hell out of it using every assumption on the paper, if you did not provide assumptions, that's the problem you'll be solving. Statisiticians are different. What are the big open problems in stats? There are none! Statisticians solve the problem before they state it -- they have intuitino something will work, they reverse-engineer the model and make it work. For instance, SBM -- modeling robustness etc. is hard. On the other hand you have Gaussian assumptions, the moment you use the 68th moment, a statistician is going to be concerned. 
+
+David: I had an identity crisis: I would go to conferences in different fields: CS, math, operations research (my degree), never feel at home at any one of them. I feel like a constant misfit to any of the fields, as long as the fields are well-defined. Maybe that's a strength not a weakness! I think the most interesting things I came up with in my judgement are not just when I was trying to think up one problem very hard, but when I learned about something in a completely different field, and I realized there's a connection. I think this workshop (we should give big credit to Ronitt) --- this workshop is exemplary of that. Only when you feel like a misfit, you feel pushed to learn something. We have people from CS (majority here, which is great), statisticians, mathematicians, we had a wonderful bootcamp talk by Yufei in combinatorics, and I think that's great. I personally enjoy coming to workshops where there is a variety, where I will learn something, where I feel like a misfit. 
+
+Ronitt: I want to say sorry about the poster session, it was really going strong when I wanted to stop it! Now I think we actually do share a lot in techniques. Maybe results and models are not quite the same, we have so many it's not clear, but techniques we do share a lot! People cared about other people's posters, because they were similar enough! I think the combination of what should be in this workshop started gradually. There was a whole panel of organizers, they suggested a lot of names and directions, it was a joint effort all the way. Back in 2000, the idea of having sublinear algorithms and combining sublinear space and sublinear time seemed natural. Already there were mathematical and coding theory questions, graph problems were considered, sketching wasn't quite then, this community stayed together, but crazy things in the techniques! Goldbach and Ran wanted to distinguish graphs which are expanders or not. We looked at this and wanted to tell about mixing properties. Then started testing uniformity, arbitrary distribution, etc. These were statistics questions, we went around asking the statisticians, but we didn't know Phillipe back then! No one we talked to thought it was interesting! We got a lot of negative feedback from the statistics community and we did not find the right people at that time. There was a lot of relevant techniques later on (Costis etc.) and more and more it became clear that there was a snowball effect. Now it's getting larger. 
+
+Davrit: The zeroth order answer is we are here because of Piotyr leading MIFODS. Personally I did my ugrad and Ph.D. in CS, my advisor in EE was doing probability, I did postdoc in statistics. Like David I feel a constant identity crisis and this is exciting. We are here because there are a few classes of questions which have brought us to different communities --- coding (complexity), communication (different reasons), applied math, techniques mixed, graphical models, etc. I grew up with quetsions where we were looking at belief propagation algorithms and why it's robust. Those algorithms are fundamentally local, even though they were not designed with that as an interest. In 2009 a student of mine was working on questions for graphical models, but had relations to local property testing. I think these questions are coming again: matrix estimation, graphons, community detection: Every one is coming from different angles, there are commonalities of differences, we are in a great melting pot. 
+
+Rachel: I also share the sentiment of feeling like a misfit: Undergrad was math, Ph.D. was applied math (advisor Ingrid Daubechies), I liked the way she found problems in diverse areas and tried to solve interesting problems using mathematics. My background is applied harmonic analysis, I dabbled in various areas like statistics, ml, optimization, and now I'm in a math department. I really don't know why I'm here actually! 
+There are great people here I feel comfortable around sort of not sitting anywhere in particular. I think looking at the history of statistics on its own, (now there's a lot of robust high-dimensional stats, maybe highlights stats was overly focused on low-dimensional stats for a long time, probably since a community wants to fine-tune things that work and solve problems that are already going in that direction), it's interesting to see what happens when we have to start over. You can say the same with theoretical computer science --- very good at solving problems, lots of open problems which is interesting. The whole idea of being an applied mathematician is to formalize --- if they've already been stated, then it's a pure math problem! 
+
+Madhu: I completely subscribe to that last problem! P = NP is a pure math problem, completely formalized. Anything further to say? 
+
+Rachel: A lot of problems are similar, using different notation, assumptions, focuses, if there were more talking, that would be realized more. Like real talking, one-on-one nitty gritty details to see if there are more similarities than we know. 
+
+Yihong: I am in a statistics and data science department --- property testing, sublinear algorithms is an area where statistics and computer science interact quite well and fruitfully. Sublinearity not well understood in stats, especially in high-dimensional problems. If you have \\(d\\) parameters, you need \\(d\\) samples --- this is the rule of thumb. You can do things if you have structure (sparsity), and also without sparsity when you only care about certain properties of things --- if you only want to know the length of a high-dimensional vector, you can do \\(\sqrt{d}\\) (\\(d\\) if you want to know the whole vector), this shows up in distributed testing all the time. This shows up in stats all the time, but we don't know when sublinear is possible in general or not. In TCS formulations, people know much more. I think this workshop is a good opportunity for people to exchange ideas and learn techniques, and learn in neighboring directions. 
+
+Piotyr: I'm at the end of the line, all the good ideas were already taken. In the registration, you were asked what is your field. We have a very skewed distribution towards computer science. About 90 people who mentioned CS, 40 who mentioned statistics, and 8 mentioned mathematics. On the other hand, we are in the math department so it compensates a bit. We are trying to get people from all the fields, with special emphasis on computer science and statistics. More generally, I think that research is easier to do these days than twenty years ago. Trying to understand different fields was more like an adventure. These days we have the internet, conferences like NIPS and ICML which are huge mixes of people, and there's interests in similar problems. So there's motivation and logistical easiness for interacting and exchanging ideas. This creates opportunities; compressed sensing is a classic example -- attracted attention from everyone: math, stats, ML, cs. Best way I know to get new ideas is to get people together and make things happen. 
+
+Madhu: Now let's turn it to the audience. 
+
+Q1: I'd like to know from pure and applied side what the main challenges of sublinear algorithms are for us to be talking about. In stats, high-dimensional statistics are at the forefront, what about beyond that? 
+
+Phillipe Rigollet: First thing is, when I think of property testing, it's testing whether a distribution is like this or this. Usually you separate along some functional of your distribution, you analyze it, is it bounded away from zero, etc. I asked Kulchinsky --- people are moving into learning functionals. Yihong is an expert. Also ideas from Nemirovski. I was asking Kulchinsky --- why? He said people are tired of high-dimensional slow rates, they want to learn fast things! Even for functional estimation we don't have the right answer. Polynomial approxmation of functionals is dual to moment matching of lower bounds. But why polynomials? Why that basis? Are things tailored to polynomials without us knowing? (e.g., cosine). There are much higher level questions which are more remote from '' what is the rate of estimation?''. That's at a higher level of what the questions are. We don't understand random forests, why deep nets generalize. There are big questions. I could come up with some, but I don't think I could convince you they are interesting in small amount of time alloted to me. 
+
+David: (talking about local algorithms in random structures) '' We take care of the issue of measurability in lecture 3 and then move on! But this paper was talking a lot about measurability, it was the main thing!'' Interesting problems in sublinear algorithms means many things in many fields --- it's a cross-disciplinary concept anyways. 
+
+Piotyr: I'll wear my applied hat for a second. I find this fascinating: sketching streaming, compressed sensing, etc. Whenever we prove theorems, we use random objects. Random gaussians, random hash functions, etc. We saw multiple talks about this today. Random measurements, hash functions, etc. are wonderful, work well in practice. Over last few years, if you know your data, you can do better than random. You can learn --- design hash function, projection, the sample you take, and especially now, especially there's lots of machine learning tools, I think figuring out how to use these methods to improve over random is a fascinating challenge. Another challenge is how to say anything meaningful about it. I guess if you're using deep learning to design measurement matrix, can't say anything until you solve deep learning, so that might be a hopeless question. But I think this is generally a fascinating question. 
+
+Ronitt: I'd tell you my favorite open problem, but if I tell you, I'd have to shoot you. 
+
+Piotyr: No, we wouldn't want this. 
+
+Ronitt: Sometimes you stumble across something. If you're into property testing of graphs, what if you're not in sparse, not in dense case? Different sets of degrees? Is there any other interesting problem that's not constant time testable or graph isomorphism or needs linear query? Yes there is, but it's not a natural problem (Oded, etc. ). Also with distributions: Are there other distribution properties we care about beyond entropy, number of distinct elements, etc. What else do we care? What properties would actually help people if we could find these things in the data? I would give talks and people would ask did you implement? Who cares about this? And I would say no, and I don't know. But this is changing; peopel are paying more attention. Where in real life could we find these questions. Maybe there are ideas for other properties to test, other things to look at? 
+
+Davrit: These are distributions you're testing, samples independently --- what if distribution samples are coming in structured manner? Or there's a graphical model? What variations would it introduce in your understanding? 
+
+Costis: When you're sampling graphical model or? 
+
+Davrit: Some form of hypothesis testing: Distribution as a whole is given, you're sampling independently...
+
+Costis: If not i.i.d., but weakly correlated, you can extend a lot of techniques -- de Brujin's condition, weak dependence conditions can extend current results. If your distribution of interest is a graphical model (Davrit: But you see partial observations). I haven't that --- high dimensional distribution, and you get one sample from it --- testing from one sample is a super interesting problem. 
+
+Madhu: I think there was a result by Servedio and O'Donnell from a while back --- you can improve upon learning if you get a large number of variable sconstant and only vary a few, you can study these few much better. 
+
+Moitra: Don't know better than trivial algorithm for DNF, but once it's a random walk on hypercube, you can do poly. 
+
+Madhu: Good, that's exactly the result I was referring to. 
+Hardness on the average is not related to this workshop persay, but it underlies what we think about constantly. Phillipe used hardness of planted clique to infer hardness of othe rlearning prolbems. These techniques we really need to boost on. Can you find a clique of size larger than \\(\log n\\) in a random graph? We have no clues how to answer it --- we need to understand it a lot better, if we can't, just build cryptosystems based on this! 
+
+Moses Charikar: What are your favorite tools and techniques that you wish would be better exported? 
+
+Yihong: Something like the notion of duality, which can be made very operational. Writing as maximization problem and taking dual, somehow becomes an achievable algorithm. If you want to do worst case analysis in statistics, and work with the least favorable prior. Primal = strategy, dual = worst case distributions. Philosophically interesting and operationally implementable. This is pretty cool. 
+
+Rachel: That's what I was going to say! Let's come back to me. 
+
+Davrit: In context of workshop, looking at some local structure of random objects like random graphs. It's super useful to establish things you may not expect (for example, a random graph, you're at a node, broadcast, get noisy copy, if you go too far, you forget what you started. But if too close, you're in a very local neighborhood. How far do you go to balance? --- \\(\sqrt{n}\\) has a small window which is remarkable). 
+
+Rachel: I would say looking at continuous limits of discrete problems. That could be emphasized more in theoretical computer science. Sometimes certain scaling issues matter. Rates for total variation minimization in compressed sensing. Problem became much easier when we looked at continuous limit of doing total variation on L2 functions. There were tools. Gradient and Stochastic gradient (ODE, momentum, step size better understanding). 
+
+Ronitt: What about you Moses? 
+
+Moses: I thought we get to ask the questions!
+
+David: I won't zoom in --- if I had to, I'd say method of moments...
+
+Phillipe: That was mine!
+
+David: Or probabilistic method. It's incredible how well it works, how method of moments is built in under different names like union bounds. Orthogonal to that there's a community not here but statistical physics. It has featured in many presentations. A lesson I learned from them --- before you solve the problem, try to understand it first. Let's not try to find the best algorithm right away but instead understand the problem from different perspectives. I like that structural philosophy. Before we rush to proposal of different methods thatt work well, understand it. 
+
+Phillipe: Ok, we don't have the exact same definition of method of moments. I'm thinking of the statistics definition, where the idea is to compute more parameters, and you're trying to solve for the parameters. You need to go order 3 moments at least, and it requires a lot of careful analysis and technique. For instance, the tensor modeling stuff uses this a lot -- latent variable modeling, where you don't know the assignments. The go to algorithm method is always the method of moments even though in statistics in practice everyone will go for maximum likelihood. The behavior of maximum likelihood is better for finite samples, the variational formulation is more robust, yet every time we want computational efficiency we have to go to method of moments! Everyone is interested in nonconvex optimization right now, but we're using the wrong tools. We need better tools... now it's like the five best grad students in the country who can do this stuff, but we are definitely using the wrong tools, we don't understand this stuff. It's like if the Greeks were trying to solve modern day problems... hey! I'm not saying anything about Costis! For example, Costis has a paper on EM that uses these techniques that's going in the right direction.. But I'm interested in whether we can get sharp non-asymptotics. 
+
+Ronitt: Ok I thought of something. The regularity lemma we saw about graphs was very interesting: We can say all large graphs can be described by constant size graphs. The general area that's interesting is distributed local computation -- you talk to a constant number of neighbors in a round --- that's really local algs. But they have developed a whole machinery. There are lots of beautiful ideas that should be mentioned. 
+
+Madhu: I want to thank the organizers. 
 
 ### Recent Advances in NP-Hard Variants of Low Rank Approximation (David Woodruff)
 
@@ -92,3 +175,7 @@ You can get faster algorithms by combining continuous and discrete approaches. O
 #### Questions
 Madhu Sudan: Is there a nice description of the problem that can be cleanly separated from the application? Answer: Don't have a good answer --- it's mainly to do with the sequence of iterates. 
 Costis Daskalakis: Is there a relation to Follow-the-Perturbed-Leader? Answer: Not sure. There are relations to Franke-Wolfe. 
+
+### Jelani Nelson on \\(\ell_2\\)-norm sketching. 
+
+I missed most of the presentation, but it seemed interesting --- the punchline was using the generic chaining to get a constant factor approximation. I have to look at the paper to see exactly what happened. 
