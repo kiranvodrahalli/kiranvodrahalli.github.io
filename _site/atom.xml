@@ -4,13 +4,107 @@
  <title>exponentially surprised</title>
  <link href="https://kiranvodrahalli.github.io/atom.xml" rel="self"/>
  <link href="https://kiranvodrahalli.github.io/"/>
- <updated>2018-06-08T14:18:28-04:00</updated>
+ <updated>2018-06-12T15:56:32-04:00</updated>
  <id>https://kiranvodrahalli.github.io</id>
  <author>
    <name>Kiran Vodrahalli</name>
    <email>kiran.vodrahalli@columbia.edu</email>
  </author>
 
+ 
+ <entry>
+   <title>Notes from MIT Sublinear Workshop (June 10---13)</title>
+   <link href="https://kiranvodrahalli.github.io/2018/06/12/MITsublinear/"/>
+   <updated>2018-06-12T00:00:00-04:00</updated>
+   <id>https://kiranvodrahalli.github.io/2018/06/12/MITsublinear</id>
+   <content type="html">&lt;p&gt;I’m trying something new out today and taking notes directly in Markdown and posting directly to my website instead of compiling a pdf with LaTeX. Let’s see how it goes! Something I’m already missing is my macros in LaTeX… need to see how to add that to Markdown. Also things like writing definitions etc. I’m sure there are ways to add TeX style files to Markdown/MathJaX.&lt;/p&gt;
+
+&lt;h3 id=&quot;recent-advances-in-np-hard-variants-of-low-rank-approximation-david-woodruff&quot;&gt;Recent Advances in NP-Hard Variants of Low Rank Approximation (David Woodruff)&lt;/h3&gt;
+
+&lt;h4 id=&quot;outline-and-problem-description&quot;&gt;Outline and Problem Description&lt;/h4&gt;
+&lt;p&gt;I’ll focus on some low-rank matrix approximation problems, but in non-standard error measures where the problem becomes NP-hard. I’ll focus mostly on weighted low-rank matrix approximation. I’ll mention \(\ell_1\)-low-rank matrix approximation. The standard case is the Frobenius norm case. We get a matrix \(A\) and a parameter \(k\) which makes \(|A - UV|_F^2\) small where \(U, V\) are rank \(k\). We want a \((1 + \epsilon)\) factor compared to the best approximation. You can solve this with SVD and using fast matrix multiplication, but this is not so great in other situations (for instance, non-negative factorizations). We also might want our error measure to be robust to noise. If you corrupt entries of \(A\), you might be paying more attention to these corruptions because we are looking at sums of squares of differences. You might also have missing entries in your matrix; what does it mean in that setting?&lt;/p&gt;
+
+&lt;p&gt;Let’s define the weighted low-rank approximation problem. We are again given \(A, \epsilon\), but now we are also given \(W \in \mathbb{R}^{n \times n}\). Instead, we try to minimize a weighted square Frobenius norm. Each entry will be attached a weight: Look at \(|W \odot \left(\hat{A} - A\right)|_F^2\). We still want a \((1 + \epsilon)\) guarantee.&lt;/p&gt;
+
+&lt;h4 id=&quot;motivation&quot;&gt;Motivation&lt;/h4&gt;
+&lt;p&gt;Why do we care about doing this? Well, we might want to renormalize the different categories of movie ratings (in this application) by normalizing by the variances of the entries in each category. So you have a normalization factor associated with each category. This is the weight matrix, and can be thought of as having a small number of distinct columns (e.g., movie types). We are assuming that movies are similar somehow. We can also assume that users (the rows) behave similarly too. So the weight matrix can capture a lot of settings, we’re dealing with similar rows and columns.&lt;/p&gt;
+
+&lt;p&gt;Another problem we can look at is matrix completion. It’s a hard problem, even to approximate. That is a special case of low-rank matrix approximation, so that suggests this problem is hard.&lt;/p&gt;
+
+&lt;h4 id=&quot;results&quot;&gt;Results&lt;/h4&gt;
+&lt;p&gt;But we will get algorithms for special cases of the weight matrix. Case 1: small number of distinct rows and columns. More generally Case 2: the weight matrix has a small number of distinct columns, but any rows. More generally, Case 3: the weight matrix has rank at most \(r\).&lt;/p&gt;
+
+&lt;p&gt;Our results guarantee \(|W \odot (A - \hat{A})|_F^2 \leq (1 + \epsilon)OPT\) with high probability, in runtime depending on the sparsity of \(A, W\) and \(n^{\gamma + 1}\cdot 2^{\mathcal{O}(poly(k, r))}\). In the last case, we get an algorithm in time \(n^{\mathcal{O}(k^2r/\epsilon^2)}\).&lt;/p&gt;
+
+&lt;h4 id=&quot;hardness&quot;&gt;Hardness&lt;/h4&gt;
+&lt;p&gt;Let me mention some hardness results to justify the large runtimes. We look to the random 4-SAT hypothesis of Feige, which assumes this allocation problem is hard. We look at the Maximum Edge Biclique problem (MEB). With the random 4-SAT hypothesis, any algorithm that is able to distinguish instances from two families of the MEB problem (1) there is a clique of a certain size, and 2) all bipartite cliques are of size less than a constant factor times the first size) (this refers to the number of edges in the clique), then it requires \(2^{\Omega(n)}\) time.&lt;/p&gt;
+
+&lt;p&gt;Here’s a reduction from MEB to weighted low-rank approximation, which will show that even for \(k = 1\) that weighted low-rank approximation is hard to approximate. The reduction places a \(1\) in the weight matrix if there’s an edge between the the two cliques, and \(n^6\) otherwise. Suppose the weight matrix has \(r\) distinct columns. You can get a \(2^{\Omega(r)}\) hardness — just take MEB and apply the reduction to the \(r \times r\) matrix planted within the \(n \times n\) matrix.&lt;/p&gt;
+
+&lt;h4 id=&quot;techniques&quot;&gt;Techniques&lt;/h4&gt;
+&lt;p&gt;We use a polynomial system verifier — it’s like linear programming except polynomial constraints instead of linear constraints. In ellipsoid algorithm, you cut down an ellipsoid and need to know when to stop — you need a lower bound on the objective function. We will need an analogous notion for polynomial systems. Then I will describe a main technique here — we’ll use sketching or data dimensionality reduction to reduce the number of variables in a polynomial system. Typically sketching is used to reduce a polytime algorithm to a linear algorighm or faster. Instead we will reduce large number of variables to small number of variables. Here we go from exponential time algorithm to polynomial time algorithm. This is a somewhat surprising use of sketching. We call this ‘‘guessing a sketch’’.&lt;/p&gt;
+
+&lt;p&gt;A polynomial system verifier (Renegar ‘92) is as follows: you’re given a real polynomial system \(P(x)\). You have \(v\) variables, \(m\) polynomial constraints, and polynomials have degree at most \(d\). We also say that the bits of the polynomial coefficients can be specified with at most \(H\) bits. It takes \((md)^{\mathcal{O}(v)}\)poly(\(H\)) time to verify if there is a solution to the system \(P\).&lt;/p&gt;
+
+&lt;p&gt;Now we want a lower bound on the cost. For linear programming you can get a lower bound exponential in the number of variables. What about for a general polynomial system? You can’t get any lower bound. We can give an example of polynomial \((xy - 1)^2 + y^2\) which can never equal zero, but can get arbitrarily close to zero. So there is no lower bound on the cost that you can give here. So we need to intersect our semialgebraic set with a ball, requiring the variables that we output have big complexity at most \(H\). This gives us a lower bound of either 0 or \(\geq (2^H + m)^{-d^v}\).&lt;/p&gt;
+
+&lt;p&gt;Now we do a multiple regression sketch. We’re given \(m\) matrices \(A_1, \cdots, A_m\) (tall and thing) and vectors \(b_1, \cdots, b_m\). We are just trying to solve least squares regression. We have vector \(b_j\) and \(A_j\) and are just trying to minimize \(|A_jx - b_j|\). Now choose \(S\) to be a random Gaussian matrix, and apply \(S\) to both \(Ax\) and \(b\). This will yield a much smaller regression problem. We have the guarantee that for approximation factor \(\epsilon\), if we set the rows to be \(k/\epsilon\) (note that this is independent of number of regression problems, as well as the dimension in the regression problems), then if we take the sum of squares of regression costs, this is at most a \((1 + \epsilon)\) factor more than optimal costs. The sketch size only depends on \(k/\epsilon\) — no union bound going on, just a statement about expectations.&lt;/p&gt;
+
+&lt;h4 id=&quot;algorithm-for-wlra&quot;&gt;Algorithm for WLRA&lt;/h4&gt;
+
+&lt;p&gt;We could create \(2nk\) variables for \(U, V\). But the polynomial verifier runs in exponential in number of variables. So we’ll use a multiple-regression sketch with few rows, and use the fact that the weight matrix has rank at most \(r\) to evade this issue.&lt;/p&gt;
+
+&lt;h4 id=&quot;guess-a-sketch&quot;&gt;Guess a Sketch&lt;/h4&gt;
+
+&lt;p&gt;Consider the \(j^{th}\) column of \(W\), \(W_j\). We take the objective and re-write it as a multiple regression problem, multiplying by the diagonal version of \(W_j\) (as a matrix) — we scale all the entries according to \(W_j\). We do this in order. This weighted low-rank approximation problem is the same as this multiple regression problem. Now we can choose Gaussian matrix \(S\) and replace the multiple regression problem with the sketch of a multiple regression problem — multiply by \(S\) on both sides. What if we create variables for the tiny matrix \(SD_{W_j}U\)? This is what we get after multiplying by \(S\) and \(D_{W_j}\). Then just create variables for all these entries. Now, you can solve for \(V_j\) in terms of all these variables! Recall we are looking at 
+&lt;script type=&quot;math/tex&quot;&gt;\sum_{j = 1}^n \|SD_{W_j}UV_j - SD_{W_j}A_j\|_2^2&lt;/script&gt;.
+We have a bunch of small matrices — only need to create variables for \(r\) of these, and express everything else in terms of the variable swe chose. So we take the weighted low-rank objective, write as multiple regression, use sketching to say we can solve the smaller problem, and then create variables for \(SD_{W_j}U\) for a linearly independent subset of these variables. This is a way of reducing the number of variables. Once we have a small number of variables, we can solve for \(V\) in a closed form expression. The solution is a rational function, but can clear the denominator with tricks. This makes the difference between getting something with exponential time and something with polynomial time, because the time depends heavily on the total number of variables.&lt;/p&gt;
+
+&lt;h4 id=&quot;open-problems&quot;&gt;Open Problems&lt;/h4&gt;
+&lt;p&gt;We don’t know if this problem is fixed-parameter tractable since the upper bound is \(n^{\mathcal{O}(k^2r/\epsilon)}\) while the lower bound is \(2^{\Omega(r)}\).&lt;/p&gt;
+
+&lt;h3 id=&quot;submodular-maximization-via-approximate-data-structures-huy-nguyen&quot;&gt;Submodular Maximization via Approximate Data Structures (Huy Nguyen)&lt;/h3&gt;
+
+&lt;h4 id=&quot;background-and-motivation&quot;&gt;Background and Motivation&lt;/h4&gt;
+&lt;p&gt;One setting that has not been looked at as much in sublinear algorithms are the data structures used to support optimization problems. There’s been a lot of success in linear programming and other things – I’ll give some examples and hopefully will inspire people to look into such things.&lt;/p&gt;
+
+&lt;p&gt;Let’s look what happened in submodular functions: First, a submodular function is a function \(f: 2^V \to \mathbb{R}\) such that \(f(A \cup {x}) - f(A) \geq f(B \cup {x}) - f(B)\) for \(x \not\in B\) — this is a diminishing return notion. It captures a lot of interesting models.&lt;/p&gt;
+
+&lt;p&gt;For instance, coverage functions (the number of elements in the union) are submodular. A graph cut is also a submodular function. This talk we will focus on maximizing submodular functions subject to constraints: the partition matroid and the graphic matroid. This is a fairly interesting setup which models problems you might care about.&lt;/p&gt;
+
+&lt;p&gt;Here’s an example of a partition matroid problem: Submodular welfare maximization. You have \(m\) items and \(k\) players. The goal is to maximize total welfare: You want to maximize the sum of the utility of all people involved. How do we model this problem using the partition matroid? Let’s assume the utility function is submodular. The objective is just the sum of utility functions. The constraint is that each item can only be assigned to one person: That’s the partition matroid constraint. You can only pick one of (item 1 to player 1, item 1 to player 2, …), as well as (item 2 to player 1, item 2 to player 2, …) for all items. Together, they form a single partition matroid constraint. For the purpose of this talk we will talk about the partition matroid with constraints of this type.&lt;/p&gt;
+
+&lt;p&gt;Often, people use greedy algorithms to solve this problem The way the algorithm works is as follows: You look at the marginal gain of adding an item to the current solution, starting from an empty solution set. You look at the marginal gains, and pick the one with the maximal gain. Once you have something in your solution, because of diminishing return, the marginal gain doesn’t stay the same. In a classical work by Nemhauser, Wolsey, and Fisher ‘78, for monotone functions, greedy achieves a constant factor approximation. If you have a cardinality constraint, you can get \(\sim 63\%\). With a matroid constraint, you can get 1/2 approximation.&lt;/p&gt;
+
+&lt;p&gt;Some questions greedy doesn’t seem to address: How do we do Optimal approximation for monotone maximization with a  matroid constraint? Non-monotone maximization? We’ll focus on the first one. Greedy algorithm is not optimal for more complex constraints. For instance, suppose you have 3 items. The constraints are you have at most one of the first two, and at most one of the third. You can come up with an example of a function that’s bad: \(f(1) = 1 + \epsilon, f(2) = f(3) = 1, f({2, 3}) = 2, f({1, 3}) = 1\). This case shows that greedy can be myopic with no way back.&lt;/p&gt;
+
+&lt;p&gt;People have come up with ideas to get around this problem: Don’t ever commit to something you might regret later! Come up with small decisions and only look at those: This is the canonical relaxation via continuous optimization, and round the resulting relaxation. You don’t want to make big decisions with no way to fix it!&lt;/p&gt;
+
+&lt;p&gt;We can look at the multilinear relaxation ([CCPV’07]). \(F\) is the multilinear extension of \(f\), and \(P\) is a convex relaxation of \(\mathcal{F}\). Then, \(F(x) = \mathbb{E}[f(\hat{x})]\), and then round \(x_i\) to \(0/1\) with probability \(x_i\). This is hard to optimize, it’s not convex. If we are interested in approximation, you can do it though. You can solve it approximately in a ‘‘continuous greedy’’ way. You find the maximum direction of potential gain (look at the maximum dot product with \(\nabla F\) for points in the feasible set). For very specific cases, you can do provably good rounding, but with several matroid constraints, it’s tricky. We don’t know the best constant. For a single matroid, you can round it without any loss, but that is very special.&lt;/p&gt;
+
+&lt;p&gt;This multilinear extension and continuous greedy method however is quite a bit slower than the regular greedy approach. There’s no general way to evaluate this thing other than ‘’ take some sample from this distribution and see what the value may be’’ — this will converge to the right distribution, but it takes time: A single evaluation takes \(\mathcal{O}(n)\) function evaluations. Even if continuous optimization is efficient, you need \(\mathcal{O}(n^2)\) evaluations. Rounding is also significant to the tune of \(\mathcal{O}(k^3)\) time.&lt;/p&gt;
+
+&lt;p&gt;So, greedy is fast and can be made to run in near-linear time, and continuous greedy is slow, but has a better quality guarantee. So can we get the best of both worlds? We’re going to be looking at partition matroids (picking items), we can also consider the graphic matroid (you can pick any forest of the graph).&lt;/p&gt;
+
+&lt;h4 id=&quot;key-idea&quot;&gt;Key Idea&lt;/h4&gt;
+&lt;p&gt;We are going to combine the discrete and continuous algorithms. If the total marginal gain of elements is large, you can analyze some part of greedy and show it will work just fine. When the total marginal gains become small, then greedy might make a bad choice which you can’t get back from. The continuous version runs much faster here, since the total marginal gain corresponds to the variance of the estimate of the function value \(F\) (we took \(\mathbb{E} F\)). If the variance is small, we can do the continuous thing quickly. If the variance is big, you can just do greedy, and it’s fast and not have to worry about the approximation.&lt;/p&gt;
+
+&lt;h4 id=&quot;implementation&quot;&gt;Implementation&lt;/h4&gt;
+&lt;p&gt;We have a current solution \(S\). We look at the value of \(f(S + i) - f(S)\). Find a solution \(B\) of maximum total value. Then, add a random element in \(B\) to your current solution. So this is a variation of the greedy discussed before — there we took maximum gain. Here, we pick the say, ten, elements, whose marginal gains are the biggest, and then pick one of these randomly. This is like hedging your bet — an adversary could plant a bad element, we’re trying to avoid it. In general, this algorithm doesn’t work, but it works when the value of the base solution \(B\) is large. Then we can use this and get a lot of gain. When \(B\) is small, we switch to the continuous thing and use that.&lt;/p&gt;
+
+&lt;p&gt;For this algorithm to run fast, we need to maintain the maximum of the base \(B\) here. As soon as an element is added to \(S\), the marginal gains change for everyone, and you need to get the new base \(B\), and you have to come up with it quickly! You have to do this \(n\) times.&lt;/p&gt;
+
+&lt;h4 id=&quot;data-structure-problem&quot;&gt;Data Structure Problem&lt;/h4&gt;
+&lt;p&gt;You have to approximately maintain the maximum weight base \(B\) through a sequence of weight updates (decrements). For the graphic matroid, you can use a dynamic MST data structure. If you add a partition matroid, there’s some ad-hoc solution like bucketing or linked lists. However, when you add an item to the solution, all marginal gains could change, and we cannot afford to update all the weights! So if you want to design an algorithm here, you have to put it in the context of these iterative algorithms. The solution to this is we use a classical idea from sublinear algorithms: We look at spot-checking. We have a current maximum weight base, and then the rest of the items. Now what do we do? We add a random element from the maximum weight base to the solution. After we add an element to the current solution, the marginal gains changed. We then have to update the weights, and find a new base. We are going to just randomly check the weights: Sample a random element, and see the marginal gain of the element. We drop it to zero, and call the dynamic MST to update the weight of this thing. Then we randomly check another element. It’s possible it drops a little bit, but not by much. So you keep doing this: Sample random element, did the weight drop by a lot, then update, otherwise, the current estimate is good. The point is that you know the weight cannot drop too many times, since each time it has to drop sufficiently. After sufficiently many drops, it drops to zero and it’s gone. The key thing is that it can’t drop too many times, and that’s what we piggy back on. The number of tests without update - number of tests with update is \(&amp;gt; \log n\). Then you can be confident a high number of weight updates are correct with high probability. This gives a fast implementation using spot checking.&lt;/p&gt;
+
+&lt;h4 id=&quot;takeaways&quot;&gt;Takeaways&lt;/h4&gt;
+&lt;p&gt;You can get faster algorithms by combining continuous and discrete approaches. Often when iterative algorithms are approached, you can use approximate data structures which are fast runtime. This is an invitation for sublinear algorithms researchers to look into iterative methods.&lt;/p&gt;
+
+&lt;h4 id=&quot;questions&quot;&gt;Questions&lt;/h4&gt;
+&lt;p&gt;Madhu Sudan: Is there a nice description of the problem that can be cleanly separated from the application? Answer: Don’t have a good answer — it’s mainly to do with the sequence of iterates. 
+Costis Daskalakis: Is there a relation to Follow-the-Perturbed-Leader? Answer: Not sure. There are relations to Franke-Wolfe.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>First ArXiv Paper and a New Title!</title>
