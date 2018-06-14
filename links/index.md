@@ -216,8 +216,9 @@ ___
 * [Essential Coding Theory (Madhu Sudan)](http://people.seas.harvard.edu/~madhusudan/courses/Spring2017/)
 * [Game Theory, Alive (Anna Karlin and Yuval Peres)](https://homes.cs.washington.edu/~karlin/GameTheoryBook.pdf)
 * [Algorithmic Game Theory (NRTV)](http://www.cs.cmu.edu/~sandholm/cs15-892F13/algorithmic-game-theory.pdf)
+* [Theory of Computing Online Journal](http://theoryofcomputing.org/index.html)
 
-#### Convex Optimization
+#### Optimization
 * [Introductory Lectures on Convex Optimization (Yurii Nesterov)](https://www.springer.com/us/book/9781402075537)
 * [Convex Optimization: Algorithms and Complexity (Sébastian Bubeck)](http://sbubeck.com/Bubeck15.pdf)
 * [Linear and Semidefinite Programming (Ryan O'Donnell)](http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f11/www/)
@@ -233,6 +234,7 @@ ___
 * [Proximal Algorithms (Parikh and Boyd)](http://web.stanford.edu/~boyd/papers/pdf/prox_algs.pdf)
 * [Convex and Conic Optimization (Amir Ali Ahmadi)](http://aaa.princeton.edu/orf523)
 * [ADMM Survey (BPCPE)](https://web.stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf)
+* [Numerical Optimization (Nocedal and Wright)](https://www.springer.com/us/book/9780387303031)
 
 #### Graphical Models and Bayesian Inference
 * [Bayesian Models for Machine Learning (John Paisley)](http://www.columbia.edu/~jwp2128/Teaching/E6720/BayesianModelsMachineLearning2016.pdf)
@@ -284,6 +286,7 @@ ___
 * [Probability: Theory and Examples (Durrett)](https://services.math.duke.edu/~rtd/PTE/PTE4_1.pdf)
 * [Probability with Martingales (David Williams)](https://www.cambridge.org/core/books/probability-with-martingales/B4CFCE0D08930FB46C6E93E775503926)
 * [Probability and Stochastics (Erhan Çinlar)](https://www.springer.com/us/book/9780387878584)
+* [Stochastic Calcullus, Filtering, and Control (Ramon van Handel)](https://pdfs.semanticscholar.org/c92f/e13f860c95ed6ff8c517ff423e07935575ae.pdf)
 * [Fourier Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7562.html)
 * [Complex Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7563.html)
 * [Real Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/8008.html)
