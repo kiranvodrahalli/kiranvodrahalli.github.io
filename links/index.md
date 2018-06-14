@@ -384,6 +384,7 @@ ___
 ### Favorite Papers
 
 * [Adversarial Examples from Computational Constraints (Bubeck, Price, Razenshteyn)](https://arxiv.org/pdf/1805.10204.pdf)
+* [Understanding Black-box Predictions via Influence Functions (Koh and Liang)](https://arxiv.org/abs/1703.04730)
 * [Contextual Decision Processes with Low Bellman Rank are PAC-Learnable (JKALS)](http://proceedings.mlr.press/v70/jiang17c/jiang17c.pdf)
 * [A Latent Variable Model Approach to PMI-Based Word Embeddings (ALLMR)](https://transacl.org/ojs/index.php/tacl/article/view/742/204)
 * [The Ladder: A Reliable Leaderboard for Machine Learning Competitions (Avrim Blum and Moritz Hardt)](https://arxiv.org/pdf/1502.04585.pdf)
