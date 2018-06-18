@@ -43,7 +43,7 @@ For now, I have individual class notes for some classes I've taken. Sometimes, l
 * STAT 8101: High-dimensional Statistical Inference <a href= "{{ site.baseurl }}/notes/high-dim-stat-inference-notes.pdf" title="high-dim-stats">[pdf--in progress!]</a> [[course website]](http://www.columbia.edu/~my2550/HDSI-2018/HDSI.html)
 * COMS 6998-5: Algorithms with a Geometric Lens <a href= "{{ site.baseurl }}/notes/alggeo_scribe_9_25_17.pdf" title="alg-geo">[scribe notes]</a> [[course website]](https://ilyaraz.org/static/class/)
 * COMS 6998-4: Interactive Learning <a href= "{{ site.baseurl }}/notes/imitation_learning_notes.pdf" title="imitation">[scribe notes]</a> [[course website]](http://www.cs.columbia.edu/~djhsu/coms6998-f17/)
-* COS 598E: Unsupervised Learning <a href= "{{ site.baseurl }}/notes/COS598E_lec2.pdf" title="cos598E">[scribe notes]</a> [[course website]](http://www.cs.princeton.edu/courses/archive/spring17/cos598E/)
+* COS 598E: Unsupervised Learning <a href= "{{ site.baseurl }}/notes/cos598E_lec2.pdf" title="cos598E">[scribe notes]</a> [[course website]](http://www.cs.princeton.edu/courses/archive/spring17/cos598E/)
 * ORF 550: Probability in High Dimension <a href= "{{ site.baseurl }}/notes/ORF550_scribe_dec2.pdf" title="orf550">[scribe notes]</a> [[syllabus]](http://www.princeton.edu/~rvan/syllabus570.pdf) [[all notes]](http://www.princeton.edu/~rvan/APC550.pdf) (with Xinyi Chen)
 * ORF 524: Statistical Theory and Methods <a href= "{{ site.baseurl }}/notes/orf524_scribe.pdf" title="orf524">[scribe notes]</a> [[syllabus]](http://www.princeton.edu/~samory/Courses/Syllabus524.pdf)
 * MAT 529: Metric Embeddings and Geometric Inequalities <a href= "{{ site.baseurl }}/notes/mat529_notes.pdf" title="529metric">[pdf]</a> (with Holden Lee)
