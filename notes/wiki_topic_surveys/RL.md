@@ -6,9 +6,6 @@ title: Theoretical Frameworks and Results in Reinforcement Learning
 * TOC
 {:toc}
 
-<!-- should i make this onto a separate page? how do i organize these survey notes for my own reasons? don't really want them to be blog posts... hm --> 
-
-<!-- another issue is stuff like MIT sublinear, that shouldn't be a blog post. it should also be on the notes page, but instead of pdf, link to the page. that is easier to figure out. I suppose the same can be true for this RL survey/ overview/wiki/cheatsheet of RL settings and paper notes --> 
 
 
 Here we conduct a survey of RL research which attempts to beat the \\(\Omega(S^2*A)\\) lower bound by
@@ -141,8 +138,6 @@ Papers
 ### Regret Bounds 
 
 ### Approximate MDPs
-
-### Regret Bounds
 
 ### Contextual Decision Processes
 
