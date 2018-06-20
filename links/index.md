@@ -376,6 +376,7 @@ ___
 * [Evan Chen's notes](http://web.evanchen.cc/coursework.html)
 * [An Infinitely Large Napkin (Evan Chen)](http://web.evanchen.cc/napkin.html)
 * [Irene Chen's notes on papers](https://github.com/irenetrampoline/papers)
+* [Daniel Takeshi's notes on papers](https://github.com/DanielTakeshi/Paper_Notes)
 * [Billy Fang's notes](https://www.stat.berkeley.edu/~blfang/#notes)
 
 

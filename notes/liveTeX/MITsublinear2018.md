@@ -1,11 +1,16 @@
 ---
-layout: post
-title: Notes from MIT Sublinear Workshop (June 10---13)
+layout: page
+title: Notes from MIT Sublinear Workshop (June 10-13)
 ---
+
+* TOC
+{:toc}
 
 See [website](http://mifods.mit.edu/sublinear.php) and [schedule](http://people.csail.mit.edu/joanne/SUBLINEAR.html). 
 
 I'm trying something new out today and taking notes directly in Markdown and posting directly to my website instead of compiling a pdf with LaTeX. Let's see how it goes! Something I'm already missing is my macros in LaTeX... need to see how to add that to Markdown. Also things like writing definitions etc. I'm sure there are ways to add TeX style files to Markdown/MathJaX. 
+
+___
 
 ### Panel (moderated by Madhu Sudan)
 

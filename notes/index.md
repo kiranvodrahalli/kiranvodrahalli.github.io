@@ -17,6 +17,11 @@ title: notes
 
 ___
 
+### Paper Summary Wikis
+These are organized by topic, and function as surveys/cheatsheets/summaries for areas I am researching. 
+
+* Reinforcement Learning Theory [[page]](wiki_topic_surveys/RL/)
+
 ### Technical Reviews
 
 * Learning to Plan and Hierarchical, Multi-Task Reinforcement Learning [[pdf]](ieor8100_project.pdf) (for [IEOR 8100](https://ieor8100.github.io/rl/))
@@ -98,6 +103,7 @@ For now, I have individual class notes for some classes I've taken. Sometimes, l
 
 ### Symposia Notes
 
+* MIT Sublinear Algorithms, Local Algorithms, and Robust Statistics (MIFODS MIT Workshop) (Jun. 2018) [[page]](liveTeX/MITsublinear2018/)
 * Bridging Optimization Theory, Information Theory, and Data Science at Princeton (May. 2018) [[pdf]](liveTeX/bridging_opt_info_theory_data_sci.pdf)
 * Mathematics of Deep Learning at Princeton (Mar. 2018) [[pdf]](liveTeX/mathematics_of_deep_learning_pton.pdf)
 * NYU Mini-Theory Symposium (Feb. 2018) [[pdf]](liveTeX/nyu_theory_symp_02_02_18.pdf)

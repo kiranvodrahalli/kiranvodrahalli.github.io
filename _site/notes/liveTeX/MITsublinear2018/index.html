@@ -25,7 +25,7 @@
 
   <title>
     
-      Notes from MIT Sublinear Workshop (June 10---13) || exponentially surprised
+      Notes from MIT Sublinear Workshop (June 10-13) || exponentially surprised
     
   </title>
 
@@ -92,12 +92,49 @@
       </header>
 
       <main>
-        <article class="post">
-  <h1 class="post-title">Notes from MIT Sublinear Workshop (June 10---13)</h1>
-  <time datetime="2018-06-12T00:00:00-04:00" class="post-date">12 Jun 2018</time>
-  <p>See <a href="http://mifods.mit.edu/sublinear.php">website</a> and <a href="http://people.csail.mit.edu/joanne/SUBLINEAR.html">schedule</a>.</p>
+        <article class="page">
+  <h1 class="page-title">Notes from MIT Sublinear Workshop (June 10-13)</h1>
+  <ul id="markdown-toc">
+  <li><a href="#panel-moderated-by-madhu-sudan" id="markdown-toc-panel-moderated-by-madhu-sudan">Panel (moderated by Madhu Sudan)</a></li>
+  <li><a href="#interactively-visualizing-large-datasets-using-sketches-parikshit-gopalan" id="markdown-toc-interactively-visualizing-large-datasets-using-sketches-parikshit-gopalan">Interactively Visualizing Large Datasets using Sketches (Parikshit Gopalan)</a>    <ul>
+      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+      <li><a href="#demo" id="markdown-toc-demo">Demo</a></li>
+      <li><a href="#now-why-are-we-talking-about-this-at-a-sublinear-algorithms-workshop" id="markdown-toc-now-why-are-we-talking-about-this-at-a-sublinear-algorithms-workshop">Now, why are we talking about this at a sublinear algorithms workshop?</a></li>
+      <li><a href="#limitations" id="markdown-toc-limitations">Limitations</a></li>
+      <li><a href="#background" id="markdown-toc-background">Background</a></li>
+      <li><a href="#scrolling" id="markdown-toc-scrolling">Scrolling</a></li>
+      <li><a href="#histograms" id="markdown-toc-histograms">Histograms</a></li>
+      <li><a href="#final-comments-sampling-vs-streaming" id="markdown-toc-final-comments-sampling-vs-streaming">Final Comments: Sampling vs. Streaming</a></li>
+    </ul>
+  </li>
+  <li><a href="#recent-advances-in-np-hard-variants-of-low-rank-approximation-david-woodruff" id="markdown-toc-recent-advances-in-np-hard-variants-of-low-rank-approximation-david-woodruff">Recent Advances in NP-Hard Variants of Low Rank Approximation (David Woodruff)</a>    <ul>
+      <li><a href="#outline-and-problem-description" id="markdown-toc-outline-and-problem-description">Outline and Problem Description</a></li>
+      <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
+      <li><a href="#results" id="markdown-toc-results">Results</a></li>
+      <li><a href="#hardness" id="markdown-toc-hardness">Hardness</a></li>
+      <li><a href="#techniques" id="markdown-toc-techniques">Techniques</a></li>
+      <li><a href="#algorithm-for-wlra" id="markdown-toc-algorithm-for-wlra">Algorithm for WLRA</a></li>
+      <li><a href="#guess-a-sketch" id="markdown-toc-guess-a-sketch">Guess a Sketch</a></li>
+      <li><a href="#open-problems" id="markdown-toc-open-problems">Open Problems</a></li>
+    </ul>
+  </li>
+  <li><a href="#submodular-maximization-via-approximate-data-structures-huy-nguyen" id="markdown-toc-submodular-maximization-via-approximate-data-structures-huy-nguyen">Submodular Maximization via Approximate Data Structures (Huy Nguyen)</a>    <ul>
+      <li><a href="#background-and-motivation" id="markdown-toc-background-and-motivation">Background and Motivation</a></li>
+      <li><a href="#key-idea" id="markdown-toc-key-idea">Key Idea</a></li>
+      <li><a href="#implementation" id="markdown-toc-implementation">Implementation</a></li>
+      <li><a href="#data-structure-problem" id="markdown-toc-data-structure-problem">Data Structure Problem</a></li>
+      <li><a href="#takeaways" id="markdown-toc-takeaways">Takeaways</a></li>
+      <li><a href="#questions" id="markdown-toc-questions">Questions</a></li>
+    </ul>
+  </li>
+  <li><a href="#jelani-nelson-on-ell_2-norm-sketching" id="markdown-toc-jelani-nelson-on-ell_2-norm-sketching">Jelani Nelson on \(\ell_2\)-norm sketching.</a></li>
+</ul>
+
+<p>See <a href="http://mifods.mit.edu/sublinear.php">website</a> and <a href="http://people.csail.mit.edu/joanne/SUBLINEAR.html">schedule</a>.</p>
 
 <p>I’m trying something new out today and taking notes directly in Markdown and posting directly to my website instead of compiling a pdf with LaTeX. Let’s see how it goes! Something I’m already missing is my macros in LaTeX… need to see how to add that to Markdown. Also things like writing definitions etc. I’m sure there are ways to add TeX style files to Markdown/MathJaX.</p>
+
+<hr />
 
 <h3 id="panel-moderated-by-madhu-sudan">Panel (moderated by Madhu Sudan)</h3>
 
@@ -317,43 +354,7 @@ Costis Daskalakis: Is there a relation to Follow-the-Perturbed-Leader? Answer: N
 
 <p>I missed most of the presentation, but it seemed interesting — the punchline was using the generic chaining to get a constant factor approximation. I have to look at the paper to see exactly what happened.</p>
 
-</article>
-
-
-<aside class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2016/10/21/arxivpaper-titleupdate/">
-            First ArXiv Paper and a New Title!
-            <small><time datetime="2016-10-21T00:00:00-04:00">21 Oct 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2016/06/21/icml16/">
-            Presentations at ICML 2016
-            <small><time datetime="2016-06-21T00:00:00-04:00">21 Jun 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2015/06/21/intro/">
-            MathJax Tests
-            <small><time datetime="2015-06-21T00:00:00-04:00">21 Jun 2015</time></small>
-          </a>
-        </h3>
-      </li>
-    
-  </ul>
-</aside>
-
+</article> 
 
 
 
@@ -361,7 +362,7 @@ Costis Daskalakis: Is there a relation to Follow-the-Perturbed-Leader? Answer: N
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2018-06-18T18:12:29-04:00">2018</time>. All rights reserved.
+          &copy; <time datetime="2018-06-20T16:03:19-04:00">2018</time>. All rights reserved.
         </small>
       </footer>
     </div>

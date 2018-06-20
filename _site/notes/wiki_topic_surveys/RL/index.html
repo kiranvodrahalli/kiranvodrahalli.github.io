@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+   
+   <!--
+     redirect users to the https version of the website.
+     but: only check when on the production domain, as set in _config.yml.
+    -->
+   <script type="text/javascript">
+     var enforce = "kiranvodrahalli.github.io";
+     if ((enforce == window.location.host) && (window.location.protocol != "https:"))
+       window.location = window.location.toString().replace(/^http:/, "https:");
+   </script>
+   
+
+  <!-- EB Garamond Font --> 
+  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Theoretical Frameworks and Results in Reinforcement Learning || exponentially surprised
+    
+  </title>
+
+  <!-- MathJax -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ 
+      TeX: { 
+        extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "bbox.js", "color.js", "enclose.js"] 
+      },
+      unicode: {
+        fonts: "STIXGeneral, 'Arial Unicode MS'"
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/public/favicomatic/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicomatic/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicomatic/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicomatic/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/public/favicomatic/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicomatic/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/public/favicomatic/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicomatic/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-128.png" sizes="128x128" />
+  <link rel="shortcut icon" type="image/png" href="/public/favicomatic/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="exponentially surprised" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <font size="8">Kiran Vodrahalli</font> is <a href="/" title="Home">||exponentially surprised||</a>
+          <small>[2<sup>H</sup> theoryblog]</small> 
+        </h3>
+        <a href="/about" title="about">{about}</a>
+        <a href="/research" title="research">{research}</a>
+        <a href="/talks" title="talks">{talks}</a>
+        <a href="/blog" title="blog">{blog}</a>
+        <a href="/archive" title="archive">{archive}</a>
+        <a href="/teaching" title="teaching">{teaching}</a>
+        <a href="/notes" title="notes">{notes}</a>
+        <a href="/links" title="links">{links}</a>
+        <a href="/press" title="press">{press}</a>
+        <!-- <div align="left">
+          <img src="/professional_headshot.jpg" alt="kiran_pic" height="400">
+        </div> -->
+      </header>
+
+      <main>
+        <article class="page">
+  <h1 class="page-title">Theoretical Frameworks and Results in Reinforcement Learning</h1>
+  <ul id="markdown-toc">
+  <li><a href="#e3-algorithm-and-variants" id="markdown-toc-e3-algorithm-and-variants">\(E^3\) Algorithm and variants</a></li>
+  <li><a href="#r-max" id="markdown-toc-r-max">R-Max</a></li>
+  <li><a href="#metric-assumption" id="markdown-toc-metric-assumption">Metric Assumption</a>    <ul>
+      <li><a href="#exploration-in-metric-state-spaces-kakade-kearns-langford-2003" id="markdown-toc-exploration-in-metric-state-spaces-kakade-kearns-langford-2003">Exploration in Metric State Spaces (Kakade, Kearns, Langford 2003)</a>        <ul>
+          <li><a href="#high-level-takeaways" id="markdown-toc-high-level-takeaways">High level takeaways</a></li>
+          <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+          <li><a href="#method" id="markdown-toc-method">Method</a></li>
+          <li><a href="#methods-that-dont-work" id="markdown-toc-methods-that-dont-work">Methods that don’t work</a></li>
+          <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+          <li><a href="#theoretical-results" id="markdown-toc-theoretical-results">Theoretical Results</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#factored-mdps" id="markdown-toc-factored-mdps">Factored MDPs</a></li>
+  <li><a href="#pac-rl" id="markdown-toc-pac-rl">PAC RL</a></li>
+  <li><a href="#regret-bounds" id="markdown-toc-regret-bounds">Regret Bounds</a></li>
+  <li><a href="#approximate-mdps" id="markdown-toc-approximate-mdps">Approximate MDPs</a></li>
+  <li><a href="#regret-bounds-1" id="markdown-toc-regret-bounds-1">Regret Bounds</a></li>
+  <li><a href="#contextual-decision-processes" id="markdown-toc-contextual-decision-processes">Contextual Decision Processes</a></li>
+</ul>
+
+<!-- should i make this onto a separate page? how do i organize these survey notes for my own reasons? don't really want them to be blog posts... hm -->
+
+<!-- another issue is stuff like MIT sublinear, that shouldn't be a blog post. it should also be on the notes page, but instead of pdf, link to the page. that is easier to figure out. I suppose the same can be true for this RL survey/ overview/wiki/cheatsheet of RL settings and paper notes -->
+
+<p>Here we conduct a survey of RL research which attempts to beat the \(\Omega(S^2*A)\) lower bound by
+assuming things about state and action spaces. I am filling this in as I go along my research survey.</p>
+
+<p>Note: In the offline version on my computer, links are links to files on my computer, not the internet.</p>
+
+<p>If you are accessing this page on the web, the links link to the papers where they can be found online.</p>
+
+<hr />
+
+<h3 id="e3-algorithm-and-variants">\(E^3\) Algorithm and variants</h3>
+
+<p>\(E^3\) Algorithm</p>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Known State</strong>: a state visited often enough so that dynamics and rewards are accurately modeled at this state.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Exploratory MDP</strong>: agent plans to escape in a fictitious MDP where the escape state has maximal reward.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Algorithm: When the agent is not at a known state, wander randomly to obtain new information. At a known state: explore or exploit (can decide efficiently given dynamics and rewards and a planning oracle). The decision to explore is made by assessing potential reward if the agent escapes known states to get maximal reward elsewhere: computed by planning to escape in a fictitious MDP which provides maximal reward for entering an unknown state.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Proof: either agent exploits for near optimal reward, or explores quickly, and increases set of known states – since # states is bounded, alg eventually exploits and gets near optimal reward.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>Papers</p>
+
+<ul>
+  <li><a href="link">paper title</a></li>
+</ul>
+
+<h3 id="r-max">R-Max</h3>
+
+<p>R-Max Algorithm</p>
+
+<ul>
+  <li>description</li>
+</ul>
+
+<p>Papers</p>
+
+<ul>
+  <li><a href="link">paper</a></li>
+</ul>
+
+<h3 id="metric-assumption">Metric Assumption</h3>
+
+<p>Papers</p>
+
+<h4 id="exploration-in-metric-state-spaces-kakade-kearns-langford-2003"><a href="http://www.aaai.org/Papers/ICML/2003/ICML03-042.pdf">Exploration in Metric State Spaces (Kakade, Kearns, Langford 2003)</a></h4>
+
+<h5 id="high-level-takeaways">High level takeaways</h5>
+
+<ul>
+  <li>
+    <p>This paper uses the \(E^3\) algorithm and assumes a <em>blackbox for approximate planning</em>.</p>
+  </li>
+  <li>
+    <p>Setting: \(T\)-step planning, average finite reward case. \(d((s, a), (s’, a’))\) is the metric. Requirements for \(d\): must have \(d((s, a), (s, a)) = 0\) and symmetry, but don’t require the triangle-inequality.</p>
+  </li>
+  <li>
+    <p>Different from E3: time/sample? complexity depends on the <em>covering number</em> of the state space, rather than the number of states. E.g., notion of resolution for modeling under the metric.</p>
+  </li>
+  <li>
+    <p>global exploration: trying to learn near optimal \(T\)-step policy in amount of time with no dependence on state space size: only on complexity of <em>state-space representation</em>.</p>
+  </li>
+  <li>
+    <p>gradient methods for approximate planning (compare/contrast w/recent Berkeley stuff?): old stuff (pre-2003) studied convergence to polices which small amounts of random exploration cannot improve. Notably, this does NOT handle the case of planning a long sequence of steps which might not be encountered by random approaches. Is this a drawback to Universal Planning Networks?</p>
+  </li>
+  <li>
+    <p>common technique: separate planning problem from exploration problem by assuming blackbox for approximate planning (e.g., DP or something else)</p>
+  </li>
+</ul>
+
+<h5 id="assumptions">Assumptions</h5>
+
+<ul>
+  <li>
+    <p>assume there is a metric on state-action pairs (Metric MDP)</p>
+  </li>
+  <li>
+    <p>“nearby” state-actions can be useful in predicting state-action dynamics</p>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Local Modeling Assumption</strong> (formal): We have an algorithmic model \(A\) for MDP. For any \((s, a)\), if we take \(m\) transitions \((s’, a’) –&gt; s’’\) and rewards according to the MDP, and also all these states we see are \(\alpha\)-close under the metric \(d\), then our model \(A\) of the MDP outputs a state according to transition probability \(\hat{P}(\hat{s} |s, a)\) and reward \(\hat{R}\), such that \(\hat{P}\) is within TV-distance \(\leq \alpha\) of the true distribution and the reward vector over states is within \(\ell_{\infty}\)-norm \(\leq \alpha\) of the true reward output for each state (all given curren state, action).</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <p>Why do we need the local modeling assumption? (note that this is key to get the metric result): We need it so that we can use the discretization of state-action space embued by the cover and still succeed in simulating the MDP.</p>
+  </li>
+  <li>
+    <p>We do not require that a destination state is in the neighborhood of \((s, a)\): only that nearby state-actions permit generalization in next-state distributions</p>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Approximate planning assumption</strong>: Given a generative model for an MDP and a state \(s\), we can return a policy \(\pi\) whose average reward is within \(\beta\) of the average \(T\)-step optimal reward.</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Notably, the approximate planning assumption abstracts away computational complexity of this procedure (as in factored \(E^3\)).</li>
+</ul>
+
+<h5 id="method">Method</h5>
+
+<ul>
+  <li>
+    <p>given sufficient “nearby” experience, implicit non-parametric model of dynamics in neighborhood of state-action space can be pieced together for planning on a subset of the global space</p>
+  </li>
+  <li>
+    <p>introduce notion of metric over state-action space, assume this metric permits construction or inference of “local” models, and then assume that such models permit planning.</p>
+  </li>
+  <li>
+    <p>in order to be effective, the covering number needs to be much smaller under the metric chosen.</p>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Known State-Action</strong>: satisfies local modeling assumption — any pair (s, a) s.t. alg has obtained at least m \(\alpha\)-close experiences (transition + reward).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Known MDP</strong>: model for part of global MDP we can approximate. It operates with input \((s, a)\), and flag bit “exploit”. If it is not a known state-action, output fail and stop. Otherwise, give the input and its \(m\) prior experiences in the \(\epsilon\)-neighborhood of the input to the generative model of the MDP, which outputs a state and reward. Recall that the model is close in TV distance for the conditional (on \((s, a)\)) transition distribution and close in \(\ell_{\infty}\) for the reward function over states. Let the outputs be \(\hat{s}, \hat{r}\). If “exploit” is true, then if \(\hat{s}\) is not part of any known state-action pair, output special “absorbing” state \(z\) and reward \(0\) and stop. Otherwise, if \(\hat{s}\) is part of a known state-action, then output the correct reward and the true state \(\hat{s}\) and stop. If “exploit” is false, then if \(\hat{s}\) is part of a known state-action, output \(\hat{s}\) and reward \(0\). If it is not part of a known state-action, then output special absorbing state \(z\) and reward \(1\). We can think of \(z\) as the “exploration state”, which represents an escape from the MDP, similarly to the vanilla \(E^3\) algorithm.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Metric-\(E^3\) Algorithm: decides if state-actions are known, so MDP model only needs a list of prior experiences. The algorithm is as follows: Use random moves until encountering a state with at least one known action: \((s, a)\). Use the planning oracle to plan on the approximate exploit-MDP (“exploit” \(= 1\)) and the approximate explore-MDP (“exploit” \(= 0\)). Call the resulting policies \(\pi_1, \pi_2\). If the value of the explore-policy over the approximate explore-MDP is \(&gt; \epsilon\), then execute the explore-policy for the next \(T\) steps (we are dealing with \(T\)-step policies) and restart. Otherwise, finish and output the exploit-policy.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="methods-that-dont-work">Methods that don’t work</h5>
+
+<ul>
+  <li>state aggregation: Markov dynamics must be preserved, often are not (Markovian assumption invalidated in the aggregate-state-space) (seems similar to what we assume w/FSA)</li>
+</ul>
+
+<h5 id="examples">Examples</h5>
+
+<ul>
+  <li>
+    <p>sufficent sensory info and advance knowledge of effects of actions so that local modeling works even with \(m = 1\) (e.g., just one step suffices to get \(\alpha\)-close in the metric)</p>
+  </li>
+  <li>
+    <p>line-of-sight metric for particular maze: \(d((s, a), (s’, a’)) = 0 \) if in line of sight and \(\infty\) otherwise. (doesn’t need to satisfy triangle!) — this admits a small covering of the space. Can add the Euclidean metric to it so that modeling error can grow with distance.</p>
+  </li>
+  <li>
+    <p>can also use metrics which can be defined with actions</p>
+  </li>
+  <li>
+    <p>state-space aggregation doesn’t work: corners where three augmented states exist are unstable near the corner.</p>
+  </li>
+</ul>
+
+<h5 id="theoretical-results">Theoretical Results</h5>
+
+<ul>
+  <li>
+    <p>\(\pi^*\) is optimal policy in the MDP</p>
+  </li>
+  <li>
+    <p>\(T\) is time horizon</p>
+  </li>
+  <li>
+    <p>Covering number \(N(\alpha)\)</p>
+  </li>
+  <li>
+    <p>\(m, \alpha\) are defined in local modeling assumption: no. of samples for local modeling, and precision (radius) for approximate MDP</p>
+  </li>
+  <li>
+    <p>\(\beta\) is approximate planning precision</p>
+  </li>
+  <li>
+    <p>theorems do not require assumption that MDP mixes</p>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Sample Complexity of Metric-</strong>\(E^3\): After \(\frac{T\cdot m \cdot N(\alpha)}{\epsilon - \alpha(T + 1)}\log(1/\delta) + m\cdot N(\alpha)\) actions, Metric-\(E^3\) halts and outputs policy such that the expected average \(T\)-step value is at least \(OPT - \epsilon - 2\beta - 2\alpha(T + 1)\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>The proof is as follows: As per <strong>bounded exploration lemma</strong>, we encounter a known state after at most \(m\cdot N(\alpha)\) exploration attempts, each of which happens when the expected value over the approximate explore-MDP is \(&gt; \epsilon\). By the <strong>simulation lemma</strong>, the true value is at least \(\epsilon - \alpha(T + 1)\). Therefore, since you get reward \(1\) when you successfully explore, since the expected reward is at least \(\epsilon - \alpha(T + 1)\), so is the probability of successful exploration. Then, there are a maximum of \(\frac{1}{\epsilon - \alpha(T + 1)}\) actions each time we have a successful exploration, and thus at most a total of \(\frac{m\cdot N(\alpha)}{\epsilon - \alpha(T + 1)}\) actions per episode. Then there are \(T\) episodes, so multiply by that to get an upper bound on the total number of possible actions taken. Apply Chernoff-Hoeffding to the coin flip scenario to get the first term in the bound. This is valid because, although the samples may not be independent, any upper bound that holds for independent samples also holds for samples obtained in an online manner by the agent (see Strehl’s thesis, section 1.5). The policy output satisfies the value bound by examining the halting condition and looking at the planning and simulation errors, using the <strong>Explore-or-Exploit</strong> lemma.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Simulation Lemma</strong>: For an \(\alpha\)-approximation of the MDP, then the expected average \(T\)-step value of the policy in the approximated MDP is within \(\alpha(T + 1)\) of the expected average \(T\)-step value of the policy in the true MDP for any policy. This lets us use the approximate MDPs while paying some additive error. Proved with triangle inequality and linearity of expectation, followed by induction.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Explore or Exploit Lemma</strong>: The optimal exploit-policy policy performs at least OPT \(- \epsilon\) well, where OPT is the value of the optimal policy, or the optimal explore-policy has probability of at least \(\epsilon\) of leaving the known states.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Bounded Exploration Time Lemma</strong>: Metric-\(E^3\) encounters at most \(m\cdot N(\alpha)\) unknown state-actions. Proof idea: For \(m = 1\), construct an invariant for all \(t\): \(C\) is a minimal set of disjoint balls with radius \(\alpha\) over state-actions seen up to time \(t\). Thus for all \(t\), \(|C| &lt; N(\alpha)\) by definition of covering number. For general \(m\), construct \(m\) analagous sets \(C_1, \cdots, C_m\) instead, and consider \(\sum_{i = 1}^m |C_i| &lt; m\cdot N(\alpha)\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="factored-mdps">Factored MDPs</h3>
+
+<h3 id="pac-rl">PAC RL</h3>
+
+<h3 id="regret-bounds">Regret Bounds</h3>
+
+<h3 id="approximate-mdps">Approximate MDPs</h3>
+
+<h3 id="regret-bounds-1">Regret Bounds</h3>
+
+<h3 id="contextual-decision-processes">Contextual Decision Processes</h3>
+
+<hr />
+
+
+</article> 
+
+
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2018-06-20T16:03:19-04:00">2018</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>
+
