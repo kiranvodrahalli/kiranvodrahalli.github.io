@@ -20,7 +20,10 @@ ___
 ### Paper Summary Wikis
 These are organized by topic, and function as surveys/cheatsheets/summaries for areas I am researching. 
 
+* Generalization Theory [[page]](wiki_topic_surveys/Generalization/)
 * Reinforcement Learning Theory [[page]](wiki_topic_surveys/RL/)
+* Sketching [[page]](wiki_topic_surveys/Sketching/)
+* Flows [[page]](wiki_topic_surveys/Flows/)
 
 ### Technical Reviews
 

@@ -25,7 +25,7 @@
 
   <title>
     
-      Sketching || exponentially surprised
+      Neural Net Generalization Theory || exponentially surprised
     
   </title>
 
@@ -93,12 +93,48 @@
 
       <main>
         <article class="page">
-  <h1 class="page-title">Sketching</h1>
+  <h1 class="page-title">Neural Net Generalization Theory</h1>
   <ul id="markdown-toc">
-  <li><a href="#metric-spaces-and-embeddings" id="markdown-toc-metric-spaces-and-embeddings">Metric Spaces and Embeddings</a></li>
-  <li><a href="#sketching-norms" id="markdown-toc-sketching-norms">Sketching Norms</a></li>
-  <li><a href="#sketching-distances" id="markdown-toc-sketching-distances">Sketching Distances</a></li>
-  <li><a href="#sketching-quadratic-forms" id="markdown-toc-sketching-quadratic-forms">Sketching Quadratic Forms</a></li>
+  <li><a href="#generalization-bounds" id="markdown-toc-generalization-bounds">Generalization Bounds</a>    <ul>
+      <li><a href="#union-bounds" id="markdown-toc-union-bounds">Union Bounds</a></li>
+      <li><a href="#covering-numbers" id="markdown-toc-covering-numbers">Covering Numbers</a></li>
+      <li><a href="#chaining" id="markdown-toc-chaining">Chaining</a></li>
+    </ul>
+  </li>
+  <li><a href="#measuring-complexity" id="markdown-toc-measuring-complexity">Measuring Complexity</a>    <ul>
+      <li><a href="#vc-dimension" id="markdown-toc-vc-dimension">VC-Dimension</a></li>
+      <li><a href="#rademacher-complexity" id="markdown-toc-rademacher-complexity">Rademacher Complexity</a></li>
+      <li><a href="#pac-bayes" id="markdown-toc-pac-bayes">PAC-Bayes</a>        <ul>
+          <li><a href="#langford" id="markdown-toc-langford">Langford</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#linear-function-classes" id="markdown-toc-linear-function-classes">Linear Function Classes</a>    <ul>
+      <li><a href="#tong-zhang-2002" id="markdown-toc-tong-zhang-2002">Tong Zhang (2002)</a></li>
+      <li><a href="#kakade-et-al-2008" id="markdown-toc-kakade-et-al-2008">Kakade et. al. (2008)</a></li>
+    </ul>
+  </li>
+  <li><a href="#neural-net-generalization-bounds" id="markdown-toc-neural-net-generalization-bounds">Neural Net Generalization Bounds</a>    <ul>
+      <li><a href="#classic-methods" id="markdown-toc-classic-methods">Classic methods</a>        <ul>
+          <li><a href="#bartlett-2002" id="markdown-toc-bartlett-2002">Bartlett (2002)</a></li>
+          <li><a href="#bartlett-2017" id="markdown-toc-bartlett-2017">Bartlett (2017)</a></li>
+          <li><a href="#golowitz-2018" id="markdown-toc-golowitz-2018">Golowitz (2018)</a></li>
+        </ul>
+      </li>
+      <li><a href="#pac-bayes-1" id="markdown-toc-pac-bayes-1">PAC-Bayes</a>        <ul>
+          <li><a href="#neyshabur-2017" id="markdown-toc-neyshabur-2017">Neyshabur (2017)</a></li>
+          <li><a href="#roy-2017" id="markdown-toc-roy-2017">Roy (2017)</a></li>
+        </ul>
+      </li>
+      <li><a href="#compression" id="markdown-toc-compression">Compression</a>        <ul>
+          <li><a href="#arora-2018" id="markdown-toc-arora-2018">Arora (2018)</a></li>
+          <li><a href="#zhou-2018" id="markdown-toc-zhou-2018">Zhou (2018)</a></li>
+          <li><a href="#baykal-2018" id="markdown-toc-baykal-2018">Baykal (2018)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 <p>Note: In the offline version on my computer, links are links to files on my computer, not the internet.</p>
@@ -107,13 +143,53 @@
 
 <hr />
 
-<h3 id="metric-spaces-and-embeddings">Metric Spaces and Embeddings</h3>
+<h2 id="generalization-bounds">Generalization Bounds</h2>
 
-<h3 id="sketching-norms">Sketching Norms</h3>
+<h3 id="union-bounds">Union Bounds</h3>
 
-<h3 id="sketching-distances">Sketching Distances</h3>
+<h3 id="covering-numbers">Covering Numbers</h3>
 
-<h3 id="sketching-quadratic-forms">Sketching Quadratic Forms</h3>
+<h3 id="chaining">Chaining</h3>
+
+<h2 id="measuring-complexity">Measuring Complexity</h2>
+
+<h3 id="vc-dimension">VC-Dimension</h3>
+
+<h3 id="rademacher-complexity">Rademacher Complexity</h3>
+
+<h3 id="pac-bayes">PAC-Bayes</h3>
+
+<h4 id="langford">Langford</h4>
+
+<h2 id="linear-function-classes">Linear Function Classes</h2>
+
+<h3 id="tong-zhang-2002">Tong Zhang (2002)</h3>
+
+<h3 id="kakade-et-al-2008">Kakade et. al. (2008)</h3>
+
+<h2 id="neural-net-generalization-bounds">Neural Net Generalization Bounds</h2>
+
+<h3 id="classic-methods">Classic methods</h3>
+
+<h4 id="bartlett-2002">Bartlett (2002)</h4>
+
+<h4 id="bartlett-2017">Bartlett (2017)</h4>
+
+<h4 id="golowitz-2018">Golowitz (2018)</h4>
+
+<h3 id="pac-bayes-1">PAC-Bayes</h3>
+
+<h4 id="neyshabur-2017">Neyshabur (2017)</h4>
+
+<h4 id="roy-2017">Roy (2017)</h4>
+
+<h3 id="compression">Compression</h3>
+
+<h4 id="arora-2018">Arora (2018)</h4>
+
+<h4 id="zhou-2018">Zhou (2018)</h4>
+
+<h4 id="baykal-2018">Baykal (2018)</h4>
 
 
 </article> 

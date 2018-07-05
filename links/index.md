@@ -15,18 +15,19 @@ ___
 
 * [Daniel Hsu](http://cs.columbia.edu/~djhsu)
 * [Alex Andoni](http://www.mit.edu/~andoni/)
-* [Sanjeev Arora](http://www.cs.princeton.edu/~arora/)
+* [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) [blog](http://www.offconvex.org/)
 * [Ken Norman](https://pni.princeton.edu/faculty/kenneth-norman)
 * [Roxana Geambasu](https://roxanageambasu.github.io/)
 * [Mikhail Khodak](https://scholar.princeton.edu/misha/)
 * [Nikunj Saunshi](http://www.cs.princeton.edu/~nsaunshi/)
-* [Holden Lee](http://holdenlee.github.io/blog/)
+* [Holden Lee](http://holdenlee.github.io/) [blog](http://holdenlee.github.io/blog)
 * [Cameron Chen](http://cameronphchen.github.io/)
-* [Chris Baldassano](http://www.chrisbaldassano.com/)
+* [Chris Baldassano](http://www.chrisbaldassano.com/) [blog](http://www.chrisbaldassano.com/blog/)
 * [Janice Chen](http://pbs.jhu.edu/directory/janice-chen/)
-* [Brandon Araki](https://www.csail.mit.edu/person/brandon-araki)
+* [Brandon Araki](https://www.csail.mit.edu/person/brandon-araki) [blog](http://braraki.github.io/)
 * [Rishabh Dudeja](http://stat.columbia.edu/department-directory/name/rishabh-dudeja/)
 * [Riley Spahn](http://www.cs.columbia.edu/~riley/)
+
 
 ---
 
@@ -200,6 +201,7 @@ ___
 * [The Design of Approximation Algorithms (Williamson and Shmoys)](http://www.designofapproxalgs.com/index.php)
 * [Approximate Algorithms and Semidefinite Programming (Gärtner and Matousek)](https://link.springer.com/book/10.1007%2F978-3-642-22015-9)
 * [Integer Programming and Combinatorial Optimization (Dorit Hochbaum)](http://www.ieor.berkeley.edu/~hochbaum/files/ieor269-2010.pdf)
+* [Hierarchies of Integer Programming Relaxations (Moses Charikar)](https://web.stanford.edu/class/cs369h/)
 * [Discrete Optimization (Gärtner)](https://people.inf.ethz.ch/gaertner/subdir/teaching/lecture_notes/do.pdf)
 * [Geometry: Combinatorics and Algorithms (GHW)](https://people.inf.ethz.ch/gaertner/subdir/teaching/lecture_notes/gca14-full.pdf)
 * [Geometric Random Walks: A Survey (Santosh Vempala)](https://www.cc.gatech.edu/~vempala/papers/survey.pdf)
@@ -210,6 +212,7 @@ ___
 * [Applied Algorithms (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cseP521wi17/index.html)
 * [Spectral Algorithms (Ravi Kannan and Santosh Vempala)](https://www.cc.gatech.edu/~vempala/spectralbook.pdf)
 * [Advanced Approximation Algorithms (Anupam Gupta and Ryan O'Donnell)](https://www.cs.cmu.edu/~anupamg/adv-approx/)
+* [Seminar on Learning Algorithms (Embeddings) (Sanjoy Dasgupta)](https://cseweb.ucsd.edu/~dasgupta/254-embeddings/)
 * [Proofs, Beliefs and Algorithms through the lens of Sum-of-Squares (Boaz Barak and David Steuer)](http://www.sumofsquares.org/public/index.html)
 * [Information Theory in Theoretical Computer Science (Omri Weinstein)](http://infotheorytcs.wikischolars.columbia.edu/)
 * [Information Theory in Computer Science (Madhu Sudan)](http://people.seas.harvard.edu/~madhusudan/courses/Spring2016/)
@@ -407,6 +410,8 @@ ___
 ### Code 
 
 * [Princeton NLP Codebase](https://github.com/NLPrinceton)
+* [Princeton ML Codebase](https://github.com/PrincetonML)
+* [Allen NLP Codebase](https://allennlp.org/)
 * [Harvard NLP Codebase](http://nlp.seas.harvard.edu/code/)
 * [BrainIAK](brainiak.org)
 * [OpenAI Gym](https://gym.openai.com/)

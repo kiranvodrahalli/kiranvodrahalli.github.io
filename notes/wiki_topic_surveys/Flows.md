@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sketching  
+title: Flows  
 ---
 
 * TOC
@@ -13,13 +13,7 @@ If you are accessing this page on the web, the links link to the papers where th
 
 ___
 
-### Metric Spaces and Embeddings
 
-### Sketching Norms
+### Nearly-Linear Time Graph Algorithms 
 
-### Sketching Distances
-
-### Sketching Quadratic Forms
-
-
-
+### Electrical Flows
