@@ -13,7 +13,7 @@ ___
 
 ### Princeton University Courses 
 
-* Spring 2017: TA for COS 511 --- Theoretical Machine Learning (graduate)
+* Spring 2017: TA for COS 511 --- Theoretical Machine Learning (graduate) [course page](http://www.cs.princeton.edu/~rlivni/cos511/cos511.html)
 * Spring 2017: helped with COS 495 --- Neural Networks (designed [homework assignment](https://cos495.github.io/2017/04/10/pset7.html))
 * Fall 2016: TA for COS 397 --- Independent Work Seminars in Natural Language Processing, Information Retrieval, and Entrepreneurship
 * Spring 2014: Grader for COS 226 --- Intro Algorithms
