@@ -10,6 +10,8 @@ ___
 
 ### Research Talks
 
+July 2018: A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs* (presented by Mikhail Khodak). ICML 2018 Theory of Deep Learning Workshop Oral Presentation. 
+
 May 2018: Master's Thesis presentation by Mikhail Khodak and Nikunj Saunshi. *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. <a href="{{site.baseurl }}/talks/iclr18_slides.pdf" title="iclr18_masters"> [slides] </a>.
 
 April 2018: Seminar on Theoretical Machine Learning at the Institute for Advanced Study (presented by Mikhail Khodak). *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. <a href="{{site.baseurl }}/talks/iclr18_at_algml_slides.pdf" title="iclr18_IAS"> [slides] </a>.

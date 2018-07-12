@@ -346,6 +346,7 @@ ___
 * [Creative Writing (Brandon Sanderson)](https://brandonsanderson.com/2016-sanderson-lectures/)
 
 #### Advice (on academia, productivity tips, how to's, coding tutorials, etc...)
+* [Troubling Trends in Machine Learning Scholarship (Lipton and Steinhardt)](https://arxiv.org/abs/1807.03341)
 * [You and Your Research (Hamming)](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 * [How to be a Mathematician (or Theoretical Computer Scientist) (O'Donnell)](http://www.cs.cmu.edu/~odonnell/toolkit13/how-to-do-math-and-tcs.pdf)
 * [Theory Life Hacks (Boaz Barak)](https://windowsontheory.org/2018/06/06/theory-life-hacks-ii/)
