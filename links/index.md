@@ -326,6 +326,13 @@ ___
 * [Learn You a Haskell](http://learnyouahaskell.com/chapters)
 
 <!-- to add: physics? -->
+#### Physics
+* [How to become a good theoretical physicist (Hooft)](http://www.goodtheorist.science/)
+* [The theoretical minimum (Susskind)](http://theoreticalminimum.com/courses)
+* [Perimeter Institute Videos](https://www.perimeterinstitute.ca/video-library)
+* [Concepts in Theoretical Physics (Baumann)](http://www.damtp.cam.ac.uk/user/db275/concepts/Lectures.pdf)
+* [Heidelberg Theoretical Physics Lecture Notes (Hefft)](http://www.thphys.uni-heidelberg.de/index.php?lang=e&n1=courses&n2=scripts)
+* [Lectures on Theoretical Physics (Tong)](http://www.damtp.cam.ac.uk/user/tong/teaching.html)
 
 <!-- to add: econ (e.g. game theory and econometrics) --> 
 
