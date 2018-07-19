@@ -72,6 +72,7 @@ ___
 * [inFERENce](http://www.inference.vc/)
 * [Seita's Place](https://danieltakeshi.github.io/)
 * [Power Overwhelming](https://usamo.wordpress.com/)
+* [Cosma Shalizi's Homepage](http://bactra.org/)
 
 ---
 
@@ -389,6 +390,7 @@ ___
 * [Irene Chen's notes on papers](https://github.com/irenetrampoline/papers)
 * [Daniel Takeshi's notes on papers](https://github.com/DanielTakeshi/Paper_Notes)
 * [Billy Fang's notes](https://www.stat.berkeley.edu/~blfang/#notes)
+* [Cosma Shalizi's notebooks](http://bactra.org/notebooks/)
 
 
 ---
