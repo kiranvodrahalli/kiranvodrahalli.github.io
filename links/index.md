@@ -359,6 +359,7 @@ ___
 * [How to be a Mathematician (or Theoretical Computer Scientist) (O'Donnell)](http://www.cs.cmu.edu/~odonnell/toolkit13/how-to-do-math-and-tcs.pdf)
 * [Theory Life Hacks (Boaz Barak)](https://windowsontheory.org/2018/06/06/theory-life-hacks-ii/)
 * [The Ph.D. Grind (Phillip Guo)](http://pgbovine.net/PhD-memoir/pguo-PhD-grind.pdf)
+* [Stress in Research (Charles Sutton)](http://www.theexclusive.org/tag/stress%20in%20research/)
 * [A Ph.D. is NOT Enough! (Feibelman)](https://www.amazon.com/gp/product/0465022227?ie=UTF8&tag=ucmbread-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0465022227)
 * [How to Give Good Academic Talks (Matt Might)](http://matt.might.net/articles/academic-presentation-tips/)
 * [How to Give a Great Research Talk (Simon Peyton Jones)](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/How-to-give-a-great-research-talk.pdf)
