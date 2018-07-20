@@ -41,6 +41,8 @@ ___
 
 ### Workshop Publications
 
+<span>[W4]</span>{: .green .bold} *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. Sanjeev Arora\*, Mikhail Khodak\*, Nikunj Saunshi\*, **Kiran Vodrahalli**\*. Poster. [ACL Workshop on Representation Learning for NLP](https://sites.google.com/site/repl4nlp2018/home), July 2018. (note: same work as ICLR '18 conference publication). 
+
 <span>[W3]</span>{: .green .bold} *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. Sanjeev Arora\*, Mikhail Khodak\*, Nikunj Saunshi\*, **Kiran Vodrahalli**\*. Oral Presentation and Poster. [ICML Workshop on Theory of Deep Learning](https://sites.google.com/site/deeplearningtheory/), July 2018. (note: same work as ICLR '18 conference publication). 
 
 <span>[W2]</span>{: .green .bold} *Mapping between Natural Movie fMRI Responses and Word-Sequence Representations*. **Kiran Vodrahalli**, Po-Hsuan Chen, Yingyu Liang, Janice Chen, Esther Yong, Christopher
