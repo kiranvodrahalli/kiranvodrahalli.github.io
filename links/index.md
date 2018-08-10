@@ -337,6 +337,7 @@ ___
 
 <!-- to add: physics? -->
 #### Physics
+* [The Feynman Lectures on Physics](http://www.feynmanlectures.caltech.edu/)
 * [How to become a good theoretical physicist (Hooft)](http://www.goodtheorist.science/)
 * [The theoretical minimum (Susskind)](http://theoreticalminimum.com/courses)
 * [Perimeter Institute Videos](https://www.perimeterinstitute.ca/video-library)
