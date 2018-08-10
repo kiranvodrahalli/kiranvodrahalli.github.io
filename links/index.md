@@ -126,6 +126,7 @@ ___
 * [Statistical Learning Theory (Percy Liang)](https://web.stanford.edu/class/cs229t/Lectures/percy-notes.pdf)
 * [A Course in Machine Learning (Hal Daumé III)](ciml.info)
 * [Statistical Learning Theory (Sham Kakade)](http://stat.wharton.upenn.edu/~skakade/courses/stat928/)
+* [Introduction to Computational Learning Theory (Rocco Servedio)](http://www.cs.columbia.edu/~cs4252/)
 * [Computational and Statistical Learning Theory (Nati Srebro)](http://ttic.uchicago.edu/~nati/Teaching/TTIC31120/2016/)
 * [Boosting: Foundations and Algorithms (Robert Schapire and Yoav Freund)](https://mitpress.mit.edu/books/boosting)
 * [Learning with Kernels (Schölkopf and Smola)](https://mitpress.mit.edu/books/learning-kernels)
