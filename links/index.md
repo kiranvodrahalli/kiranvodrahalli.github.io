@@ -436,6 +436,7 @@ ___
 * [Allen NLP Codebase](https://allennlp.org/)
 * [Harvard NLP Codebase](http://nlp.seas.harvard.edu/code/)
 * [BrainIAK](brainiak.org)
+* [CVXOPT](https://cvxopt.org/)
 * [OpenAI Gym](https://gym.openai.com/)
 * [PyTorch](https://pytorch.org/)
 * [scikit-learn](http://scikit-learn.org/stable/index.html)
