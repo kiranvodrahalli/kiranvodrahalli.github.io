@@ -219,6 +219,7 @@ ___
 * [Applied Algorithms (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cseP521wi17/index.html)
 * [Spectral Algorithms (Ravi Kannan and Santosh Vempala)](https://www.cc.gatech.edu/~vempala/spectralbook.pdf)
 * [Advanced Approximation Algorithms (Anupam Gupta and Ryan O'Donnell)](https://www.cs.cmu.edu/~anupamg/adv-approx/)
+* [Approximate Nearest Neighbor Search in High Dimensions (Andoni, Indyk, Razenshteyn)](https://arxiv.org/pdf/1806.09823.pdf)
 * [Seminar on Learning Algorithms (Embeddings) (Sanjoy Dasgupta)](https://cseweb.ucsd.edu/~dasgupta/254-embeddings/)
 * [Proofs, Beliefs and Algorithms through the lens of Sum-of-Squares (Boaz Barak and David Steuer)](http://www.sumofsquares.org/public/index.html)
 * [Information Theory in Theoretical Computer Science (Omri Weinstein)](http://infotheorytcs.wikischolars.columbia.edu/)
