@@ -409,7 +409,9 @@ ___
 
 ### Favorite Papers
 
+
 * [Adversarial Examples from Computational Constraints (Bubeck, Price, Razenshteyn)](https://arxiv.org/pdf/1805.10204.pdf)
+* [Scalable Bilinear \((\pi\\) Learning using State and Action Features (Chen, Li, Wang)](https://arxiv.org/abs/1804.10328)
 * [Understanding Black-box Predictions via Influence Functions (Koh and Liang)](https://arxiv.org/abs/1703.04730)
 * [Contextual Decision Processes with Low Bellman Rank are PAC-Learnable (JKALS)](http://proceedings.mlr.press/v70/jiang17c/jiang17c.pdf)
 * [A Latent Variable Model Approach to PMI-Based Word Embeddings (ALLMR)](https://transacl.org/ojs/index.php/tacl/article/view/742/204)
