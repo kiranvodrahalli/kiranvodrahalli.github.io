@@ -57,6 +57,7 @@ ___
 * [In Theory](https://lucatrevisan.wordpress.com/)
 * [TCS math](https://tcsmath.github.io/)
 * [What's New](https://terrytao.wordpress.com/)
+* [Columbia Advanced Machine Learning Seminar](https://casmls.github.io/)
 * [GeomBlog](http://blog.geomblog.org/)
 * [TheoryDish](https://theorydish.blog/)
 * [Minimizing Regret](http://www.minimizingregret.com/)
