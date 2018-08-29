@@ -145,6 +145,7 @@ ___
 * [Theoretical Statistics II (Berkeley Stat 210b)](https://www.stat.berkeley.edu/~mjwain/stat210b/)
 * [Sparsity, Structure, and Inference (Yuxin Chen)](http://www.princeton.edu/~yc5/ele538b_sparsity/)
 * [Large Scale Inference: Empirical Bayes for Estimation, Testing, and Prediction (Efron)](https://statweb.stanford.edu/~ckirby/brad/LSI/monograph_CUP.pdf)
+* [A Survey on Distribution Testing: Your Data is Big. But is it Blue? (Canonne)](https://pdfs.semanticscholar.org/9970/1b16ffe5fb8e89ccbfa99a39c8e0ecda12d5.pdf)
 
 #### Optimal Transport
 * [Computational Optimal Transport (Gabriel Peyré and Marco Cuturi)](https://arxiv.org/abs/1803.00567)
