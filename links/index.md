@@ -23,6 +23,7 @@ ___
 * [Holden Lee](http://holdenlee.github.io/) [[blog]](http://holdenlee.github.io/blog)
 * [Cameron Chen](http://cameronphchen.github.io/)
 * [Chris Baldassano](http://www.chrisbaldassano.com/) [[blog]](http://www.chrisbaldassano.com/blog/)
+* [Yingyu Liang](http://pages.cs.wisc.edu/~yliang/)
 * [Janice Chen](http://pbs.jhu.edu/directory/janice-chen/)
 * [Brandon Araki](https://www.csail.mit.edu/person/brandon-araki) [[blog]](http://braraki.github.io/)
 * [Rishabh Dudeja](http://stat.columbia.edu/department-directory/name/rishabh-dudeja/)
