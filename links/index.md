@@ -360,6 +360,7 @@ ___
 #### Writing 
 * [Mathematical Writing (Knuth, Larabee, Roberts)](http://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf)
 * [How to Write a Great Research Paper (Simon Peyton Jones)](https://www.cis.upenn.edu/~sweirich/icfp-plmw15/slides/peyton-jones.pdf)
+* [Write the Paper First (Jason Eisner)](http://www.cs.jhu.edu/~jason/advice/write-the-paper-first.html)
 * [3 Shell Scripts to Improve Your Writing (Matt Might)](http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/)
 * [Style: Lessons in Clarity and Grace (Williams and Bizup)](https://www.amazon.com/Style-Lessons-Clarity-Grace-11th/dp/0321898680)
 * [The Science of Scientific Writing (Gopen and Swan)](https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing)
@@ -372,6 +373,10 @@ ___
 * [Theory Life Hacks (Boaz Barak)](https://windowsontheory.org/2018/06/06/theory-life-hacks-ii/)
 * [Advice on submitting to Nature, Science, and PNAS (from computer scientists)](https://thmatters.files.wordpress.com/2017/05/nature-science-pnas-advice.pdf)
 * [CAREER example proposals](https://thmatters.wordpress.com/funding-opportunities-and-tips/career-examples-proposalscomments/)
+* [How to Be a Successful Ph.D. Student (Dredze and Wallach)](https://people.cs.umass.edu/~wallach/how_to_be_a_successful_phd_student.pdf)
+* [How to Read a Technical Paper (Jason Eisner)](http://www.cs.jhu.edu/~jason/advice/how-to-read-a-paper.html)
+* [How to Organize Your Files (Jason Eisner)](http://www.cs.jhu.edu/~jason/advice/how-to-organize-your-files.html)
+* [How to Find Research Problems (Jason Eisner)](http://www.cs.jhu.edu/~jason/advice/how-to-find-research-problems.html)
 * [The Ph.D. Grind (Phillip Guo)](http://pgbovine.net/PhD-memoir/pguo-PhD-grind.pdf)
 * [Stress in Research (Charles Sutton)](http://www.theexclusive.org/tag/stress%20in%20research/)
 * [A Ph.D. is NOT Enough! (Feibelman)](https://www.amazon.com/gp/product/0465022227?ie=UTF8&tag=ucmbread-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0465022227)
