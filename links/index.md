@@ -224,6 +224,7 @@ ___
 * [Advanced Approximation Algorithms (Anupam Gupta and Ryan O'Donnell)](https://www.cs.cmu.edu/~anupamg/adv-approx/)
 * [Approximate Nearest Neighbor Search in High Dimensions (Andoni, Indyk, Razenshteyn)](https://arxiv.org/pdf/1806.09823.pdf)
 * [Seminar on Learning Algorithms (Embeddings) (Sanjoy Dasgupta)](https://cseweb.ucsd.edu/~dasgupta/254-embeddings/)
+* [Expander Graphs and their Applications (Hoory, Linial, Widgerson)](http://www.cs.huji.ac.il/~nati/PAPERS/expander_survey.pdf)
 * [Proofs, Beliefs and Algorithms through the lens of Sum-of-Squares (Boaz Barak and David Steuer)](http://www.sumofsquares.org/public/index.html)
 * [Information Theory in Theoretical Computer Science (Omri Weinstein)](http://infotheorytcs.wikischolars.columbia.edu/)
 * [Information Theory in Computer Science (Madhu Sudan)](http://people.seas.harvard.edu/~madhusudan/courses/Spring2016/)
