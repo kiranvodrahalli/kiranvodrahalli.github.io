@@ -259,7 +259,8 @@ ___
 * [Numerical Optimization (Nocedal and Wright)](https://www.springer.com/us/book/9780387303031)
 
 #### Graphical Models and Bayesian Inference
-* [Foundations of Graphical Models (Dave Blei)](http://www.cs.columbia.edu/~blei/fogm/2018F/)
+* [Foundations of Graphical Models 2018 (Dave Blei)](http://www.cs.columbia.edu/~blei/fogm/2018F/)
+* [Foundations of Graphical Models 2016 (Dave Blei)](http://www.cs.columbia.edu/~blei/fogm/2016F/)
 * [Bayesian Models for Machine Learning (John Paisley)](http://www.columbia.edu/~jwp2128/Teaching/E6720/BayesianModelsMachineLearning2016.pdf)
 * [Probabilistic Graphical Models (Koller and Friedman)](https://mitpress.mit.edu/books/probabilistic-graphical-models)
 * [Elements of Causal Inference (Peters, Janzing, and Schölkopf)](https://mitpress.mit.edu/books/elements-causal-inference) (note, open access!)
