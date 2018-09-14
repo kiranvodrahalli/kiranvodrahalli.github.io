@@ -278,6 +278,7 @@ ___
 
 #### Natural Language Processing
 * [Natural Language Processing (Michael Collins)](http://www.cs.columbia.edu/~mcollins/cs4705-fall2017/)
+* [A Primer on Neural Network Models for Natural Language Processing (Yoav Goldberg)](https://u.cs.biu.ac.il/~yogo/nnlp.pdf)
 * [Deep Learning for Natural Language Processing (Richard Socher)](http://cs224d.stanford.edu/)
 * [Natural Language Processing (Sida Wang)](https://www.cs.princeton.edu/courses/archive/spring18/cos495/schedule/)
 * [Natural Language Processing (Jacob Eisenstein)](https://github.com/jacobeisenstein/gt-nlp-class)
