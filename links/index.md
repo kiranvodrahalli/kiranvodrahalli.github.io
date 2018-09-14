@@ -174,12 +174,15 @@ ___
 * [Foundations of Data Science (Blum, Hopcroft, Kannan)](https://www.cs.cornell.edu/jeh/book.pdf)
 * [Algorithmic Aspects of ML (Ankur Moitra)](http://people.csail.mit.edu/moitra/408.html)
 * [Provable Algorithms for Machine Learning Problems (Rong Ge)](https://users.cs.duke.edu/~rongge/thesis.pdf)
+* [Simons Spring 2017 Program on Theoretical Foundations of Machine Learning](https://simons.berkeley.edu/programs/machinelearning2017)
+* [Simons Fall 2018 Program on Foundations of Data Science](https://simons.berkeley.edu/programs/datascience2018)
 * [Non-Convex Optimization for Machine Learning: Design, Analysis, and Understanding (Tengyu Ma)](https://dataspace.princeton.edu/jspui/bitstream/88435/dsp01th83m199d/1/Ma_princeton_0181D_12361.pdf)
 * [Algorithmic Aspects of ML (Rong Ge)](https://www2.cs.duke.edu/courses/fall16/compsci590.2/)
 * [New Directions in Theoretical ML (Sanjeev Arora)](https://www.cs.princeton.edu/courses/archive/fall17/cos597A/)
 * [Ten Lectures and Forty-Two Open Problems in the Mathematics of Data Science (Afonso Bandeira)](https://cims.nyu.edu/~bandeira/TenLecturesFortyTwoProblems.pdf)
 * [Advanced Machine Learning (Daniel Hsu)](http://www.cs.columbia.edu/~djhsu/coms4772-f16/)
 * [Linear Dimensionality Reduction: Survey, Insights, Generalizations (Cunningham and Ghahramani)](http://jmlr.org/papers/v16/cunningham15a.html)
+* [Unsupervised Learning (Nakul Verma)](http://www.cs.columbia.edu/~verma/classes/uml/index.html)
 * [Unsupervised Learning: Theory and Practice (Elad Hazan)](http://www.cs.princeton.edu/courses/archive/spring17/cos598E/)
 * [Community Detection Survey (Emmanuel Abbe)](http://www.princeton.edu/~eabbe/publications/abbe_FNT_2.pdf)
 
@@ -243,6 +246,7 @@ ___
 * [Convex Optimization: Algorithms and Complexity (Sébastian Bubeck)](http://sbubeck.com/Bubeck15.pdf)
 * [Linear and Semidefinite Programming (Ryan O'Donnell)](http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f11/www/)
 * [Convex Optimization (Boyd and Vandenberghe)](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)
+* [Simons Fall 2017 Program on Bridging Continuous and Discrete Optimization](https://simons.berkeley.edu/programs/optimization2017)
 * [Convex Optimization (Laurent El Ghaoui)](http://people.eecs.berkeley.edu/~elghaoui/Teaching/EE227BT/LectureNotes_EE227BT.pdf)
 * [Introduction to Online Convex Optimization (Elad Hazan)](http://ocobook.cs.princeton.edu/OCObook.pdf)
 * [Interplay between Convex Optimization and Geometry (Yin Tat Lee)](http://yintat.com/cse599_winter2018/)
@@ -287,6 +291,11 @@ ___
 * [Machine Translation and Sequence-to-Sequence Models (Graham Neubig)](http://phontron.com/class/mtandseq2seq2018/)
 * [Natural Language Processing (Sida Wang)](https://www.cs.princeton.edu/courses/archive/spring18/cos495/schedule/)
 * [Natural Language Processing (Jacob Eisenstein)](https://github.com/jacobeisenstein/gt-nlp-class)
+
+#### Neuroscience 
+* [Computation and the Brain (Christos Papadimitriou)](https://computationandbrain.github.io/about/)
+* [Computation and the Brain (Santosh Vempala)](https://computationandbrain.wordpress.com/)
+* [Simons Spring 2018 Program on The Brain and Computation](https://simons.berkeley.edu/programs/brain2018)
 
 #### Deep Learning
 * [Neural Networks: Theory and Applications (Sebastian Seung)](https://cos485.github.io/)
