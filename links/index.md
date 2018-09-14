@@ -308,7 +308,7 @@ ___
 * [Probability: Theory and Examples (Durrett)](https://services.math.duke.edu/~rtd/PTE/PTE4_1.pdf)
 * [Probability with Martingales (David Williams)](https://www.cambridge.org/core/books/probability-with-martingales/B4CFCE0D08930FB46C6E93E775503926)
 * [Probability and Stochastics (Erhan Çinlar)](https://www.springer.com/us/book/9780387878584)
-* [Stochastic Calcullus, Filtering, and Control (Ramon van Handel)](https://pdfs.semanticscholar.org/c92f/e13f860c95ed6ff8c517ff423e07935575ae.pdf)
+* [Stochastic Calculus, Filtering, and Control (Ramon van Handel)](https://pdfs.semanticscholar.org/c92f/e13f860c95ed6ff8c517ff423e07935575ae.pdf)
 * [Fourier Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7562.html)
 * [Complex Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/7563.html)
 * [Real Analysis (Stein and Shakarchi)](https://press.princeton.edu/titles/8008.html)
