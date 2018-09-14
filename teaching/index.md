@@ -12,7 +12,7 @@ ___
 
 ### Columbia University Courses
 
-* Fall 2018: TA for COMS 6998-06 --- Computation and the Brain (graduate) [[course page]](computationandbrain.github.io/about/)
+* Fall 2018: TA for COMS 6998-06 --- Computation and the Brain (graduate) [[course page]](https://computationandbrain.github.io/about/)
 
 ### Princeton University Courses 
 
