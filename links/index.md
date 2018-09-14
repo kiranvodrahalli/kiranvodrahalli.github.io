@@ -289,6 +289,7 @@ ___
 
 #### Deep Learning
 * [Neural Networks: Theory and Applications (Sebastian Seung)](https://cos485.github.io/)
+* [Theoretical Foundations of Deep Learning (Sanjeev Arora)](https://www.cs.princeton.edu/courses/archive/fall18/cos597G/)
 * [Convolutional Networks for Visual Recognition (Fei-Fei Li)](http://cs231n.stanford.edu/)
 * [Deep Learning (Goodfellow, Bengio, Courville)](http://www.deeplearningbook.org/)
 * [Mathematics of Deep Learning (Joan Bruna)](https://joanbruna.github.io/MathsDL-spring18/)
