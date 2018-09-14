@@ -192,6 +192,8 @@ ___
 * [Simons Institute Video Lectures](https://www.youtube.com/user/SimonsInstitute)
 * [Mathematics and Computation (Avi Widgerson)](https://www.math.ias.edu/files/mathandcomp.pdf)
 * [Spectral Graph Theory (Dan Spielman)](http://www.cs.yale.edu/homes/spielman/561/)
+* [Spectral Graph Theory and its Applications (Dan Spielman)](http://www.cs.yale.edu/homes/spielman/eigs/)
+* [Laplacian Page (Dan Spielman)](https://sites.google.com/a/yale.edu/laplacian/)
 * [Pseudorandomness (Salil Vadhan)](http://people.seas.harvard.edu/~salil/pseudorandomness/pseudorandomness-published-Dec12.pdf)
 * [A Theorist's Toolkit (Jon Kelner)](https://learning-modules.mit.edu/materials/index.html?uuid=/course/18/sp18/18.408#materials)
 * [A Theorist's Toolkit (Ryan O'Donnell)](http://www.cs.cmu.edu/~odonnell/toolkit13/)
