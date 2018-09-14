@@ -259,6 +259,7 @@ ___
 * [Numerical Optimization (Nocedal and Wright)](https://www.springer.com/us/book/9780387303031)
 
 #### Graphical Models and Bayesian Inference
+* [Foundations of Graphical Models (Dave Blei)](http://www.cs.columbia.edu/~blei/fogm/2018F/)
 * [Bayesian Models for Machine Learning (John Paisley)](http://www.columbia.edu/~jwp2128/Teaching/E6720/BayesianModelsMachineLearning2016.pdf)
 * [Probabilistic Graphical Models (Koller and Friedman)](https://mitpress.mit.edu/books/probabilistic-graphical-models)
 * [Elements of Causal Inference (Peters, Janzing, and Schölkopf)](https://mitpress.mit.edu/books/elements-causal-inference) (note, open access!)
@@ -280,6 +281,9 @@ ___
 * [Natural Language Processing (Michael Collins)](http://www.cs.columbia.edu/~mcollins/cs4705-fall2017/)
 * [A Primer on Neural Network Models for Natural Language Processing (Yoav Goldberg)](https://u.cs.biu.ac.il/~yogo/nnlp.pdf)
 * [Deep Learning for Natural Language Processing (Richard Socher)](http://cs224d.stanford.edu/)
+* [Machine Learning for Natural Language (Sasha Rush and Yoon Kim)](https://harvard-ml-courses.github.io/cs287-web/)
+* [Neural Networks for NLP (Graham Neubig)](http://phontron.com/class/nn4nlp2018/)
+* [Machine Translation and Sequence-to-Sequence Models (Graham Neubig)](http://phontron.com/class/mtandseq2seq2018/)
 * [Natural Language Processing (Sida Wang)](https://www.cs.princeton.edu/courses/archive/spring18/cos495/schedule/)
 * [Natural Language Processing (Jacob Eisenstein)](https://github.com/jacobeisenstein/gt-nlp-class)
 
