@@ -111,6 +111,7 @@ ___
 * [Elements of Information Theory (Cover and Thomas)](https://www.wiley.com/en-us/Elements+of+Information+Theory%2C+2nd+Edition-p-9780471241959)
 * [Analysis of Boolean Functions (Ryan O'Donnell)](http://www.cs.tau.ac.il/~amnon/Classes/2016-PRG/Analysis-Of-Boolean-Functions.pdf)
 * [Metric Embeddings and Geometric Inequalities (Assaf Naor)](/notes/mat529_notes.pdf)
+* [Metric Dimension Reduction: A Snapshot of the Ribe Program](https://arxiv.org/pdf/1809.02376.pdf)
 * [Random Fields and Geometry (Adler and Taylor)](https://www.springer.com/us/book/9780387481128)
 * [Information Geometry and its Applications (Shun-ichi Amari)](https://www.springer.com/us/book/9784431559771)
 * [An Elementary Introduction to Modern Convex Geometry (Keith Ball)](http://library.msri.org/books/Book31/files/ball.pdf)
