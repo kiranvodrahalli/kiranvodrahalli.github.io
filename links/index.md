@@ -237,6 +237,7 @@ ___
 * [Expander Graphs and their Applications (Hoory, Linial, Widgerson)](http://www.cs.huji.ac.il/~nati/PAPERS/expander_survey.pdf)
 * [Proofs, Beliefs and Algorithms through the lens of Sum-of-Squares (Boaz Barak and David Steurer)](http://www.sumofsquares.org/public/index.html)
 * [Sum-of-Squares Proofs and the Quest Toward Optimal Algorithms (Boaz Barak and David Steurer)](https://arxiv.org/pdf/1404.5236.pdf)
+* [Sum of Squares (Prasad Raghavendra)](http://people.eecs.berkeley.edu/~prasad/fall2018/sos.html)
 * [On the Unique Games Conjecture (Subhash Khot)](https://cs.nyu.edu/~khot/papers/UGCSurvey.pdf)
 * [Physics and Computation (Boaz Barak and Tselil Schramm)](https://www.boazbarak.org/fall18seminar/)
 * [Information Theory in Theoretical Computer Science (Omri Weinstein)](http://infotheorytcs.wikischolars.columbia.edu/)
