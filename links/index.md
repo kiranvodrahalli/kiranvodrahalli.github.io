@@ -100,6 +100,7 @@ ___
 #### High-Dimensional Probability, Geometry, and Functional Analysis
 * [Probability in High Dimension (Ramon van Handel)](http://www.princeton.edu/~rvan/APC550.pdf)
 * [High Dimensional Probability (Roman Vershynin)](https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf)
+* [Introduction to the Non-Asymptotic Theory of Random Matrices (Roman Vershynin)](http://www-personal.umich.edu/~romanv/papers/non-asymptotic-rmt-plain.pdf)
 * [High Dimensional Probability (Phillipe Rigollet)](https://learning-modules.mit.edu/materials/index.html?uuid=/course/18/sp18/18.657#materials)
 * [Concentration Inequalities: A Nonasymptotic Theory of Independence (Boucheron, Lugosi, Massart)](https://www.hse.ru/data/2016/11/24/1113029206/Concentration%20inequalities.pdf)
 * [An Introduction to Matrix Concentration Inequalities (Joel Tropp)](http://users.cms.caltech.edu/~jtropp/books/Tro14-Introduction-Matrix-FnTML-rev.pdf)
@@ -122,6 +123,7 @@ ___
 
 #### Learning Theory and Statistics
 * [Theory of Classification (Boucheron, Bousquet, Lugosi)](https://www.esaim-ps.org/articles/ps/pdf/2005/01/ps0420.pdf)
+* [Statistical Learning Theory and Applications (Poggio, Rosasco, Rakhlin, Banburski)](http://www.mit.edu/~9.520/fall18/)
 * [Understanding Machine Learning (Shai [Shalev-Shwartz, Ben-David])](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf)
 * [Foundations of Machine Learning (Mohri, Rostamizadeh, and Talwalkar)](https://cs.nyu.edu/~mohri/mlbook/)
 * [Theoretical Machine Learning (Rob Schapire)](https://www.cs.princeton.edu/courses/archive/spring18/cos511/schedule.html)
@@ -146,6 +148,7 @@ ___
 * [Theoretical Statistics I (Berkeley Stat 210a)](https://www.stat.berkeley.edu/~wfithian/courses/stat210a/)
 * [Theoretical Statistics II (Berkeley Stat 210b)](https://www.stat.berkeley.edu/~mjwain/stat210b/)
 * [Sparsity, Structure, and Inference (Yuxin Chen)](http://www.princeton.edu/~yc5/ele538b_sparsity/)
+* [Inference, Estimation, and Information Processing (Andrea Montanari)](http://web.stanford.edu/class/ee378b/ee378b.html)
 * [Large Scale Inference: Empirical Bayes for Estimation, Testing, and Prediction (Efron)](https://statweb.stanford.edu/~ckirby/brad/LSI/monograph_CUP.pdf)
 * [A Survey on Distribution Testing: Your Data is Big. But is it Blue? (Canonne)](https://pdfs.semanticscholar.org/9970/1b16ffe5fb8e89ccbfa99a39c8e0ecda12d5.pdf)
 
@@ -155,6 +158,7 @@ ___
 
 #### Interactive Learning
 * [Interactive Learning (Daniel Hsu)](http://www.cs.columbia.edu/~djhsu/coms6998-f17/index.html)
+* [Online Methods in Machine Learning (Sasha Rakhlin)](http://www.mit.edu/~rakhlin/6.883/)
 * [The Algorithmic Foundations of Differential Privacy (Cynthia Dwork and Aaron Roth)](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf)
 * [The Algorithmic Foundations of Adaptive Data Analysis (Aaron Roth)](https://adaptivedataanalysis.com/about/)
 * [Reinforcement Learning (Shipra Agrawal)](https://ieor8100.github.io/rl/)
@@ -234,6 +238,7 @@ ___
 * [Proofs, Beliefs and Algorithms through the lens of Sum-of-Squares (Boaz Barak and David Steurer)](http://www.sumofsquares.org/public/index.html)
 * [Sum-of-Squares Proofs and the Quest Toward Optimal Algorithms (Boaz Barak and David Steurer)](https://arxiv.org/pdf/1404.5236.pdf)
 * [On the Unique Games Conjecture (Subhash Khot)](https://cs.nyu.edu/~khot/papers/UGCSurvey.pdf)
+* [Physics and Computation (Boaz Barak and Tselil Schramm)](https://www.boazbarak.org/fall18seminar/)
 * [Information Theory in Theoretical Computer Science (Omri Weinstein)](http://infotheorytcs.wikischolars.columbia.edu/)
 * [Information Theory in Computer Science (Madhu Sudan)](http://people.seas.harvard.edu/~madhusudan/courses/Spring2016/)
 * [Essential Coding Theory (Madhu Sudan)](http://people.seas.harvard.edu/~madhusudan/courses/Spring2017/)
@@ -296,10 +301,14 @@ ___
 * [Computation and the Brain (Christos Papadimitriou)](https://computationandbrain.github.io/about/)
 * [Computation and the Brain (Santosh Vempala)](https://computationandbrain.wordpress.com/)
 * [Simons Spring 2018 Program on The Brain and Computation](https://simons.berkeley.edu/programs/brain2018)
+* [Computational Cognitive Science (Tenenbaum)](https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-66j-computational-cognitive-science-fall-2004/)
+* [Probabilistic Models of Cognition (Tenenbaum)](https://probmods.org/)
 
 #### Deep Learning
 * [Neural Networks: Theory and Applications (Sebastian Seung)](https://cos485.github.io/)
 * [Theoretical Foundations of Deep Learning (Sanjeev Arora)](https://www.cs.princeton.edu/courses/archive/fall18/cos597G/)
+* [Science of Deep Learning: Bridging Theory and Practice (Costis Daskalakis and Aleksander Madry)](https://stellar.mit.edu/S/course/6/sp18/6.883/index.html)
+* [Theories of Deep Learning (David Donoho)](https://stats385.github.io/)
 * [Convolutional Networks for Visual Recognition (Fei-Fei Li)](http://cs231n.stanford.edu/)
 * [Deep Learning (Goodfellow, Bengio, Courville)](http://www.deeplearningbook.org/)
 * [Mathematics of Deep Learning (Joan Bruna)](https://joanbruna.github.io/MathsDL-spring18/)
@@ -318,6 +327,7 @@ ___
 
 #### Analysis
 * [Analysis in a Single Variable (Michael Damron and Mark McConnell)](http://people.math.gatech.edu/~mdamron6/MAT_215_all_lectures.pdf)
+* [An Introduction to Analysis (Robert C. Gunning)](https://web.math.princeton.edu/~gunning/bk.pdf)
 * [Principles of Mathematical Analysis (Rudin)](https://www.amazon.com/Principles-Mathematical-Analysis-International-Mathematics/dp/007054235X)
 * [An Introduction to Measure Theory (Terry Tao)](https://terrytao.files.wordpress.com/2011/01/measure-book1.pdf)
 * [Probability Theory (Allan Sly)](https://web.math.princeton.edu/~asly/MAT385.html)
