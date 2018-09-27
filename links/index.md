@@ -401,6 +401,8 @@ ___
 * [Creative Writing (Brandon Sanderson)](https://brandonsanderson.com/2016-sanderson-lectures/)
 
 #### Advice (on academia, productivity tips, how to's, coding tutorials, etc...)
+* [The Bandwagon (Claude Shannon)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1056774)
+* [Terry Tao's Career Advice](https://terrytao.wordpress.com/career-advice/)
 * [Troubling Trends in Machine Learning Scholarship (Lipton and Steinhardt)](https://arxiv.org/abs/1807.03341)
 * [You and Your Research (Hamming)](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 * [How to be a Mathematician (or Theoretical Computer Scientist) (O'Donnell)](http://www.cs.cmu.edu/~odonnell/toolkit13/how-to-do-math-and-tcs.pdf)
@@ -490,6 +492,7 @@ ___
 ### Fun Links
 
 * [Princeton Math Ph.D. General Exams](http://web.math.princeton.edu/generals/)
+* ["A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence"](http://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html)
 * [The Illustrated Guide to a Ph.D. (Matt Might)](http://matt.might.net/articles/phd-school-in-pictures/)
 * [PhD Comics](http://phdcomics.com/)
 * [One Weird Kernel Trick](http://oneweirdkerneltrick.com/) (See also the [SIGBOVIK conference](http://sigbovik.org/))
