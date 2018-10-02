@@ -234,6 +234,7 @@ ___
 * [Advanced Approximation Algorithms (Anupam Gupta and Ryan O'Donnell)](https://www.cs.cmu.edu/~anupamg/adv-approx/)
 * [Approximate Nearest Neighbor Search in High Dimensions (Andoni, Indyk, Razenshteyn)](https://arxiv.org/pdf/1806.09823.pdf)
 * [Seminar on Learning Algorithms (Embeddings) (Sanjoy Dasgupta)](https://cseweb.ucsd.edu/~dasgupta/254-embeddings/)
+* [Lecture Notes on Graph Partitioning, Expanders, and Spectral Methods (Luca Trevisan)](https://people.eecs.berkeley.edu/~luca/books/expanders-2016.pdf)
 * [Expander Graphs and their Applications (Hoory, Linial, Widgerson)](http://www.cs.huji.ac.il/~nati/PAPERS/expander_survey.pdf)
 * [Proofs, Beliefs and Algorithms through the lens of Sum-of-Squares (Boaz Barak and David Steurer)](http://www.sumofsquares.org/public/index.html)
 * [Sum-of-Squares Proofs and the Quest Toward Optimal Algorithms (Boaz Barak and David Steurer)](https://arxiv.org/pdf/1404.5236.pdf)
