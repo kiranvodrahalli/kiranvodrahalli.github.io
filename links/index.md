@@ -228,6 +228,7 @@ ___
 * [Randomness and Computation (Alistair Sinclair)](https://people.eecs.berkeley.edu/~sinclair/cs271/s18.html)
 * [Randomized Algorithms and Probabilistic Analysis (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cse525au16/index.html)
 * [Randomized Algorithms (David Karger)](https://courses.csail.mit.edu/6.856/current/)
+* [Combinatorial Optimization: Exact and Approximate Algorithms (Luca Trevisan)](https://people.eecs.berkeley.edu/~luca/books/cs261.pdf)
 * [Notes on Randomized Algorithms (James Aspnes)](http://cs-www.cs.yale.edu/homes/aspnes/classes/469/notes.pdf)
 * [Applied Algorithms (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cseP521wi17/index.html)
 * [Spectral Algorithms (Ravi Kannan and Santosh Vempala)](https://www.cc.gatech.edu/~vempala/spectralbook.pdf)
