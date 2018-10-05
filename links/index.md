@@ -195,6 +195,7 @@ ___
 * [Algorithm Design (Kleinberg and Tardos)](https://www.amazon.com/Algorithm-Design-Jon-Kleinberg/dp/0321295358)
 * [Advanced Algorithms (Sanjeev Arora)](https://www.cs.princeton.edu/courses/archive/fall14/cos521/)
 * [Algorithms through Geometric Lens (Alex Andoni and Ilya Razenshteyn)](https://ilyaraz.org/static/class/materials.html)
+* [Algorithms through Geometric Lens (2018) (Ilya Razenshteyn)](https://ilyaraz.org/static/class_2018/)
 * [Advanced Algorithms (Ankur Moitra)](http://people.csail.mit.edu/moitra/854.html)
 * [Simons Institute Video Lectures](https://www.youtube.com/user/SimonsInstitute)
 * [Mathematics and Computation (Avi Widgerson)](https://www.math.ias.edu/files/mathandcomp.pdf)
