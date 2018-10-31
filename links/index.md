@@ -328,6 +328,7 @@ ___
 * [Advanced Linear Algebra (Roman)](https://www.springer.com/us/book/9780387728285)
 * [Matrix Computations (Golub and Van Loan)](http://web.mit.edu/ehliu/Public/sclark/Golub%20G.H.,%20Van%20Loan%20C.F.-%20Matrix%20Computations.pdf)
 * [Matrix Analysis (Horn and Johnson)](http://www.cambridge.org/us/academic/subjects/mathematics/algebra/matrix-analysis-2nd-edition?format=PB&isbn=9780521839402#IIBBbEAyHTdq2c6M.97)
+* [Topics in Matrix Analysis (Horn and Johnson)](https://www.cambridge.org/core/books/topics-in-matrix-analysis/B988495A235F1C3406EA484A2C477B03)
 
 #### Analysis
 * [Analysis in a Single Variable (Michael Damron and Mark McConnell)](http://people.math.gatech.edu/~mdamron6/MAT_215_all_lectures.pdf)
@@ -434,6 +435,7 @@ ___
 * [Handbook of Mathematical Functions (Abramowitz and Stegun)](http://people.math.sfu.ca/~cbm/aands/abramowitz_and_stegun.pdf)
 * [Matrix Cookbook (Petersen and Pedersen)](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf) 
 * [Online Encyclopedia of Integer Sequences (OEIS)](https://oeis.org/)
+* [Theoretical CS StackExchange](https://cstheory.stackexchange.com/)
 * [Wolfram Alpha](http://www.wolframalpha.com/)
 * [DeTeXify](http://detexify.kirelabs.org/classify.html)
 * [MathJax tricks](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
@@ -495,6 +497,7 @@ ___
 ### Fun Links
 
 * [Princeton Math Ph.D. General Exams](http://web.math.princeton.edu/generals/)
+* [The Proof is Trivial!](http://www.theproofistrivial.com/)
 * ["A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence"](http://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html)
 * [The Illustrated Guide to a Ph.D. (Matt Might)](http://matt.might.net/articles/phd-school-in-pictures/)
 * [PhD Comics](http://phdcomics.com/)
