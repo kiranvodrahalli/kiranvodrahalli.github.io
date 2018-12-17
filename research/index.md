@@ -21,13 +21,11 @@ ___
 
 ### Preprints
 
-<span>[P2]</span>{: .red .bold} *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. Alex Andoni\*, Rishabh Dudeja\*, Daniel Hsu\*, **Kiran Vodrahalli**\*. In submission. [arXiv soon!]
-
-<span>[P1]</span>{: .red .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Cristian-Ioan Vasile, Daniela Rus. In submission. [arXiv soon!]
-
 ---
 
 ### Conference and Journal Publications 
+
+<span>[C4]</span>{: .blue .bold} *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. Alex Andoni\*, Rishabh Dudeja\*, Daniel Hsu\*, **Kiran Vodrahalli**\*. Algorithmic Learning Theory, March 2019. [arXiv soon!]
 
 <span>[C3]</span>{: .blue .bold} *A Large Self-Annotated Corpus for Sarcasm*. Mikhail Khodak, Nikunj Saunshi, **Kiran Vodrahalli**. Poster. Language Resources and Evaluation, May 2018. <a href= "{{ site.baseurl }}/research/publications/lrec18.pdf" title= "lrec18"> [pdf] </a> <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/160.pdf" title="lrec18"> [conference] </a> <a href="https://arxiv.org/abs/1704.05579" title="lrec18_arxiv"> [arXiv] </a> [[dataset]](http://nlp.cs.princeton.edu/SARC/) [[code]](https://github.com/NLPrinceton/SARC)
 
@@ -40,6 +38,8 @@ ___
 ---
 
 ### Workshop Publications
+
+<span>[W5]</span>{: .green .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Cristian-Ioan Vasile, Daniela Rus. [NeurIPS 2018 Workshop on Infer2Control](https://sites.google.com/view/infer2control-nips2018), December 2018. [arXiv soon!]
 
 <span>[W4]</span>{: .green .bold} *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. Sanjeev Arora\*, Mikhail Khodak\*, Nikunj Saunshi\*, **Kiran Vodrahalli**\*. Poster. [ACL Workshop on Representation Learning for NLP](https://sites.google.com/site/repl4nlp2018/home), July 2018. (note: same work as ICLR '18 conference publication). 
 

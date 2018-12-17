@@ -405,6 +405,7 @@ ___
 * [Creative Writing (Brandon Sanderson)](https://brandonsanderson.com/2016-sanderson-lectures/)
 
 #### Advice (on academia, productivity tips, how to's, coding tutorials, etc...)
+* [Manuel Blum's Advice to a Beginning Graduate Student](https://www.cs.cmu.edu/~mblum/research/pdf/grad.html)
 * [The Bandwagon (Claude Shannon)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1056774)
 * [Terry Tao's Career Advice](https://terrytao.wordpress.com/career-advice/)
 * [Troubling Trends in Machine Learning Scholarship (Lipton and Steinhardt)](https://arxiv.org/abs/1807.03341)
