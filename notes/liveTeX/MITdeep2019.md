@@ -223,7 +223,26 @@ We have a two layer network and we are going to minimize square loss with SGD. W
 
 Ok so now we have parameters n samples, N units, dimension D, and k steps. People have started to understand some of these regimes, we will describe the picture. First we'll look at the case where you only have a constant number of neurons \\(N = O(1)\\), \\(n \geq D\\), \\(k \geq n\\). I'll call this the small network regime (small number of neurons). You can study a lot of things in this setting. People studied this using spin glass techniques; there was a nice paper last year by Auburne et. al. using statistical mechanics. There's an interesting phase transition. The second regime that was studied is where \\(N > d^c, k \geq n^{c'}\\), where \\(c, c'\\) is some power (imagine like these powers are 6). We call this the overparametrized regime or kernel regime. What happens is what Rong was describing this morning; here SGD needs to take only few steps to get to the optimum, and only the linearization matters (you end up doing something very similar to kernel ridge regression). The initialization of the random rates is very important. 
 
-Finally, we have the **mean-field regime**. We have a large number of neurons \\(N \geq D, D \leq k \leq n\\). Here you only visit each neuron a few number of times (in this talk, just once). 
+Finally, we have the **mean-field regime**. We have a large number of neurons \\(N \geq D, D \leq k \leq n\\). Here you only visit each neuron a few number of times (in this talk, just once). Here the dynamics are nonlinear, but you try to take advantage of the large n to simplify the description. 
+Here we take \\(k << nD\\). We will focus on this regime for the rest of the talk. 
+
+Now we'll focus on the mean-field regime. We'll also assume no noise for simplicity. A good point to start is the universal approximation. Barron's theorem says the optimal risk is bounded by \\(\frac{1}{N} 2\sigma \int_{\mathbb{R}^d}||w||\mathcal{F}(w)dw \\) where we're taking the Fourier transform. We can relax the function class we consider \\(\hat{f}(x; \rho) = \int \alpha(x, \theta) \rho(d\theta)\\), where we think of \\(\alpha\\) as Fourier coefficient, and where we want the measure \\(\rho\\) to be approximated as a sum of \\(N\\) delta functions, when \\(N\\) is very large.
+
+Now we want to understand what is learned by SGD. So can we study the evolution of the density of the empirical distribution? So the key object we want to study is 
+$$ \hat{\rho}_k^{(N)} = \frac{1}{N}\sum_{i = 1}^N \delta_{\theta^k}$$ 
+This is the natural way to represent the network, this is invariant under permutation --- you have factored away the permutation by writing it as a sum (and a probability distribution). 
+
+So how does the distribution given above evolve? 
+We'd like to write down some kind of ordinary differential equation for this object. We can write down a partial differential equation. We need to have evolution in an infinite dimensional space, this is a PDE. It is 
+$$
+\delta_t \rho_t = \nabla (\rho_t \nabla \Psi(\theta, \rho_t))
+$$
+$$
+\Psi(\theta, \rho) = V(\theta) + int U(\theta, \hat{\theta}) \rho(d\hat{\theta})
+$$
+where \\(V(\theta) = \mathbb{E}[y\alpha(x, \theta)]\\) and \\(U(\theta_1, \theta_2) = \mathbb{E}[\alpha(x, \theta_1)\alpha(x, \theta_2)]\\). 
+
+Now this is a bit scary, but we can get some intuition from it. 
 
 
 ### Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)
