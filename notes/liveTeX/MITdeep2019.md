@@ -266,8 +266,8 @@ There are two steps:
 * Approximate gradient flow on population risk by the PDE. 
 You can write the gradient flow on population risk as the part of the PDE where \\(\Psi\\) is defined. Nonlinear dynamics is one way to do this. This type of proof has a long history in mathematical physics, because people were interested in systems of particles, and can be traced back to de Brujin. 
 
-Nonlinear dynamics is the followign problem: Look at a single particle that evolves according to the gradient of \\(\Psi\\). Then it's possible to show that the nonlinear dynamics is equivalent to the PDE.  
-
+Nonlinear dynamics is the following problem: Look at a single particle that evolves according to the gradient of \\(\Psi\\). Then it's possible to show that the nonlinear dynamics is equivalent to the PDE.  
+To go from nonlinear dynamics to PDE, you create a simple coupling. 
 
 
 ### Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)
