@@ -10,6 +10,8 @@ See [website](http://mifods.mit.edu/deep.php).
 
 ___
 
+## Bootcamp (01/27/2019)
+
 ### Inductive Bias and Generalization in Deep Learning (Nati Srebro)
 
 #### Introduction 
@@ -219,7 +221,9 @@ I'm going to end on some open problems:
 
 We have a two layer network and we are going to minimize square loss with SGD. We'll assume the step-sizes are a small constant. n is the number of samples, and N is the number of hidden units. How can we analyze this? 
 
+Ok so now we have parameters n samples, N units, dimension D, and k steps. People have started to understand some of these regimes, we will describe the picture. First we'll look at the case where you only have a constant number of neurons \\(N = O(1)\\), \\(n \geq D\\), \\(k \geq n\\). I'll call this the small network regime (small number of neurons). You can study a lot of things in this setting. People studied this using spin glass techniques; there was a nice paper last year by Auburne et. al. using statistical mechanics. There's an interesting phase transition. The second regime that was studied is where \\(N > d^c, k \geq n^{c'}\\), where \\(c, c'\\) is some power (imagine like these powers are 6). We call this the overparametrized regime or kernel regime. What happens is what Rong was describing this morning; here SGD needs to take only few steps to get to the optimum, and only the linearization matters (you end up doing something very similar to kernel ridge regression). The initialization of the random rates is very important. 
 
+Finally, we have the **mean-field regime**. We have a large number of neurons \\(N \geq D, D \leq k \leq n\\). Here you only visit each neuron a few number of times (in this talk, just once). 
 
 
 ### Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)
