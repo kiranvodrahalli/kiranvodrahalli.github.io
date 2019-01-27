@@ -313,12 +313,66 @@ You can actually integrate this and turn it into a limit. But it does tend to ge
 
 How can we avoid that? One weird trick that works is to add a bit of noise to the gradient step update. Say, a Gaussian centered around the usual update. How much variance should we add? We have a spherical covariance matrix, but its size is proportional to dt and inversely proportional to \\(\beta\\), which is inverse temperature (e.g., simulated annealing it's 1/temperature). The point is that you take a random step. What this does is it prevents you from getting stuck, a nonzero chance of escaping. You add this noise between times t and t + dt. Why would you want this noise to be independent of the past noise? This gives you white noise, but why would you want this to be white noise? Here's how I understand it: Essentially, suppose that you're very close to a local minimum, and the gradient is basically zero. What you want is multiple attempts to escape. If they're independent, it's a geometrically distributed random variable with a finite mean. There's large deviation theory for dynamic systems that makes this intuition precise. You can then show that the time of escape from each basin of attraction is finite in expectation, and you have an exponentially distributed random variable if you normalize by the mean, which ties it back to memoryless process. 
 
-So this all leads us to think of d-dimensional Brownian motion.  
+So this all leads us to think of d-dimensional Brownian motion: we know increments are both independent and Gaussian. As a result, we end up with a random evolution. We can thus write down a stochastic differential equation. 
+$$
+dX_t = \nabla f(x_t)dt + \sqrt{\frac{2}{\beta}}dW_t 
+$$
+
+This was developed by Ito, who thought in terms of evolution in the space of measures, continuous time Markov processes that are analogues of ODEs. You have to define a vector field for this, and in the case of diffusions, reduces to stochastic differential equations. Since Gaussians are defined by first two moments, you can think of a flow for the mean and a flow for the covariance. 
+
+When you integrate this you get a random process. This particular equation (after integrating) is called the **overdamped Langevin equation**:
+$$
+X_t = X_0 - \int_0^1 \nabla f(x_t)dt + \sqrt{\frac{2}{\beta}}\int dW_s
+$$
+
+Now, Brownian motion is nowhere differentiable. So Langevin introduced a damping term in 1908; the velocity is determined by the momentum, and the momentum is evolving according to an SDE. When you take the friction to infinty, you end up with something like this. But this was all physics. This was a realistic description of diffusion in some potential energy field such that you can meaningfully talk about random energy of a particle. 
+
+Fast forward several years and we end up with papers by Guidas (1985), Geman-Huang (1986), and they said you can use this for global optimization! You can say you'll eventually visit all basins of attraction, so you'll eventually get to the best one. 
+There were variants of annealing where you take \\(\beta\\) to infinity under a schedule, also constant temperature variants. 
+
+In the context of Bayesian ML and MCMC, in 1996 people would think of f as proportional to some posterior that you want to sample from. You decompose this using Bayes rule and run your Langevin dynamics. It has a rich history. Let's fast forward and think in terms of machine learning: We have SGD. You can think of SGD as true gradient + gaussian fluctuation (via central limit assumptions). Now the variance is dependent on the position. Max Welling and Ye Whye Teh brought Langevin dynamics back to ML and things took off from there in 2006. 
+
+The idea here is that you can quantify all sorts of things if you're working in continuous time. 
+
+This is called Friedlin-Wentzell theory (late 80s). We will explicitly indicate \\(\beta\\) here, because we want to see what happens when \\(\beta\\) gets cranked up: 
+
+$$
+dX_t^{\beta} = -\nabla f(x_t^{\beta}) dt + \sqrt{\frac{2}{\beta}}dW_t
+$$
+We're interested in the probability that 
+$$
+P(\sup_{0 < t \leq T} \| X_t^{\beta} - X_t^{\infty}\|_2 > \delta) = P^{\beta}(\delta)$$
+
+Then if you normalize this probability by \\(\beta\\), then as you take \\(\beta\\) to infinity this goes to zero. But you can still exit basins of attraction!
 
 
+Now the issue is that you want the amount of time it takes to find the optimum to be small. You generically expect exponential time. Can you quantify how long it takes? Large deviation says you'll get there, but it could even be doubly exponential in dimension. 
 
+#### Global optimality in finite time
 
+This is a work I did with various people at COLT 2017. You can show that as time goes to infinity, the law of \\(X_t\\) converges to a distribution \\(\pi(dx) \sim e^{-\beta f(x)} dx\\). 
 
+Under some conditions on f, you can show that if you sample from this \\(\pi\\) and look at the expected value of f at that sample. The difference between this and the value of f at the global min is roughly \\(d/\beta \log (\beta/d)\\). "What's a few logs between friends". We showed the Wasserstein-2 distance between \\(\mu_t\\) and \\(\pi\\) is bounded by \\(c\sqrt{KL(\mu_0 \| \pi)}e^{-t/c_{ls}}\\) where \\(c_{ls}\\) is the log-sobolev constant, which is unfortunately known to be exponential in dimension generically. 
+
+We needed some conditions: 
+* The gradient of f is Lipschitz
+* dissipitivity: there exists positive m and b such that \\(\langle x, \nabla f(x) \rangle \geq m\|x\|^2 - b\\). 
+
+This was based on some Lyapunov function techniques from probability theory. You can show this process is bounded in \\(L_2\\) and convert it to a Wasserstein bound. On the other hand, this takes a long time. There was a paper by Yuchen Zhang, Percy Liang, and Moses Charikar that shows a discretized version will hit in polynomial time. So there's a discrepancy between these things. 
+
+#### Metastability 
+
+Suppose you initialize your diffusion so that it happens to lie within some local minima. Suppose it's smooth, dissipative, and also Lipschitz-Hessian. The intuition behind the result I'm about to state is simpler than the previous proof. Suppose you initialize your diffusion; it happens to lie in some ball around some non-degenerate local minima. You can linearize your gradient around that local minima. Suppoes it's going to be in a ball of d dimensions of radius \\(\sqrt{b/m}\\) (follows from dissipitivity). Let \\(H\\) be the hessian. Let \\(\tilde{X}_t = X_t - \bar{x}\\). Then 
+$$
+d\tilde{X}_t = -H\tilde{X}_t dt + \sqrt{2/\beta}dW_t + \rho(\tilde{X}_t)dt 
+$$
+
+The first two terms are very well understood: This is Ornstein-Uhlenbeck process. WLOG you can assume eigenvalues of Hessian are lower bounded by m. The asympotic mean is zero, and the variance is controlled by \\(\beta\\). It turns out you can take this process, and use an idea from the theory of ODEs. You run time backwards by doing \\(X_t = e^{-Ht}X_0\\), where we're using definition of matrix exponential. 
+
+Suppose that you want to spend time T around local min with high probability. Define \\(T_{recurrence} \sim (1/m)\log(r/\epsilon)\\) and \\(T_{escape} \sim T_{recurrent} + T\\).
+Then if \\(\beta \geq \frac{d}{\epsilon^2}(1 + \log (T/\delta))\\), you can control the length of the metastability phase. You want to explore all the minima but tune the time that you explore them. T will tend to be exponentially large when you go to discrete time, but in continuous time, it's clear: You transition out quickly and transition to another basin quickly, but if you hang out for a certain amount of time, you'll hang around a bit more and you can control this by the parameter \\(\beta\\). 
+
+Since then there have been many works working with the Hamiltonian Langevin dynamics (with momentum), you can use it for sampling. The exponential dependence on time was improved into something like exponential dependence on condition number of the Hessian. Discretization I didn't talk about, because that's a whole can of worms. But I think Ito calculus understanding is worthwhile in the context of deep learning. 
 
 
 
