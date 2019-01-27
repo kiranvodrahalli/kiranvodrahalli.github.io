@@ -106,6 +106,7 @@ For now, I have individual class notes for some classes I've taken. Sometimes, l
 
 ### Symposia Notes
 
+* MIT Deep Learning and Nonconvex Optimization (MIFODS MIT Workshop) (Jan. 2019) [[page]](liveTeX/MITdeep2019/)
 * MIT Sublinear Algorithms, Local Algorithms, and Robust Statistics (MIFODS MIT Workshop) (Jun. 2018) [[page]](liveTeX/MITsublinear2018/)
 * Bridging Optimization Theory, Information Theory, and Data Science at Princeton (May. 2018) [[pdf]](liveTeX/bridging_opt_info_theory_data_sci.pdf)
 * Mathematics of Deep Learning at Princeton (Mar. 2018) [[pdf]](liveTeX/mathematics_of_deep_learning_pton.pdf)

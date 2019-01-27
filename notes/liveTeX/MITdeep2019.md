@@ -217,6 +217,10 @@ I'm going to end on some open problems:
 
 ### Mean Field Description of Two-layers Neural Networks (Andrea Montanari)
 
+We have a two layer network and we are going to minimize square loss with SGD. We'll assume the step-sizes are a small constant. n is the number of samples, and N is the number of hidden units. How can we analyze this? 
+
+
+
 
 ### Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)
 
