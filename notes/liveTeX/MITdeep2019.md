@@ -226,7 +226,7 @@ Ok so now we have parameters n samples, N units, dimension D, and k steps. Peopl
 Finally, we have the **mean-field regime**. We have a large number of neurons \\(N \geq D, D \leq k \leq n\\). Here you only visit each neuron a few number of times (in this talk, just once). Here the dynamics are nonlinear, but you try to take advantage of the large n to simplify the description. 
 Here we take \\(k << nD\\). We will focus on this regime for the rest of the talk. 
 
-Now we'll focus on the mean-field regime. We'll also assume no noise for simplicity. A good point to start is the universal approximation. Barron's theorem says the optimal risk is bounded by \\(\frac{1}{N} 2\sigma \int_{\mathbb{R}^d}||w||\mathcal{F}(w)dw \\) where we're taking the Fourier transform. We can relax the function class we consider \\(\hat{f}(x; \rho) = \int \alpha(x, \theta) \rho(d\theta)\\), where we think of \\(\alpha\\) as Fourier coefficient, and where we want the measure \\(\rho\\) to be approximated as a sum of \\(N\\) delta functions, when \\(N\\) is very large.
+Now we'll focus on the mean-field regime. We'll also assume no noise for simplicity. A good point to start is the universal approximation. Barron's theorem says the optimal risk is bounded by \\(\frac{1}{N} 2\sigma \int_{\mathbb{R}^d}\|w\|\mathcal{F}(w)dw \\) where we're taking the Fourier transform. We can relax the function class we consider \\(\hat{f}(x; \rho) = \int \alpha(x, \theta) \rho(d\theta)\\), where we think of \\(\alpha\\) as Fourier coefficient, and where we want the measure \\(\rho\\) to be approximated as a sum of \\(N\\) delta functions, when \\(N\\) is very large.
 
 Now we want to understand what is learned by SGD. So can we study the evolution of the density of the empirical distribution? So the key object we want to study is 
 $$ \hat{\rho}_k^{(N)} = \frac{1}{N}\sum_{i = 1}^N \delta_{\theta^k}$$ 
@@ -242,7 +242,9 @@ $$
 $$
 where \\(V(\theta) = \mathbb{E}[y\alpha(x, \theta)]\\) and \\(U(\theta_1, \theta_2) = \mathbb{E}[\alpha(x, \theta_1)\alpha(x, \theta_2)]\\). 
 
-Now this is a bit scary, but we can get some intuition from it. 
+Now this is a bit scary, but we can get some intuition from it. We will give a sort of law of large numbers theorem. 
+
+
 
 
 ### Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)
