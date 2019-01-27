@@ -253,7 +253,7 @@ So to reiterate, the solution to the PDE and the object we're interested in (emp
 
 Now what is this error term? 
 $$
-err(N, D, \epsilon, z) = \sqrt{\min(\frac{1}{N}, \epsilon)}(\sqrt{D + \log(N/\epsilon)}) + z
+err(N, D, \epsilon, z) = \sqrt{\max(\frac{1}{N}, \epsilon)}(\sqrt{D + \log(N/\epsilon)}) + z
 $$
 where z is just a constant that doesn't matter (just for high probability bound). Simplifying, we look at the intereting parameter regime \\(N >> D, \epsilon << 1/D\\), which for \\(\epsilon\\) is better than \\(1/ND\\), which is what we might expect if we think about number of parameters. So the number of samples we use is \\(n = T/\epsilon = O(D) << ND\\). This is surprising somehow. 
 
@@ -269,6 +269,11 @@ You can write the gradient flow on population risk as the part of the PDE where 
 Nonlinear dynamics is the following problem: Look at a single particle that evolves according to the gradient of \\(\Psi\\). Then it's possible to show that the nonlinear dynamics is equivalent to the PDE.  
 To go from nonlinear dynamics to PDE, you create a simple coupling. 
 
+The crux of the matter is of course looking at concentration on the empirical distribution --- there's considerable benefit from the fact that we're looking at a some of terms here. This is where some of the "magic" happens. 
+
+#### What can you do with this? 
+
+Can we prove approximate global convergence? 
 
 ### Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)
 
