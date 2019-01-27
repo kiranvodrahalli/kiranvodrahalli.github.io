@@ -299,7 +299,21 @@ We assume that this is a well-behaved probability distribution. If you can avoid
 
 ### Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)
 
+We wish to minimize some function \\(f\\) of d variables; f is a finite average over the data. We want to minimize f. We're just going to talk about minimizing f somehow. Gradient descent is simple and it's a procedure of choice. We'll for the most part work in continuous time. We'll write 
+$$ 
+dX_t = - \nabla f(x_t)dt
+$$
+$$
+X_{t + dt} - X_t = U_t
+$$
 
+We know that if \\(t > s\\), \\(f(x_t) \leq f(x_s)\\). With a simple calculation we can see that the derivative with respect to time is non-positive. However, we can still get stuck somewhere. Once it's in a stable equilibrium, you're stuck. The initialization determines your fate forever. 
+
+You can actually integrate this and turn it into a limit. But it does tend to get stuck in local minima. 
+
+How can we avoid that? One weird trick that works is to add a bit of noise to the gradient step update. Say, a Gaussian centered around the usual update. How much variance should we add? We have a spherical covariance matrix, but its size is proportional to dt and inversely proportional to \\(\beta\\), which is inverse temperature (e.g., simulated annealing it's 1/temperature). The point is that you take a random step. What this does is it prevents you from getting stuck, a nonzero chance of escaping. You add this noise between times t and t + dt. Why would you want this noise to be independent of the past noise? This gives you white noise, but why would you want this to be white noise? Here's how I understand it: Essentially, suppose that you're very close to a local minimum, and the gradient is basically zero. What you want is multiple attempts to escape. If they're independent, it's a geometrically distributed random variable with a finite mean. There's large deviation theory for dynamic systems that makes this intuition precise. You can then show that the time of escape from each basin of attraction is finite in expectation, and you have an exponentially distributed random variable if you normalize by the mean, which ties it back to memoryless process. 
+
+So this all leads us to think of d-dimensional Brownian motion.  
 
 
 
