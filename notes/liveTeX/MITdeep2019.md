@@ -274,6 +274,28 @@ The crux of the matter is of course looking at concentration on the empirical di
 #### What can you do with this? 
 
 Can we prove approximate global convergence? 
+Well we could carefully look at landscape and avoid getting stuck (Rong from the morning). 
+
+This gives a new philosophy. We try to prove something about the behavior of the trajectory. So we'll get approximate convergence. We have a two step strategy: 
+
+* Prove convergence of the risk of \\(\rho_t\\). 
+
+* Connect back by using the general theorem. 
+
+The general upshot of this theorem is that it gives good results for finite dimension. But the dependence on \\(D\\) is not really well understood --- there are bounds, but not good bounds. 
+
+What are the fixed points of the PDE? We will get stuck in fixed points. A fixed point is the derivative with respect to time is 0. The converse is not obvious but is true. This implies that rho is inside (supported on) the set of \\(\theta\\) such that the gradient with respect to \\(\theta\\) of \\(\Psi\\) is 0. 
+
+If you're a physicist this makes sense --- you have a fluid particle, each particle feels zero force. Now what are the global minima? The loss function is quadratic in \\(\rho\\); \\(\rho\\) lies on the probability simplex. Then you can apply Lagrange multipliers, then the global minima such that the 
+\\(supp(\rho) \subseteq arg\min_{\theta} \Psi(\theta, \rho)\\). So not all fixed points are global minima. But these equations are not too far apart. These two conditions are not too different, so proofs of convergence will go through. 
+
+Intuitively, consider fixed point \\(\rho^*\\) that is supported everywhere. 
+
+
+We assume that this is a well-behaved probability distribution. If you can avoid \\(\rho_t\\) becoming degenerate, then you can get global convergence. 
+
+
+
 
 ### Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)
 
