@@ -226,7 +226,7 @@ Ok so now we have parameters n samples, N units, dimension D, and k steps. Peopl
 Finally, we have the **mean-field regime**. We have a large number of neurons \\(N \geq D, D \leq k \leq n\\). Here you only visit each neuron a few number of times (in this talk, just once). Here the dynamics are nonlinear, but you try to take advantage of the large n to simplify the description. 
 Here we take \\(k << nD\\). We will focus on this regime for the rest of the talk. 
 
-Now we'll focus on the mean-field regime. We'll also assume no noise for simplicity. A good point to start is the universal approximation. Barron's theorem says the optimal risk is bounded by \\(\frac{1}{N} 2\sigma \int_{\mathbb{R}^d}\|w\|\mathcal{F}(w)dw \\) where we're taking the Fourier transform. We can relax the function class we consider \\(\hat{f}(x; \rho) = \int \alpha(x, \theta) \rho(d\theta)\\), where we think of \\(\alpha\\) as Fourier coefficient, and where we want the measure \\(\rho\\) to be approximated as a sum of \\(N\\) delta functions, when \\(N\\) is very large.
+Now we'll focus on the mean-field regime. We'll also assume no noise for simplicity. A good point to start is the universal approximation. Barron's theorem says the optimal risk is bounded by \\(\frac{1}{N} 2\sigma \int_{\mathbb{R}^d}\|w\|\mathcal{F}(w)dw \\) where we're taking the Fourier transform. We can relax the function class we consider \\(\hat{f}(x; \rho) = \int \sigma(x, \theta) \rho(d\theta)\\), where we think of \\(\sigma\\) as Fourier coefficient, and where we want the measure \\(\rho\\) to be approximated as a sum of \\(N\\) delta functions, when \\(N\\) is very large.
 
 Now we want to understand what is learned by SGD. So can we study the evolution of the density of the empirical distribution? So the key object we want to study is 
 $$ \hat{\rho}_k^{(N)} = \frac{1}{N}\sum_{i = 1}^N \delta_{\theta^k}$$ 
@@ -235,15 +235,38 @@ This is the natural way to represent the network, this is invariant under permut
 So how does the distribution given above evolve? 
 We'd like to write down some kind of ordinary differential equation for this object. We can write down a partial differential equation. We need to have evolution in an infinite dimensional space, this is a PDE. It is 
 $$
-\delta_t \rho_t = \nabla (\rho_t \nabla \Psi(\theta, \rho_t))
+\delta_t \rho_t = \nabla_{\theta} (\rho_t \nabla_{\theta} \Psi(\theta, \rho_t))
 $$
 $$
 \Psi(\theta, \rho) = V(\theta) + int U(\theta, \hat{\theta}) \rho(d\hat{\theta})
 $$
-where \\(V(\theta) = \mathbb{E}[y\alpha(x, \theta)]\\) and \\(U(\theta_1, \theta_2) = \mathbb{E}[\alpha(x, \theta_1)\alpha(x, \theta_2)]\\). 
+where \\(V(\theta) = \mathbb{E}[y\sigma(x, \theta)]\\) and \\(U(\theta_1, \theta_2) = \mathbb{E}[\sigma(x, \theta_1)\sigma(x, \theta_2)]\\). 
+
+Here we're kind of taking the gradient of a measure. There's a sense in which this makes sense (you integrate it against a test function). 
 
 Now this is a bit scary, but we can get some intuition from it. We will give a sort of law of large numbers theorem. 
 
+**Theorem**. Assume that \\(\sigma\\) is bounded and the outputs are also bounded, as well as the gradients of \\(V, U\\) are bounded and Lipschitz. 
+Then say you look at \\(W_2\\) distance. Then the distance between empirical distribution and the solution to the PDE is smaller than \\(e^{c(t+1)}err(N, D, \epsilon)\\), and the same is true for the risk. 
+
+So to reiterate, the solution to the PDE and the object we're interested in (empirical distribution) explodes with time, but for constant time it's fine. 
+
+Now what is this error term? 
+$$
+err(N, D, \epsilon, z) = \sqrt{\min(\frac{1}{N}, \epsilon)}(\sqrt{D + \log(N/\epsilon)}) + z
+$$
+where z is just a constant that doesn't matter (just for high probability bound). Simplifying, we look at the intereting parameter regime \\(N >> D, \epsilon << 1/D\\), which for \\(\epsilon\\) is better than \\(1/ND\\), which is what we might expect if we think about number of parameters. So the number of samples we use is \\(n = T/\epsilon = O(D) << ND\\). This is surprising somehow. 
+
+#### How to prove it (intuition behind the idea)
+
+There are two steps:
+
+* Approximate SGD by gradient flow on population risk. Here you're mostly using \\(\epsilon\\) small. 
+
+* Approximate gradient flow on population risk by the PDE. 
+You can write the gradient flow on population risk as the part of the PDE where \\(\Psi\\) is defined. Nonlinear dynamics is one way to do this. This type of proof has a long history in mathematical physics, because people were interested in systems of particles, and can be traced back to de Brujin. 
+
+Nonlinear dynamics is the followign problem: Look at a single particle that evolves according to the gradient of \\(\Psi\\). Then it's possible to show that the nonlinear dynamics is equivalent to the PDE.  
 
 
 
