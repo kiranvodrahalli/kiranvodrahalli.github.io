@@ -374,6 +374,112 @@ Then if \\(\beta \geq \frac{d}{\epsilon^2}(1 + \log (T/\delta))\\), you can cont
 
 Since then there have been many works working with the Hamiltonian Langevin dynamics (with momentum), you can use it for sampling. The exponential dependence on time was improved into something like exponential dependence on condition number of the Hessian. Discretization I didn't talk about, because that's a whole can of worms. But I think Ito calculus understanding is worthwhile in the context of deep learning. 
 
+## January 28
+
+### Convergence of Gradient-based Methods for the Linear Quadratic Regulator (Maryam Fazel)
+
+#### Introduction 
+
+I'll be talking about linear quadratic regulator and control. This is joint work with Rong Ge, Sham Kakade, and Mehran Mesbahi. I will look into LQR. Our motivation is to understand policy gradient methods, a class of methods very popular in RL, on a special and simple problem. I'll look at the case where we have access to exact gradients, and then the case where we don't have exact gradients, and then look at some extensions to this framework. 
+
+The LQR is the problem of controlling a linear dynamical system with quadratic costs. We look at the problem in discrete time with infinite horizon. Here, \\(x_t\\) is the state of the system at time \\(t\\), \\(u_t\\) is the control applied at time \\(t\\). We have this dynamical system in LQR, and we want to choose the \\(u\\) given an initial state \\(x_0\\) in order to minimize a quadratic cost function of the inputs and the states (made of positive semidefinite matrices). The goal is you want to drive the dynamics of the system to some desired final state, and you want to find the minimum effort (in \\(\ell_2\\) cost sense), in the infinite horizon case. 
+
+This problem has been well studied -- it's a dynamic program. You want to solve for every \\(u\\) with a cost-to-go function. It can be solved in closed form via defining the Riccarti variable \\(P\\), which is derived by algebraically solving the Riccati equation. It's possible to do this with linear algebra and iterative methods. Then the problem is solved since we can prove that optimal \\(u\\) is a static state feedback \\(Kx_t\\), where \\(K\\) is derived from the Riccati equation. Interestingly here, in infinite horizon, \\(K\\) is fixed with respect to time and this is optimal. This is a cornerstone of optimal control going back to Kalman. Recently people have tried to connect back to reinforcement learning methods which are popular these days in robotics. This is a nice setting to examine those problems because it is simple. 
+
+All the methods assume you have given dynamics and costs. So all the methods rely on solving \\(P\\) first and then finding optimal control. 
+
+We want to see can we solve the LQR problem by algorithms that iterate on the policy (e.g., \\(K\\)). Here we only use the cost of the policy. Suppose we first consider methods that have first-order (gradient) access to the cost function, either exactly or approximately. Does gradient descent, even with exact gradients, converge? If it does converge, under what assumptions? Does it converge to globally optimal \\(K^*\\)? 
+
+If so, what is the rate of convergence in terms of problem parameters? 
+
+What if we didn't have the parameters of the problem (e.g., model-free)? But we have access to function value samples of the cost of the policy? Can we still converge to \\(K^*\\)?
+
+This wouldn't be challenging if it were convex, but it's nonconvex.
+
+Why do we want to study gradient descent on \\(K\\)? Well it allows extensions (additional constraints, etc.) and it can be extended to noisy and inexact gradients. Once we understand gradient descent, we can consider derivative free methods, which are similar to policy gradient. It's a spectrum from knowing the model to not knowing the model. 
+
+#### Existing Literature on Learning and Control 
+
+There's a lot of work from the 1990s (Neurodynamic Programming), online control, adaptive control (usually only asymptotic, not finite-sample). The goals are different, some things are bounding regret, some are bounding error of estimation of the optimal control, and so on. Hardt et. al. 2016 is kind of related (they're solving system identification) but they're doing it by gradient descent on a nonconvex problem. Under their assumptions, the problem becomes quasiconvex. Other work which is related is Ben Recht's group's work. One approach is do full system identification up to some accuracy for all models identified in some uncertainty regime. Elad Hazan's group has done work on this too (learning linera dynamical system, and some work on control when the matrix is symmetric, some extensions to nonsymmetric too). The goal in these papers is a bit different though. Here there's only regret bounds on prediction error, not on learning the system. 
+
+There's also from the control literature: It's about the known model case but they want to do gradient descent on controller \\(K\\) because they wanted to do structured controller design (e.g. projective gradient descent) but this is only empirically validated, so we would like to provide theoretical guarantees with gradient descent. 
+
+#### LQR 
+
+We will not consider state noise, and we will assume a random initial condition. Plausibly we can extend to having nois at every step, but this might be messy. We will call \\(\Sigma_K\\) the state covariance matrix and \\(\Sigma_0\\), which is just the covariance of the first step. 
+
+#### Settings of Optimization Algorithms 
+
+First we consider gradient descent on the cost and update \\(K\\) with fixed step size \\(\eta\\). We then look at natural gradient descent (which is just conditioned by an appropriate covariance matrix, inverse of state covariance is multiplied). 
+
+We also have to define what oracle algorithm has access to. For first problem, it's just standard first order oracle (exact gradient oracle). We'll also consider approximate gradient oracle (noisy gradients, or only function values, which is close to zeroth-order oracle). 
+
+This problem is hard because the cost as a function of \\(K\\) is not convex. 
+It's related to the fact that a set of stabilizing controllers is not convex. 
+It is also not quasiconvex or star convex. Starting from dimension three and up, it's completely not convex. 
+
+#### First Order Oracle
+We start by looking at stationary points of the problem (where is the gradient zero?) If the gradient zero, either \\(K\\) is optimal, or \\(\Sigma_K\\) is rank-deficient. This is helpful, because we can easily avoid the second case if we choose state from initial distribution that has covariance matrix that is full rank. Then it won't be an issue! 
+
+We can also examine this via transformation to a convex linear matrix inequality, but proofs are not simpler. It's simpler to look at stationary points of the nonconvex function. 
+
+Now suppose that \\(\Sigma_0\\) is full rank, as above. Then the function value at \\(K\\) versus \\(K^*\\)
+
+is upper obounded by the norm of the gradient of the cost at \\(K\\) squared --- this is called gradient-dominated. So here, the rate of the norm of the gradient becoming small is the rate of convergence of \\(K\\) to the optimum. There's also some dependence on the minimum singular value (which relates to the condition number). 
+
+Usually this is applied together with smoothness, but here the cost is not globally smooth. It blows up at places which are not stabilizing. However it's not too difficult to deal with this, because if you start from a stabilizing controller, you'll never hit a non-stabilizing controller. Putting this together with gradient domination theorem, you get the result. By assuming that the cost of the initial \\(K\\) is finite, you get the stabilizing condition, which is needed. We can thus prove a theorem that says that \\(K\\) gets \\(\epsilon\\)-close to the optimum. The dependence is on \\(\log(1/\epsilon)\\), e.g. a linear rate of convergence. It is possible to understand these rates a little better, but we do get linear rate when exact gradients are available. 
+
+#### Unknown Model Case 
+
+Usually we do not know the system. You can assume a simulator, which is typically costly to simulate. Or you have the ability to control by changing the control technique. These are partial information about your system. So now we will use this limited information regime. This is kind of "model-free", and mimics what people are doing in practice. In model-free estimation, you do multiple rollouts by perturbing the controller with Gaussian noise. This is also similar to zeroth order derivative free optimization, where you only get function values. 
+
+What are the issues? How do you do this querying in a good way, what's the length of rollouts, what's the noise level you need to add, and what's the overall sample complexity (number of rollouts times length of each rollout). 
+
+The controller we start with is given, and the number of trajectories is \\(m\\). Rollout length is \\(l\\), dimension \\(d\\), parameter \\(t\\). You draw a random matrix uniformly from a Frobenius ball constrained by \\(t\\). Then you sample policies, simulate each policy for \\(l\\) steps, and get empirical estimates of the costs and state covariance matrix.  Then you use certain estimates for the gradient of the cost at \\(K\\) and just average to get empiricial state covariance matrix. Here we're just uniformly sampling, possible you could do more intelligent things here. 
+
+Here if we again assume we start from a stabilizing controller, then if we choose parameters all in poly(\\(\log(1/\epsilon)\\)), then we get \\(\epsilon\\)-close to the optimal and the number of samples is poly(\\(1/\epsilon\\)). So we get optimal dependence on \\(\epsilon\\) but the other parameters are not sharp, and we don't really try to do a sharp analysis. 
+
+#### Proof sketch
+
+* First we fix the rollout length. Then we have to show that the estimates we get on short trajectory is not too far. 
+
+* Then show that with enough samples, the algorithm can do the gradient and covariance estimates. 
+
+* Finally, show they converge with similar rate.
+
+#### Structured Controller Design
+
+Suppose you want to design a controller \\(K\\) when dynamics are known, and you want it to have a specific structure (e.g., specific sparsity pattern).  This is known to be hard in general. There's a special case that is convex under an assumption called quadratic invariance (very restricted assumption). There is also related work earlier that is empirical, that projects onto structured controllers, but is only empirical. We would like to use our tools to say something about structured controller design using gradient projection. This is ongoing work, but it's possible for some special cases to get some results. 
+
+
+## January 29
+
+### Theory for Representation Learning (Sanjeev Arora)
+
+### Gradient Descent Aligns the Layers of Deep Linear Networks (Matus Telgarsky)
+
+### Optimization Bias in Linear Convolutional Networks (Suriya Gunasekar)
+
+### Towards a Foundation of Deep Learning: SGD, Overparametrization, and Generalization (Jason Lee)
+
+### Representational Power of narrow ResNet and of Graph Neural Networks (Stefanie Jegelka)
+
+### Is There a Tractable (and Interesting) Theory of Nonconvex Optimization? (Santosh Vempala)
+
+### Panel (Sanjeev Arora, Andrea Montanari, Katya Scheinberg, Nati Srebro, and Antonio Torralba)
+
+
+## January 30
+
+### Learning Restricted Boltzmann Machines (Ankur Moitra)
+
+### SGD with AdaGrad Adaptive Learning Rate: Strong Convergence without Step-size Tuning (Rachel Ward)
+
+### Understanding adaptive methods for non-convex optimization (Satyen Kale)
+
+### Adversarial Examples from Computational Constraints (Sebastien Bubeck)
+
+### A Critical View of Global and Local Optimality in Deep Networks (Suvrit Sra)
 
 
 
