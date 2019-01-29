@@ -606,6 +606,10 @@ What's the optimization bias of mirror descent? Here we get a different flavor o
 
 * Squared loss is very different compared to exponential bias. 
 
+#### Questions
+
+What about convolution which is actually restricted? Then you might expect sparsity in some wavelet domain rather than in DFT domain. 
+
 
 ### Towards a Foundation of Deep Learning: SGD, Overparametrization, and Generalization (Jason Lee)
 
