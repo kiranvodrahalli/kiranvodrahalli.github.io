@@ -697,7 +697,67 @@ Overparameterization seems to be a way to design the landscape. Theoretical resu
 
 ### Representational Power of narrow ResNet and of Graph Neural Networks (Stefanie Jegelka)
 
+#### Introduction 
+
+I will talk about ideas related to representational power of different types of neural nets. We will look at how narrow we can make resnet architecture to maintain universal approximation. In the second part we will look at graph neural networks and some of their properties in representational power. 
+
+#### ResNet 
+
+What functions a neural net can represent has been studied for quite some time. One hidden layer and infinite width can essentially approximate any integrable function. There are variations thereof, and that is a well-known result. There are also results suggesting representational power increases as you make networks deeper. 
+
+Let's start with fully connected network. What if we restrict widths of these networks, but allow ourselves to go deeper? When can we get universal approximation? 
+
+Our theorem says that a width d fully connected network always has an unbounded decision boundary, where input is d dimensional. But, d+1 is enough (it's a lower bound). 
+
+Now, how narrow can we make ResNet? What if we make ResNet with one hidden unit? Well actually it works on a toy case! Our theorem says that ResNet with only 1-width hidden layers are sufficient to approximate any integrable function. (Of course you have to go deeper, but width can be constant). The depth scaling with dimension is not optimal. This gives you a sharp distinction between ResNet and fully connected network representational power. 
+
+Also, a fully connected network with d+1 width can also approximate any function (looking at the proof for ResNet case), but ResNet requires fewer parameters (d versus \\(d^2\\), again, \\(d\\) is input dimension). 
+
+#### The Proof for ResNet
+
+The idea is:
+
+* Any function can be approximated by a step function
+
+* Approximate each bump by a trapezoid 
+
+* Need a sequential construction to "memorize" -- you construct an increasing indicator (in one dimension, higher dimensions by induction)
+
+* You can use some operations provided by ReLu operator to modify each interval to fit the function. 
+
+* In higher dimension it's the same idea. 
+
+#### Graph Neural Networks 
+
+Learning with graphs -- you may want to input full graphs and make predictions from the graphs. You might also want to predict from node to node (as in recommender system). You might also want to predict from pairs of nodes to edges (link prediction). 
+
+We'll talk about aggregation-based graph neural networks. They follow a message passing scheme. In each layer in the network, for each node we learn a representation, and we aggregate all node representations into a graph representation. Then we combine it with a kernel, and that is one layer of the network. And we do this over and over again. The more iterations you do this, the more information you pull from all over the graph. So how powerful is this representation? What kinds of graphs can you distinguish with it, what properties does it have? 
+
+Some observations from practice --- 2-layer nets seem to perform better than deeper networks. This is very different from networks on images. There's something different here. So let's look at graph representation of two aspects. One perspective looks at structure and representation relationship, and aggregation schemes and how they affect representations. 
+
+We look at **influence distribution**. We want to know how much the representation of node y influences the representation of node x. We look at this with some simple sensitivity analysis. The influence distribution can be shown to correspond in some way to the k-step random walk distribution on the same graph (k layers of the graph network). This is equivalent under some simplifying assumptions that we are essentially linearizing the nonlinearity by assuming probabilities on whether the unit is active or not. So how does it relate to practice? 
+
+Now random walks are very well studied --- the expansion of a random walk very much depends on the expansion of the subgraph. Is the graph more like a tree or a different subgraph structure? How many nodes do we reach? 
+
+If we have a graph with very good expansion properties, then you're basically averaging over the whole graph and every node looks like every other node. On the other side (different neighborhood size), you might be aggregating too much (relationship to manifold learning?). 
+
+So it seems like subgraph structure really interacts a lot with how many layers of the deep graph network you pick. So it's a good idea to pick a lot of different depths and let it learn which depth works best (since it's hard to know this structure ahead of time). 
+
+#### What is the aggregation operation by itself? What kinds of aggregation do you use?
+
+Given an aggregation method, can the resulting representation discriminate any two graphs? Well it's probably too much to ask to distinguish between any two graphs (graph isomorphism is hard). We have a lemma that aggregation based GNNs are at most as powerful as the Weisfeiler-Lehman graph isomorphism test. 
+
+Some possibilities for aggregation: You can take the max, do mean-pooling. If you use one of these in your aggregation, there are simple examples where they fail to distinguish the two graphs. So what conditions on aggregation schemes do we need to achieve this maximum possible discriminative power? We have functions over multi-sets -- we can have neighborhood features that repeat. We have a theorem: If Aggregate, Combine, and Readout are all injective, then the network is as discriminative as the WL test. How do we actually achieve this? 
+
+But recall the counterexamples -- if you do mean or max on these counter examples, neither of these is actually injective. So how could we achieve a network that has this injectivity? 
+
+We have a lemma that any multi-set function can be decomposed as a nonlinearity of the sum of the features. 
+
+
+
 ### Is There a Tractable (and Interesting) Theory of Nonconvex Optimization? (Santosh Vempala)
+
+
 
 ### Panel (Sanjeev Arora, Andrea Montanari, Katya Scheinberg, Nati Srebro, and Antonio Torralba)
 
