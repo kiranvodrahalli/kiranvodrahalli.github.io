@@ -817,11 +817,106 @@ There are a couple things unsatisfactory. We didn't get zero training error. Wha
 * An uncertainty principle: Is there a tradeoff between generalization and robustness? -- this is like a question of overparametrization. The worst error over the sphere is very high as you overparameterize, not only is it high, it goes up! You can compute the worst point over the sphere: The max difference between true hypothesis and worst hypothesis. And it's very easy to find the points with worst error. So it's easy to find an adversarial example --- as you increase overparametrization, this worst error is going up. So maybe as you overparametrize it's easier to learn and get lower test error on input distribution, but it comes at the cost of being less robust. So is there a theory of nonconvex optimization? 
 
 
-### Panel (Sanjeev Arora, Andrea Montanari, Katya Scheinberg, Nati Srebro, and Antonio Torralba)
+### Panel (Sanjeev Arora, Andrea Montanari, Katya Scheinberg, Nati Srebro, and Antonio Torralba, directed by Aleksander Mądry)
 
-* 
+(SA: Sanjeev Arora, AM1: Andrea Montanari, KS: Katya Scheinberg, NS: Nati Srebro, AT: Antonio Torralba, AM2: Aleksander Mądry)
 
-* 
+#### Question 1 (AM2): Whenever there is theory of anything, the first question we might ask is "Why do we have such a theory?" Only later on after people got it to work empirically did we wonder why. So what is the role of theory in such a topic? What is a successful way of doing theory and not doing theory? 
+
+* AM1: I don't know the answer. I did physics, when I was a student, my family would ask me to explain why the dishwasher wasn't working. Perhaps it's the same with deep learning -- maybe they just work because they are engineering things, and theory can only contribute a little. But I hope not, I hope theory can at least systematize this body of knowledge and allow it to be taught to others. It now seems like an art, so a set of principles that can be taught in classes as easily as possible and convincingly taught is a first order goal. An ambitious goal would be to impact practice. The high-dimensional statistics I've worked on is much simpler settings than deep learning. Many many papers have been written in that simpler world, and I would only count at most 5 titles that have impacted practice. It's pessimistic, but it's life. 
+
+
+* SA: I'll be more optimisitic. I think understanding intelligent behavior in machines is a fundamental scientific question. Call it theory call it whatever, but principles of that study are very important. So I think new models etc. are useful. IT's not clear that practioners will know what to do exactly, and I think theory can contribute by thinking out of the box. Whether that will happen no one can predict, but I hope so. 
+
+* NS: I mostly agree with Sanjeev. The reason it's not interesting the theory of dishwashers is because there are engineers that understand extremely well how dishwashers work. But people don't understand deep learning. I think a better example would be to discover angular momentum if a physics grad student came home and didn't understand why you could stay upright on a bicycle while the wheels spun and not otherwise. You can do lots of things with angular momentum! It would be very nice to have predictive ability of when things will work from theory --- it's all intuitive by people, but not much understanding --- I'm looking forward to hearing Antonio's answer on this. I would personally like to understand it. It'll also be great to be able to teach better, come up with more crazy ideas, to do things better. I don't think it's farfetched that it'll impact practice, but it's just a question of what time scale. I think it definitely will at some point (maybe not soon, but). 
+
+* KS: I'm surprised no one said the reason is so Ph.D. students can get jobs, because that's a reason too. Controversy between theory and practice has been around for a long time (e.g., simplex method works much better than the theory suggests). But theory does lead to better understanding. I think theory is essential because deep learning is a multi-disciplinary field. Theory is the only common language we have between different areas. It's a good way to record properly what we expect to achieve, at least theory can be stated as "I hope to prove this", whether or not I can do it. 
+
+* AT: One thing I'm surprised you didn't ask: Why do we need practice? Even a practical answer to why we need theory: New students have been born in this age of deep learning that want to solve a particular problem -- they have this amazing blackbox that lets them solve things in different ways. You can just spend a month running on a thousand GPUs, and that's it. And that's good! But then what happens is the students don't have a good grasp of the theoretical aspects of what they're actually doing. And theory can give you shortcuts and help you debug what you're doing. You can know if things are absurd or not! Theory is not only about principles that explain why something works, or ultimate principles of intelligence --- there are many levels. It might only explain local properties of your model. That's also useful! You need to have all these levels of understanding. For practioners it's important to learn more about theory, and vice-versa. 
+
+#### Q2 (AM2): Antonio was one of the first people in the deep learning revolution for vision. When you started playing with these things, when you think of phenomena, what was the thing that surprised you the most and what you think is the biggest mystery? 
+
+* AT: The first time I saw the results from AlexNet. We were trying to do image retrieval, and were using handcrafted features. One student who was working at Microsoft and implemented it. I was looking at the results and I thought this is amazing -- if there isn't a bug in the code, that's it! We're out of a job. A lot of the things that made images so hard were all fixed. It was still able to generalize across these things, not perfectly, but way better than anything we'd seen at the time. 
+
+* KS: Well I'll be impressed when we see a self-driving car. It's kind of depressing that we can't beat SGD in my field. Nati: We have the ultimate algorithm! 
+
+* NS: In 2008 maybe, Geoff Hinton got good results with these layer-wise training. This didn't seem surprising, because we knew training a deep network was hard (comically impossible back then) and he did it with an approach that didn't seem to defy possibility. Then the year after that, it was a paper in ICML took exactly the same problem that Geoff was working on, and just ran local search, and just with local search they managed to train the whole thing in one swoop. And that was kind of strange --- this highly nonconvex optimization problem, you just train it and it just worked. Does anyone remember that paper? 
+
+* SA: Nati's been in machine learning longer, I was coming from STOC/FOCS theory world view. What stays with me -- around 2011/2012, starting before AlexNet to a couple years after AlexNet -- a lot of my instincts about how to design algorithms were not exactly the right ones. There was an early problem we did an topic modeling, we wanted to do LPs -- but ML colleague said do stochastic gradient descent. It started sinking in, we started switching to these things often work. It sometimes takes a long time to work with SGD, but it really does. But coming from STOC/FOCS, it was a big change in my worldview. 
+
+* AM1: It's this blackbox like a dishwasher. Unlike the dishwasher, we feel compelled to describe it with the things we use for describing humans. So you know, opening this blackbox is much more interesting than opening the dishwasher. 
+
+#### Q3 (AM2): Some of you anticipated my next question. But I want to really get into it: Is nonconvex optimization even relevant for deep learning? How much is it about optimization and how much about generalization/good representations? What Nati has said is that SGD has implicit bias and so on, and somehow to me, I would say it's more about the machine learning effect. 
+
+* AM1: I think some aspects of nonconvex optimization are interesting, but I don't understand whether they are relevant. You're not necessarily converging. It's a good question, but I don't know the answer. 
+
+* SA: I'm not sure what you mean by nonconvex optimization. 
+
+* AM2: When I was getting in this field two weeks ago, people were talking about local minima structure, etc, if we can converge to local minima, everything will be explained. It sort of tries to converge, not clear it actually does. People stop training before you converge. The more we see in the practical setting, the less I see what are we actually doing. 
+
+* SA: The theory community has definitely been going towards more the path of optimization, which is not traditional. In machine learning it seems like the path is important, and it's all mixed in with generalization and everything. It's not a standalone optimization problem. Most of the practical advances in recent years in deep learning have happened due to clever new architectures and designs and concepts, rather than new preconditioner. 
+
+* NS: Are you asking if nonconvex opt is relevant, or if everything we know about nonconvex opt is relevant? I'll say yeah, machine learning is optimization --- I can't separate them. The more I work on them, the more I cannot separate between the two. Machine learnign really should be understood as an optimization problem. Deep learning is equal to nonconvex learning in my mind. The only convex learning is linear learning (shallow, one layer), once you go to deep, you're nonconvex and vice versa. So in my mind they're almost analagous to each other. 
+
+* AM2: So can you write down an objective no matter how I solve it I'll get a generalization problem. 
+
+* NS: The objective is expectation with respect to the source distribution of the error. Once you solve that you're done. 
+
+* KS: Before theory of SGD came around, I was shocked by statements about solving SVM but not accurately -- what is wrong with these people! But then of course theory came around. So it's just not the optimization problem we know how to solve. So can we formulate something better than what we're doing now? And then throw any optimization problem at it. This goes back to representations --- I think there are better representations out there, becuase now we have to tweak optimization algorithms on top of the model --- they should be separate but they're not. 
+
+* AT: What are we trying to optimize? There's at the end of the day a particular problem we're trying to solve (unless you're writing a theory paper). You make up some loss function that has something to do with the problem that you're trying to solve. Then you try to fix the loss to be nice enough to put into PyTorch. It might not have all the terms etc, but after that if it's convex and nonconvex, who cares --- defining the right function gives you a better boost than optimization algorithm. It's a nightmare. 
+
+#### What's one thing you learned from a different speaker from the workshop that we could use in practice? 
+
+* AT: In theory I wanted to be here, but in practice, I couldn't make it. 
+
+* KS: I learned something from Maryam Fazel but it has nothing to do with deep learning in the RL type of algorithms. I learned something I can apply some theory to and improve practical algorithms as well. 
+
+* NS: What did we learn here that's good in practice? That's a bit of a narrow view though -- sorry to answer that the question is not even a question, but we're in the infancy of what is going on. All the positive results are about things we could trivially learn some other way. It's true for my work too. Because we're in such an early stage, they might be useful to understand other things, but the place you'd benefit practically is getting better intuition of what's going on in ways that's hard to describe. When you're exploring the space, you can do so more intelligently. Hopefully what you're doing in practice we still don't understand. In some talk that proves rigorously some aspect of deep learning, I don't know if that's really what I'm looking at in talks. 
+
+* SA: I think some of the works on explaining the relationships between paths taken and implicit regularization seem somewhat relevant to practice, maybe not directly. Also what I was trying to do with representations (I know it should be about other people's work), but it did improve state of the art on some task. 
+
+* AM1: In particular I agree with Nati. I found a lot of talks stimulating conceptually, and in theory there should be no different between theory and practice. 
+
+#### Q4: Ideas about the career path for younger scholars in the data sciences? Are there departments where we can go be faculty? Or will we have to attach ourselves to physics or math? 
+
+* AM1: What is the career path for a PhD student who wants to take her or his speciality in Foundation of Data Science? Should they attach to a well-established department, or go to some Data Science department? Well it's not clear what data science is, people have different definitions in their mind when they talk about it. There's a larger and larger market and understanding that transdisciplinarity is important. If I had to give you an advice, I would say it's useful to try to connect to a problem that a group of people cares about, not because of general principle or general data science, but because they care about it for some other reason. You can connect to that type of problem by doing theory, by doing more practical work, but it's important to be problem-driven, especially in this field. 
+
+* SA: I think that maybe that question is more about hiring politics and so on --- there I would say it's not clear what data science is, that's what most people say, and it seems like it will be in many places. So career advice would be that it's probably good to have a strong leg in some field, because that is how you get hired. There has to be somebody pushing for you, and currently unfortunately data science is not a recognized field at any university. 
+
+* NS: It does seem like a question about hiring politics and that does vary a lot. I agree with Sanjeev; to give a bit of contrast. It's true you want to connect to a community. On the other hand, people doing these types of things are being hired by computer science, stats, math, operations research, etc. departments. Frequently multiple departments are interested in somebody if they're good, rather than "this person is good, but doesn't do physics" --- not saying that doesn't happen, but everyone wants to do data science. I would not be too worried, but you should connect to a community. 
+
+* KS: There was some summit of leaders of data science at Columbia, and there was a discussion of whether it is computational math, or computer science. Will data science become like this? Not clear, but don't expect it to happen anytime soon. I would not count on departments of data science, it's more interdisciplinary job searches. We're not still publishing in the same conference, it's not necessarily the ultimate goal. It's more driven towards disciplines as we specialize for specific applications. I would say learn the fundamentals and then find a niche in terms of actual area. 
+
+* AT: Everyone had a great answer, I agree with everything. It's also a very fast changing field, in 5 years the answer might be different. Many departments are changing their structure. There are very interesting areas of work, very little risk you won't do something relevant. The landscape will look different from today in 5 years. 
+
+* AM2: There are schools of data science and such movements, but everyone views data science as a shared group that spans many areas. It's easier to have a domain that you're viewed as belonging to. 
+
+#### Q5: Predictions for the next five years? Are we likely to enter a new AI winter? 
+
+* AT: I am pretty sure that there will be ups and downs, but not something as strong as the winter. ML has become a toolbox in your toolset that works to some degree. It might not reach highest performance, but it's really a tool you can use. So it'll be a standard tool -- like dotcom crash, it's not like tech went away. 
+
+* KS: I think we're at the beginning rather than the end. There might be a winter for cifar100, but there are so many unexplored applications and uses for deep neural nets and much simpler tools at this point. Just the percolation of the idea of using machine learning tools in many other applications (e.g. doctors). It takes a long time to bring this as a tool to society. Few people so far know how to use it, more people will learn and many applications will pop up. 
+
+* NS: I don't make predictions, I can talk about the past though -- it's not that people had things that worked and then they stopped. It's more that it fizzled away because things weren't working. Machine learning is working now to some extent. 
+
+* SA: I'm guessing AI winter really refers to academic job market. Or is it the companies? asker: AlexNet was earthquake, aftershocks of GANs, Go, etc. Would you say we'll have a self-driving car in five years? SA: people are saying that though. As was pointed out, there's too much societal change that will rest on AI, and I think that out of previous dotcom bubble came Google/Fb etc. We'll only know in 10 years what actually happened. Indeed if somehow new discoveries slow down in some way, that might all happen and the academic hiring might reflect it. But that seems unlikely. 
+
+* AM1: I don't think there will be a crash, but there might be a dip. Neurips attendance growth extrapolated will be entire world population, so it has to stop at some point. 
+
+#### Q5 (AM2): What is a big success of theory? What theoretical development are you most proud of, in theory overall, not necessarily yourself. Basically, theory is important because of ____. 
+
+* NS: Shannon -- he had two amazing developments. The mathematical theory of communication with quite profound effects (Boolean algebra in his masters thesis). 
+
+* SA: I guess you meant in computer science --- cryptography, it's all very counter-intuitive. It's all the productive of human mind. And finally it's nice that 30-40 years it has practical impact in bitcoins and other related things. 
+
+* AM1: I have to represent the statisticians --- the bootstrap. It changed the way people started doing computation-driven statistics. Every other paper that uses statistics in natural science uses the bootstrap. 
+
+* KS: I would say compressed sensing had a profound effect on the field of optimization, because basically this was a very simple problem -- it was disconnected from machine learning as a field. This was a very basic result about compressed sensing brought about a whole new look about how optimization problems should be solved. And then it moved on to machine learning, and it was just from one theorem, which may or not be useful. SA: Which result? KS: If you minimize \\(\ell_1\\)-norm, you can recover. 
+
+* AT: I'm just proud of all of you guys. In computer vision there are many areas --- particularly in geometry, 3D interpretation of images, regularization theory, etc. Lots of things worked well in computer vision. 
+
+* AM2: I'm thankful for everyone coming here, hope everyone enjoyed it! 
 
 
 ## January 30
