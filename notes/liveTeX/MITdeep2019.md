@@ -613,6 +613,88 @@ What about convolution which is actually restricted? Then you might expect spars
 
 ### Towards a Foundation of Deep Learning: SGD, Overparametrization, and Generalization (Jason Lee)
 
+#### Introduction 
+
+Today's talk is trying to take a few steps towards understanding two aspects of deep learning: both optimization and generalization. 
+
+I'll quickly skip to what I think is difficult about this problem: 
+
+* From an optimization standpoint, loss functions are nonconvex and nonsmooth, many critical points, it seems hopeless. 
+
+* On statistical point, deep networks are overparametrized, they're larger than what you think they should be. 
+
+The hard part is that these two things are tied together. One way to think about ML -- one source of error is from optimization, and another is statistical error. However in deep learning, these are not nicely decoupled. In SVM, for instance, they are nicely decoupled. The statistical error can be affected by changing the algorithm, or even just the initialization. Simply switching the algorithm drastically changes the statistical performance. Adam vs. SGD gives you different generalization error. 
+
+Many things you use to improve statistical performance changes the algorithm dynamics though! It can affect algorithm's convergence too. 
+
+#### Nonconvexity 
+
+Practically it seems gradient methods work well when you have an overparametrized network. Everything is hard in theory here. Even the simplest algorithm we can't say too much. If you simply follow negative gradient on nonsmooth nonconvex objective, you can't say much. 
+
+So we will ask: When can you expect SGD to be successful in these deep learning settings. Note also that deep learning functions are not smooth! Many of the more traditional optimization results don't apply in the nonsmooth setting. 
+
+We have a week theorem which is a sanity check: If you run stochastic subgradient it generates a sequence, then the limit points of the sequence are the stationary points. Previously it was only known for weakly convex, prox-regular, semiconvex, etc. functions. These are nonconvex functions with a bounded amount of nonconvexity. The types of things we use in deep learning doesn't satisfy this, however. This theorem by itself doesn't give a convergence rate, but you can get some rate here by using smoothing (not a good rate though). This is the best we can hope for with no further assumptions. 
+
+#### Computing Subgradients 
+
+The next question: Can you actually compute subgradients? You should be quite a bit surprised by PyTorch and Tensorflow which just give you these things. There's no chain rule for subgradients! So TensorFlow and PyTorch will give you the wrong answer. Subgradients only obey chain-rule inclusions. So automatic differentiation is returning something that's a superset of the original gradient. Luckily there's a simple fix (Kakade and Lee 2018). There's a chain rule for a different object, a directional gradient. Imagine nonsmoothness was all piecewise. Using this chain rule with randomization, you obtain an element of the Clarke subdifferential. So you can use this new chain rule with autograd, and compute subgradients with a little bit extra computation. 
+
+#### Smooth functions 
+
+The randomness in the initialization is enough to avoid saddlepoints, but not in polynomial time. You can construct nice smooth functions (kind of weird ones) that obey regularity conditions, that gradient descent will take exponential time (deterministic algs), but SGD can do it in polytime. 
+
+Why are local minimizers interesting? The most enlightening example is to look at best rank-\\(k\\) approximation problem. The only local minimizer is the top eigenvector. This is an example of where if you ran gradient descent, you'd get the global minimizer. You can massage other problems into this setting. However neural nets do not generally have this property. Since neural nets do have bad local minimizers, we must make their landscape better. 
+
+#### Landscape Design
+
+We want to change the loss function in some way so SGD does well. You could use different architecture, different loss, different regularizer. 
+
+Now let's talk about an experiment -- generate a lot of data from a neural net with 50 neurons. Then run SGD on a neural net. If you run it 5 times with the same architecture, you don't recover it. If you fit it with 100 neurons instead, and run SGD, you get global optima. It seems statistically wasteful, but something quite magical happens: Simply by having twice as many neurons, SGD always does well. This is least squares lost. We don't have a theorem about this, there's no theorem that says this should work. But you have to do something, or you'll get trapped. 
+
+One conventional wisdom of practioners is that if your training error isn't small, you better use a different architecture. You can do things to make optimization easier, but you have to avoid screwing up your statistical error. Adding parameters also adds more computational. 
+
+So how much overparametrization do you need? How much overparametrization ensures success of SGD? Empirically \\(p >> n\\) is necessary where \\(p\\) is number of parameters. Unrigorous calculations suggest \\(p = c\cdot n\\). There are many papers from 3-4 years ago essentially saying this.  
+
+I'd like to remind you of ResNets now -- you have a skipped connection with identity, slightly different from neural net architecture. Here's a theorem about training loss: Assume the width is m depth and depth L, then \\(n^4L^2\\) width needed. 
+
+The intuition for this result is as follows: How much do you need to move from random inits? At random init you get cancelations. You could move each neuron a small amount, and move predictions by order 1. What that's saying is overparameterization gives you more and more global minimizers closer to where you start. Gradient descent in fact converges to that global minimizer near you at a linear rate. Thus on large networks, gradient descent can find the global minimizer of the training loss. Bounds are extremely loose, in practice \\(n\\) width are efficient. This is no longer true if the weights are regularized. 
+
+There are some other papers which give generalization bounds which you can prove using this technique and it matches a kernel method. Low degree polynomials lie in this kernel. So you can essentially learn low-degree polynomials with neural networks, which kind of matches what kernel methods are doing. 
+
+#### Classification
+
+We'll do binary classification for simplicity. It's useful to define a margin quantity. We'll assume networks are overparametrized and can separate the data. 
+
+If you can classify with a normalized margin that's very large, then you can generalize well. A large margin bound says that classification error shoudl be bounded by Rademacher complexity divided by margin. That's what existing results say. I want to answer the question, "Can we expect large margin classifiers in deep learning?" In the weight decay/explicit regularization case, we can have a theorem. The best margin you can get with a norm 1 predictor (we assume networks are homogenous functions here), then \\(\gamma^{*}\\) is the best you can ever get. 
+
+You'll eventually converge to max margin (in global min), not what an algorithm does necessarily. It's not entirely new --- this is well known for linear predictors. Matus and Suriya told us about this --- if you do GD on logistic loss you get max margin classifier (same as SVM with \\(\ell_2\\)). 
+
+It's easy to see why this is true: the margin must be large when regularization constant is tiny. Then you can replace logistic loss with exponential by Taylor's theorem. You can then replace the sum over the exponential negative margin terms with the maximum of these. So among solutions with same norm, you obtain the one where the margin is the largest. 
+
+Let's turn to the generalization problem. Now we want to see how these combine with existing results on generalization. You can get a parameter-independent generalization bound as long as you control the Frobenius norm of all parameters. There's an analagous bound for deep feedforward networks. Now you have \\(L\\) layers instead of 2 layers. You should think of the product of norms over the gamma term as a normalized margin. Then you can use AM-GM, and you can view this as the \\(\ell_2\\) norm of all the parameters, and thus \\(\ell_2\\) regularization guarantees a size-independent bound. 
+
+How can you minimize the regularized training loss? For regularized training loss, I only have results for two layer networks. Imagine the network is wide, and instead of tracking individual parameters, we'll instead track the measure over the parameters. You form a histogram by putting a delta function at each parameter configuration. Then everything will follow a certain PDE, and if you add a noise term to the PDE, then gradient descent will converge to \\(\epsilon\\)-global regularized loss, and the rate depends on \\(1/\epsilon^4\\). This may seem like a minor difference, but by minimizing a regularized loss, you get large margin predictors. So overparameterization helps GD find global minima of regularized training loss. 
+Noise is crucial to minimize regularized loss --- it's a noise on distributions, not on parameters. 
+
+This result is good, except it's infinitely wide networks. So it needs a huge amount of width to get this polynomial time result. If you allow me to change the activation to quadratic activation, you can get a stronger result. You can combine this with a margin analysis. If your data was classifiable by a network, then you can get a sample complexity that only depends on the width of the network that generates the data, not the one you actually use --- this is an intrinsic complexity measure. This only works for quadratic activation. Such a theorem cannot be true without another assumption for ReLU. 
+
+Even when you don't regularize you can generalize well though (as seen in Nati's talk). It seems like weight decay is not necessary empirically --- it's not making a big chunk of the difference. So you're not overfitting terribly. 
+If you don't have an explicit regularizer, perhaps it's some property of the algorithm. 
+
+We submitted the following theorem (physics calculation) to ICML: On homogenous networks, under numerous assumptions, you converge to a first order optimal point of the non-linear SVM. If you find the global min of a regularized loss, you get global min of SVM. Even when you don't have the regularization, GD gets to a stationary point of the SVM. 
+
+#### Is \\(\ell_2\\) norm interesting as a regularizer? 
+
+It's kind of a weak regularizer. However in neural nets, this intuition is not great because what really matters is the architecture. The architecture induces very different regularizers on the function. Consider a linear network of depth 2. If you do Frobenius norm regularization on \\(W\\), then if you parametrize as \\(WW^T\\), you actually get nuclear norm (with gradient descent). Now, the induced regularizer changes with the depth. Increasing the depth changes the regularization on the prediction function --- it pushes you closer and closer to low-rank (regularizers as \\(\|\cdot\|_{2/L}\\)). 
+
+Suriya had talked about the same thing for convolution nets when convolution is full width -- it's sparse in the Fourier domain. 
+
+
+#### Conclusion
+
+Overparameterization seems to be a way to design the landscape. Theoretical results support this but they're off by orders of magnitude. Generalization ispossible in overparametrized regime via explicit regularization (large margin bounds from logistic loss) and implicit regularization -- gradient descent + architecture builds in regularization. The choice of algorithm combined with choice of architecture/parameterization gives you different induced regularization. Of course we only understand very simple models in simple setting. Deep learning is used in a blackbox fashion in many downstream tasks, and it'd be good if we started developing understanding in settings other than simple classification. 
+
+
 ### Representational Power of narrow ResNet and of Graph Neural Networks (Stefanie Jegelka)
 
 ### Is There a Tractable (and Interesting) Theory of Nonconvex Optimization? (Santosh Vempala)
