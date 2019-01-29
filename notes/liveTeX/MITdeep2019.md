@@ -456,7 +456,55 @@ Suppose you want to design a controller \\(K\\) when dynamics are known, and you
 
 ### Theory for Representation Learning (Sanjeev Arora)
 
+#### Introduction 
+
+Can we learn good representations for a multiple downstream tasks with no labeled data? Hoe can one representation anticipate what you'll need in the future with low-dimensional representations. Semi-supervised methods assume you have both unlabeled data and labeled data, and performance is only good when you have some labeled data --- it's not quite doing representation learning in the way we want. 
+
+Generative models for data are fully complete paradigm. It's unclear though why training log-likelihood should give good representations, Andrej Risteski and I have a blog post about it. 
+
+#### Representation Learning in Practice 
+
+Let me tell you about some interesting representation learning ideas that work well in practice. I'll mention two papers but there are others. The idea is this: train a convnet on the following task. The input is an image and its rotation by one of its possible rotations (90, 180, 270 degrees). Now the desired output is which of the three rotations were applied. They call this self-supervised learning. The resulting representations are quite good. You didn't need all those supervised classes here! This task seems trivial! Why should you need to learn any rotation to solve this task??! What the heck is this? The reason that trivial solution (rotate mentally and pick an exact match) doesn't get found cannot get implemented by the conv-net, so it is forced to do a semantic analysis of the image and come up with a representation. 
+
+
+#### Contrastive Learning 
+
+Another example in NLP for learning sentence representations is giving sentences which are adjacent have high inner product and those that are not low inner products. We will call such methods contrastive learning. 
+
+The rest of the talk is based on "A theoretical analysis of contrastive learning", our recent paper. The framework will try to relate what are semantically similar pairs of data points. We assume that the world has a collection of classes out there. \\(\rho_c\\) is a probability associated with this class. Each class has a distribution \\(D_c\\) on datapoints. Similar pairs are picked according to some probability associated with classes and takes samples \\(x, x'\\) according to \\(D_c\\). Negative samples you just pick \\(c\\) according to \\(\rho\\) and then sample from a different class. 
+
+When you're going to learn the representation it will be tested: You generate a binary classification task by picking a random pair of classes. To evaluate the representations, we pick the binary task, then you have to solve it by using a linear classifier on the representations. For this talk we'll assume logistic loss, but the theory extends to usual convex losses. 
+
+What is the unsupervised loss of this representation function? We just use the contrastive training method described from before; there can be other training methods. This is over the full distribution of examples, in practice you see \\(n\\) samples and minimize the empirical loss. Now the important note is the amount of unlabeled data in the world is large and cheap, so we assume that the amount of unlabeled data is large enough. We can assume this because the representation class is some fixed class with fixed sample complexity. So if you have enough unlabeled data you'll learn a good representation. We ignore the computational costs of minimizing unsupervised losses in this work, it's for future work. 
+
+It's very important --- for many years, for instance in the Bayesian world (and other settings) --- people tried to do unsupervised learning i.i.d. But you need some weak supervision empirically (e.g., some task like predicting next words, or predicting adjacency, etc.). 
+
+What would be a dream result for analysis? The dream result is you do this weakly supervised/unsupervised learning and then you'd like to compete with a representation you could learn with imagenet. People are empirically getting closer to that. We'd like our learned \\(f\\) to compete with every representation function in some class, including the case where you were able to train with supervised labels. However, this is not possible -- there are counter examples and impossibility results. So we'll have to make a few more assumptions. 
+
+Before I get to the results, we define the **mean classifier** for two-way classification. Instead of finding classifiers by convex optimization, you could do something similar: Just use the classifiers derived by computing the mean of samples for each class. We will use those. 
+
+The first result is that if the unsupervised loss is low, then average loss on classification tasks is low. This is already useful -- you can just try to minimize unsupervised loss. You can prove this; the key step is just Jensen's inequality applied to contrastive loss. This is already good in many settings, and it's very straightforward. 
+
+It would also be nice to handle the case where the unsupervised loss is not small. The idea is that you can break up this unsupervised loss into two terms: You break it up into two cases in the weakly supervised loss: where the labeled terms are the same and where they're different. Then you look at the concentration in each class. 
+
+Now, we have some progress towards the dream result: We want to compete against the best representation. The assumption we add to make this possible is that we compete against the best concentrated representation (make some subGaussian assumption). It's very hard to test for this though, so it's unclear if it's realistic; but if you visualize, it seems concentrated. Under this assumption you get a result. 
+
+This extends to \\(k\\)-way classification, here you use a similar pair and \\(k-1\\) negative samples. Finally we come up with a new objective (CURL, our version of contrastive learning with blocks -- leverage the latent class ) that is empirically somewhat better and gives better theoretical results. 
+
+#### Experiments 
+
+We look at text embeddings -- train sentence representations and try to solve 2-way and 3-way classification results. Things work well if you even use only around 5 labeled examples per class! This is a verification of the theory. This dataset hadn't been created before, we created to test the theory. 
+
+We did some similar experiments for cifar100, but the gap is somewhat larger. 
+
+#### Conclusions
+
+This is just a first cut theory, I hope I've whetted your appetite. It fits much more closely with learning theory. In practice classes are probably not arbitrary, if you assume some things like that, more empirical and theoretical development, and connections to transfer and meta learning. 
+
+
 ### Gradient Descent Aligns the Layers of Deep Linear Networks (Matus Telgarsky)
+
+
 
 ### Optimization Bias in Linear Convolutional Networks (Suriya Gunasekar)
 
