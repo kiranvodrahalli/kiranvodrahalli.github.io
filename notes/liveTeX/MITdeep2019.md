@@ -504,9 +504,108 @@ This is just a first cut theory, I hope I've whetted your appetite. It fits much
 
 ### Gradient Descent Aligns the Layers of Deep Linear Networks (Matus Telgarsky)
 
+#### Introduction
+
+Let me give you a tiny teaser: Why in 2019 are we talking about linear networks, what's the purpose of this? Let's say you download some data from the internet and it's two circles and two classes. If you train a logistic classifier via gradient descent, you get the max-margin classifier. What you should ask yourself is what if you do a deep linear network? This is just an overparameterization of many layers of a linear classifier. It's just a linear function of the input! This is multi-linear polynomial optimization. You actually get the same solution -- gradient descent finds the same solution. 
+
+So the goal today will be to dissect this as much as we can, and I will give you the punchline right now: The punchline is it's not just finding max margin classifier, it's also minimizing Frobenius norm constraint on all the matrices! It balances the Frobenius norms. I find this utterly shocking! If you wanted to induce this sort of property in past framework, you would add a bunch of constraints -- now we just do this! 
+
+Now what aspects of this are true in the nonlinear case (e.g. ReLu case)? You could try doodling this during this talk. 
+
+#### Margin Maximization is Interesting
+
+Now, Ben Recht gave a provactive talk about rethinking generalization -- it really got me out of my comfort zone! The thing I zoomed in on was the explicit regularization comment -- I thought, I've seen this before, it sounds like margin theory. If you do choose to try to resolve some aspects of this paper using margin theory, you're also introducing some new problems. First you have to prove you have a margin maximizing algorithm --- for gradient descent it's still open. We haven't resolved this at all yet. A few more comments about margins --- why is it a useful goal to prove that we have margin maximization? A lot of people try to make the generalization bounds to be small and predictive. We want it to reflect actual empirical generalization. For instance, in a Bartlett paper, the Lipschitz constant tracks generalization. Sanjeev + Nati: It's correlated not predictive (there are lots of other properties that correlate too). If you're not convinced by this, I find the question of finding a normalization to be difficult. Another reasons I found these bounds to be predictive (independent of Lipschitz constant), if you plot the margin distribution, you find some interesting patterns: The margins are closer to zero for random-labeled CIFAR, so the normalized (from the Bartlett et. al. paper) margins are good predictors for the problem. One of the plots that shocked me the most: If you compare MNIST and CIFAR both random, the margin plots are on top of each other. Another question is: are these plots artifcats of the normalization chosen. Why should bound capture anything real if it's a loose upper bound? As I recomputed bounds and debugged proof, you always saw this. These were my loose personal reasons for why I thought it interesting to prove this margin maximization property in the algorithm. One more comment --- on arxiv people are proving settings of convergence for deep nonlinear networks --- they all assume a very wide overparametrization, and this causes the weights to change very little. By contrast, today I will talk about an asymptotic result, where the norm of the predictor goes to infinity. It might seem at odds with these other recent papers. However these results are sort of complementary. 
+
+#### Proving Convex Optimization Guarantees
+
+First let's discuss the regular one-layer linear case that we get max-margin predictor. This is not a textbook theorem, even though it's a convex problem. 
+
+Let's look at the problem: We had toy data -- two classes and they were concentric circles. By symmetry you can say the solution is global optimally and it's zero. What happens as you move the circles apart? Logistic regression is strongly convex. As you keep moving the data apart -- the solution keeps moving towards infinity. In classical learning theory parlance, this is the separable case. Now if you throw a bunch of blue and red points in the middle and move them apart, then you are changing where the global optimum will be, and it shifts the gradient descent path upwards or downwards. For the general version of the problem you have to specify an offset. For logistic regression the solution is a ray with a fixed offset. Here's the two part theorem I can give here (just in convex case). The first part is just the reduction to empirical risk -- it follows a \\(1/T\\) rate, but there is no dependence on distance to the optimum. You can also prove a parameter convergence guarantee. Superficially it does not have a unique optimum. There always exists a unique ray such that gradient descent follows this path. The purpose of this part of the talk is to say that even in the case of linear logistic regression, there were interesting things to uncover in the case where the optimum is not bounded. There's prior and parallel work -- Nati and colleagues analyzed this in the separable case and got a better convergence. This is implicit regularization setting. It's sort of following the optimal path. One reason that constrained optimization is not used as much is gradient descent with appropriate loss is solving some of those constrained things. 
+
+To prove this margin maximization with a slightly slower rate than Nati uses a trick with the Fenchel-Young inequality. 
+
+#### Deep Linear Networks 
+
+The predictor is a multilinear form (simple polynomial) in the weights, but linear in the covariates. Some prior work -- it has saddle properties for the squared loss. Here we are using the logistic loss which has an optimum at infinity. Suriya will talk about another result -- if you assume risk converges and gradients converge you find margin maximizing solution. 
+
+Not only do you maximize margin but you minimize Frobenius norms! On the technical side we want to reduce as many of these assumptions as possible. Let's compare the descent paths of gradient descent for deep linear networks. We know at least one layer is going off to infinity. Spectral norms also go to infinity. There's a theorem by Jason Lee and Simon Du that says they should go to infinity in lockstep (for all the layers). 
+
+Since we are learning a linear predictor, there's no purpose in having a lot of stuff in the weight matrices other than the first rank. We have \\(x \to W_L\cdots W_1 x\\). Each becomes asymptotically rank one, and they're all aligned and become asymptotically equal (we can introduce rotations inbetween matrices, there are infinitely many solutions). There's no norm lost at all. From here you can reverse engineer this minimum Frobenius norm property. To summarize you get \\((u_Lv_L^T)\cdots(u_1v_1^T))\\), and they're all aligned. If you look at first layer, it's the max margin linear predictor if you look at \\(u_1\\). Now if you look at second layer, it learns max margin predictor at that layer. And so on, for every single layer. 
+
+Finally I'll give you real theorem: Assume the data is linearly separable (this is very important). We have an initialization assumption: The initial risk is less than the risk of the zero vector. We're not doing random initialization (you can get to this with a couple random inits, but that's what we require). This means you don't start at a saddle point. This holds for gradient flow or gradient descent with small step size and logistic loss. 
+The results: The risk goes to zero, the Frobenius norms go to infinity (see paper for rest). 
+
+#### Questions
+
+What happens in multiclass? The proof which crucially uses rank-1 property breaks down. I don't actually know how to prove this in multi-class case. 
 
 
 ### Optimization Bias in Linear Convolutional Networks (Suriya Gunasekar)
+
+#### Introduction 
+
+The motivating goal for this line of work is learning in deep neural networks -- what is the true inductive bias involved in deep learning? We want to parametrize prediction functions with parameters \\(w\\). Empirical success has arisen from training large networks on large datasets. This is a loss minimization over examples using variations of gradient descent or SGD. 
+
+While neural nets have enjoyed theoretical success, the problem is nonconvex, but we see that SGD is able to find good optima of neural nets. In practice special minimizers have remarkably good performance. This suggests that algorithms are key to learning good models rather than optimization objective itself. 
+
+#### Matrix Completion
+Let's look at this setup in a completely different problem -- matrix completion. A common assumption is that groundtruth matrix is somewhat low-rank which fills in the missing entries. A natural objective is to just minimize loss over differences. We can overparametrize and optimize over two matrices \\(U, V\\) and it's easier to restrict to low-rank constraint. 
+
+Today we will instead optimize over full dimensional \\(U, V\\) -- no rank constraints. We will see what happens when we solve this problem using gradient descent. This is a special case of matrix estimation from linear measurements. So is gradient descent on this loss different from gradient descent on the non-overparametrized version, even though the objectives are equivalent? Both algorithms are doing the job of optimizing objective correctly. But what is surprising is that when we do descent on the factorized objective, you get different solutions --- this raises the question which global minimum does gradient descent actually reach? It turns out it's the minimum nuclear norm solution (relaxation of a rank constraint). So we have a bunch of empirical observations on this topic. We can concretize it -- when does gradient descent on factored space converge to nuclear norm solution? We can formalize it more mathematically -- it was proved for special case of commutative measurements. Li, Ma, Zhang 2018 generalized to common random measurement models. 
+
+We wanted to go through this exercise to understand whether this is indeed the phenomenon observed when training neural networks. The number of parameters is often much more than the number of examples in deep nets -- most minimizers won't do well on new datasets, but nevertheless the ones that gradient descent finds do. Different optimization updates might lead to different minimizers. Hyperparameters etc. will also affect what optima you get to. 
+
+This brings up to the point that the algorithms rather than the objective itself are what matters for getting good results. 
+
+#### Optimization algorithms induce inductive bias for learning
+
+This insight could lead to better algorithms and heuristics for faster heuristics etc. 
+
+We'll start out with gradient descent for logistic regression. There's no global minima - gradient descent iterates will diverge in norm, but we care about the direction --- e.g., the normalized iterates. So which classifier/direction does gradient descent converge in -- it's the maximum margin separator, as Matus said earlier. The interesting thing about this result is that it's independent of step size. We have an extension of this work -- using an adaptive step size can still increase the speed at which you reach the final solution. This heuristic has been tried in actual neural networks, that show it could be a valid approach. These results follow one of Matus's much earlier work -- when you do boosting over linearly separable dataset, you converge to maximum margin solution. 
+
+Usually people decrease step size, but we have found with linear networks, increasing step size is actually a better thing to do to reach max-margin. It's something to look at empirically more. 
+
+#### What about neural networks? 
+
+We don't have an answer, but a bit of understanding for linear networks. You can think of it as a multi-layer compositional network, where each layer has a transformation. At this point you take a linear combination to get the final solution. You can think of representing each layer as having different constraints. We're also only considering the case where there's no bottleneck layer, all layers have enough width so there's enough overparametrization. 
+Also we look at convolutional networks (linear convolutional networks). 
+
+We can think of different architectures as different parametrizations of the same optimization problem, and the question is what classifier does gradient descent learn depending on the parametrization? 
+
+Linear fully connected networks (also studied in parallel by Matus) -- convergence happens through an alignment process. We started off saying different parametrizations lead to different solutions. Everything converges to the same solution as logistic regression. Matus removed some the assumptions from our work. 
+
+What happens for convolutional networks? Here we observe the solution we get is very different from fully-connected networks. GD promotes sparsity in the frequency components. Gradient descent ends up learning something that looks sparse in the Discrete Fourier domain. We end up maximizing the margin subject to an \\(\ell_1\\) penalty on the frequency components of the predictor. Convolutional layers for larger and larger networks converges to stationary points. 
+
+Why do we get these very different answers? If we have different architectures, how do we figure out what happens? We can think of homogenous linear models as a larger model class. These are all linear functions where the mapping from parameters to the linear predictor is a homogenous function (\\(P(\alpha w) = \alpha^n P(w)\\)). For this function class, gradient does something to minimize the Euclidean norm of the parameters. For nonlinear homogenous functions, we can show a similar result with an extra assumption. 
+
+Now we have bias in the parameter space -- what does this mean in prediction space? By choosing different architectures, we can drive different biases in prediction space. If we have 2-layer network with multiple outputs (matrix factorization setting), this complexity measure is essentially nuclear norm. 
+
+Another followup work whcih Nati is super excited about is if you're learning a map from scalar to scalar with infinite width network, minimizing \\(\ell_2\\) norm corresponds to total variation of function class. Takeaway point is that the geometry of the parameters influences inductive bias, and architecture interacts nicely with the form of the bias. 
+
+Some related questions: does gradient descent globally optimize the objective? Does the direction of iterates converge? In our results we assume the loss goes to zero and the iterates converge, etc. 
+
+So our results: 
+
+* squared loss linear regression implies minimum Euclidean norm 
+
+* squared loss matrix completion minimizes Euclidean norm of factors 
+
+* logistic loss for linear classification minimizes Euclidean norm with margin condition 
+
+#### Optimization bias in non-Euclidean geometry
+
+We can think of finding a step which has the most correlation with negative gradient but which at the same time is close to the current iterate (this is where Euclidean geometry comes in). We could think of steepest descent in general norms, non-Euclidean norm perhaps. If this is \\(\ell_1\\), this is coordinate descent. For mirror descent, we get Bregman divergence. This defines the geometry in which I'm making the updates. We want to see if there's a relation between optimization bias and optimization geometry. 
+
+What's the optimization bias of mirror descent? Here we get a different flavor of results. For square loss we get that it gets the argmin of the potential function associated with mirror descent. With appropriate init we can show it converge to this. For exponentiated GD you can show it goes to max-entropy solution. 
+
+#### Conclusions
+
+* Optimization bias has interesting interactions with optimization geometry 
+
+* Optimization geometry relates to the nature of optimization bias 
+
+* Squared loss is very different compared to exponential bias. 
+
 
 ### Towards a Foundation of Deep Learning: SGD, Overparametrization, and Generalization (Jason Lee)
 
