@@ -919,20 +919,6 @@ There are a couple things unsatisfactory. We didn't get zero training error. Wha
 * AM2: I'm thankful for everyone coming here, hope everyone enjoyed it! 
 
 
-## January 30
-
-### Learning Restricted Boltzmann Machines (Ankur Moitra)
-
-### SGD with AdaGrad Adaptive Learning Rate: Strong Convergence without Step-size Tuning (Rachel Ward)
-
-### Understanding adaptive methods for non-convex optimization (Satyen Kale)
-
-### Adversarial Examples from Computational Constraints (Sebastien Bubeck)
-
-### A Critical View of Global and Local Optimality in Deep Networks (Suvrit Sra)
-
-
-
 
 
 
