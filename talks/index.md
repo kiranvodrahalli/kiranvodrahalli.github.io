@@ -10,6 +10,12 @@ ___
 
 ### Research Talks
 
+March 2019: ALT 2019 Oral Presentation. *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. 
+
+March 2019: NYAS 13th Annual Machine Learning Symposium Oral Presentation. *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. <a href="https://www.nyas.org/events/2019/13th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2019"> [symposium] </a>
+
+December 2018: NeurIps 2018 Workshop on Infer2Control Oral Presentation (presented by Brandon Araki). *Learning to Plan with Logical Automata*. <a href="{{site.baseurl }}/talks/Learning-to-Plan-with-Logical-Automata.pdf" title="iclr18_masters"> [slides] </a>.
+
 July 2018: ICML 2018 Theory of Deep Learning Workshop Oral Presentation (presented by Mikhail Khodak). *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. 
 
 May 2018: Master's Thesis presentation by Mikhail Khodak and Nikunj Saunshi. *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. <a href="{{site.baseurl }}/talks/iclr18_slides.pdf" title="iclr18_masters"> [slides] </a>.

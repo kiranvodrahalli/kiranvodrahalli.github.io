@@ -25,7 +25,7 @@ ___
 
 ### Conference and Journal Publications 
 
-<span>[C4]</span>{: .blue .bold} *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. Alex Andoni\*, Rishabh Dudeja\*, Daniel Hsu\*, **Kiran Vodrahalli**\*. Oral Presentation. Algorithmic Learning Theory, March 2019. [arXiv soon!]
+<span>[C4]</span>{: .blue .bold} *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. Alex Andoni\*, Rishabh Dudeja\*, Daniel Hsu\*, **Kiran Vodrahalli**\*. Oral Presentation. Algorithmic Learning Theory, March 2019. <a href= "{{ site.baseurl }}/research/publications/alt19.pdf" title= "alt19"> [pdf] </a> <a href= "http://alt2019.algorithmiclearningtheory.org/accepted-papers/" title="alt"> [conference] </a> <a href= "{{ site.baseurl }}/posters/Columbia-Data-Science-Poster-2018-Vodrahalli.pdf" title= "columbia-fods18"> [poster] </a>
 
 <span>[C3]</span>{: .blue .bold} *A Large Self-Annotated Corpus for Sarcasm*. Mikhail Khodak, Nikunj Saunshi, **Kiran Vodrahalli**. Poster. Language Resources and Evaluation, May 2018. <a href= "{{ site.baseurl }}/research/publications/lrec18.pdf" title= "lrec18"> [pdf] </a> <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/160.pdf" title="lrec18"> [conference] </a> <a href="https://arxiv.org/abs/1704.05579" title="lrec18_arxiv"> [arXiv] </a> [[dataset]](http://nlp.cs.princeton.edu/SARC/) [[code]](https://github.com/NLPrinceton/SARC)
 
@@ -39,7 +39,7 @@ ___
 
 ### Workshop Publications
 
-<span>[W5]</span>{: .green .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Cristian-Ioan Vasile, Daniela Rus. Oral Presentation and Poster. [NeurIPS 2018 Workshop on Infer2Control](https://sites.google.com/view/infer2control-nips2018), December 2018. [arXiv soon!]
+<span>[W5]</span>{: .green .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Cristian-Ioan Vasile, Daniela Rus. Oral Presentation and Poster. [NeurIPS 2018 Workshop on Infer2Control](https://sites.google.com/view/infer2control-nips2018), December 2018. <a href= "{{ site.baseurl }}/research/workshops/neurips18_infer2control.pdf" title= "lvin_neurips18"> [pdf] </a> <a href="{{site.baseurl }}/talks/Learning-to-Plan-with-Logical-Automata.pdf" title="infer2control-nips2018-slides"> [slides] </a> <a href="{{site.baseurl }}/posters/lvin-infer2control-neurips18-poster.pdf" title="infer2control-nips2018-poster"> [poster] </a>
 
 <span>[W4]</span>{: .green .bold} *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. Sanjeev Arora\*, Mikhail Khodak\*, Nikunj Saunshi\*, **Kiran Vodrahalli**\*. Poster. [ACL Workshop on Representation Learning for NLP](https://sites.google.com/site/repl4nlp2018/home), July 2018. (note: same work as ICLR '18 conference publication). 
 
@@ -48,15 +48,19 @@ ___
 <span>[W2]</span>{: .green .bold} *Mapping between Natural Movie fMRI Responses and Word-Sequence Representations*. **Kiran Vodrahalli**, Po-Hsuan Chen, Yingyu Liang, Janice Chen, Esther Yong, Christopher
 Honey, Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora. Oral Presentation and Poster. [NIPS Workshop on Representation Learning in Artificial and Biological Neural Networks](https://arxiv.org/abs/1701.01437), Dec 2016. <a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_nips16"> [slides] </a> <a href="{{site.baseurl }}/posters/nips16_MLINI_poster.pdf" title="ssrm_nips16"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
 
-<span>[W1]</span>{: .green .bold} *A Semantic Shared Response Model*. **Kiran Vodrahalli**, Po-Hsuan Chen, Janice Chen, Esther Yong, Christopher Honey, Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora. Oral Presentation and Poster. <a href = "http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/" title = "MVRL"> ICML Workshop on Multi-view Representation Learning </a>, Jun 2016. <a href= "{{ site.baseurl }}/research/workshops/icml16_mvrl.pdf" title= "cos521"> [pdf] </a><a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [slides] </a> <a href="{{site.baseurl }}/posters/icml16_MVRL_poster.pdf" title="ssrm_icml16"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
+<span>[W1]</span>{: .green .bold} *A Semantic Shared Response Model*. **Kiran Vodrahalli**, Po-Hsuan Chen, Janice Chen, Esther Yong, Christopher Honey, Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora. Oral Presentation and Poster. <a href = "http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/" title = "MVRL"> ICML Workshop on Multi-view Representation Learning </a>, Jun 2016. <a href= "{{ site.baseurl }}/research/workshops/icml16_mvrl.pdf" title= "ssrm_icml16"> [pdf] </a><a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [slides] </a> <a href="{{site.baseurl }}/posters/icml16_MVRL_poster.pdf" title="ssrm_icml16"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
 
 ---
 
 ### Technical Reports and Theses  
 
-<span>[T8]</span>{: .grey .bold} *Temporally Dependent Mappings Between fMRI Responses and Natural Language Descriptions of Natural Stimuli*. COS MSE Thesis (May 2017). Advised by Sanjeev Arora and Ken Norman. <a href= "{{ site.baseurl }}/research/theses/MSE_COS_thesis.pdf" title= "mse_thesis"> [pdf] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
+<span>[T10]</span>{: .grey .bold} *Temporally Dependent Mappings Between fMRI Responses and Natural Language Descriptions of Natural Stimuli*. COS MSE Thesis (May 2017). Advised by Sanjeev Arora and Ken Norman. <a href= "{{ site.baseurl }}/research/theses/MSE_COS_thesis.pdf" title= "mse_thesis"> [pdf] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
 
-<span>[T7]</span>{: .grey .bold} *Low-dimensional Representations of Semantic Context in Language and the Brain*. MAT AB Thesis (May 2016). Advised by Sanjeev Arora and Ken Norman. <a href= "{{ site.baseurl }}/research/theses/ugrad_MAT_thesis.pdf" title= "ab_thesis"> [pdf] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
+<span>[T9]</span>{: .grey .bold} *Low-dimensional Representations of Semantic Context in Language and the Brain*. MAT AB Thesis (May 2016). Advised by Sanjeev Arora and Ken Norman. <a href= "{{ site.baseurl }}/research/theses/ugrad_MAT_thesis.pdf" title= "ab_thesis"> [pdf] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
+
+<span>[T8]</span>{: .grey .bold} *Can Simple Assembly Algorithms Compute Robust, High-Dimensional Means?*. COMS 6998-06 Project (Fall 2018). Advised by Christos Papadimitriou. <a href= "{{ site.baseurl }}/research/reports/computation-and-brain-paper.pdf" title= "6998-06"> [pdf] </a> 
+
+<span>[T7]</span>{: .grey .bold} *An Efficient General Algorithm for Interactive Clustering*. COMS 6998-04 Project (Fall 2017). Advised by Daniel Hsu. <a href= "{{ site.baseurl }}/research/reports/efficient_interactive_clustering.pdf" title= "6998-04"> [pdf] </a> 
 
 <span>[T6]</span>{: .grey .bold} *Sparse, Low-dimensional and Multimodal Representations of Time Series for Mind-Reading*. COS 513 Project (Fall 2015). With Lydia Liu and Niranjani Prasad. Advised by Barbara Engelhardt. <a href= "{{ site.baseurl }}/research/reports/cos513paper.pdf" title= "cos513"> [pdf] </a> <a href= "{{ site.baseurl }}/research/reports/cos513/" title= "cos513blog"> [blog] </a> 
 

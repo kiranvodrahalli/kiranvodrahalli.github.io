@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+   
+   <!--
+     redirect users to the https version of the website.
+     but: only check when on the production domain, as set in _config.yml.
+    -->
+   <script type="text/javascript">
+     var enforce = "kiranvodrahalli.github.io";
+     if ((enforce == window.location.host) && (window.location.protocol != "https:"))
+       window.location = window.location.toString().replace(/^http:/, "https:");
+   </script>
+   
+
+  <!-- EB Garamond Font --> 
+  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Notes from MIT Deep Learning Theory and Non-Convex Optimization Workshop (January 27-30) || exponentially surprised
+    
+  </title>
+
+  <!-- MathJax -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ 
+      TeX: { 
+        extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "bbox.js", "color.js", "enclose.js"] 
+      },
+      unicode: {
+        fonts: "STIXGeneral, 'Arial Unicode MS'"
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/public/favicomatic/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicomatic/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicomatic/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicomatic/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/public/favicomatic/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicomatic/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/public/favicomatic/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicomatic/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/public/favicomatic/favicon-128.png" sizes="128x128" />
+  <link rel="shortcut icon" type="image/png" href="/public/favicomatic/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="exponentially surprised" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <font size="8">Kiran Vodrahalli</font> is <a href="/" title="Home">||exponentially surprised||</a>
+          <small>[2<sup>H</sup> theoryblog]</small> 
+        </h3>
+        <a href="/about" title="about">{about}</a>
+        <a href="/research" title="research">{research}</a>
+        <a href="/talks" title="talks">{talks}</a>
+        <a href="/blog" title="blog">{blog}</a>
+        <a href="/archive" title="archive">{archive}</a>
+        <a href="/teaching" title="teaching">{teaching}</a>
+        <a href="/notes" title="notes">{notes}</a>
+        <a href="/links" title="links">{links}</a>
+        <a href="/press" title="press">{press}</a>
+        <!-- <div align="left">
+          <img src="/professional_headshot.jpg" alt="kiran_pic" height="400">
+        </div> -->
+      </header>
+
+      <main>
+        <article class="page">
+  <h1 class="page-title">Notes from MIT Deep Learning Theory and Non-Convex Optimization Workshop (January 27-30)</h1>
+  <ul id="markdown-toc">
+  <li><a href="#bootcamp-01272019" id="markdown-toc-bootcamp-01272019">Bootcamp (01/27/2019)</a>    <ul>
+      <li><a href="#inductive-bias-and-generalization-in-deep-learning-nati-srebro" id="markdown-toc-inductive-bias-and-generalization-in-deep-learning-nati-srebro">Inductive Bias and Generalization in Deep Learning (Nati Srebro)</a>        <ul>
+          <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+          <li><a href="#what-do-we-mean-by-supervised-learning-" id="markdown-toc-what-do-we-mean-by-supervised-learning-">What do we mean by supervised learning ?</a></li>
+          <li><a href="#non-flat-complexity-measures-and-structural-risk-minimization" id="markdown-toc-non-flat-complexity-measures-and-structural-risk-minimization">Non-Flat Complexity Measures and Structural Risk Minimization</a></li>
+          <li><a href="#implicit-inductive-bias" id="markdown-toc-implicit-inductive-bias">Implicit Inductive Bias</a></li>
+          <li><a href="#neural-nets-and-free-lunches" id="markdown-toc-neural-nets-and-free-lunches">Neural Nets and Free Lunches</a></li>
+        </ul>
+      </li>
+      <li><a href="#optimization-landscape-symmetry-saddle-points-and-beyond-rong-ge" id="markdown-toc-optimization-landscape-symmetry-saddle-points-and-beyond-rong-ge">Optimization Landscape: Symmetry, Saddle Points and Beyond (Rong Ge)</a>        <ul>
+          <li><a href="#introduction-1" id="markdown-toc-introduction-1">Introduction</a></li>
+          <li><a href="#optimization-landscape" id="markdown-toc-optimization-landscape">Optimization Landscape</a></li>
+          <li><a href="#locally-optimizable-functions" id="markdown-toc-locally-optimizable-functions">Locally-Optimizable Functions</a></li>
+          <li><a href="#matrix-completion" id="markdown-toc-matrix-completion">Matrix Completion</a></li>
+          <li><a href="#optimization-landscapes-for-neural-networks" id="markdown-toc-optimization-landscapes-for-neural-networks">Optimization landscapes for neural networks</a></li>
+          <li><a href="#linear-networks" id="markdown-toc-linear-networks">Linear Networks</a></li>
+          <li><a href="#two-layer-neural-networks" id="markdown-toc-two-layer-neural-networks">Two-layer neural networks</a></li>
+          <li><a href="#spin-glass-models--kac-rice" id="markdown-toc-spin-glass-models--kac-rice">Spin-glass models / Kac-Rice</a></li>
+          <li><a href="#analyzing-the-dynamics-of-local-search" id="markdown-toc-analyzing-the-dynamics-of-local-search">Analyzing the dynamics of local search</a></li>
+        </ul>
+      </li>
+      <li><a href="#mean-field-description-of-two-layers-neural-networks-andrea-montanari" id="markdown-toc-mean-field-description-of-two-layers-neural-networks-andrea-montanari">Mean Field Description of Two-layers Neural Networks (Andrea Montanari)</a>        <ul>
+          <li><a href="#how-to-prove-it-intuition-behind-the-idea" id="markdown-toc-how-to-prove-it-intuition-behind-the-idea">How to prove it (intuition behind the idea)</a></li>
+          <li><a href="#what-can-you-do-with-this" id="markdown-toc-what-can-you-do-with-this">What can you do with this?</a></li>
+        </ul>
+      </li>
+      <li><a href="#langevin-diffusions-in-non-convex-risk-minimization-maxim-raginsky" id="markdown-toc-langevin-diffusions-in-non-convex-risk-minimization-maxim-raginsky">Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)</a>        <ul>
+          <li><a href="#global-optimality-in-finite-time" id="markdown-toc-global-optimality-in-finite-time">Global optimality in finite time</a></li>
+          <li><a href="#metastability" id="markdown-toc-metastability">Metastability</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#january-28" id="markdown-toc-january-28">January 28</a>    <ul>
+      <li><a href="#convergence-of-gradient-based-methods-for-the-linear-quadratic-regulator-maryam-fazel" id="markdown-toc-convergence-of-gradient-based-methods-for-the-linear-quadratic-regulator-maryam-fazel">Convergence of Gradient-based Methods for the Linear Quadratic Regulator (Maryam Fazel)</a>        <ul>
+          <li><a href="#introduction-2" id="markdown-toc-introduction-2">Introduction</a></li>
+          <li><a href="#existing-literature-on-learning-and-control" id="markdown-toc-existing-literature-on-learning-and-control">Existing Literature on Learning and Control</a></li>
+          <li><a href="#lqr" id="markdown-toc-lqr">LQR</a></li>
+          <li><a href="#settings-of-optimization-algorithms" id="markdown-toc-settings-of-optimization-algorithms">Settings of Optimization Algorithms</a></li>
+          <li><a href="#first-order-oracle" id="markdown-toc-first-order-oracle">First Order Oracle</a></li>
+          <li><a href="#unknown-model-case" id="markdown-toc-unknown-model-case">Unknown Model Case</a></li>
+          <li><a href="#proof-sketch" id="markdown-toc-proof-sketch">Proof sketch</a></li>
+          <li><a href="#structured-controller-design" id="markdown-toc-structured-controller-design">Structured Controller Design</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#january-29" id="markdown-toc-january-29">January 29</a>    <ul>
+      <li><a href="#theory-for-representation-learning-sanjeev-arora" id="markdown-toc-theory-for-representation-learning-sanjeev-arora">Theory for Representation Learning (Sanjeev Arora)</a>        <ul>
+          <li><a href="#introduction-3" id="markdown-toc-introduction-3">Introduction</a></li>
+          <li><a href="#representation-learning-in-practice" id="markdown-toc-representation-learning-in-practice">Representation Learning in Practice</a></li>
+          <li><a href="#contrastive-learning" id="markdown-toc-contrastive-learning">Contrastive Learning</a></li>
+          <li><a href="#experiments" id="markdown-toc-experiments">Experiments</a></li>
+          <li><a href="#conclusions" id="markdown-toc-conclusions">Conclusions</a></li>
+        </ul>
+      </li>
+      <li><a href="#gradient-descent-aligns-the-layers-of-deep-linear-networks-matus-telgarsky" id="markdown-toc-gradient-descent-aligns-the-layers-of-deep-linear-networks-matus-telgarsky">Gradient Descent Aligns the Layers of Deep Linear Networks (Matus Telgarsky)</a>        <ul>
+          <li><a href="#introduction-4" id="markdown-toc-introduction-4">Introduction</a></li>
+          <li><a href="#margin-maximization-is-interesting" id="markdown-toc-margin-maximization-is-interesting">Margin Maximization is Interesting</a></li>
+          <li><a href="#proving-convex-optimization-guarantees" id="markdown-toc-proving-convex-optimization-guarantees">Proving Convex Optimization Guarantees</a></li>
+          <li><a href="#deep-linear-networks" id="markdown-toc-deep-linear-networks">Deep Linear Networks</a></li>
+          <li><a href="#questions" id="markdown-toc-questions">Questions</a></li>
+        </ul>
+      </li>
+      <li><a href="#optimization-bias-in-linear-convolutional-networks-suriya-gunasekar" id="markdown-toc-optimization-bias-in-linear-convolutional-networks-suriya-gunasekar">Optimization Bias in Linear Convolutional Networks (Suriya Gunasekar)</a>        <ul>
+          <li><a href="#introduction-5" id="markdown-toc-introduction-5">Introduction</a></li>
+          <li><a href="#matrix-completion-1" id="markdown-toc-matrix-completion-1">Matrix Completion</a></li>
+          <li><a href="#optimization-algorithms-induce-inductive-bias-for-learning" id="markdown-toc-optimization-algorithms-induce-inductive-bias-for-learning">Optimization algorithms induce inductive bias for learning</a></li>
+          <li><a href="#what-about-neural-networks" id="markdown-toc-what-about-neural-networks">What about neural networks?</a></li>
+          <li><a href="#optimization-bias-in-non-euclidean-geometry" id="markdown-toc-optimization-bias-in-non-euclidean-geometry">Optimization bias in non-Euclidean geometry</a></li>
+          <li><a href="#conclusions-1" id="markdown-toc-conclusions-1">Conclusions</a></li>
+          <li><a href="#questions-1" id="markdown-toc-questions-1">Questions</a></li>
+        </ul>
+      </li>
+      <li><a href="#towards-a-foundation-of-deep-learning-sgd-overparametrization-and-generalization-jason-lee" id="markdown-toc-towards-a-foundation-of-deep-learning-sgd-overparametrization-and-generalization-jason-lee">Towards a Foundation of Deep Learning: SGD, Overparametrization, and Generalization (Jason Lee)</a>        <ul>
+          <li><a href="#introduction-6" id="markdown-toc-introduction-6">Introduction</a></li>
+          <li><a href="#nonconvexity" id="markdown-toc-nonconvexity">Nonconvexity</a></li>
+          <li><a href="#computing-subgradients" id="markdown-toc-computing-subgradients">Computing Subgradients</a></li>
+          <li><a href="#smooth-functions" id="markdown-toc-smooth-functions">Smooth functions</a></li>
+          <li><a href="#landscape-design" id="markdown-toc-landscape-design">Landscape Design</a></li>
+          <li><a href="#classification" id="markdown-toc-classification">Classification</a></li>
+          <li><a href="#is-ell_2-norm-interesting-as-a-regularizer" id="markdown-toc-is-ell_2-norm-interesting-as-a-regularizer">Is \(\ell_2\) norm interesting as a regularizer?</a></li>
+          <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+        </ul>
+      </li>
+      <li><a href="#representational-power-of-narrow-resnet-and-of-graph-neural-networks-stefanie-jegelka" id="markdown-toc-representational-power-of-narrow-resnet-and-of-graph-neural-networks-stefanie-jegelka">Representational Power of narrow ResNet and of Graph Neural Networks (Stefanie Jegelka)</a>        <ul>
+          <li><a href="#introduction-7" id="markdown-toc-introduction-7">Introduction</a></li>
+          <li><a href="#resnet" id="markdown-toc-resnet">ResNet</a></li>
+          <li><a href="#the-proof-for-resnet" id="markdown-toc-the-proof-for-resnet">The Proof for ResNet</a></li>
+          <li><a href="#graph-neural-networks" id="markdown-toc-graph-neural-networks">Graph Neural Networks</a></li>
+          <li><a href="#what-is-the-aggregation-operation-by-itself-what-kinds-of-aggregation-do-you-use" id="markdown-toc-what-is-the-aggregation-operation-by-itself-what-kinds-of-aggregation-do-you-use">What is the aggregation operation by itself? What kinds of aggregation do you use?</a></li>
+        </ul>
+      </li>
+      <li><a href="#is-there-a-tractable-and-interesting-theory-of-nonconvex-optimization-santosh-vempala" id="markdown-toc-is-there-a-tractable-and-interesting-theory-of-nonconvex-optimization-santosh-vempala">Is There a Tractable (and Interesting) Theory of Nonconvex Optimization? (Santosh Vempala)</a>        <ul>
+          <li><a href="#introduction-8" id="markdown-toc-introduction-8">Introduction</a></li>
+          <li><a href="#neural-assemblies" id="markdown-toc-neural-assemblies">Neural assemblies</a></li>
+          <li><a href="#what-can-we-efficiently-sampleoptimize-provably" id="markdown-toc-what-can-we-efficiently-sampleoptimize-provably">What can we efficiently sample/optimize provably?</a></li>
+          <li><a href="#what-can-we-not-optimize-provably" id="markdown-toc-what-can-we-not-optimize-provably">What can we not optimize provably?</a></li>
+          <li><a href="#what-can-you-not-sample-efficiently" id="markdown-toc-what-can-you-not-sample-efficiently">What can you not sample efficiently?</a></li>
+          <li><a href="#what-nonconvex-functions-can-you-optimize-provably" id="markdown-toc-what-nonconvex-functions-can-you-optimize-provably">What nonconvex functions can you optimize provably?</a></li>
+          <li><a href="#what-truly-nonconvex-function-can-you-optimize-provably" id="markdown-toc-what-truly-nonconvex-function-can-you-optimize-provably">What truly nonconvex function can you optimize provably?</a></li>
+          <li><a href="#optimization-problem-in-learning" id="markdown-toc-optimization-problem-in-learning">Optimization problem in learning</a></li>
+          <li><a href="#proof-outline" id="markdown-toc-proof-outline">Proof Outline</a></li>
+          <li><a href="#back-to-upper-bounds" id="markdown-toc-back-to-upper-bounds">Back to upper bounds</a></li>
+          <li><a href="#research-directions" id="markdown-toc-research-directions">Research Directions</a></li>
+        </ul>
+      </li>
+      <li><a href="#panel-sanjeev-arora-andrea-montanari-katya-scheinberg-nati-srebro-and-antonio-torralba-directed-by-aleksander-mądry" id="markdown-toc-panel-sanjeev-arora-andrea-montanari-katya-scheinberg-nati-srebro-and-antonio-torralba-directed-by-aleksander-mądry">Panel (Sanjeev Arora, Andrea Montanari, Katya Scheinberg, Nati Srebro, and Antonio Torralba, directed by Aleksander Mądry)</a>        <ul>
+          <li><a href="#question-1-am2-whenever-there-is-theory-of-anything-the-first-question-we-might-ask-is-why-do-we-have-such-a-theory-only-later-on-after-people-got-it-to-work-empirically-did-we-wonder-why-so-what-is-the-role-of-theory-in-such-a-topic-what-is-a-successful-way-of-doing-theory-and-not-doing-theory" id="markdown-toc-question-1-am2-whenever-there-is-theory-of-anything-the-first-question-we-might-ask-is-why-do-we-have-such-a-theory-only-later-on-after-people-got-it-to-work-empirically-did-we-wonder-why-so-what-is-the-role-of-theory-in-such-a-topic-what-is-a-successful-way-of-doing-theory-and-not-doing-theory">Question 1 (AM2): Whenever there is theory of anything, the first question we might ask is “Why do we have such a theory?” Only later on after people got it to work empirically did we wonder why. So what is the role of theory in such a topic? What is a successful way of doing theory and not doing theory?</a></li>
+          <li><a href="#q2-am2-antonio-was-one-of-the-first-people-in-the-deep-learning-revolution-for-vision-when-you-started-playing-with-these-things-when-you-think-of-phenomena-what-was-the-thing-that-surprised-you-the-most-and-what-you-think-is-the-biggest-mystery" id="markdown-toc-q2-am2-antonio-was-one-of-the-first-people-in-the-deep-learning-revolution-for-vision-when-you-started-playing-with-these-things-when-you-think-of-phenomena-what-was-the-thing-that-surprised-you-the-most-and-what-you-think-is-the-biggest-mystery">Q2 (AM2): Antonio was one of the first people in the deep learning revolution for vision. When you started playing with these things, when you think of phenomena, what was the thing that surprised you the most and what you think is the biggest mystery?</a></li>
+          <li><a href="#q3-am2-some-of-you-anticipated-my-next-question-but-i-want-to-really-get-into-it-is-nonconvex-optimization-even-relevant-for-deep-learning-how-much-is-it-about-optimization-and-how-much-about-generalizationgood-representations-what-nati-has-said-is-that-sgd-has-implicit-bias-and-so-on-and-somehow-to-me-i-would-say-its-more-about-the-machine-learning-effect" id="markdown-toc-q3-am2-some-of-you-anticipated-my-next-question-but-i-want-to-really-get-into-it-is-nonconvex-optimization-even-relevant-for-deep-learning-how-much-is-it-about-optimization-and-how-much-about-generalizationgood-representations-what-nati-has-said-is-that-sgd-has-implicit-bias-and-so-on-and-somehow-to-me-i-would-say-its-more-about-the-machine-learning-effect">Q3 (AM2): Some of you anticipated my next question. But I want to really get into it: Is nonconvex optimization even relevant for deep learning? How much is it about optimization and how much about generalization/good representations? What Nati has said is that SGD has implicit bias and so on, and somehow to me, I would say it’s more about the machine learning effect.</a></li>
+          <li><a href="#whats-one-thing-you-learned-from-a-different-speaker-from-the-workshop-that-we-could-use-in-practice" id="markdown-toc-whats-one-thing-you-learned-from-a-different-speaker-from-the-workshop-that-we-could-use-in-practice">What’s one thing you learned from a different speaker from the workshop that we could use in practice?</a></li>
+          <li><a href="#q4-ideas-about-the-career-path-for-younger-scholars-in-the-data-sciences-are-there-departments-where-we-can-go-be-faculty-or-will-we-have-to-attach-ourselves-to-physics-or-math" id="markdown-toc-q4-ideas-about-the-career-path-for-younger-scholars-in-the-data-sciences-are-there-departments-where-we-can-go-be-faculty-or-will-we-have-to-attach-ourselves-to-physics-or-math">Q4: Ideas about the career path for younger scholars in the data sciences? Are there departments where we can go be faculty? Or will we have to attach ourselves to physics or math?</a></li>
+          <li><a href="#q5-predictions-for-the-next-five-years-are-we-likely-to-enter-a-new-ai-winter" id="markdown-toc-q5-predictions-for-the-next-five-years-are-we-likely-to-enter-a-new-ai-winter">Q5: Predictions for the next five years? Are we likely to enter a new AI winter?</a></li>
+          <li><a href="#q5-am2-what-is-a-big-success-of-theory-what-theoretical-development-are-you-most-proud-of-in-theory-overall-not-necessarily-yourself-basically-theory-is-important-because-of-__" id="markdown-toc-q5-am2-what-is-a-big-success-of-theory-what-theoretical-development-are-you-most-proud-of-in-theory-overall-not-necessarily-yourself-basically-theory-is-important-because-of-__">Q5 (AM2): What is a big success of theory? What theoretical development are you most proud of, in theory overall, not necessarily yourself. Basically, theory is important because of <em>__</em>.</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>See <a href="http://mifods.mit.edu/deep.php">website</a>.</p>
+
+<hr />
+
+<h2 id="bootcamp-01272019">Bootcamp (01/27/2019)</h2>
+
+<h3 id="inductive-bias-and-generalization-in-deep-learning-nati-srebro">Inductive Bias and Generalization in Deep Learning (Nati Srebro)</h3>
+
+<h4 id="introduction">Introduction</h4>
+
+<p>This topic – this entire question is inductive bias. What I hope to do is rather than walk you through results, or give you new understanding, I’m going to focus on what we do need to understand, setting up the questions. In the first half of the talk, we’ll just be talking about learning itself. What is inductive bias?</p>
+
+<p>Inductive bias is this fuzzy term. When two people say inductive bias, they probably mean different things.</p>
+
+<h4 id="what-do-we-mean-by-supervised-learning-">What do we mean by supervised learning ?</h4>
+
+<p>The problem of supervised learning is we want to find a good predictor (in expectation over examples we expect to see in reality, the prediction error is low). Where does learning come in? We don’t know how to specify reality. We want to learn the rules of reality based on data. We hope the examples are drawn from the reality distribution, and learn a predictor according to this data. We want to have a good learning rule that gives you a good predictor from the data.</p>
+
+<p>The no free lunch theorem says this is impossible if you don’t assume anything about reality. There’s some reality for which it’s possible to get zero error, but the learning rule will only get you error at least half. Inductive bias tells us that some realities are less likely than others. So we want to bias ourselves towards more likely realities.</p>
+
+<p>So in this sense of inductive bias, it’s something you put into your learning algorithm. Instead of memorizing predictors, let’s bias ourselves towards predictors of a particular form (e.g., linear predictors).</p>
+
+<p>Another way to think about inductive bias is the other way around — the properties of reality under which we can show the learning rule works. Maybe under some sensible assumptions about reality, our learning rule does work.</p>
+
+<p>Let’s see some examples: We can capture some mappings are more reasonable than others. One is when you have a hypothesis class — you say reality is captured by some predictor in your hypothesis class. Another is you have some complexity measure of hypothesis (e.g., a smooth predictor).</p>
+
+<p>A <strong>flat inductive bias</strong> bins the world into plausible and implausible predictors (e.g., a hypothesis class). If we have a flat inductive bias, you can just use empirical risk minimization over the hypothesis class. Now you can get a guarantee on learning. If our assumption holds, then we get a guarantee in expectation, which says that the generalization error for predictor returned by learning rule is at least as good the loss of our predictor plus some error term which scales as the complexity/capacity/size of the hypothesis class divided by the number of samples. This only holds if our assumption about reality holds. For binary predictors, the capacity is the VC-dimension of the hypothesis class. For linear predictors, the capacity is the dimension. Usually with \(d\) parameters, the capacity corresponds roughly to the number of parameters. But that’s not necessarily true. For infinite dimension predictors of bounded norm, the capacity often depends on the size of the bound.</p>
+
+<p>Now the name of the game in machine learning is to find good hypothesis classes. What makes one good? It should capture reality well. Doesn’t need to capture it exactly – this is one of the nice aspects of machine learning. As long as we can approximate reality, that’s good enough. Also we need the capacity of the class to be small enough to allow generalization.</p>
+
+<h4 id="non-flat-complexity-measures-and-structural-risk-minimization">Non-Flat Complexity Measures and Structural Risk Minimization</h4>
+
+<p>A complexity measure is any function from predictors to the reals which tells us how likely we think something is. We’re going to use this to compare predictors to figure out which is more likely — so it’s just an ordering on predictors. We prefer predictors of smaller complexity than others. If this is our inductive bias, what should our learning rule be? We use structural risk minimization – we want to minimize both empirical error and the complexity of a hypothesis. This is a bipartite optimization problem. How do we solve this problem? We need to trade these off, and choose the tradeoff. There are many ways of doing this bipartite optimization problem. You can minimize empirical error plus some regularization term, etc. They’re all about finding Pareto frontier for the optimization problem. Whatever tradeoff term you choose, you’ll pick it with some kind of validation method (like cross-validation).</p>
+
+<p>Now what can we say? Roughly we will ensure that our learning rule will compete with any predictor that has small error, but the number of samples you’ll need is going to scale corresponding to the complexity of the sublevel set of the predictor. The more samples you have, you can compete with a bigger sublevel set, and you can compete with hypotheses of higher complexity. So talking about a complexity measure and a hierarchy of complexity classes is the same. Note that this hierarchy can be continuous.</p>
+
+<p>So when we talk about understanding capacity, we should really be talking about complexity measure, but really, it’s enough to talk about hypothesis classes (e.g. flat measures of complexity). All we need to know is about the complexity of the hypothesis class of the particular sublevel set. It’s almost true that you can take an infimum over \(h^* \) in the error bound on the SRM predictor: <script type="math/tex">L(SRM_{H})(S) \leq L(h^* ) + \sqrt{\frac{capacity(\mathcal{H}_{complexity(h^* )})}{m}}</script></p>
+
+<h4 id="implicit-inductive-bias">Implicit Inductive Bias</h4>
+<p>There are other learning rules beyond ERM and SRM, for instance, stochastic gradient descent. We can look at the inductive biases associated with these other learning rules. These might be implicit inductive bias. This doesn’t necessarily do ERM or SRM with respect to anything; nevertheless, we can get a generalization bound for this learning rule. We can get a bound 
+<script type="math/tex">L(SGD(S)) \leq L(w^* ) + \sqrt{\frac{\|w\|_{2}}{m}}</script></p>
+
+<p>So basically, the inductive bias associated with SGD is the Euclidean norm of the weight. By using SGD, you’re saying you believe that reality is captured by a small norm predictor. I want to emphasize that this is NOT ERM. So you can think of inductive bias in two directions. You can first decide on inductive bias, and then design an algorithm (ERM or SRM). The second way to think about it is that you can start with an algorithm (like SGD) and then see oh, it works – let’s understand the underlying inductive bias. This maybe comes after the fact though.</p>
+
+<p>You could think of other learning algorithms; e.g. nearest neighbor. For nearest neighbor to work, you need \(P(y|x)\) to be smooth with respect to some distance measure. Then if you do nearest neighbor with respect to that distance measure, then it will work. 
+I don’t necessarily have a good reference for how the initial nearest neighbor guarantees were achieved.</p>
+
+<p>If you do exponential gradient descent / multiplicative weights, then this corresponds to low \(\ell_1\) norm e.g. sparsity. There are many other examples. If you look in SGD, you can find where Euclidean norm shows up and replace the inductive bias with other inductive biases (think of Mirror Descent, etc.).</p>
+
+<p>Now we understand the questions we should ask about neural nets.</p>
+
+<h4 id="neural-nets-and-free-lunches">Neural Nets and Free Lunches</h4>
+
+<p>We’ll think of a neural network as a directed acyclic graph. We have activation fixed, graph fixed, etc. The thing to learn is the weights of the units. This defines a hypothesis class — inductive bias is given by functions which can be captured by this hypothesis class. This is a flat inductive bias. If you’re also investigating different architectures, you can think of it as a complexity measure over the architectures.</p>
+
+<p>Now to understand hypothesis class, we have to understand its capacity, and understand whether it corresponds to reality. We actually know it pretty well — roughly speaking it’s captured by the number of parameters of the network. So now we know how to measure the size, and we can ask “can we capture reality well?” The first answer is yeah! We can approximate any continuous function arbitrarily well with a neural network. It depends on how big your network should be. In order to approximate a function, the number of units has to grow exponentially with dimension. It can only capture reality with huge capacity, which is useless for us. We want to be able to capture reality well with small capacity. There’s many explanations of what you can capture with a small neural network. You can talk about all kinds of features (formulas, disjunctions and conjunctions, etc.). But all of this is unnecessary, because there’s a much stronger result that tells us we can capture anything we want with a small network. Any time \(T\) computable function can be captured with size \(\mathcal{O}(T)\). So it seems like we can capture anything we want with neural nets.</p>
+
+<p>So I tricked you before — there are free lunches. Why are we doing learning in the first place? Our goal is to be lazy. Instead of programming it directly, instaed we collect a bunch of examples, we get the system to output something efficiently. But we only care about that things that can be done with an efficient system. If there’s no efficient system to do something, then learning is going to be useless to me. If the programmer can’t do it anyways, it’s too hard. So we only care about predictors that can be implemented efficiently. And that actually has small capacity, so it can be learned efficiently! So everything we care about can be learned efficiently. If you look at programs of length at most \(\mathcal{O}(T)\). So only \(2^T \) programs, so capacity is log of that, so capacity is only \(T\).</p>
+
+<p>So why aren’t we using ERM as a learning rule — find a short program that fits the data well. The problem is that ERM over short and fast programs is very hard!!! It’s incomputable!! So we can’t do that. It’s actually easy to get out of this incomputability — you can change it to programs that are not allowed for more than time \(T\) — then it becomes computable, but it’s NP-complete. Most people think it’s bad news. I think it’s good news! It means if P = NP, then we have universal learning! Otherwise, there’s no polytime algorithm for ERM. That doesn’t necessarily mean it’s not learnable efficiently though; maybe some other learning rule works. That’s unlikely to be true since if cryptography works (existence of one-way functions), then we can say there’s no polynomial algorithm for learning this class. So no-free lunch situation is a more refined situation. What’s more important than the statistical no-free lunch is the computational no-free lunch, since we only care about classes which are efficiently computable so we get a free statistical lunch, but the learning rule is not computationally efficient, so we don’t necessarily get a free computational lunch.</p>
+
+<p>Now inductive bias is a assumption or property of the data distribution under which a learning <strong>algorithm</strong> which runs efficiently and ensures good generalization error. So just saying the complexity is low is not sufficient, since we care about efficient implementation as well. So inductive bias is about generalization aspect, and you cannot separate this from the computation aspect. Because if you ignore computation, you do have a free lunch.</p>
+
+<p>Let’s go back to neural nets. In terms of expressive power and generalization ability, they’re amazing, we can do anything we want. The only issue is if we turn to computation. We don’t have any method that always succeeds in training a neural net — you can prove that training a tiny net with only two units is NP hard. But that shouldnt’ really bother us, because maybe something other than ERM works. We know that’s not possible, because then we’d be able to learn all functions representable with time \(T\). So this thing that looks like a positive result is actually a negative result, because if you can learn everything, you can get a free lunch, and we know that you probably can’t have this free lunch (though you get one today and tomorrow).</p>
+
+<p>We have extremely strong results about the hardness of learning neural networks. If you have a single layer and super-constant number of units, there’s no efficient algorithm that will succeed in learning. So not only can you not solve ERM, just because your data is representible by a small network, this is not a sufficient inductive bias to ensure learning. Nevertheless, people are using deep learning, and lo and behold, it actually works! There’s some magic property about reality, such that under this property, neural net training actually works. I would claim that we don’t have the faintest idea (hopefully this week maybe some people will have a faint idea) what it is. Well, it is NOT that it can be represented by a small neural network (Amit Daniely) — this inductive bias is not sufficient. So there’s some other inductive bias,and I’d really like to know what this inductive bias is.</p>
+
+<p>If I gave this talk a three or four years ago, I’d probably stop here and say that’s the most important question. But some experiments I did several years ago caused me to rethink this. What we did is as follows: We trained a bunch of networks with increasing size. When you get larger and larger error, training error goes down. Test error goes down. What happens after the point that training error has reached the minimum? We expect the test error to go up. But that is not what actually happens! Instead, test error goes down. So we’re looking at the wrong capacity measure – it’s not measured by the size of the network, even for the statistical aspects of the problem. This had been observed before for boosting — the classical explanation of boosting was depending on the number of base predictors. But then people realized the \(\ell_1\) margin was the real complexity measure, back in 1998. Actually for neural networks, back in 1996, there is work saying that for neural networks, we knew to look at the size of the weights, that’s the real capacity control.</p>
+
+<p>What we’re saying is there’s a huge parameter space of functions that we cannot generalize. But reality is actually kind of small. So we only should care about sublevel sets with respect to the norm, and there, we can get generalization. By increasing the size, maybe the norm shrinks. This explains how the training data can fit anything, but generalizes differently depending on what you do. So we can measure the norm of the networks. We expect to see the norm decrease. But actually, the norm increases! This does not explain generalizability.</p>
+
+<p>So what’s going on here? Here we looked at the sum of the squares of all the weights. This is actually not a good norm to look at for neural nets. If we look at a path norm instead, then lo and behold, it actually does go down. We have to talk about which norm? which complexity measure? With different inductive biases, maybe we can actually fit the reality with a very small capacity. So what is the real complexity measure, that’s one thing we should ask.</p>
+
+<p>Now we should ask another question. How is it happening we’re minimizing a certain complexity measure? With a thousand units, there are more units than training examples, so there are many ways to minimize. How do you choose? Some have small path-norm and generalize well, but others don’t and don’t generalize. So how do we minimize path norm? All we did was run gradient descent! So it seems optimization is implicitly biasing us towards minimum path norm. That means if we change our optimization algorithm, we’re changing our implicit bias. So Path-SGD gives a minimum that generalizes much better. If you look at SGD and Adam, it turns out that SGD generalizes better, even though it takes a bit slower to get to ERM.</p>
+
+<p>A simple example is least squares. My claim is that if you do SGD on least squares, you’ll get the solution minimizing the Euclidean norm. So here the optimization algorithm is inducing the complexity measure here. All the inductive bias is happening through the optimization algorithm. So much of the bias in deep learning is due to the optimization algorithm selected. What I’m claiming is that machine learning algorithms that don’t tell us what the training algorithm details are don’t tell us anything about the learning algorithm. So we’re optimizing over the space of all possible functions effectively, but the question is “which of those functions will we actually choose, with respect to the optimization algorithm?” You should think about it as a landscape of many zero-error solutions. Depending on where you start, you may end up at different places. Some places are really flat – then it really matters what preference the geometry of the optimization algorithm is. You’ll get to close minimum with respect to the geometry of the optimization algorithm.</p>
+
+<p>So the ultimate question here again is what is the true inductive bias of deep learning? The approach I’m suggesting is to identify a complexity measure with a few properties:</p>
+
+<ul>
+  <li>reality is well-explained by something with low complexity</li>
+  <li>to quantify what low-complexity means, have to talk about capacity</li>
+  <li>our learning methods and optimization algorithm bias us towards low-complexity</li>
+</ul>
+
+<p>If you explain all these things, then you have explained the problem.</p>
+
+<p>The mathematical questions are:</p>
+
+<ul>
+  <li>What is the capacity of sublevel sets of complexity measure, but it doesn’t tell me anything if reality cannot be captured of small-capacity</li>
+  <li>For specific algorithms, understand the inductive bias it implies.</li>
+</ul>
+
+<p>Then, there’s a question about reality — when does reality have small complexity? How can you possibly solve this question about reality? The best you can do is all kinds of empirical investigations. This is what we do in science. Do the models we learn have small complexity? Can they be used to explain generalization?</p>
+
+<p>I have some answers to these questions. There will be talks by Surya and Jason Lee on Tuesday that will give lots of answers; many others too I am sure, these are just my collaborators.</p>
+
+<p>There’s another question: Under what conditions does local search work? Do we have an inductive bias that explains this?</p>
+
+<h3 id="optimization-landscape-symmetry-saddle-points-and-beyond-rong-ge">Optimization Landscape: Symmetry, Saddle Points and Beyond (Rong Ge)</h3>
+
+<h4 id="introduction-1">Introduction</h4>
+
+<p>We will start by looking at some of the simpler cases that we know how to analyze. It’s very common to run into nonconvex optimization problems.</p>
+
+<p>There’s a difference between theory and practice for nonconvex optimization. Classically the idea is nonconvex optimization is NP hard, so we’ll do a convex relaxation. In machine learning, people tried to solve these methods with simple algorithms like SGD. These algorithms seem to work well in practice, so why is that? It’s not that these algorithms are magical, they’re basic optimization algorithms. It’s known that gradient descent will converge to a stationary point, even for nonconvex functions. More recently we were able to show that it can converge to an approximate local minimum, but that’s really all it can do. It cannot escape from a local optimal solution.</p>
+
+<h4 id="optimization-landscape">Optimization Landscape</h4>
+
+<p>The shape of a convex function is very simple. Zero gradient implies global minimum. So convex functions can be optimized efficiently using a large variety of algorithms. In general, the shape of the objective can be very complicated — there are things like saddle points and so on. Here you can only hope to find a local minimum. Since gradient descent actually optimizes many nonconvex functions in practice, what are the special properties of these nonconvex functions easy to optimize?</p>
+
+<p>I want to also ask a slightly different question: The question that got me thinking about these problems — why are the objectives always nonconvex? It’s almost always the case that whatever objectives you come up with are always nonconvex? Can I change my objectives to become convex? The answer is not likely: Symmetry within the objective is one reason why your objective has to be nonconvex.</p>
+
+<p>In many machine learning and other problems, the following is something typical: The problem asks for multiple components, but the components have no particular ordering within themselves. Consider clustering. You can think of the solution as \(k\) centers (each point should be close to one of the centers). But you don’t care about the ordering.</p>
+
+<p>Why does this kind of symmetry give you nonconvexity? Given an optimal solution, it’s easy to come up with a second solution that has the same objective value. If we have convexity, we know that convex combinations of the solutions will also have a good objective value. But that is not the case for nonconvex. Optimization needs to break the symmetry.</p>
+
+<p>One special structure that only happens with nonconvex functions is saddle points (flat regions). Now another thing that symmetry implies is saddle points. For instance, consider \(f(x) = -|x|_2^2 + |x|_4^4 \).</p>
+
+<p>Things similar to this are used in things like ICA. This has 4 symmetric minima. You can get saddle points out of this kind of symmetry by connecting the minima with paths. Along these paths you can often find a saddle point. This doesn’t happen for every path connecting locally optimal solutions. The paths which minimize the maximum objective function on the path, then the hig. hest point on the path is going to be a saddle point (or a local maximum, but for us, that will be the same thing in the cases we consider).</p>
+
+<p>So we need to design optimization algorithms that can escape from saddle points.</p>
+
+<p>I’ve often gotten the following question: If symmetry is the only problem you’re worried about, why can’t you add inequality constraints to break the symmetry? Maybe now there is a unique optimal solution you’re looking for. That doesn’t always work very well – suppose you restrict to one quandrant. A point on the border of the quadrant will actually want to converge to a different point, not in the fourth quadrant. So in many cases adding inequality constraints actually makes the problem harder.</p>
+
+<p>It is indeed possible, if you knwo the invariance of your objective, then you can do something to account for all the invariances (people have done this for low-rank matrix problems that I will add next). But you can’t simply add inequality constraints.</p>
+
+<h4 id="locally-optimizable-functions">Locally-Optimizable Functions</h4>
+
+<p>For locally-optimizable functions, their local minima are symmetric versions of the global min, and the symmetric group is important to look at.</p>
+
+<p>You also have to assume that there’s no high order saddle points — these have zero gradient and PSD Hessian. Most functions don’t have high order saddle points. Once you have these conditions, it’s possible to prove that a large variety of algorithms including SGD will always be able to converge to a local minima, and by the first property it’s also a global optima. The first constraint is of course very strong. Why do we believe they’re global optima? But many interesting problems actually satisfy these properties, including SVD/PCA, matrix completion, max-cut, 2-layer neural net, GLM, dictinoary learning, matrix sensing, and tensor decomposition.</p>
+
+<h4 id="matrix-completion">Matrix Completion</h4>
+
+<p>A goal is to recover remaining entries of a matrix given some of the entries. We believe the matrix is low-rank because we can think of decomposing it into two smaller matrices. Each row of the first matrix can be thought of as a r-dimensional feature for the user, and each column of the second matrix can be thought of as an r-dimensional feature for the movie, for instance, in a Netflix recommendation system problem.</p>
+
+<p>There are 2nr parameters, and we hope to solve the problem with roughly this term.</p>
+
+<p>The simplest way to try to solve is to write a nonconvex objective down and find the low-rank variables directly. We write \(M = UV^T\) and try to recover \(U, V\). We assume uniform entries observed from the matrix. The optimization variables are \(X, Y\).</p>
+
+<p>The first objective might be to look at the \(\ell_2\) loss on observed entries. We call this sort of a norm, because if you observe all the entries of the matrix, this is the Frobenius norm. The function is not convex because there are symmetries in the solutions. There are many equivalent solutions (inject orthonormal matrices in between). There are also many saddle points.</p>
+
+<p>We have a theorem: when number of observations is at least \(nr^6\), all local minima are global. Then you can just run simple stochastic gradient descent from an arbitrary starting point. Prior work was in two categories: One approach is convex relaxation (these have good dependencies on the rank). The second set of results look at nonconvex optimization algorithms, but require carefully chosen starting point, but have better dependence on the rank. Improving \(nr^6\) is an open problem for the general nonconvex setting.</p>
+
+<p>What tools do we use? We look at the optimality conditions. We use second order necessary condition: gradient is zero and hessian is not PSD (then you can follow negative eigendirection and function value will decrease). We want to go from here to show that the point satisfying this will be a global optima. We do this backwards, looking at the contrapositive. We start at x is not a global optima, then we show that there is a direction that either correlates with the gradient or with the negative eigendirection (a direction of improvement). So if we can find a direction of improvement for every point that’s not a global min, then we have a proof that every local optima is global optima, since we know how to improve everything else.</p>
+
+<p>In order to solve matrix completion, we first look at simpler problem: matrix factorization, where every entry is already observed. So we just want to factorize this matrix as two smaller matrices. Consider the symmetric case \(M = UU^T\). Objective will be in terms of Frobenius norm. The goal is that all local minima satisfy \(XX^T = M\). In matrix factorization case, there’s a simple proof:</p>
+
+<ul>
+  <li>
+    <p>Look at gradient and set it to zero. Then this implies \(MX = XX^TX\).</p>
+  </li>
+  <li>
+    <p>If the span of the columns of X is the same as span of columns of M, then it’s possible to show that \(M = XX^T\) based on the gradient condition.</p>
+  </li>
+  <li>
+    <p>Problem: if the spans are not equal it won’t work. But if the Hessian is PSD, we can show the spans are equal.</p>
+  </li>
+</ul>
+
+<p>To generalize to matrix completion, it’s kind of difficult for it to work for matrix completion. Many more cases. So we do something different.</p>
+
+<p>Intuitively we want X to go to the optimal solution U. But there are many equivalent optimal solutions. So which should I go to? Intuitively, should go to the closest global minimum among all the optimal solutions. Define \(\Delta = X - UR\), where \(R\) is the closest solution. \(\Delta\) is the direction of improvement. It has a nice property that \(|\Delta\Delta^T|_F^2 \leq 2|M - XX^T|_F^2\)</p>
+
+<p>If this is true in the matrix completion norm (with a 3 instead of a 2), then either it’s a direction of improvement or the Hessian at this vector is negative.</p>
+
+<p>For matrix factorization, we immediately have a proof using this improved lemma. It’s easier to generalize to the matrix completion case — because essentially, Frobenius norm and matrix completion norm will be close to each other. You only need to this to be true for matrices of the form \(\Delta\Delta^T\) or \(M - XX^T\) — these are low rank. So you just need to preserve the norm of low-rank matrices. So the proof immediately works for close enough matrices. This property is known as the Matrix RIP property. This can be applied to many other problems related to matrices. It applies to asymmetric cases, matrix sensing, and robust PCA.</p>
+
+<p>There are open problems, mostly about low-rank matrices and low-rank tensors. In between, tensor Tucker decomposition and linear neural networks.</p>
+
+<p>Can we quickly determine whether an objective is locally optimizable, if the loss has some symmetry.</p>
+
+<h4 id="optimization-landscapes-for-neural-networks">Optimization landscapes for neural networks</h4>
+
+<p>This is actually much more complicated than all the cases we saw before. It’s not the case that the local optima are generated by these symmetry transformations (it plays a role, but not the whole story). We will only consider fully-connected neural networks here. For simplicity we will consider \(\ell_2\) loss. Most things I will talk about can be extended to other loss functions. We will talk about the teacher-student setting. Our goal is to prove something about optimization. In order to not get confused with the other problems that Nati talked about, we will assume there’s already a good teacher network from whcih we can get samples, and we assume we have enough samples so that generalization isn’t a problem. The student network is just trying to mimic the behavior of the teacher network. Our only problem is how to find the solution – we are in the realizable setting. Here we just try to focus on only the optimization problem.</p>
+
+<h4 id="linear-networks">Linear Networks</h4>
+
+<p>This is just a product of a bunch of matrices. You don’t need multiple layers, but it’s interesting to look at what we can do if we don’t have nonlinearity.</p>
+
+<p>There are a lots of results on this. All local minima are global, but each work has different technical assumptions, and they’re not comparible, and it’s also not clear the assumptions are necessary. With 2 layesr, there are no higher order saddle points. With 3 or more, it does have higher order saddles. For critical points, if a product of all layers has rank r, then it is local and global optimal or a saddle point. An open problem for linear networks is: does local search actually find a global minimum?</p>
+
+<h4 id="two-layer-neural-networks">Two-layer neural networks</h4>
+
+<p>You have an input and it goes to a hidden layer. WLOG the rows are unit norm, and the output is going to be a hidden function on the hidden units. We will make some strong assumptions like the input data comes from a standard gaussian, and the y’s are generated by a teacher network. The goal is to recover the true parameters. To avoid the lower bound examples that Nati mentioned, there are more technical assumptions – you need to assume that the weight matrix in the first layer is full rank.</p>
+
+<p>First if you do the naive \(\ell_2\) loss, you will run into bad local minima. We empirically observed in our paper, and it was formally observed in a later paper.</p>
+
+<p>So how can we deal with local optima? We’re not tied to particular loss function, we could design a new one with no bad local minima. This is not a new idea, it’s included in many previous techniques, including regularizaiton, using method-of-moments instead of maximum likelihood.</p>
+
+<p>There’s a provable new objective: can construct an objective for two-layer neural networks such that all local minima are global. This kind of heavily relies on Gaussian distribution; the objective is inspired by tensor decomposition. Later we extended to symmetric input distribution, and then the algorithm is no longer a local search problem anymore.</p>
+
+<h4 id="spin-glass-models--kac-rice">Spin-glass models / Kac-Rice</h4>
+
+<p>The main claim is that maybe all the local minima are all approximately good/ close to the local optima. They ran some experiments on MNIST which suggest this is the case. The proof idea is to use a formula to count the number of local min that satisfy the property directly. There is such a formula (Kac-Rice) formula. You can use this to compute the number of local minima in any region, but this is a complicated looking formula — how can you even hope to evaluate this? You evaluate it with random matrix theory in the good cases (e.g. Gaussian ensemble). Then you can hope to evaluate it with random matrix theory. They did this in the paper with spin glass model (random polynomials over the sphere).</p>
+
+<p>Kac-Rice was also used to prove results for overcomplete tensors and also for Tensor-PCA. But usually it’s very difficult to evaluate this formula.</p>
+
+<h4 id="analyzing-the-dynamics-of-local-search">Analyzing the dynamics of local search</h4>
+
+<p>The idea is that instead of analyzing the global optimization landscape, we will try to analyze the path from a random initialization. Why is this easier than analyzing global optimization landscape? The main observation that many works have is that in certain cases (esp. for overcomplete neural networks), there are global optima everywhere that are very close to where you start. So you can hope that the paths are very short to the global optima, and you can use the properties of the random initialization. A lot of results of this type just came out this past year. They are in different categories: One focused on empirical risk over the training error. Suppose the network is highly overparameterized, then it can achieve zero training error. It was proved for 2-layer, and then generalized by a few groups. When you consider generalization, the problem is much harder. If you look at a special multi-class classification problem you can do it, and a more general result does it for 2-3 layer networks. The result is kind of kernel like (the network under their assumptions can be approximated by low-degree polynomials, and requires special activations to run in polytime). But the common idea is you can analyze the path from random init to a global optimization, and that path will be short.</p>
+
+<p>I’m going to end on some open problems:</p>
+
+<ul>
+  <li>
+    <p>Overcomplete Tensors: Suppose you have \(a_1, \cdots, a_n \in \mathbb{R}^d\, and \(d « n « d^2\) (overcomplete setting). Then we want to maximize the sum of the fourth powers of the inner products over the unit sphere. The conjecture is that all local maxima are close to plus or minus \(a_i\). Empirically, gradient ascent always finds one of the \(a_i\). Earlier we were able to use Kac-Rice to show that there’s no other local maxima if the function is at least \((1 + \epsilon)\) times the expected value of the function. Proving you can’t have local optima below this threshold is open.</p>
+  </li>
+  <li>
+    <p>Overcomplete Neural Networks. We again have teacher-student network. Say you have a teacher network with only 15 neurons. We find that if a student has 100 neurons, then you won’t get stuck in a local optima. But if the student also only has 15, it gets stuck. Suppose the teacher has k neurons, and the student has poly(k, epsilon) neurons, then I conjecture that all local min have an objective value of at most epsilon.</p>
+  </li>
+</ul>
+
+<h3 id="mean-field-description-of-two-layers-neural-networks-andrea-montanari">Mean Field Description of Two-layers Neural Networks (Andrea Montanari)</h3>
+
+<p>We have a two layer network and we are going to minimize square loss with SGD. We’ll assume the step-sizes are a small constant. n is the number of samples, and N is the number of hidden units. How can we analyze this?</p>
+
+<p>Ok so now we have parameters n samples, N units, dimension D, and k steps. People have started to understand some of these regimes, we will describe the picture. First we’ll look at the case where you only have a constant number of neurons \(N = O(1)\), \(n \geq D\), \(k \geq n\). I’ll call this the small network regime (small number of neurons). You can study a lot of things in this setting. People studied this using spin glass techniques; there was a nice paper last year by Auburne et. al. using statistical mechanics. There’s an interesting phase transition. The second regime that was studied is where \(N &gt; d^c, k \geq n^{c’}\), where \(c, c’\) is some power (imagine like these powers are 6). We call this the overparametrized regime or kernel regime. What happens is what Rong was describing this morning; here SGD needs to take only few steps to get to the optimum, and only the linearization matters (you end up doing something very similar to kernel ridge regression). The initialization of the random rates is very important.</p>
+
+<p>Finally, we have the <strong>mean-field regime</strong>. We have a large number of neurons \(N \geq D, D \leq k \leq n\). Here you only visit each neuron a few number of times (in this talk, just once). Here the dynamics are nonlinear, but you try to take advantage of the large n to simplify the description. 
+Here we take \(k « nD\). We will focus on this regime for the rest of the talk.</p>
+
+<p>Now we’ll focus on the mean-field regime. We’ll also assume no noise for simplicity. A good point to start is the universal approximation. Barron’s theorem says the optimal risk is bounded by \(\frac{1}{N} 2\sigma \int_{\mathbb{R}^d}|w|\mathcal{F}(w)dw \) where we’re taking the Fourier transform. We can relax the function class we consider \(\hat{f}(x; \rho) = \int \sigma(x, \theta) \rho(d\theta)\), where we think of \(\sigma\) as Fourier coefficient, and where we want the measure \(\rho\) to be approximated as a sum of \(N\) delta functions, when \(N\) is very large.</p>
+
+<p>Now we want to understand what is learned by SGD. So can we study the evolution of the density of the empirical distribution? So the key object we want to study is 
+<script type="math/tex">\hat{\rho}_k^{(N)} = \frac{1}{N}\sum_{i = 1}^N \delta_{\theta^k}</script> 
+This is the natural way to represent the network, this is invariant under permutation — you have factored away the permutation by writing it as a sum (and a probability distribution).</p>
+
+<p>So how does the distribution given above evolve? 
+We’d like to write down some kind of ordinary differential equation for this object. We can write down a partial differential equation. We need to have evolution in an infinite dimensional space, this is a PDE. It is 
+<script type="math/tex">\delta_t \rho_t = \nabla_{\theta} (\rho_t \nabla_{\theta} \Psi(\theta, \rho_t))</script>
+<script type="math/tex">\Psi(\theta, \rho) = V(\theta) + int U(\theta, \hat{\theta}) \rho(d\hat{\theta})</script>
+where \(V(\theta) = \mathbb{E}[y\sigma(x, \theta)]\) and \(U(\theta_1, \theta_2) = \mathbb{E}[\sigma(x, \theta_1)\sigma(x, \theta_2)]\).</p>
+
+<p>Here we’re kind of taking the gradient of a measure. There’s a sense in which this makes sense (you integrate it against a test function).</p>
+
+<p>Now this is a bit scary, but we can get some intuition from it. We will give a sort of law of large numbers theorem.</p>
+
+<p><strong>Theorem</strong>. Assume that \(\sigma\) is bounded and the outputs are also bounded, as well as the gradients of \(V, U\) are bounded and Lipschitz. 
+Then say you look at \(W_2\) distance. Then the distance between empirical distribution and the solution to the PDE is smaller than \(e^{c(t+1)}err(N, D, \epsilon)\), and the same is true for the risk.</p>
+
+<p>So to reiterate, the solution to the PDE and the object we’re interested in (empirical distribution) explodes with time, but for constant time it’s fine.</p>
+
+<p>Now what is this error term? 
+<script type="math/tex">err(N, D, \epsilon, z) = \sqrt{\max(\frac{1}{N}, \epsilon)}(\sqrt{D + \log(N/\epsilon)}) + z</script>
+where z is just a constant that doesn’t matter (just for high probability bound). Simplifying, we look at the intereting parameter regime \(N » D, \epsilon « 1/D\), which for \(\epsilon\) is better than \(1/ND\), which is what we might expect if we think about number of parameters. So the number of samples we use is \(n = T/\epsilon = O(D) « ND\). This is surprising somehow.</p>
+
+<h4 id="how-to-prove-it-intuition-behind-the-idea">How to prove it (intuition behind the idea)</h4>
+
+<p>There are two steps:</p>
+
+<ul>
+  <li>
+    <p>Approximate SGD by gradient flow on population risk. Here you’re mostly using \(\epsilon\) small.</p>
+  </li>
+  <li>
+    <p>Approximate gradient flow on population risk by the PDE. 
+You can write the gradient flow on population risk as the part of the PDE where \(\Psi\) is defined. Nonlinear dynamics is one way to do this. This type of proof has a long history in mathematical physics, because people were interested in systems of particles, and can be traced back to de Brujin.</p>
+  </li>
+</ul>
+
+<p>Nonlinear dynamics is the following problem: Look at a single particle that evolves according to the gradient of \(\Psi\). Then it’s possible to show that the nonlinear dynamics is equivalent to the PDE.<br />
+To go from nonlinear dynamics to PDE, you create a simple coupling.</p>
+
+<p>The crux of the matter is of course looking at concentration on the empirical distribution — there’s considerable benefit from the fact that we’re looking at a some of terms here. This is where some of the “magic” happens.</p>
+
+<h4 id="what-can-you-do-with-this">What can you do with this?</h4>
+
+<p>Can we prove approximate global convergence? 
+Well we could carefully look at landscape and avoid getting stuck (Rong from the morning).</p>
+
+<p>This gives a new philosophy. We try to prove something about the behavior of the trajectory. So we’ll get approximate convergence. We have a two step strategy:</p>
+
+<ul>
+  <li>
+    <p>Prove convergence of the risk of \(\rho_t\).</p>
+  </li>
+  <li>
+    <p>Connect back by using the general theorem.</p>
+  </li>
+</ul>
+
+<p>The general upshot of this theorem is that it gives good results for finite dimension. But the dependence on \(D\) is not really well understood — there are bounds, but not good bounds.</p>
+
+<p>What are the fixed points of the PDE? We will get stuck in fixed points. A fixed point is the derivative with respect to time is 0. The converse is not obvious but is true. This implies that rho is inside (supported on) the set of \(\theta\) such that the gradient with respect to \(\theta\) of \(\Psi\) is 0.</p>
+
+<p>If you’re a physicist this makes sense — you have a fluid particle, each particle feels zero force. Now what are the global minima? The loss function is quadratic in \(\rho\); \(\rho\) lies on the probability simplex. Then you can apply Lagrange multipliers, then the global minima such that the 
+\(supp(\rho) \subseteq arg\min_{\theta} \Psi(\theta, \rho)\). So not all fixed points are global minima. But these equations are not too far apart. These two conditions are not too different, so proofs of convergence will go through.</p>
+
+<p>Intuitively, consider fixed point \(\rho^*\) that is supported everywhere.</p>
+
+<p>We assume that this is a well-behaved probability distribution. If you can avoid \(\rho_t\) becoming degenerate, then you can get global convergence.</p>
+
+<h3 id="langevin-diffusions-in-non-convex-risk-minimization-maxim-raginsky">Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)</h3>
+
+<p>We wish to minimize some function \(f\) of d variables; f is a finite average over the data. We want to minimize f. We’re just going to talk about minimizing f somehow. Gradient descent is simple and it’s a procedure of choice. We’ll for the most part work in continuous time. We’ll write 
+<script type="math/tex">dX_t = - \nabla f(x_t)dt</script>
+<script type="math/tex">X_{t + dt} - X_t = U_t</script></p>
+
+<p>We know that if \(t &gt; s\), \(f(x_t) \leq f(x_s)\). With a simple calculation we can see that the derivative with respect to time is non-positive. However, we can still get stuck somewhere. Once it’s in a stable equilibrium, you’re stuck. The initialization determines your fate forever.</p>
+
+<p>You can actually integrate this and turn it into a limit. But it does tend to get stuck in local minima.</p>
+
+<p>How can we avoid that? One weird trick that works is to add a bit of noise to the gradient step update. Say, a Gaussian centered around the usual update. How much variance should we add? We have a spherical covariance matrix, but its size is proportional to dt and inversely proportional to \(\beta\), which is inverse temperature (e.g., simulated annealing it’s 1/temperature). The point is that you take a random step. What this does is it prevents you from getting stuck, a nonzero chance of escaping. You add this noise between times t and t + dt. Why would you want this noise to be independent of the past noise? This gives you white noise, but why would you want this to be white noise? Here’s how I understand it: Essentially, suppose that you’re very close to a local minimum, and the gradient is basically zero. What you want is multiple attempts to escape. If they’re independent, it’s a geometrically distributed random variable with a finite mean. There’s large deviation theory for dynamic systems that makes this intuition precise. You can then show that the time of escape from each basin of attraction is finite in expectation, and you have an exponentially distributed random variable if you normalize by the mean, which ties it back to memoryless process.</p>
+
+<p>So this all leads us to think of d-dimensional Brownian motion: we know increments are both independent and Gaussian. As a result, we end up with a random evolution. We can thus write down a stochastic differential equation. 
+<script type="math/tex">dX_t = \nabla f(x_t)dt + \sqrt{\frac{2}{\beta}}dW_t</script></p>
+
+<p>This was developed by Ito, who thought in terms of evolution in the space of measures, continuous time Markov processes that are analogues of ODEs. You have to define a vector field for this, and in the case of diffusions, reduces to stochastic differential equations. Since Gaussians are defined by first two moments, you can think of a flow for the mean and a flow for the covariance.</p>
+
+<p>When you integrate this you get a random process. This particular equation (after integrating) is called the <strong>overdamped Langevin equation</strong>:
+<script type="math/tex">X_t = X_0 - \int_0^1 \nabla f(x_t)dt + \sqrt{\frac{2}{\beta}}\int dW_s</script></p>
+
+<p>Now, Brownian motion is nowhere differentiable. So Langevin introduced a damping term in 1908; the velocity is determined by the momentum, and the momentum is evolving according to an SDE. When you take the friction to infinty, you end up with something like this. But this was all physics. This was a realistic description of diffusion in some potential energy field such that you can meaningfully talk about random energy of a particle.</p>
+
+<p>Fast forward several years and we end up with papers by Guidas (1985), Geman-Huang (1986), and they said you can use this for global optimization! You can say you’ll eventually visit all basins of attraction, so you’ll eventually get to the best one. 
+There were variants of annealing where you take \(\beta\) to infinity under a schedule, also constant temperature variants.</p>
+
+<p>In the context of Bayesian ML and MCMC, in 1996 people would think of f as proportional to some posterior that you want to sample from. You decompose this using Bayes rule and run your Langevin dynamics. It has a rich history. Let’s fast forward and think in terms of machine learning: We have SGD. You can think of SGD as true gradient + gaussian fluctuation (via central limit assumptions). Now the variance is dependent on the position. Max Welling and Ye Whye Teh brought Langevin dynamics back to ML and things took off from there in 2006.</p>
+
+<p>The idea here is that you can quantify all sorts of things if you’re working in continuous time.</p>
+
+<p>This is called Friedlin-Wentzell theory (late 80s). We will explicitly indicate \(\beta\) here, because we want to see what happens when \(\beta\) gets cranked up:</p>
+
+<p><script type="math/tex">dX_t^{\beta} = -\nabla f(x_t^{\beta}) dt + \sqrt{\frac{2}{\beta}}dW_t</script>
+We’re interested in the probability that 
+<script type="math/tex">% <![CDATA[
+P(\sup_{0 < t \leq T} \| X_t^{\beta} - X_t^{\infty}\|_2 > \delta) = P^{\beta}(\delta) %]]></script></p>
+
+<p>Then if you normalize this probability by \(\beta\), then as you take \(\beta\) to infinity this goes to zero. But you can still exit basins of attraction!</p>
+
+<p>Now the issue is that you want the amount of time it takes to find the optimum to be small. You generically expect exponential time. Can you quantify how long it takes? Large deviation says you’ll get there, but it could even be doubly exponential in dimension.</p>
+
+<h4 id="global-optimality-in-finite-time">Global optimality in finite time</h4>
+
+<p>This is a work I did with various people at COLT 2017. You can show that as time goes to infinity, the law of \(X_t\) converges to a distribution \(\pi(dx) \sim e^{-\beta f(x)} dx\).</p>
+
+<p>Under some conditions on f, you can show that if you sample from this \(\pi\) and look at the expected value of f at that sample. The difference between this and the value of f at the global min is roughly \(d/\beta \log (\beta/d)\). “What’s a few logs between friends”. We showed the Wasserstein-2 distance between \(\mu_t\) and \(\pi\) is bounded by \(c\sqrt{KL(\mu_0 | \pi)}e^{-t/c_{ls}}\) where \(c_{ls}\) is the log-sobolev constant, which is unfortunately known to be exponential in dimension generically.</p>
+
+<p>We needed some conditions:</p>
+<ul>
+  <li>The gradient of f is Lipschitz</li>
+  <li>dissipitivity: there exists positive m and b such that \(\langle x, \nabla f(x) \rangle \geq m|x|^2 - b\).</li>
+</ul>
+
+<p>This was based on some Lyapunov function techniques from probability theory. You can show this process is bounded in \(L_2\) and convert it to a Wasserstein bound. On the other hand, this takes a long time. There was a paper by Yuchen Zhang, Percy Liang, and Moses Charikar that shows a discretized version will hit in polynomial time. So there’s a discrepancy between these things.</p>
+
+<h4 id="metastability">Metastability</h4>
+
+<p>Suppose you initialize your diffusion so that it happens to lie within some local minima. Suppose it’s smooth, dissipative, and also Lipschitz-Hessian. The intuition behind the result I’m about to state is simpler than the previous proof. Suppose you initialize your diffusion; it happens to lie in some ball around some non-degenerate local minima. You can linearize your gradient around that local minima. Suppoes it’s going to be in a ball of d dimensions of radius \(\sqrt{b/m}\) (follows from dissipitivity). Let \(H\) be the hessian. Let \(\tilde{X}_t = X_t - \bar{x}\). Then 
+<script type="math/tex">d\tilde{X}_t = -H\tilde{X}_t dt + \sqrt{2/\beta}dW_t + \rho(\tilde{X}_t)dt</script></p>
+
+<p>The first two terms are very well understood: This is Ornstein-Uhlenbeck process. WLOG you can assume eigenvalues of Hessian are lower bounded by m. The asympotic mean is zero, and the variance is controlled by \(\beta\). It turns out you can take this process, and use an idea from the theory of ODEs. You run time backwards by doing \(X_t = e^{-Ht}X_0\), where we’re using definition of matrix exponential.</p>
+
+<p>Suppose that you want to spend time T around local min with high probability. Define \(T_{recurrence} \sim (1/m)\log(r/\epsilon)\) and \(T_{escape} \sim T_{recurrent} + T\).
+Then if \(\beta \geq \frac{d}{\epsilon^2}(1 + \log (T/\delta))\), you can control the length of the metastability phase. You want to explore all the minima but tune the time that you explore them. T will tend to be exponentially large when you go to discrete time, but in continuous time, it’s clear: You transition out quickly and transition to another basin quickly, but if you hang out for a certain amount of time, you’ll hang around a bit more and you can control this by the parameter \(\beta\).</p>
+
+<p>Since then there have been many works working with the Hamiltonian Langevin dynamics (with momentum), you can use it for sampling. The exponential dependence on time was improved into something like exponential dependence on condition number of the Hessian. Discretization I didn’t talk about, because that’s a whole can of worms. But I think Ito calculus understanding is worthwhile in the context of deep learning.</p>
+
+<h2 id="january-28">January 28</h2>
+
+<h3 id="convergence-of-gradient-based-methods-for-the-linear-quadratic-regulator-maryam-fazel">Convergence of Gradient-based Methods for the Linear Quadratic Regulator (Maryam Fazel)</h3>
+
+<h4 id="introduction-2">Introduction</h4>
+
+<p>I’ll be talking about linear quadratic regulator and control. This is joint work with Rong Ge, Sham Kakade, and Mehran Mesbahi. I will look into LQR. Our motivation is to understand policy gradient methods, a class of methods very popular in RL, on a special and simple problem. I’ll look at the case where we have access to exact gradients, and then the case where we don’t have exact gradients, and then look at some extensions to this framework.</p>
+
+<p>The LQR is the problem of controlling a linear dynamical system with quadratic costs. We look at the problem in discrete time with infinite horizon. Here, \(x_t\) is the state of the system at time \(t\), \(u_t\) is the control applied at time \(t\). We have this dynamical system in LQR, and we want to choose the \(u\) given an initial state \(x_0\) in order to minimize a quadratic cost function of the inputs and the states (made of positive semidefinite matrices). The goal is you want to drive the dynamics of the system to some desired final state, and you want to find the minimum effort (in \(\ell_2\) cost sense), in the infinite horizon case.</p>
+
+<p>This problem has been well studied – it’s a dynamic program. You want to solve for every \(u\) with a cost-to-go function. It can be solved in closed form via defining the Riccarti variable \(P\), which is derived by algebraically solving the Riccati equation. It’s possible to do this with linear algebra and iterative methods. Then the problem is solved since we can prove that optimal \(u\) is a static state feedback \(Kx_t\), where \(K\) is derived from the Riccati equation. Interestingly here, in infinite horizon, \(K\) is fixed with respect to time and this is optimal. This is a cornerstone of optimal control going back to Kalman. Recently people have tried to connect back to reinforcement learning methods which are popular these days in robotics. This is a nice setting to examine those problems because it is simple.</p>
+
+<p>All the methods assume you have given dynamics and costs. So all the methods rely on solving \(P\) first and then finding optimal control.</p>
+
+<p>We want to see can we solve the LQR problem by algorithms that iterate on the policy (e.g., \(K\)). Here we only use the cost of the policy. Suppose we first consider methods that have first-order (gradient) access to the cost function, either exactly or approximately. Does gradient descent, even with exact gradients, converge? If it does converge, under what assumptions? Does it converge to globally optimal \(K^*\)?</p>
+
+<p>If so, what is the rate of convergence in terms of problem parameters?</p>
+
+<p>What if we didn’t have the parameters of the problem (e.g., model-free)? But we have access to function value samples of the cost of the policy? Can we still converge to \(K^*\)?</p>
+
+<p>This wouldn’t be challenging if it were convex, but it’s nonconvex.</p>
+
+<p>Why do we want to study gradient descent on \(K\)? Well it allows extensions (additional constraints, etc.) and it can be extended to noisy and inexact gradients. Once we understand gradient descent, we can consider derivative free methods, which are similar to policy gradient. It’s a spectrum from knowing the model to not knowing the model.</p>
+
+<h4 id="existing-literature-on-learning-and-control">Existing Literature on Learning and Control</h4>
+
+<p>There’s a lot of work from the 1990s (Neurodynamic Programming), online control, adaptive control (usually only asymptotic, not finite-sample). The goals are different, some things are bounding regret, some are bounding error of estimation of the optimal control, and so on. Hardt et. al. 2016 is kind of related (they’re solving system identification) but they’re doing it by gradient descent on a nonconvex problem. Under their assumptions, the problem becomes quasiconvex. Other work which is related is Ben Recht’s group’s work. One approach is do full system identification up to some accuracy for all models identified in some uncertainty regime. Elad Hazan’s group has done work on this too (learning linera dynamical system, and some work on control when the matrix is symmetric, some extensions to nonsymmetric too). The goal in these papers is a bit different though. Here there’s only regret bounds on prediction error, not on learning the system.</p>
+
+<p>There’s also from the control literature: It’s about the known model case but they want to do gradient descent on controller \(K\) because they wanted to do structured controller design (e.g. projective gradient descent) but this is only empirically validated, so we would like to provide theoretical guarantees with gradient descent.</p>
+
+<h4 id="lqr">LQR</h4>
+
+<p>We will not consider state noise, and we will assume a random initial condition. Plausibly we can extend to having nois at every step, but this might be messy. We will call \(\Sigma_K\) the state covariance matrix and \(\Sigma_0\), which is just the covariance of the first step.</p>
+
+<h4 id="settings-of-optimization-algorithms">Settings of Optimization Algorithms</h4>
+
+<p>First we consider gradient descent on the cost and update \(K\) with fixed step size \(\eta\). We then look at natural gradient descent (which is just conditioned by an appropriate covariance matrix, inverse of state covariance is multiplied).</p>
+
+<p>We also have to define what oracle algorithm has access to. For first problem, it’s just standard first order oracle (exact gradient oracle). We’ll also consider approximate gradient oracle (noisy gradients, or only function values, which is close to zeroth-order oracle).</p>
+
+<p>This problem is hard because the cost as a function of \(K\) is not convex. 
+It’s related to the fact that a set of stabilizing controllers is not convex. 
+It is also not quasiconvex or star convex. Starting from dimension three and up, it’s completely not convex.</p>
+
+<h4 id="first-order-oracle">First Order Oracle</h4>
+<p>We start by looking at stationary points of the problem (where is the gradient zero?) If the gradient zero, either \(K\) is optimal, or \(\Sigma_K\) is rank-deficient. This is helpful, because we can easily avoid the second case if we choose state from initial distribution that has covariance matrix that is full rank. Then it won’t be an issue!</p>
+
+<p>We can also examine this via transformation to a convex linear matrix inequality, but proofs are not simpler. It’s simpler to look at stationary points of the nonconvex function.</p>
+
+<p>Now suppose that \(\Sigma_0\) is full rank, as above. Then the function value at \(K\) versus \(K^*\)</p>
+
+<p>is upper obounded by the norm of the gradient of the cost at \(K\) squared — this is called gradient-dominated. So here, the rate of the norm of the gradient becoming small is the rate of convergence of \(K\) to the optimum. There’s also some dependence on the minimum singular value (which relates to the condition number).</p>
+
+<p>Usually this is applied together with smoothness, but here the cost is not globally smooth. It blows up at places which are not stabilizing. However it’s not too difficult to deal with this, because if you start from a stabilizing controller, you’ll never hit a non-stabilizing controller. Putting this together with gradient domination theorem, you get the result. By assuming that the cost of the initial \(K\) is finite, you get the stabilizing condition, which is needed. We can thus prove a theorem that says that \(K\) gets \(\epsilon\)-close to the optimum. The dependence is on \(\log(1/\epsilon)\), e.g. a linear rate of convergence. It is possible to understand these rates a little better, but we do get linear rate when exact gradients are available.</p>
+
+<h4 id="unknown-model-case">Unknown Model Case</h4>
+
+<p>Usually we do not know the system. You can assume a simulator, which is typically costly to simulate. Or you have the ability to control by changing the control technique. These are partial information about your system. So now we will use this limited information regime. This is kind of “model-free”, and mimics what people are doing in practice. In model-free estimation, you do multiple rollouts by perturbing the controller with Gaussian noise. This is also similar to zeroth order derivative free optimization, where you only get function values.</p>
+
+<p>What are the issues? How do you do this querying in a good way, what’s the length of rollouts, what’s the noise level you need to add, and what’s the overall sample complexity (number of rollouts times length of each rollout).</p>
+
+<p>The controller we start with is given, and the number of trajectories is \(m\). Rollout length is \(l\), dimension \(d\), parameter \(t\). You draw a random matrix uniformly from a Frobenius ball constrained by \(t\). Then you sample policies, simulate each policy for \(l\) steps, and get empirical estimates of the costs and state covariance matrix.  Then you use certain estimates for the gradient of the cost at \(K\) and just average to get empiricial state covariance matrix. Here we’re just uniformly sampling, possible you could do more intelligent things here.</p>
+
+<p>Here if we again assume we start from a stabilizing controller, then if we choose parameters all in poly(\(\log(1/\epsilon)\)), then we get \(\epsilon\)-close to the optimal and the number of samples is poly(\(1/\epsilon\)). So we get optimal dependence on \(\epsilon\) but the other parameters are not sharp, and we don’t really try to do a sharp analysis.</p>
+
+<h4 id="proof-sketch">Proof sketch</h4>
+
+<ul>
+  <li>
+    <p>First we fix the rollout length. Then we have to show that the estimates we get on short trajectory is not too far.</p>
+  </li>
+  <li>
+    <p>Then show that with enough samples, the algorithm can do the gradient and covariance estimates.</p>
+  </li>
+  <li>
+    <p>Finally, show they converge with similar rate.</p>
+  </li>
+</ul>
+
+<h4 id="structured-controller-design">Structured Controller Design</h4>
+
+<p>Suppose you want to design a controller \(K\) when dynamics are known, and you want it to have a specific structure (e.g., specific sparsity pattern).  This is known to be hard in general. There’s a special case that is convex under an assumption called quadratic invariance (very restricted assumption). There is also related work earlier that is empirical, that projects onto structured controllers, but is only empirical. We would like to use our tools to say something about structured controller design using gradient projection. This is ongoing work, but it’s possible for some special cases to get some results.</p>
+
+<h2 id="january-29">January 29</h2>
+
+<h3 id="theory-for-representation-learning-sanjeev-arora">Theory for Representation Learning (Sanjeev Arora)</h3>
+
+<h4 id="introduction-3">Introduction</h4>
+
+<p>Can we learn good representations for a multiple downstream tasks with no labeled data? Hoe can one representation anticipate what you’ll need in the future with low-dimensional representations. Semi-supervised methods assume you have both unlabeled data and labeled data, and performance is only good when you have some labeled data — it’s not quite doing representation learning in the way we want.</p>
+
+<p>Generative models for data are fully complete paradigm. It’s unclear though why training log-likelihood should give good representations, Andrej Risteski and I have a blog post about it.</p>
+
+<h4 id="representation-learning-in-practice">Representation Learning in Practice</h4>
+
+<p>Let me tell you about some interesting representation learning ideas that work well in practice. I’ll mention two papers but there are others. The idea is this: train a convnet on the following task. The input is an image and its rotation by one of its possible rotations (90, 180, 270 degrees). Now the desired output is which of the three rotations were applied. They call this self-supervised learning. The resulting representations are quite good. You didn’t need all those supervised classes here! This task seems trivial! Why should you need to learn any rotation to solve this task??! What the heck is this? The reason that trivial solution (rotate mentally and pick an exact match) doesn’t get found cannot get implemented by the conv-net, so it is forced to do a semantic analysis of the image and come up with a representation.</p>
+
+<h4 id="contrastive-learning">Contrastive Learning</h4>
+
+<p>Another example in NLP for learning sentence representations is giving sentences which are adjacent have high inner product and those that are not low inner products. We will call such methods contrastive learning.</p>
+
+<p>The rest of the talk is based on “A theoretical analysis of contrastive learning”, our recent paper. The framework will try to relate what are semantically similar pairs of data points. We assume that the world has a collection of classes out there. \(\rho_c\) is a probability associated with this class. Each class has a distribution \(D_c\) on datapoints. Similar pairs are picked according to some probability associated with classes and takes samples \(x, x’\) according to \(D_c\). Negative samples you just pick \(c\) according to \(\rho\) and then sample from a different class.</p>
+
+<p>When you’re going to learn the representation it will be tested: You generate a binary classification task by picking a random pair of classes. To evaluate the representations, we pick the binary task, then you have to solve it by using a linear classifier on the representations. For this talk we’ll assume logistic loss, but the theory extends to usual convex losses.</p>
+
+<p>What is the unsupervised loss of this representation function? We just use the contrastive training method described from before; there can be other training methods. This is over the full distribution of examples, in practice you see \(n\) samples and minimize the empirical loss. Now the important note is the amount of unlabeled data in the world is large and cheap, so we assume that the amount of unlabeled data is large enough. We can assume this because the representation class is some fixed class with fixed sample complexity. So if you have enough unlabeled data you’ll learn a good representation. We ignore the computational costs of minimizing unsupervised losses in this work, it’s for future work.</p>
+
+<p>It’s very important — for many years, for instance in the Bayesian world (and other settings) — people tried to do unsupervised learning i.i.d. But you need some weak supervision empirically (e.g., some task like predicting next words, or predicting adjacency, etc.).</p>
+
+<p>What would be a dream result for analysis? The dream result is you do this weakly supervised/unsupervised learning and then you’d like to compete with a representation you could learn with imagenet. People are empirically getting closer to that. We’d like our learned \(f\) to compete with every representation function in some class, including the case where you were able to train with supervised labels. However, this is not possible – there are counter examples and impossibility results. So we’ll have to make a few more assumptions.</p>
+
+<p>Before I get to the results, we define the <strong>mean classifier</strong> for two-way classification. Instead of finding classifiers by convex optimization, you could do something similar: Just use the classifiers derived by computing the mean of samples for each class. We will use those.</p>
+
+<p>The first result is that if the unsupervised loss is low, then average loss on classification tasks is low. This is already useful – you can just try to minimize unsupervised loss. You can prove this; the key step is just Jensen’s inequality applied to contrastive loss. This is already good in many settings, and it’s very straightforward.</p>
+
+<p>It would also be nice to handle the case where the unsupervised loss is not small. The idea is that you can break up this unsupervised loss into two terms: You break it up into two cases in the weakly supervised loss: where the labeled terms are the same and where they’re different. Then you look at the concentration in each class.</p>
+
+<p>Now, we have some progress towards the dream result: We want to compete against the best representation. The assumption we add to make this possible is that we compete against the best concentrated representation (make some subGaussian assumption). It’s very hard to test for this though, so it’s unclear if it’s realistic; but if you visualize, it seems concentrated. Under this assumption you get a result.</p>
+
+<p>This extends to \(k\)-way classification, here you use a similar pair and \(k-1\) negative samples. Finally we come up with a new objective (CURL, our version of contrastive learning with blocks – leverage the latent class ) that is empirically somewhat better and gives better theoretical results.</p>
+
+<h4 id="experiments">Experiments</h4>
+
+<p>We look at text embeddings – train sentence representations and try to solve 2-way and 3-way classification results. Things work well if you even use only around 5 labeled examples per class! This is a verification of the theory. This dataset hadn’t been created before, we created to test the theory.</p>
+
+<p>We did some similar experiments for cifar100, but the gap is somewhat larger.</p>
+
+<h4 id="conclusions">Conclusions</h4>
+
+<p>This is just a first cut theory, I hope I’ve whetted your appetite. It fits much more closely with learning theory. In practice classes are probably not arbitrary, if you assume some things like that, more empirical and theoretical development, and connections to transfer and meta learning.</p>
+
+<h3 id="gradient-descent-aligns-the-layers-of-deep-linear-networks-matus-telgarsky">Gradient Descent Aligns the Layers of Deep Linear Networks (Matus Telgarsky)</h3>
+
+<h4 id="introduction-4">Introduction</h4>
+
+<p>Let me give you a tiny teaser: Why in 2019 are we talking about linear networks, what’s the purpose of this? Let’s say you download some data from the internet and it’s two circles and two classes. If you train a logistic classifier via gradient descent, you get the max-margin classifier. What you should ask yourself is what if you do a deep linear network? This is just an overparameterization of many layers of a linear classifier. It’s just a linear function of the input! This is multi-linear polynomial optimization. You actually get the same solution – gradient descent finds the same solution.</p>
+
+<p>So the goal today will be to dissect this as much as we can, and I will give you the punchline right now: The punchline is it’s not just finding max margin classifier, it’s also minimizing Frobenius norm constraint on all the matrices! It balances the Frobenius norms. I find this utterly shocking! If you wanted to induce this sort of property in past framework, you would add a bunch of constraints – now we just do this!</p>
+
+<p>Now what aspects of this are true in the nonlinear case (e.g. ReLu case)? You could try doodling this during this talk.</p>
+
+<h4 id="margin-maximization-is-interesting">Margin Maximization is Interesting</h4>
+
+<p>Now, Ben Recht gave a provactive talk about rethinking generalization – it really got me out of my comfort zone! The thing I zoomed in on was the explicit regularization comment – I thought, I’ve seen this before, it sounds like margin theory. If you do choose to try to resolve some aspects of this paper using margin theory, you’re also introducing some new problems. First you have to prove you have a margin maximizing algorithm — for gradient descent it’s still open. We haven’t resolved this at all yet. A few more comments about margins — why is it a useful goal to prove that we have margin maximization? A lot of people try to make the generalization bounds to be small and predictive. We want it to reflect actual empirical generalization. For instance, in a Bartlett paper, the Lipschitz constant tracks generalization. Sanjeev + Nati: It’s correlated not predictive (there are lots of other properties that correlate too). If you’re not convinced by this, I find the question of finding a normalization to be difficult. Another reasons I found these bounds to be predictive (independent of Lipschitz constant), if you plot the margin distribution, you find some interesting patterns: The margins are closer to zero for random-labeled CIFAR, so the normalized (from the Bartlett et. al. paper) margins are good predictors for the problem. One of the plots that shocked me the most: If you compare MNIST and CIFAR both random, the margin plots are on top of each other. Another question is: are these plots artifcats of the normalization chosen. Why should bound capture anything real if it’s a loose upper bound? As I recomputed bounds and debugged proof, you always saw this. These were my loose personal reasons for why I thought it interesting to prove this margin maximization property in the algorithm. One more comment — on arxiv people are proving settings of convergence for deep nonlinear networks — they all assume a very wide overparametrization, and this causes the weights to change very little. By contrast, today I will talk about an asymptotic result, where the norm of the predictor goes to infinity. It might seem at odds with these other recent papers. However these results are sort of complementary.</p>
+
+<h4 id="proving-convex-optimization-guarantees">Proving Convex Optimization Guarantees</h4>
+
+<p>First let’s discuss the regular one-layer linear case that we get max-margin predictor. This is not a textbook theorem, even though it’s a convex problem.</p>
+
+<p>Let’s look at the problem: We had toy data – two classes and they were concentric circles. By symmetry you can say the solution is global optimally and it’s zero. What happens as you move the circles apart? Logistic regression is strongly convex. As you keep moving the data apart – the solution keeps moving towards infinity. In classical learning theory parlance, this is the separable case. Now if you throw a bunch of blue and red points in the middle and move them apart, then you are changing where the global optimum will be, and it shifts the gradient descent path upwards or downwards. For the general version of the problem you have to specify an offset. For logistic regression the solution is a ray with a fixed offset. Here’s the two part theorem I can give here (just in convex case). The first part is just the reduction to empirical risk – it follows a \(1/T\) rate, but there is no dependence on distance to the optimum. You can also prove a parameter convergence guarantee. Superficially it does not have a unique optimum. There always exists a unique ray such that gradient descent follows this path. The purpose of this part of the talk is to say that even in the case of linear logistic regression, there were interesting things to uncover in the case where the optimum is not bounded. There’s prior and parallel work – Nati and colleagues analyzed this in the separable case and got a better convergence. This is implicit regularization setting. It’s sort of following the optimal path. One reason that constrained optimization is not used as much is gradient descent with appropriate loss is solving some of those constrained things.</p>
+
+<p>To prove this margin maximization with a slightly slower rate than Nati uses a trick with the Fenchel-Young inequality.</p>
+
+<h4 id="deep-linear-networks">Deep Linear Networks</h4>
+
+<p>The predictor is a multilinear form (simple polynomial) in the weights, but linear in the covariates. Some prior work – it has saddle properties for the squared loss. Here we are using the logistic loss which has an optimum at infinity. Suriya will talk about another result – if you assume risk converges and gradients converge you find margin maximizing solution.</p>
+
+<p>Not only do you maximize margin but you minimize Frobenius norms! On the technical side we want to reduce as many of these assumptions as possible. Let’s compare the descent paths of gradient descent for deep linear networks. We know at least one layer is going off to infinity. Spectral norms also go to infinity. There’s a theorem by Jason Lee and Simon Du that says they should go to infinity in lockstep (for all the layers).</p>
+
+<p>Since we are learning a linear predictor, there’s no purpose in having a lot of stuff in the weight matrices other than the first rank. We have \(x \to W_L\cdots W_1 x\). Each becomes asymptotically rank one, and they’re all aligned and become asymptotically equal (we can introduce rotations inbetween matrices, there are infinitely many solutions). There’s no norm lost at all. From here you can reverse engineer this minimum Frobenius norm property. To summarize you get \((u_Lv_L^T)\cdots(u_1v_1^T))\), and they’re all aligned. If you look at first layer, it’s the max margin linear predictor if you look at \(u_1\). Now if you look at second layer, it learns max margin predictor at that layer. And so on, for every single layer.</p>
+
+<p>Finally I’ll give you real theorem: Assume the data is linearly separable (this is very important). We have an initialization assumption: The initial risk is less than the risk of the zero vector. We’re not doing random initialization (you can get to this with a couple random inits, but that’s what we require). This means you don’t start at a saddle point. This holds for gradient flow or gradient descent with small step size and logistic loss. 
+The results: The risk goes to zero, the Frobenius norms go to infinity (see paper for rest).</p>
+
+<h4 id="questions">Questions</h4>
+
+<p>What happens in multiclass? The proof which crucially uses rank-1 property breaks down. I don’t actually know how to prove this in multi-class case.</p>
+
+<h3 id="optimization-bias-in-linear-convolutional-networks-suriya-gunasekar">Optimization Bias in Linear Convolutional Networks (Suriya Gunasekar)</h3>
+
+<h4 id="introduction-5">Introduction</h4>
+
+<p>The motivating goal for this line of work is learning in deep neural networks – what is the true inductive bias involved in deep learning? We want to parametrize prediction functions with parameters \(w\). Empirical success has arisen from training large networks on large datasets. This is a loss minimization over examples using variations of gradient descent or SGD.</p>
+
+<p>While neural nets have enjoyed theoretical success, the problem is nonconvex, but we see that SGD is able to find good optima of neural nets. In practice special minimizers have remarkably good performance. This suggests that algorithms are key to learning good models rather than optimization objective itself.</p>
+
+<h4 id="matrix-completion-1">Matrix Completion</h4>
+<p>Let’s look at this setup in a completely different problem – matrix completion. A common assumption is that groundtruth matrix is somewhat low-rank which fills in the missing entries. A natural objective is to just minimize loss over differences. We can overparametrize and optimize over two matrices \(U, V\) and it’s easier to restrict to low-rank constraint.</p>
+
+<p>Today we will instead optimize over full dimensional \(U, V\) – no rank constraints. We will see what happens when we solve this problem using gradient descent. This is a special case of matrix estimation from linear measurements. So is gradient descent on this loss different from gradient descent on the non-overparametrized version, even though the objectives are equivalent? Both algorithms are doing the job of optimizing objective correctly. But what is surprising is that when we do descent on the factorized objective, you get different solutions — this raises the question which global minimum does gradient descent actually reach? It turns out it’s the minimum nuclear norm solution (relaxation of a rank constraint). So we have a bunch of empirical observations on this topic. We can concretize it – when does gradient descent on factored space converge to nuclear norm solution? We can formalize it more mathematically – it was proved for special case of commutative measurements. Li, Ma, Zhang 2018 generalized to common random measurement models.</p>
+
+<p>We wanted to go through this exercise to understand whether this is indeed the phenomenon observed when training neural networks. The number of parameters is often much more than the number of examples in deep nets – most minimizers won’t do well on new datasets, but nevertheless the ones that gradient descent finds do. Different optimization updates might lead to different minimizers. Hyperparameters etc. will also affect what optima you get to.</p>
+
+<p>This brings up to the point that the algorithms rather than the objective itself are what matters for getting good results.</p>
+
+<h4 id="optimization-algorithms-induce-inductive-bias-for-learning">Optimization algorithms induce inductive bias for learning</h4>
+
+<p>This insight could lead to better algorithms and heuristics for faster heuristics etc.</p>
+
+<p>We’ll start out with gradient descent for logistic regression. There’s no global minima - gradient descent iterates will diverge in norm, but we care about the direction — e.g., the normalized iterates. So which classifier/direction does gradient descent converge in – it’s the maximum margin separator, as Matus said earlier. The interesting thing about this result is that it’s independent of step size. We have an extension of this work – using an adaptive step size can still increase the speed at which you reach the final solution. This heuristic has been tried in actual neural networks, that show it could be a valid approach. These results follow one of Matus’s much earlier work – when you do boosting over linearly separable dataset, you converge to maximum margin solution.</p>
+
+<p>Usually people decrease step size, but we have found with linear networks, increasing step size is actually a better thing to do to reach max-margin. It’s something to look at empirically more.</p>
+
+<h4 id="what-about-neural-networks">What about neural networks?</h4>
+
+<p>We don’t have an answer, but a bit of understanding for linear networks. You can think of it as a multi-layer compositional network, where each layer has a transformation. At this point you take a linear combination to get the final solution. You can think of representing each layer as having different constraints. We’re also only considering the case where there’s no bottleneck layer, all layers have enough width so there’s enough overparametrization. 
+Also we look at convolutional networks (linear convolutional networks).</p>
+
+<p>We can think of different architectures as different parametrizations of the same optimization problem, and the question is what classifier does gradient descent learn depending on the parametrization?</p>
+
+<p>Linear fully connected networks (also studied in parallel by Matus) – convergence happens through an alignment process. We started off saying different parametrizations lead to different solutions. Everything converges to the same solution as logistic regression. Matus removed some the assumptions from our work.</p>
+
+<p>What happens for convolutional networks? Here we observe the solution we get is very different from fully-connected networks. GD promotes sparsity in the frequency components. Gradient descent ends up learning something that looks sparse in the Discrete Fourier domain. We end up maximizing the margin subject to an \(\ell_1\) penalty on the frequency components of the predictor. Convolutional layers for larger and larger networks converges to stationary points.</p>
+
+<p>Why do we get these very different answers? If we have different architectures, how do we figure out what happens? We can think of homogenous linear models as a larger model class. These are all linear functions where the mapping from parameters to the linear predictor is a homogenous function (\(P(\alpha w) = \alpha^n P(w)\)). For this function class, gradient does something to minimize the Euclidean norm of the parameters. For nonlinear homogenous functions, we can show a similar result with an extra assumption.</p>
+
+<p>Now we have bias in the parameter space – what does this mean in prediction space? By choosing different architectures, we can drive different biases in prediction space. If we have 2-layer network with multiple outputs (matrix factorization setting), this complexity measure is essentially nuclear norm.</p>
+
+<p>Another followup work whcih Nati is super excited about is if you’re learning a map from scalar to scalar with infinite width network, minimizing \(\ell_2\) norm corresponds to total variation of function class. Takeaway point is that the geometry of the parameters influences inductive bias, and architecture interacts nicely with the form of the bias.</p>
+
+<p>Some related questions: does gradient descent globally optimize the objective? Does the direction of iterates converge? In our results we assume the loss goes to zero and the iterates converge, etc.</p>
+
+<p>So our results:</p>
+
+<ul>
+  <li>
+    <p>squared loss linear regression implies minimum Euclidean norm</p>
+  </li>
+  <li>
+    <p>squared loss matrix completion minimizes Euclidean norm of factors</p>
+  </li>
+  <li>
+    <p>logistic loss for linear classification minimizes Euclidean norm with margin condition</p>
+  </li>
+</ul>
+
+<h4 id="optimization-bias-in-non-euclidean-geometry">Optimization bias in non-Euclidean geometry</h4>
+
+<p>We can think of finding a step which has the most correlation with negative gradient but which at the same time is close to the current iterate (this is where Euclidean geometry comes in). We could think of steepest descent in general norms, non-Euclidean norm perhaps. If this is \(\ell_1\), this is coordinate descent. For mirror descent, we get Bregman divergence. This defines the geometry in which I’m making the updates. We want to see if there’s a relation between optimization bias and optimization geometry.</p>
+
+<p>What’s the optimization bias of mirror descent? Here we get a different flavor of results. For square loss we get that it gets the argmin of the potential function associated with mirror descent. With appropriate init we can show it converge to this. For exponentiated GD you can show it goes to max-entropy solution.</p>
+
+<h4 id="conclusions-1">Conclusions</h4>
+
+<ul>
+  <li>
+    <p>Optimization bias has interesting interactions with optimization geometry</p>
+  </li>
+  <li>
+    <p>Optimization geometry relates to the nature of optimization bias</p>
+  </li>
+  <li>
+    <p>Squared loss is very different compared to exponential bias.</p>
+  </li>
+</ul>
+
+<h4 id="questions-1">Questions</h4>
+
+<p>What about convolution which is actually restricted? Then you might expect sparsity in some wavelet domain rather than in DFT domain.</p>
+
+<h3 id="towards-a-foundation-of-deep-learning-sgd-overparametrization-and-generalization-jason-lee">Towards a Foundation of Deep Learning: SGD, Overparametrization, and Generalization (Jason Lee)</h3>
+
+<h4 id="introduction-6">Introduction</h4>
+
+<p>Today’s talk is trying to take a few steps towards understanding two aspects of deep learning: both optimization and generalization.</p>
+
+<p>I’ll quickly skip to what I think is difficult about this problem:</p>
+
+<ul>
+  <li>
+    <p>From an optimization standpoint, loss functions are nonconvex and nonsmooth, many critical points, it seems hopeless.</p>
+  </li>
+  <li>
+    <p>On statistical point, deep networks are overparametrized, they’re larger than what you think they should be.</p>
+  </li>
+</ul>
+
+<p>The hard part is that these two things are tied together. One way to think about ML – one source of error is from optimization, and another is statistical error. However in deep learning, these are not nicely decoupled. In SVM, for instance, they are nicely decoupled. The statistical error can be affected by changing the algorithm, or even just the initialization. Simply switching the algorithm drastically changes the statistical performance. Adam vs. SGD gives you different generalization error.</p>
+
+<p>Many things you use to improve statistical performance changes the algorithm dynamics though! It can affect algorithm’s convergence too.</p>
+
+<h4 id="nonconvexity">Nonconvexity</h4>
+
+<p>Practically it seems gradient methods work well when you have an overparametrized network. Everything is hard in theory here. Even the simplest algorithm we can’t say too much. If you simply follow negative gradient on nonsmooth nonconvex objective, you can’t say much.</p>
+
+<p>So we will ask: When can you expect SGD to be successful in these deep learning settings. Note also that deep learning functions are not smooth! Many of the more traditional optimization results don’t apply in the nonsmooth setting.</p>
+
+<p>We have a week theorem which is a sanity check: If you run stochastic subgradient it generates a sequence, then the limit points of the sequence are the stationary points. Previously it was only known for weakly convex, prox-regular, semiconvex, etc. functions. These are nonconvex functions with a bounded amount of nonconvexity. The types of things we use in deep learning doesn’t satisfy this, however. This theorem by itself doesn’t give a convergence rate, but you can get some rate here by using smoothing (not a good rate though). This is the best we can hope for with no further assumptions.</p>
+
+<h4 id="computing-subgradients">Computing Subgradients</h4>
+
+<p>The next question: Can you actually compute subgradients? You should be quite a bit surprised by PyTorch and Tensorflow which just give you these things. There’s no chain rule for subgradients! So TensorFlow and PyTorch will give you the wrong answer. Subgradients only obey chain-rule inclusions. So automatic differentiation is returning something that’s a superset of the original gradient. Luckily there’s a simple fix (Kakade and Lee 2018). There’s a chain rule for a different object, a directional gradient. Imagine nonsmoothness was all piecewise. Using this chain rule with randomization, you obtain an element of the Clarke subdifferential. So you can use this new chain rule with autograd, and compute subgradients with a little bit extra computation.</p>
+
+<h4 id="smooth-functions">Smooth functions</h4>
+
+<p>The randomness in the initialization is enough to avoid saddlepoints, but not in polynomial time. You can construct nice smooth functions (kind of weird ones) that obey regularity conditions, that gradient descent will take exponential time (deterministic algs), but SGD can do it in polytime.</p>
+
+<p>Why are local minimizers interesting? The most enlightening example is to look at best rank-\(k\) approximation problem. The only local minimizer is the top eigenvector. This is an example of where if you ran gradient descent, you’d get the global minimizer. You can massage other problems into this setting. However neural nets do not generally have this property. Since neural nets do have bad local minimizers, we must make their landscape better.</p>
+
+<h4 id="landscape-design">Landscape Design</h4>
+
+<p>We want to change the loss function in some way so SGD does well. You could use different architecture, different loss, different regularizer.</p>
+
+<p>Now let’s talk about an experiment – generate a lot of data from a neural net with 50 neurons. Then run SGD on a neural net. If you run it 5 times with the same architecture, you don’t recover it. If you fit it with 100 neurons instead, and run SGD, you get global optima. It seems statistically wasteful, but something quite magical happens: Simply by having twice as many neurons, SGD always does well. This is least squares lost. We don’t have a theorem about this, there’s no theorem that says this should work. But you have to do something, or you’ll get trapped.</p>
+
+<p>One conventional wisdom of practioners is that if your training error isn’t small, you better use a different architecture. You can do things to make optimization easier, but you have to avoid screwing up your statistical error. Adding parameters also adds more computational.</p>
+
+<p>So how much overparametrization do you need? How much overparametrization ensures success of SGD? Empirically \(p » n\) is necessary where \(p\) is number of parameters. Unrigorous calculations suggest \(p = c\cdot n\). There are many papers from 3-4 years ago essentially saying this.</p>
+
+<p>I’d like to remind you of ResNets now – you have a skipped connection with identity, slightly different from neural net architecture. Here’s a theorem about training loss: Assume the width is m depth and depth L, then \(n^4L^2\) width needed.</p>
+
+<p>The intuition for this result is as follows: How much do you need to move from random inits? At random init you get cancelations. You could move each neuron a small amount, and move predictions by order 1. What that’s saying is overparameterization gives you more and more global minimizers closer to where you start. Gradient descent in fact converges to that global minimizer near you at a linear rate. Thus on large networks, gradient descent can find the global minimizer of the training loss. Bounds are extremely loose, in practice \(n\) width are efficient. This is no longer true if the weights are regularized.</p>
+
+<p>There are some other papers which give generalization bounds which you can prove using this technique and it matches a kernel method. Low degree polynomials lie in this kernel. So you can essentially learn low-degree polynomials with neural networks, which kind of matches what kernel methods are doing.</p>
+
+<h4 id="classification">Classification</h4>
+
+<p>We’ll do binary classification for simplicity. It’s useful to define a margin quantity. We’ll assume networks are overparametrized and can separate the data.</p>
+
+<p>If you can classify with a normalized margin that’s very large, then you can generalize well. A large margin bound says that classification error shoudl be bounded by Rademacher complexity divided by margin. That’s what existing results say. I want to answer the question, “Can we expect large margin classifiers in deep learning?” In the weight decay/explicit regularization case, we can have a theorem. The best margin you can get with a norm 1 predictor (we assume networks are homogenous functions here), then \(\gamma^{*}\) is the best you can ever get.</p>
+
+<p>You’ll eventually converge to max margin (in global min), not what an algorithm does necessarily. It’s not entirely new — this is well known for linear predictors. Matus and Suriya told us about this — if you do GD on logistic loss you get max margin classifier (same as SVM with \(\ell_2\)).</p>
+
+<p>It’s easy to see why this is true: the margin must be large when regularization constant is tiny. Then you can replace logistic loss with exponential by Taylor’s theorem. You can then replace the sum over the exponential negative margin terms with the maximum of these. So among solutions with same norm, you obtain the one where the margin is the largest.</p>
+
+<p>Let’s turn to the generalization problem. Now we want to see how these combine with existing results on generalization. You can get a parameter-independent generalization bound as long as you control the Frobenius norm of all parameters. There’s an analagous bound for deep feedforward networks. Now you have \(L\) layers instead of 2 layers. You should think of the product of norms over the gamma term as a normalized margin. Then you can use AM-GM, and you can view this as the \(\ell_2\) norm of all the parameters, and thus \(\ell_2\) regularization guarantees a size-independent bound.</p>
+
+<p>How can you minimize the regularized training loss? For regularized training loss, I only have results for two layer networks. Imagine the network is wide, and instead of tracking individual parameters, we’ll instead track the measure over the parameters. You form a histogram by putting a delta function at each parameter configuration. Then everything will follow a certain PDE, and if you add a noise term to the PDE, then gradient descent will converge to \(\epsilon\)-global regularized loss, and the rate depends on \(1/\epsilon^4\). This may seem like a minor difference, but by minimizing a regularized loss, you get large margin predictors. So overparameterization helps GD find global minima of regularized training loss. 
+Noise is crucial to minimize regularized loss — it’s a noise on distributions, not on parameters.</p>
+
+<p>This result is good, except it’s infinitely wide networks. So it needs a huge amount of width to get this polynomial time result. If you allow me to change the activation to quadratic activation, you can get a stronger result. You can combine this with a margin analysis. If your data was classifiable by a network, then you can get a sample complexity that only depends on the width of the network that generates the data, not the one you actually use — this is an intrinsic complexity measure. This only works for quadratic activation. Such a theorem cannot be true without another assumption for ReLU.</p>
+
+<p>Even when you don’t regularize you can generalize well though (as seen in Nati’s talk). It seems like weight decay is not necessary empirically — it’s not making a big chunk of the difference. So you’re not overfitting terribly. 
+If you don’t have an explicit regularizer, perhaps it’s some property of the algorithm.</p>
+
+<p>We submitted the following theorem (physics calculation) to ICML: On homogenous networks, under numerous assumptions, you converge to a first order optimal point of the non-linear SVM. If you find the global min of a regularized loss, you get global min of SVM. Even when you don’t have the regularization, GD gets to a stationary point of the SVM.</p>
+
+<h4 id="is-ell_2-norm-interesting-as-a-regularizer">Is \(\ell_2\) norm interesting as a regularizer?</h4>
+
+<p>It’s kind of a weak regularizer. However in neural nets, this intuition is not great because what really matters is the architecture. The architecture induces very different regularizers on the function. Consider a linear network of depth 2. If you do Frobenius norm regularization on \(W\), then if you parametrize as \(WW^T\), you actually get nuclear norm (with gradient descent). Now, the induced regularizer changes with the depth. Increasing the depth changes the regularization on the prediction function — it pushes you closer and closer to low-rank (regularizers as \(|\cdot|_{2/L}\)).</p>
+
+<p>Suriya had talked about the same thing for convolution nets when convolution is full width – it’s sparse in the Fourier domain.</p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>Overparameterization seems to be a way to design the landscape. Theoretical results support this but they’re off by orders of magnitude. Generalization ispossible in overparametrized regime via explicit regularization (large margin bounds from logistic loss) and implicit regularization – gradient descent + architecture builds in regularization. The choice of algorithm combined with choice of architecture/parameterization gives you different induced regularization. Of course we only understand very simple models in simple setting. Deep learning is used in a blackbox fashion in many downstream tasks, and it’d be good if we started developing understanding in settings other than simple classification.</p>
+
+<h3 id="representational-power-of-narrow-resnet-and-of-graph-neural-networks-stefanie-jegelka">Representational Power of narrow ResNet and of Graph Neural Networks (Stefanie Jegelka)</h3>
+
+<h4 id="introduction-7">Introduction</h4>
+
+<p>I will talk about ideas related to representational power of different types of neural nets. We will look at how narrow we can make resnet architecture to maintain universal approximation. In the second part we will look at graph neural networks and some of their properties in representational power.</p>
+
+<h4 id="resnet">ResNet</h4>
+
+<p>What functions a neural net can represent has been studied for quite some time. One hidden layer and infinite width can essentially approximate any integrable function. There are variations thereof, and that is a well-known result. There are also results suggesting representational power increases as you make networks deeper.</p>
+
+<p>Let’s start with fully connected network. What if we restrict widths of these networks, but allow ourselves to go deeper? When can we get universal approximation?</p>
+
+<p>Our theorem says that a width d fully connected network always has an unbounded decision boundary, where input is d dimensional. But, d+1 is enough (it’s a lower bound).</p>
+
+<p>Now, how narrow can we make ResNet? What if we make ResNet with one hidden unit? Well actually it works on a toy case! Our theorem says that ResNet with only 1-width hidden layers are sufficient to approximate any integrable function. (Of course you have to go deeper, but width can be constant). The depth scaling with dimension is not optimal. This gives you a sharp distinction between ResNet and fully connected network representational power.</p>
+
+<p>Also, a fully connected network with d+1 width can also approximate any function (looking at the proof for ResNet case), but ResNet requires fewer parameters (d versus \(d^2\), again, \(d\) is input dimension).</p>
+
+<h4 id="the-proof-for-resnet">The Proof for ResNet</h4>
+
+<p>The idea is:</p>
+
+<ul>
+  <li>
+    <p>Any function can be approximated by a step function</p>
+  </li>
+  <li>
+    <p>Approximate each bump by a trapezoid</p>
+  </li>
+  <li>
+    <p>Need a sequential construction to “memorize” – you construct an increasing indicator (in one dimension, higher dimensions by induction)</p>
+  </li>
+  <li>
+    <p>You can use some operations provided by ReLu operator to modify each interval to fit the function.</p>
+  </li>
+  <li>
+    <p>In higher dimension it’s the same idea.</p>
+  </li>
+</ul>
+
+<h4 id="graph-neural-networks">Graph Neural Networks</h4>
+
+<p>Learning with graphs – you may want to input full graphs and make predictions from the graphs. You might also want to predict from node to node (as in recommender system). You might also want to predict from pairs of nodes to edges (link prediction).</p>
+
+<p>We’ll talk about aggregation-based graph neural networks. They follow a message passing scheme. In each layer in the network, for each node we learn a representation, and we aggregate all node representations into a graph representation. Then we combine it with a kernel, and that is one layer of the network. And we do this over and over again. The more iterations you do this, the more information you pull from all over the graph. So how powerful is this representation? What kinds of graphs can you distinguish with it, what properties does it have?</p>
+
+<p>Some observations from practice — 2-layer nets seem to perform better than deeper networks. This is very different from networks on images. There’s something different here. So let’s look at graph representation of two aspects. One perspective looks at structure and representation relationship, and aggregation schemes and how they affect representations.</p>
+
+<p>We look at <strong>influence distribution</strong>. We want to know how much the representation of node y influences the representation of node x. We look at this with some simple sensitivity analysis. The influence distribution can be shown to correspond in some way to the k-step random walk distribution on the same graph (k layers of the graph network). This is equivalent under some simplifying assumptions that we are essentially linearizing the nonlinearity by assuming probabilities on whether the unit is active or not. So how does it relate to practice?</p>
+
+<p>Now random walks are very well studied — the expansion of a random walk very much depends on the expansion of the subgraph. Is the graph more like a tree or a different subgraph structure? How many nodes do we reach?</p>
+
+<p>If we have a graph with very good expansion properties, then you’re basically averaging over the whole graph and every node looks like every other node. On the other side (different neighborhood size), you might be aggregating too much (relationship to manifold learning?).</p>
+
+<p>So it seems like subgraph structure really interacts a lot with how many layers of the deep graph network you pick. So it’s a good idea to pick a lot of different depths and let it learn which depth works best (since it’s hard to know this structure ahead of time).</p>
+
+<h4 id="what-is-the-aggregation-operation-by-itself-what-kinds-of-aggregation-do-you-use">What is the aggregation operation by itself? What kinds of aggregation do you use?</h4>
+
+<p>Given an aggregation method, can the resulting representation discriminate any two graphs? Well it’s probably too much to ask to distinguish between any two graphs (graph isomorphism is hard). We have a lemma that aggregation based GNNs are at most as powerful as the Weisfeiler-Lehman graph isomorphism test.</p>
+
+<p>Some possibilities for aggregation: You can take the max, do mean-pooling. If you use one of these in your aggregation, there are simple examples where they fail to distinguish the two graphs. So what conditions on aggregation schemes do we need to achieve this maximum possible discriminative power? We have functions over multi-sets – we can have neighborhood features that repeat. We have a theorem: If Aggregate, Combine, and Readout are all injective, then the network is as discriminative as the WL test. How do we actually achieve this?</p>
+
+<p>But recall the counterexamples – if you do mean or max on these counter examples, neither of these is actually injective. So how could we achieve a network that has this injectivity?</p>
+
+<p>We have a lemma that any multi-set function can be decomposed as a nonlinearity of the sum of the features.</p>
+
+<h3 id="is-there-a-tractable-and-interesting-theory-of-nonconvex-optimization-santosh-vempala">Is There a Tractable (and Interesting) Theory of Nonconvex Optimization? (Santosh Vempala)</h3>
+
+<h4 id="introduction-8">Introduction</h4>
+
+<ul>
+  <li>Is the brain a computer? How can the brain possibly accomplish all that it does? Why am I talking about this? Well it’s evidence of non-convex something. We learn to swim — how can you learn how to swim? Language — after a few finite sentences most of us speak mostly correct sentences which we’ve never heard before. So there is evidence of something not convex. So how does the mind (invariants, language, learning) emerge from the brain (neurons, synpases, plasticity,…)? A Nobel Prize winner in Neuroscience said: “We don’t have a logic for the transformation of neural activity into thought and action. I view discerning  this logic as the most important direction for neuroscience.”</li>
+</ul>
+
+<h4 id="neural-assemblies">Neural assemblies</h4>
+
+<p>An assembly is a collection of neurons which represents a concept. Our hypothesis is that assemblies are the primitives of computation – it’s an intermediate level for understanding brain computation. In a recent paper with Christos Papadimitriou we show that we can rigorously show some nice properties about assemblies (memory, association). What insights can they give us about artificial neural networks?</p>
+
+<h4 id="what-can-we-efficiently-sampleoptimize-provably">What can we efficiently sample/optimize provably?</h4>
+
+<p>Convex functions can certainly be minimized. You can also minimize quasi-convex functions essentially, but also star convex functions (Li and Paul Valiant). 
+What can we efficiently sample, provably – the limits are logconcave functions and star-shaped sets.</p>
+
+<h4 id="what-can-we-not-optimize-provably">What can we not optimize provably?</h4>
+
+<p>Linear functions over star-shaped sets (at least one point that can see everything) are hard to optimize. We can talk about a subset of a star-shaped set that can see everything – this locus is always convex. Even if the convex core takes up almost the entire star-shaped set, even then it’s hard! You can embed CLIQUE into it — so approximating it is hard. But you can sample from this in time poly(dimension)</p>
+
+<h4 id="what-can-you-not-sample-efficiently">What can you not sample efficiently?</h4>
+
+<p>Near-logconcave functions (in the oracle model).</p>
+
+<h4 id="what-nonconvex-functions-can-you-optimize-provably">What nonconvex functions can you optimize provably?</h4>
+
+<p>Rather than convexity condition (gradient must lie below your function), you could ask for a weaker condition which just says that with respect to the optimum, the gradient will let you make progress towards the optimum. But this is convex in spirit.</p>
+
+<h4 id="what-truly-nonconvex-function-can-you-optimize-provably">What truly nonconvex function can you optimize provably?</h4>
+
+<p>If you take a nearly convex function (convex function close to it everywhere) then you can indeed optimize nonconvex function in polytime, and this is based on sampling (Belloni et. al., using simulated annealing). In fact the oracle can be noisy and adversarial, and you’ll still be able to optimize. This is a result that I don’t know how to recover with gradient descent, but it can be done.</p>
+
+<p>If that is the limit, how do you explain what’s going on? Not just the brain, but what you can actually simulate.</p>
+
+<h4 id="optimization-problem-in-learning">Optimization problem in learning</h4>
+
+<p>Let’s talk about one hidden layer neural networks. The most interesting algorithm is to just take the loss function and use gradient descent. What can we say about this? So what kind of provable guarantees can we talk about? What about the case where the data is generated by a neural network? Any continuous function can be aprpoximated, so it’s not going to be that easy.</p>
+
+<p>What if the generated neural network is small in some sense? What form could such a guarantee take? Maybe it’s a condition on the distribution of inputs and function together. Does it help that it’s realizable? There’s a lot of work on this. There are NP-hard results that it’s hard to train nets with 3 nodes, and there are more complexity/crypto assumptions which mean you cannot efficiently learn small depth networks even improperly. Even for nice distributions like Gaussian, gradient descent doesn’t work. In this talk: I’ll give you a hard example: a smooth nice neural net, with regularity conditions etc, that you can’t learn with these algorithms in exponential time. But if the activations are unbiased, you can learn in polynomial time, and the polynomial we give is tight.</p>
+
+<p>Our theorem says that if the training algorithm is only using blackbox functions of the input distribution such as gradients or Hessians, you’ll need an exponential number of evaluations of accuracy at most \(1/s\sqrt{n}\) where \(s\) is the sharpness parameter of the activation (where you ask for a certain \(1/\sqrt{n}\) accuracy, e.g. if your batch sizes are linear in the input). The lower bound applies to algorithms which use function of the weights to update the weights. Consider a linear number of bumps (like sinusoids, but not periodic because it will not go on forever, it’ll decay at the end — just a finite number of bumps). If you want ReLu, it’ll look like a sawtooth. Then the hard function is you take an \(n/2\) subset of the inputs and input them into this wave-like function. This is a rank-1 weight matrix. You can make it full rank, because the lower bounds admit a polynomial perturbation to these weights. The condition number is high, but it’s only polynomial. We only require the input to be logconcave (and independent inputs). The intuition behind this function was something like a “smooth parity” function.</p>
+
+<p>Empirically, Le Song my coauthor tried to learn it with deep net — this is only like 50 inputs. And the best error we got was equivalent to just outputting 1/2 all the time. This seems to be true independent of the input distributions.</p>
+
+<h4 id="proof-outline">Proof Outline</h4>
+
+<p>The proof is in the SQ (statistical query) framework. All you have access to is you can evaluate functions of the input distribution. You never get to see explicit examples. This is the form of neural network training algorithms. The queries you get to make are expectations of functions. You get error in tolerance \(\tau\). Now, SQ algorithms are extremely general — almost all robust machine learning guarantees can be achieved with SQ algorithms. The only thing I know of that doesn’t fall in this framework is solving linear systems  over finite fields (parity learning) which the only algorithm I know is Gaussian elimination, which doesn’t fit into SQ. Note that this hardness lets you know the distribution of inputs in advance (holds for any logconcave product distribution).</p>
+
+<h4 id="back-to-upper-bounds">Back to upper bounds</h4>
+
+<p>There are a couple things unsatisfactory. We didn’t get zero training error. What if the training error could actually become zero, etc. What are candidate functions — there are many examples in the literature now. What is non-degenerate enough? The data is being generated by a one-hidden layer function which is unbiased. The threshold is zero. There’s a condition on the norm of the weights of the outer layer. The main assumption is that the labeling function is approximately low-degree as a function on the sphere (you may not know the basis). Let’s stick to a nice basis like harmonic functions over the sphere. Our goal is to find a function by any means you want that achieves error close to the best degree k polynomial. The main idea of the proof is that since things are on the sphere you get to make use of nice transforms. Computing the gradient itself can be thought of as function transformations on the sphere — in particular the Funk transform.</p>
+
+<h4 id="research-directions">Research Directions</h4>
+
+<ul>
+  <li>
+    <p>What distribution-function pairs can neural nets actually learn?</p>
+  </li>
+  <li>
+    <p>Does more layers help computation efficiency?</p>
+  </li>
+  <li>
+    <p>What real world structure makes learning easier? Does correlation in the distribution help you learn?</p>
+  </li>
+  <li>
+    <p>An uncertainty principle: Is there a tradeoff between generalization and robustness? – this is like a question of overparametrization. The worst error over the sphere is very high as you overparameterize, not only is it high, it goes up! You can compute the worst point over the sphere: The max difference between true hypothesis and worst hypothesis. And it’s very easy to find the points with worst error. So it’s easy to find an adversarial example — as you increase overparametrization, this worst error is going up. So maybe as you overparametrize it’s easier to learn and get lower test error on input distribution, but it comes at the cost of being less robust. So is there a theory of nonconvex optimization?</p>
+  </li>
+</ul>
+
+<h3 id="panel-sanjeev-arora-andrea-montanari-katya-scheinberg-nati-srebro-and-antonio-torralba-directed-by-aleksander-mądry">Panel (Sanjeev Arora, Andrea Montanari, Katya Scheinberg, Nati Srebro, and Antonio Torralba, directed by Aleksander Mądry)</h3>
+
+<p>(SA: Sanjeev Arora, AM1: Andrea Montanari, KS: Katya Scheinberg, NS: Nati Srebro, AT: Antonio Torralba, AM2: Aleksander Mądry)</p>
+
+<h4 id="question-1-am2-whenever-there-is-theory-of-anything-the-first-question-we-might-ask-is-why-do-we-have-such-a-theory-only-later-on-after-people-got-it-to-work-empirically-did-we-wonder-why-so-what-is-the-role-of-theory-in-such-a-topic-what-is-a-successful-way-of-doing-theory-and-not-doing-theory">Question 1 (AM2): Whenever there is theory of anything, the first question we might ask is “Why do we have such a theory?” Only later on after people got it to work empirically did we wonder why. So what is the role of theory in such a topic? What is a successful way of doing theory and not doing theory?</h4>
+
+<ul>
+  <li>
+    <p>AM1: I don’t know the answer. I did physics, when I was a student, my family would ask me to explain why the dishwasher wasn’t working. Perhaps it’s the same with deep learning – maybe they just work because they are engineering things, and theory can only contribute a little. But I hope not, I hope theory can at least systematize this body of knowledge and allow it to be taught to others. It now seems like an art, so a set of principles that can be taught in classes as easily as possible and convincingly taught is a first order goal. An ambitious goal would be to impact practice. The high-dimensional statistics I’ve worked on is much simpler settings than deep learning. Many many papers have been written in that simpler world, and I would only count at most 5 titles that have impacted practice. It’s pessimistic, but it’s life.</p>
+  </li>
+  <li>
+    <p>SA: I’ll be more optimisitic. I think understanding intelligent behavior in machines is a fundamental scientific question. Call it theory call it whatever, but principles of that study are very important. So I think new models etc. are useful. IT’s not clear that practioners will know what to do exactly, and I think theory can contribute by thinking out of the box. Whether that will happen no one can predict, but I hope so.</p>
+  </li>
+  <li>
+    <p>NS: I mostly agree with Sanjeev. The reason it’s not interesting the theory of dishwashers is because there are engineers that understand extremely well how dishwashers work. But people don’t understand deep learning. I think a better example would be to discover angular momentum if a physics grad student came home and didn’t understand why you could stay upright on a bicycle while the wheels spun and not otherwise. You can do lots of things with angular momentum! It would be very nice to have predictive ability of when things will work from theory — it’s all intuitive by people, but not much understanding — I’m looking forward to hearing Antonio’s answer on this. I would personally like to understand it. It’ll also be great to be able to teach better, come up with more crazy ideas, to do things better. I don’t think it’s farfetched that it’ll impact practice, but it’s just a question of what time scale. I think it definitely will at some point (maybe not soon, but).</p>
+  </li>
+  <li>
+    <p>KS: I’m surprised no one said the reason is so Ph.D. students can get jobs, because that’s a reason too. Controversy between theory and practice has been around for a long time (e.g., simplex method works much better than the theory suggests). But theory does lead to better understanding. I think theory is essential because deep learning is a multi-disciplinary field. Theory is the only common language we have between different areas. It’s a good way to record properly what we expect to achieve, at least theory can be stated as “I hope to prove this”, whether or not I can do it.</p>
+  </li>
+  <li>
+    <p>AT: One thing I’m surprised you didn’t ask: Why do we need practice? Even a practical answer to why we need theory: New students have been born in this age of deep learning that want to solve a particular problem – they have this amazing blackbox that lets them solve things in different ways. You can just spend a month running on a thousand GPUs, and that’s it. And that’s good! But then what happens is the students don’t have a good grasp of the theoretical aspects of what they’re actually doing. And theory can give you shortcuts and help you debug what you’re doing. You can know if things are absurd or not! Theory is not only about principles that explain why something works, or ultimate principles of intelligence — there are many levels. It might only explain local properties of your model. That’s also useful! You need to have all these levels of understanding. For practioners it’s important to learn more about theory, and vice-versa.</p>
+  </li>
+</ul>
+
+<h4 id="q2-am2-antonio-was-one-of-the-first-people-in-the-deep-learning-revolution-for-vision-when-you-started-playing-with-these-things-when-you-think-of-phenomena-what-was-the-thing-that-surprised-you-the-most-and-what-you-think-is-the-biggest-mystery">Q2 (AM2): Antonio was one of the first people in the deep learning revolution for vision. When you started playing with these things, when you think of phenomena, what was the thing that surprised you the most and what you think is the biggest mystery?</h4>
+
+<ul>
+  <li>
+    <p>AT: The first time I saw the results from AlexNet. We were trying to do image retrieval, and were using handcrafted features. One student who was working at Microsoft and implemented it. I was looking at the results and I thought this is amazing – if there isn’t a bug in the code, that’s it! We’re out of a job. A lot of the things that made images so hard were all fixed. It was still able to generalize across these things, not perfectly, but way better than anything we’d seen at the time.</p>
+  </li>
+  <li>
+    <p>KS: Well I’ll be impressed when we see a self-driving car. It’s kind of depressing that we can’t beat SGD in my field. Nati: We have the ultimate algorithm!</p>
+  </li>
+  <li>
+    <p>NS: In 2008 maybe, Geoff Hinton got good results with these layer-wise training. This didn’t seem surprising, because we knew training a deep network was hard (comically impossible back then) and he did it with an approach that didn’t seem to defy possibility. Then the year after that, it was a paper in ICML took exactly the same problem that Geoff was working on, and just ran local search, and just with local search they managed to train the whole thing in one swoop. And that was kind of strange — this highly nonconvex optimization problem, you just train it and it just worked. Does anyone remember that paper?</p>
+  </li>
+  <li>
+    <p>SA: Nati’s been in machine learning longer, I was coming from STOC/FOCS theory world view. What stays with me – around 2011/2012, starting before AlexNet to a couple years after AlexNet – a lot of my instincts about how to design algorithms were not exactly the right ones. There was an early problem we did an topic modeling, we wanted to do LPs – but ML colleague said do stochastic gradient descent. It started sinking in, we started switching to these things often work. It sometimes takes a long time to work with SGD, but it really does. But coming from STOC/FOCS, it was a big change in my worldview.</p>
+  </li>
+  <li>
+    <p>AM1: It’s this blackbox like a dishwasher. Unlike the dishwasher, we feel compelled to describe it with the things we use for describing humans. So you know, opening this blackbox is much more interesting than opening the dishwasher.</p>
+  </li>
+</ul>
+
+<h4 id="q3-am2-some-of-you-anticipated-my-next-question-but-i-want-to-really-get-into-it-is-nonconvex-optimization-even-relevant-for-deep-learning-how-much-is-it-about-optimization-and-how-much-about-generalizationgood-representations-what-nati-has-said-is-that-sgd-has-implicit-bias-and-so-on-and-somehow-to-me-i-would-say-its-more-about-the-machine-learning-effect">Q3 (AM2): Some of you anticipated my next question. But I want to really get into it: Is nonconvex optimization even relevant for deep learning? How much is it about optimization and how much about generalization/good representations? What Nati has said is that SGD has implicit bias and so on, and somehow to me, I would say it’s more about the machine learning effect.</h4>
+
+<ul>
+  <li>
+    <p>AM1: I think some aspects of nonconvex optimization are interesting, but I don’t understand whether they are relevant. You’re not necessarily converging. It’s a good question, but I don’t know the answer.</p>
+  </li>
+  <li>
+    <p>SA: I’m not sure what you mean by nonconvex optimization.</p>
+  </li>
+  <li>
+    <p>AM2: When I was getting in this field two weeks ago, people were talking about local minima structure, etc, if we can converge to local minima, everything will be explained. It sort of tries to converge, not clear it actually does. People stop training before you converge. The more we see in the practical setting, the less I see what are we actually doing.</p>
+  </li>
+  <li>
+    <p>SA: The theory community has definitely been going towards more the path of optimization, which is not traditional. In machine learning it seems like the path is important, and it’s all mixed in with generalization and everything. It’s not a standalone optimization problem. Most of the practical advances in recent years in deep learning have happened due to clever new architectures and designs and concepts, rather than new preconditioner.</p>
+  </li>
+  <li>
+    <p>NS: Are you asking if nonconvex opt is relevant, or if everything we know about nonconvex opt is relevant? I’ll say yeah, machine learning is optimization — I can’t separate them. The more I work on them, the more I cannot separate between the two. Machine learnign really should be understood as an optimization problem. Deep learning is equal to nonconvex learning in my mind. The only convex learning is linear learning (shallow, one layer), once you go to deep, you’re nonconvex and vice versa. So in my mind they’re almost analagous to each other.</p>
+  </li>
+  <li>
+    <p>AM2: So can you write down an objective no matter how I solve it I’ll get a generalization problem.</p>
+  </li>
+  <li>
+    <p>NS: The objective is expectation with respect to the source distribution of the error. Once you solve that you’re done.</p>
+  </li>
+  <li>
+    <p>KS: Before theory of SGD came around, I was shocked by statements about solving SVM but not accurately – what is wrong with these people! But then of course theory came around. So it’s just not the optimization problem we know how to solve. So can we formulate something better than what we’re doing now? And then throw any optimization problem at it. This goes back to representations — I think there are better representations out there, becuase now we have to tweak optimization algorithms on top of the model — they should be separate but they’re not.</p>
+  </li>
+  <li>
+    <p>AT: What are we trying to optimize? There’s at the end of the day a particular problem we’re trying to solve (unless you’re writing a theory paper). You make up some loss function that has something to do with the problem that you’re trying to solve. Then you try to fix the loss to be nice enough to put into PyTorch. It might not have all the terms etc, but after that if it’s convex and nonconvex, who cares — defining the right function gives you a better boost than optimization algorithm. It’s a nightmare.</p>
+  </li>
+</ul>
+
+<h4 id="whats-one-thing-you-learned-from-a-different-speaker-from-the-workshop-that-we-could-use-in-practice">What’s one thing you learned from a different speaker from the workshop that we could use in practice?</h4>
+
+<ul>
+  <li>
+    <p>AT: In theory I wanted to be here, but in practice, I couldn’t make it.</p>
+  </li>
+  <li>
+    <p>KS: I learned something from Maryam Fazel but it has nothing to do with deep learning in the RL type of algorithms. I learned something I can apply some theory to and improve practical algorithms as well.</p>
+  </li>
+  <li>
+    <p>NS: What did we learn here that’s good in practice? That’s a bit of a narrow view though – sorry to answer that the question is not even a question, but we’re in the infancy of what is going on. All the positive results are about things we could trivially learn some other way. It’s true for my work too. Because we’re in such an early stage, they might be useful to understand other things, but the place you’d benefit practically is getting better intuition of what’s going on in ways that’s hard to describe. When you’re exploring the space, you can do so more intelligently. Hopefully what you’re doing in practice we still don’t understand. In some talk that proves rigorously some aspect of deep learning, I don’t know if that’s really what I’m looking at in talks.</p>
+  </li>
+  <li>
+    <p>SA: I think some of the works on explaining the relationships between paths taken and implicit regularization seem somewhat relevant to practice, maybe not directly. Also what I was trying to do with representations (I know it should be about other people’s work), but it did improve state of the art on some task.</p>
+  </li>
+  <li>
+    <p>AM1: In particular I agree with Nati. I found a lot of talks stimulating conceptually, and in theory there should be no different between theory and practice.</p>
+  </li>
+</ul>
+
+<h4 id="q4-ideas-about-the-career-path-for-younger-scholars-in-the-data-sciences-are-there-departments-where-we-can-go-be-faculty-or-will-we-have-to-attach-ourselves-to-physics-or-math">Q4: Ideas about the career path for younger scholars in the data sciences? Are there departments where we can go be faculty? Or will we have to attach ourselves to physics or math?</h4>
+
+<ul>
+  <li>
+    <p>AM1: What is the career path for a PhD student who wants to take her or his speciality in Foundation of Data Science? Should they attach to a well-established department, or go to some Data Science department? Well it’s not clear what data science is, people have different definitions in their mind when they talk about it. There’s a larger and larger market and understanding that transdisciplinarity is important. If I had to give you an advice, I would say it’s useful to try to connect to a problem that a group of people cares about, not because of general principle or general data science, but because they care about it for some other reason. You can connect to that type of problem by doing theory, by doing more practical work, but it’s important to be problem-driven, especially in this field.</p>
+  </li>
+  <li>
+    <p>SA: I think that maybe that question is more about hiring politics and so on — there I would say it’s not clear what data science is, that’s what most people say, and it seems like it will be in many places. So career advice would be that it’s probably good to have a strong leg in some field, because that is how you get hired. There has to be somebody pushing for you, and currently unfortunately data science is not a recognized field at any university.</p>
+  </li>
+  <li>
+    <p>NS: It does seem like a question about hiring politics and that does vary a lot. I agree with Sanjeev; to give a bit of contrast. It’s true you want to connect to a community. On the other hand, people doing these types of things are being hired by computer science, stats, math, operations research, etc. departments. Frequently multiple departments are interested in somebody if they’re good, rather than “this person is good, but doesn’t do physics” — not saying that doesn’t happen, but everyone wants to do data science. I would not be too worried, but you should connect to a community.</p>
+  </li>
+  <li>
+    <p>KS: There was some summit of leaders of data science at Columbia, and there was a discussion of whether it is computational math, or computer science. Will data science become like this? Not clear, but don’t expect it to happen anytime soon. I would not count on departments of data science, it’s more interdisciplinary job searches. We’re not still publishing in the same conference, it’s not necessarily the ultimate goal. It’s more driven towards disciplines as we specialize for specific applications. I would say learn the fundamentals and then find a niche in terms of actual area.</p>
+  </li>
+  <li>
+    <p>AT: Everyone had a great answer, I agree with everything. It’s also a very fast changing field, in 5 years the answer might be different. Many departments are changing their structure. There are very interesting areas of work, very little risk you won’t do something relevant. The landscape will look different from today in 5 years.</p>
+  </li>
+  <li>
+    <p>AM2: There are schools of data science and such movements, but everyone views data science as a shared group that spans many areas. It’s easier to have a domain that you’re viewed as belonging to.</p>
+  </li>
+</ul>
+
+<h4 id="q5-predictions-for-the-next-five-years-are-we-likely-to-enter-a-new-ai-winter">Q5: Predictions for the next five years? Are we likely to enter a new AI winter?</h4>
+
+<ul>
+  <li>
+    <p>AT: I am pretty sure that there will be ups and downs, but not something as strong as the winter. ML has become a toolbox in your toolset that works to some degree. It might not reach highest performance, but it’s really a tool you can use. So it’ll be a standard tool – like dotcom crash, it’s not like tech went away.</p>
+  </li>
+  <li>
+    <p>KS: I think we’re at the beginning rather than the end. There might be a winter for cifar100, but there are so many unexplored applications and uses for deep neural nets and much simpler tools at this point. Just the percolation of the idea of using machine learning tools in many other applications (e.g. doctors). It takes a long time to bring this as a tool to society. Few people so far know how to use it, more people will learn and many applications will pop up.</p>
+  </li>
+  <li>
+    <p>NS: I don’t make predictions, I can talk about the past though – it’s not that people had things that worked and then they stopped. It’s more that it fizzled away because things weren’t working. Machine learning is working now to some extent.</p>
+  </li>
+  <li>
+    <p>SA: I’m guessing AI winter really refers to academic job market. Or is it the companies? asker: AlexNet was earthquake, aftershocks of GANs, Go, etc. Would you say we’ll have a self-driving car in five years? SA: people are saying that though. As was pointed out, there’s too much societal change that will rest on AI, and I think that out of previous dotcom bubble came Google/Fb etc. We’ll only know in 10 years what actually happened. Indeed if somehow new discoveries slow down in some way, that might all happen and the academic hiring might reflect it. But that seems unlikely.</p>
+  </li>
+  <li>
+    <p>AM1: I don’t think there will be a crash, but there might be a dip. Neurips attendance growth extrapolated will be entire world population, so it has to stop at some point.</p>
+  </li>
+</ul>
+
+<h4 id="q5-am2-what-is-a-big-success-of-theory-what-theoretical-development-are-you-most-proud-of-in-theory-overall-not-necessarily-yourself-basically-theory-is-important-because-of-__">Q5 (AM2): What is a big success of theory? What theoretical development are you most proud of, in theory overall, not necessarily yourself. Basically, theory is important because of <em>__</em>.</h4>
+
+<ul>
+  <li>
+    <p>NS: Shannon – he had two amazing developments. The mathematical theory of communication with quite profound effects (Boolean algebra in his masters thesis).</p>
+  </li>
+  <li>
+    <p>SA: I guess you meant in computer science — cryptography, it’s all very counter-intuitive. It’s all the productive of human mind. And finally it’s nice that 30-40 years it has practical impact in bitcoins and other related things.</p>
+  </li>
+  <li>
+    <p>AM1: I have to represent the statisticians — the bootstrap. It changed the way people started doing computation-driven statistics. Every other paper that uses statistics in natural science uses the bootstrap.</p>
+  </li>
+  <li>
+    <p>KS: I would say compressed sensing had a profound effect on the field of optimization, because basically this was a very simple problem – it was disconnected from machine learning as a field. This was a very basic result about compressed sensing brought about a whole new look about how optimization problems should be solved. And then it moved on to machine learning, and it was just from one theorem, which may or not be useful. SA: Which result? KS: If you minimize \(\ell_1\)-norm, you can recover.</p>
+  </li>
+  <li>
+    <p>AT: I’m just proud of all of you guys. In computer vision there are many areas — particularly in geometry, 3D interpretation of images, regularization theory, etc. Lots of things worked well in computer vision.</p>
+  </li>
+  <li>
+    <p>AM2: I’m thankful for everyone coming here, hope everyone enjoyed it!</p>
+  </li>
+</ul>
+
+
+</article> 
+
+
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2019-02-14T18:13:22-05:00">2019</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>
+
