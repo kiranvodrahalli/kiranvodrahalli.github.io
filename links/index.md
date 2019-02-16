@@ -15,6 +15,7 @@ ___
 
 * [Daniel Hsu](http://cs.columbia.edu/~djhsu)
 * [Alex Andoni](http://www.mit.edu/~andoni/)
+* [Christos Papadimitriou](https://people.eecs.berkeley.edu/~christos/)
 * [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) [[blog]](http://www.offconvex.org/)
 * [Ken Norman](https://pni.princeton.edu/faculty/kenneth-norman)
 * [Roxana Geambasu](https://roxanageambasu.github.io/)
