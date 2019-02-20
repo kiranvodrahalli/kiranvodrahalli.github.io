@@ -64,6 +64,7 @@ ___
 * [TheoryDish](https://theorydish.blog/)
 * [Minimizing Regret](http://www.minimizingregret.com/)
 * [Moody Rd](http://blog.mrtz.org/)
+* [Bits of DNA](https://liorpachter.wordpress.com/)
 * [Jacob Andreas' Blog](http://blog.jacobandreas.net/)
 * [NLPers](https://nlpers.blogspot.com/)
 * [Rooting for the Machines](http://www.chrisbaldassano.com/blog/)
