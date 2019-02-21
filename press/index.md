@@ -10,6 +10,10 @@ Here are some news articles about my work.
 
 ___
 
+### Decoding fMRI to Natural Language 
+
+* [Princeton News](https://www.princeton.edu/news/2019/01/02/math-meaning-artificial-intelligence-blends-algorithms-and-applications)
+
 ### SARC 
 
 * [Quartz](https://qz.com/965582/scientists-created-a-massive-database-of-sarcasm-drawn-from-reddit-comments/)
