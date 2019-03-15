@@ -30,6 +30,8 @@ My primary area of research is provable algorithms and models for computational 
 * Theoretically justifying generation models
 * Compressed sensing and recovery properties of representations
 * Identifying and learning over low-dimensional structures (of all sorts, but recently I have focused on various notions of sparsity). In particular, the goal is to give algorithms which achieve sample complexities and computational complexities which depend on the ''low-dimensional'' part of the structure, rather than the (potentially high-dimensional) ambient space.
+* Learning algorithms from data
+* Explaining the modern data-driven firm
 * Interactive learning applied to evaluation methodology and learning problem formulation
 * Differentially private systems
 * Going beyond i.i.d. assumptions: Learning over non-product distributions, etc. I've also recently gotten interested in adaptive data analysis and other settings where the training data distribution and the testing data distribution do not satisfy simple properties (like i.i.d.). 
@@ -42,12 +44,13 @@ My primary area of research is provable algorithms and models for computational 
 * Highly-structured learning: learning rules and logic in reinforcement learning settings. I am also interested in models which blend rigid structure (like logic) with statistical models. 
 * Multi-task and meta-learning
 * Randomized and approximation algorithms
+* Metric embeddings
 * Sublinear algorithms (sketching and streaming settings)
 * Understanding sequence models: Bridging the gap between HMMs and RNNs. 
 * Identifying failure modes of learning algorithms and models (e.g., adversarial examples)
 
 
-In applications, I am particularly interested in natural language understanding and neuroscience. 
+In applications, I am particularly interested in natural language understanding, neuroscience, and economics. 
 
 ---
 
