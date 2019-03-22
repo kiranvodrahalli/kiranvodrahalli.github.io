@@ -10,7 +10,7 @@ ___
 
 ### Research Talks
 
-March 2019: ALT 2019 Oral Presentation. *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. 
+March 2019: ALT 2019 Oral Presentation. *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. <a href="{{site.baseurl}}/talks/alt2019.pptx" title="nyas-ml-2019-slides"> [slides] </a>
 
 March 2019: NYAS 13th Annual Machine Learning Symposium Oral Presentation. *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. <a href="https://www.nyas.org/events/2019/13th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2019"> [symposium] </a> <a href="{{site.baseurl}}/talks/NYML-2019-slides.pdf" title="nyas-ml-2019-slides"> [slides] </a>
 
