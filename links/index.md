@@ -41,10 +41,13 @@ ___
 * [Unsupervised Learning Research Group @ Princeton](http://unsupervised.cs.princeton.edu)
 * [OptiML Research Group @ Princeton](http://optiml.cs.princeton.edu/)
 * [Theoretical ML @ Princeton](http://mltheory.cs.princeton.edu/)
+* [NLP @ Princeton](http://nlp.cs.princeton.edu/)
 * [Theory @ Princeton](http://theory.cs.princeton.edu/)
 * [Computational Memory Lab @ Princeton](https://compmem.princeton.edu/)
 
 ---
+
+<!-- add quanta magazine? --> 
 
 ### Blogs 
 
