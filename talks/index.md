@@ -26,7 +26,7 @@ September 2017: Invited talk at Princeton Neuroscience Institute. *Mapping betwe
 
 May 2017: Princeton COS Master's Thesis Presentation. *Temporally Dependent Mappings between fMRI Responses and Natural Language Descriptions of Natural Stimuli*. <a href="{{site.baseurl }}/talks/MSE_presentation_may10.pdf" title="masters_thesis"> [slides] </a>. 
 
-December 2016: NIPS 2016 MLINI Workshop. *Mapping between Natural Movie fMRI Responses and Word-Sequence Representations*. <a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_nips16"> [slides] </a>.
+December 2016: NeurIPS 2016 MLINI Workshop. *Mapping between Natural Movie fMRI Responses and Word-Sequence Representations*. <a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_nips16"> [slides] </a>.
 
 July 2016: Invited Talk at Intel-Princeton Neuroscience Collaboration Meeting. *Decoding fMRI to Text with Context*.  <a href="{{site.baseurl }}/talks/intel-pni_sherlock_july16.pdf" title="intel-pni"> [slides] </a>. 
 
