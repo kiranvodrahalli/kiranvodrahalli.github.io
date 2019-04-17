@@ -410,6 +410,7 @@ ___
 * [Creative Writing (Brandon Sanderson)](https://brandonsanderson.com/2016-sanderson-lectures/)
 
 #### Advice (on academia, productivity tips, how to's, coding tutorials, etc...)
+* [How to get a Ph.D. in Mathematics in a Timely Fashion (Sara C. Billey)](https://sites.math.washington.edu/~billey/advice/timely.fashion.pdf)
 * [Manuel Blum's Advice to a Beginning Graduate Student](https://www.cs.cmu.edu/~mblum/research/pdf/grad.html)
 * [The Bandwagon (Claude Shannon)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1056774)
 * [Terry Tao's Career Advice](https://terrytao.wordpress.com/career-advice/)
