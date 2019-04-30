@@ -25,7 +25,7 @@ ___
 
 ### Conference and Journal Publications 
 
-<span>[C5]</span>{: .blue .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. Robotics: Science and Systems, June 2019.
+<span>[C5]</span>{: .blue .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. Spotlight Presentation and Poster. Robotics: Science and Systems, June 2019.
 
 <span>[C4]</span>{: .blue .bold} *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. Alex Andoni\*, Rishabh Dudeja\*, Daniel Hsu\*, **Kiran Vodrahalli**\*. Oral Presentation. Algorithmic Learning Theory, March 2019. <a href= "{{ site.baseurl }}/research/publications/alt19.pdf" title= "alt19"> [pdf] </a> <a href= "http://proceedings.mlr.press/v98/andoni19a.html" title= "alt19pmlr"> [pmlr] </a> <a href= "http://alt2019.algorithmiclearningtheory.org/accepted-papers/" title="alt"> [conference] </a> <a href= "{{ site.baseurl }}/posters/Columbia-Data-Science-Poster-2018-Vodrahalli.pdf" title= "columbia-fods18"> [poster] </a>
 
