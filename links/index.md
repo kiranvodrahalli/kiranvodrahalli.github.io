@@ -19,7 +19,7 @@ ___
 * [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) [[blog]](http://www.offconvex.org/)
 * [Ken Norman](https://pni.princeton.edu/faculty/kenneth-norman)
 * [Roxana Geambasu](https://roxanageambasu.github.io/)
-* [Mikhail Khodak](https://scholar.princeton.edu/misha/)
+* [Mikhail Khodak](http://www.cs.cmu.edu/~mkhodak/)
 * [Nikunj Saunshi](http://www.cs.princeton.edu/~nsaunshi/)
 * [Holden Lee](http://holdenlee.github.io/) [[blog]](http://holdenlee.github.io/blog)
 * [Cameron Chen](http://cameronphchen.github.io/)
