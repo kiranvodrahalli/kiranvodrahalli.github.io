@@ -14,6 +14,8 @@ redirect_from:
 
 ### Currently...
 
+In Summer 2019 I will be visiting the Simons Institute at Berkeley for the [Foundations of Deep Learning](https://simons.berkeley.edu/programs/dl2019) program. 
+
 I am a Ph.D. student at Columbia University, focusing on theoretical computer science, with particular interest in machine learning, algorithms, and statistics. I am extremely fortunate to be advised by [Professor Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Professor Alex Andoni](http://www.mit.edu/~andoni/). I am supported by an NSF Graduate Research Fellowship. 
 
 I am affiliated with the [Computer Science department](http://www.cs.columbia.edu/), particularly the [Theory group](http://www.cs.columbia.edu/theory/) and the [Machine learning group](http://www.cs.columbia.edu/areas/machine/), as well as the [Data Science Institute](http://datascience.columbia.edu/). In particular, see the [Columbia TRIPODS Institute](http://www.columbia.edu/~jw2966/TRIPODS.html). 
