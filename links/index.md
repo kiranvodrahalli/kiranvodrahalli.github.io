@@ -408,6 +408,7 @@ ___
 * [Style: Lessons in Clarity and Grace (Williams and Bizup)](https://www.amazon.com/Style-Lessons-Clarity-Grace-11th/dp/0321898680)
 * [The Science of Scientific Writing (Gopen and Swan)](https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing)
 * [Creative Writing (Brandon Sanderson)](https://brandonsanderson.com/2016-sanderson-lectures/)
+* [Manga in Theory and Practice (Hirohiko Araki)](https://www.amazon.com/dp/B071G1SKMM/)
 
 #### Advice (on academia, productivity tips, how to's, coding tutorials, etc...)
 * [How to get a Ph.D. in Mathematics in a Timely Fashion (Sara C. Billey)](https://sites.math.washington.edu/~billey/advice/timely.fashion.pdf)
