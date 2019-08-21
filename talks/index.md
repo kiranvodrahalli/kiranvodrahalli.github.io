@@ -10,11 +10,15 @@ ___
 
 ### Research Talks
 
+August 2019: Yahoo Research Invited Talk. *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. <a href="{{site.baseurl}}/talks/yahoo2019slides.pptx" title="yahoo-2019-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/yahoo2019slides.pdf" title="nyas-ml-2019-slides"> [slides-pdf] </a>
+
+June 2019: RSS 2019 Oral Presentation (presented by Brandon Araki). *Learning to Plan with Logical Automata*. <a href="{{site.baseurl }}/talks/RSS2019-Presentation.pdf" title="rss2019-slides"> [slides] </a>. <a href="{{site.baseurl }}/talks/RSS2019-presentation-notes.pdf" title="rss2019-slide-notes"> [slide-notes] </a>.
+
 March 2019: ALT 2019 Oral Presentation. *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. <a href="{{site.baseurl}}/talks/alt2019.pptx" title="nyas-ml-2019-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/alt2019-slides.pdf" title="nyas-ml-2019-slides"> [slides-pdf] </a>
 
-March 2019: NYAS 13th Annual Machine Learning Symposium Oral Presentation. *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. <a href="https://www.nyas.org/events/2019/13th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2019"> [symposium] </a> <a href="{{site.baseurl}}/talks/NYML-2019-slides.pdf" title="nyas-ml-2019-slides"> [slides] </a>
+March 2019: NYAS 13th Annual Machine Learning Symposium Oral Presentation (top 10/103). *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. <a href="https://www.nyas.org/events/2019/13th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2019"> [symposium] </a> <a href="{{site.baseurl}}/talks/NYML-2019-slides.pdf" title="nyas-ml-2019-slides"> [slides] </a>
 
-December 2018: NeurIps 2018 Workshop on Infer2Control Oral Presentation (presented by Brandon Araki). *Learning to Plan with Logical Automata*. <a href="{{site.baseurl }}/talks/Learning-to-Plan-with-Logical-Automata.pdf" title="iclr18_masters"> [slides] </a>.
+December 2018: NeurIps 2018 Workshop on Infer2Control Oral Presentation (presented by Brandon Araki). *Learning to Plan with Logical Automata*. <a href="{{site.baseurl }}/talks/Learning-to-Plan-with-Logical-Automata.pdf" title="infer2control-slides"> [slides] </a>.
 
 July 2018: ICML 2018 Theory of Deep Learning Workshop Oral Presentation (presented by Mikhail Khodak). *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. 
 

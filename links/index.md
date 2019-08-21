@@ -18,18 +18,18 @@ ___
 * [Christos Papadimitriou](https://people.eecs.berkeley.edu/~christos/)
 * [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) [[blog]](http://www.offconvex.org/)
 * [Ken Norman](https://pni.princeton.edu/faculty/kenneth-norman)
-* [Roxana Geambasu](https://roxanageambasu.github.io/)
-* [Mikhail Khodak](http://www.cs.cmu.edu/~mkhodak/)
-* [Nikunj Saunshi](http://www.cs.princeton.edu/~nsaunshi/)
-* [Holden Lee](http://holdenlee.github.io/) [[blog]](http://holdenlee.github.io/blog)
-* [Cameron Chen](http://cameronphchen.github.io/)
 * [Chris Baldassano](http://www.chrisbaldassano.com/) [[blog]](http://www.chrisbaldassano.com/blog/)
 * [Yingyu Liang](http://pages.cs.wisc.edu/~yliang/)
 * [Janice Chen](http://pbs.jhu.edu/directory/janice-chen/)
+* [Roxana Geambasu](https://roxanageambasu.github.io/)
+* [Cameron Chen](http://cameronphchen.github.io/)
+* [Mikhail Khodak](http://www.cs.cmu.edu/~mkhodak/)
+* [Nikunj Saunshi](http://www.cs.princeton.edu/~nsaunshi/)
+* [Holden Lee](http://holdenlee.github.io/) [[blog]](http://holdenlee.github.io/blog)
 * [Brandon Araki](https://www.csail.mit.edu/person/brandon-araki) [[blog]](http://braraki.github.io/)
 * [Rishabh Dudeja](http://stat.columbia.edu/department-directory/name/rishabh-dudeja/)
 * [Riley Spahn](http://www.cs.columbia.edu/~riley/)
-
+* [Mathias Lécuyer](http://mathias.lecuyer.me/)
 
 ---
 
@@ -38,6 +38,7 @@ ___
 * [Machine Learning @ Columbia](https://groups.google.com/forum/#!forum/machine-learning-columbia)
 * [Theory @ Columbia](http://theory.cs.columbia.edu/)
 * [Dynamic Perception and Memory Lab @ Columbia](http://www.dpmlab.org/)
+* [Simons Foundations of Deep Learning](https://simons.berkeley.edu/programs/dl2019)
 * [Unsupervised Learning Research Group @ Princeton](http://unsupervised.cs.princeton.edu)
 * [OptiML Research Group @ Princeton](http://optiml.cs.princeton.edu/)
 * [Theoretical ML @ Princeton](http://mltheory.cs.princeton.edu/)

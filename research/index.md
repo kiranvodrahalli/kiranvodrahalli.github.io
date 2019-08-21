@@ -21,11 +21,15 @@ ___
 
 ### Preprints
 
+<span>[P1]</span>{: .red .bold} *Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior*. Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. 
+
 ---
 
 ### Conference and Journal Publications 
 
-<span>[C5]</span>{: .blue .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. Spotlight Presentation and Poster. Robotics: Science and Systems, June 2019.
+<span>[C6]</span>{: .blue .bold} *Sage: A Differentially Private Machine Learning Platform based on Tensorflow-Extended*. Riley Spahn, Mathias Lécuyer, **Kiran Vodrahalli**, Roxana Geambasu, Daniel Hsu. Oral Presentation. Symposium on Operation Systems Principles, October 2019. <a href= "https://sosp19.rcs.uwaterloo.ca/program.html" title="rss"> [conference] </a>
+
+<span>[C5]</span>{: .blue .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. Spotlight Presentation and Poster. Robotics: Science and Systems, June 2019. <a href= "{{ site.baseurl }}/research/publications/rss19.pdf" title= "rss19"> [pdf] </a> <a href= "http://www.roboticsconference.org/" title="rss"> [conference] </a> <a href= "{{ site.baseurl }}/posters/rss2019-poster.pdf" title= "columbia-fods18"> [poster] </a>
 
 <span>[C4]</span>{: .blue .bold} *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. Alex Andoni\*, Rishabh Dudeja\*, Daniel Hsu\*, **Kiran Vodrahalli**\*. Oral Presentation. Algorithmic Learning Theory, March 2019. <a href= "{{ site.baseurl }}/research/publications/alt19.pdf" title= "alt19"> [pdf] </a> <a href= "http://proceedings.mlr.press/v98/andoni19a.html" title= "alt19pmlr"> [pmlr] </a> <a href= "http://alt2019.algorithmiclearningtheory.org/accepted-papers/" title="alt"> [conference] </a> <a href= "{{ site.baseurl }}/posters/Columbia-Data-Science-Poster-2018-Vodrahalli.pdf" title= "columbia-fods18"> [poster] </a>
 
