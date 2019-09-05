@@ -27,7 +27,7 @@ ___
 
 ### Conference and Journal Publications 
 
-<span>[C6]</span>{: .blue .bold} *Sage: A Differentially Private Machine Learning Platform based on Tensorflow-Extended*. Riley Spahn, Mathias Lécuyer, **Kiran Vodrahalli**, Roxana Geambasu, Daniel Hsu. Oral Presentation. Symposium on Operation Systems Principles, October 2019. <a href= "https://sosp19.rcs.uwaterloo.ca/program.html" title="rss"> [conference] </a>
+<span>[C6]</span>{: .blue .bold} *Privacy Accounting and Quality Control in the Sage Differentially Private ML Platform*. Mathias Lécuyer, Riley Spahn, **Kiran Vodrahalli**, Roxana Geambasu, Daniel Hsu. Oral Presentation. Symposium on Operation Systems Principles, October 2019. <a href= "{{ site.baseurl }}/research/publications/sosp19.pdf" title= "sosp19pdf"> [pdf] </a> <a href="https://arxiv.org/abs/1909.01502" title="sosp19_arxiv"> [arXiv] </a> <a href= "https://sosp19.rcs.uwaterloo.ca/program.html" title="sosp19"> [conference] </a>
 
 <span>[C5]</span>{: .blue .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. Spotlight Presentation and Poster. Robotics: Science and Systems, June 2019. <a href= "{{ site.baseurl }}/research/publications/rss19.pdf" title= "rss19"> [pdf] </a> <a href= "http://www.roboticsconference.org/" title="rss"> [conference] </a> <a href= "{{ site.baseurl }}/posters/rss2019-poster.pdf" title= "columbia-fods18"> [poster] </a>
 
