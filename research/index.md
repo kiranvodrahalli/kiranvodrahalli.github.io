@@ -25,7 +25,7 @@ ___
 
 ### Conference and Journal Publications 
 
-<span>[C7]</span>{: .blue .bold} *Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior*. Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. AAAI Conference on Artificial Intelligence, February 2020. 
+<span>[C7]</span>{: .blue .bold} *Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior*. Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. AAAI Conference on Artificial Intelligence, February 2020. <a href= "{{ site.baseurl }}/research/publications/aaai20_supp.pdf" title= "aaai20_supp"> [supplement] </a>
 
 <span>[C6]</span>{: .blue .bold} *Privacy Accounting and Quality Control in the Sage Differentially Private ML Platform*. Mathias Lécuyer, Riley Spahn, **Kiran Vodrahalli**, Roxana Geambasu, Daniel Hsu. Oral Presentation. Symposium on Operation Systems Principles, October 2019. <a href= "{{ site.baseurl }}/research/publications/sosp19.pdf" title= "sosp19pdf"> [pdf] </a> <a href="https://arxiv.org/abs/1909.01502" title="sosp19_arxiv"> [arXiv] </a> <a href= "https://sosp19.rcs.uwaterloo.ca/program.html" title="sosp19"> [conference] </a>
 
