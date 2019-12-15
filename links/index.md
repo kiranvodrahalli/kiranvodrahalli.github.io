@@ -15,7 +15,8 @@ ___
 
 * [Daniel Hsu](http://cs.columbia.edu/~djhsu)
 * [Alex Andoni](http://www.mit.edu/~andoni/)
-* [Christos Papadimitriou](https://people.eecs.berkeley.edu/~christos/)
+* [Christos Papadimitriou](https://engineering.columbia.edu/faculty/christos-papadimitriou)
+* [Tim Roughgarden](http://timroughgarden.org/)
 * [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) [[blog]](http://www.offconvex.org/)
 * [Ken Norman](https://pni.princeton.edu/faculty/kenneth-norman)
 * [Chris Baldassano](http://www.chrisbaldassano.com/) [[blog]](http://www.chrisbaldassano.com/blog/)
