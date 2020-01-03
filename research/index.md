@@ -15,7 +15,8 @@ title: research
 
 Also see my [Google Scholar](https://scholar.google.com/citations?user=fHYRTzMAAAAJ&hl=en) and [ArXiv](https://arxiv.org/search/?searchtype=author&query=Vodrahalli%2C+K) pages (these may be incomplete).  
 
-Some of my papers have authors listed in alphabetical order (standard for theory papers). Therefore, I use \* to denote co-authorship to avoid confusion. 
+Some of my papers have authors listed in alphabetical order (standard for theory papers).<br/>
+Therefore, I use \* to denote co-authorship to avoid confusion. 
 
 ___
 
@@ -47,14 +48,13 @@ ___
 ### Neuroscience 
 
 <span>[J1]</span>{: .orange .bold} <span>Mapping between fMRI responses to movies and their natural language annotations</span>{: .papertitle}.<br/> 
-<span>**Kiran Vodrahalli**, Po-Hsuan Chen, Yingyu Liang, Christopher Baldassano, Janice Chen,</span>{: .tab}<br/> 
-<span>Christopher Honey, Uri Hasson, Peter Ramadge, Kenneth A. Norman, Sanjeev Arora.</span>{: .authorindent}<br/> 
+<span>**Kiran Vodrahalli**, Po-Hsuan Chen, Yingyu Liang, Christopher Baldassano, Janice Chen,</span>{: .tab}<br/>
+<span>Christopher Honey, Uri Hasson, Peter Ramadge, Kenneth A. Norman, Sanjeev Arora.</span>{: .tab}<br/> 
 <span>Neuroimage, June 2017.</span>{: .tab}<br/> 
 <span><a href= "{{ site.baseurl }}/research/publications/neuroimage17.pdf" title= "neuroimage17"> [pdf] </a> <a href="http://www.sciencedirect.com/science/article/pii/S1053811917305128" title="neuroimage"> [journal] </a> <a href="https://arxiv.org/abs/1610.03914" title="neuroimage_arxiv"> [arXiv] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)</span>{: .tab}
 
 <span>[C1]</span>{: .blue .bold} <span>A Temporal Decay Model for Mapping between fMRI and Natural Language Annotations</span>{: .papertitle}.<br/> 
-<span>**Kiran Vodrahalli**, Cathy Chen, Viola Mocz, Christopher Baldassano, Uri Hasson,</span>{: .tab}<br/>
-<span>Sanjeev Arora, Kenneth A. Norman.</span>{: .authorindent}<br/> 
+<span>**Kiran Vodrahalli**, Cathy Chen, Viola Mocz, Christopher Baldassano, Uri Hasson, Sanjeev Arora, Kenneth A. Norman.</span>{: .tab}<br/> 
 <span>Cognitive Computational Neuroscience, September 2017. Poster.</span>{: .tab}<br/> 
 <span><a href= "{{ site.baseurl }}/research/publications/ccn17.pdf" title= "ccn17"> [pdf] </a> <a href="https://www2.securecms.com/CCNeuro/docs-0/591d7d2668ed3f3154cce90a.pdf" title="ccn17"> [conference] </a> <a href="{{site.baseurl }}/posters/ccn17_poster.pdf" title="ccn17"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)</span>{: .tab}
 
@@ -68,14 +68,12 @@ ___
 ### Robotics 
 
 <span>[C5]</span>{: .blue .bold} <span>Learning to Plan with Logical Automata</span>{: .papertitle}.<br/> 
-<span>Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian Ioan Vasile,</span>{: .tab}<br/> 
-<span>Mark Donahue, Daniela Rus.</span>{: .authorindent}<br/>
+<span>Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus.</span>{: .tab}<br/>
 <span>Robotics: Science and Systems, June 2019. Spotlight Presentation and Poster.</span>{: .tab}<br/>
 <span><a href= "{{ site.baseurl }}/research/publications/rss19.pdf" title= "rss19"> [pdf] </a> <a href= "http://www.roboticsconference.org/" title="rss"> [conference] </a> <a href= "{{ site.baseurl }}/posters/rss2019-poster.pdf" title= "columbia-fods18"> [poster] </a></span>{: .tab}
 
 <span>[C7]</span>{: .blue .bold} <span>Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior</span>{: .papertitle}.<br/> 
-<span>Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian Ioan Vasile,</span>{: .tab}<br/> 
-<span>Mark Donahue, Daniela Rus.</span>{: .authorindent}<br/>
+<span>Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus.</span>{: .tab}<br/>
 <span>AAAI Conference on Artificial Intelligence, February 2020. Poster.</span>{: .tab}<br/> 
 <span><a href= "{{ site.baseurl }}/research/publications/aaai20.pdf" title= "aaai20"> [pdf] </a> <a href= "{{ site.baseurl }}/research/publications/aaai20_supp.pdf" title= "aaai20_supp"> [supplement] </a></span>{: .tab}
 
@@ -100,14 +98,14 @@ ___
 
 <span>[W2]</span>{: .green .bold} <span>Mapping between Natural Movie fMRI Responses and Word-Sequence Representations</span>{: .papertitle}.<br/> 
 <span>**Kiran Vodrahalli**, Po-Hsuan Chen, Yingyu Liang, Janice Chen, Esther Yong,</span>{: .tab}<br/>
-<span>Christopher Honey, Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora.</span>{: .authorindent}<br/> 
+<span>Christopher Honey, Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora.</span>{: .tab}<br/> 
 <span>[NeurIPS Workshop on Representation Learning in Artificial and Biological Neural Networks](https://arxiv.org/abs/1701.01437),</span>{: .tab}<br/>
 <span>Dec 2016. Oral Presentation and Poster.</span>{: .tab}<br/> 
 <span><a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_neurips16"> [slides] </a> <a href="{{site.baseurl }}/posters/nips16_MLINI_poster.pdf" title="ssrm_neurips16"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)</span>{: .tab}
 
 <span>[W1]</span>{: .green .bold} <span>A Semantic Shared Response Model</span>{: .papertitle}.<br/> 
 <span>**Kiran Vodrahalli**, Po-Hsuan Chen, Janice Chen, Esther Yong, Christopher Honey, </span>{: .tab}<br/>
-<span>Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora.</span>{: .authorindent}<br/> 
+<span>Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora.</span>{: .tab}<br/> 
 <span> <a href = "http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/" title = "MVRL"> ICML Workshop on Multi-view Representation Learning </a>, Jun 2016. Oral Presentation and Poster.</span>{: .tab}<br/> 
 <span><a href= "{{ site.baseurl }}/research/workshops/icml16_mvrl.pdf" title= "ssrm_icml16"> [pdf] </a><a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [slides] </a> <a href="{{site.baseurl }}/posters/icml16_MVRL_poster.pdf" title="ssrm_icml16"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)</span>{: .tab}
 

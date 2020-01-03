@@ -12,12 +12,27 @@ redirect_from:
 </p>
 -->
 
+<!-- add picture --> 
+![image-title-here]({{site.baseurl}}/public/kiran-profile.jpg){:class="img-responsive" .element height="30%" width="30%"} 
+
 ### Currently...
 
-I am a Ph.D. student at Columbia University, focusing on theoretical computer science, with particular interest in machine learning, algorithms, and statistics. I am extremely fortunate to be advised by [Professor Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Professor Alex Andoni](http://www.mit.edu/~andoni/). I am supported by an NSF Graduate Research Fellowship. 
+I am a [Computer Science](http://www.cs.columbia.edu/) Ph.D. student at Columbia University, focusing on theoretical computer science, with particular interest in machine learning, algorithms, and statistics. I am extremely fortunate to be advised by [Professor Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Professor Alex Andoni](http://www.mit.edu/~andoni/). I am supported by an NSF Graduate Research Fellowship. 
 
-I am affiliated with the [Computer Science department](http://www.cs.columbia.edu/), particularly the [Theory group](http://www.cs.columbia.edu/theory/) and the [Machine learning group](http://www.cs.columbia.edu/areas/machine/), as well as the [Data Science Institute](http://datascience.columbia.edu/). In particular, see the [Columbia TRIPODS Institute](http://www.columbia.edu/~jw2966/TRIPODS.html). 
-For more details, either check out this website or see my <a href="{{ site.baseurl }}/about/cv.pdf" title="cv"> [CV] </a>. My Github repository is located at <a href = "https://github.com/kiranvodrahalli" title="github"> https://github.com/kiranvodrahalli </a>. I enjoy reading in my free time --- you can check out what books I've particularly enjoyed at my [GoodReads](https://www.goodreads.com/review/list/6132224) page. My [LinkedIn](https://www.linkedin.com/in/kiranvodrahalli/) has some additional miscellaneous information. I have answered a few questions on [Quora](https://www.quora.com/profile/Kiran-Vodrahalli). I prefer to be contacted by email at [kiran . vodrahalli AT \<univ\> . edu](mailto:kiran.vodrahalli@columbia.edu) or by tweet [@kiranvodrahalli](https://twitter.com/kiranvodrahalli). 
+Affiliations:
+* [Columbia CS Theory](http://www.cs.columbia.edu/theory/) 
+* [Columbia Machine Learning](http://www.cs.columbia.edu/areas/machine/)
+
+Other Info: 
+* [Email](mailto:kiran.vodrahalli@columbia.edu)
+* [Twitter](https://twitter.com/kiranvodrahalli)
+* [Github](https://github.com/kiranvodrahalli)
+* [GoodReads](https://www.goodreads.com/review/list/6132224)
+* [LinkedIn](https://www.linkedin.com/in/kiranvodrahalli/)
+* [Quora](https://www.quora.com/profile/Kiran-Vodrahalli)
+
+For more details, either check out this website or see my <a href="{{ site.baseurl }}/about/cv.pdf" title="cv"> [CV] </a>. 
+
 
 ---
 
