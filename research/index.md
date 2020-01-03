@@ -19,31 +19,41 @@ Some of my papers have authors listed in alphabetical order (standard for theory
 
 ___
 
-### Preprints
+## Preprints
 
 ---
 
-### Conference and Journal Publications 
+## Conference and Journal Publications 
 
-<span>[C7]</span>{: .blue .bold} *Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior*. Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. AAAI Conference on Artificial Intelligence, February 2020. <a href= "{{ site.baseurl }}/research/publications/aaai20.pdf" title= "aaai20"> [pdf] </a> <a href= "{{ site.baseurl }}/research/publications/aaai20_supp.pdf" title= "aaai20_supp"> [supplement] </a>
-
-<span>[C6]</span>{: .blue .bold} *Privacy Accounting and Quality Control in the Sage Differentially Private ML Platform*. Mathias Lécuyer, Riley Spahn, **Kiran Vodrahalli**, Roxana Geambasu, Daniel Hsu. Oral Presentation. Symposium on Operation Systems Principles, October 2019. <a href= "{{ site.baseurl }}/research/publications/sosp19.pdf" title= "sosp19pdf"> [pdf] </a> <a href="https://arxiv.org/abs/1909.01502" title="sosp19_arxiv"> [arXiv] </a> <a href= "https://sosp19.rcs.uwaterloo.ca/program.html" title="sosp19"> [conference] </a>
-
-<span>[C5]</span>{: .blue .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. Spotlight Presentation and Poster. Robotics: Science and Systems, June 2019. <a href= "{{ site.baseurl }}/research/publications/rss19.pdf" title= "rss19"> [pdf] </a> <a href= "http://www.roboticsconference.org/" title="rss"> [conference] </a> <a href= "{{ site.baseurl }}/posters/rss2019-poster.pdf" title= "columbia-fods18"> [poster] </a>
+### Theory (Computer Science/Statistics/Machine Learning)
 
 <span>[C4]</span>{: .blue .bold} *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. Alex Andoni\*, Rishabh Dudeja\*, Daniel Hsu\*, **Kiran Vodrahalli**\*. Oral Presentation. Algorithmic Learning Theory, March 2019. <a href= "{{ site.baseurl }}/research/publications/alt19.pdf" title= "alt19"> [pdf] </a> <a href= "http://proceedings.mlr.press/v98/andoni19a.html" title= "alt19pmlr"> [pmlr] </a> <a href= "http://alt2019.algorithmiclearningtheory.org/accepted-papers/" title="alt"> [conference] </a> <a href= "{{ site.baseurl }}/posters/Columbia-Data-Science-Poster-2018-Vodrahalli.pdf" title= "columbia-fods18"> [poster] </a>
 
-<span>[C3]</span>{: .blue .bold} *A Large Self-Annotated Corpus for Sarcasm*. Mikhail Khodak, Nikunj Saunshi, **Kiran Vodrahalli**. Poster. Language Resources and Evaluation, May 2018. <a href= "{{ site.baseurl }}/research/publications/lrec18.pdf" title= "lrec18"> [pdf] </a> <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/160.pdf" title="lrec18"> [conference] </a> <a href="https://arxiv.org/abs/1704.05579" title="lrec18_arxiv"> [arXiv] </a> [[dataset]](http://nlp.cs.princeton.edu/SARC/) [[code]](https://github.com/NLPrinceton/SARC)
+### Natural Language Processing 
 
 <span>[C2]</span>{: .blue .bold} *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. Sanjeev Arora\*, Mikhail Khodak\*, Nikunj Saunshi\*, **Kiran Vodrahalli**\*. Poster. International Conference on Learning Representations, April 2018. <a href= "{{ site.baseurl }}/research/publications/iclr18.pdf" title= "iclr18"> [pdf] </a> [[blog]](http://www.offconvex.org/2018/06/25/textembeddings/) <a href= "{{ site.baseurl }}/research/publications/iclr18_abstract.pdf" title= "iclr18_abstract"> [abstract] </a> <a href="https://openreview.net/forum?id=B1e5ef-C-" title="iclr18"> [conference] </a> <a href="{{site.baseurl }}/posters/iclr18_poster.pdf" title="iclr18"> [poster] </a> [[embedding code]](https://https//github.com/NLPrinceton/text_embedding) [[recovery code]](https://https//github.com/NLPrinceton/sparse_recovery) [[word vectors]](http://nlp.cs.princeton.edu/DisC/)
 
-<span>[C1]</span>{: .blue .bold} *A Temporal Decay Model for Mapping between fMRI and Natural Language Annotations*. **Kiran Vodrahalli**, Cathy Chen, Viola Mocz, Christopher Baldassano, Uri Hasson, Sanjeev Arora, Kenneth A. Norman. Poster. Cognitive Computational Neuroscience, September 2017. <a href= "{{ site.baseurl }}/research/publications/ccn17.pdf" title= "ccn17"> [pdf] </a> <a href="https://www2.securecms.com/CCNeuro/docs-0/591d7d2668ed3f3154cce90a.pdf" title="ccn17"> [conference] </a> <a href="{{site.baseurl }}/posters/ccn17_poster.pdf" title="ccn17"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
+<span>[C3]</span>{: .blue .bold} *A Large Self-Annotated Corpus for Sarcasm*. Mikhail Khodak, Nikunj Saunshi, **Kiran Vodrahalli**. Poster. Language Resources and Evaluation, May 2018. <a href= "{{ site.baseurl }}/research/publications/lrec18.pdf" title= "lrec18"> [pdf] </a> <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/160.pdf" title="lrec18"> [conference] </a> <a href="https://arxiv.org/abs/1704.05579" title="lrec18_arxiv"> [arXiv] </a> [[dataset]](http://nlp.cs.princeton.edu/SARC/) [[code]](https://github.com/NLPrinceton/SARC)
+
+### Neuroscience 
 
 <span>[J1]</span>{: .purple .bold} *Mapping between fMRI responses to movies and their natural language annotations*. **Kiran Vodrahalli**, Po-Hsuan Chen, Yingyu Liang, Christopher Baldassano, Janice Chen, Christopher Honey, Uri Hasson, Peter Ramadge, Kenneth A. Norman, Sanjeev Arora. Neuroimage, June 2017. <a href= "{{ site.baseurl }}/research/publications/neuroimage17.pdf" title= "neuroimage17"> [pdf] </a> <a href="http://www.sciencedirect.com/science/article/pii/S1053811917305128" title="neuroimage"> [journal] </a> <a href="https://arxiv.org/abs/1610.03914" title="neuroimage_arxiv"> [arXiv] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
 
+<span>[C1]</span>{: .blue .bold} *A Temporal Decay Model for Mapping between fMRI and Natural Language Annotations*. **Kiran Vodrahalli**, Cathy Chen, Viola Mocz, Christopher Baldassano, Uri Hasson, Sanjeev Arora, Kenneth A. Norman. Poster. Cognitive Computational Neuroscience, September 2017. <a href= "{{ site.baseurl }}/research/publications/ccn17.pdf" title= "ccn17"> [pdf] </a> <a href="https://www2.securecms.com/CCNeuro/docs-0/591d7d2668ed3f3154cce90a.pdf" title="ccn17"> [conference] </a> <a href="{{site.baseurl }}/posters/ccn17_poster.pdf" title="ccn17"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
+
+### Systems 
+
+<span>[C6]</span>{: .blue .bold} *Privacy Accounting and Quality Control in the Sage Differentially Private ML Platform*. Mathias Lécuyer, Riley Spahn, **Kiran Vodrahalli**, Roxana Geambasu, Daniel Hsu. Oral Presentation. Symposium on Operation Systems Principles, October 2019. <a href= "{{ site.baseurl }}/research/publications/sosp19.pdf" title= "sosp19pdf"> [pdf] </a> <a href="https://arxiv.org/abs/1909.01502" title="sosp19_arxiv"> [arXiv] </a> <a href= "https://sosp19.rcs.uwaterloo.ca/program.html" title="sosp19"> [conference] </a>
+
+### Robotics 
+
+<span>[C5]</span>{: .blue .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. Spotlight Presentation and Poster. Robotics: Science and Systems, June 2019. <a href= "{{ site.baseurl }}/research/publications/rss19.pdf" title= "rss19"> [pdf] </a> <a href= "http://www.roboticsconference.org/" title="rss"> [conference] </a> <a href= "{{ site.baseurl }}/posters/rss2019-poster.pdf" title= "columbia-fods18"> [poster] </a>
+
+<span>[C7]</span>{: .blue .bold} *Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior*. Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus. AAAI Conference on Artificial Intelligence, February 2020. <a href= "{{ site.baseurl }}/research/publications/aaai20.pdf" title= "aaai20"> [pdf] </a> <a href= "{{ site.baseurl }}/research/publications/aaai20_supp.pdf" title= "aaai20_supp"> [supplement] </a>
+
 ---
 
-### Workshop Publications
+## Workshop Publications
 
 <span>[W5]</span>{: .green .bold} *Learning to Plan with Logical Automata*. Brandon Araki\*, **Kiran Vodrahalli**\*, Cristian-Ioan Vasile, Daniela Rus. Oral Presentation and Poster. [NeurIPS 2018 Workshop on Infer2Control](https://sites.google.com/view/infer2control-nips2018), December 2018. <a href= "{{ site.baseurl }}/research/workshops/neurips18_infer2control.pdf" title= "lvin_neurips18"> [pdf] </a> <a href="{{site.baseurl }}/talks/Learning-to-Plan-with-Logical-Automata.pdf" title="infer2control-neurips2018-slides"> [slides] </a> <a href="{{site.baseurl }}/posters/lvin-infer2control-neurips18-poster.pdf" title="infer2control-neurips2018-poster"> [poster] </a>
 
@@ -58,7 +68,7 @@ Honey, Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora. Oral Presentation and
 
 ---
 
-### Technical Reports and Theses  
+## Technical Reports and Theses  
 
 <span>[T10]</span>{: .grey .bold} *Temporally Dependent Mappings Between fMRI Responses and Natural Language Descriptions of Natural Stimuli*. COS MSE Thesis (May 2017). Advised by Sanjeev Arora and Ken Norman. <a href= "{{ site.baseurl }}/research/theses/MSE_COS_thesis.pdf" title= "mse_thesis"> [pdf] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
 
@@ -100,7 +110,7 @@ In fall 2013, I began working with Professor Sam Wang of Princeton Neuroscience 
 
 ---
 
-### Code
+## Code
 
 For the code accompanying my research projects, see the links next to each paper or my [github](https://github.com/kiranvodrahalli). 
 
