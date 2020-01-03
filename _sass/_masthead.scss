@@ -13,13 +13,14 @@
   margin-top: 0;
   margin-bottom: 0;
   color:#131212;  //#505050;
+  font-weight: 400;
 
   a {
     color:#131212; // #505050;
 		font-weight: lighter;
 		text-decoration: none;
 		font-size: -webkit-xxx-large;
-		font-family: "EB Garamond", "Georgia", "Times New Roman", serif;
+		font-family: "Roboto", "Georgia", "Times New Roman", serif;
 		font-style: italic;
     // `:focus` is linked to `:hover` for basic accessibility
     &:hover,
@@ -31,7 +32,7 @@
   small {
     font-size: 80%;
     font-weight: lighter;
-		font-family: "EB Garamond", "Georgia", "Times New Roman", serif;
+		font-family: "Roboto", "Georgia", "Times New Roman", serif;
     color: #A02828; //#c0c0c0;
     letter-spacing: 0;
   }

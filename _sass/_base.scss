@@ -15,7 +15,7 @@ body {
 }
 
 html {
-  font-family: "EB Garamond", "Georgia", "Times New Roman", serif;
+  font-family: "Gelasio", "Georgia", "Times New Roman", serif;
   font-size: 22px;
   line-height: 1.2;
 
@@ -61,15 +61,36 @@ body {
 .purple {
   color: purple
 }
+.orange {
+  color: orange;
+}
+.yellow { 
+  color: yellow;
+}
 
 .bold {
-  font-weight: bold;
+  font-weight: 550;
 }
+
+.papertitle{
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1em;
+  color: #590004; 
+}
+
+.tab {
+ margin-left: 2.5em
+}
+.authorindent {
+  margin-left: 4.8em
+}
+
 
 // No `:visited` state is required by default (browsers will use `a`)
 a {
   color: #05127a; //#0F0FAE;
-	font-weight: bold;
+	font-weight: 400;
   text-decoration: none;
 
   // `:focus` is linked to `:hover` for basic accessibility
@@ -85,7 +106,7 @@ a {
 
 a:visited {
 	color: #05127a;
-	font-weight: bold;
+	font-weight: 400;
 	text-decoration: none;
 }
 

@@ -10,31 +10,31 @@ ___
 
 ### Research Talks
 
-August 2019: Yahoo Research Invited Talk. *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. <a href="{{site.baseurl}}/talks/yahoo2019slides.pptx" title="yahoo-2019-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/yahoo2019slides.pdf" title="nyas-ml-2019-slides"> [slides-pdf] </a>
+August 2019: Yahoo Research Invited Talk. <span>Attribute-Efficient Learning of Monomials over Highly-Correlated Variables</span>{: .papertitle}. <a href="{{site.baseurl}}/talks/yahoo2019slides.pptx" title="yahoo-2019-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/yahoo2019slides.pdf" title="nyas-ml-2019-slides"> [slides-pdf] </a>
 
-June 2019: RSS 2019 Oral Presentation (presented by Brandon Araki). *Learning to Plan with Logical Automata*. <a href="{{site.baseurl }}/talks/RSS2019-Presentation.pdf" title="rss2019-slides"> [slides] </a>. <a href="{{site.baseurl }}/talks/RSS2019-presentation-notes.pdf" title="rss2019-slide-notes"> [slide-notes] </a>.
+June 2019: RSS 2019 Oral Presentation (presented by Brandon Araki). <span>Learning to Plan with Logical Automata</span>{: .papertitle}. <a href="{{site.baseurl }}/talks/RSS2019-Presentation.pdf" title="rss2019-slides"> [slides] </a>. <a href="{{site.baseurl }}/talks/RSS2019-presentation-notes.pdf" title="rss2019-slide-notes"> [slide-notes] </a>.
 
-March 2019: ALT 2019 Oral Presentation. *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. <a href="{{site.baseurl}}/talks/alt2019.pptx" title="nyas-ml-2019-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/alt2019-slides.pdf" title="nyas-ml-2019-slides"> [slides-pdf] </a>
+March 2019: ALT 2019 Oral Presentation. <span>Attribute-Efficient Learning of Monomials over Highly-Correlated Variables</span>{: .papertitle}. <a href="{{site.baseurl}}/talks/alt2019.pptx" title="nyas-ml-2019-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/alt2019-slides.pdf" title="nyas-ml-2019-slides"> [slides-pdf] </a>
 
-March 2019: NYAS 13th Annual Machine Learning Symposium Oral Presentation (top 10/103). *Attribute-Efficient Learning of Monomials over Highly-Correlated Variables*. <a href="https://www.nyas.org/events/2019/13th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2019"> [symposium] </a> <a href="{{site.baseurl}}/talks/NYML-2019-slides.pdf" title="nyas-ml-2019-slides"> [slides] </a>
+March 2019: NYAS 13th Annual Machine Learning Symposium Oral Presentation (top 10/103). <span>Attribute-Efficient Learning of Monomials over Highly-Correlated Variables</span>{: .papertitle}. <a href="https://www.nyas.org/events/2019/13th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2019"> [symposium] </a> <a href="{{site.baseurl}}/talks/NYML-2019-slides.pdf" title="nyas-ml-2019-slides"> [slides] </a>
 
-December 2018: NeurIps 2018 Workshop on Infer2Control Oral Presentation (presented by Brandon Araki). *Learning to Plan with Logical Automata*. <a href="{{site.baseurl }}/talks/Learning-to-Plan-with-Logical-Automata.pdf" title="infer2control-slides"> [slides] </a>.
+December 2018: NeurIps 2018 Workshop on Infer2Control Oral Presentation (presented by Brandon Araki). <span>Learning to Plan with Logical Automata</span>{: .papertitle}. <a href="{{site.baseurl }}/talks/Learning-to-Plan-with-Logical-Automata.pdf" title="infer2control-slides"> [slides] </a>.
 
-July 2018: ICML 2018 Theory of Deep Learning Workshop Oral Presentation (presented by Mikhail Khodak). *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. 
+July 2018: ICML 2018 Theory of Deep Learning Workshop Oral Presentation (presented by Mikhail Khodak). <span>A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs</span>{: .papertitle}. 
 
-May 2018: Master's Thesis presentation by Mikhail Khodak and Nikunj Saunshi. *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. <a href="{{site.baseurl }}/talks/iclr18_slides.pdf" title="iclr18_masters"> [slides] </a>.
+May 2018: Master's Thesis presentation by Mikhail Khodak and Nikunj Saunshi. <span>A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs</span>{: .papertitle}. <a href="{{site.baseurl }}/talks/iclr18_slides.pdf" title="iclr18_masters"> [slides] </a>.
 
-April 2018: Seminar on Theoretical Machine Learning at the Institute for Advanced Study (presented by Mikhail Khodak). *A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs*. <a href="{{site.baseurl }}/talks/iclr18_at_algml_slides.pdf" title="iclr18_IAS"> [slides] </a>.
+April 2018: Seminar on Theoretical Machine Learning at the Institute for Advanced Study (presented by Mikhail Khodak). <span>A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs</span>{: .papertitle}. <a href="{{site.baseurl }}/talks/iclr18_at_algml_slides.pdf" title="iclr18_IAS"> [slides] </a>.
 
-September 2017: Invited talk at Princeton Neuroscience Institute. *Mapping between fMRI responses to movies and their natural language annotations*. <a href="{{site.baseurl }}/talks/PNI_Sept17.pdf" title="PNI_sept17"> [slides] </a>.
+September 2017: Invited talk at Princeton Neuroscience Institute. <span>Mapping between fMRI responses to movies and their natural language annotations</span>{: .papertitle}. <a href="{{site.baseurl }}/talks/PNI_Sept17.pdf" title="PNI_sept17"> [slides] </a>.
 
-May 2017: Princeton COS Master's Thesis Presentation. *Temporally Dependent Mappings between fMRI Responses and Natural Language Descriptions of Natural Stimuli*. <a href="{{site.baseurl }}/talks/MSE_presentation_may10.pdf" title="masters_thesis"> [slides] </a>. 
+May 2017: Princeton COS Master's Thesis Presentation. <span>Temporally Dependent Mappings Between fMRI Responses and Natural Language Descriptions of Natural Stimuli</span>{: .papertitle}. <a href="{{site.baseurl }}/talks/MSE_presentation_may10.pdf" title="masters_thesis"> [slides] </a>. 
 
-December 2016: NeurIPS 2016 MLINI Workshop. *Mapping between Natural Movie fMRI Responses and Word-Sequence Representations*. <a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_nips16"> [slides] </a>.
+December 2016: NeurIPS 2016 MLINI Workshop. <span>Mapping between Natural Movie fMRI Responses and Word-Sequence Representations</span>{: .papertitle}. <a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_nips16"> [slides] </a>.
 
-July 2016: Invited Talk at Intel-Princeton Neuroscience Collaboration Meeting. *Decoding fMRI to Text with Context*.  <a href="{{site.baseurl }}/talks/intel-pni_sherlock_july16.pdf" title="intel-pni"> [slides] </a>. 
+July 2016: Invited Talk at Intel-Princeton Neuroscience Collaboration Meeting. <span>Decoding fMRI to Text with Context</span>{: .papertitle}.  <a href="{{site.baseurl }}/talks/intel-pni_sherlock_july16.pdf" title="intel-pni"> [slides] </a>. 
 
-June 2016: ICML 2016 MVRL Workshop. *A Semantic Shared Response Model*. <a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [slides] </a>.
+June 2016: ICML 2016 MVRL Workshop. <span>A Semantic Shared Response Model</span>{: .papertitle}. <a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [slides] </a>.
 
 ---
 
