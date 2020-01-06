@@ -54,6 +54,7 @@ ___
 ### Blogs 
 
 * [Off-Convex](http://www.offconvex.org/)
+* [Machine Learning Research Blog](http://francisbach.com)
 * [Arg Min](http://www.argmin.net/)
 * [I'm a Bandit](https://blogs.princeton.edu/imabandit/)
 * [Hunch.net](http://hunch.net/)
