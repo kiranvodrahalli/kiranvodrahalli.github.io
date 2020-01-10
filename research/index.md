@@ -74,7 +74,7 @@ ___
 
 <span>[C7]</span>{: .blue .bold} <span>Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior</span>{: .papertitle}.<br/> 
 <span>Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus.</span>{: .tab}<br/>
-<span>AAAI Conference on Artificial Intelligence, February 2020. Poster.</span>{: .tab}<br/> 
+<span>AAAI Conference on Artificial Intelligence, February 2020. Spotlight Presentation and Poster.</span>{: .tab}<br/> 
 <span><a href= "{{ site.baseurl }}/research/publications/aaai20.pdf" title= "aaai20"> [pdf] </a> <a href= "{{ site.baseurl }}/research/publications/aaai20_supp.pdf" title= "aaai20_supp"> [supplement] </a></span>{: .tab}
 
 ---
