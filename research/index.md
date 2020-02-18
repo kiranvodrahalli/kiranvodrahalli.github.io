@@ -63,7 +63,7 @@ ___
 <span>[C6]</span>{: .blue .bold} <span>Privacy Accounting and Quality Control in the Sage Differentially Private ML Platform</span>{: .papertitle}.<br/> 
 <span>Mathias Lécuyer, Riley Spahn, **Kiran Vodrahalli**, Roxana Geambasu, Daniel Hsu.</span>{: .tab}<br/> 
 <span>Symposium on Operation Systems Principles, October 2019. Oral Presentation.</span>{: .tab}<br/> 
-<span><a href= "{{ site.baseurl }}/research/publications/sosp19.pdf" title= "sosp19pdf"> [pdf] </a> <a href="https://arxiv.org/abs/1909.01502" title="sosp19_arxiv"> [arXiv] </a> <a href= "https://sosp19.rcs.uwaterloo.ca/program.html" title="sosp19"> [conference] </a></span><a href= "{{ site.baseurl }}/posters/sosp2019-poster.pdf" title= "sosp19poster"> [poster] </a></span>{: .tab}
+<span><a href= "{{ site.baseurl }}/research/publications/sosp19.pdf" title= "sosp19pdf"> [pdf] </a> <a href="https://arxiv.org/abs/1909.01502" title="sosp19_arxiv"> [arXiv] </a> <a href= "https://sosp19.rcs.uwaterloo.ca/program.html" title="sosp19"> [conference] </a><a href= "{{ site.baseurl }}/posters/sosp19-poster.pdf" title= "sosp19poster"> [poster] </a></span>{: .tab}
 
 ### Robotics 
 
@@ -75,7 +75,7 @@ ___
 <span>[C7]</span>{: .blue .bold} <span>Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior</span>{: .papertitle}.<br/> 
 <span>Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus.</span>{: .tab}<br/>
 <span>AAAI Conference on Artificial Intelligence, February 2020. Spotlight Presentation and Poster.</span>{: .tab}<br/> 
-<span><a href= "{{ site.baseurl }}/research/publications/aaai20.pdf" title= "aaai20"> [pdf] </a> <a href= "{{ site.baseurl }}/research/publications/aaai20_supp.pdf" title= "aaai20_supp"> [supplement] </a></span><a href= "https://aaai.org/Conferences/AAAI-20/" title="aaai2020"> [conference] </a> <a href= "{{ site.baseurl }}/posters/aaai20-poster.pdf" title= "aaai20poster"> [poster] </a></span>{: .tab}
+<span><a href= "{{ site.baseurl }}/research/publications/aaai20.pdf" title= "aaai20"> [pdf] </a> <a href= "{{ site.baseurl }}/research/publications/aaai20_supp.pdf" title= "aaai20_supp"> [supplement] </a><a href= "https://aaai.org/Conferences/AAAI-20/" title="aaai2020"> [conference] </a> <a href= "{{ site.baseurl }}/posters/aaai20-poster.pdf" title= "aaai20poster"> [poster] </a></span>{: .tab}
 
 ---
 
@@ -84,8 +84,8 @@ ___
 <span>[W5]</span>{: .green .bold} <span>Learning to Plan with Logical Automata</span>{: .papertitle}.<br/> 
 <span>Brandon Araki\*, **Kiran Vodrahalli**\*, Cristian-Ioan Vasile, Daniela Rus.</span>{: .tab}<br/> 
 <span>[NeurIPS 2018 Workshop on Infer2Control](https://sites.google.com/view/infer2control-nips2018), December 2018. Oral Presentation and Poster.</span>{: .tab}<br/> 
+<span>(Note: same work as RSS '19 conference publication).</span>{: .tab}<br/>
 <span><a href= "{{ site.baseurl }}/research/workshops/neurips18_infer2control.pdf" title= "lvin_neurips18"> [pdf] </a> <a href="{{site.baseurl }}/talks/Learning-to-Plan-with-Logical-Automata.pdf" title="infer2control-neurips2018-slides"> [slides] </a> <a href="{{site.baseurl }}/posters/lvin-infer2control-neurips18-poster.pdf" title="infer2control-neurips2018-poster"> [poster] </a></span>{: .tab}
-<span>(Note: same work as RSS '19 conference publication).</span>{: .tab}
 
 <span>[W4]</span>{: .green .bold} <span>A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs</span>{: .papertitle}.<br/> 
 <span>Sanjeev Arora\*, Mikhail Khodak\*, Nikunj Saunshi\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/> 
@@ -102,15 +102,15 @@ ___
 <span>Christopher Honey, Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora.</span>{: .tab}<br/> 
 <span>[NeurIPS Workshop on Representation Learning in Artificial and Biological Neural Networks](https://arxiv.org/abs/1701.01437),</span>{: .tab}<br/>
 <span>Dec 2016. Oral Presentation and Poster.</span>{: .tab}<br/> 
+<span>(Note: Earlier version of NeuroImage '17 journal publication).</span>{: .tab}<br/>
 <span><a href="{{site.baseurl }}/talks/NIPS2016_kiranvodrahalli_presentation.pdf" title="ssrm_neurips16"> [slides] </a> <a href="{{site.baseurl }}/posters/nips16_MLINI_poster.pdf" title="ssrm_neurips16"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)</span>{: .tab}
-<span>(Note: Earlier version of NeuroImage '17 journal publication).</span>{: .tab}
 
 <span>[W1]</span>{: .green .bold} <span>A Semantic Shared Response Model</span>{: .papertitle}.<br/> 
 <span>**Kiran Vodrahalli**, Po-Hsuan Chen, Janice Chen, Esther Yong, Christopher Honey, </span>{: .tab}<br/>
 <span>Peter J. Ramadge, Kenneth A. Norman, Sanjeev Arora.</span>{: .tab}<br/> 
 <span> <a href = "http://ttic.uchicago.edu/~wwang5/ICML2016_MVRL/" title = "MVRL"> ICML Workshop on Multi-view Representation Learning </a>, Jun 2016. Oral Presentation and Poster.</span>{: .tab}<br/> 
+<span>(Note: Earlier version of NeuroImage '17 journal publication).</span>{: .tab}<br/>
 <span><a href= "{{ site.baseurl }}/research/workshops/icml16_mvrl.pdf" title= "ssrm_icml16"> [pdf] </a><a href="{{site.baseurl }}/talks/A_Semantic_Shared_Response_Model.pdf" title="srm_icml16"> [slides] </a> <a href="{{site.baseurl }}/posters/icml16_MVRL_poster.pdf" title="ssrm_icml16"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)</span>{: .tab}
-<span>(Note: Earlier version of NeuroImage '17 journal publication).</span>{: .tab}
 
 ---
 
