@@ -10,6 +10,10 @@ ___
 
 ### Research Talks
 
+October 2019: SOSP 2019 Oral Presentation (presented by Mathias Lécuyer).<br/>
+<span>Privacy Accounting and Quality Control in the Sage Differentially Private ML Platform</span>{: .papertitle}.<br/> 
+<a href="{{site.baseurl }}/talks/sosp19-slides.pdf" title="sosp19-slides">[slides]</a>
+
 August 2019: Yahoo Research Invited Talk.<br/>
 <span>Attribute-Efficient Learning of Monomials over Highly-Correlated Variables</span>{: .papertitle}.<br/> 
 <a href="{{site.baseurl}}/talks/yahoo2019slides.pptx" title="yahoo-2019-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/yahoo2019slides.pdf" title="nyas-ml-2019-slides"> [slides-pdf] </a>
@@ -26,7 +30,7 @@ March 2019: NYAS 13th Annual Machine Learning Symposium Oral Presentation (top 1
 <span>Attribute-Efficient Learning of Monomials over Highly-Correlated Variables</span>{: .papertitle}.<br/>
 <a href="https://www.nyas.org/events/2019/13th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2019"> [symposium] </a> <a href="{{site.baseurl}}/talks/NYML-2019-slides.pdf" title="nyas-ml-2019-slides"> [slides] </a>
 
-December 2018: NeurIps 2018 Workshop on Infer2Control Oral Presentation (presented by Brandon Araki).<br/> 
+December 2018: NeurIPS 2018 Workshop on Infer2Control Oral Presentation (presented by Brandon Araki).<br/> 
 <span>Learning to Plan with Logical Automata</span>{: .papertitle}.<br/> 
 <a href="{{site.baseurl }}/talks/Learning-to-Plan-with-Logical-Automata.pdf" title="infer2control-slides">[slides]</a>
 
