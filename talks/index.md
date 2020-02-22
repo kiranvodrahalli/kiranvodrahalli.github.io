@@ -10,6 +10,10 @@ ___
 
 ### Research Talks
 
+March 2020: NYAS 14th Annual Machine Learning Symposium Spotlight Presentation.<br/> 
+<span>Learning the Optimal Step Size for Gradient Descent on Convex Quadratics</span>{: .papertitle}.<br/>
+<a href="https://www.nyas.org/events/2020/14th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2020"> [symposium] </a> 
+
 October 2019: SOSP 2019 Oral Presentation (presented by Mathias Lécuyer).<br/>
 <span>Privacy Accounting and Quality Control in the Sage Differentially Private ML Platform</span>{: .papertitle}.<br/> 
 <a href="{{site.baseurl }}/talks/sosp19-slides.pdf" title="sosp19-slides">[slides]</a>
@@ -26,7 +30,7 @@ March 2019: ALT 2019 Oral Presentation.<br/>
 <span>Attribute-Efficient Learning of Monomials over Highly-Correlated Variables</span>{: .papertitle}.<br/> 
 <a href="{{site.baseurl}}/talks/alt2019.pptx" title="nyas-ml-2019-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/alt2019-slides.pdf" title="nyas-ml-2019-slides"> [slides-pdf] </a>
 
-March 2019: NYAS 13th Annual Machine Learning Symposium Oral Presentation (top 10/103).<br/> 
+March 2019: NYAS 13th Annual Machine Learning Symposium Spotlight Presentation.<br/> 
 <span>Attribute-Efficient Learning of Monomials over Highly-Correlated Variables</span>{: .papertitle}.<br/>
 <a href="https://www.nyas.org/events/2019/13th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2019"> [symposium] </a> <a href="{{site.baseurl}}/talks/NYML-2019-slides.pdf" title="nyas-ml-2019-slides"> [slides] </a>
 

@@ -22,6 +22,12 @@ ___
 
 ## Preprints
 
+<span>[P2]</span>{: .red .bold} <span>The Platform Design Problem</span>{: .papertitle}.<br/>
+<span>Christos Papadimitriou\*, John Tsitsiklis\*, **Kiran Vodrahalli**\*, Mihalis Yannakakis\*.</span>{: .tab}<br/>
+
+<span>[P1]</span>{: .red .bold} <span>Learning the Optimal Step Size for Gradient Descent on Convex Quadratics</span>{: .papertitle}.<br/>
+<span>Alex Andoni\*, Daniel Hsu\*, Tim Roughgarden\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/>
+
 ---
 
 ## Conference and Journal Publications 

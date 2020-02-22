@@ -16,7 +16,9 @@ ___
 * [Daniel Hsu](http://cs.columbia.edu/~djhsu)
 * [Alex Andoni](http://www.mit.edu/~andoni/)
 * [Christos Papadimitriou](https://engineering.columbia.edu/faculty/christos-papadimitriou)
+* [Mihalis Yannakakis](http://www.cs.columbia.edu/~mihalis/)
 * [Tim Roughgarden](http://timroughgarden.org/)
+* [John Tsitsiklis](https://www.mit.edu/~jnt/home.html)
 * [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) [[blog]](http://www.offconvex.org/)
 * [Ken Norman](https://pni.princeton.edu/faculty/kenneth-norman)
 * [Chris Baldassano](http://www.chrisbaldassano.com/) [[blog]](http://www.chrisbaldassano.com/blog/)
@@ -463,31 +465,6 @@ ___
 * [Daniel Takeshi's notes on papers](https://github.com/DanielTakeshi/Paper_Notes)
 * [Billy Fang's notes](https://www.stat.berkeley.edu/~blfang/#notes)
 * [Cosma Shalizi's notebooks](http://bactra.org/notebooks/)
-
-
----
-
-### Favorite Papers
-
-
-* [Adversarial Examples from Computational Constraints (Bubeck, Price, Razenshteyn)](https://arxiv.org/pdf/1805.10204.pdf)
-* [Scalable Bilinear Pi Learning using State and Action Features (Chen, Li, Wang)](https://arxiv.org/abs/1804.10328)
-* [Hierarchical Imitation and Reinforcement Learning (Le, Jiang, Agarwal, Dudik, Yue, Daume III)](https://arxiv.org/pdf/1803.00590.pdf)
-* [Understanding Black-box Predictions via Influence Functions (Koh and Liang)](https://arxiv.org/abs/1703.04730)
-* [Contextual Decision Processes with Low Bellman Rank are PAC-Learnable (JKALS)](http://proceedings.mlr.press/v70/jiang17c/jiang17c.pdf)
-* [A Latent Variable Model Approach to PMI-Based Word Embeddings (ALLMR)](https://transacl.org/ojs/index.php/tacl/article/view/742/204)
-* [The Ladder: A Reliable Leaderboard for Machine Learning Competitions (Avrim Blum and Moritz Hardt)](https://arxiv.org/pdf/1502.04585.pdf)
-* [Tensor Decompositions for Learning Latent Variable Models (Anandkumar, Ge, Hsu, Kakade, Telgarsky)](http://www.cs.columbia.edu/~djhsu/papers/power-jmlr.pdf)
-* [The Multiplicative Weights Update Method: A Meta-Algorithm and Applications (Arora, Hazan, Kale)](https://www.cs.princeton.edu/~arora/pubs/MWsurvey.pdf)
-* [The Convex Geometry of Linear Inverse Problems (CRPW)](https://arxiv.org/abs/1012.0621)
-* [Simultaneous Analysis of Lasso and Dantzig Selector (Bickel, Ritov, and Tsybakov)](https://projecteuclid.org/euclid.aos/1245332830;)
-* [On the Complexity of Linear Prediction: Risk Bounds, Margin Bounds, and Regularization (Sham Kakade, Karthik Sridharan, and Ambuj Tewari)](https://www.cs.cornell.edu/~sridharan/rad-paper.pdf)
-* [Variational Inference for Dirichlet Process Mixtures (Blei and Jordan)](http://www.cs.columbia.edu/~blei/papers/BleiJordan2004.pdf)
-* [The Fast Johnson-Lindenstrauss Algorithm and Approximate Nearest Neighbors (Ailon and Chazelle)](https://www.cs.princeton.edu/~chazelle/pubs/FJLT-sicomp09.pdf)
-* [PAC-Bayes and Margins (John Langford and John Shawe-Taylor)](https://papers.nips.cc/paper/2317-pac-bayes-margins.pdf)
-* [Approximate Graph Coloring by Semidefinite Programming (Karger, Motwani, Sudan)](https://dl.acm.org/citation.cfm?id=274791)
-* [A Decision-Theoretic Generalization of Online Learning and an Application to Boosting (Freund and Schapire)](http://cseweb.ucsd.edu/~yfreund/papers/adaboost.pdf)
-* [Online Algorithms in Machine Learning (Avrim Blum)](http://www.cs.cmu.edu/~avrim/Papers/survey.pdf)
 
 
 ---
