@@ -416,6 +416,7 @@ ___
 * [Manga in Theory and Practice (Hirohiko Araki)](https://www.amazon.com/dp/B071G1SKMM/)
 
 #### Advice (on academia, productivity tips, how to's, coding tutorials, etc...)
+* [Kevin Gimpel's Advice to Ph.D. Students](https://ttic.uchicago.edu/~kgimpel/etc/phd-advice.pdf)
 * [How to get a Ph.D. in Mathematics in a Timely Fashion (Sara C. Billey)](https://sites.math.washington.edu/~billey/advice/timely.fashion.pdf)
 * [Manuel Blum's Advice to a Beginning Graduate Student](https://www.cs.cmu.edu/~mblum/research/pdf/grad.html)
 * [The Bandwagon (Claude Shannon)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1056774)
