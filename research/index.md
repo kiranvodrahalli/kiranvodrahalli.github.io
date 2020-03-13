@@ -26,7 +26,10 @@ ___
 <span>Christos Papadimitriou\*, John Tsitsiklis\*, **Kiran Vodrahalli**\*, Mihalis Yannakakis\*.</span>{: .tab}<br/>
 
 <span>[P1]</span>{: .red .bold} <span>Learning the Optimal Step Size for Gradient Descent on Convex Quadratics</span>{: .papertitle}.<br/>
-<span>Alex Andoni\*, Daniel Hsu\*, Tim Roughgarden\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/>
+<span>Alex Andoni\*, Daniel Hsu\*, Tim Roughgarden\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/> 
+<span><a href= "{{ site.baseurl }}/posters/nyasml2020-poster.pdf" title= "nyasml-2020"> [poster] </a></span>{: .tab}
+
+
 
 ---
 

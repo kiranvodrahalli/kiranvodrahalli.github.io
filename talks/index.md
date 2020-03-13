@@ -12,7 +12,7 @@ ___
 
 March 2020: NYAS 14th Annual Machine Learning Symposium Spotlight Presentation.<br/> 
 <span>Learning the Optimal Step Size for Gradient Descent on Convex Quadratics</span>{: .papertitle}.<br/>
-<a href="https://www.nyas.org/events/2020/14th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2020"> [symposium] </a> 
+<a href="https://www.nyas.org/events/2020/14th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2020"> [symposium] </a> <a href="{{site.baseurl}}/talks/nyasml2020-slides.pptx" title="nyas-2020-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/nyasml2020-slides.pdf" title="nyas-ml-2020-slides"> [slides-pdf] </a>
 
 October 2019: SOSP 2019 Oral Presentation (presented by Mathias Lécuyer).<br/>
 <span>Privacy Accounting and Quality Control in the Sage Differentially Private ML Platform</span>{: .papertitle}.<br/> 
