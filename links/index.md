@@ -18,7 +18,6 @@ ___
 * [Christos Papadimitriou](https://engineering.columbia.edu/faculty/christos-papadimitriou)
 * [Mihalis Yannakakis](http://www.cs.columbia.edu/~mihalis/)
 * [Tim Roughgarden](http://timroughgarden.org/)
-* [John Tsitsiklis](https://www.mit.edu/~jnt/home.html)
 * [Sanjeev Arora](http://www.cs.princeton.edu/~arora/) [[blog]](http://www.offconvex.org/)
 * [Ken Norman](https://pni.princeton.edu/faculty/kenneth-norman)
 * [Chris Baldassano](http://www.chrisbaldassano.com/) [[blog]](http://www.chrisbaldassano.com/blog/)
