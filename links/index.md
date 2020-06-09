@@ -29,7 +29,7 @@ ___
 * [Nikunj Saunshi](http://www.cs.princeton.edu/~nsaunshi/)
 * [Holden Lee](http://holdenlee.github.io/) [[blog]](http://holdenlee.github.io/blog)
 * [Brandon Araki](https://www.csail.mit.edu/person/brandon-araki) [[blog]](http://braraki.github.io/)
-* [Rishabh Dudeja](http://stat.columbia.edu/department-directory/name/rishabh-dudeja/)
+* [Rishabh Dudeja](http://www.columbia.edu/~rd2714/)
 * [Riley Spahn](http://www.cs.columbia.edu/~riley/)
 * [Mathias Lécuyer](http://mathias.lecuyer.me/)
 
