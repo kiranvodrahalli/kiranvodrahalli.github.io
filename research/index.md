@@ -24,7 +24,7 @@ ___
 
 <span>[P1]</span>{: .red .bold} <span>The Platform Design Problem</span>{: .papertitle}.<br/>
 <span>Christos Papadimitriou\*, **Kiran Vodrahalli**\*, Mihalis Yannakakis\*.</span>{: .tab}<br/>
-<span><a href= "{{ site.baseurl }}/research/publications/platform-design-problem.pdf" title= "PDP"> [pdf] </a>
+<span><a href= "{{ site.baseurl }}/research/publications/platform-design-problem.pdf" title= "PDP"> [pdf] </a></span>{: .tab}
 
 ---
 
@@ -125,8 +125,7 @@ ___
 <span>[T10]</span>{: .grey .bold} <span>Low-dimensional Representations of Semantic Context in Language and the Brain</span>{: .papertitle}. MAT AB Thesis (May 2016). Advised by Sanjeev Arora and Ken Norman. <a href= "{{ site.baseurl }}/research/theses/ugrad_MAT_thesis.pdf" title= "ab_thesis"> [pdf] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
 
 <span>[T9]</span>{: .grey .bold} <span>Learning the Optimal Step Size for Gradient Descent on Convex Quadratics</span>{: .papertitle}. Poster for NYAS ML Symposium 2020. <br/>
-<span>Alex Andoni\*, Daniel Hsu\*, Tim Roughgarden\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/> 
-<span><a href= "{{ site.baseurl }}/posters/nyasml2020-poster.pdf" title= "nyasml-2020"> [poster] </a></span>{: .tab}
+<span>Alex Andoni\*, Daniel Hsu\*, Tim Roughgarden\*, **Kiran Vodrahalli**\*.</span>{: .tab}<a href= "{{ site.baseurl }}/posters/nyasml2020-poster.pdf" title= "nyasml-2020"> [poster] </a></span><br/> 
 
 <span>[T8]</span>{: .grey .bold} <span>Can Simple Assembly Algorithms Compute Robust, High-Dimensional Means?</span>{: .papertitle}. COMS 6998-06 Project (Fall 2018). Advised by Christos Papadimitriou. <a href= "{{ site.baseurl }}/research/reports/computation-and-brain-paper.pdf" title= "6998-06"> [pdf] </a> 
 
