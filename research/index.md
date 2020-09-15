@@ -24,7 +24,7 @@ ___
 
 <span>[P1]</span>{: .red .bold} <span>The Platform Design Problem</span>{: .papertitle}.<br/>
 <span>Christos Papadimitriou\*, **Kiran Vodrahalli**\*, Mihalis Yannakakis\*.</span>{: .tab}<br/>
-<span><a href= "{{ site.baseurl }}/research/publications/platform-design-problem.pdf" title= "PDP"> [pdf] </a></span>{: .tab}
+<span><a href= "{{ site.baseurl }}/research/publications/platform-design-problem.pdf" title= "PDP"> [pdf] </a> <a href="https://arxiv.org/abs/2009.06117" title="pdp_arxiv"> [arXiv] </a></span>{: .tab} 
 
 ---
 
