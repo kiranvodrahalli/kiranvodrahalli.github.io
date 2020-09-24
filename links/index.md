@@ -7,7 +7,7 @@ title: links
 {:toc}
 
 
-This page holds links to notes, class webpages, research groups, blogs, code, and other people's webpages which I have found interesting and helpful.
+This page holds links to notes, class webpages, research groups, blogs, code, and other people's webpages which I have found interesting and helpful. My brother is also involved in machine learning research, check out [his website](http://stanford.edu/~kailasv). 
 
 ___
  

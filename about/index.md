@@ -20,8 +20,8 @@ redirect_from:
 I am a [Computer Science](http://www.cs.columbia.edu/) Ph.D. student at Columbia University, focusing on theoretical computer science, with particular interest in machine learning, algorithms, and statistics. I am extremely fortunate to be advised by [Professor Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Professor Alex Andoni](http://www.mit.edu/~andoni/). I am supported by an NSF Graduate Research Fellowship. 
 
 Affiliations:
-* [Columbia CS Theory](http://www.cs.columbia.edu/theory/) 
-* [Columbia Machine Learning](http://www.cs.columbia.edu/areas/machine/)
+* [Columbia CS Theory](http://theory.cs.columbia.edu/) 
+* [Columbia Machine Learning](https://ml.cs.columbia.edu/)
 
 Other Info: 
 * [Email](mailto:kiran.vodrahalli@columbia.edu)
@@ -38,7 +38,8 @@ For more details, either check out this website or see my <a href="{{ site.baseu
 
 ### Research Interests
 
-My primary area of research is theoretical computer science: in particular, provably resource-efficient algorithms for fitting statistical models ("algorithmic statistics"). Several of my interests can be summarized by the phrase "non-worst-case analysis for machine learning algorithms." In applications, I am particularly interested in natural language understanding, neuroscience, economics, and robotics. 
+My primary area of research is theoretical computer science: in particular, provably resource-efficient algorithms for fitting statistical models in various settings ("algorithmic statistics", "foundations of machine learning", "learning theory", etc.). Some of my work in this direction has skewed in the direction of giving computationally efficient, low sample complexity algorithms for learning functions with sparse descriptions. I am also interested in algorithms and optimization theory. I have also worked on applications of machine learning in several fields, including neuroscience, natural language understanding, economics, and robotics. Currently, I am particularly focused on applying ideas from machine learning (online learning, learning in games) and bi-level optimization to understand computational and statistical issues associated with the economics of the online firm, as well as associated privacy, ethics, and fairness concerns (see my recent paper [The Platform Design Problem](https://arxiv.org/abs/2009.06117)). 
+
 
 ---
 
