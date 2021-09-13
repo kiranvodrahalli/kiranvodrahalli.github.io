@@ -10,6 +10,16 @@ ___
 
 ### Research Talks
 
+July 2021: EC 2021 NetEcon Workshop Oral Presentation.<br/>
+<span>The Platform Design Problem</span>{:.papertitle}.<br/>
+<a href="https://netecon21.gametheory.online/program-and-accepted-papers" title="netecon21">
+[workshop] </a> <a href="{{site.baseurl}}/talks/netecon21-slides.pptx" title="netecon-2021-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/netecon21-slides.pdf" title="netecon2021-slides"> [slides-pdf] </a>
+
+July 2021: ICML 2021 Long Oral Presentation (presented by Brandon Araki).<br/>
+<span>The Logical Options Framework</span>{: .papertitle}.<br/>
+<span> <a href= "https://icml.cc/virtual/2021/poster/9379" title= "icml21poster"> [icml] </a> 
+<a href="{{site.baseurl}}/talks/icml21-slides.pdf" title="icml-2021-slides"> [slides-pdf] </a> </span>
+
 March 2020: NYAS 14th Annual Machine Learning Symposium Spotlight Presentation.<br/> 
 <span>Learning the Optimal Step Size for Gradient Descent on Convex Quadratics</span>{: .papertitle}.<br/>
 <a href="https://www.nyas.org/events/2020/14th-annual-machine-learning-symposium/?tab=agenda" title="nyas-ml-2020"> [symposium] </a> <a href="{{site.baseurl}}/talks/nyasml2020-slides.pptx" title="nyas-2020-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/nyasml2020-slides.pdf" title="nyas-ml-2020-slides"> [slides-pdf] </a>

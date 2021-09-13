@@ -20,70 +20,85 @@ Therefore, I use \* to denote co-authorship to avoid confusion.
 
 ___
 
+<!--
 ## Preprints
-
-<span>[P1]</span>{: .red .bold} <span>The Platform Design Problem</span>{: .papertitle}.<br/>
-<span>Christos Papadimitriou\*, **Kiran Vodrahalli**\*, Mihalis Yannakakis\*.</span>{: .tab}<br/>
-<span><a href= "{{ site.baseurl }}/research/publications/platform-design-problem.pdf" title= "PDP"> [pdf] </a> <a href="https://arxiv.org/abs/2009.06117" title="pdp_arxiv"> [arXiv] </a></span>{: .tab} 
 
 ---
 
+-->
+
 ## Conference and Journal Publications 
+ 
+<button onclick="window.location.href='{{ site.baseurl }}/research/research-topic/index.html#conference-and-journal-publications';">Sort papers by topic </button> 
 
-### Theory (Computer Science/Statistics/Machine Learning)
+### All Publications
 
-<span>[C4]</span>{: .blue .bold} <span>Attribute-Efficient Learning of Monomials over Highly-Correlated Variables</span>{: .papertitle}.<br/>
-<span>Alex Andoni\*, Rishabh Dudeja\*, Daniel Hsu\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/>
-<span>Algorithmic Learning Theory, March 2019. Oral Presentation.</span>{: .tab}<br/>
-<span><a href= "{{ site.baseurl }}/research/publications/alt19.pdf" title= "alt19"> [pdf] </a> <a href= "http://proceedings.mlr.press/v98/andoni19a.html" title= "alt19pmlr"> [pmlr] </a> <a href= "http://alt2019.algorithmiclearningtheory.org/accepted-papers/" title="alt"> [conference] </a> <a href= "{{ site.baseurl }}/posters/Columbia-Data-Science-Poster-2018-Vodrahalli.pdf" title= "columbia-fods18"> [poster] </a></span>{: .tab}
+<span>[C9]</span>{: .blue .bold} <span>The Platform Design Problem</span>{: .papertitle}.<br/>
+<span>Christos Papadimitriou\*, **Kiran Vodrahalli**\*, Mihalis Yannakakis\*.</span>{: .tab}<br/>
+<span>WINE Conference on Internet and Web Economics, December 2021. Oral Presentation.</span>{: .tab}<br/>
+<span><a href= "{{ site.baseurl }}/research/publications/wine21.pdf" title= "PDP"> [pdf] </a> <a href="https://arxiv.org/abs/2009.06117" title="pdp_arxiv"> [arXiv] </a> <a href="{{site.baseurl }}/posters/ec21-poster.pdf" title="ec21-poster"> [poster] </a></span>{: .tab}
 
-### Natural Language Processing 
+<span>[J2]</span>{: .orange .bold} <span>Learning and Planning with Logical Automata</span>{: .papertitle}.<br/> 
+<span>Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian-Ioan Vasile, Mark Donahue, Daniela Rus.</span>{: .tab}<br/>
+<span>Autonomous Robots, August 2021.</span>{: .tab}<br/> 
+<span><a href= "{{ site.baseurl }}/research/publications/autonomousrobots21.pdf" title= "autonomousrobots21"> [pdf] </a> <a href= "https://link.springer.com/article/10.1007/s10514-021-09993-6" title="springer"> [journal] </a></span>{: .tab}
 
-<span>[C2]</span>{: .blue .bold} <span>A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs</span>{: .papertitle}.<br/> 
-<span>Sanjeev Arora\*, Mikhail Khodak\*, Nikunj Saunshi\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/> 
-<span>International Conference on Learning Representations, April 2018. Poster.</span>{: .tab}<br/> 
-<span><a href= "{{ site.baseurl }}/research/publications/iclr18.pdf" title= "iclr18"> [pdf] </a> [[blog]](http://www.offconvex.org/2018/06/25/textembeddings/) <a href= "{{ site.baseurl }}/research/publications/iclr18_abstract.pdf" title= "iclr18_abstract"> [abstract] </a> <a href="https://openreview.net/forum?id=B1e5ef-C-" title="iclr18"> [conference] </a> <a href="{{site.baseurl }}/posters/iclr18_poster.pdf" title="iclr18"> [poster] </a> [[embedding code]](https://https//github.com/NLPrinceton/text_embedding) [[recovery code]](https://https//github.com/NLPrinceton/sparse_recovery) [[word vectors]](http://nlp.cs.princeton.edu/DisC/)</span>{: .tab}
+<span>[C8]</span>{: .blue .bold} <span>The Logical Options Framework</span>{: .papertitle}.<br/> 
+<span>Brandon Araki, Xiao Li, **Kiran Vodrahalli**, Jonathan DeCastro, J. Micah Fry, Daniela Rus.</span>{: .tab}<br/>
+<span>ICML International Conference on Machine Learning, July 2021. Long Oral Presentation and Poster.</span>{: .tab}<br/> 
+<span><a href= "{{ site.baseurl }}/research/publications/icml21.pdf" title= "icml21"> [pdf] </a> <a href= "http://proceedings.mlr.press/v139/araki21a.html" title="icml2021"> [mlr press] </a> <a href= "{{ site.baseurl }}/posters/icml21-poster.pdf" title= "icml21poster"> [poster] </a> <a href= "https://icml.cc/virtual/2021/poster/9379" title= "icml21poster"> [icml] </a></span>{: .tab}
 
-<span>[C3]</span>{: .blue .bold} <span>A Large Self-Annotated Corpus for Sarcasm</span>{: .papertitle}.<br/> 
-<span>Mikhail Khodak, Nikunj Saunshi, **Kiran Vodrahalli**.</span>{: .tab}<br/> 
-<span>Language Resources and Evaluation, May 2018. Poster.</span>{: .tab}<br/> 
-<span><a href= "{{ site.baseurl }}/research/publications/lrec18.pdf" title= "lrec18"> [pdf] </a> <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/160.pdf" title="lrec18"> [conference] </a> <a href="https://arxiv.org/abs/1704.05579" title="lrec18_arxiv"> [arXiv] </a> [[dataset]](http://nlp.cs.princeton.edu/SARC/) [[code]](https://github.com/NLPrinceton/SARC)</span>{: .tab}
-
-### Neuroscience 
-
-<span>[J1]</span>{: .orange .bold} <span>Mapping between fMRI responses to movies and their natural language annotations</span>{: .papertitle}.<br/> 
-<span>**Kiran Vodrahalli**, Po-Hsuan Chen, Yingyu Liang, Christopher Baldassano, Janice Chen,</span>{: .tab}<br/>
-<span>Christopher Honey, Uri Hasson, Peter Ramadge, Kenneth A. Norman, Sanjeev Arora.</span>{: .tab}<br/> 
-<span>Neuroimage, June 2017.</span>{: .tab}<br/> 
-<span><a href= "{{ site.baseurl }}/research/publications/neuroimage17.pdf" title= "neuroimage17"> [pdf] </a> <a href="http://www.sciencedirect.com/science/article/pii/S1053811917305128" title="neuroimage"> [journal] </a> <a href="https://arxiv.org/abs/1610.03914" title="neuroimage_arxiv"> [arXiv] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)</span>{: .tab}
-
-<span>[C1]</span>{: .blue .bold} <span>A Temporal Decay Model for Mapping between fMRI and Natural Language Annotations</span>{: .papertitle}.<br/> 
-<span>**Kiran Vodrahalli**, Cathy Chen, Viola Mocz, Christopher Baldassano, Uri Hasson, Sanjeev Arora, Kenneth A. Norman.</span>{: .tab}<br/> 
-<span>Cognitive Computational Neuroscience, September 2017. Poster.</span>{: .tab}<br/> 
-<span><a href= "{{ site.baseurl }}/research/publications/ccn17.pdf" title= "ccn17"> [pdf] </a> <a href="https://www2.securecms.com/CCNeuro/docs-0/591d7d2668ed3f3154cce90a.pdf" title="ccn17"> [conference] </a> <a href="{{site.baseurl }}/posters/ccn17_poster.pdf" title="ccn17"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)</span>{: .tab}
-
-### Systems 
+<span>[C7]</span>{: .blue .bold} <span>Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior</span>{: .papertitle}.<br/> 
+<span>Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian-Ioan Vasile, Mark Donahue, Daniela Rus.</span>{: .tab}<br/>
+<span>AAAI Conference on Artificial Intelligence, February 2020. Spotlight Presentation and Poster.</span>{: .tab}<br/> 
+<span><a href= "{{ site.baseurl }}/research/publications/aaai20.pdf" title= "aaai20"> [pdf] </a> <a href= "{{ site.baseurl }}/research/publications/aaai20_supp.pdf" title= "aaai20_supp"> [supplement] </a><a href= "https://aaai.org/Conferences/AAAI-20/" title="aaai2020"> [conference] </a> <a href= "{{ site.baseurl }}/posters/aaai20-poster.pdf" title= "aaai20poster"> [poster] </a></span>{: .tab}
 
 <span>[C6]</span>{: .blue .bold} <span>Privacy Accounting and Quality Control in the Sage Differentially Private ML Platform</span>{: .papertitle}.<br/> 
 <span>Mathias Lécuyer, Riley Spahn, **Kiran Vodrahalli**, Roxana Geambasu, Daniel Hsu.</span>{: .tab}<br/> 
 <span>Symposium on Operation Systems Principles, October 2019. Oral Presentation.</span>{: .tab}<br/> 
 <span><a href= "{{ site.baseurl }}/research/publications/sosp19.pdf" title= "sosp19pdf"> [pdf] </a> <a href="https://arxiv.org/abs/1909.01502" title="sosp19_arxiv"> [arXiv] </a> <a href= "https://sosp19.rcs.uwaterloo.ca/program.html" title="sosp19"> [conference] </a><a href= "{{ site.baseurl }}/posters/sosp19-poster.pdf" title= "sosp19poster"> [poster] </a></span>{: .tab}
 
-### Robotics 
-
 <span>[C5]</span>{: .blue .bold} <span>Learning to Plan with Logical Automata</span>{: .papertitle}.<br/> 
-<span>Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus.</span>{: .tab}<br/>
+<span>Brandon Araki\*, **Kiran Vodrahalli**\*, Thomas Leech, Cristian-Ioan Vasile, Mark Donahue, Daniela Rus.</span>{: .tab}<br/>
 <span>Robotics: Science and Systems, June 2019. Spotlight Presentation and Poster.</span>{: .tab}<br/>
 <span><a href= "{{ site.baseurl }}/research/publications/rss19.pdf" title= "rss19"> [pdf] </a> <a href= "http://www.roboticsconference.org/" title="rss"> [conference] </a> <a href= "{{ site.baseurl }}/posters/rss2019-poster.pdf" title= "rss19poster"> [poster] </a></span>{: .tab}
 
-<span>[C7]</span>{: .blue .bold} <span>Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior</span>{: .papertitle}.<br/> 
-<span>Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian Ioan Vasile, Mark Donahue, Daniela Rus.</span>{: .tab}<br/>
-<span>AAAI Conference on Artificial Intelligence, February 2020. Spotlight Presentation and Poster.</span>{: .tab}<br/> 
-<span><a href= "{{ site.baseurl }}/research/publications/aaai20.pdf" title= "aaai20"> [pdf] </a> <a href= "{{ site.baseurl }}/research/publications/aaai20_supp.pdf" title= "aaai20_supp"> [supplement] </a><a href= "https://aaai.org/Conferences/AAAI-20/" title="aaai2020"> [conference] </a> <a href= "{{ site.baseurl }}/posters/aaai20-poster.pdf" title= "aaai20poster"> [poster] </a></span>{: .tab}
+<span>[C4]</span>{: .blue .bold} <span>Attribute-Efficient Learning of Monomials over Highly-Correlated Variables</span>{: .papertitle}.<br/>
+<span>Alex Andoni\*, Rishabh Dudeja\*, Daniel Hsu\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/>
+<span>Algorithmic Learning Theory, March 2019. Oral Presentation.</span>{: .tab}<br/>
+<span><a href= "{{ site.baseurl }}/research/publications/alt19.pdf" title= "alt19"> [pdf] </a> <a href= "http://proceedings.mlr.press/v98/andoni19a.html" title= "alt19pmlr"> [pmlr] </a> <a href= "http://alt2019.algorithmiclearningtheory.org/accepted-papers/" title="alt"> [conference] </a> <a href= "{{ site.baseurl }}/posters/Columbia-Data-Science-Poster-2018-Vodrahalli.pdf" title= "columbia-fods18"> [poster] </a></span>{: .tab}
+
+<span>[C3]</span>{: .blue .bold} <span>A Large Self-Annotated Corpus for Sarcasm</span>{: .papertitle}.<br/> 
+<span>Mikhail Khodak, Nikunj Saunshi, **Kiran Vodrahalli**.</span>{: .tab}<br/> 
+<span>Language Resources and Evaluation, May 2018. Poster.</span>{: .tab}<br/> 
+<span><a href= "{{ site.baseurl }}/research/publications/lrec18.pdf" title= "lrec18"> [pdf] </a> <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/160.pdf" title="lrec18"> [conference] </a> <a href="https://arxiv.org/abs/1704.05579" title="lrec18_arxiv"> [arXiv] </a> [[dataset]](http://nlp.cs.princeton.edu/SARC/) [[code]](https://github.com/NLPrinceton/SARC)</span>{: .tab}
+
+<span>[C2]</span>{: .blue .bold} <span>A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs</span>{: .papertitle}.<br/> 
+<span>Sanjeev Arora\*, Mikhail Khodak\*, Nikunj Saunshi\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/> 
+<span>International Conference on Learning Representations, April 2018. Poster.</span>{: .tab}<br/> 
+<span><a href= "{{ site.baseurl }}/research/publications/iclr18.pdf" title= "iclr18"> [pdf] </a> [[blog]](http://www.offconvex.org/2018/06/25/textembeddings/) <a href= "{{ site.baseurl }}/research/publications/iclr18_abstract.pdf" title= "iclr18_abstract"> [abstract] </a> <a href="https://openreview.net/forum?id=B1e5ef-C-" title="iclr18"> [conference] </a> <a href="{{site.baseurl }}/posters/iclr18_poster.pdf" title="iclr18"> [poster] </a> [[embedding code]](https://https//github.com/NLPrinceton/text_embedding) [[recovery code]](https://https//github.com/NLPrinceton/sparse_recovery) [[word vectors]](http://nlp.cs.princeton.edu/DisC/)</span>{: .tab}
+
+<span>[C1]</span>{: .blue .bold} <span>A Temporal Decay Model for Mapping between fMRI and Natural Language Annotations</span>{: .papertitle}.<br/> 
+<span>**Kiran Vodrahalli**, Cathy Chen, Viola Mocz, Christopher Baldassano, Uri Hasson, Sanjeev Arora, Kenneth A. Norman.</span>{: .tab}<br/> 
+<span>Cognitive Computational Neuroscience, September 2017. Poster.</span>{: .tab}<br/> 
+<span><a href= "{{ site.baseurl }}/research/publications/ccn17.pdf" title= "ccn17"> [pdf] </a> <a href="https://www2.securecms.com/CCNeuro/docs-0/591d7d2668ed3f3154cce90a.pdf" title="ccn17"> [conference] </a> <a href="{{site.baseurl }}/posters/ccn17_poster.pdf" title="ccn17"> [poster] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)</span>{: .tab}
+
+<span>[J1]</span>{: .orange .bold} <span>Mapping between fMRI responses to movies and their natural language annotations</span>{: .papertitle}.<br/> 
+<span>**Kiran Vodrahalli**, Po-Hsuan Chen, Yingyu Liang, Christopher Baldassano, Janice Chen,</span>{: .tab}<br/>
+<span>Christopher Honey, Uri Hasson, Peter Ramadge, Kenneth A. Norman, Sanjeev Arora.</span>{: .tab}<br/> 
+<span>Neuroimage, June 2017.</span>{: .tab}<br/> 
+<span><a href= "{{ site.baseurl }}/research/publications/neuroimage17.pdf" title= "neuroimage17"> [pdf] </a> <a href="http://www.sciencedirect.com/science/article/pii/S1053811917305128" title="neuroimage"> [journal] </a> <a href="https://arxiv.org/abs/1610.03914" title="neuroimage_arxiv"> [arXiv] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)</span>{: .tab} 
+
 
 ---
 
 ## Workshop Publications
+
+<span>[W6]</span>{: .green .bold} <span>The Platform Design Problem</span>{: .papertitle}.<br/>
+<span>Christos Papadimitriou\*, **Kiran Vodrahalli**\*, Mihalis Yannakakis\*.</span>{: .tab}<br/>
+<span>[EC 2021 NetEcon Workshop](https://netecon21.gametheory.online/home), July 2021. Oral Presentation and Poster.</span>{: .tab}<br/>
+<span>(Note: same work as WINE '21 conference publication).</span>{: .tab}<br/>
+<span><a href= "{{ site.baseurl }}/research/publications/platform-design-problem.pdf" title= "PDP"> [pdf] </a> <a href="https://arxiv.org/abs/2009.06117" title="pdp_arxiv"> [arXiv] </a> <a href="{{site.baseurl }}/posters/ec21-poster.pdf" title="ec21-poster"> [poster] </a></span>{: .tab}
 
 <span>[W5]</span>{: .green .bold} <span>Learning to Plan with Logical Automata</span>{: .papertitle}.<br/> 
 <span>Brandon Araki\*, **Kiran Vodrahalli**\*, Cristian-Ioan Vasile, Daniela Rus.</span>{: .tab}<br/> 

@@ -7,9 +7,11 @@ title: links
 {:toc}
 
 
-This page holds links to notes, class webpages, research groups, blogs, code, and other people's webpages which I have found interesting and helpful. My brother is also involved in machine learning research, check out [his website](http://stanford.edu/~kailasv). 
+This page holds links to notes, class webpages, research groups, blogs, code, and other people's webpages which I have found interesting and helpful. My brother is also involved in machine learning research, check out [his website](http://stanford.edu/~kailasv/about). 
 
 ___
+
+<!--
  
 ### Collaborators 
 
@@ -35,9 +37,11 @@ ___
 
 ---
 
+--> 
+
 ### Research Groups
 
-* [Machine Learning @ Columbia](https://groups.google.com/forum/#!forum/machine-learning-columbia)
+* [Machine Learning @ Columbia](http://ml.cs.columbia.edu/)
 * [Theory @ Columbia](http://theory.cs.columbia.edu/)
 * [Dynamic Perception and Memory Lab @ Columbia](http://www.dpmlab.org/)
 * [Simons Foundations of Deep Learning](https://simons.berkeley.edu/programs/dl2019)
@@ -66,6 +70,7 @@ ___
 * [In Theory](https://lucatrevisan.wordpress.com/)
 * [TCS math](https://tcsmath.github.io/)
 * [What's New](https://terrytao.wordpress.com/)
+* [Holden Lee's Blog](http://holdenlee.github.io/blog)
 * [Columbia Advanced Machine Learning Seminar](https://casmls.github.io/)
 * [GeomBlog](http://blog.geomblog.org/)
 * [TheoryDish](https://theorydish.blog/)
@@ -91,6 +96,7 @@ ___
 
 ### Resources (Notes, Textbooks, Monographs, Classes, etc.)
 
+Note (Sept. 2021): There are some more recent courses/notes/books that I will add when I get a chance.
 
 <!-- all the statistical learning classes --> 
 
@@ -109,7 +115,7 @@ ___
 #### High-Dimensional Probability, Geometry, and Functional Analysis
 * [Probability in High Dimension (Ramon van Handel)](http://www.princeton.edu/~rvan/APC550.pdf)
 * [High Dimensional Probability (Roman Vershynin)](https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf)
-* [Introduction to the Non-Asymptotic Theory of Random Matrices (Roman Vershynin)](http://www-personal.umich.edu/~romanv/papers/non-asymptotic-rmt-plain.pdf)
+* [Introduction to the Non-Asymptotic Theory of Random Matrices (Roman Vershynin)](https://arxiv.org/abs/1011.3027)
 * [High Dimensional Probability (Phillipe Rigollet)](https://learning-modules.mit.edu/materials/index.html?uuid=/course/18/sp18/18.657#materials)
 * [Concentration Inequalities: A Nonasymptotic Theory of Independence (Boucheron, Lugosi, Massart)](https://www.hse.ru/data/2016/11/24/1113029206/Concentration%20inequalities.pdf)
 * [An Introduction to Matrix Concentration Inequalities (Joel Tropp)](http://users.cms.caltech.edu/~jtropp/books/Tro14-Introduction-Matrix-FnTML-rev.pdf)
@@ -137,9 +143,10 @@ ___
 * [Foundations of Machine Learning (Mohri, Rostamizadeh, and Talwalkar)](https://cs.nyu.edu/~mohri/mlbook/)
 * [Theoretical Machine Learning (Rob Schapire)](https://www.cs.princeton.edu/courses/archive/spring18/cos511/schedule.html)
 * [Machine Learning (Stanford CS 229)](http://cs229.stanford.edu/)
-* [Statistical Learning Theory (Percy Liang)](https://web.stanford.edu/class/cs229t/Lectures/percy-notes.pdf)
-* [A Course in Machine Learning (Hal Daumé III)](ciml.info)
-* [Statistical Learning Theory (Sham Kakade)](http://stat.wharton.upenn.edu/~skakade/courses/stat928/)
+* [Statistical Learning Theory (Percy Liang)](https://web.stanford.edu/class/cs229t/2017/Lectures/percy-notes.pdf)
+* [Patterns, Predictions, and Actions: A Story about Machine Learning (Moritz Hardt and Ben Recht)](https://mlstory.org/)
+* [A Course in Machine Learning (Hal Daumé III)](http://ciml.info)
+* [Statistical Learning Theory (Sham Kakade)](https://homes.cs.washington.edu/~sham/courses/stat928/index.html)
 * [Introduction to Computational Learning Theory (Rocco Servedio)](http://www.cs.columbia.edu/~cs4252/)
 * [Computational and Statistical Learning Theory (Nati Srebro)](http://ttic.uchicago.edu/~nati/Teaching/TTIC31120/2016/)
 * [Boosting: Foundations and Algorithms (Robert Schapire and Yoav Freund)](https://mitpress.mit.edu/books/boosting)
@@ -156,7 +163,7 @@ ___
 * [Information Theory and Statistics (John Duchi)](https://web.stanford.edu/class/stats311/)
 * [Theoretical Statistics I (Berkeley Stat 210a)](https://www.stat.berkeley.edu/~wfithian/courses/stat210a/)
 * [Theoretical Statistics II (Berkeley Stat 210b)](https://www.stat.berkeley.edu/~mjwain/stat210b/)
-* [Sparsity, Structure, and Inference (Yuxin Chen)](http://www.princeton.edu/~yc5/ele538b_sparsity/)
+* [Sparsity, Structure, and Inference (Yuxin Chen)](https://yuxinchen2020.github.io/ele538b_sparsity/)
 * [Inference, Estimation, and Information Processing (Andrea Montanari)](http://web.stanford.edu/class/ee378b/ee378b.html)
 * [Large Scale Inference: Empirical Bayes for Estimation, Testing, and Prediction (Efron)](https://statweb.stanford.edu/~ckirby/brad/LSI/monograph_CUP.pdf)
 * [A Survey on Distribution Testing: Your Data is Big. But is it Blue? (Canonne)](https://pdfs.semanticscholar.org/9970/1b16ffe5fb8e89ccbfa99a39c8e0ecda12d5.pdf)
@@ -170,6 +177,8 @@ ___
 * [Online Methods in Machine Learning (Sasha Rakhlin)](http://www.mit.edu/~rakhlin/6.883/)
 * [The Algorithmic Foundations of Differential Privacy (Cynthia Dwork and Aaron Roth)](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf)
 * [The Algorithmic Foundations of Adaptive Data Analysis (Aaron Roth)](https://adaptivedataanalysis.com/about/)
+* [Reinforcement Learning: Theory and Algorithms (Alekh Agarwal, Nan Jiang, Sham Kakade, Wen Sun)](https://rltheorybook.github.io/)
+* [Introduction to Multi-Arm Bandits (Alex Slivkins)](https://arxiv.org/abs/1904.07272)
 * [Reinforcement Learning (Shipra Agrawal)](https://ieor8100.github.io/rl/)
 * [Dynamic Programming and Reinforcement Learning (Daniel Russo)](https://djrusso.github.io/RLCourse/)
 * [Learning and Optimization for Sequential Decision Making (Shipra Agrawal)](https://agrawal.wikischolars.columbia.edu/Lecture+Notes+and+references)
@@ -178,7 +187,7 @@ ___
 * [Bandit Algorithms (Lattimore and Szepesvari)](http://downloads.tor-lattimore.com/banditbook/book.pdf)
 * [From Bandits to Monte-Carlo Tree Search: The Optimistic Principle Applied to Optimization and Planning (Munos)](https://www.nowpublishers.com/article/Details/MAL-038)
 * [Sébastien Bubeck's YouTube Channel](https://www.youtube.com/channel/UC-UC-nE8B33UGnC-NRaSfug)
-* [Reinforcement Learning (Sutton and Barto, 2018 edition)](https://drive.google.com/file/d/1xeUDVGWGUUv1-ccUMAZHJLej2C7aAFWY/view)
+* [Reinforcement Learning (Sutton and Barto, 2018 edition)](http://incompleteideas.net/book/bookdraft2017nov5.pdf)
 * [A Tour of Reinforcement Learning: The View from Continuous Control (Recht)](https://arxiv.org/pdf/1806.09460.pdf)
 * [Algorithms for Reinforcement Learning (Csaba Szepesvári)](https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf)
 * [Deep Reinforcement Learning (Sergey Levine)](http://rail.eecs.berkeley.edu/deeprlcourse/)
@@ -193,11 +202,26 @@ ___
 * [Algorithmic Aspects of ML (Rong Ge)](https://www2.cs.duke.edu/courses/fall16/compsci590.2/)
 * [New Directions in Theoretical ML (Sanjeev Arora)](https://www.cs.princeton.edu/courses/archive/fall17/cos597A/)
 * [Ten Lectures and Forty-Two Open Problems in the Mathematics of Data Science (Afonso Bandeira)](https://cims.nyu.edu/~bandeira/TenLecturesFortyTwoProblems.pdf)
+* [Theoretical Foundations of Machine Learning (Nika Haghtalab)](https://www.cs.cornell.edu/courses/cs6781/2020sp/)
 * [Advanced Machine Learning (Daniel Hsu)](http://www.cs.columbia.edu/~djhsu/coms4772-f16/)
 * [Linear Dimensionality Reduction: Survey, Insights, Generalizations (Cunningham and Ghahramani)](http://jmlr.org/papers/v16/cunningham15a.html)
 * [Unsupervised Learning (Nakul Verma)](http://www.cs.columbia.edu/~verma/classes/uml/index.html)
 * [Unsupervised Learning: Theory and Practice (Elad Hazan)](http://www.cs.princeton.edu/courses/archive/spring17/cos598E/)
 * [Community Detection Survey (Emmanuel Abbe)](http://www.princeton.edu/~eabbe/publications/abbe_FNT_2.pdf)
+* [Learning-Augmented Algorithms (Piotr Indyk, Costis Daskalakis)](https://stellar.mit.edu/S/course/6/sp19/6.890/materials.html)
+
+#### Algorithmic Game Theory
+* [Algorithmic Game Theory (Tim Roughgarden)](http://timroughgarden.org/f13/f13.html)
+* [Algorithmic Game Theory (Eva Tardos)](https://www.cs.cornell.edu/courses/cs6840/2017sp/)
+* [Incentives in Computer Science (Tim Roughgarden)](http://www.cs.columbia.edu/~tr/s20/s20.html)
+* [Foundations of Blockchains (Tim Roughgarden)](https://timroughgarden.github.io/fob21/)
+* [Topics in Algorithmic Game Theory: Algorithmic Game Theory and Data Science (Costis Daskalakis, Vasilis Syrgkanis)](https://stellar.mit.edu/S/course/6/sp19/6.853/index.html)
+* [Games, Decisions, and Computation (Costis Daskalakis)](https://stellar.mit.edu/S/course/6/sp15/6.891/index.html)
+* [Twenty Lectures on Algorithmic Game Theory (Tim Roughgarden)](https://www.cambridge.org/core/books/twenty-lectures-on-algorithmic-game-theory/A9D9427C8F43E7DAEF8C702755B6D72B)
+* [Game Theory, Alive (Anna Karlin and Yuval Peres)](https://homes.cs.washington.edu/~karlin/GameTheoryBook.pdf)
+* [Algorithmic Game Theory (NRTV)](http://www.cs.cmu.edu/~sandholm/cs15-892F13/algorithmic-game-theory.pdf)
+
+
 
 #### Theoretical Computer Science
 * [Introduction to Algorithms (CLRS)](https://mitpress.mit.edu/books/introduction-algorithms)
@@ -206,6 +230,12 @@ ___
 * [Algorithms through Geometric Lens (Alex Andoni and Ilya Razenshteyn)](https://ilyaraz.org/static/class/materials.html)
 * [Algorithms through Geometric Lens (2018) (Ilya Razenshteyn)](https://ilyaraz.org/static/class_2018/)
 * [Advanced Algorithms (Ankur Moitra)](http://people.csail.mit.edu/moitra/854.html)
+* [Randomized Algorithms (Tim Roughgarden)](http://timroughgarden.org/f19/f19.html)
+* [Beyond Worst Case Analysis (Tim Roughgarden)](http://timroughgarden.org/w17/w17.html)
+* [The Modern Algorithmic Toolbox (Greg Valiant)](http://web.stanford.edu/class/cs168/index.html)
+* [Communication Complexity for Algorithm Designers (Tim Roughgarden)](http://timroughgarden.org/w15/w15.html)
+* [The Structure of Information Networks (Jon Kleinberg)](https://www.cs.cornell.edu/courses/cs6850/2021fa/)
+* [A Second Course in Algorithms (Tim Roughgarden)](http://timroughgarden.org/w16/w16.html)
 * [Simons Institute Video Lectures](https://www.youtube.com/user/SimonsInstitute)
 * [Mathematics and Computation (Avi Widgerson)](https://www.math.ias.edu/files/mathandcomp.pdf)
 * [Spectral Graph Theory (Dan Spielman)](http://www.cs.yale.edu/homes/spielman/561/)
@@ -218,6 +248,7 @@ ___
 * [Algorithms and Complexity (Harvard CS 125)](http://people.seas.harvard.edu/~cs125/)
 * [Lx = b (Nisheeth Vishnoi)](http://theory.epfl.ch/vishnoi/Lxb-Web.pdf)
 * [Lecture Notes on Metric Embeddings (Jirí Matousek)](https://kam.mff.cuni.cz/~matousek/ba-a4.pdf)
+* [P ?= NP (Scott Aaronson)](https://www.scottaaronson.com/papers/pnp.pdf)
 * [Entropy Optimality (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cse599swi16/)
 * [Sketching as a Tool for Numerical Linear Algebra (David Woodruff)](http://www.cs.cmu.edu/afs/cs/user/dwoodruf/www/wNow3.pdf)
 * [Sketching Algorithms for Big Data (Jelani Nelson)](https://www.sketchingbigdata.org/fall17/)
@@ -235,28 +266,26 @@ ___
 * [Discrete Optimization (Gärtner)](https://people.inf.ethz.ch/gaertner/subdir/teaching/lecture_notes/do.pdf)
 * [Geometry: Combinatorics and Algorithms (GHW)](https://people.inf.ethz.ch/gaertner/subdir/teaching/lecture_notes/gca14-full.pdf)
 * [Geometric Random Walks: A Survey (Santosh Vempala)](https://www.cc.gatech.edu/~vempala/papers/survey.pdf)
-* [Randomness and Computation (Alistair Sinclair)](https://people.eecs.berkeley.edu/~sinclair/cs271/s18.html)
+* [Randomness and Computation (Alistair Sinclair)](https://people.eecs.berkeley.edu/~sinclair/cs271/s20.html)
 * [Randomized Algorithms and Probabilistic Analysis (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cse525au16/index.html)
 * [Randomized Algorithms (David Karger)](https://courses.csail.mit.edu/6.856/current/)
-* [Combinatorial Optimization: Exact and Approximate Algorithms (Luca Trevisan)](https://people.eecs.berkeley.edu/~luca/books/cs261.pdf)
+* [Combinatorial Optimization: Exact and Approximate Algorithms (Luca Trevisan)](https://theory.stanford.edu/~trevisan/books/cs261.pdf)
 * [Notes on Randomized Algorithms (James Aspnes)](http://cs-www.cs.yale.edu/homes/aspnes/classes/469/notes.pdf)
 * [Applied Algorithms (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cseP521wi17/index.html)
 * [Spectral Algorithms (Ravi Kannan and Santosh Vempala)](https://www.cc.gatech.edu/~vempala/spectralbook.pdf)
 * [Advanced Approximation Algorithms (Anupam Gupta and Ryan O'Donnell)](https://www.cs.cmu.edu/~anupamg/adv-approx/)
 * [Approximate Nearest Neighbor Search in High Dimensions (Andoni, Indyk, Razenshteyn)](https://arxiv.org/pdf/1806.09823.pdf)
 * [Seminar on Learning Algorithms (Embeddings) (Sanjoy Dasgupta)](https://cseweb.ucsd.edu/~dasgupta/254-embeddings/)
-* [Lecture Notes on Graph Partitioning, Expanders, and Spectral Methods (Luca Trevisan)](https://people.eecs.berkeley.edu/~luca/books/expanders-2016.pdf)
+* [Lecture Notes on Graph Partitioning, Expanders, and Spectral Methods (Luca Trevisan)](https://lucatrevisan.github.io/books/expanders-2016.pdf)
 * [Expander Graphs and their Applications (Hoory, Linial, Widgerson)](http://www.cs.huji.ac.il/~nati/PAPERS/expander_survey.pdf)
 * [Proofs, Beliefs and Algorithms through the lens of Sum-of-Squares (Boaz Barak and David Steurer)](http://www.sumofsquares.org/public/index.html)
 * [Sum-of-Squares Proofs and the Quest Toward Optimal Algorithms (Boaz Barak and David Steurer)](https://arxiv.org/pdf/1404.5236.pdf)
-* [Sum of Squares (Prasad Raghavendra)](http://people.eecs.berkeley.edu/~prasad/fall2018/sos.html)
+* [The Sum-of-Squares Algorithmic Paradigm in Statistics (Tselil Schramm)](https://tselil.github.io/)
 * [On the Unique Games Conjecture (Subhash Khot)](https://cs.nyu.edu/~khot/papers/UGCSurvey.pdf)
 * [Physics and Computation (Boaz Barak and Tselil Schramm)](https://www.boazbarak.org/fall18seminar/)
 * [Information Theory in Theoretical Computer Science (Omri Weinstein)](http://infotheorytcs.wikischolars.columbia.edu/)
 * [Information Theory in Computer Science (Madhu Sudan)](http://people.seas.harvard.edu/~madhusudan/courses/Spring2016/)
 * [Essential Coding Theory (Madhu Sudan)](http://people.seas.harvard.edu/~madhusudan/courses/Spring2017/)
-* [Game Theory, Alive (Anna Karlin and Yuval Peres)](https://homes.cs.washington.edu/~karlin/GameTheoryBook.pdf)
-* [Algorithmic Game Theory (NRTV)](http://www.cs.cmu.edu/~sandholm/cs15-892F13/algorithmic-game-theory.pdf)
 * [Theory of Computing Online Journal](http://theoryofcomputing.org/index.html)
 
 #### Optimization
@@ -269,11 +298,11 @@ ___
 * [Introduction to Online Convex Optimization (Elad Hazan)](http://ocobook.cs.princeton.edu/OCObook.pdf)
 * [Interplay between Convex Optimization and Geometry (Yin Tat Lee)](http://yintat.com/cse599_winter2018/)
 * [Convex Optimization and Approximation (Moritz Hardt)](https://ee227c.github.io/)
-* [Lectures on Modern Convex Optimization (Tal and Nemirovski)](https://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf)
+* [Lectures on Modern Convex Optimization (Tal and Nemirovski)](https://www2.isye.gatech.edu/~nemirovs/LMCO_LN.pdf)
 * [Mathematical Programming I (Damek Davis)](https://people.orie.cornell.edu/dsd95/orie6300.html)
 * [Semidefinite Optimization (Laurent and Vallentin)](http://www.mi.uni-koeln.de/opt/wp-content/uploads/2015/10/laurent_vallentin_sdo_2012_05.pdf)
 * [Convex Optimization II (John Duchi)](http://web.stanford.edu/class/ee364b/index.html)
-* [Large Scale Optimization for Data Science (Yuxin Chen)](http://www.princeton.edu/~yc5/ele538_optimization/)
+* [Large Scale Optimization for Data Science (Yuxin Chen)](https://yuxinchen2020.github.io/ele522_optimization/)
 * [Competitive Analysis via Convex Optimization (James Lee)](https://homes.cs.washington.edu/~jrl/teaching/cse599I-spring-2018/)
 * [Proximal Algorithms (Parikh and Boyd)](http://web.stanford.edu/~boyd/papers/pdf/prox_algs.pdf)
 * [Convex and Conic Optimization (Amir Ali Ahmadi)](http://aaa.princeton.edu/orf523)
@@ -283,7 +312,7 @@ ___
 #### Graphical Models and Bayesian Inference
 * [Foundations of Graphical Models 2018 (Dave Blei)](http://www.cs.columbia.edu/~blei/fogm/2018F/)
 * [Foundations of Graphical Models 2016 (Dave Blei)](http://www.cs.columbia.edu/~blei/fogm/2016F/)
-* [Bayesian Models for Machine Learning (John Paisley)](http://www.columbia.edu/~jwp2128/Teaching/E6720/BayesianModelsMachineLearning2016.pdf)
+* [Bayesian Models for Machine Learning (John Paisley)](http://www.columbia.edu/~jwp2128/Teaching/BML_lecture_notes.pdf)
 * [Probabilistic Graphical Models (Koller and Friedman)](https://mitpress.mit.edu/books/probabilistic-graphical-models)
 * [Elements of Causal Inference (Peters, Janzing, and Schölkopf)](https://mitpress.mit.edu/books/elements-causal-inference) (note, open access!)
 * [Graphical Models, Exponential Families, and Variational Inference (Martin Wainwright and Michael Jordan)](https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf)
@@ -311,7 +340,6 @@ ___
 * [Natural Language Processing (Jacob Eisenstein)](https://github.com/jacobeisenstein/gt-nlp-class)
 
 #### Neuroscience 
-* [Computation and the Brain (Christos Papadimitriou)](https://computationandbrain.github.io/about/)
 * [Computation and the Brain (Santosh Vempala)](https://computationandbrain.wordpress.com/)
 * [Simons Spring 2018 Program on The Brain and Computation](https://simons.berkeley.edu/programs/brain2018)
 * [Computational Cognitive Science (Tenenbaum)](https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-66j-computational-cognitive-science-fall-2004/)
@@ -335,7 +363,7 @@ ___
 * [Thirty-three Miniatures: Mathematical and Algorithmic Applications of Linear Algebra (Matousek)](https://kam.mff.cuni.cz/~matousek/stml-53-matousek-1.pdf)
 * [Linear Algebra Done Right (Axler)](http://linear.axler.net/)
 * [Advanced Linear Algebra (Roman)](https://www.springer.com/us/book/9780387728285)
-* [Matrix Computations (Golub and Van Loan)](http://web.mit.edu/ehliu/Public/sclark/Golub%20G.H.,%20Van%20Loan%20C.F.-%20Matrix%20Computations.pdf)
+* [Matrix Computations (Golub and Van Loan)](http://math.ecnu.edu.cn/~jypan/Teaching/books/2013%20Matrix%20Computations%204th.pdf)
 * [Matrix Analysis (Horn and Johnson)](http://www.cambridge.org/us/academic/subjects/mathematics/algebra/matrix-analysis-2nd-edition?format=PB&isbn=9780521839402#IIBBbEAyHTdq2c6M.97)
 * [Topics in Matrix Analysis (Horn and Johnson)](https://www.cambridge.org/core/books/topics-in-matrix-analysis/B988495A235F1C3406EA484A2C477B03)
 
@@ -345,7 +373,7 @@ ___
 * [Principles of Mathematical Analysis (Rudin)](https://www.amazon.com/Principles-Mathematical-Analysis-International-Mathematics/dp/007054235X)
 * [An Introduction to Measure Theory (Terry Tao)](https://terrytao.files.wordpress.com/2011/01/measure-book1.pdf)
 * [Probability Theory (Allan Sly)](https://web.math.princeton.edu/~asly/MAT385.html)
-* [Probability: Theory and Examples (Durrett)](https://services.math.duke.edu/~rtd/PTE/PTE4_1.pdf)
+* [Probability: Theory and Examples (Durrett)](https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf)
 * [Probability with Martingales (David Williams)](https://www.cambridge.org/core/books/probability-with-martingales/B4CFCE0D08930FB46C6E93E775503926)
 * [Probability and Stochastics (Erhan Çinlar)](https://www.springer.com/us/book/9780387878584)
 * [Stochastic Calculus, Filtering, and Control (Ramon van Handel)](https://pdfs.semanticscholar.org/c92f/e13f860c95ed6ff8c517ff423e07935575ae.pdf)
@@ -359,8 +387,8 @@ ___
 * [Combinatorial Mathematics (van Zwam)](https://www.math.lsu.edu/~svanzwam/pdf/notes.pdf)
 * [Generatingfunctionology (Wilf)](https://www.math.upenn.edu/~wilf/gfology2.pdf)
 * [Introduction to Graph Theory (West)](https://faculty.math.illinois.edu/~west/igt/)
-* [Topics in Combinatorics: The Probabilistic Method (Noga Alon)](https://web.math.princeton.edu/~nalon/prob.html)
-* [The Probabilistic Method (Alon and Spencer)](https://www.wiley.com/en-us/The+Probabilistic+Method%2C+3rd+Edition-p-9780470170205)
+* [Topics in Combinatorics: The Probabilistic Method (Noga Alon)](https://web.math.princeton.edu/~nalon/prob1.html)
+* [The Probabilistic Method (Alon and Spencer)](https://www.wiley.com/en-us/The+Probabilistic+Method%2C+4th+Edition-p-9781119061953)
 * [Modern Graph Theory (Bela Bollobas)](https://www.springer.com/us/book/9780387984889)
 * [Introduction to Random Graphs (Frieze and Karonski)](https://www.math.cmu.edu/~af1p/BOOK.pdf)
 
@@ -379,7 +407,7 @@ ___
 * [Basic Category Theory (Leinster)](https://arxiv.org/abs/1612.09375)
 
 #### Functional Programming and Programming Languages
-* [Types and Programming Languages (Pierce)](https://www.asc.ohio-state.edu/pollard.4/type/books/pierce-tpl.pdf)
+* [Types and Programming Languages (Pierce)](https://www.cis.upenn.edu/~bcpierce/tapl/)
 * [Functional Programming (David Walker)](http://www.cs.princeton.edu/courses/archive/fall13/cos326/)
 * [Programming Languages (David Walker)](http://www.cs.princeton.edu/~dpw/cos441-11/schedule.htm)
 * [Learn You a Haskell](http://learnyouahaskell.com/chapters)
@@ -390,7 +418,7 @@ ___
 * [How to become a good theoretical physicist (Hooft)](http://www.goodtheorist.science/)
 * [The theoretical minimum (Susskind)](http://theoreticalminimum.com/courses)
 * [Perimeter Institute Videos](https://www.perimeterinstitute.ca/video-library)
-* [Concepts in Theoretical Physics (Baumann)](http://www.damtp.cam.ac.uk/user/db275/concepts/Lectures.pdf)
+* Concepts in Theoretical Physics: Mathematical Tripos (Daniel Baumann)
 * [Heidelberg Theoretical Physics Lecture Notes (Hefft)](http://www.thphys.uni-heidelberg.de/index.php?lang=e&n1=courses&n2=scripts)
 * [Lectures on Theoretical Physics (Tong)](http://www.damtp.cam.ac.uk/user/tong/teaching.html)
 
@@ -457,6 +485,8 @@ ___
 * [Vim Cheatsheet](https://vim.rtorr.com/)
 
 #### Other Compilations
+* [Tim Roughgarden's lecture notes](http://timroughgarden.org/notes.html)
+* [Tim Roughgarden's lectures](https://www.youtube.com/channel/UCcH4Ga14Y4ELFKrEYM1vXCg)
 * [Holden Lee's notes](https://holdenlee.github.io/blog/notes.html) (there are a lot!!!)
 * [Arun Debray's notes](https://www.ma.utexas.edu/users/a.debray/lecture_notes/) (there are also a lot!!)
 * [Karl Stratos' notes](http://karlstratos.com/notes/)
@@ -476,10 +506,14 @@ ___
 * [Princeton ML Codebase](https://github.com/PrincetonML)
 * [Allen NLP Codebase](https://allennlp.org/)
 * [Harvard NLP Codebase](http://nlp.seas.harvard.edu/code/)
-* [BrainIAK](brainiak.org)
+* [BrainIAK](http://brainiak.org)
 * [CVXOPT](https://cvxopt.org/)
 * [OpenAI Gym](https://gym.openai.com/)
+* [Tensorflow](https://www.tensorflow.org/learn)
+* [Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb#recent=true)
 * [PyTorch](https://pytorch.org/)
+* [HuggingFace](https://huggingface.co/)
+* [Jax](https://jax.readthedocs.io/en/latest/notebooks/autodiff_cookbook.html)
 * [scikit-learn](http://scikit-learn.org/stable/index.html)
 
 

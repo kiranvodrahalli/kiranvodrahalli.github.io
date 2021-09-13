@@ -24,7 +24,9 @@ ___
 
 ### Mentorship
 
-* Spring 2017: Advised the junior independent work of [Cathy Chen](https://cchen23.github.io/) (COS '18) and [Viola Mocz](https://psychology.yale.edu/people/viola-mocz) (NEU '18) in neuroscience with Professor [Ken Norman](https://pni.princeton.edu/faculty/kenneth-norman) at Princeton
+* Summer 2021: Advisor for the Algorithmic Game Theory topic in the [Columbia Undergraduate Theoretical CS Seminar](https://theory.cs.columbia.edu/undergrad-tcs-seminar.html), and designed the seminar syllabus.
+
+* Spring 2017: Advised the junior independent work of [Cathy Chen](https://cchen23.github.io/) (COS '18) and [Viola Mocz](https://psychology.yale.edu/people/viola-mocz) (NEU '18) in neuroscience with Professor [Ken Norman](https://pni.princeton.edu/faculty/kenneth-norman) at Princeton.
 * Spring 2014 --- Fall 2016: Seminar Leader for the NLP-ML Reading Group with [Dr. Christiane Fellbaum](https://www.cs.princeton.edu/~fellbaum/) at Princeton
 
 
