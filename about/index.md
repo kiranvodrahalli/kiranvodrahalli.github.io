@@ -15,7 +15,33 @@ redirect_from:
 <!-- add picture --> 
 ![image-title-here]({{site.baseurl}}/public/kiran-profile.jpg){:class="img-responsive" .element height="30%" width="30%"} 
 
-### Update
+
+### Currently...
+
+I am a [Computer Science](http://www.cs.columbia.edu/) Ph.D. student at Columbia University, focusing on theoretical computer science, with particular interest in machine learning, algorithms, and statistics. My thesis topic is resource-efficient (sparse/ low-memory / low-rank) machine learning. I am extremely fortunate to \\
+be advised by [Professor Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Professor Alex Andoni](http://www.mit.edu/~andoni/). I have been supported by an NSF Graduate Research Fellowship. 
+
+I am also a part-time student researcher at Google Brain in Fall 2021.
+
+Affiliations:
+* [Columbia CS Theory](http://theory.cs.columbia.edu/) 
+* [Columbia Machine Learning](https://ml.cs.columbia.edu/)
+* [Google Brain Research](https://research.google/teams/brain/)
+
+Other Info: 
+* [Email](mailto:kiran.vodrahalli@columbia.edu)
+* [Twitter](https://twitter.com/kiranvodrahalli)
+* [Github](https://github.com/kiranvodrahalli)
+* [GoodReads](https://www.goodreads.com/review/list/6132224)
+* [LinkedIn](https://www.linkedin.com/in/kiranvodrahalli/)
+* [Quora](https://www.quora.com/profile/Kiran-Vodrahalli)
+
+For more details, either check out this website or see my <a href="{{ site.baseurl }}/about/cv.pdf" title="cv"> [CV] </a>. 
+
+
+---
+
+### News
 
 I am currently looking for postdoctoral and research positions starting in Fall 2022; I am interested in both applied and theoretical (or some mix thereof) research in machine learning (see my <a href="{{ site.baseurl }}/about/cv.pdf" title="cv"> [CV] </a> ). 
 I am interested in focusing on one of the following topics in my next role: 
@@ -40,30 +66,6 @@ and applications to internet economics and reinforcement learning
 
 
 Please [email me](mailto:kiran.vodrahalli@columbia.edu) if you think we might have some aligned interests!
-
-
-### Currently...
-
-I am a [Computer Science](http://www.cs.columbia.edu/) Ph.D. student at Columbia University, focusing on theoretical computer science, with particular interest in machine learning, algorithms, and statistics. My thesis topic is resource-efficient (sparse/ low-memory / low-rank) machine learning. I am extremely fortunate to \\
-be advised by [Professor Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Professor Alex Andoni](http://www.mit.edu/~andoni/). I have been supported by an NSF Graduate Research Fellowship. 
-
-I am also a part-time student researcher at Google Brain in Fall 2021.
-
-Affiliations:
-* [Columbia CS Theory](http://theory.cs.columbia.edu/) 
-* [Columbia Machine Learning](https://ml.cs.columbia.edu/)
-* [Google Brain Research](https://research.google/teams/brain/)
-
-Other Info: 
-* [Email](mailto:kiran.vodrahalli@columbia.edu)
-* [Twitter](https://twitter.com/kiranvodrahalli)
-* [Github](https://github.com/kiranvodrahalli)
-* [GoodReads](https://www.goodreads.com/review/list/6132224)
-* [LinkedIn](https://www.linkedin.com/in/kiranvodrahalli/)
-* [Quora](https://www.quora.com/profile/Kiran-Vodrahalli)
-
-For more details, either check out this website or see my <a href="{{ site.baseurl }}/about/cv.pdf" title="cv"> [CV] </a>. 
-
 
 ---
 
