@@ -18,7 +18,7 @@ redirect_from:
 
 ### Currently...
 
-I am a [Computer Science](http://www.cs.columbia.edu/) Ph.D. student at Columbia University, focusing on theoretical computer science, with particular interest in machine learning, algorithms, and statistics. My thesis topic is resource-efficient (sparse/ low-memory / low-rank) machine learning. I am extremely fortunate to \\
+I am a [Computer Science](http://www.cs.columbia.edu/) Ph.D. student at Columbia University, focusing on theoretical computer science, with particular interest in machine learning, algorithms, and statistics. My thesis topic is resource-efficient (sparse/ low-memory / low-rank) machine learning. I am fortunate to \\
 be advised by [Professor Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Professor Alex Andoni](http://www.mit.edu/~andoni/). I have been supported by an NSF Graduate Research Fellowship. 
 
 I am also a part-time student researcher at Google Brain in Fall 2021.
