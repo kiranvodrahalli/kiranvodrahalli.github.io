@@ -47,9 +47,10 @@ I am currently looking for postdoctoral and research positions starting in Fall 
 I am interested in focusing on one of the following topics in my next role: 
 
 #### Memory Bounded and Resource Efficient Learning
-* memory-bounded and resource-efficient bandit/reinforcement learning
-* memory-bounded and resource-efficient language modeling and understanding
-* memory-bounded and resource-efficient representation learning
+* memory-bounded and resource-efficiency aspects of
+	* bandit/reinforcement learning
+	* language modeling and understanding
+	* representation learning
 
 #### Learning and Algorithmic Game Theory (see [The Platform Design Problem](https://arxiv.org/abs/2009.06117))
 * game theoretic analysis of bi-level environment design \\
