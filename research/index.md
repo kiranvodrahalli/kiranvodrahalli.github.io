@@ -36,7 +36,7 @@ ___
 <span>[C9]</span>{: .blue .bold} <span>The Platform Design Problem</span>{: .papertitle}.<br/>
 <span>Christos Papadimitriou\*, **Kiran Vodrahalli**\*, Mihalis Yannakakis\*.</span>{: .tab}<br/>
 <span>WINE Conference on Internet and Web Economics, December 2021. Oral Presentation.</span>{: .tab}<br/>
-<span><a href= "{{ site.baseurl }}/research/publications/wine21.pdf" title= "PDP"> [pdf] </a> <a href="https://arxiv.org/abs/2009.06117" title="pdp_arxiv"> [arXiv] </a> <a href="{{site.baseurl }}/posters/ec21-poster.pdf" title="ec21-poster"> [poster] </a></span>{: .tab}
+<span><a href= "{{ site.baseurl }}/research/publications/wine21.pdf" title= "PDP"> [pdf] </a> <a href="https://arxiv.org/abs/2009.06117" title="pdp_arxiv"> [arXiv] </a> <a href="{{site.baseurl }}/posters/ec21-poster.pdf" title="ec21-poster"> [poster] </a> <a href="https://hpi.de/wine2021/accepted-papers/" title="wine21-link"> [conference] </a></span>{: .tab}
 
 <span>[J2]</span>{: .orange .bold} <span>Learning and Planning with Logical Automata</span>{: .papertitle}.<br/> 
 <span>Brandon Araki, **Kiran Vodrahalli**, Thomas Leech, Cristian-Ioan Vasile, Mark Donahue, Daniela Rus.</span>{: .tab}<br/>
