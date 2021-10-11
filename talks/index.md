@@ -10,6 +10,10 @@ ___
 
 ### Research Talks
 
+October 2021: Google Learning Theory Group Invited Talk.<br/>
+<span>The Platform Design Problem</span>{:.papertitle}.<br/>
+<a href="{{site.baseurl}}/talks/google-learning-theory-fall21.pptx" title="google-learning-theory-2021-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/google-learning-theory-fall21.pdf" title="google-learning-theory2021-slides"> [slides-pdf] </a>
+
 July 2021: EC 2021 NetEcon Workshop Oral Presentation.<br/>
 <span>The Platform Design Problem</span>{:.papertitle}.<br/>
 <a href="https://netecon21.gametheory.online/program-and-accepted-papers" title="netecon21">
