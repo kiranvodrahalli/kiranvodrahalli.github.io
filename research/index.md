@@ -94,6 +94,12 @@ ___
 
 ## Workshop Publications
 
+<span>[W7]</span>{: .green .bold} <span>The Platform Design Problem</span>{: .papertitle}.<br/>
+<span>Christos Papadimitriou\*, **Kiran Vodrahalli**\*, Mihalis Yannakakis\*.</span>{: .tab}<br/>
+<span>[Strategic ML 2021 NeurIPS Workshop](https://www.strategic-ml.com/accepted-papers), December 2021. Spotlight Oral Presentation (top 10%) and Poster.</span>{: .tab}<br/>
+<span>(Note: same work as WINE '21 conference publication).</span>{: .tab}<br/>
+<span><a href= "{{ site.baseurl }}/research/publications/platform-design-problem.pdf" title= "PDP"> [pdf] </a> <a href="https://arxiv.org/abs/2009.06117" title="pdp_arxiv"> [arXiv] </a> <a href="{{site.baseurl }}/posters/ec21-poster.pdf" title="ec21-poster"> [poster] </a></span>{: .tab}
+
 <span>[W6]</span>{: .green .bold} <span>The Platform Design Problem</span>{: .papertitle}.<br/>
 <span>Christos Papadimitriou\*, **Kiran Vodrahalli**\*, Mihalis Yannakakis\*.</span>{: .tab}<br/>
 <span>[EC 2021 NetEcon Workshop](https://netecon21.gametheory.online/home), July 2021. Oral Presentation and Poster.</span>{: .tab}<br/>
