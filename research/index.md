@@ -16,16 +16,22 @@ title: research
 Also see my [Google Scholar](https://scholar.google.com/citations?user=fHYRTzMAAAAJ&hl=en) and [ArXiv](https://arxiv.org/search/?searchtype=author&query=Vodrahalli%2C+K) pages (these may be incomplete).  
 
 Some of my papers have authors listed in alphabetical order (standard for theory papers).<br/>
-Therefore, I use \* to denote co-authorship to avoid confusion. 
+Therefore, I use \* to denote equal authorship to avoid confusion. 
 
 ___
 
-<!--
+
 ## Preprints
+
+<span>[P1]</span>{: .red .bold} <span>Algorithms for Efficiently Learning Low-Rank Neural Networks</span>{: .papertitle}.<br/>
+<span>**Kiran Vodrahalli**, Rakesh Shivanna, Maheswaran Sathiamoorthy, Sagar Jain, Ed H. Chi.</span>{: .tab}<br/>
+<span><a href="https://arxiv.org/abs/2202.00834" title="lowrank_nn_arxiv"> [arXiv] </a> </span>{: .tab}
+
+
 
 ---
 
--->
+
 
 ## Conference and Journal Publications 
  

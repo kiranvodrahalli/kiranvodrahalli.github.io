@@ -10,6 +10,28 @@ ___
 
 ### Research Talks
 
+February 2022: Graduating Bits at ITCS.<br/>
+<span> Graduating Bits Talk</span>{:.papertitle}.<br/>
+<a href="{{site.baseurl}}/talks/graduating_bits2022.pptx" title="graduating_bits2022.pptx"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/graduating_bits2022.pdf" title="graduating_bits2022-slides"> [slides-pdf] </a>
+<a href="https://youtu.be/gzKoK2S3qDo?t=269"> [YouTube video] </a>
+
+January 2022: Invited Talk at Simons Flatiron Center for Computational Mathematics.<br/>
+<span> Sparse and Low-Rank: Resource-Efficient Methods in Machine Learning</span>{:.papertitle}.<br/>
+<a href="{{site.baseurl}}/talks/ccm_talk.pptx" title="ccm_talk.pptx"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/ccm_talk.pdf" title="ccm_talk"> [slides-pdf] </a>
+
+December 2021: NeurIPS 2021 StratML Workshop Spotlight Oral Presentation.<br/>
+<span>The Platform Design Problem</span>{:.papertitle}.<br/>
+<a href="{{site.baseurl}}/talks/stratml_neurips21-slides.pptx" title="wine-2021-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/stratml_neurips21-slides.pdf" title="stratml_neurips21-slides"> [slides-pdf] </a> <a href="https://recorder-v3.slideslive.com/?share=54158&s=7f5934a3-b494-4748-a2bb-d9bf5d23f8d0"> [video] </a>
+
+December 2021: WINE 2021 Oral Presentation.<br/>
+<span>The Platform Design Problem</span>{:.papertitle}.<br/>
+<a href="{{site.baseurl}}/talks/WINE-fall21.pptx" title="wine-2021-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/WINE-fall21.pdf" title="wine2021-slides"> [slides-pdf] </a>
+
+November 2021: Google Algorithms Group Invited Talk.<br/>
+<span>The Platform Design Problem</span>{:.papertitle}.<br/>
+<a href="{{site.baseurl}}/talks/google-learning-theory-fall21.pptx" title="google-learning-theory-2021-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/google-learning-theory-fall21.pdf" title="google-learning-theory2021-slides"> [slides-pdf] </a> <a href="https://www.youtube.com/watch?v=eSqPok0eMaw"> [YouTube video] </a>
+
+
 October 2021: Google Learning Theory Group Invited Talk.<br/>
 <span>The Platform Design Problem</span>{:.papertitle}.<br/>
 <a href="{{site.baseurl}}/talks/google-learning-theory-fall21.pptx" title="google-learning-theory-2021-slides"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/google-learning-theory-fall21.pdf" title="google-learning-theory2021-slides"> [slides-pdf] </a>
