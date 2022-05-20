@@ -10,6 +10,30 @@ ___
 
 ### Research Talks
 
+May 2022: Invited Talk at Meta Research.<br/>
+<span> The Platform Design Problem</span>{:.papertitle}.
+
+May 2022: Invited Talk at Google Brain AutoML.<br/>
+<span> Nonlinear Initialization Methods for Low-Rank Neural Networks</span>{:.papertitle}.
+
+May 2022: Invited Talk at Berkeley Center for Human-Compatible Artificial Intelligence (CHAI) Seminar.<br/>
+<span> Controllable and Interpretable Agents: The Platform Design Problem and Beyond</span>{:.papertitle}.
+
+April 2022: Invited Talk at Google Research NYC.<br/>
+<span> Sparse and Low-Rank: Resource-Efficient Methods in Machine Learning</span>{:.papertitle}.
+
+February 2022: Invited Talk at Google Brain Neural Modeling Group Invited Talk.<br/>
+<span> Nonlinear Initialization Methods for Low-Rank Neural Networks</span>{:.papertitle}.
+
+February 2022: Invited Talk at Simons Flatiron Center for Computational Neuroscience.<br/>
+<span> Sparse and Low-Rank: Resource-Efficient Methods in Machine Learning</span>{:.papertitle}.
+
+February 2022: Invited Talk at Amazon AWS.<br/>
+<span> Nonlinear Initialization Methods for Low-Rank Neural Networks</span>{:.papertitle}.
+
+February 2022: Invited Talk at Simons Theory of Computing, Learning in Games Program, Equilibrium Computation and Machine Learning Reading Group.<br/>
+<span> The Platform Design Problem</span>{:.papertitle}.
+
 February 2022: Graduating Bits at ITCS.<br/>
 <span> Graduating Bits Talk</span>{:.papertitle}.<br/>
 <a href="{{site.baseurl}}/talks/graduating_bits2022.pptx" title="graduating_bits2022.pptx"> [slides-ppt] </a> <a href="{{site.baseurl}}/talks/graduating_bits2022.pdf" title="graduating_bits2022-slides"> [slides-pdf] </a>

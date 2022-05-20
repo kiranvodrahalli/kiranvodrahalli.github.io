@@ -23,7 +23,11 @@ ___
 
 ## Preprints
 
-<span>[P1]</span>{: .red .bold} <span>Algorithms for Efficiently Learning Low-Rank Neural Networks</span>{: .papertitle}.<br/>
+<span>[P2]</span>{: .red .bold} <span>History-Restricted Online Learning</span>{: .papertitle}.<br/>
+<span>Jon Schneider\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/>
+
+
+<span>[P1]</span>{: .red .bold} <span>Nonlinear Initialization Methods for Low-Rank Neural Networks</span>{: .papertitle}.<br/>
 <span>**Kiran Vodrahalli**, Rakesh Shivanna, Maheswaran Sathiamoorthy, Sagar Jain, Ed H. Chi.</span>{: .tab}<br/>
 <span><a href="https://arxiv.org/abs/2202.00834" title="lowrank_nn_arxiv"> [arXiv] </a> </span>{: .tab}
 
