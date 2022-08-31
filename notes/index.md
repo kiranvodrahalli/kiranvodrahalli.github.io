@@ -120,5 +120,5 @@ For now, I have individual class notes for some classes I've taken. Sometimes, l
 
 ### Conference Notes
 
-* NIPS 2017 Workshop: Deep Learning Theory [[pdf]](liveTeX/nips17_workshop_talk.pdf)
+* NeurIPS 2017 Workshop: Deep Learning Theory [[pdf]](liveTeX/nips17_workshop_talk.pdf)
 * COLT 2016 Keynote by Ravi Kannan: Linear Algebra in Machine Learning <a href = "{{ site.baseurl }}/notes/liveTeX/ravi_kannan.pdf">[pdf]</a>
