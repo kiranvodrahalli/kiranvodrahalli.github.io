@@ -150,6 +150,8 @@ ___
 
 ## Technical Reports and Theses  
 
+<span>[T12]</span>{: .grey .bold} <span>Resource-Efficient Methods in Machine Learning</span>{: .papertitle}. Ph.D. Thesis (June 2022). Advised by Alex Andoni and Daniel Hsu. <a href= "{{ site.baseurl }}/research/theses/PhD_thesis.pdf" title= "phdthesis"> [pdf] </a> [[library]](https://academiccommons.columbia.edu/doi/10.7916/ydg4-t868)
+
 <span>[T11]</span>{: .grey .bold} <span>Temporally Dependent Mappings Between fMRI Responses and Natural Language Descriptions of Natural Stimuli</span>{: .papertitle}. COS MSE Thesis (May 2017). Advised by Sanjeev Arora and Ken Norman. <a href= "{{ site.baseurl }}/research/theses/MSE_COS_thesis.pdf" title= "mse_thesis"> [pdf] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)
 
 <span>[T10]</span>{: .grey .bold} <span>Low-dimensional Representations of Semantic Context in Language and the Brain</span>{: .papertitle}. MAT AB Thesis (May 2016). Advised by Sanjeev Arora and Ken Norman. <a href= "{{ site.baseurl }}/research/theses/ugrad_MAT_thesis.pdf" title= "ab_thesis"> [pdf] </a> [[code]](https://github.com/kiranvodrahalli/fMRI_Text_maps_NI)

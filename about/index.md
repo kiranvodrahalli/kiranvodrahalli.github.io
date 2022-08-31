@@ -18,12 +18,11 @@ redirect_from:
 
 ### Currently...
 
-I am a [Computer Science](http://www.cs.columbia.edu/) Ph.D. student at Columbia University, focusing on theoretical computer science, with particular interest in machine learning, algorithms, and statistics. My thesis topic is resource-efficient (sparse/ low-memory / low-rank) machine learning. I am fortunate to \\
-be advised by [Professor Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Professor Alex Andoni](http://www.mit.edu/~andoni/). I have been supported by an NSF Graduate Research Fellowship. 
+I am a research scientist at Google Brain, where I study resource-efficient machine learning in many contexts, with a current focus on long-range sequence modeling and time series, and particularly the role of memory in these problems. I also work on questions at the intersection of multi-agent learning, strategic learning in games, incentives for data collection and collaborative machine learning, and algorithmic game theory, and am interested in associated problems in algorithms and optimization theory. I have also worked on applications of machine learning in several fields, including neuroscience, natural language understanding, economics, and robotics. 
 
-Affiliations:
-* [Columbia CS Theory](http://theory.cs.columbia.edu/) 
-* [Columbia Machine Learning](https://ml.cs.columbia.edu/)
+Please [email me](mailto:kiran.vodrahalli@columbia.edu) if you think we might have some overlapping interests. I am always happy to chat and possibly collaborate!
+
+Current Affiliations:
 * [Google Brain Research](https://research.google/teams/brain/)
 
 Other Info: 
@@ -41,6 +40,14 @@ For more details, either check out this website or see my <a href="{{ site.baseu
 
 ### News
 
+I graduated with my Ph.D. from the Computer Science Department at Columbia University in June 2022! I will be joining Google Brain as a Research Scientist in Fall 2022. 
+
+
+<!-- TODO FOR LATER?
+I am looking to mentor ... people in machine learning. 
+-->
+
+<!--
 I am currently looking for postdoctoral and research positions starting in Fall 2022; I am interested in both applied and theoretical (or some mix thereof) research in machine learning (see my <a href="{{ site.baseurl }}/about/cv.pdf" title="cv"> [CV] </a> ). 
 I am interested in focusing on one of the following topics in my next role: 
 
@@ -63,20 +70,29 @@ and applications to internet economics and reinforcement learning
 * interpretable machine learning via interactive learning
 * learning the "grammar" of action sequences (ex: learning the rules of the road)
 
-
-Please [email me](mailto:kiran.vodrahalli@columbia.edu) if you think we might have some aligned interests!
+-->
 
 ---
 
+<!--
 ### Research Interests
 
 
-My primary area of research is theoretical computer science: in particular, provably resource-efficient algorithms for fitting statistical models in various settings ("algorithmic statistics", "foundations of machine learning", "learning theory", etc.). Some of my work in this direction has skewed in the direction of giving computationally efficient, low sample complexity algorithms for learning functions with sparse descriptions. I am also interested in algorithms and optimization theory. I have also worked on applications of machine learning in several fields, including neuroscience, natural language understanding, economics, and robotics. Currently, I am particularly focused on designing algorithms and proving lower bounds for memory-bounded learning and optimization problems. I am also working on applying ideas from machine learning (online learning, learning in games, reinforcement learning) and bi-level optimization to understand computational and statistical issues associated with the economics of the online firm, as well as associated privacy, ethics, and fairness concerns (see my recent paper [The Platform Design Problem](https://arxiv.org/abs/2009.06117)). 
+My primary area of research is theoretical computer science: in particular, provably resource-efficient algorithms for fitting statistical models in various settings ("algorithmic statistics", "foundations of machine learning", "learning theory", etc.). Some of my work in this direction has skewed in the direction of giving computationally efficient, low sample complexity algorithms for learning functions with sparse descriptions. I am also interested in algorithms and optimization theory. I have also worked on applications of machine learning in several fields, including neuroscience, natural language understanding, economics, and robotics. 
+
+-->
+
+<!--
+Currently, I am particularly focused on designing algorithms and proving lower bounds for memory-bounded learning and optimization problems. I am also working on applying ideas from machine learning (online learning, learning in games, reinforcement learning) and bi-level optimization to understand computational and statistical issues associated with the economics of the online firm, as well as associated privacy, ethics, and fairness concerns (see my recent paper [The Platform Design Problem](https://arxiv.org/abs/2009.06117)). 
 
 
 ---
 
+-->
+
 ### Previously...
+
+From Fall 2017 to Summer 2022, I was a [Computer Science](http://www.cs.columbia.edu/) Ph.D. student at Columbia University, focusing on theoretical computer science ([Columbia CS Theory](http://theory.cs.columbia.edu/)), with particular interest in machine learning ([Columbia Machine Learning](https://ml.cs.columbia.edu/)), algorithms, and statistics. My thesis topic was resource-efficient machine learning. I was fortunate to be advised by [Professor Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Professor Alex Andoni](http://www.mit.edu/~andoni/). I was supported by an NSF Graduate Research Fellowship during my Ph.D. 
 
 In Fall 2021 and early Spring 2022 I was also a part-time student researcher at Google Brain.
 
