@@ -27,6 +27,7 @@ Current Affiliations:
 
 Other Info: 
 * [Email](mailto:kiran.vodrahalli@columbia.edu)
+* [Mastodon](https://mathstodon.xyz/web/@kiranvodrahalli)
 * [Twitter](https://twitter.com/kiranvodrahalli)
 * [Github](https://github.com/kiranvodrahalli)
 * [GoodReads](https://www.goodreads.com/review/list/6132224)
@@ -40,7 +41,7 @@ For more details, either check out this website or see my <a href="{{ site.baseu
 
 ### News
 
-I graduated with my Ph.D. from the Computer Science Department at Columbia University in June 2022! I will be joining Google Brain as a Research Scientist in Fall 2022. 
+I graduated with my Ph.D. from the Computer Science Department at Columbia University in June 2022! I have joined Google Brain as a Research Scientist in Fall 2022. 
 
 
 <!-- TODO FOR LATER?
