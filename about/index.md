@@ -18,15 +18,15 @@ redirect_from:
 
 ### Currently...
 
-I am a research scientist at Google Brain, where I study resource-efficient machine learning in many contexts, with a current focus on long-range sequence modeling and time series, and particularly the role of memory in these problems. I also work on questions at the intersection of multi-agent learning, strategic learning in games, incentives for data collection and collaborative machine learning, and algorithmic game theory, and am interested in associated problems in algorithms and optimization theory. I have also worked on applications of machine learning in several fields, including neuroscience, natural language understanding, economics, and robotics. 
+I am a research scientist at [Google DeepMind](https://www.deepmind.com/), working on long-context sequence modeling (e.g. LLMs) and strategic and interactive machine learning. I am particularly interested in resource-efficient approaches to long-context models. I also work on questions at the intersection of multi-agent learning, strategic learning in games, incentives for data collection and collaborative machine learning, and algorithmic game theory, and am interested in associated problems in machine learning theory, algorithms, and optimization. I have also worked on applications of machine learning in several fields, including neuroscience, natural language understanding, economics, and robotics. 
 
-Please [email me](mailto:kiran.vodrahalli@columbia.edu) if you think we might have some overlapping interests. I am always happy to chat and possibly collaborate!
+Please [email me](mailto:kirannv@google.com) if you think we might have some overlapping interests. I am always happy to chat and possibly collaborate!
 
 Current Affiliations:
-* [Google Brain Research](https://research.google/teams/brain/)
+* [Google DeepMind](https://www.deepmind.com/)
 
 Other Info: 
-* [Email](mailto:kiran.vodrahalli@columbia.edu)
+* [Email](mailto:kirannv@google.com)
 * [Mastodon](https://mathstodon.xyz/web/@kiranvodrahalli)
 * [Twitter](https://twitter.com/kiranvodrahalli)
 * [Github](https://github.com/kiranvodrahalli)
@@ -41,7 +41,7 @@ For more details, either check out this website or see my <a href="{{ site.baseu
 
 ### News
 
-I graduated with my Ph.D. from the Computer Science Department at Columbia University in June 2022! I have joined Google Brain as a Research Scientist in Fall 2022. 
+I graduated with my Ph.D. from the Computer Science Department at Columbia University in June 2022! I joined Google Brain as a Research Scientist in Fall 2022, which became a part of Google DeepMind in April 2023.
 
 
 <!-- TODO FOR LATER?
@@ -92,6 +92,8 @@ Currently, I am particularly focused on designing algorithms and proving lower b
 -->
 
 ### Previously...
+
+From Fall 2022 to Spring 2023, I was a Research Scientist at [Google Brain](https://research.google/teams/brain/). In April 2023, Google Brain became a part of [Google DeepMind](https://www.deepmind.com/).
 
 From Fall 2017 to Summer 2022, I was a [Computer Science](http://www.cs.columbia.edu/) Ph.D. student at Columbia University, focusing on theoretical computer science ([Columbia CS Theory](http://theory.cs.columbia.edu/)), with particular interest in machine learning ([Columbia Machine Learning](https://ml.cs.columbia.edu/)), algorithms, and statistics. My thesis topic was resource-efficient machine learning. I was fortunate to be advised by [Professor Daniel Hsu](http://www.cs.columbia.edu/~djhsu/) and [Professor Alex Andoni](http://www.mit.edu/~andoni/). I was supported by an NSF Graduate Research Fellowship during my Ph.D. 
 
