@@ -24,10 +24,10 @@ ___
 ## Preprints
 
 <span>[P4]</span>{: .red .bold} <span>PaLM 2 Technical Report</span>{: .papertitle}.<br/>
-<span>Google. Core Contributor to Long Context Work-Stream.</span>{: .tab}<br/>
-<span><a href= "https://ai.google/static/documents/palm2techreport.pdf" title= "palm2techreport"> [Google AI Tech Report] </a> <a href= "https://blog.google/technology/ai/google-palm-2-ai-large-language-model/" title= "palm2blog"> [Google Blog] </a> [[PaLM 2 Webpage]](https://ai.google/discover/palm2)</span>{: .tab}
+<span>Google. Core Contributor to Long Context workstream.</span>{: .tab}<br/>
+<span>[[arXiv]](https://arxiv.org/abs/2305.10403) <a href= "https://ai.google/static/documents/palm2techreport.pdf" title= "palm2techreport"> [Google AI Tech Report] </a> <a href= "https://blog.google/technology/ai/google-palm-2-ai-large-language-model/" title= "palm2blog"> [Google Blog] </a> [[PaLM 2 Webpage]](https://ai.google/discover/palm2) [[arXiv]](https://arxiv.org/abs/2305.10403)</span>{: .tab} 
 
-<span>[P3]</span>{: .red .bold} <span>Equilibrium Separations with No-Regret Agents</span>{: .papertitle}.<br/>
+<span>[P3]</span>{: .red .bold} <span>Is Learning in Games Good for the Learners?</span>{: .papertitle}.<br/>
 <span>William Brown, Jon Schneider, **Kiran Vodrahalli**.</span>{: .tab}<br/>
 <span><a href= "{{ site.baseurl }}/research/publications/eq_separations.pdf" title= "EquilibriumSeparation"> [pdf] </a>  </span>{: .tab}
 
