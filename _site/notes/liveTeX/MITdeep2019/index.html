@@ -264,11 +264,11 @@
 
 <p>Now what can we say? Roughly we will ensure that our learning rule will compete with any predictor that has small error, but the number of samples you’ll need is going to scale corresponding to the complexity of the sublevel set of the predictor. The more samples you have, you can compete with a bigger sublevel set, and you can compete with hypotheses of higher complexity. So talking about a complexity measure and a hierarchy of complexity classes is the same. Note that this hierarchy can be continuous.</p>
 
-<p>So when we talk about understanding capacity, we should really be talking about complexity measure, but really, it’s enough to talk about hypothesis classes (e.g. flat measures of complexity). All we need to know is about the complexity of the hypothesis class of the particular sublevel set. It’s almost true that you can take an infimum over \(h^* \) in the error bound on the SRM predictor: <script type="math/tex">L(SRM_{H})(S) \leq L(h^* ) + \sqrt{\frac{capacity(\mathcal{H}_{complexity(h^* )})}{m}}</script></p>
+<p>So when we talk about understanding capacity, we should really be talking about complexity measure, but really, it’s enough to talk about hypothesis classes (e.g. flat measures of complexity). All we need to know is about the complexity of the hypothesis class of the particular sublevel set. It’s almost true that you can take an infimum over \(h^* \) in the error bound on the SRM predictor: \(L(SRM_{H})(S) \leq L(h^* ) + \sqrt{\frac{capacity(\mathcal{H}_{complexity(h^* )})}{m}}\)</p>
 
 <h4 id="implicit-inductive-bias">Implicit Inductive Bias</h4>
 <p>There are other learning rules beyond ERM and SRM, for instance, stochastic gradient descent. We can look at the inductive biases associated with these other learning rules. These might be implicit inductive bias. This doesn’t necessarily do ERM or SRM with respect to anything; nevertheless, we can get a generalization bound for this learning rule. We can get a bound 
-<script type="math/tex">L(SGD(S)) \leq L(w^* ) + \sqrt{\frac{\|w\|_{2}}{m}}</script></p>
+\(L(SGD(S)) \leq L(w^* ) + \sqrt{\frac{\|w\|_{2}}{m}}\)</p>
 
 <p>So basically, the inductive bias associated with SGD is the Euclidean norm of the weight. By using SGD, you’re saying you believe that reality is captured by a small norm predictor. I want to emphasize that this is NOT ERM. So you can think of inductive bias in two directions. You can first decide on inductive bias, and then design an algorithm (ERM or SRM). The second way to think about it is that you can start with an algorithm (like SGD) and then see oh, it works – let’s understand the underlying inductive bias. This maybe comes after the fact though.</p>
 
@@ -455,13 +455,13 @@ Here we take \(k « nD\). We will focus on this regime for the rest of the talk
 <p>Now we’ll focus on the mean-field regime. We’ll also assume no noise for simplicity. A good point to start is the universal approximation. Barron’s theorem says the optimal risk is bounded by \(\frac{1}{N} 2\sigma \int_{\mathbb{R}^d}|w|\mathcal{F}(w)dw \) where we’re taking the Fourier transform. We can relax the function class we consider \(\hat{f}(x; \rho) = \int \sigma(x, \theta) \rho(d\theta)\), where we think of \(\sigma\) as Fourier coefficient, and where we want the measure \(\rho\) to be approximated as a sum of \(N\) delta functions, when \(N\) is very large.</p>
 
 <p>Now we want to understand what is learned by SGD. So can we study the evolution of the density of the empirical distribution? So the key object we want to study is 
-<script type="math/tex">\hat{\rho}_k^{(N)} = \frac{1}{N}\sum_{i = 1}^N \delta_{\theta^k}</script> 
+\(\hat{\rho}_k^{(N)} = \frac{1}{N}\sum_{i = 1}^N \delta_{\theta^k}\) 
 This is the natural way to represent the network, this is invariant under permutation — you have factored away the permutation by writing it as a sum (and a probability distribution).</p>
 
 <p>So how does the distribution given above evolve? 
 We’d like to write down some kind of ordinary differential equation for this object. We can write down a partial differential equation. We need to have evolution in an infinite dimensional space, this is a PDE. It is 
-<script type="math/tex">\delta_t \rho_t = \nabla_{\theta} (\rho_t \nabla_{\theta} \Psi(\theta, \rho_t))</script>
-<script type="math/tex">\Psi(\theta, \rho) = V(\theta) + int U(\theta, \hat{\theta}) \rho(d\hat{\theta})</script>
+\(\delta_t \rho_t = \nabla_{\theta} (\rho_t \nabla_{\theta} \Psi(\theta, \rho_t))\)
+\(\Psi(\theta, \rho) = V(\theta) + int U(\theta, \hat{\theta}) \rho(d\hat{\theta})\)
 where \(V(\theta) = \mathbb{E}[y\sigma(x, \theta)]\) and \(U(\theta_1, \theta_2) = \mathbb{E}[\sigma(x, \theta_1)\sigma(x, \theta_2)]\).</p>
 
 <p>Here we’re kind of taking the gradient of a measure. There’s a sense in which this makes sense (you integrate it against a test function).</p>
@@ -474,7 +474,7 @@ Then say you look at \(W_2\) distance. Then the distance between empirical distr
 <p>So to reiterate, the solution to the PDE and the object we’re interested in (empirical distribution) explodes with time, but for constant time it’s fine.</p>
 
 <p>Now what is this error term? 
-<script type="math/tex">err(N, D, \epsilon, z) = \sqrt{\max(\frac{1}{N}, \epsilon)}(\sqrt{D + \log(N/\epsilon)}) + z</script>
+\(err(N, D, \epsilon, z) = \sqrt{\max(\frac{1}{N}, \epsilon)}(\sqrt{D + \log(N/\epsilon)}) + z\)
 where z is just a constant that doesn’t matter (just for high probability bound). Simplifying, we look at the intereting parameter regime \(N » D, \epsilon « 1/D\), which for \(\epsilon\) is better than \(1/ND\), which is what we might expect if we think about number of parameters. So the number of samples we use is \(n = T/\epsilon = O(D) « ND\). This is surprising somehow.</p>
 
 <h4 id="how-to-prove-it-intuition-behind-the-idea">How to prove it (intuition behind the idea)</h4>
@@ -526,8 +526,8 @@ Well we could carefully look at landscape and avoid getting stuck (Rong from the
 <h3 id="langevin-diffusions-in-non-convex-risk-minimization-maxim-raginsky">Langevin Diffusions in Non-convex Risk Minimization (Maxim Raginsky)</h3>
 
 <p>We wish to minimize some function \(f\) of d variables; f is a finite average over the data. We want to minimize f. We’re just going to talk about minimizing f somehow. Gradient descent is simple and it’s a procedure of choice. We’ll for the most part work in continuous time. We’ll write 
-<script type="math/tex">dX_t = - \nabla f(x_t)dt</script>
-<script type="math/tex">X_{t + dt} - X_t = U_t</script></p>
+\(dX_t = - \nabla f(x_t)dt\)
+\(X_{t + dt} - X_t = U_t\)</p>
 
 <p>We know that if \(t &gt; s\), \(f(x_t) \leq f(x_s)\). With a simple calculation we can see that the derivative with respect to time is non-positive. However, we can still get stuck somewhere. Once it’s in a stable equilibrium, you’re stuck. The initialization determines your fate forever.</p>
 
@@ -536,12 +536,12 @@ Well we could carefully look at landscape and avoid getting stuck (Rong from the
 <p>How can we avoid that? One weird trick that works is to add a bit of noise to the gradient step update. Say, a Gaussian centered around the usual update. How much variance should we add? We have a spherical covariance matrix, but its size is proportional to dt and inversely proportional to \(\beta\), which is inverse temperature (e.g., simulated annealing it’s 1/temperature). The point is that you take a random step. What this does is it prevents you from getting stuck, a nonzero chance of escaping. You add this noise between times t and t + dt. Why would you want this noise to be independent of the past noise? This gives you white noise, but why would you want this to be white noise? Here’s how I understand it: Essentially, suppose that you’re very close to a local minimum, and the gradient is basically zero. What you want is multiple attempts to escape. If they’re independent, it’s a geometrically distributed random variable with a finite mean. There’s large deviation theory for dynamic systems that makes this intuition precise. You can then show that the time of escape from each basin of attraction is finite in expectation, and you have an exponentially distributed random variable if you normalize by the mean, which ties it back to memoryless process.</p>
 
 <p>So this all leads us to think of d-dimensional Brownian motion: we know increments are both independent and Gaussian. As a result, we end up with a random evolution. We can thus write down a stochastic differential equation. 
-<script type="math/tex">dX_t = \nabla f(x_t)dt + \sqrt{\frac{2}{\beta}}dW_t</script></p>
+\(dX_t = \nabla f(x_t)dt + \sqrt{\frac{2}{\beta}}dW_t\)</p>
 
 <p>This was developed by Ito, who thought in terms of evolution in the space of measures, continuous time Markov processes that are analogues of ODEs. You have to define a vector field for this, and in the case of diffusions, reduces to stochastic differential equations. Since Gaussians are defined by first two moments, you can think of a flow for the mean and a flow for the covariance.</p>
 
 <p>When you integrate this you get a random process. This particular equation (after integrating) is called the <strong>overdamped Langevin equation</strong>:
-<script type="math/tex">X_t = X_0 - \int_0^1 \nabla f(x_t)dt + \sqrt{\frac{2}{\beta}}\int dW_s</script></p>
+\(X_t = X_0 - \int_0^1 \nabla f(x_t)dt + \sqrt{\frac{2}{\beta}}\int dW_s\)</p>
 
 <p>Now, Brownian motion is nowhere differentiable. So Langevin introduced a damping term in 1908; the velocity is determined by the momentum, and the momentum is evolving according to an SDE. When you take the friction to infinty, you end up with something like this. But this was all physics. This was a realistic description of diffusion in some potential energy field such that you can meaningfully talk about random energy of a particle.</p>
 
@@ -554,10 +554,9 @@ There were variants of annealing where you take \(\beta\) to infinity under a sc
 
 <p>This is called Friedlin-Wentzell theory (late 80s). We will explicitly indicate \(\beta\) here, because we want to see what happens when \(\beta\) gets cranked up:</p>
 
-<p><script type="math/tex">dX_t^{\beta} = -\nabla f(x_t^{\beta}) dt + \sqrt{\frac{2}{\beta}}dW_t</script>
+<p>\(dX_t^{\beta} = -\nabla f(x_t^{\beta}) dt + \sqrt{\frac{2}{\beta}}dW_t\)
 We’re interested in the probability that 
-<script type="math/tex">% <![CDATA[
-P(\sup_{0 < t \leq T} \| X_t^{\beta} - X_t^{\infty}\|_2 > \delta) = P^{\beta}(\delta) %]]></script></p>
+\(P(\sup_{0 &lt; t \leq T} \| X_t^{\beta} - X_t^{\infty}\|_2 &gt; \delta) = P^{\beta}(\delta)\)</p>
 
 <p>Then if you normalize this probability by \(\beta\), then as you take \(\beta\) to infinity this goes to zero. But you can still exit basins of attraction!</p>
 
@@ -580,7 +579,7 @@ P(\sup_{0 < t \leq T} \| X_t^{\beta} - X_t^{\infty}\|_2 > \delta) = P^{\beta}(\d
 <h4 id="metastability">Metastability</h4>
 
 <p>Suppose you initialize your diffusion so that it happens to lie within some local minima. Suppose it’s smooth, dissipative, and also Lipschitz-Hessian. The intuition behind the result I’m about to state is simpler than the previous proof. Suppose you initialize your diffusion; it happens to lie in some ball around some non-degenerate local minima. You can linearize your gradient around that local minima. Suppoes it’s going to be in a ball of d dimensions of radius \(\sqrt{b/m}\) (follows from dissipitivity). Let \(H\) be the hessian. Let \(\tilde{X}_t = X_t - \bar{x}\). Then 
-<script type="math/tex">d\tilde{X}_t = -H\tilde{X}_t dt + \sqrt{2/\beta}dW_t + \rho(\tilde{X}_t)dt</script></p>
+\(d\tilde{X}_t = -H\tilde{X}_t dt + \sqrt{2/\beta}dW_t + \rho(\tilde{X}_t)dt\)</p>
 
 <p>The first two terms are very well understood: This is Ornstein-Uhlenbeck process. WLOG you can assume eigenvalues of Hessian are lower bounded by m. The asympotic mean is zero, and the variance is controlled by \(\beta\). It turns out you can take this process, and use an idea from the theory of ODEs. You run time backwards by doing \(X_t = e^{-Ht}X_0\), where we’re using definition of matrix exponential.</p>
 
@@ -1233,7 +1232,7 @@ What can we efficiently sample, provably – the limits are logconcave functions
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2023-05-18T23:12:26-07:00">2023</time>. All rights reserved.
+          &copy; <time datetime="2024-01-04T21:39:27-08:00">2024</time>. All rights reserved.
         </small>
       </footer>
     </div>

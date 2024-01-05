@@ -315,7 +315,7 @@ We also do things like heatmaps. You’re computing things on a log scale.</p>
 <h4 id="guess-a-sketch">Guess a Sketch</h4>
 
 <p>Consider the \(j^{th}\) column of \(W\), \(W_j\). We take the objective and re-write it as a multiple regression problem, multiplying by the diagonal version of \(W_j\) (as a matrix) — we scale all the entries according to \(W_j\). We do this in order. This weighted low-rank approximation problem is the same as this multiple regression problem. Now we can choose Gaussian matrix \(S\) and replace the multiple regression problem with the sketch of a multiple regression problem — multiply by \(S\) on both sides. What if we create variables for the tiny matrix \(SD_{W_j}U\)? This is what we get after multiplying by \(S\) and \(D_{W_j}\). Then just create variables for all these entries. Now, you can solve for \(V_j\) in terms of all these variables! Recall we are looking at 
-<script type="math/tex">\sum_{j = 1}^n \|SD_{W_j}UV_j - SD_{W_j}A_j\|_2^2</script>.
+\(\sum_{j = 1}^n \|SD_{W_j}UV_j - SD_{W_j}A_j\|_2^2\).
 We have a bunch of small matrices — only need to create variables for \(r\) of these, and express everything else in terms of the variable swe chose. So we take the weighted low-rank objective, write as multiple regression, use sketching to say we can solve the smaller problem, and then create variables for \(SD_{W_j}U\) for a linearly independent subset of these variables. This is a way of reducing the number of variables. Once we have a small number of variables, we can solve for \(V\) in a closed form expression. The solution is a rational function, but can clear the denominator with tricks. This makes the difference between getting something with exponential time and something with polynomial time, because the time depends heavily on the total number of variables.</p>
 
 <h4 id="open-problems">Open Problems</h4>
@@ -374,7 +374,7 @@ Costis Daskalakis: Is there a relation to Follow-the-Perturbed-Leader? Answer: N
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2023-05-18T23:12:26-07:00">2023</time>. All rights reserved.
+          &copy; <time datetime="2024-01-04T21:39:27-08:00">2024</time>. All rights reserved.
         </small>
       </footer>
     </div>

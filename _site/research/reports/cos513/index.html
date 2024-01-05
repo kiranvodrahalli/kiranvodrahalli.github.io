@@ -130,7 +130,7 @@ We will represent the image in two ways:</p>
 </ul>
 
 <p>For each of the \(306\) channels we learn a matrix:
-<script type="math/tex">F = AL</script>
+\(F = AL\)
 where \(F\) is the \(k \times 92\) matrix of frequency vectors for the given channel for each of the \(92\) pairs; L is the \(m \times 92\) matrix of image vectors for each of the \(92\) pairs, and \(A\) is \(k \times m\) matrix that we learn for each of the \(306\) channels. 
 Then, putting all \(306\) channels together, we get a tensor ((T)) which is \(306 \times k \times m\).We learn each of these matrices separately with ridge regression (to ensure we get a unique solution for each problem).</p>
 
@@ -734,9 +734,9 @@ EEG-informed fMRI: extract specific EEG feature, assuming its fluctuations over 
 <p>We are interested in exploring the relationships between different measurements of brain activity, namely, fMRI, MEG, and EEG. fMRI data is based on a time series of BOLD responses and takes the form of a 4-vector with high spatial resolution, but low temporal resolution. On the other hand, both MEG (recordings of magnetic fields induced by electrical currents in the brain) and EEG (recording voltage fluctuations due to ion movement inside neurons) data have high temporal resolution, but less spatial resolution. Therefore, the primary question we ask for our project is: Can we utilize fMRI and (EEG or MEG) data, recorded simultaneously on a set of subjects performing some task, to jointly create a new signal that is able to retain both spatial and temporal resolution from the inputs to achieve a higher resolution on both axes?
 If we take \(X\) to be EEG-space and \(Y\) to be fMRI space, we essentially wish to find two functions</p>
 
-<script type="math/tex; mode=display">f_1(X, Y) = X'</script>
+\[f_1(X, Y) = X'\]
 
-<script type="math/tex; mode=display">f_2(X, Y) = Y'</script>
+\[f_2(X, Y) = Y'\]
 
 <p>such that \(X’\) and \(Y’\) are better representations of the underlying information in the brain data.</p>
 
@@ -860,7 +860,7 @@ We performed PCA to reduce the voxel space dimension on a single subject’s fMR
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2023-05-18T23:12:26-07:00">2023</time>. All rights reserved.
+          &copy; <time datetime="2024-01-04T21:39:27-08:00">2024</time>. All rights reserved.
         </small>
       </footer>
     </div>
