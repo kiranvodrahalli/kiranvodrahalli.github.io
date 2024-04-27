@@ -25,7 +25,7 @@ ___
 
 <span>[P5]</span>{: .red .bold} <span>Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context</span>{: .papertitle}.<br/>
 <span>Gemini Team, Google. Core Contributor.</span>{: .tab}<br/>
-<span>[[arXiv]](https://arxiv.org/abs/2312.11805) <a href= "https://arxiv.org/pdf/2403.05530.pdf" title= "gem1p5techreport"> [Google DeepMind Tech Report] </a></span>{: .tab}
+<span>[[arXiv]](https://arxiv.org/abs/2403.05530)</span>{: .tab}
 
 <span>[P4]</span>{: .red .bold} <span>Gemini: A Family of Highly Capable
 Multimodal Models</span>{: .papertitle}.<br/>
