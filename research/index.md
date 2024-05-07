@@ -23,22 +23,18 @@ ___
 
 ## Preprints
 
-<span>[P5]</span>{: .red .bold} <span>Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context</span>{: .papertitle}.<br/>
+<span>[P4]</span>{: .red .bold} <span>Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context</span>{: .papertitle}.<br/>
 <span>Gemini Team, Google. Core Contributor.</span>{: .tab}<br/>
 <span>[[arXiv]](https://arxiv.org/abs/2403.05530)</span>{: .tab}
 
-<span>[P4]</span>{: .red .bold} <span>Gemini: A Family of Highly Capable
+<span>[P3]</span>{: .red .bold} <span>Gemini: A Family of Highly Capable
 Multimodal Models</span>{: .papertitle}.<br/>
 <span>Gemini Team, Google. Core Contributor.</span>{: .tab}<br/>
 <span>[[arXiv]](https://arxiv.org/abs/2312.11805) <a href= "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf" title= "gem1techreport"> [Google DeepMind Tech Report] </a> <a href= "https://blog.google/technology/ai/google-gemini-ai/#introducing-gemini" title= "gem1blog"> [Google Blog] </a> [[Gemini Webpage]](https://deepmind.google/technologies/gemini)</span>{: .tab} 
 
-<span>[P3]</span>{: .red .bold} <span>PaLM 2 Technical Report</span>{: .papertitle}.<br/>
+<span>[P2]</span>{: .red .bold} <span>PaLM 2 Technical Report</span>{: .papertitle}.<br/>
 <span>Google. Core Contributor to Long Context workstream.</span>{: .tab}<br/>
 <span>[[arXiv]](https://arxiv.org/abs/2305.10403) <a href= "https://ai.google/static/documents/palm2techreport.pdf" title= "palm2techreport"> [Google AI Tech Report] </a> <a href= "https://blog.google/technology/ai/google-palm-2-ai-large-language-model/" title= "palm2blog"> [Google Blog] </a> [[PaLM 2 Webpage]](https://ai.google/discover/palm2)</span>{: .tab} 
-
-<span>[P2]</span>{: .red .bold} <span>Online Learning with Bounded Recall</span>{: .papertitle}.<br/>
-<span>Jon Schneider\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/>
-<span><a href="https://arxiv.org/abs/2205.14519" title="history_restricted_online_learning_arxiv"> [arXiv] </a> [[code]](https://github.com/kiranvodrahalli/history_restricted_online_learning) </span>{: .tab}
 
 <span>[P1]</span>{: .red .bold} <span>Nonlinear Initialization Methods for Low-Rank Neural Networks</span>{: .papertitle}.<br/>
 <span>**Kiran Vodrahalli**, Rakesh Shivanna, Maheswaran Sathiamoorthy, Sagar Jain, Ed H. Chi.</span>{: .tab}<br/>
@@ -54,6 +50,11 @@ Multimodal Models</span>{: .papertitle}.<br/>
 <button onclick="window.location.href='{{ site.baseurl }}/research/research-topic/index.html#conference-and-journal-publications';">Sort papers by topic </button> 
 
 ### All Publications
+
+<span>[C11]</span>{: .red .bold} <span>Online Learning with Bounded Recall</span>{: .papertitle}.<br/>
+<span>Jon Schneider\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/>
+<span>International Conference on  Machine Learning, July 2024. Poster.</span>{: .tab}<br/>
+<span><a href="https://arxiv.org/abs/2205.14519" title="history_restricted_online_learning_arxiv"> [arXiv] </a> [[code]](https://github.com/kiranvodrahalli/history_restricted_online_learning) [[conference]](https://icml.cc/virtual/2024/poster/35004) </span>{: .tab}
 
 <span>[C10]</span>{: .blue .bold} <span>Is Learning in Games Good for the Learners?</span>{: .papertitle}.<br/>
 <span>William Brown, Jon Schneider, **Kiran Vodrahalli**.</span>{: .tab}<br/>
