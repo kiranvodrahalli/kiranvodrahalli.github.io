@@ -51,7 +51,7 @@ Multimodal Models</span>{: .papertitle}.<br/>
 
 ### All Publications
 
-<span>[C11]</span>{: .red .bold} <span>Online Learning with Bounded Recall</span>{: .papertitle}.<br/>
+<span>[C11]</span>{: .blue .bold} <span>Online Learning with Bounded Recall</span>{: .papertitle}.<br/>
 <span>Jon Schneider\*, **Kiran Vodrahalli**\*.</span>{: .tab}<br/>
 <span>International Conference on  Machine Learning, July 2024. Poster.</span>{: .tab}<br/>
 <span><a href="https://arxiv.org/abs/2205.14519" title="history_restricted_online_learning_arxiv"> [arXiv] </a> [[code]](https://github.com/kiranvodrahalli/history_restricted_online_learning) [[conference]](https://icml.cc/virtual/2024/poster/35004) </span>{: .tab}
