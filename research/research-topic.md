@@ -23,16 +23,16 @@ ___
 
 ## Preprints
 
-<span>[P5]</span>{: .red .bold} <span>Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context</span>{: .papertitle}.<br/>
+<span>[P4]</span>{: .red .bold} <span>Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context</span>{: .papertitle}.<br/>
 <span>Gemini Team, Google. Core Contributor.</span>{: .tab}<br/>
-<span>[[arXiv]](https://arxiv.org/abs/2403.05530)</span>{: .tab}
+<span>[[arXiv]](https://arxiv.org/abs/2403.05530) [[Google DeepMind]](https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf)</span>{: .tab}
 
-<span>[P4]</span>{: .red .bold} <span>Gemini: A Family of Highly Capable
+<span>[P3]</span>{: .red .bold} <span>Gemini: A Family of Highly Capable
 Multimodal Models</span>{: .papertitle}.<br/>
 <span>Gemini Team, Google. Core Contributor.</span>{: .tab}<br/>
 <span>[[arXiv]](https://arxiv.org/abs/2312.11805) <a href= "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf" title= "gem1techreport"> [Google DeepMind Tech Report] </a> <a href= "https://blog.google/technology/ai/google-gemini-ai/#introducing-gemini" title= "gem1blog"> [Google Blog] </a> [[Gemini Webpage]](https://deepmind.google/technologies/gemini)</span>{: .tab} 
 
-<span>[P3]</span>{: .red .bold} <span>PaLM 2 Technical Report</span>{: .papertitle}.<br/>
+<span>[P2]</span>{: .red .bold} <span>PaLM 2 Technical Report</span>{: .papertitle}.<br/>
 <span>Google. Core Contributor to Long Context workstream.</span>{: .tab}<br/>
 <span>[[arXiv]](https://arxiv.org/abs/2305.10403) <a href= "https://ai.google/static/documents/palm2techreport.pdf" title= "palm2techreport"> [Google AI Tech Report] </a> <a href= "https://blog.google/technology/ai/google-palm-2-ai-large-language-model/" title= "palm2blog"> [Google Blog] </a> [[PaLM 2 Webpage]](https://ai.google/discover/palm2) [[arXiv]](https://arxiv.org/abs/2305.10403)</span>{: .tab} 
 
