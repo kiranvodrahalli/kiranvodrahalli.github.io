@@ -23,6 +23,13 @@ ___
 
 ## Preprints
 
+<span>[P5]</span>{: .red .bold} <span>Michelangelo: Long Context Evaluations Beyond Haystacks via Latent Structure Queries</span>{: .papertitle}.<br/>
+<span>**Kiran Vodrahalli**, Santiago Ontanon, Nilesh Tripuraneni, Kelvin Xu, Sanil Jain, Rakesh Shivanna,</span>{: .tab}<br/> 
+<span>Jeffrey Hui, Nishanth Dikkala, Mehran Kazemi, Bahare Fatemi, Rohan Anil, Ethan Dyer,</span>{: .tab}<br/>
+<span>Siamak Shakeri, Roopali Vij, Harsh Mehta, Vinay Ramasesh, Quoc Le, Ed Chi, Yifeng Lu, Orhan Firat,</span>{: .tab}<br/>
+<span>Angeliki Lazaridou, Jean-Baptiste Lespiau, Nithya Attaluri, Kate Olszewska.</span>{: .tab}<br/>
+<span>[[arXiv]](https://arxiv.org/abs/2409.12640) [[Google DeepMind]](https://deepmind.google/research/publications/117639)</span>{: .tab}
+
 <span>[P4]</span>{: .red .bold} <span>Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context</span>{: .papertitle}.<br/>
 <span>Gemini Team, Google. Core Contributor.</span>{: .tab}<br/>
 <span>[[arXiv]](https://arxiv.org/abs/2403.05530) [[Google DeepMind]](https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf)</span>{: .tab}

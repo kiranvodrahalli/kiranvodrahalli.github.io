@@ -113,10 +113,10 @@
 -->
 
 <ul id="markdown-toc">
-  <li><a href="#preprints" id="markdown-toc-preprints">Preprints</a></li>
-  <li><a href="#conference-and-journal-publications" id="markdown-toc-conference-and-journal-publications">Conference and Journal Publications</a>    <ul>
+  <li><a href="#publications-by-topic" id="markdown-toc-publications-by-topic">Publications by Topic</a>    <ul>
+      <li><a href="#large-language-models-and-natural-language-processing" id="markdown-toc-large-language-models-and-natural-language-processing">Large Language Models and Natural Language Processing</a></li>
+      <li><a href="#deep-learning" id="markdown-toc-deep-learning">Deep Learning</a></li>
       <li><a href="#theory-computer-sciencestatisticsmachine-learning" id="markdown-toc-theory-computer-sciencestatisticsmachine-learning">Theory (Computer Science/Statistics/Machine Learning)</a></li>
-      <li><a href="#natural-language-processing" id="markdown-toc-natural-language-processing">Natural Language Processing</a></li>
       <li><a href="#neuroscience" id="markdown-toc-neuroscience">Neuroscience</a></li>
       <li><a href="#systems" id="markdown-toc-systems">Systems</a></li>
       <li><a href="#robotics" id="markdown-toc-robotics">Robotics</a></li>
@@ -137,7 +137,57 @@ Therefore, I use * to denote equal authorship to avoid confusion.</p>
 
 <hr />
 
-<h2 id="preprints">Preprints</h2>
+<!--
+	TODO(knv): find nice way to display papers in multiple topics
+	TODO(knv): create topic for general machine learning, and separate topic for theory
+-->
+
+<hr />
+
+<h2 id="publications-by-topic">Publications by Topic</h2>
+
+<p><button onclick="window.location.href='/research/index.html#conference-and-journal-publications';">Sort papers chronologically </button></p>
+
+<h3 id="large-language-models-and-natural-language-processing">Large Language Models and Natural Language Processing</h3>
+
+<p><span class="red bold">[P5]</span> <span class="papertitle">Michelangelo: Long Context Evaluations Beyond Haystacks via Latent Structure Queries</span>.<br />
+<span class="tab"><strong>Kiran Vodrahalli</strong>, Santiago Ontanon, Nilesh Tripuraneni, Kelvin Xu, Sanil Jain, Rakesh Shivanna,</span><br /> 
+<span class="tab">Jeffrey Hui, Nishanth Dikkala, Mehran Kazemi, Bahare Fatemi, Rohan Anil, Ethan Dyer,</span><br />
+<span class="tab">Siamak Shakeri, Roopali Vij, Harsh Mehta, Vinay Ramasesh, Quoc Le, Ed Chi, Yifeng Lu, Orhan Firat,</span><br />
+<span class="tab">Angeliki Lazaridou, Jean-Baptiste Lespiau, Nithya Attaluri, Kate Olszewska.</span><br />
+<span class="tab"><a href="https://arxiv.org/abs/2409.12640">[arXiv]</a> <a href="https://deepmind.google/research/publications/117639">[Google DeepMind]</a></span></p>
+
+<p><span class="red bold">[P4]</span> <span class="papertitle">Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context</span>.<br />
+<span class="tab">Gemini Team, Google. Core Contributor.</span><br />
+<span class="tab"><a href="https://arxiv.org/abs/2403.05530">[arXiv]</a> <a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf">[Google DeepMind]</a></span></p>
+
+<p><span class="red bold">[P3]</span> <span class="papertitle">Gemini: A Family of Highly Capable
+Multimodal Models</span>.<br />
+<span class="tab">Gemini Team, Google. Core Contributor.</span><br />
+<span class="tab"><a href="https://arxiv.org/abs/2312.11805">[arXiv]</a> <a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf" title="gem1techreport"> [Google DeepMind Tech Report] </a> <a href="https://blog.google/technology/ai/google-gemini-ai/#introducing-gemini" title="gem1blog"> [Google Blog] </a> <a href="https://deepmind.google/technologies/gemini">[Gemini Webpage]</a></span></p>
+
+<p><span class="red bold">[P2]</span> <span class="papertitle">PaLM 2 Technical Report</span>.<br />
+<span class="tab">Google. Core Contributor to Long Context workstream.</span><br />
+<span class="tab"><a href="https://arxiv.org/abs/2305.10403">[arXiv]</a> <a href="https://ai.google/static/documents/palm2techreport.pdf" title="palm2techreport"> [Google AI Tech Report] </a> <a href="https://blog.google/technology/ai/google-palm-2-ai-large-language-model/" title="palm2blog"> [Google Blog] </a> <a href="https://ai.google/discover/palm2">[PaLM 2 Webpage]</a> <a href="https://arxiv.org/abs/2305.10403">[arXiv]</a></span></p>
+
+<p><span class="blue bold">[C2]</span> <span class="papertitle">A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs</span>.<br /> 
+<span class="tab">Sanjeev Arora*, Mikhail Khodak*, Nikunj Saunshi*, <strong>Kiran Vodrahalli</strong>*.</span><br /> 
+<span class="tab">International Conference on Learning Representations, April 2018. Poster.</span><br /> 
+<span class="tab"><a href="/research/publications/iclr18.pdf" title="iclr18"> [pdf] </a> <a href="http://www.offconvex.org/2018/06/25/textembeddings/">[blog]</a> <a href="/research/publications/iclr18_abstract.pdf" title="iclr18_abstract"> [abstract] </a> <a href="https://openreview.net/forum?id=B1e5ef-C-" title="iclr18"> [conference] </a> <a href="/posters/iclr18_poster.pdf" title="iclr18"> [poster] </a> <a href="https://https//github.com/NLPrinceton/text_embedding">[embedding code]</a> <a href="https://https//github.com/NLPrinceton/sparse_recovery">[recovery code]</a> <a href="http://nlp.cs.princeton.edu/DisC/">[word vectors]</a></span></p>
+
+<p><span class="blue bold">[C3]</span> <span class="papertitle">A Large Self-Annotated Corpus for Sarcasm</span>.<br /> 
+<span class="tab">Mikhail Khodak, Nikunj Saunshi, <strong>Kiran Vodrahalli</strong>.</span><br /> 
+<span class="tab">Language Resources and Evaluation, May 2018. Poster.</span><br /> 
+<span class="tab"><a href="/research/publications/lrec18.pdf" title="lrec18"> [pdf] </a> <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/160.pdf" title="lrec18"> [conference] </a> <a href="https://arxiv.org/abs/1704.05579" title="lrec18_arxiv"> [arXiv] </a> <a href="http://nlp.cs.princeton.edu/SARC/">[dataset]</a> <a href="https://github.com/NLPrinceton/SARC">[code]</a></span></p>
+
+<h3 id="deep-learning">Deep Learning</h3>
+
+<p><span class="red bold">[P5]</span> <span class="papertitle">Michelangelo: Long Context Evaluations Beyond Haystacks via Latent Structure Queries</span>.<br />
+<span class="tab"><strong>Kiran Vodrahalli</strong>, Santiago Ontanon, Nilesh Tripuraneni, Kelvin Xu, Sanil Jain, Rakesh Shivanna,</span><br /> 
+<span class="tab">Jeffrey Hui, Nishanth Dikkala, Mehran Kazemi, Bahare Fatemi, Rohan Anil, Ethan Dyer,</span><br />
+<span class="tab">Siamak Shakeri, Roopali Vij, Harsh Mehta, Vinay Ramasesh, Quoc Le, Ed Chi, Yifeng Lu, Orhan Firat,</span><br />
+<span class="tab">Angeliki Lazaridou, Jean-Baptiste Lespiau, Nithya Attaluri, Kate Olszewska.</span><br />
+<span class="tab"><a href="https://arxiv.org/abs/2409.12640">[arXiv]</a> <a href="https://deepmind.google/research/publications/117639">[Google DeepMind]</a></span></p>
 
 <p><span class="red bold">[P4]</span> <span class="papertitle">Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context</span>.<br />
 <span class="tab">Gemini Team, Google. Core Contributor.</span><br />
@@ -156,16 +206,20 @@ Multimodal Models</span>.<br />
 <span class="tab"><strong>Kiran Vodrahalli</strong>, Rakesh Shivanna, Maheswaran Sathiamoorthy, Sagar Jain, Ed H. Chi.</span><br />
 <span class="tab"><a href="https://arxiv.org/abs/2202.00834" title="lowrank_nn_arxiv"> [arXiv] </a> </span></p>
 
-<!--
-	TODO(knv): find nice way to display papers in multiple topics
-	TODO(knv): create topic for general machine learning, and separate topic for theory
--->
+<p><span class="blue bold">[C7]</span> <span class="papertitle">Deep Bayesian Nonparametric Learning of Rules and Plans from Demonstrations with a Learned Automaton Prior</span>.<br /> 
+<span class="tab">Brandon Araki, <strong>Kiran Vodrahalli</strong>, Thomas Leech, Cristian-Ioan Vasile, Mark Donahue, Daniela Rus.</span><br />
+<span class="tab">AAAI Conference on Artificial Intelligence, February 2020. Spotlight Presentation and Poster.</span><br /> 
+<span class="tab"><a href="/research/publications/aaai20.pdf" title="aaai20"> [pdf] </a> <a href="/research/publications/aaai20_supp.pdf" title="aaai20_supp"> [supplement] </a><a href="https://aaai.org/Conferences/AAAI-20/" title="aaai2020"> [conference] </a> <a href="/posters/aaai20-poster.pdf" title="aaai20poster"> [poster] </a></span></p>
 
-<hr />
+<p><span class="blue bold">[C5]</span> <span class="papertitle">Learning to Plan with Logical Automata</span>.<br /> 
+<span class="tab">Brandon Araki*, <strong>Kiran Vodrahalli</strong>*, Thomas Leech, Cristian-Ioan Vasile, Mark Donahue, Daniela Rus.</span><br />
+<span class="tab">Robotics: Science and Systems, June 2019. Spotlight Presentation and Poster.</span><br />
+<span class="tab"><a href="/research/publications/rss19.pdf" title="rss19"> [pdf] </a> <a href="http://www.roboticsconference.org/" title="rss"> [conference] </a> <a href="/posters/rss2019-poster.pdf" title="rss19poster"> [poster] </a></span></p>
 
-<h2 id="conference-and-journal-publications">Conference and Journal Publications</h2>
-
-<p><button onclick="window.location.href='/research/index.html#conference-and-journal-publications';">Sort papers chronologically </button></p>
+<p><span class="blue bold">[C2]</span> <span class="papertitle">A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs</span>.<br /> 
+<span class="tab">Sanjeev Arora*, Mikhail Khodak*, Nikunj Saunshi*, <strong>Kiran Vodrahalli</strong>*.</span><br /> 
+<span class="tab">International Conference on Learning Representations, April 2018. Poster.</span><br /> 
+<span class="tab"><a href="/research/publications/iclr18.pdf" title="iclr18"> [pdf] </a> <a href="http://www.offconvex.org/2018/06/25/textembeddings/">[blog]</a> <a href="/research/publications/iclr18_abstract.pdf" title="iclr18_abstract"> [abstract] </a> <a href="https://openreview.net/forum?id=B1e5ef-C-" title="iclr18"> [conference] </a> <a href="/posters/iclr18_poster.pdf" title="iclr18"> [poster] </a> <a href="https://https//github.com/NLPrinceton/text_embedding">[embedding code]</a> <a href="https://https//github.com/NLPrinceton/sparse_recovery">[recovery code]</a> <a href="http://nlp.cs.princeton.edu/DisC/">[word vectors]</a></span></p>
 
 <h3 id="theory-computer-sciencestatisticsmachine-learning">Theory (Computer Science/Statistics/Machine Learning)</h3>
 
@@ -188,18 +242,6 @@ Multimodal Models</span>.<br />
 <span class="tab">Alex Andoni*, Rishabh Dudeja*, Daniel Hsu*, <strong>Kiran Vodrahalli</strong>*.</span><br />
 <span class="tab">Algorithmic Learning Theory, March 2019. Oral Presentation.</span><br />
 <span class="tab"><a href="/research/publications/alt19.pdf" title="alt19"> [pdf] </a> <a href="http://proceedings.mlr.press/v98/andoni19a.html" title="alt19pmlr"> [pmlr] </a> <a href="http://alt2019.algorithmiclearningtheory.org/accepted-papers/" title="alt"> [conference] </a> <a href="/posters/Columbia-Data-Science-Poster-2018-Vodrahalli.pdf" title="columbia-fods18"> [poster] </a></span></p>
-
-<h3 id="natural-language-processing">Natural Language Processing</h3>
-
-<p><span class="blue bold">[C2]</span> <span class="papertitle">A Compressed Sensing View of Unsupervised Text Embeddings, Bag-of-n-Grams, and LSTMs</span>.<br /> 
-<span class="tab">Sanjeev Arora*, Mikhail Khodak*, Nikunj Saunshi*, <strong>Kiran Vodrahalli</strong>*.</span><br /> 
-<span class="tab">International Conference on Learning Representations, April 2018. Poster.</span><br /> 
-<span class="tab"><a href="/research/publications/iclr18.pdf" title="iclr18"> [pdf] </a> <a href="http://www.offconvex.org/2018/06/25/textembeddings/">[blog]</a> <a href="/research/publications/iclr18_abstract.pdf" title="iclr18_abstract"> [abstract] </a> <a href="https://openreview.net/forum?id=B1e5ef-C-" title="iclr18"> [conference] </a> <a href="/posters/iclr18_poster.pdf" title="iclr18"> [poster] </a> <a href="https://https//github.com/NLPrinceton/text_embedding">[embedding code]</a> <a href="https://https//github.com/NLPrinceton/sparse_recovery">[recovery code]</a> <a href="http://nlp.cs.princeton.edu/DisC/">[word vectors]</a></span></p>
-
-<p><span class="blue bold">[C3]</span> <span class="papertitle">A Large Self-Annotated Corpus for Sarcasm</span>.<br /> 
-<span class="tab">Mikhail Khodak, Nikunj Saunshi, <strong>Kiran Vodrahalli</strong>.</span><br /> 
-<span class="tab">Language Resources and Evaluation, May 2018. Poster.</span><br /> 
-<span class="tab"><a href="/research/publications/lrec18.pdf" title="lrec18"> [pdf] </a> <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/160.pdf" title="lrec18"> [conference] </a> <a href="https://arxiv.org/abs/1704.05579" title="lrec18_arxiv"> [arXiv] </a> <a href="http://nlp.cs.princeton.edu/SARC/">[dataset]</a> <a href="https://github.com/NLPrinceton/SARC">[code]</a></span></p>
 
 <h3 id="neuroscience">Neuroscience</h3>
 
@@ -288,6 +330,8 @@ Multimodal Models</span>.<br />
 
 <h2 id="technical-reports-and-theses">Technical Reports and Theses</h2>
 
+<p><span class="grey bold">[T12]</span> <span class="papertitle">Resource-Efficient Methods in Machine Learning</span>. Ph.D. Thesis (June 2022). Advised by Alex Andoni and Daniel Hsu. <a href="/research/theses/PhD_thesis.pdf" title="phdthesis"> [pdf] </a> <a href="https://academiccommons.columbia.edu/doi/10.7916/ydg4-t868">[library]</a></p>
+
 <p><span class="grey bold">[T11]</span> <span class="papertitle">Temporally Dependent Mappings Between fMRI Responses and Natural Language Descriptions of Natural Stimuli</span>. COS MSE Thesis (May 2017). Advised by Sanjeev Arora and Ken Norman. <a href="/research/theses/MSE_COS_thesis.pdf" title="mse_thesis"> [pdf] </a> <a href="https://github.com/kiranvodrahalli/fMRI_Text_maps_NI">[code]</a></p>
 
 <p><span class="grey bold">[T10]</span> <span class="papertitle">Low-dimensional Representations of Semantic Context in Language and the Brain</span>. MAT AB Thesis (May 2016). Advised by Sanjeev Arora and Ken Norman. <a href="/research/theses/ugrad_MAT_thesis.pdf" title="ab_thesis"> [pdf] </a> <a href="https://github.com/kiranvodrahalli/fMRI_Text_maps_NI">[code]</a></p>
@@ -349,7 +393,7 @@ Outershell is a simple hack to enable the bash shell with the full functionality
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2024-05-17T19:45:43-07:00">2024</time>. All rights reserved.
+          &copy; <time datetime="2024-09-29T19:00:05-07:00">2024</time>. All rights reserved.
         </small>
       </footer>
     </div>
