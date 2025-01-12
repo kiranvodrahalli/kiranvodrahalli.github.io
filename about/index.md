@@ -18,7 +18,7 @@ redirect_from:
 
 ### Currently...
 
-I am a research scientist at [Google DeepMind](https://www.deepmind.com/), working on long-context sequence modeling (for example, in LLMs) and strategic and  
+I am a research scientist at [Google DeepMind](https://www.deepmind.com/), working on long-context sequence modeling (ex: LLMs) and strategic and  
 interactive machine learning. I am particularly interested in resource-efficient approaches to long-context models.
 
 I am currently a core contributor on the [Gemini](https://en.wikipedia.org/wiki/Gemini_(language_model)) project, where I have focused on resource-efficient models  
